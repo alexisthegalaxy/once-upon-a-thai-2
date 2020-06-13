@@ -13,17 +13,19 @@ enum {
 	MOVE,
 	ROLL,
 }
-
+var player_name = "Alexis"
 var target  # the thing that the player is currently looking at, for interacting with
 var can_move = true  # false when interacting with a npc, etc.
 var can_interact = false  # meaning the player is near a npc. false during a dialog.
 var state = MOVE
+var dict = null
 
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
 
 func _ready() -> void:
+	print('player', self)
 	animationTree.active = true
 
 func _physics_process(delta) -> void:
@@ -44,6 +46,15 @@ func _input(_event) -> void:
 			target.initiate_dialog(self)
 	if Input.is_action_just_pressed("print_position"):
 		print("(" + str(position.x) + ", " + str(position.y) + ")")
+	if Input.is_action_just_pressed("dict"):
+		if dict:
+			dict.queue_free()
+			dict = null
+		else:
+			dict = load("res://Lexical/Dict/Dict.tscn").instance()
+			dict.init(self)
+			var current_map = get_tree().current_scene
+			current_map.add_child(dict)
 
 
 func move_state(delta) -> void:

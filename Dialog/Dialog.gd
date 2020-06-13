@@ -4,6 +4,9 @@ export var dialog = []
 var page = 0
 var player
 
+func _ready():
+	reset_line()
+
 func reset_line():
 	$Control/RichTextLabel.set_bbcode(dialog[page])
 	$Control/RichTextLabel.set_visible_characters(0)

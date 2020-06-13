@@ -1,25 +1,32 @@
 extends Node
 
-
 var change_color = false
 var goal_color = null
-
+var words
 var current_scene = null
+var known_words = []
+var player = null
+
+func knows_word(word) -> bool:
+	return word["id"] in known_words
+
+func retrieve_words_from_json():
+	var data_file = File.new()
+	if data_file.open("res://Lexical/Word/words.json", File.READ) != OK:
+		print('problem opening the json file!!!')
+		return
+	var data_text = data_file.get_as_text()
+	data_file.close()
+	var data_parse = JSON.parse(data_text)
+	if data_parse.error != OK:
+		print('problem parsing the json file!!!')
+		return
+	return data_parse.result
 
 func _ready():
 	var root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count() - 1)
-
-
-#func init_map():
-#	var player = get_tree().current_scene.get_node("YSort").get_node("Player")
-#	for npc in get_tree().get_nodes_in_group("npcs"):
-#		var npc_interact_box = npc.get_node("InteractBox")
-#		npc_interact_box.connect("body_entered", player, "_on_InteractBox_body_entered", [npc])
-#		npc_interact_box.connect("body_exited", player, "_on_InteractBox_body_exited", [npc])
-#	for changelight in get_tree().get_nodes_in_group("changelights"):
-#		changelight.connect("body_entered", self, "_on_changelight_body_entered", [changelight.color])
-
+	words = retrieve_words_from_json()
 
 func _process(_delta):
 	if Input.is_action_pressed("ui_cancel"):
@@ -31,11 +38,6 @@ func _process(_delta):
 		canvas_modulate.color.g = (canvas_modulate.color.g * 99 + goal_color.g) / 100
 		canvas_modulate.color.b = (canvas_modulate.color.b * 99 + goal_color.b) / 100
 
-
-func _on_changelight_body_entered(_player, color):
-	change_color = true
-	goal_color = color
-
 func _on_teleport_signal(to_map_name, to_x, to_y) -> void:
 #	var _e = get_tree().change_scene(to_map_name)
 #	var player = get_tree().current_scene.get_node("YSort").get_node("Player")
@@ -46,13 +48,18 @@ func _on_teleport_signal(to_map_name, to_x, to_y) -> void:
 
 func _deferred_goto_scene(to_map_name, to_x, to_y):
 	# It is now safe to remove the current scene
-	current_scene.free()
+	var ref = weakref(current_scene)
+	print('ref', ref)
+	if ref.get_ref():
+		print('current_scene', current_scene)
+		current_scene.free()
 	# Load and instance the new scene.
 	current_scene = ResourceLoader.load(to_map_name).instance()
 	for child in current_scene.get_children():
 		print('--- ', child.get_name())
-	current_scene.get_node("YSort").get_node("Player").position.x = to_x
-	current_scene.get_node("YSort").get_node("Player").position.y = to_y
+	player = current_scene.get_node("YSort").get_node("Player")
+	player.position.x = to_x
+	player.position.y = to_y
 #	current_scene.Ysort.Player.position.x = to_x
 #	current_scene.Ysort.Player.position.y = to_y
 	# Add it to the active scene, as child of root.
@@ -60,9 +67,15 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 	# Optionally, to make it compatible with the SceneTree.change_scene() API.
 	get_tree().set_current_scene(current_scene)
 
-func _on_InteractBox_body_entered(player, npc) -> void:
-	player._on_InteractBox_body_entered(npc)
+func _on_InteractBox_body_entered(_player, npc) -> void:
+	_player._on_InteractBox_body_entered(npc)
 
-func _on_InteractBox_body_exited(player, npc) -> void:
-	player._on_InteractBox_body_exited(npc)
-	
+func _on_InteractBox_body_exited(_player, npc) -> void:
+	_player._on_InteractBox_body_exited(npc)
+
+func _on_word_area_entered(id) -> void:
+	known_words.append(id)
+
+func _on_changelight_entered(color) -> void:
+	change_color = true
+	goal_color = color

@@ -6,8 +6,9 @@
 [ext_resource path="res://World/tilesets/CliffTileset.png" type="Texture" id=7]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
-[ext_resource path="res://Word.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Lexical/Word/Word.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Teleport.tscn" type="PackedScene" id=18]
+
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )

@@ -27,8 +27,7 @@ func initiate_dialog(player):
 	player.animationState.travel("Idle")
 	player.velocity = Vector2.ZERO
 	ui_dialog.player = player
-	ui_dialog.reset_line()
-	print('reset_line from npc initiate dialog')
+	
 
 func _on_InteractBox_body_entered(body):
 	emit_signal('npc_body_entered', body)

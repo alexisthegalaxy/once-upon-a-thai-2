@@ -1,0 +1,3611 @@
+{
+  "0": {
+    "id": 0,
+    "split": "ตุ๊ก-แก",
+    "en": "gecko",
+    "tones": "HM",
+    "pos": "NOUN",
+    "th": "ตุ๊กแก",
+    "teaching_order": -1
+  },
+  "1": {
+    "id": 1,
+    "split": "แมว",
+    "en": "cat",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "แมว",
+    "teaching_order": -1
+  },
+  "2": {
+    "id": 2,
+    "split": "งู",
+    "en": "snake",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "งู",
+    "teaching_order": -1
+  },
+  "3": {
+    "id": 3,
+    "split": "ส-วัส-ดี",
+    "en": "hello",
+    "tones": "LLM",
+    "pos": "INTE",
+    "th": "สวัสดี",
+    "teaching_order": 15
+  },
+  "4": {
+    "id": 4,
+    "split": "ขอบ-คุณ",
+    "en": "thank you",
+    "tones": "LM",
+    "pos": "INTE",
+    "th": "ขอบคุณ",
+    "teaching_order": 16
+  },
+  "5": {
+    "id": 5,
+    "split": "พระ-เจ้า",
+    "en": "my God!",
+    "tones": "HF",
+    "pos": "INTE",
+    "th": "พระเจ้า",
+    "teaching_order": -1
+  },
+  "6": {
+    "id": 6,
+    "split": "เอา-เถอะ",
+    "en": "okay, alright",
+    "tones": "ML",
+    "pos": "INTE",
+    "th": "เอาเถอะ",
+    "teaching_order": -1
+  },
+  "7": {
+    "id": 7,
+    "split": "สา-ธุ",
+    "en": "sadhu",
+    "tones": "RH",
+    "pos": "INTE",
+    "th": "สาธุ",
+    "teaching_order": -1
+  },
+  "8": {
+    "id": 8,
+    "split": "ไม่-เป็น-ไร",
+    "en": "nevermind",
+    "tones": "FMM",
+    "pos": "INTE",
+    "th": "ไม่เป็นไร",
+    "teaching_order": -1
+  },
+  "9": {
+    "id": 9,
+    "split": "ครับ",
+    "en": "(male polite particle)",
+    "tones": "H",
+    "pos": "PART",
+    "th": "ครับ",
+    "teaching_order": 19
+  },
+  "10": {
+    "id": 10,
+    "split": "ไหม",
+    "en": "(question particle)",
+    "tones": "R",
+    "pos": "PART",
+    "th": "ไหม",
+    "teaching_order": 14
+  },
+  "11": {
+    "id": 11,
+    "split": "ค่ะ",
+    "en": "(female polite particle)",
+    "tones": "F",
+    "pos": "PART",
+    "th": "ค่ะ",
+    "teaching_order": 18
+  },
+  "12": {
+    "id": 12,
+    "split": "คะ",
+    "en": "(female polite particle for questions)",
+    "tones": "H",
+    "pos": "PART",
+    "th": "คะ",
+    "teaching_order": -1
+  },
+  "13": {
+    "id": 13,
+    "split": "นะ",
+    "en": "(particle to make sentence softer or more persuasive)",
+    "tones": "F",
+    "pos": "PART",
+    "th": "นะ",
+    "teaching_order": -1
+  },
+  "14": {
+    "id": 14,
+    "split": "ซะ",
+    "en": "(particle implying it must be done quickly or completely)",
+    "tones": "R",
+    "pos": "PART",
+    "th": "ซะ",
+    "teaching_order": -1
+  },
+  "15": {
+    "id": 15,
+    "split": "ล่ะ",
+    "en": "(question particle showing a change of state)",
+    "tones": "F",
+    "pos": "PART",
+    "th": "ล่ะ",
+    "teaching_order": -1
+  },
+  "16": {
+    "id": 16,
+    "split": "เหรอ",
+    "en": "(question particle to make it softer, or seeking confirmation)",
+    "tones": "R",
+    "pos": "PART",
+    "th": "เหรอ",
+    "teaching_order": -1
+  },
+  "17": {
+    "id": 17,
+    "split": "เถอะ",
+    "en": "(particle with a sense of urging, like [let's] in English)",
+    "tones": "L",
+    "pos": "PART",
+    "th": "เถอะ",
+    "teaching_order": -1
+  },
+  "18": {
+    "id": 18,
+    "split": "แก้ว",
+    "en": "glass, classifier for glasses",
+    "tones": "F",
+    "pos": "NOUN, CLAS",
+    "th": "แก้ว",
+    "teaching_order": -1
+  },
+  "19": {
+    "id": 19,
+    "split": "เครื่อง",
+    "en": "machine, classifier for machines",
+    "tones": "F",
+    "pos": "NOUN, CLAS",
+    "th": "เครื่อง",
+    "teaching_order": -1
+  },
+  "20": {
+    "id": 20,
+    "split": "รูป",
+    "en": "classifier for pictures and monks",
+    "tones": "F",
+    "pos": "CLAS",
+    "th": "รูป",
+    "teaching_order": -1
+  },
+  "21": {
+    "id": 21,
+    "split": "หลัง",
+    "en": "next / classifier for house",
+    "tones": "R",
+    "pos": "ADJ, CLAS",
+    "th": "หลัง",
+    "teaching_order": -1
+  },
+  "22": {
+    "id": 22,
+    "split": "สาย",
+    "en": "to be late / line, classifier for roads, rivers",
+    "tones": "R",
+    "pos": "ADJ, CLAS",
+    "th": "สาย",
+    "teaching_order": -1
+  },
+  "23": {
+    "id": 23,
+    "split": "ผม",
+    "en": "I (male)",
+    "tones": "R",
+    "pos": "PRON",
+    "th": "ผม",
+    "teaching_order": 2
+  },
+  "24": {
+    "id": 24,
+    "split": "ฉัน",
+    "en": "I (female)",
+    "tones": "R",
+    "pos": "PRON",
+    "th": "ฉัน",
+    "teaching_order": 1
+  },
+  "25": {
+    "id": 25,
+    "split": "เธอ",
+    "en": "she",
+    "tones": "M",
+    "pos": "PRON",
+    "th": "เธอ",
+    "teaching_order": 61
+  },
+  "26": {
+    "id": 26,
+    "split": "เขา",
+    "en": "he, she, they",
+    "tones": "R",
+    "pos": "PRON",
+    "th": "เขา",
+    "teaching_order": 11
+  },
+  "27": {
+    "id": 27,
+    "split": "มัน",
+    "en": "it",
+    "tones": "M",
+    "pos": "PRON",
+    "th": "มัน",
+    "teaching_order": 62
+  },
+  "28": {
+    "id": 28,
+    "split": "คุณ",
+    "en": "you",
+    "tones": "M",
+    "pos": "PRON",
+    "th": "คุณ",
+    "teaching_order": 3
+  },
+  "29": {
+    "id": 29,
+    "split": "เรา",
+    "en": "we / I (familiar)",
+    "tones": "M",
+    "pos": "PRON",
+    "th": "เรา",
+    "teaching_order": -1
+  },
+  "30": {
+    "id": 30,
+    "split": "พวก-เรา",
+    "en": "we",
+    "tones": "M",
+    "pos": "PRON",
+    "th": "พวกเรา",
+    "teaching_order": -1
+  },
+  "31": {
+    "id": 31,
+    "split": "นี้",
+    "en": "this (subject)",
+    "tones": "H",
+    "pos": "PRON",
+    "th": "นี้",
+    "teaching_order": 68
+  },
+  "32": {
+    "id": 32,
+    "split": "นั่น",
+    "en": "that (subject)",
+    "tones": "F",
+    "pos": "PRON",
+    "th": "นั่น",
+    "teaching_order": 69
+  },
+  "33": {
+    "id": 33,
+    "split": "โน่น",
+    "en": "that (far)",
+    "tones": "F",
+    "pos": "PRON",
+    "th": "โน่น",
+    "teaching_order": -1
+  },
+  "34": {
+    "id": 34,
+    "split": "ตัว-เอง",
+    "en": "self, own",
+    "tones": "MM",
+    "pos": "PRON",
+    "th": "ตัวเอง",
+    "teaching_order": -1
+  },
+  "35": {
+    "id": 35,
+    "split": "ทุก-คน",
+    "en": "everyone",
+    "tones": "HM",
+    "pos": "PRON",
+    "th": "ทุกคน",
+    "teaching_order": -1
+  },
+  "36": {
+    "id": 36,
+    "split": "พวก-เขา",
+    "en": "they",
+    "tones": "FR",
+    "pos": "PRON",
+    "th": "พวกเขา",
+    "teaching_order": -1
+  },
+  "37": {
+    "id": 37,
+    "split": "ที่-นี่",
+    "en": "here",
+    "tones": "FF",
+    "pos": "LOCA",
+    "th": "ที่นี่",
+    "teaching_order": -1
+  },
+  "38": {
+    "id": 38,
+    "split": "ที่-นั่น",
+    "en": "there",
+    "tones": "FF",
+    "pos": "LOCA",
+    "th": "ที่นั่น",
+    "teaching_order": -1
+  },
+  "39": {
+    "id": 39,
+    "split": "ไม่",
+    "en": "not",
+    "tones": "F",
+    "pos": "NEG",
+    "th": "ไม่",
+    "teaching_order": 13
+  },
+  "40": {
+    "id": 40,
+    "split": "ของ",
+    "en": "of",
+    "tones": "R",
+    "pos": "OF",
+    "th": "ของ",
+    "teaching_order": 12
+  },
+  "41": {
+    "id": 41,
+    "split": "แต่",
+    "en": "but",
+    "tones": "L",
+    "pos": "CONJ",
+    "th": "แต่",
+    "teaching_order": -1
+  },
+  "42": {
+    "id": 42,
+    "split": "จะ",
+    "en": "will (future)",
+    "tones": "L",
+    "pos": "WILL",
+    "th": "จะ",
+    "teaching_order": -1
+  },
+  "43": {
+    "id": 43,
+    "split": "จาก",
+    "en": "from",
+    "tones": "L",
+    "pos": "PREP",
+    "th": "จาก",
+    "teaching_order": -1
+  },
+  "44": {
+    "id": 44,
+    "split": "ใน",
+    "en": "in",
+    "tones": "M",
+    "pos": "PREP",
+    "th": "ใน",
+    "teaching_order": -1
+  },
+  "45": {
+    "id": 45,
+    "split": "ที่",
+    "en": "to, at, that",
+    "tones": "F",
+    "pos": "PREP",
+    "th": "ที่",
+    "teaching_order": -1
+  },
+  "46": {
+    "id": 46,
+    "split": "กับ",
+    "en": "with",
+    "tones": "L",
+    "pos": "PREP",
+    "th": "กับ",
+    "teaching_order": -1
+  },
+  "47": {
+    "id": 47,
+    "split": "ใต้",
+    "en": "under, south",
+    "tones": "F",
+    "pos": "PREP, NOUN",
+    "th": "ใต้",
+    "teaching_order": -1
+  },
+  "48": {
+    "id": 48,
+    "split": "เหนือ",
+    "en": "over, north",
+    "tones": "R",
+    "pos": "PREP, NOUN",
+    "th": "เหนือ",
+    "teaching_order": -1
+  },
+  "49": {
+    "id": 49,
+    "split": "เรื่อง",
+    "en": "about",
+    "tones": "F",
+    "pos": "PREP",
+    "th": "เรื่อง",
+    "teaching_order": -1
+  },
+  "50": {
+    "id": 50,
+    "split": "เหมือน",
+    "en": "like, as",
+    "tones": "R",
+    "pos": "PREP",
+    "th": "เหมือน",
+    "teaching_order": -1
+  },
+  "51": {
+    "id": 51,
+    "split": "ให้",
+    "en": "to, for (somebody), so that",
+    "tones": "F",
+    "pos": "PREP",
+    "th": "ให้",
+    "teaching_order": -1
+  },
+  "52": {
+    "id": 52,
+    "split": "ด้วย",
+    "en": "as well, with",
+    "tones": "F",
+    "pos": "PREP",
+    "th": "ด้วย",
+    "teaching_order": -1
+  },
+  "53": {
+    "id": 53,
+    "split": "หน้า",
+    "en": "in front of",
+    "tones": "F",
+    "pos": "PREP",
+    "th": "หน้า",
+    "teaching_order": -1
+  },
+  "54": {
+    "id": 54,
+    "split": "เกี่ยว-กับ",
+    "en": "about",
+    "tones": "LL",
+    "pos": "OF",
+    "th": "เกี่ยวกับ",
+    "teaching_order": -1
+  },
+  "55": {
+    "id": 55,
+    "split": "ใคร",
+    "en": "who",
+    "tones": "M",
+    "pos": "None",
+    "th": "ใคร",
+    "teaching_order": 36
+  },
+  "56": {
+    "id": 56,
+    "split": "อะ-ไร",
+    "en": "what",
+    "tones": "LM",
+    "pos": "None",
+    "th": "อะไร",
+    "teaching_order": 34
+  },
+  "57": {
+    "id": 57,
+    "split": "ที่-ไหน",
+    "en": "where",
+    "tones": "FR",
+    "pos": "None",
+    "th": "ที่ไหน",
+    "teaching_order": 35
+  },
+  "58": {
+    "id": 58,
+    "split": "เมื่อ-ไหร่",
+    "en": "when",
+    "tones": "FL",
+    "pos": "None",
+    "th": "เมื่อไหร่",
+    "teaching_order": 37
+  },
+  "59": {
+    "id": 59,
+    "split": "ทำ-ไม",
+    "en": "why",
+    "tones": "MM",
+    "pos": "None",
+    "th": "ทำไม",
+    "teaching_order": 38
+  },
+  "60": {
+    "id": 60,
+    "split": "ยัง-ไง",
+    "en": "how",
+    "tones": "MM",
+    "pos": "None",
+    "th": "ยังไง",
+    "teaching_order": 39
+  },
+  "61": {
+    "id": 61,
+    "split": "เท่า-ไหร่",
+    "en": "how much",
+    "tones": "FL",
+    "pos": "None",
+    "th": "เท่าไหร่",
+    "teaching_order": -1
+  },
+  "62": {
+    "id": 62,
+    "split": "จาก-ไหน",
+    "en": "from where",
+    "tones": "LR",
+    "pos": "None",
+    "th": "จากไหน",
+    "teaching_order": -1
+  },
+  "63": {
+    "id": 63,
+    "split": "หรือ-ไง",
+    "en": "or what?",
+    "tones": "RM",
+    "pos": "None",
+    "th": "หรือไง",
+    "teaching_order": -1
+  },
+  "64": {
+    "id": 64,
+    "split": "วัน-นี้",
+    "en": "today",
+    "tones": "MH",
+    "pos": "None",
+    "th": "วันนี้",
+    "teaching_order": -1
+  },
+  "65": {
+    "id": 65,
+    "split": "พรุ่ง-นี้",
+    "en": "tomorrow",
+    "tones": "FH",
+    "pos": "None",
+    "th": "พรุ่งนี้",
+    "teaching_order": -1
+  },
+  "66": {
+    "id": 66,
+    "split": "เมื่อ-วาน-นี้",
+    "en": "yesterday",
+    "tones": "FMH",
+    "pos": "None",
+    "th": "เมื่อวานนี้",
+    "teaching_order": -1
+  },
+  "67": {
+    "id": 67,
+    "split": "ตอน-นี้",
+    "en": "now",
+    "tones": "MH",
+    "pos": "None",
+    "th": "ตอนนี้",
+    "teaching_order": -1
+  },
+  "68": {
+    "id": 68,
+    "split": "คืน-นี้",
+    "en": "tonight",
+    "tones": "MH",
+    "pos": "None",
+    "th": "คืนนี้",
+    "teaching_order": -1
+  },
+  "69": {
+    "id": 69,
+    "split": "เมื่อ-คืน-นี้",
+    "en": "last night",
+    "tones": "FMH",
+    "pos": "None",
+    "th": "เมื่อคืนนี้",
+    "teaching_order": -1
+  },
+  "70": {
+    "id": 70,
+    "split": "อา-ทิตย์ห-น้า",
+    "en": "next week",
+    "tones": "MHF",
+    "pos": "None",
+    "th": "อาทิตย์หน้า",
+    "teaching_order": -1
+  },
+  "71": {
+    "id": 71,
+    "split": "ทุก-วัน",
+    "en": "every day",
+    "tones": "HM",
+    "pos": "None",
+    "th": "ทุกวัน",
+    "teaching_order": -1
+  },
+  "72": {
+    "id": 72,
+    "split": "เส-มอ",
+    "en": "always",
+    "tones": "LR",
+    "pos": "None",
+    "th": "เสมอ",
+    "teaching_order": -1
+  },
+  "73": {
+    "id": 73,
+    "split": "บ่อย-ๆ",
+    "en": "often",
+    "tones": "LL",
+    "pos": "None",
+    "th": "บ่อยๆ",
+    "teaching_order": -1
+  },
+  "74": {
+    "id": 74,
+    "split": "บาง-ครั้ง",
+    "en": "sometimes",
+    "tones": "MH",
+    "pos": "None",
+    "th": "บางครั้ง",
+    "teaching_order": -1
+  },
+  "75": {
+    "id": 75,
+    "split": "เมื่อ-เช้า",
+    "en": "this morning",
+    "tones": "FH",
+    "pos": "None",
+    "th": "เมื่อเช้า",
+    "teaching_order": -1
+  },
+  "76": {
+    "id": 76,
+    "split": "ตอน-เช้า",
+    "en": "in the morning",
+    "tones": "MH",
+    "pos": "None",
+    "th": "ตอนเช้า",
+    "teaching_order": -1
+  },
+  "77": {
+    "id": 77,
+    "split": "ตอน-บ่าย",
+    "en": "in the afternoon",
+    "tones": "ML",
+    "pos": "None",
+    "th": "ตอนบ่าย",
+    "teaching_order": -1
+  },
+  "78": {
+    "id": 78,
+    "split": "ตอน-เย็น",
+    "en": "in the evening",
+    "tones": "MM",
+    "pos": "None",
+    "th": "ตอนเย็น",
+    "teaching_order": -1
+  },
+  "79": {
+    "id": 79,
+    "split": "ก่อน",
+    "en": "first, before",
+    "tones": "L",
+    "pos": "None",
+    "th": "ก่อน",
+    "teaching_order": -1
+  },
+  "80": {
+    "id": 80,
+    "split": "นาน",
+    "en": "for a long time",
+    "tones": "M",
+    "pos": "None",
+    "th": "นาน",
+    "teaching_order": -1
+  },
+  "81": {
+    "id": 81,
+    "split": "อา-ทิตย์",
+    "en": "week",
+    "tones": "MH",
+    "pos": "NOUN",
+    "th": "อาทิตย์",
+    "teaching_order": -1
+  },
+  "82": {
+    "id": 82,
+    "split": "ดี",
+    "en": "good",
+    "tones": "M",
+    "pos": "ADJ",
+    "th": "ดี",
+    "teaching_order": 32
+  },
+  "83": {
+    "id": 83,
+    "split": "ใหญ่",
+    "en": "big",
+    "tones": "L",
+    "pos": "ADJ",
+    "th": "ใหญ่",
+    "teaching_order": -1
+  },
+  "84": {
+    "id": 84,
+    "split": "ยาว",
+    "en": "long",
+    "tones": "M",
+    "pos": "ADJ",
+    "th": "ยาว",
+    "teaching_order": -1
+  },
+  "85": {
+    "id": 85,
+    "split": "สั้น",
+    "en": "short",
+    "tones": "F",
+    "pos": "ADJ",
+    "th": "สั้น",
+    "teaching_order": -1
+  },
+  "86": {
+    "id": 86,
+    "split": "แคบ",
+    "en": "narrow",
+    "tones": "F",
+    "pos": "ADJ",
+    "th": "แคบ",
+    "teaching_order": -1
+  },
+  "87": {
+    "id": 87,
+    "split": "ลึก",
+    "en": "deep",
+    "tones": "R",
+    "pos": "ADJ",
+    "th": "ลึก",
+    "teaching_order": -1
+  },
+  "88": {
+    "id": 88,
+    "split": "แข็ง",
+    "en": "hard",
+    "tones": "R",
+    "pos": "ADJ",
+    "th": "แข็ง",
+    "teaching_order": -1
+  },
+  "89": {
+    "id": 89,
+    "split": "หิว",
+    "en": "hungry, thirsty",
+    "tones": "R",
+    "pos": "ADJ",
+    "th": "หิว",
+    "teaching_order": -1
+  },
+  "90": {
+    "id": 90,
+    "split": "เร็ว",
+    "en": "fast",
+    "tones": "M",
+    "pos": "ADJ",
+    "th": "เร็ว",
+    "teaching_order": -1
+  },
+  "91": {
+    "id": 91,
+    "split": "ง่วง",
+    "en": "sleepy",
+    "tones": "F",
+    "pos": "ADJ",
+    "th": "ง่วง",
+    "teaching_order": -1
+  },
+  "92": {
+    "id": 92,
+    "split": "ดึก",
+    "en": "late",
+    "tones": "L",
+    "pos": "ADJ",
+    "th": "ดึก",
+    "teaching_order": -1
+  },
+  "93": {
+    "id": 93,
+    "split": "ใกล้",
+    "en": "near",
+    "tones": "F",
+    "pos": "ADJ",
+    "th": "ใกล้",
+    "teaching_order": -1
+  },
+  "94": {
+    "id": 94,
+    "split": "โปรด",
+    "en": "favorite",
+    "tones": "L",
+    "pos": "ADJ",
+    "th": "โปรด",
+    "teaching_order": -1
+  },
+  "95": {
+    "id": 95,
+    "split": "พอ",
+    "en": "enough",
+    "tones": "M",
+    "pos": "ADJ",
+    "th": "พอ",
+    "teaching_order": -1
+  },
+  "96": {
+    "id": 96,
+    "split": "ไกล",
+    "en": "far",
+    "tones": "M",
+    "pos": "ADJ",
+    "th": "ไกล",
+    "teaching_order": -1
+  },
+  "97": {
+    "id": 97,
+    "split": "ว่าง",
+    "en": "free",
+    "tones": "F",
+    "pos": "ADJ",
+    "th": "ว่าง",
+    "teaching_order": -1
+  },
+  "98": {
+    "id": 98,
+    "split": "หล่อ",
+    "en": "handsome",
+    "tones": "L",
+    "pos": "ADJ",
+    "th": "หล่อ",
+    "teaching_order": -1
+  },
+  "99": {
+    "id": 99,
+    "split": "อ้วน",
+    "en": "fat, overweight",
+    "tones": "F",
+    "pos": "ADJ",
+    "th": "อ้วน",
+    "teaching_order": -1
+  },
+  "100": {
+    "id": 100,
+    "split": "เหนื่อย",
+    "en": "tired",
+    "tones": "L",
+    "pos": "ADJ",
+    "th": "เหนื่อย",
+    "teaching_order": -1
+  },
+  "101": {
+    "id": 101,
+    "split": "สี-เงิน",
+    "en": "silver",
+    "tones": "RM",
+    "pos": "ADJ",
+    "th": "สีเงิน",
+    "teaching_order": -1
+  },
+  "102": {
+    "id": 102,
+    "split": "สี-ส้ม",
+    "en": "orange",
+    "tones": "RF",
+    "pos": "ADJ",
+    "th": "สีส้ม",
+    "teaching_order": -1
+  },
+  "103": {
+    "id": 103,
+    "split": "สี-เหลือง",
+    "en": "yellow",
+    "tones": "RR",
+    "pos": "ADJ",
+    "th": "สีเหลือง",
+    "teaching_order": -1
+  },
+  "104": {
+    "id": 104,
+    "split": "สี-แดง",
+    "en": "red",
+    "tones": "RM",
+    "pos": "ADJ",
+    "th": "สีแดง",
+    "teaching_order": -1
+  },
+  "105": {
+    "id": 105,
+    "split": "สี-ม่วง",
+    "en": "purple",
+    "tones": "RF",
+    "pos": "ADJ",
+    "th": "สีม่วง",
+    "teaching_order": -1
+  },
+  "106": {
+    "id": 106,
+    "split": "ที่-แล้ว",
+    "en": "previous",
+    "tones": "FH",
+    "pos": "ADJ",
+    "th": "ที่แล้ว",
+    "teaching_order": -1
+  },
+  "107": {
+    "id": 107,
+    "split": "สี-ฟ้า",
+    "en": "blue",
+    "tones": "RH",
+    "pos": "ADJ",
+    "th": "สีฟ้า",
+    "teaching_order": 70
+  },
+  "108": {
+    "id": 108,
+    "split": "สี-เขียว",
+    "en": "green",
+    "tones": "RR",
+    "pos": "ADJ",
+    "th": "สีเขียว",
+    "teaching_order": -1
+  },
+  "109": {
+    "id": 109,
+    "split": "สี-ดำ",
+    "en": "black",
+    "tones": "RM",
+    "pos": "ADJ",
+    "th": "สีดำ",
+    "teaching_order": -1
+  },
+  "110": {
+    "id": 110,
+    "split": "สี-ขาว",
+    "en": "white",
+    "tones": "RR",
+    "pos": "ADJ",
+    "th": "สีขาว",
+    "teaching_order": -1
+  },
+  "111": {
+    "id": 111,
+    "split": "สี-เทา",
+    "en": "grey",
+    "tones": "RM",
+    "pos": "ADJ",
+    "th": "สีเทา",
+    "teaching_order": -1
+  },
+  "112": {
+    "id": 112,
+    "split": "คน-เดียว",
+    "en": "alone",
+    "tones": "MM",
+    "pos": "ADJ",
+    "th": "คนเดียว",
+    "teaching_order": -1
+  },
+  "113": {
+    "id": 113,
+    "split": "วิ-เศษ",
+    "en": "magical",
+    "tones": "HL",
+    "pos": "ADJ",
+    "th": "วิเศษ",
+    "teaching_order": -1
+  },
+  "114": {
+    "id": 114,
+    "split": "สุด-ท้าย",
+    "en": "last",
+    "tones": "LH",
+    "pos": "ADJ",
+    "th": "สุดท้าย",
+    "teaching_order": -1
+  },
+  "115": {
+    "id": 115,
+    "split": "ใจ-เย็น",
+    "en": "calm, cool-headed",
+    "tones": "MM",
+    "pos": "ADJ",
+    "th": "ใจเย็น",
+    "teaching_order": -1
+  },
+  "116": {
+    "id": 116,
+    "split": "ใจ-ร้อน",
+    "en": "hot-tempered",
+    "tones": "MH",
+    "pos": "ADJ",
+    "th": "ใจร้อน",
+    "teaching_order": -1
+  },
+  "117": {
+    "id": 117,
+    "split": "สี-น้ำ-ตาล",
+    "en": "brown",
+    "tones": "RHM",
+    "pos": "ADJ",
+    "th": "สีน้ำตาล",
+    "teaching_order": -1
+  },
+  "118": {
+    "id": 118,
+    "split": "มี-ความ-สุข",
+    "en": "to be happy",
+    "tones": "MML",
+    "pos": "VERB",
+    "th": "มีความสุข",
+    "teaching_order": -1
+  },
+  "119": {
+    "id": 119,
+    "split": "สี-ชม-พู",
+    "en": "pink",
+    "tones": "RMM",
+    "pos": "ADJ",
+    "th": "สีชมพู",
+    "teaching_order": -1
+  },
+  "120": {
+    "id": 120,
+    "split": "กำ-ลัง-ดี",
+    "en": "just right",
+    "tones": "MMM",
+    "pos": "ADJ",
+    "th": "กำลังดี",
+    "teaching_order": -1
+  },
+  "121": {
+    "id": 121,
+    "split": "สี-น้ำ-เงิน",
+    "en": "dark blue",
+    "tones": "RHM",
+    "pos": "ADJ",
+    "th": "สีน้ำเงิน",
+    "teaching_order": -1
+  },
+  "122": {
+    "id": 122,
+    "split": "สี",
+    "en": "color",
+    "tones": "R",
+    "pos": "ADJ",
+    "th": "สี",
+    "teaching_order": -1
+  },
+  "123": {
+    "id": 123,
+    "split": "เหลือง",
+    "en": "(yellow)",
+    "tones": "R",
+    "pos": "None",
+    "th": "เหลือง",
+    "teaching_order": -1
+  },
+  "124": {
+    "id": 124,
+    "split": "ส้ม",
+    "en": "(orange)",
+    "tones": "F",
+    "pos": "None",
+    "th": "ส้ม",
+    "teaching_order": -1
+  },
+  "125": {
+    "id": 125,
+    "split": "แดง",
+    "en": "(red)",
+    "tones": "M",
+    "pos": "None",
+    "th": "แดง",
+    "teaching_order": -1
+  },
+  "126": {
+    "id": 126,
+    "split": "ม่วง",
+    "en": "(purple)",
+    "tones": "F",
+    "pos": "None",
+    "th": "ม่วง",
+    "teaching_order": -1
+  },
+  "127": {
+    "id": 127,
+    "split": "ฟ้า",
+    "en": "sky",
+    "tones": "H",
+    "pos": "NOUN",
+    "th": "ฟ้า",
+    "teaching_order": -1
+  },
+  "128": {
+    "id": 128,
+    "split": "เงิน",
+    "en": "money",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "เงิน",
+    "teaching_order": -1
+  },
+  "129": {
+    "id": 129,
+    "split": "เขียว",
+    "en": "green",
+    "tones": "R",
+    "pos": "ADJ",
+    "th": "เขียว",
+    "teaching_order": -1
+  },
+  "130": {
+    "id": 130,
+    "split": "ตาล",
+    "en": "sugar palm",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "ตาล",
+    "teaching_order": -1
+  },
+  "131": {
+    "id": 131,
+    "split": "ขาว",
+    "en": "(white)",
+    "tones": "R",
+    "pos": "None",
+    "th": "ขาว",
+    "teaching_order": -1
+  },
+  "132": {
+    "id": 132,
+    "split": "ดำ",
+    "en": "dark, black",
+    "tones": "M",
+    "pos": "ADJ",
+    "th": "ดำ",
+    "teaching_order": -1
+  },
+  "133": {
+    "id": 133,
+    "split": "เทา",
+    "en": "(grey)",
+    "tones": "M",
+    "pos": "",
+    "th": "เทา",
+    "teaching_order": -1
+  },
+  "134": {
+    "id": 134,
+    "split": "หมา",
+    "en": "dog",
+    "tones": "R",
+    "pos": "NOUN",
+    "th": "หมา",
+    "teaching_order": -1
+  },
+  "135": {
+    "id": 135,
+    "split": "หนู",
+    "en": "mouse",
+    "tones": "R",
+    "pos": "NOUN",
+    "th": "หนู",
+    "teaching_order": -1
+  },
+  "136": {
+    "id": 136,
+    "split": "ช้าง",
+    "en": "elephant",
+    "tones": "H",
+    "pos": "NOUN",
+    "th": "ช้าง",
+    "teaching_order": -1
+  },
+  "137": {
+    "id": 137,
+    "split": "ลิง",
+    "en": "monkey",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "ลิง",
+    "teaching_order": -1
+  },
+  "138": {
+    "id": 138,
+    "split": "ปลา",
+    "en": "fish",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "ปลา",
+    "teaching_order": -1
+  },
+  "139": {
+    "id": 139,
+    "split": "นก",
+    "en": "bird",
+    "tones": "H",
+    "pos": "NOUN",
+    "th": "นก",
+    "teaching_order": -1
+  },
+  "140": {
+    "id": 140,
+    "split": "เสือ",
+    "en": "tiger",
+    "tones": "R",
+    "pos": "NOUN",
+    "th": "เสือ",
+    "teaching_order": -1
+  },
+  "141": {
+    "id": 141,
+    "split": "ผี-เสื้อ",
+    "en": "butterfly",
+    "tones": "RF",
+    "pos": "NOUN",
+    "th": "ผีเสื้อ",
+    "teaching_order": -1
+  },
+  "142": {
+    "id": 142,
+    "split": "สอบ",
+    "en": "exam",
+    "tones": "L",
+    "pos": "NOUN",
+    "th": "สอบ",
+    "teaching_order": -1
+  },
+  "143": {
+    "id": 143,
+    "split": "ดิน",
+    "en": "ground",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "ดิน",
+    "teaching_order": -1
+  },
+  "144": {
+    "id": 144,
+    "split": "รถ",
+    "en": "car",
+    "tones": "H",
+    "pos": "NOUN",
+    "th": "รถ",
+    "teaching_order": -1
+  },
+  "145": {
+    "id": 145,
+    "split": "ไฟ",
+    "en": "fire",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "ไฟ",
+    "teaching_order": -1
+  },
+  "146": {
+    "id": 146,
+    "split": "ลม",
+    "en": "wind, air",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "ลม",
+    "teaching_order": -1
+  },
+  "147": {
+    "id": 147,
+    "split": "บ้าน",
+    "en": "home, house",
+    "tones": "F",
+    "pos": "NOUN",
+    "th": "บ้าน",
+    "teaching_order": 8
+  },
+  "148": {
+    "id": 148,
+    "split": "ขวด",
+    "en": "bottle",
+    "tones": "L",
+    "pos": "NOUN",
+    "th": "ขวด",
+    "teaching_order": -1
+  },
+  "149": {
+    "id": 149,
+    "split": "เด็ก",
+    "en": "child",
+    "tones": "L",
+    "pos": "NOUN",
+    "th": "เด็ก",
+    "teaching_order": -1
+  },
+  "150": {
+    "id": 150,
+    "split": "ครู",
+    "en": "teacher",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "ครู",
+    "teaching_order": -1
+  },
+  "151": {
+    "id": 151,
+    "split": "หมอ",
+    "en": "doctor",
+    "tones": "R",
+    "pos": "NOUN",
+    "th": "หมอ",
+    "teaching_order": -1
+  },
+  "152": {
+    "id": 152,
+    "split": "จีน",
+    "en": "China",
+    "tones": "M",
+    "pos": "PLAC",
+    "th": "จีน",
+    "teaching_order": -1
+  },
+  "153": {
+    "id": 153,
+    "split": "กล้วย",
+    "en": "banana",
+    "tones": "F",
+    "pos": "NOUN",
+    "th": "กล้วย",
+    "teaching_order": -1
+  },
+  "154": {
+    "id": 154,
+    "split": "เค้ก",
+    "en": "cake",
+    "tones": "H",
+    "pos": "NOUN",
+    "th": "เค้ก",
+    "teaching_order": -1
+  },
+  "155": {
+    "id": 155,
+    "split": "ข้าว",
+    "en": "rice",
+    "tones": "F",
+    "pos": "NOUN",
+    "th": "ข้าว",
+    "teaching_order": 23
+  },
+  "156": {
+    "id": 156,
+    "split": "น้ำ",
+    "en": "water",
+    "tones": "H",
+    "pos": "NOUN",
+    "th": "น้ำ",
+    "teaching_order": 22
+  },
+  "157": {
+    "id": 157,
+    "split": "เหล้า",
+    "en": "alcohol",
+    "tones": "F",
+    "pos": "NOUN",
+    "th": "เหล้า",
+    "teaching_order": -1
+  },
+  "158": {
+    "id": 158,
+    "split": "ลาว",
+    "en": "Laos",
+    "tones": "M",
+    "pos": "PLAC",
+    "th": "ลาว",
+    "teaching_order": -1
+  },
+  "159": {
+    "id": 159,
+    "split": "ฝรั่ง",
+    "en": "guava, Westerner",
+    "tones": "LL",
+    "pos": "NOUN",
+    "th": "ฝรั่ง",
+    "teaching_order": 65
+  },
+  "160": {
+    "id": 160,
+    "split": "บาท",
+    "en": "Baht",
+    "tones": "L",
+    "pos": "NOUN",
+    "th": "บาท",
+    "teaching_order": -1
+  },
+  "161": {
+    "id": 161,
+    "split": "หนัง",
+    "en": "???",
+    "tones": "R",
+    "pos": "None",
+    "th": "หนัง",
+    "teaching_order": -1
+  },
+  "162": {
+    "id": 162,
+    "split": "ทอง",
+    "en": "gold",
+    "tones": "M",
+    "pos": "ADJ",
+    "th": "ทอง",
+    "teaching_order": -1
+  },
+  "163": {
+    "id": 163,
+    "split": "ไม้",
+    "en": "tree",
+    "tones": "H",
+    "pos": "NOUN",
+    "th": "ไม้",
+    "teaching_order": -1
+  },
+  "164": {
+    "id": 164,
+    "split": "วัน",
+    "en": "day",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "วัน",
+    "teaching_order": -1
+  },
+  "165": {
+    "id": 165,
+    "split": "เดือน",
+    "en": "month",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "เดือน",
+    "teaching_order": -1
+  },
+  "166": {
+    "id": 166,
+    "split": "เสื้อ",
+    "en": "shirt",
+    "tones": "F",
+    "pos": "NOUN",
+    "th": "เสื้อ",
+    "teaching_order": -1
+  },
+  "167": {
+    "id": 167,
+    "split": "ผี",
+    "en": "ghost, spirit",
+    "tones": "R",
+    "pos": "NOUN",
+    "th": "ผี",
+    "teaching_order": -1
+  },
+  "168": {
+    "id": 168,
+    "split": "ปี",
+    "en": "year",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "ปี",
+    "teaching_order": -1
+  },
+  "169": {
+    "id": 169,
+    "split": "ค่า",
+    "en": "cost",
+    "tones": "F",
+    "pos": "NOUN",
+    "th": "ค่า",
+    "teaching_order": -1
+  },
+  "170": {
+    "id": 170,
+    "split": "เพื่อน",
+    "en": "friend",
+    "tones": "F",
+    "pos": "NOUN",
+    "th": "เพื่อน",
+    "teaching_order": -1
+  },
+  "171": {
+    "id": 171,
+    "split": "ยิ้ม",
+    "en": "smile, to smile",
+    "tones": "H",
+    "pos": "VERB",
+    "th": "ยิ้ม",
+    "teaching_order": -1
+  },
+  "172": {
+    "id": 172,
+    "split": "แล้ว",
+    "en": "already",
+    "tones": "H",
+    "pos": "None",
+    "th": "แล้ว",
+    "teaching_order": -1
+  },
+  "173": {
+    "id": 173,
+    "split": "เยอะ",
+    "en": "(too) much",
+    "tones": "H",
+    "pos": "None",
+    "th": "เยอะ",
+    "teaching_order": -1
+  },
+  "174": {
+    "id": 174,
+    "split": "ทุก",
+    "en": "each",
+    "tones": "H",
+    "pos": "None",
+    "th": "ทุก",
+    "teaching_order": -1
+  },
+  "175": {
+    "id": 175,
+    "split": "อย่า",
+    "en": "don't",
+    "tones": "L",
+    "pos": "None",
+    "th": "อย่า",
+    "teaching_order": -1
+  },
+  "176": {
+    "id": 176,
+    "split": "เอง",
+    "en": "oneself",
+    "tones": "M",
+    "pos": "None",
+    "th": "เอง",
+    "teaching_order": -1
+  },
+  "177": {
+    "id": 177,
+    "split": "เคย",
+    "en": "ever",
+    "tones": "M",
+    "pos": "None",
+    "th": "เคย",
+    "teaching_order": -1
+  },
+  "178": {
+    "id": 178,
+    "split": "เพราะ",
+    "en": "because",
+    "tones": "H",
+    "pos": "None",
+    "th": "เพราะ",
+    "teaching_order": -1
+  },
+  "179": {
+    "id": 179,
+    "split": "ใช่",
+    "en": "yes / right?",
+    "tones": "F",
+    "pos": "None",
+    "th": "ใช่",
+    "teaching_order": 25
+  },
+  "180": {
+    "id": 180,
+    "split": "ยัง",
+    "en": "still, yet",
+    "tones": "M",
+    "pos": "None",
+    "th": "ยัง",
+    "teaching_order": -1
+  },
+  "181": {
+    "id": 181,
+    "split": "การ",
+    "en": "(prefix converting verbs into nouns)",
+    "tones": "M",
+    "pos": "None",
+    "th": "การ",
+    "teaching_order": -1
+  },
+  "182": {
+    "id": 182,
+    "split": "กว่า",
+    "en": "more",
+    "tones": "L",
+    "pos": "None",
+    "th": "กว่า",
+    "teaching_order": -1
+  },
+  "183": {
+    "id": 183,
+    "split": "บ้าง",
+    "en": "some",
+    "tones": "F",
+    "pos": "None",
+    "th": "บ้าง",
+    "teaching_order": -1
+  },
+  "184": {
+    "id": 184,
+    "split": "ว่า",
+    "en": "(think, say, etc.) that",
+    "tones": "F",
+    "pos": "None",
+    "th": "ว่า",
+    "teaching_order": -1
+  },
+  "185": {
+    "id": 185,
+    "split": "พระ",
+    "en": "Buddha image, monk",
+    "tones": "H",
+    "pos": "NOUN, CLAS",
+    "th": "พระ",
+    "teaching_order": 67
+  },
+  "186": {
+    "id": 186,
+    "split": "ตัว",
+    "en": "body",
+    "tones": "M",
+    "pos": "None",
+    "th": "ตัว",
+    "teaching_order": -1
+  },
+  "187": {
+    "id": 187,
+    "split": "แฟน",
+    "en": "lover",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "แฟน",
+    "teaching_order": -1
+  },
+  "188": {
+    "id": 188,
+    "split": "ใจ",
+    "en": "heart, mind, spirit",
+    "tones": "M",
+    "pos": "NONU",
+    "th": "ใจ",
+    "teaching_order": -1
+  },
+  "189": {
+    "id": 189,
+    "split": "หัว",
+    "en": "head",
+    "tones": "R",
+    "pos": "NOUN",
+    "th": "หัว",
+    "teaching_order": -1
+  },
+  "190": {
+    "id": 190,
+    "split": "ผม",
+    "en": "hair",
+    "tones": "R",
+    "pos": "NOUN",
+    "th": "ผม",
+    "teaching_order": -1
+  },
+  "191": {
+    "id": 191,
+    "split": "ขา",
+    "en": "leg",
+    "tones": "R",
+    "pos": "NOUN",
+    "th": "ขา",
+    "teaching_order": -1
+  },
+  "192": {
+    "id": 192,
+    "split": "เท้า",
+    "en": "foot",
+    "tones": "H",
+    "pos": "NOUN",
+    "th": "เท้า",
+    "teaching_order": -1
+  },
+  "193": {
+    "id": 193,
+    "split": "กิน",
+    "en": "to eat",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "กิน",
+    "teaching_order": 21
+  },
+  "194": {
+    "id": 194,
+    "split": "เห็น",
+    "en": "to see",
+    "tones": "R",
+    "pos": "VERB",
+    "th": "เห็น",
+    "teaching_order": -1
+  },
+  "195": {
+    "id": 195,
+    "split": "ดื่ม",
+    "en": "to drink",
+    "tones": "L",
+    "pos": "VERB",
+    "th": "ดื่ม",
+    "teaching_order": -1
+  },
+  "196": {
+    "id": 196,
+    "split": "คุย",
+    "en": "to talk",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "คุย",
+    "teaching_order": -1
+  },
+  "197": {
+    "id": 197,
+    "split": "คิด",
+    "en": "to think",
+    "tones": "H",
+    "pos": "VERB",
+    "th": "คิด",
+    "teaching_order": -1
+  },
+  "198": {
+    "id": 198,
+    "split": "เรียน",
+    "en": "to study",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "เรียน",
+    "teaching_order": 30
+  },
+  "199": {
+    "id": 199,
+    "split": "ต้อง",
+    "en": "to have to, must",
+    "tones": "F",
+    "pos": "VERB",
+    "th": "ต้อง",
+    "teaching_order": -1
+  },
+  "200": {
+    "id": 200,
+    "split": "บอก",
+    "en": "to tell",
+    "tones": "L",
+    "pos": "VERB",
+    "th": "บอก",
+    "teaching_order": -1
+  },
+  "201": {
+    "id": 201,
+    "split": "ไป",
+    "en": "to go",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "ไป",
+    "teaching_order": -1
+  },
+  "202": {
+    "id": 202,
+    "split": "มา",
+    "en": "to come",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "มา",
+    "teaching_order": -1
+  },
+  "203": {
+    "id": 203,
+    "split": "อ่าน",
+    "en": "to read",
+    "tones": "L",
+    "pos": "VERB",
+    "th": "อ่าน",
+    "teaching_order": -1
+  },
+  "204": {
+    "id": 204,
+    "split": "ชื่อ",
+    "en": "name, to be named",
+    "tones": "F",
+    "pos": "VERB",
+    "th": "ชื่อ",
+    "teaching_order": -1
+  },
+  "205": {
+    "id": 205,
+    "split": "เล่น",
+    "en": "to play",
+    "tones": "F",
+    "pos": "VERB",
+    "th": "เล่น",
+    "teaching_order": -1
+  },
+  "206": {
+    "id": 206,
+    "split": "คือ",
+    "en": "to be (equality)",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "คือ",
+    "teaching_order": -1
+  },
+  "207": {
+    "id": 207,
+    "split": "เป็น",
+    "en": "to be (details)",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "เป็น",
+    "teaching_order": -1
+  },
+  "208": {
+    "id": 208,
+    "split": "ทำ",
+    "en": "to make, to do",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "ทำ",
+    "teaching_order": -1
+  },
+  "209": {
+    "id": 209,
+    "split": "ได้",
+    "en": "to get, to be able",
+    "tones": "F",
+    "pos": "VERB",
+    "th": "ได้",
+    "teaching_order": 24
+  },
+  "210": {
+    "id": 210,
+    "split": "นอน",
+    "en": "to sleep",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "นอน",
+    "teaching_order": -1
+  },
+  "211": {
+    "id": 211,
+    "split": "บิน",
+    "en": "to fly",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "บิน",
+    "teaching_order": -1
+  },
+  "212": {
+    "id": 212,
+    "split": "ซื้อ",
+    "en": "to buy",
+    "tones": "H",
+    "pos": "VERB",
+    "th": "ซื้อ",
+    "teaching_order": -1
+  },
+  "213": {
+    "id": 213,
+    "split": "จำ",
+    "en": "to remember",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "จำ",
+    "teaching_order": -1
+  },
+  "214": {
+    "id": 214,
+    "split": "ฝัน",
+    "en": "to dream",
+    "tones": "R",
+    "pos": "VERB",
+    "th": "ฝัน",
+    "teaching_order": -1
+  },
+  "215": {
+    "id": 215,
+    "split": "เปิด",
+    "en": "to open, switch on",
+    "tones": "L",
+    "pos": "VERB",
+    "th": "เปิด",
+    "teaching_order": -1
+  },
+  "216": {
+    "id": 216,
+    "split": "ปิด",
+    "en": "to close, switch off",
+    "tones": "L",
+    "pos": "VERB",
+    "th": "ปิด",
+    "teaching_order": -1
+  },
+  "217": {
+    "id": 217,
+    "split": "ถาม",
+    "en": "to ask",
+    "tones": "R",
+    "pos": "VERB",
+    "th": "ถาม",
+    "teaching_order": -1
+  },
+  "218": {
+    "id": 218,
+    "split": "เชื่อ",
+    "en": "to believe",
+    "tones": "F",
+    "pos": "VERB",
+    "th": "เชื่อ",
+    "teaching_order": -1
+  },
+  "219": {
+    "id": 219,
+    "split": "เกลียด",
+    "en": "to hate",
+    "tones": "L",
+    "pos": "VERB",
+    "th": "เกลียด",
+    "teaching_order": -1
+  },
+  "220": {
+    "id": 220,
+    "split": "กลับ",
+    "en": "to return",
+    "tones": "L",
+    "pos": "VERB",
+    "th": "กลับ",
+    "teaching_order": -1
+  },
+  "221": {
+    "id": 221,
+    "split": "รับ",
+    "en": "to receive",
+    "tones": "H",
+    "pos": "VERB",
+    "th": "รับ",
+    "teaching_order": -1
+  },
+  "222": {
+    "id": 222,
+    "split": "ใช้",
+    "en": "to use",
+    "tones": "H",
+    "pos": "VERB",
+    "th": "ใช้",
+    "teaching_order": -1
+  },
+  "223": {
+    "id": 223,
+    "split": "ศูนย์",
+    "en": "0",
+    "tones": "R",
+    "pos": "NUMB",
+    "th": "ศูนย์",
+    "teaching_order": -1
+  },
+  "224": {
+    "id": 224,
+    "split": "หนึ่ง",
+    "en": "1",
+    "tones": "L",
+    "pos": "NUMB",
+    "th": "หนึ่ง",
+    "teaching_order": -1
+  },
+  "225": {
+    "id": 225,
+    "split": "สอง",
+    "en": "2",
+    "tones": "R",
+    "pos": "NUMB",
+    "th": "สอง",
+    "teaching_order": -1
+  },
+  "226": {
+    "id": 226,
+    "split": "สาม",
+    "en": "3",
+    "tones": "R",
+    "pos": "NUMB",
+    "th": "สาม",
+    "teaching_order": -1
+  },
+  "227": {
+    "id": 227,
+    "split": "สี่",
+    "en": "4",
+    "tones": "L",
+    "pos": "NUMB",
+    "th": "สี่",
+    "teaching_order": -1
+  },
+  "228": {
+    "id": 228,
+    "split": "ห้า",
+    "en": "5",
+    "tones": "F",
+    "pos": "NUMB",
+    "th": "ห้า",
+    "teaching_order": -1
+  },
+  "229": {
+    "id": 229,
+    "split": "หก",
+    "en": "6",
+    "tones": "L",
+    "pos": "NUMB",
+    "th": "หก",
+    "teaching_order": -1
+  },
+  "230": {
+    "id": 230,
+    "split": "เจ็ด",
+    "en": "7",
+    "tones": "L",
+    "pos": "NUMB",
+    "th": "เจ็ด",
+    "teaching_order": -1
+  },
+  "231": {
+    "id": 231,
+    "split": "แปด",
+    "en": "8",
+    "tones": "L",
+    "pos": "NUMB",
+    "th": "แปด",
+    "teaching_order": -1
+  },
+  "232": {
+    "id": 232,
+    "split": "เก้า",
+    "en": "9",
+    "tones": "F",
+    "pos": "NUMB",
+    "th": "เก้า",
+    "teaching_order": -1
+  },
+  "233": {
+    "id": 233,
+    "split": "สิบ",
+    "en": "10",
+    "tones": "L",
+    "pos": "NUMB",
+    "th": "สิบ",
+    "teaching_order": -1
+  },
+  "234": {
+    "id": 234,
+    "split": "พูด",
+    "en": "to speak",
+    "tones": "F",
+    "pos": "VERB",
+    "th": "พูด",
+    "teaching_order": 29
+  },
+  "235": {
+    "id": 235,
+    "split": "นั่ง",
+    "en": "to sit",
+    "tones": "F",
+    "pos": "VERB",
+    "th": "นั่ง",
+    "teaching_order": -1
+  },
+  "236": {
+    "id": 236,
+    "split": "มี",
+    "en": "to have",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "มี",
+    "teaching_order": -1
+  },
+  "237": {
+    "id": 237,
+    "split": "อยู่",
+    "en": "to be at",
+    "tones": "L",
+    "pos": "VERB",
+    "th": "อยู่",
+    "teaching_order": 9
+  },
+  "238": {
+    "id": 238,
+    "split": "ชอบ",
+    "en": "to like",
+    "tones": "F",
+    "pos": "VERB",
+    "th": "ชอบ",
+    "teaching_order": 4
+  },
+  "239": {
+    "id": 239,
+    "split": "รัก",
+    "en": "to love",
+    "tones": "H",
+    "pos": "VERB",
+    "th": "รัก",
+    "teaching_order": -1
+  },
+  "240": {
+    "id": 240,
+    "split": "วิ่ง",
+    "en": "to run",
+    "tones": "F",
+    "pos": "VERB",
+    "th": "วิ่ง",
+    "teaching_order": -1
+  },
+  "241": {
+    "id": 241,
+    "split": "อยาก",
+    "en": "to want",
+    "tones": "L",
+    "pos": "VERB",
+    "th": "อยาก",
+    "teaching_order": 7
+  },
+  "242": {
+    "id": 242,
+    "split": "ควร",
+    "en": "should",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "ควร",
+    "teaching_order": -1
+  },
+  "243": {
+    "id": 243,
+    "split": "แต่",
+    "en": "but",
+    "tones": "L",
+    "pos": "None",
+    "th": "แต่",
+    "teaching_order": -1
+  },
+  "244": {
+    "id": 244,
+    "split": "คน-ไทย",
+    "en": "Thai people",
+    "tones": "MM",
+    "pos": "NOUN",
+    "th": "คนไทย",
+    "teaching_order": -1
+  },
+  "245": {
+    "id": 245,
+    "split": "ชื่อ-เล่น",
+    "en": "nickname",
+    "tones": "FF",
+    "pos": "NOUN",
+    "th": "ชื่อเล่น",
+    "teaching_order": -1
+  },
+  "246": {
+    "id": 246,
+    "split": "ความ-สุข",
+    "en": "happiness",
+    "tones": "ML",
+    "pos": "NOUN",
+    "th": "ความสุข",
+    "teaching_order": -1
+  },
+  "247": {
+    "id": 247,
+    "split": "หิ-มะ",
+    "en": "snow",
+    "tones": "LH",
+    "pos": "NOUN",
+    "th": "หิมะ",
+    "teaching_order": -1
+  },
+  "248": {
+    "id": 248,
+    "split": "ใต้-ดิน",
+    "en": "underground",
+    "tones": "FM",
+    "pos": "NOUN",
+    "th": "ใต้ดิน",
+    "teaching_order": -1
+  },
+  "249": {
+    "id": 249,
+    "split": "ที-วี",
+    "en": "TV",
+    "tones": "MM",
+    "pos": "NOUN",
+    "th": "ทีวี",
+    "teaching_order": -1
+  },
+  "250": {
+    "id": 250,
+    "split": "ข-นม",
+    "en": "sweets, cake",
+    "tones": "LR",
+    "pos": "NOUN",
+    "th": "ขนม",
+    "teaching_order": -1
+  },
+  "251": {
+    "id": 251,
+    "split": "อา-หาร",
+    "en": "food",
+    "tones": "MR",
+    "pos": "NOUN",
+    "th": "อาหาร",
+    "teaching_order": -1
+  },
+  "252": {
+    "id": 252,
+    "split": "พิซ-ซ่า",
+    "en": "pizza",
+    "tones": "HF",
+    "pos": "NOUN",
+    "th": "พิซซ่า",
+    "teaching_order": -1
+  },
+  "253": {
+    "id": 253,
+    "split": "เมือง-ไทย",
+    "en": "Thailand",
+    "tones": "MM",
+    "pos": "PLAC",
+    "th": "เมืองไทย",
+    "teaching_order": -1
+  },
+  "254": {
+    "id": 254,
+    "split": "ญี่-ปุ่น",
+    "en": "Japan",
+    "tones": "FL",
+    "pos": "PLAC",
+    "th": "ญี่ปุ่น",
+    "teaching_order": -1
+  },
+  "255": {
+    "id": 255,
+    "split": "อัง-กฤษ",
+    "en": "England, Britain",
+    "tones": "ML",
+    "pos": "PLAC",
+    "th": "อังกฤษ",
+    "teaching_order": -1
+  },
+  "256": {
+    "id": 256,
+    "split": "สเ-ปน",
+    "en": "Spain",
+    "tones": "LM",
+    "pos": "PLAC",
+    "th": "สเปน",
+    "teaching_order": -1
+  },
+  "257": {
+    "id": 257,
+    "split": "พ-ม่า",
+    "en": "Myanmar",
+    "tones": "HF",
+    "pos": "PLAC",
+    "th": "พม่า",
+    "teaching_order": -1
+  },
+  "258": {
+    "id": 258,
+    "split": "รถ-ไฟ",
+    "en": "train",
+    "tones": "HM",
+    "pos": "NOUN",
+    "th": "รถไฟ",
+    "teaching_order": -1
+  },
+  "259": {
+    "id": 259,
+    "split": "ไฟ-ฟ้า",
+    "en": "electricity",
+    "tones": "MH",
+    "pos": "NOUN",
+    "th": "ไฟฟ้า",
+    "teaching_order": -1
+  },
+  "260": {
+    "id": 260,
+    "split": "ใจ-ดี",
+    "en": "kind",
+    "tones": "MM",
+    "pos": "ADJ",
+    "th": "ใจดี",
+    "teaching_order": -1
+  },
+  "261": {
+    "id": 261,
+    "split": "หนัง-สือ",
+    "en": "book",
+    "tones": "RR",
+    "pos": "NOUN",
+    "th": "หนังสือ",
+    "teaching_order": -1
+  },
+  "262": {
+    "id": 262,
+    "split": "มะ-ม่วง",
+    "en": "mango",
+    "tones": "HF",
+    "pos": "NOUN",
+    "th": "มะม่วง",
+    "teaching_order": -1
+  },
+  "263": {
+    "id": 263,
+    "split": "อา-ยุ",
+    "en": "age",
+    "tones": "MH",
+    "pos": "NOUN",
+    "th": "อายุ",
+    "teaching_order": -1
+  },
+  "264": {
+    "id": 264,
+    "split": "ประ-เทศ",
+    "en": "country",
+    "tones": "HF",
+    "pos": "NOUN",
+    "th": "ประเทศ",
+    "teaching_order": -1
+  },
+  "265": {
+    "id": 265,
+    "split": "กา-แฟ",
+    "en": "coffee",
+    "tones": "MM",
+    "pos": "NOUN",
+    "th": "กาแฟ",
+    "teaching_order": -1
+  },
+  "266": {
+    "id": 266,
+    "split": "ต้น-ไม้",
+    "en": "tree",
+    "tones": "FH",
+    "pos": "NOUN",
+    "th": "ต้นไม้",
+    "teaching_order": -1
+  },
+  "267": {
+    "id": 267,
+    "split": "ดอก-ไม้",
+    "en": "flower",
+    "tones": "LH",
+    "pos": "NOUN",
+    "th": "ดอกไม้",
+    "teaching_order": -1
+  },
+  "268": {
+    "id": 268,
+    "split": "ผล-ไม้",
+    "en": "fruit",
+    "tones": "RHH",
+    "pos": "NOUN",
+    "th": "ผลไม้",
+    "teaching_order": -1
+  },
+  "269": {
+    "id": 269,
+    "split": "มะ-ขาม",
+    "en": "tamarind",
+    "tones": "HR",
+    "pos": "NOUN",
+    "th": "มะขาม",
+    "teaching_order": -1
+  },
+  "270": {
+    "id": 270,
+    "split": "คน-ขับ",
+    "en": "driver",
+    "tones": "ML",
+    "pos": "NOUN",
+    "th": "คนขับ",
+    "teaching_order": -1
+  },
+  "271": {
+    "id": 271,
+    "split": "นัก-ร้อง",
+    "en": "singer",
+    "tones": "HH",
+    "pos": "NOUN",
+    "th": "นักร้อง",
+    "teaching_order": -1
+  },
+  "272": {
+    "id": 272,
+    "split": "เว-ลา",
+    "en": "time",
+    "tones": "MM",
+    "pos": "NOUN",
+    "th": "เวลา",
+    "teaching_order": -1
+  },
+  "273": {
+    "id": 273,
+    "split": "ภา-ษา",
+    "en": "language",
+    "tones": "MR",
+    "pos": "NOUN",
+    "th": "ภาษา",
+    "teaching_order": 26
+  },
+  "274": {
+    "id": 274,
+    "split": "รา-คา",
+    "en": "price",
+    "tones": "MM",
+    "pos": "NOUN",
+    "th": "ราคา",
+    "teaching_order": -1
+  },
+  "275": {
+    "id": 275,
+    "split": "โรง-เรียน",
+    "en": "school",
+    "tones": "MM",
+    "pos": "NOUN",
+    "th": "โรงเรียน",
+    "teaching_order": 10
+  },
+  "276": {
+    "id": 276,
+    "split": "ต-ลาด",
+    "en": "market",
+    "tones": "LL",
+    "pos": "NOUN",
+    "th": "ตลาด",
+    "teaching_order": -1
+  },
+  "277": {
+    "id": 277,
+    "split": "ส-นาม",
+    "en": "field",
+    "tones": "LR",
+    "pos": "NOUN",
+    "th": "สนาม",
+    "teaching_order": -1
+  },
+  "278": {
+    "id": 278,
+    "split": "กระ-เป๋า",
+    "en": "bag",
+    "tones": "LR",
+    "pos": "NOUN",
+    "th": "กระเป๋า",
+    "teaching_order": -1
+  },
+  "279": {
+    "id": 279,
+    "split": "หุ่น-ยนต์",
+    "en": "robot",
+    "tones": "LM",
+    "pos": "NOUN",
+    "th": "หุ่นยนต์",
+    "teaching_order": -1
+  },
+  "280": {
+    "id": 280,
+    "split": "วัน-จันทร์",
+    "en": "Monday",
+    "tones": "MM",
+    "pos": "WDAY",
+    "th": "วันจันทร์",
+    "teaching_order": -1
+  },
+  "281": {
+    "id": 281,
+    "split": "พระ-จันทร์",
+    "en": "moon",
+    "tones": "HM",
+    "pos": "NOUN",
+    "th": "พระจันทร์",
+    "teaching_order": -1
+  },
+  "282": {
+    "id": 282,
+    "split": "อา-ศัย",
+    "en": "to reside",
+    "tones": "MR",
+    "pos": "VERB",
+    "th": "อาศัย",
+    "teaching_order": -1
+  },
+  "283": {
+    "id": 283,
+    "split": "กาง-เกง",
+    "en": "trousers",
+    "tones": "MM",
+    "pos": "NOUN",
+    "th": "กางเกง",
+    "teaching_order": -1
+  },
+  "284": {
+    "id": 284,
+    "split": "รอง-เท้า",
+    "en": "shoes",
+    "tones": "MH",
+    "pos": "NOUN",
+    "th": "รองเท้า",
+    "teaching_order": -1
+  },
+  "285": {
+    "id": 285,
+    "split": "ถุง-เท้า",
+    "en": "socks",
+    "tones": "RH",
+    "pos": "NOUN",
+    "th": "ถุงเท้า",
+    "teaching_order": -1
+  },
+  "286": {
+    "id": 286,
+    "split": "คิด-ถึง",
+    "en": "to miss, think about",
+    "tones": "HR",
+    "pos": "VERB",
+    "th": "คิดถึง",
+    "teaching_order": -1
+  },
+  "287": {
+    "id": 287,
+    "split": "คิด-มาก",
+    "en": "to think too much, worry",
+    "tones": "HF",
+    "pos": "VERB",
+    "th": "คิดมาก",
+    "teaching_order": -1
+  },
+  "288": {
+    "id": 288,
+    "split": "ทำ-งาน",
+    "en": "to work",
+    "tones": "MM",
+    "pos": "VERB",
+    "th": "ทำงาน",
+    "teaching_order": -1
+  },
+  "289": {
+    "id": 289,
+    "split": "มา-ถึง",
+    "en": "to arrive",
+    "tones": "MR",
+    "pos": "VERB",
+    "th": "มาถึง",
+    "teaching_order": -1
+  },
+  "290": {
+    "id": 290,
+    "split": "ตื่น-นอน",
+    "en": "to get up, wake up",
+    "tones": "LM",
+    "pos": "VERB",
+    "th": "ตื่นนอน",
+    "teaching_order": -1
+  },
+  "291": {
+    "id": 291,
+    "split": "กลับ-บ้าน",
+    "en": "to go home",
+    "tones": "LF",
+    "pos": "VERB",
+    "th": "กลับบ้าน",
+    "teaching_order": -1
+  },
+  "292": {
+    "id": 292,
+    "split": "เลิก-งาน",
+    "en": "to finish work",
+    "tones": "FM",
+    "pos": "VERB",
+    "th": "เลิกงาน",
+    "teaching_order": -1
+  },
+  "293": {
+    "id": 293,
+    "split": "ได้-ยิน",
+    "en": "to hear",
+    "tones": "FM",
+    "pos": "VERB",
+    "th": "ได้ยิน",
+    "teaching_order": -1
+  },
+  "294": {
+    "id": 294,
+    "split": "อยาก-ให้",
+    "en": "to want (someone to do something)",
+    "tones": "LF",
+    "pos": "VERB",
+    "th": "อยากให้",
+    "teaching_order": -1
+  },
+  "295": {
+    "id": 295,
+    "split": "ต้อง-การ",
+    "en": "to want (followed by nouns)",
+    "tones": "FM",
+    "pos": "VERB",
+    "th": "ต้องการ",
+    "teaching_order": -1
+  },
+  "296": {
+    "id": 296,
+    "split": "ออก-มา",
+    "en": "to come out",
+    "tones": "LM",
+    "pos": "VERB",
+    "th": "ออกมา",
+    "teaching_order": -1
+  },
+  "297": {
+    "id": 297,
+    "split": "ขับ-รถ",
+    "en": "to drive",
+    "tones": "LH",
+    "pos": "VERB",
+    "th": "ขับรถ",
+    "teaching_order": -1
+  },
+  "298": {
+    "id": 298,
+    "split": "บัน-ทึก",
+    "en": "to save",
+    "tones": "MH",
+    "pos": "VERB",
+    "th": "บันทึก",
+    "teaching_order": -1
+  },
+  "299": {
+    "id": 299,
+    "split": "ดูเ-หมือน",
+    "en": "to look like",
+    "tones": "MR",
+    "pos": "VERB",
+    "th": "ดูเหมือน",
+    "teaching_order": -1
+  },
+  "300": {
+    "id": 300,
+    "split": "รู้-จัก",
+    "en": "to know (someone)",
+    "tones": "HL",
+    "pos": "VERB",
+    "th": "รู้จัก",
+    "teaching_order": -1
+  },
+  "301": {
+    "id": 301,
+    "split": "ทำ-ให้",
+    "en": "to make (someone do something)",
+    "tones": "MF",
+    "pos": "VERB",
+    "th": "ทำให้",
+    "teaching_order": -1
+  },
+  "302": {
+    "id": 302,
+    "split": "คง-จะ",
+    "en": "may",
+    "tones": "ML",
+    "pos": "VERB",
+    "th": "คงจะ",
+    "teaching_order": -1
+  },
+  "303": {
+    "id": 303,
+    "split": "ประ-มาณ",
+    "en": "approximately",
+    "tones": "LM",
+    "pos": "None",
+    "th": "ประมาณ",
+    "teaching_order": -1
+  },
+  "304": {
+    "id": 304,
+    "split": "นิด-หน่อย",
+    "en": "a little bit",
+    "tones": "HL",
+    "pos": "None",
+    "th": "นิดหน่อย",
+    "teaching_order": -1
+  },
+  "305": {
+    "id": 305,
+    "split": "ไม่-ใช่",
+    "en": "no",
+    "tones": "FF",
+    "pos": "None",
+    "th": "ไม่ใช่",
+    "teaching_order": -1
+  },
+  "306": {
+    "id": 306,
+    "split": "กำ-ลัง",
+    "en": "[present continuous]",
+    "tones": "MM",
+    "pos": "None",
+    "th": "กำลัง",
+    "teaching_order": -1
+  },
+  "307": {
+    "id": 307,
+    "split": "น่า-จะ",
+    "en": "should",
+    "tones": "FL",
+    "pos": "None",
+    "th": "น่าจะ",
+    "teaching_order": -1
+  },
+  "308": {
+    "id": 308,
+    "split": "กรุง-เทพ",
+    "en": "Bangkok",
+    "tones": "MF",
+    "pos": "PLAC",
+    "th": "กรุงเทพ",
+    "teaching_order": -1
+  },
+  "309": {
+    "id": 309,
+    "split": "ย่อ-มาน",
+    "en": "Yoman",
+    "tones": "FM",
+    "pos": "PNAM",
+    "th": "ย่อมาน",
+    "teaching_order": -1
+  },
+  "310": {
+    "id": 310,
+    "split": "ลอน-ดอน",
+    "en": "London",
+    "tones": "MM",
+    "pos": "PLAC",
+    "th": "ลอนดอน",
+    "teaching_order": -1
+  },
+  "311": {
+    "id": 311,
+    "split": "อังก-ฤษ",
+    "en": "England",
+    "tones": "ML",
+    "pos": "PLAC",
+    "th": "อังกฤษ",
+    "teaching_order": -1
+  },
+  "312": {
+    "id": 312,
+    "split": "โท-ร-ทัศน์",
+    "en": "TV",
+    "tones": "MHH",
+    "pos": "None",
+    "th": "โทรทัศน์",
+    "teaching_order": -1
+  },
+  "313": {
+    "id": 313,
+    "split": "ก-รุ-ณา",
+    "en": "please, kindly...",
+    "tones": "LHM",
+    "pos": "None",
+    "th": "กรุณา",
+    "teaching_order": -1
+  },
+  "314": {
+    "id": 314,
+    "split": "กัด",
+    "en": "to bite",
+    "tones": "L",
+    "pos": "None",
+    "th": "กัด",
+    "teaching_order": -1
+  },
+  "315": {
+    "id": 315,
+    "split": "ลง-น-รก",
+    "en": "to go to hell",
+    "tones": "MHH",
+    "pos": "None",
+    "th": "ลงนรก",
+    "teaching_order": -1
+  },
+  "316": {
+    "id": 316,
+    "split": "รถ-ไฟ-ฟ้า",
+    "en": "skytrain",
+    "tones": "HMH",
+    "pos": "None",
+    "th": "รถไฟฟ้า",
+    "teaching_order": -1
+  },
+  "317": {
+    "id": 317,
+    "split": "ด็ก-ผู้-ชาย",
+    "en": "boy",
+    "tones": "LFM",
+    "pos": "None",
+    "th": "ด็กผู้ชาย",
+    "teaching_order": -1
+  },
+  "318": {
+    "id": 318,
+    "split": "มา-เล-เซีย",
+    "en": "Malaysia",
+    "tones": "MMM",
+    "pos": "PLAC",
+    "th": "มาเลเซีย",
+    "teaching_order": -1
+  },
+  "319": {
+    "id": 319,
+    "split": "แค-นา-ดา",
+    "en": "Canada",
+    "tones": "MMM",
+    "pos": "PLAC",
+    "th": "แคนาดา",
+    "teaching_order": -1
+  },
+  "320": {
+    "id": 320,
+    "split": "กัม-พู-ชา",
+    "en": "Cambodia",
+    "tones": "MMM",
+    "pos": "PLAC",
+    "th": "กัมพูชา",
+    "teaching_order": -1
+  },
+  "321": {
+    "id": 321,
+    "split": "ฝ-รั่งเ-ศส",
+    "en": "France",
+    "tones": "LLL",
+    "pos": "PLAC",
+    "th": "ฝรั่งเศส",
+    "teaching_order": -1
+  },
+  "322": {
+    "id": 322,
+    "split": "ทำ-อา-หาร",
+    "en": "to cook",
+    "tones": "MMR",
+    "pos": "VERB",
+    "th": "ทำอาหาร",
+    "teaching_order": -1
+  },
+  "323": {
+    "id": 323,
+    "split": "พระ-อา-ทิตย์",
+    "en": "sun",
+    "tones": "HMH",
+    "pos": "NOUN",
+    "th": "พระอาทิตย์",
+    "teaching_order": -1
+  },
+  "324": {
+    "id": 324,
+    "split": "ส-นาม-บิน",
+    "en": "airport",
+    "tones": "LRM",
+    "pos": "NOUN",
+    "th": "สนามบิน",
+    "teaching_order": -1
+  },
+  "325": {
+    "id": 325,
+    "split": "ภา-ษา-ไทย",
+    "en": "Thai language",
+    "tones": "MRM",
+    "pos": "NOUN",
+    "th": "ภาษาไทย",
+    "teaching_order": 27
+  },
+  "326": {
+    "id": 326,
+    "split": "สับ-ปะ-รด",
+    "en": "pineapple",
+    "tones": "LLH",
+    "pos": "NOUN",
+    "th": "สับปะรด",
+    "teaching_order": -1
+  },
+  "327": {
+    "id": 327,
+    "split": "วัน-อา-ทิตย์",
+    "en": "Sunday",
+    "tones": "MMH",
+    "pos": "WDAY",
+    "th": "วันอาทิตย์",
+    "teaching_order": -1
+  },
+  "328": {
+    "id": 328,
+    "split": "ภาพ-ยน-ตร์",
+    "en": "movie (formal)",
+    "tones": "FHM",
+    "pos": "None",
+    "th": "ภาพยนตร์",
+    "teaching_order": -1
+  },
+  "329": {
+    "id": 329,
+    "split": "มาก-เกิน-ไป",
+    "en": "excessively",
+    "tones": "FMM",
+    "pos": "None",
+    "th": "มากเกินไป",
+    "teaching_order": -1
+  },
+  "330": {
+    "id": 330,
+    "split": "อ-เล็ก-ซี่",
+    "en": "Alexis",
+    "tones": "MRF",
+    "pos": "PNAM",
+    "th": "อเล็กซี่",
+    "teaching_order": -1
+  },
+  "331": {
+    "id": 331,
+    "split": "วิศวกร",
+    "en": "engineer",
+    "tones": "HLHM",
+    "pos": "NOUN",
+    "th": "วิศวกร",
+    "teaching_order": -1
+  },
+  "332": {
+    "id": 332,
+    "split": "ส-นาม-เด็ก-เล่น",
+    "en": "playground",
+    "tones": "LRLF",
+    "pos": "NOUN",
+    "th": "สนามเด็กเล่น",
+    "teaching_order": -1
+  },
+  "333": {
+    "id": 333,
+    "split": "รถ-ไฟ-ใต้-ดิน",
+    "en": "subway, underground train",
+    "tones": "HMFM",
+    "pos": "NOUN",
+    "th": "รถไฟใต้ดิน",
+    "teaching_order": -1
+  },
+  "334": {
+    "id": 334,
+    "split": "กาง-เกง-ขา-สั้น",
+    "en": "shorts",
+    "tones": "MMRF",
+    "pos": "NOUN",
+    "th": "กางเกงขาสั้น",
+    "teaching_order": -1
+  },
+  "335": {
+    "id": 335,
+    "split": "ภา-ษา-อัง-กฤษ",
+    "en": "English language",
+    "tones": "MRML",
+    "pos": "NOUN",
+    "th": "ภาษาอังกฤษ",
+    "teaching_order": 28
+  },
+  "336": {
+    "id": 336,
+    "split": "เยอ-ร-ม-นี",
+    "en": "Germany",
+    "tones": "MHHM",
+    "pos": "PLAC",
+    "th": "เยอรมนี",
+    "teaching_order": -1
+  },
+  "337": {
+    "id": 337,
+    "split": "อเ-ม-ริ-กัน",
+    "en": "American",
+    "tones": "LMHM",
+    "pos": "PLAC",
+    "th": "อเมริกัน",
+    "teaching_order": -1
+  },
+  "338": {
+    "id": 338,
+    "split": "ขอ-โทษ",
+    "en": "sorry",
+    "tones": "RF",
+    "pos": "INTE",
+    "th": "ขอโทษ",
+    "teaching_order": 17
+  },
+  "339": {
+    "id": 339,
+    "split": "ไม่-ดี",
+    "en": "bad",
+    "tones": "FM",
+    "pos": "ADJ",
+    "th": "ไม่ดี",
+    "teaching_order": 33
+  },
+  "340": {
+    "id": 340,
+    "split": "สวย",
+    "en": "beautiful",
+    "tones": "R",
+    "pos": "ADJ",
+    "th": "สวย",
+    "teaching_order": -1
+  },
+  "341": {
+    "id": 341,
+    "split": "เล็ก",
+    "en": "small",
+    "tones": "H",
+    "pos": "ADJ",
+    "th": "เล็ก",
+    "teaching_order": -1
+  },
+  "342": {
+    "id": 342,
+    "split": "ป่า",
+    "en": "forest",
+    "tones": "L",
+    "pos": "NOUN",
+    "th": "ป่า",
+    "teaching_order": -1
+  },
+  "343": {
+    "id": 343,
+    "split": "คน",
+    "en": "people, person",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "คน",
+    "teaching_order": 6
+  },
+  "344": {
+    "id": 344,
+    "split": "กด",
+    "en": "to press, to push",
+    "tones": "L",
+    "pos": "VERB",
+    "th": "กด",
+    "teaching_order": -1
+  },
+  "345": {
+    "id": 345,
+    "split": "ไทย",
+    "en": "Thai",
+    "tones": "M",
+    "pos": "ADJ",
+    "th": "ไทย",
+    "teaching_order": 5
+  },
+  "346": {
+    "id": 346,
+    "split": "ผัก",
+    "en": "vegetable",
+    "tones": "L",
+    "pos": "NOUN",
+    "th": "ผัก",
+    "teaching_order": 64
+  },
+  "347": {
+    "id": 347,
+    "split": "อ-ร่อย",
+    "en": "delicious",
+    "tones": "LL",
+    "pos": "ADJ",
+    "th": "อร่อย",
+    "teaching_order": 63
+  },
+  "348": {
+    "id": 348,
+    "split": "มัน-ฝ-รั่ง",
+    "en": "potato",
+    "tones": "MLL",
+    "pos": "NOUN",
+    "th": "มันฝรั่ง",
+    "teaching_order": 66
+  },
+  "349": {
+    "id": 349,
+    "split": "ดี-ใจ",
+    "en": "glad",
+    "tones": "MM",
+    "pos": "ADJ",
+    "th": "ดีใจ",
+    "teaching_order": -1
+  },
+  "350": {
+    "id": 350,
+    "split": "โลก",
+    "en": "world, earth",
+    "tones": "F",
+    "pos": "NOUN",
+    "th": "โลก",
+    "teaching_order": -1
+  },
+  "351": {
+    "id": 351,
+    "split": "ลา",
+    "en": "to leave",
+    "tones": "M",
+    "pos": "VERB",
+    "th": "ลา",
+    "teaching_order": -1
+  },
+  "352": {
+    "id": 352,
+    "split": "นน",
+    "en": "[sound for 'non']",
+    "tones": "M",
+    "pos": "None",
+    "th": "นน",
+    "teaching_order": -1
+  },
+  "353": {
+    "id": 353,
+    "split": "นา",
+    "en": "field",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "นา",
+    "teaching_order": -1
+  },
+  "354": {
+    "id": 354,
+    "split": "นา-นา",
+    "en": "various",
+    "tones": "MM",
+    "pos": "ADJ",
+    "th": "นานา",
+    "teaching_order": -1
+  },
+  "355": {
+    "id": 355,
+    "split": "ทำ-นา",
+    "en": "to farm",
+    "tones": "MM",
+    "pos": "VERB",
+    "th": "ทำนา",
+    "teaching_order": -1
+  },
+  "356": {
+    "id": 356,
+    "split": "รา",
+    "en": "mold, fungus / to cease",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "รา",
+    "teaching_order": -1
+  },
+  "357": {
+    "id": 357,
+    "split": "รัน",
+    "en": "[sound for 'ran']",
+    "tones": "M",
+    "pos": "",
+    "th": "รัน",
+    "teaching_order": -1
+  },
+  "358": {
+    "id": 358,
+    "split": "พร้อม",
+    "en": "ready",
+    "tones": "R",
+    "pos": "None",
+    "th": "พร้อม",
+    "teaching_order": -1
+  },
+  "359": {
+    "id": 359,
+    "split": "ยุง",
+    "en": "mosquito",
+    "tones": "M",
+    "pos": "",
+    "th": "ยุง",
+    "teaching_order": -1
+  },
+  "360": {
+    "id": 360,
+    "split": "สัตว์-เลื้อย-คลาน",
+    "en": "reptile",
+    "tones": "LHM",
+    "pos": "None",
+    "th": "สัตว์เลื้อยคลาน",
+    "teaching_order": -1
+  },
+  "361": {
+    "id": 361,
+    "split": "สก-ปรก",
+    "en": "dirty",
+    "tones": "LLL",
+    "pos": "None",
+    "th": "สกปรก",
+    "teaching_order": -1
+  },
+  "362": {
+    "id": 362,
+    "split": "ตะ-เกียบ",
+    "en": "chopsticks",
+    "tones": "LL",
+    "pos": "None",
+    "th": "ตะเกียบ",
+    "teaching_order": -1
+  },
+  "363": {
+    "id": 363,
+    "split": "ครอบ-ครัว",
+    "en": "family",
+    "tones": "FM",
+    "pos": "None",
+    "th": "ครอบครัว",
+    "teaching_order": -1
+  },
+  "364": {
+    "id": 364,
+    "split": "ห้อง-ครัว",
+    "en": "kitchen",
+    "tones": "FM",
+    "pos": "None",
+    "th": "ห้องครัว",
+    "teaching_order": -1
+  },
+  "365": {
+    "id": 365,
+    "split": "ส-กุล",
+    "en": "family, ancestor, lineage",
+    "tones": "LM",
+    "pos": "None",
+    "th": "สกุล",
+    "teaching_order": -1
+  },
+  "366": {
+    "id": 366,
+    "split": "มาก",
+    "en": "very",
+    "tones": "F",
+    "pos": "None",
+    "th": "มาก",
+    "teaching_order": -1
+  },
+  "367": {
+    "id": 367,
+    "split": "กลัว",
+    "en": "to fear",
+    "tones": "M",
+    "pos": "None",
+    "th": "กลัว",
+    "teaching_order": -1
+  },
+  "368": {
+    "id": 368,
+    "split": "ดู",
+    "en": "to watch, look",
+    "tones": "M",
+    "pos": "None",
+    "th": "ดู",
+    "teaching_order": -1
+  },
+  "369": {
+    "id": 369,
+    "split": "รอ",
+    "en": "to watch, look",
+    "tones": "M",
+    "pos": "None",
+    "th": "รอ",
+    "teaching_order": -1
+  },
+  "370": {
+    "id": 370,
+    "split": "รู้",
+    "en": "to know",
+    "tones": "H",
+    "pos": "None",
+    "th": "รู้",
+    "teaching_order": -1
+  },
+  "371": {
+    "id": 371,
+    "split": "ตาย",
+    "en": "to die",
+    "tones": "M",
+    "pos": "None",
+    "th": "ตาย",
+    "teaching_order": -1
+  },
+  "372": {
+    "id": 372,
+    "split": "ลา-ก่อน",
+    "en": "to say goodbye, leave",
+    "tones": "ML",
+    "pos": "None",
+    "th": "ลาก่อน",
+    "teaching_order": -1
+  },
+  "373": {
+    "id": 373,
+    "split": "พบ",
+    "en": "to find, meet, discover",
+    "tones": "H",
+    "pos": "None",
+    "th": "พบ",
+    "teaching_order": -1
+  },
+  "374": {
+    "id": 374,
+    "split": "ขึ้น",
+    "en": "to enter",
+    "tones": "F",
+    "pos": "None",
+    "th": "ขึ้น",
+    "teaching_order": -1
+  },
+  "375": {
+    "id": 375,
+    "split": "เที่ยว",
+    "en": "to travel",
+    "tones": "F",
+    "pos": "None",
+    "th": "เที่ยว",
+    "teaching_order": -1
+  },
+  "376": {
+    "id": 376,
+    "split": "ความ-หวาน",
+    "en": "sweetness",
+    "tones": "MR",
+    "pos": "None",
+    "th": "ความหวาน",
+    "teaching_order": -1
+  },
+  "377": {
+    "id": 377,
+    "split": "ครั้ง-แรก",
+    "en": "the first time",
+    "tones": "HF",
+    "pos": "None",
+    "th": "ครั้งแรก",
+    "teaching_order": -1
+  },
+  "378": {
+    "id": 378,
+    "split": "กลาย-เป็น",
+    "en": "to become",
+    "tones": "MM",
+    "pos": "None",
+    "th": "กลายเป็น",
+    "teaching_order": -1
+  },
+  "379": {
+    "id": 379,
+    "split": "เด็ก-ๆ",
+    "en": "children",
+    "tones": "LL",
+    "pos": "None",
+    "th": "เด็กๆ",
+    "teaching_order": -1
+  },
+  "380": {
+    "id": 380,
+    "split": "เมื่อ",
+    "en": "when, as, at",
+    "tones": "F",
+    "pos": "None",
+    "th": "เมื่อ",
+    "teaching_order": -1
+  },
+  "381": {
+    "id": 381,
+    "split": "เกิน-ไป",
+    "en": "too much",
+    "tones": "MM",
+    "pos": "None",
+    "th": "เกินไป",
+    "teaching_order": -1
+  },
+  "382": {
+    "id": 382,
+    "split": "เร็ว-ๆ-นี้",
+    "en": "soon, recently",
+    "tones": "MMF",
+    "pos": "None",
+    "th": "เร็วๆนี้",
+    "teaching_order": -1
+  },
+  "383": {
+    "id": 383,
+    "split": "เวียด-นาม",
+    "en": "Vietnam",
+    "tones": "FM",
+    "pos": "None",
+    "th": "เวียดนาม",
+    "teaching_order": -1
+  },
+  "384": {
+    "id": 384,
+    "split": "และ",
+    "en": "and",
+    "tones": "H",
+    "pos": "None",
+    "th": "และ",
+    "teaching_order": -1
+  },
+  "385": {
+    "id": 385,
+    "split": "ช่วง",
+    "en": "period",
+    "tones": "F",
+    "pos": "None",
+    "th": "ช่วง",
+    "teaching_order": -1
+  },
+  "386": {
+    "id": 386,
+    "split": "ฤ-ดู-หนาว",
+    "en": "winter",
+    "tones": "HMR",
+    "pos": "None",
+    "th": "ฤดูหนาว",
+    "teaching_order": -1
+  },
+  "387": {
+    "id": 387,
+    "split": "หนาว",
+    "en": "cold",
+    "tones": "R",
+    "pos": "None",
+    "th": "หนาว",
+    "teaching_order": -1
+  },
+  "388": {
+    "id": 388,
+    "split": "ฤ-ดู",
+    "en": "season",
+    "tones": "HM",
+    "pos": "None",
+    "th": "ฤดู",
+    "teaching_order": -1
+  },
+  "389": {
+    "id": 389,
+    "split": "ป-ฏิ-เสธ",
+    "en": "refuse",
+    "tones": "LLL",
+    "pos": "None",
+    "th": "ปฏิเสธ",
+    "teaching_order": -1
+  },
+  "390": {
+    "id": 390,
+    "split": "เริ่ม",
+    "en": "to start, begin",
+    "tones": "F",
+    "pos": "None",
+    "th": "เริ่ม",
+    "teaching_order": -1
+  },
+  "391": {
+    "id": 391,
+    "split": "รึ-ป่าว",
+    "en": "or not?",
+    "tones": "HL",
+    "pos": "None",
+    "th": "รึป่าว",
+    "teaching_order": -1
+  },
+  "392": {
+    "id": 392,
+    "split": "เล่ม",
+    "en": "classifier for books, knives, candles",
+    "tones": "F",
+    "pos": "None",
+    "th": "เล่ม",
+    "teaching_order": -1
+  },
+  "393": {
+    "id": 393,
+    "split": "ทํา-งาน",
+    "en": "to work",
+    "tones": "MM",
+    "pos": "None",
+    "th": "ทํางาน",
+    "teaching_order": -1
+  },
+  "394": {
+    "id": 394,
+    "split": "ง่วง-นอน",
+    "en": "sleepy",
+    "tones": "FM",
+    "pos": "None",
+    "th": "ง่วงนอน",
+    "teaching_order": -1
+  },
+  "395": {
+    "id": 395,
+    "split": "ตอ",
+    "en": "stub",
+    "tones": "M",
+    "pos": "None",
+    "th": "ตอ",
+    "teaching_order": -1
+  },
+  "396": {
+    "id": 396,
+    "split": "ยาย",
+    "en": "grandmother",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "ยาย",
+    "teaching_order": -1
+  },
+  "397": {
+    "id": 397,
+    "split": "งง-งวย",
+    "en": "to be puzzled",
+    "tones": "MM",
+    "pos": "ADJ",
+    "th": "งงงวย",
+    "teaching_order": -1
+  },
+  "398": {
+    "id": 398,
+    "split": "งง",
+    "en": "to be confused",
+    "tones": "M",
+    "pos": "ADJ",
+    "th": "งง",
+    "teaching_order": -1
+  },
+  "399": {
+    "id": 399,
+    "split": "คอ",
+    "en": "neck",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "คอ",
+    "teaching_order": -1
+  },
+  "400": {
+    "id": 400,
+    "split": "หิน",
+    "en": "rock, stone, boulder",
+    "tones": "R",
+    "pos": "None",
+    "th": "หิน",
+    "teaching_order": -1
+  }
+}

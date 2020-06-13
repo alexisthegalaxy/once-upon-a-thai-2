@@ -20,7 +20,7 @@ func _on_Start_Story_mouse_entered():
 	play_sound(THAI_START_STORY)
 
 func _on_Start_Story_button_down():
-	var _e = get_tree().change_scene("res://Maps/Chaiyaphum.tscn")
+	Game.call_deferred("_deferred_goto_scene", "res://Maps/Chaiyaphum.tscn", 228, 243)
 	
 func _on_Start_Story_mouse_exited():
 	$"CanvasLayer/Start Story".text = THAI_START_STORY
@@ -43,3 +43,7 @@ func play_sound(thai):
 	var audio_file_name = "res://Sounds/Thai/" + thai + ".wav"
 	audio_stream_player.stream = load(audio_file_name)
 	audio_stream_player.play()
+
+
+func _on_Language_Challenges_button_down():
+	var _e = get_tree().change_scene("res://UI/Victory.tscn")
