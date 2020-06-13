@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Main Menu.gd" type="Script" id=2]
+[ext_resource path="res://Sounds/EnemyDie.wav" type="AudioStream" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[node name="Main Menu" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Start Story" type="Button" parent="CanvasLayer"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 96.0
+margin_top = -66.0
+margin_right = -96.0
+margin_bottom = -34.0
+custom_fonts/font = SubResource( 1 )
+text = "Start Story"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Language Challenges" type="Button" parent="CanvasLayer"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 96.0
+margin_top = -10.0
+margin_right = -96.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "Language Challenges"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="CanvasLayer"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 96.0
+margin_top = 46.0
+margin_right = -96.0
+margin_bottom = 78.0
+custom_fonts/font = SubResource( 1 )
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+[connection signal="button_down" from="CanvasLayer/Start Story" to="." method="_on_Start_Story_button_down"]
+[connection signal="mouse_entered" from="CanvasLayer/Start Story" to="." method="_on_Start_Story_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Start Story" to="." method="_on_Start_Story_mouse_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/Language Challenges" to="." method="_on_Language_Challenges_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Language Challenges" to="." method="_on_Language_Challenges_mouse_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/Quit" to="." method="_on_Quit_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Quit" to="." method="_on_Quit_mouse_exited"]
