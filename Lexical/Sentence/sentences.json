@@ -1,0 +1,1381 @@
+{
+  "0": {
+    "old_id": 1,
+    "id": 0,
+    "th": "ผม_รัก_คุณ",
+    "en": "I (male) love you",
+    "word_ids": [23, 239, 28]
+  },
+  "1": {
+    "old_id": 2,
+    "id": 1,
+    "th": "ฉัน_รัก_คุณ",
+    "en": "I (female) love you",
+    "word_ids": [24, 239, 28]
+  },
+  "2": {
+    "old_id": 3,
+    "id": 2,
+    "th": "ผม_กิน_ข้าว",
+    "en": "I (male) eat rice",
+    "word_ids": [23, 193, 155]
+  },
+  "3": {
+    "old_id": 4,
+    "id": 3,
+    "th": "ผม_ไม่_กิน_ข้าว",
+    "en": "I (male) don't eat rice",
+    "word_ids": [23, 39, 193, 155]
+  },
+  "4": {
+    "old_id": 5,
+    "id": 4,
+    "th": "ไม่_มี_ขวด",
+    "en": "There are no bottles",
+    "word_ids": [39, 236, 148]
+  },
+  "5": {
+    "old_id": 6,
+    "id": 5,
+    "th": "เขา_ใจ-ดี",
+    "en": "He is kind",
+    "word_ids": [26, 260]
+  },
+  "6": {
+    "old_id": 7,
+    "id": 6,
+    "th": "ฉัน_อยู่_บ้าน",
+    "en": "I (female) am at home",
+    "word_ids": [24, 237, 147]
+  },
+  "7": {
+    "old_id": 8,
+    "id": 7,
+    "th": "คุณ_มี_บ้าน_ไหม",
+    "en": "Do you have a house?",
+    "word_ids": [28, 236, 147, 10]
+  },
+  "8": {
+    "old_id": 9,
+    "id": 8,
+    "th": "คุณ_ชอบ_บ้าน_ของ_ผม_ไหม",
+    "en": "Do you like my house? (male)",
+    "word_ids": [28, 238, 147, 40, 23, 10]
+  },
+  "9": {
+    "old_id": 10,
+    "id": 9,
+    "th": "คุณ_ไม่_ชอบ_บ้าน_ของ_ผม",
+    "en": "You don't like my house. (male)",
+    "word_ids": [28, 39, 238, 147, 40, 23]
+  },
+  "10": {
+    "old_id": 11,
+    "id": 10,
+    "th": "ผม_ชอบ_คุณ",
+    "en": "I (male) like you.",
+    "word_ids": [23, 238, 28]
+  },
+  "11": {
+    "old_id": 12,
+    "id": 11,
+    "th": "ฉัน_ชอบ_คุณ",
+    "en": "I (female) like you.",
+    "word_ids": [24, 238, 28]
+  },
+  "12": {
+    "old_id": 13,
+    "id": 12,
+    "th": "ผม_ไม่_ชอบ_คุณ",
+    "en": "I (male) don't like you.",
+    "word_ids": [23, 39, 238, 28]
+  },
+  "13": {
+    "old_id": 14,
+    "id": 13,
+    "th": "ฉัน_ไม่_ชอบ_คุณ",
+    "en": "I (female) don't like you.",
+    "word_ids": [24, 39, 238, 28]
+  },
+  "14": {
+    "old_id": 15,
+    "id": 14,
+    "th": "ผม_ชอบ_เมือง-ไทย",
+    "en": "I (male) like Thailand.",
+    "word_ids": [23, 238, 253]
+  },
+  "15": {
+    "old_id": 16,
+    "id": 15,
+    "th": "คุณ_ชอบ_เมือง-ไทย_ไหม",
+    "en": "Do you like Thailand?",
+    "word_ids": [28, 238, 253, 10]
+  },
+  "16": {
+    "old_id": 17,
+    "id": 16,
+    "th": "ฉัน_อยาก_อยู่_เมือง-ไทย",
+    "en": "I (female) want to be in Thailand.",
+    "word_ids": [24, 241, 237, 253]
+  },
+  "17": {
+    "old_id": 18,
+    "id": 17,
+    "th": "ผม_อยาก_อยู่_บ้าน",
+    "en": "I (male) want to be home.",
+    "word_ids": [23, 241, 237, 147]
+  },
+  "18": {
+    "old_id": 19,
+    "id": 18,
+    "th": "ฉัน_ชอบ_อยู่_บ้าน",
+    "en": "I (female) like to be at home.",
+    "word_ids": [24, 238, 237, 147]
+  },
+  "19": {
+    "old_id": 20,
+    "id": 19,
+    "th": "ผม_ไม่_ชอบ_อยู่_บ้าน",
+    "en": "I (male) don't like to be at home.",
+    "word_ids": [23, 39, 238, 237, 147]
+  },
+  "20": {
+    "old_id": 21,
+    "id": 20,
+    "th": "ผม_ชอบ_อยู่_เมือง-ไทย",
+    "en": "I (male) like to be in Thailand.",
+    "word_ids": [23, 238, 237, 253]
+  },
+  "21": {
+    "old_id": 22,
+    "id": 21,
+    "th": "ฉัน_ไม่_ชอบ_อยู่_เมือง-ไทย",
+    "en": "I (female) don't like to be in Thailand.",
+    "word_ids": [24, 39, 238, 237, 253]
+  },
+  "22": {
+    "old_id": 23,
+    "id": 22,
+    "th": "ผม_ชื่อ_อ-เล็ก-ซี่",
+    "en": "My name is Alexis (male)",
+    "word_ids": [23, 204, 330]
+  },
+  "23": {
+    "old_id": 24,
+    "id": 23,
+    "th": "ผม_อา-ยุ_สิบ_ปี",
+    "en": "I (male) am ten years old.",
+    "word_ids": [23, 263, 233, 168]
+  },
+  "24": {
+    "old_id": 25,
+    "id": 24,
+    "th": "ผม_วิ่ง_เร็ว",
+    "en": "I (male) run fast.",
+    "word_ids": [23, 240, 90]
+  },
+  "25": {
+    "old_id": 26,
+    "id": 25,
+    "th": "ส-วัส-ดี_ค่ะ",
+    "en": "Hello (said by female)!",
+    "word_ids": [3, 11]
+  },
+  "26": {
+    "old_id": 27,
+    "id": 26,
+    "th": "ส-วัส-ดี_ครับ",
+    "en": "Hello (said by male)!",
+    "word_ids": [3, 9]
+  },
+  "27": {
+    "old_id": 28,
+    "id": 27,
+    "th": "ฉัน_รัก_เขา",
+    "en": "I (female) love him.",
+    "word_ids": [24, 239, 26]
+  },
+  "28": {
+    "old_id": 29,
+    "id": 28,
+    "th": "ฉัน_ชอบ_เขา",
+    "en": "I (female) like him.",
+    "word_ids": [24, 238, 26]
+  },
+  "29": {
+    "old_id": 30,
+    "id": 29,
+    "th": "ผม_ชอบ_เขา",
+    "en": "I (male) like him.",
+    "word_ids": [23, 238, 26]
+  },
+  "30": {
+    "old_id": 31,
+    "id": 30,
+    "th": "ผม_ไม่_ชอบ_เขา",
+    "en": "I (male) don't like him.",
+    "word_ids": [23, 39, 238, 26]
+  },
+  "31": {
+    "old_id": 32,
+    "id": 31,
+    "th": "คุณ_ชื่อ_อะ-ไร",
+    "en": "Whats your name?",
+    "word_ids": [28, 204, 56]
+  },
+  "32": {
+    "old_id": 33,
+    "id": 32,
+    "th": "ฉัน_ชอบ_ชื่อ_คุณ_นะ",
+    "en": "I (female) like your name.",
+    "word_ids": [24, 238, 204, 28, 13]
+  },
+  "33": {
+    "old_id": 34,
+    "id": 33,
+    "th": "ผม_อา-ศัย_อยู่_ใน_ลอน-ดอน",
+    "en": "I (male) live in London.",
+    "word_ids": [23, 282, 237, 44, 310]
+  },
+  "34": {
+    "old_id": 35,
+    "id": 34,
+    "th": "ชื่อ-เล่น_ของ_ผม_คือ_ย่อ-มาน",
+    "en": "My (male) nickname is Yoman.",
+    "word_ids": [245, 40, 23, 206, 309]
+  },
+  "35": {
+    "old_id": 36,
+    "id": 35,
+    "th": "คุณ_มา_จาก-ไหน",
+    "en": "Where are you from?",
+    "word_ids": [28, 202, 62]
+  },
+  "36": {
+    "old_id": 37,
+    "id": 36,
+    "th": "เธอ_ทำ-ให้_ผม_มี-ความ-สุข",
+    "en": "She makes me (male) happy.",
+    "word_ids": [25, 301, 23, 118]
+  },
+  "37": {
+    "old_id": 38,
+    "id": 37,
+    "th": "ฉัน_ชอบ_ทำ_ข-นม",
+    "en": "I (female) like to make cakes.",
+    "word_ids": [24, 238, 208, 250]
+  },
+  "38": {
+    "old_id": 39,
+    "id": 38,
+    "th": "การ_กิน_พิซ-ซ่า_ทำ-ให้_ฉัน_อ้วน",
+    "en": "Eating pizza makes me (female) fat.",
+    "word_ids": [181, 193, 252, 301, 24, 99]
+  },
+  "39": {
+    "old_id": 40,
+    "id": 39,
+    "th": "เรา_อยาก-ให้_คุณ_พูด_ภา-ษา-ไทย_ทุก_วัน",
+    "en": "We want you to speak thai every day.",
+    "word_ids": [29, 294, 28, 234, 325, 174, 164]
+  },
+  "40": {
+    "old_id": 41,
+    "id": 40,
+    "th": "ฉัน_มี_อะ-ไร_จะ_บอก_คุณ",
+    "en": "I (female) have something to tell you.",
+    "word_ids": [24, 236, 56, 42, 200, 28]
+  },
+  "41": {
+    "old_id": 42,
+    "id": 41,
+    "th": "ฉัน_อยาก_คุย_กับ_คุณ",
+    "en": "I (female) want to talk to you.",
+    "word_ids": [24, 241, 196, 46, 28]
+  },
+  "42": {
+    "old_id": 43,
+    "id": 42,
+    "th": "อย่า_นอน_ดึก",
+    "en": "Don't sleep (go to bed) late.",
+    "word_ids": [175, 210, 92]
+  },
+  "43": {
+    "old_id": 44,
+    "id": 43,
+    "th": "อย่า_กิน_เหล้า_เยอะ",
+    "en": "Don't drink too much alcohol.",
+    "word_ids": [175, 193, 157, 173]
+  },
+  "44": {
+    "old_id": 45,
+    "id": 44,
+    "th": "คุณ_ได้-ยิน_ฉัน_ไหม",
+    "en": "Can you hear me (female)?",
+    "word_ids": [28, 293, 24, 10]
+  },
+  "45": {
+    "old_id": 46,
+    "id": 45,
+    "th": "ผม_ทำ_อา-หาร_เอง",
+    "en": "I (male) cook myself.",
+    "word_ids": [23, 208, 251, 176]
+  },
+  "46": {
+    "old_id": 47,
+    "id": 46,
+    "th": "ผม_ไม่_ชอบ_กิน_คน-เดียว",
+    "en": "I (male) don't like to eat alone.",
+    "word_ids": [23, 39, 238, 193, 112]
+  },
+  "47": {
+    "old_id": 48,
+    "id": 47,
+    "th": "อา-หาร_โปรด_ของ_ฉัน_คือ_พิซ-ซ่า",
+    "en": "My (female) favorite food is pizza.",
+    "word_ids": [251, 94, 40, 24, 206, 252]
+  },
+  "48": {
+    "old_id": 49,
+    "id": 48,
+    "th": "การ_กิน_อา-หาร_มาก-เกิน-ไป_ไม่_ดี",
+    "en": "Eating too much food is not good.",
+    "word_ids": [181, 193, 251, 329, 39, 82]
+  },
+  "49": {
+    "old_id": 50,
+    "id": 49,
+    "th": "ฉัน_กิน_ข้าว",
+    "en": "I (female) eat rice.",
+    "word_ids": [24, 193, 155]
+  },
+  "50": {
+    "old_id": 51,
+    "id": 50,
+    "th": "คุณ_กิน_ข้าว",
+    "en": "You eat rice.",
+    "word_ids": [28, 193, 155]
+  },
+  "51": {
+    "old_id": 52,
+    "id": 51,
+    "th": "ผม_กิน_น้ำ",
+    "en": "I (male) drink (colloquial) water.",
+    "word_ids": [23, 193, 156]
+  },
+  "52": {
+    "old_id": 53,
+    "id": 52,
+    "th": "ผม_ไม่_ดื่ม_น้ำ",
+    "en": "I (male) don't drink (colloquial) water.",
+    "word_ids": [23, 39, 195, 156]
+  },
+  "53": {
+    "old_id": 54,
+    "id": 53,
+    "th": "ฉัน_ไม่_เคย_เห็น_หิ-มะ",
+    "en": "I (female) have never seen snow.",
+    "word_ids": [24, 39, 177, 194, 247]
+  },
+  "54": {
+    "old_id": 55,
+    "id": 54,
+    "th": "เขา_ไม่_เคย_ไป_กรุง-เทพ",
+    "en": "He has never been to Bangkok.",
+    "word_ids": [26, 39, 177, 201, 308]
+  },
+  "55": {
+    "old_id": 56,
+    "id": 55,
+    "th": "หมา_ตัว_ใหญ่",
+    "en": "The dog is big.",
+    "word_ids": [134, 186, 83]
+  },
+  "56": {
+    "old_id": 57,
+    "id": 56,
+    "th": "คุณ_พูด_ภา-ษา_ญี่-ปุ่น_ได้_ไหม",
+    "en": "Can you speak Japanese?",
+    "word_ids": [28, 234, 273, 254, 209, 10]
+  },
+  "57": {
+    "old_id": 58,
+    "id": 57,
+    "th": "คุณ_พูด_ภา-ษา-ไทย_ได้_ไหม",
+    "en": "Can you speak Thai?",
+    "word_ids": [28, 234, 325, 209, 10]
+  },
+  "58": {
+    "old_id": 59,
+    "id": 58,
+    "th": "คุณ_พูด_ภา-ษา-อัง-กฤษ_ได้_ไหม",
+    "en": "Can you speak English?",
+    "word_ids": [28, 234, 335, 209, 10]
+  },
+  "59": {
+    "old_id": 60,
+    "id": 59,
+    "th": "พรุ่ง-นี้_ฉัน_จะ_ไป_กรุง-เทพ",
+    "en": "I will go to Bangkok tomorrow.",
+    "word_ids": [65, 24, 42, 201, 308]
+  },
+  "60": {
+    "old_id": 61,
+    "id": 60,
+    "th": "ฉัน_เคย_ไป_กรุง-เทพ",
+    "en": "I have been to Bangkok.",
+    "word_ids": [24, 177, 201, 308]
+  },
+  "61": {
+    "old_id": 62,
+    "id": 61,
+    "th": "เรา_มา_จาก_อัง-กฤษ",
+    "en": "We come from England.",
+    "word_ids": [29, 202, 43, 255]
+  },
+  "62": {
+    "old_id": 63,
+    "id": 62,
+    "th": "เขา_หล่อ",
+    "en": "He's handsome.",
+    "word_ids": [26, 98]
+  },
+  "63": {
+    "old_id": 64,
+    "id": 63,
+    "th": "พวก-เรา_ยัง_เด็ก",
+    "en": "We (long form) are (still) young.",
+    "word_ids": [30, 180, 149]
+  },
+  "64": {
+    "old_id": 65,
+    "id": 64,
+    "th": "ผม_เป็น_ด็ก-ผู้-ชาย",
+    "en": "I am a boy.",
+    "word_ids": [23, 207, 317]
+  },
+  "65": {
+    "old_id": 66,
+    "id": 65,
+    "th": "ผม_บิน_ไม่_ได้",
+    "en": "I (male) can't fly.",
+    "word_ids": [23, 211, 39, 209]
+  },
+  "66": {
+    "old_id": 67,
+    "id": 66,
+    "th": "เขา_อยาก_กลับ-บ้าน_เพราะ_เขา_เหนื่อย",
+    "en": "He wants to go home because he's tired.",
+    "word_ids": [26, 241, 291, 178, 26, 100]
+  },
+  "67": {
+    "old_id": 68,
+    "id": 67,
+    "th": "ฉัน_ชอบ_อ่าน_หนัง-สือ",
+    "en": "I (female) like to read books.",
+    "word_ids": [24, 238, 203, 261]
+  },
+  "68": {
+    "old_id": 69,
+    "id": 68,
+    "th": "ผม_ชอบ_อ่าน_หนัง-สือ_เกี่ยว-กับ_การ_ทำ_อา-หาร",
+    "en": "I (male) like to read books about cooking.",
+    "word_ids": [23, 238, 203, 261, 54, 181, 208, 251]
+  },
+  "69": {
+    "old_id": 70,
+    "id": 69,
+    "th": "มะ-ม่วง_รา-คา_เท่า-ไหร่",
+    "en": "How much does a mango cost?",
+    "word_ids": [262, 274, 61]
+  },
+  "70": {
+    "old_id": 71,
+    "id": 70,
+    "th": "ฉัน_อยาก_เป็น_ครู",
+    "en": "I (female) want to become teacher.",
+    "word_ids": [24, 241, 207, 150]
+  },
+  "71": {
+    "old_id": 72,
+    "id": 71,
+    "th": "ฉัน_นั่ง_รถ-ไฟ-ฟ้า_เพราะ_มัน_เร็ว_กว่า",
+    "en": "I (female) take the sky train because it is faster.",
+    "word_ids": [24, 235, 316, 178, 27, 90, 182]
+  },
+  "72": {
+    "old_id": 73,
+    "id": 72,
+    "th": "ผม_กำ-ลัง_เรียน",
+    "en": "I (male) am studying.",
+    "word_ids": [23, 306, 198]
+  },
+  "73": {
+    "old_id": 74,
+    "id": 73,
+    "th": "คุณ_เป็น_ช้าง",
+    "en": "You are an elephant.",
+    "word_ids": [28, 207, 136]
+  },
+  "74": {
+    "old_id": 75,
+    "id": 74,
+    "th": "คุณ_ดูเ-หมือน_ลิง",
+    "en": "You look like a monkey.",
+    "word_ids": [28, 299, 137]
+  },
+  "75": {
+    "old_id": 76,
+    "id": 75,
+    "th": "ฉัน_จำ_ไม่_ได้",
+    "en": "I (female) don't remember.",
+    "word_ids": [24, 213, 39, 209]
+  },
+  "76": {
+    "old_id": 77,
+    "id": 76,
+    "th": "มัน_เป็น_รถ-ไฟ_วิ-เศษ",
+    "en": "It's a magic train.",
+    "word_ids": [27, 207, 258, 113]
+  },
+  "77": {
+    "old_id": 78,
+    "id": 77,
+    "th": "รถ_ไฟ_มา_แล้ว",
+    "en": "The train has arrived.",
+    "word_ids": [144, 145, 202, 172]
+  },
+  "78": {
+    "old_id": 79,
+    "id": 78,
+    "th": "วัน-นี้_เป็น_วัน_สุด-ท้าย_เหรอ_คะ",
+    "en": "Is today the last day?",
+    "word_ids": [64, 207, 164, 114, 16, 12]
+  },
+  "79": {
+    "old_id": 80,
+    "id": 79,
+    "th": "คุณ_กำ-ลัง_พูด_อะ-ไร",
+    "en": "What are you saying?",
+    "word_ids": [28, 306, 234, 56]
+  },
+  "80": {
+    "old_id": 81,
+    "id": 80,
+    "th": "คุณ_กำ-ลัง_คุย_เรื่อง_อะ-ไร_อยู่",
+    "en": "What are you talking about?",
+    "word_ids": [28, 306, 196, 49, 56, 237]
+  },
+  "81": {
+    "old_id": 82,
+    "id": 81,
+    "th": "มัน_ไม่_เหมือน_ใน_หนัง-สือ",
+    "en": "It's not like in books.",
+    "word_ids": [27, 39, 50, 44, 261]
+  },
+  "82": {
+    "old_id": 83,
+    "id": 82,
+    "th": "ทุก-คน_เปิด_หนัง-สือ_ของ_ตัว-เอง_ซะ",
+    "en": "Everybody, open your book!",
+    "word_ids": [35, 215, 261, 40, 34, 14]
+  },
+  "83": {
+    "old_id": 84,
+    "id": 83,
+    "th": "ลง-น-รก_ไป_ซะ",
+    "en": "Go to hell!",
+    "word_ids": [315, 201, 14]
+  },
+  "84": {
+    "old_id": 85,
+    "id": 84,
+    "th": "คุณ_กำ-ลัง_อ่าน_หนัง-สือ_ไหม",
+    "en": "Are you reading a book?",
+    "word_ids": [28, 306, 203, 261, 10]
+  },
+  "85": {
+    "old_id": 86,
+    "id": 85,
+    "th": "เขา_ซื้อ_ให้_คุณ_เหรอ",
+    "en": "He bought it for you, right?",
+    "word_ids": [26, 212, 51, 28, 16]
+  },
+  "86": {
+    "old_id": 87,
+    "id": 86,
+    "th": "เค้ก_ที่_ฉัน_ให้_คุณ_เป็น_ยัง-ไง_บ้าง",
+    "en": "How was the cake I sent you?",
+    "word_ids": [154, 45, 24, 51, 28, 207, 60, 183]
+  },
+  "87": {
+    "old_id": 88,
+    "id": 87,
+    "th": "คุณ_ซื้อ_เอง_เหรอ",
+    "en": "You bought it yourself, right?",
+    "word_ids": [28, 212, 176, 16]
+  },
+  "88": {
+    "old_id": 89,
+    "id": 88,
+    "th": "คุณ_จะ_ซื้อ_มัน_เหรอ",
+    "en": "You will buy it, right?",
+    "word_ids": [28, 42, 212, 27, 16]
+  },
+  "89": {
+    "old_id": 90,
+    "id": 89,
+    "th": "ก-รุ-ณา_มา_กับ_ผม_เถอะ",
+    "en": "Please come with me.",
+    "word_ids": [313, 202, 46, 23, 17]
+  },
+  "90": {
+    "old_id": 91,
+    "id": 90,
+    "th": "คุณ_ไม่_ได้-ยิน_ที่_ฉัน_พูด_หรือ-ไง",
+    "en": "Didn't you hear what I (female) said?",
+    "word_ids": [28, 39, 293, 45, 24, 234, 63]
+  },
+  "91": {
+    "old_id": 92,
+    "id": 91,
+    "th": "ผม_ต้อง-การ_หุ่น-ยนต์_ที่_ฝัน_ได้",
+    "en": "I (male) want a robot that can dream.",
+    "word_ids": [23, 295, 279, 45, 214, 209]
+  },
+  "92": {
+    "old_id": 93,
+    "id": 92,
+    "th": "ฉัน_ถาม_ว่า_เขา_อยู่_ที่-ไหน",
+    "en": "I (female) ask where he is.",
+    "word_ids": [24, 217, 184, 26, 237, 57]
+  },
+  "93": {
+    "old_id": 94,
+    "id": 93,
+    "th": "มัน_มา_จาก_ที่-ไหน",
+    "en": "Where did it come from?",
+    "word_ids": [27, 202, 43, 57]
+  },
+  "94": {
+    "old_id": 95,
+    "id": 94,
+    "th": "ทำ-ไม_คุณ_ออก-มา_ไม่_ได้_ล่ะ",
+    "en": "Why can't you come out?",
+    "word_ids": [59, 28, 296, 39, 209, 15]
+  },
+  "95": {
+    "old_id": 96,
+    "id": 95,
+    "th": "คุณ_อยู่_ที่-นี่_ดี_ไหม",
+    "en": "Are you here for good?",
+    "word_ids": [28, 237, 37, 82, 10]
+  },
+  "96": {
+    "old_id": 97,
+    "id": 96,
+    "th": "ทำ-ไม_คุณ_ยัง_อยู่_ที่-นี่",
+    "en": "Why are you still here?",
+    "word_ids": [59, 28, 180, 237, 37]
+  },
+  "97": {
+    "old_id": 98,
+    "id": 97,
+    "th": "เรา_มี_สอบ_อา-ทิตย์ห-น้า",
+    "en": "We have an exam next week.",
+    "word_ids": [29, 236, 142, 70]
+  },
+  "98": {
+    "old_id": 99,
+    "id": 98,
+    "th": "ฉัน_มี_ที-วี_สอง_เครื่อง",
+    "en": "I (female) have two TVs.",
+    "word_ids": [24, 236, 249, 225, 19]
+  },
+  "99": {
+    "old_id": 100,
+    "id": 99,
+    "th": "ฉัน_เห็น_พระ_สอง_รูป",
+    "en": "I (female) see two monks.",
+    "word_ids": [24, 194, 185, 225, 20]
+  },
+  "100": {
+    "old_id": 101,
+    "id": 100,
+    "th": "ฉัน_เชื่อ_ว่า_ฉัน_บิน_ได้",
+    "en": "I (female) believe I can fly.",
+    "word_ids": [24, 218, 184, 24, 211, 209]
+  },
+  "101": {
+    "old_id": 102,
+    "id": 101,
+    "th": "พวก-เขา_จะ_ทำ_อะ-ไร_ก่อน",
+    "en": "What will they do first?",
+    "word_ids": [36, 42, 208, 56, 79]
+  },
+  "102": {
+    "old_id": 103,
+    "id": 102,
+    "th": "คุณ_อยู่_บ้าน_ได้_ไหม",
+    "en": "Can you be at home?",
+    "word_ids": [28, 237, 147, 209, 10]
+  },
+  "103": {
+    "old_id": 104,
+    "id": 103,
+    "th": "คุณ_ชอบ_ฉัน_ใช่_ไหม",
+    "en": "You like me (female), right?",
+    "word_ids": [28, 238, 24, 179, 10]
+  },
+  "104": {
+    "old_id": 105,
+    "id": 104,
+    "th": "ผม_ไม่_ควร_อยู่_ที่-นี่",
+    "en": "I (male) should not be here.",
+    "word_ids": [23, 39, 242, 237, 37]
+  },
+  "105": {
+    "old_id": 106,
+    "id": 105,
+    "th": "มัน_ควร_อยู่_ใน_รถ",
+    "en": "It should be in the car.",
+    "word_ids": [27, 242, 237, 44, 144]
+  },
+  "106": {
+    "old_id": 107,
+    "id": 106,
+    "th": "เขา_กิน_เยอะ",
+    "en": "He eats a lot.",
+    "word_ids": [26, 193, 173]
+  },
+  "107": {
+    "old_id": 108,
+    "id": 107,
+    "th": "เธอ_ไป_ที่-นั่น",
+    "en": "She goes there.",
+    "word_ids": [25, 201, 38]
+  },
+  "108": {
+    "old_id": 109,
+    "id": 108,
+    "th": "ผม_เกลียด_มัน",
+    "en": "I (male) hate it.",
+    "word_ids": [23, 219, 27]
+  },
+  "109": {
+    "old_id": 110,
+    "id": 109,
+    "th": "ฉัน_เกลียด_นั่น",
+    "en": "I (female) hate that.",
+    "word_ids": [24, 219, 32]
+  },
+  "110": {
+    "old_id": 111,
+    "id": 110,
+    "th": "ฉัน_รู้-จัก_เขา",
+    "en": "I (female) know him.",
+    "word_ids": [24, 300, 26]
+  },
+  "111": {
+    "old_id": 112,
+    "id": 111,
+    "th": "ฉัน_ไม่_รู้-จัก_เขา",
+    "en": "I (female) don't know him.",
+    "word_ids": [24, 39, 300, 26]
+  },
+  "112": {
+    "old_id": 113,
+    "id": 112,
+    "th": "ผม_ต้อง_กลับ_ประ-เทศ_อังก-ฤษ_อา-ทิตย์_หน้า",
+    "en": "I have to return to the United Kingdom next week.",
+    "word_ids": [23, 199, 220, 264, 255, 81, 53]
+  },
+  "113": {
+    "old_id": 114,
+    "id": 113,
+    "th": "เธอ_ต้อง_ไป_รับ_แฟน_ของ_เธอ_ที่_ส-นาม-บิน",
+    "en": "She has to pick up her boyfriend at the airport.",
+    "word_ids": [25, 199, 201, 221, 187, 40, 25, 45, 324]
+  },
+  "114": {
+    "old_id": 115,
+    "id": 114,
+    "th": "คุณ_ไม่_ต้อง_ซื้อ_กา-แฟ_สอง_แก้ว",
+    "en": "You don't have to buy two cups of coffee.",
+    "word_ids": [28, 39, 199, 212, 265, 225, 18]
+  },
+  "115": {
+    "old_id": 116,
+    "id": 115,
+    "th": "วัน-นี้_ผม_ไม่_ต้อง_ทำ-อา-หาร",
+    "en": "Today I (male) don't have to cook.",
+    "word_ids": [64, 23, 39, 199, 322]
+  },
+  "116": {
+    "old_id": 117,
+    "id": 116,
+    "th": "เขา_ไม่_ควร_อยู่_หลัง_บ้าน",
+    "en": "He shouldn't be behind the house.",
+    "word_ids": [26, 39, 242, 237, 21, 147]
+  },
+  "117": {
+    "old_id": 118,
+    "id": 117,
+    "th": "ฉัน_สาย_แล้ว",
+    "en": "Im (female) late.",
+    "word_ids": [24, 22, 172]
+  },
+  "118": {
+    "old_id": 119,
+    "id": 118,
+    "th": "เขา_คง-จะ_ไป_ตอน-นี้",
+    "en": "He will probably go now.",
+    "word_ids": [26, 302, 201, 67]
+  },
+  "119": {
+    "old_id": 120,
+    "id": 119,
+    "th": "คุณ_มี_เว-ลา_ว่าง_พอ_ไหม",
+    "en": "Do you have enough free time?",
+    "word_ids": [28, 236, 272, 97, 95, 10]
+  },
+  "120": {
+    "old_id": 121,
+    "id": 120,
+    "th": "ฉัน_มี_เว-ลา_ไม่_พอ",
+    "en": "I (female) don't have enough free time.",
+    "word_ids": [24, 236, 272, 39, 95]
+  },
+  "121": {
+    "old_id": 122,
+    "id": 121,
+    "th": "พอ_แล้ว",
+    "en": "Enough already!",
+    "word_ids": [95, 172]
+  },
+  "122": {
+    "old_id": 123,
+    "id": 122,
+    "th": "คุณ_ใช้_เว-ลา_ว่าง_ที่-ไหน",
+    "en": "Where do you spend your free time?",
+    "word_ids": [28, 222, 272, 97, 57]
+  },
+  "123": {
+    "old_id": 124,
+    "id": 123,
+    "th": "คน-ไทย_ชอบ_พูด_ภา-ษา_อัง-กฤษ",
+    "en": "Thai people like to speak English.",
+    "word_ids": [244, 238, 234, 273, 255]
+  },
+  "124": {
+    "old_id": 125,
+    "id": 124,
+    "th": "ฉัน_ชอบ_เรียน_ภา-ษา-ไทย",
+    "en": "I (female) like to study Thai.",
+    "word_ids": [24, 238, 198, 325]
+  },
+  "125": {
+    "old_id": 126,
+    "id": 125,
+    "th": "ฉัน_ไม่_ชอบ_เรียน_ภา-ษา-อัง-กฤษ",
+    "en": "I (male) don't like to study English.",
+    "word_ids": [24, 39, 238, 198, 335]
+  },
+  "126": {
+    "old_id": 127,
+    "id": 126,
+    "th": "ฉัน_มี_แมว",
+    "en": "I (female) have a cat.",
+    "word_ids": [24, 236, 1]
+  },
+  "127": {
+    "old_id": 128,
+    "id": 127,
+    "th": "คุณ_ชอบ_แมว_ไหม",
+    "en": "Do you like cats?",
+    "word_ids": [28, 238, 1, 10]
+  },
+  "128": {
+    "old_id": 129,
+    "id": 128,
+    "th": "แมว_ของ_ผม_อยู่_บ้าน_ของ_ผม",
+    "en": "(male) My cat is in my house.",
+    "word_ids": [1, 40, 23, 237, 147, 40, 23]
+  },
+  "129": {
+    "old_id": 130,
+    "id": 129,
+    "th": "แมว_พูด_ไม่_ได้",
+    "en": "Cats can't talk.",
+    "word_ids": [1, 234, 39, 209]
+  },
+  "130": {
+    "old_id": 131,
+    "id": 130,
+    "th": "ผม_คิด_ว่า_แมว_ชอบ_หมา_ได้",
+    "en": "I (male) think that cats can like dogs.",
+    "word_ids": [23, 197, 184, 1, 238, 134, 209]
+  },
+  "131": {
+    "old_id": 132,
+    "id": 131,
+    "th": "คน-ไทย_ชอบ_แมว",
+    "en": "Thai people like cats.",
+    "word_ids": [244, 238, 1]
+  },
+  "132": {
+    "old_id": 133,
+    "id": 132,
+    "th": "ฉัน_อยาก_เรียน_ภา-ษา_แมว",
+    "en": "I (female) want to learn cat language.",
+    "word_ids": [24, 241, 198, 273, 1]
+  },
+  "133": {
+    "old_id": 134,
+    "id": 133,
+    "th": "ฉัน_ชอบ_เห็น_ยิ้ม_ของ_คุณ",
+    "en": "I like to see your smile.",
+    "word_ids": [24, 238, 194, 171, 40, 28]
+  },
+  "134": {
+    "old_id": 135,
+    "id": 134,
+    "th": "คุณ_คือ_ใคร",
+    "en": "Who are you?",
+    "word_ids": [28, 206, 55]
+  },
+  "135": {
+    "old_id": 136,
+    "id": 135,
+    "th": "คุณ_ชอบ_คน-ไทย",
+    "en": "You like Thai people.",
+    "word_ids": [28, 238, 244]
+  },
+  "136": {
+    "old_id": 137,
+    "id": 136,
+    "th": "คน-ไทย_ชอบ_ผม",
+    "en": "Thai people like me (male).",
+    "word_ids": [244, 238, 23]
+  },
+  "137": {
+    "old_id": 138,
+    "id": 137,
+    "th": "คน-ไทย_ชอบ_ฉัน",
+    "en": "Thai people like me (female).",
+    "word_ids": [244, 238, 24]
+  },
+  "138": {
+    "old_id": 139,
+    "id": 138,
+    "th": "ผม_ชอบ_คน-ไทย",
+    "en": "I (male) like Thai people.",
+    "word_ids": [23, 238, 244]
+  },
+  "139": {
+    "old_id": 140,
+    "id": 139,
+    "th": "ฉัน_ชอบ_คน-ไทย",
+    "en": "I (female) like Thai people.",
+    "word_ids": [24, 238, 244]
+  },
+  "140": {
+    "old_id": 141,
+    "id": 140,
+    "th": "ผม_เป็น_คน-ไทย",
+    "en": "I (male) am Thai.",
+    "word_ids": [23, 207, 244]
+  },
+  "141": {
+    "old_id": 142,
+    "id": 141,
+    "th": "ฉัน_เป็น_คน-ไทย",
+    "en": "I (female) am Thai.",
+    "word_ids": [24, 207, 244]
+  },
+  "142": {
+    "old_id": 143,
+    "id": 142,
+    "th": "คน-ไทย_ชอบ_อยู่_บ้าน",
+    "en": "Thai people like to be at home.",
+    "word_ids": [244, 238, 237, 147]
+  },
+  "143": {
+    "old_id": 144,
+    "id": 143,
+    "th": "คุณ_ชอบ_โรง-เรียน_ไหม",
+    "en": "Do you like school?",
+    "word_ids": [28, 238, 275, 10]
+  },
+  "144": {
+    "old_id": 145,
+    "id": 144,
+    "th": "คุณ_ชอบ_อยู่_ที่_โรง-เรียน_ไหม",
+    "en": "Do you like to be at school?",
+    "word_ids": [28, 238, 237, 45, 275, 10]
+  },
+  "145": {
+    "old_id": 146,
+    "id": 145,
+    "th": "เขา_ชอบ_โรง-เรียน_ไทย",
+    "en": "He likes Thai school.",
+    "word_ids": [26, 238, 275, 345]
+  },
+  "146": {
+    "old_id": 147,
+    "id": 146,
+    "th": "คน-ไทย_ชอบ_โรง-เรียน_ไหม",
+    "en": "Do Thai people like school?",
+    "word_ids": [244, 238, 275, 10]
+  },
+  "147": {
+    "old_id": 148,
+    "id": 147,
+    "th": "ผม_ชอบ_ไป_โรง-เรียน",
+    "en": "I (male) like to go to school.",
+    "word_ids": [23, 238, 201, 275]
+  },
+  "148": {
+    "old_id": 149,
+    "id": 148,
+    "th": "ฉัน_อยาก_อยู่_บ้าน_กิน_ข้าว",
+    "en": "I (female) want to be at home and eat.",
+    "word_ids": [24, 241, 237, 147, 193, 155]
+  },
+  "149": {
+    "old_id": 150,
+    "id": 149,
+    "th": "ฉัน_อยาก_กลับ-บ้าน_เรียน_ภา-ษา-ไทย",
+    "en": "I (male) want to return home and study Thai language.",
+    "word_ids": [24, 241, 291, 198, 325]
+  },
+  "150": {
+    "old_id": 151,
+    "id": 150,
+    "th": "เขา_อยาก_คุย_กับ_ฉัน",
+    "en": "He wants to speak with me (female).",
+    "word_ids": [26, 241, 196, 46, 24]
+  },
+  "151": {
+    "old_id": 152,
+    "id": 151,
+    "th": "เขา_ไม่_ชอบ_อยู่_บ้าน",
+    "en": "He doesnt like to be at home.",
+    "word_ids": [26, 39, 238, 237, 147]
+  },
+  "152": {
+    "old_id": 153,
+    "id": 152,
+    "th": "เขา_ไม่_ชอบ_โรง-เรียน_ไทย",
+    "en": "He doesnt like Thai school.",
+    "word_ids": [26, 39, 238, 275, 345]
+  },
+  "153": {
+    "old_id": 154,
+    "id": 153,
+    "th": "เขา_ไม่_อยาก_อยู่_โรง-เรียน",
+    "en": "He doesnt want to be at school.",
+    "word_ids": [26, 39, 241, 237, 275]
+  },
+  "154": {
+    "old_id": 155,
+    "id": 154,
+    "th": "ผม_ไม่_อยาก_ไป_โรง-เรียน",
+    "en": "I (male) don't want to go to school.",
+    "word_ids": [23, 39, 241, 201, 275]
+  },
+  "155": {
+    "old_id": 156,
+    "id": 155,
+    "th": "เขา_ไม่_ชอบ_พูด",
+    "en": "He doesnt like to speak.",
+    "word_ids": [26, 39, 238, 234]
+  },
+  "156": {
+    "old_id": 157,
+    "id": 156,
+    "th": "เธอ_ไม่_อยาก_พูด",
+    "en": "She doesnt want to speak.",
+    "word_ids": [25, 39, 241, 234]
+  },
+  "157": {
+    "old_id": 158,
+    "id": 157,
+    "th": "ฉัน_ดี-ใจ_ที่_คุณ_ชอบ_มัน",
+    "en": "I'm glad you like it.",
+    "word_ids": [24, 349, 45, 28, 238, 27]
+  },
+  "158": {
+    "old_id": 159,
+    "id": 158,
+    "th": "พวก-เขา_อา-ศัย_อยู่_ใน_ป่า",
+    "en": "They live in the jungle.",
+    "word_ids": [36, 282, 237, 44, 342]
+  },
+  "159": {
+    "old_id": 160,
+    "id": 159,
+    "th": "คุณ_รู้-จัก_เขา_ไหม",
+    "en": "Do you know him?",
+    "word_ids": [28, 300, 26, 10]
+  },
+  "160": {
+    "old_id": 161,
+    "id": 160,
+    "th": "คุณ_เคย_ไป_มาเลเซีย_ไหม",
+    "en": "Have you ever been to Malaysia?",
+    "word_ids": [28, 177, 201, 318, 10]
+  },
+  "161": {
+    "old_id": 162,
+    "id": 161,
+    "th": "คุณ_ชอบ_อา-หาร_ไทย_ไหม",
+    "en": "Do you like Thai food?",
+    "word_ids": [28, 238, 251, 345, 10]
+  },
+  "162": {
+    "old_id": 163,
+    "id": 162,
+    "th": "ตุ๊ก-แก_เป็น_ส-กุล_ของ_สัตว์-เลื้อย-คลาน",
+    "en": "Geckos are a family of reptiles.",
+    "word_ids": [0, 207, 365, 40, 360]
+  },
+  "163": {
+    "old_id": 164,
+    "id": 163,
+    "th": "งู_เป็น_ส-กุล_ของ_สัตว์-เลื้อย-คลาน",
+    "en": "Snakes are a family of reptiles.",
+    "word_ids": [2, 207, 365, 40, 360]
+  },
+  "164": {
+    "old_id": 165,
+    "id": 164,
+    "th": "ตุ๊ก-แก_มี_ขา_มาก_กว่า_งู",
+    "en": "Geckos have more legs than snakes.",
+    "word_ids": [0, 236, 191, 366, 182, 2]
+  },
+  "165": {
+    "old_id": 166,
+    "id": 165,
+    "th": "ขอบ-คุณ_มาก_ครับ",
+    "en": "Thank you very much (said by a male)!",
+    "word_ids": [4, 366, 9]
+  },
+  "166": {
+    "old_id": 167,
+    "id": 166,
+    "th": "คุณ_รู้_ไหม_ว่า_พระ-เจ้า_คือ_อะ-ไร",
+    "en": "Do you know what a god is?",
+    "word_ids": [28, 370, 10, 184, 5, 206, 56]
+  },
+  "167": {
+    "old_id": 168,
+    "id": 167,
+    "th": "ขอ-โทษ_ที่_ทำ-ให้_คุณ_ต้อง_รอ",
+    "en": "Sorry to have made you have to wait.",
+    "word_ids": [338, 45, 301, 28, 199, 369]
+  },
+  "168": {
+    "old_id": 169,
+    "id": 168,
+    "th": "ฉัน_เห็น_หิ-มะ_เป็น_ครั้ง-แรก_ใน_แค-นา-ดา",
+    "en": "I (female) saw snow for the first time in Canada.",
+    "word_ids": [24, 194, 247, 207, 377, 44, 319]
+  },
+  "169": {
+    "old_id": 170,
+    "id": 169,
+    "th": "อา-หาร_ไทย_อ-ร่อย_มาก",
+    "en": "Thai food is really delicious.",
+    "word_ids": [251, 345, 347, 366]
+  },
+  "170": {
+    "old_id": 171,
+    "id": 170,
+    "th": "ฉัน_คิด_ว่า_มะ-ม่วง_มี_ความ-หวาน_มาก_กว่า_สับ-ปะ-รด",
+    "en": "I think mangoes are sweeter than pineapples.",
+    "word_ids": [24, 197, 184, 262, 236, 376, 366, 182, 326]
+  },
+  "171": {
+    "old_id": 172,
+    "id": 171,
+    "th": "ลา-ก่อน_ทุก-คน",
+    "en": "Goodbye everybody!",
+    "word_ids": [372, 35]
+  },
+  "172": {
+    "old_id": 173,
+    "id": 172,
+    "th": "ฉัน_ไม่_ชอบ_ตะ-เกียบ_ไม้",
+    "en": "I (female) don't like wooden chopsticks.",
+    "word_ids": [24, 39, 238, 362, 163]
+  },
+  "173": {
+    "old_id": 174,
+    "id": 173,
+    "th": "เพื่อน_ของ_เขา_กลาย-เป็น_วิศวกร_เมื่อ_ปี_ที่_แล้ว",
+    "en": "His friend became an engineer last year.",
+    "word_ids": [170, 40, 26, 378, 331, 380, 168, 45, 172]
+  },
+  "174": {
+    "old_id": 175,
+    "id": 174,
+    "th": "ผม_กลัว_งู",
+    "en": "I'm afraid of snakes.",
+    "word_ids": [23, 367, 2]
+  },
+  "175": {
+    "old_id": 176,
+    "id": 175,
+    "th": "คุณ_ดู_สวย_มาก",
+    "en": "You're looking beautiful!",
+    "word_ids": [28, 368, 340, 366]
+  },
+  "176": {
+    "old_id": 177,
+    "id": 176,
+    "th": "เรา_จะ_ไม่-เป็น-ไร",
+    "en": "We're going to be fine!",
+    "word_ids": [29, 42, 8]
+  },
+  "177": {
+    "old_id": 178,
+    "id": 177,
+    "th": "คุณ_รู้_ไหม_ว่า_ทำ-ไม",
+    "en": "Do you know why?",
+    "word_ids": [28, 370, 10, 184, 59]
+  },
+  "178": {
+    "old_id": 179,
+    "id": 178,
+    "th": "ฉัน_คิด_ว่า_รอง-เท้า_คุณ_สกปรก_เกิน-ไป",
+    "en": "I (female) think your shoes are too dirty!",
+    "word_ids": [24, 197, 184, 284, 28, 361, 381]
+  },
+  "179": {
+    "old_id": 180,
+    "id": 179,
+    "th": "ฉัน_รู้_ว่า_คุณ_ไม่_ชอบ_ฉัน_แต่_ไม่-เป็น-ไร",
+    "en": "I (female) know you don't like me, but it's fine.",
+    "word_ids": [24, 370, 184, 28, 39, 238, 24, 41, 8]
+  },
+  "180": {
+    "old_id": 181,
+    "id": 180,
+    "th": "ฉัน_กำ-ลัง_จะ_ตาย_เร็ว-ๆ-นี้_แต่_ไม่-เป็น-ไร",
+    "en": "I'm (female) going to die soon, but it's fine.",
+    "word_ids": [24, 306, 42, 371, 382, 41, 8]
+  },
+  "181": {
+    "old_id": 182,
+    "id": 181,
+    "th": "ฉัน_ไป_เที่ยว_เวียด-นาม_และ_กัม-พู-ชา_ใน_ช่วง_ฤดู-หนาว",
+    "en": "I (female) visited Vietnam and Cambodia during winter.",
+    "word_ids": [24, 201, 375, 383, 384, 320, 44, 385, 386]
+  },
+  "182": {
+    "old_id": 183,
+    "id": 182,
+    "th": "ฉัน_ไม่-ใช่_คน_ลาว",
+    "en": "I'm (female) not Lao.",
+    "word_ids": [24, 305, 343, 158]
+  },
+  "183": {
+    "old_id": 184,
+    "id": 183,
+    "th": "เขา_ซื้อ_น้ำ_สับ-ปะ-รด_ให้_เธอ_แต่_เธอ_ป-ฏิ-เสธ_ที่_จะ_รับ_มัน",
+    "en": "He bought her a pineapple juice but she refused to take it.",
+    "word_ids": [26, 212, 156, 326, 51, 25, 41, 25, 389, 45, 42, 221, 27]
+  },
+  "184": {
+    "old_id": 185,
+    "id": 184,
+    "th": "เด็ก-ๆ_ไม่_ชอบ_กิน_ผัก",
+    "en": "The children don't like eating vegetables.",
+    "word_ids": [379, 39, 238, 193, 346]
+  },
+  "185": {
+    "old_id": 186,
+    "id": 185,
+    "th": "ผม_จะ_ขึ้น_รถ-ไฟ-ใต้-ดิน_ทุก-วัน_เมื่อ_ผม_อา-ศัย_อยู่_ใน_กรุง-เทพ",
+    "en": "I will take the subway everyday when I live in Bangkok.",
+    "word_ids": [23, 42, 374, 333, 71, 380, 23, 282, 237, 44, 308]
+  },
+  "186": {
+    "old_id": 187,
+    "id": 186,
+    "th": "ผม_ดี-ใจ_ที่_คุณ_ชอบ",
+    "en": "I'm glad you like it (said by a male).",
+    "word_ids": [23, 349, 45, 28, 238]
+  },
+  "187": {
+    "old_id": 188,
+    "id": 187,
+    "th": "ฉัน_ดี-ใจ_ที่_ได้_พบ_คุณ",
+    "en": "I'm glad I met you (said by a female).",
+    "word_ids": [24, 349, 45, 209, 373, 28]
+  },
+  "188": {
+    "old_id": 189,
+    "id": 188,
+    "th": "บ้าน_ของ_ผม_อยู่_ใกล้_บ้าน_ของ_คุณ",
+    "en": "My house (male) is close to your house.",
+    "word_ids": [147, 40, 23, 237, 93, 147, 40, 28]
+  },
+  "189": {
+    "old_id": 190,
+    "id": 189,
+    "th": "ประ-เทศ_ฝ-รั่ง-เศส_อยู่_ใกล้_ประ-เทศ_อัง-กฤษ",
+    "en": "France is close to Britain.",
+    "word_ids": [264, 321, 237, 93, 264, 255]
+  },
+  "190": {
+    "old_id": 191,
+    "id": 190,
+    "th": "ประ-เทศ_ไทย_ไกล_จาก_ประ-เทศ_อัง-กฤษ",
+    "en": "Thailand is far from Britain.",
+    "word_ids": [264, 345, 96, 43, 264, 255]
+  },
+  "191": {
+    "old_id": 192,
+    "id": 191,
+    "th": "อา-หาร_โปรด_ของ_ผม_คือ_พิซ-ซ่า",
+    "en": "My (male) favourite food is pizza.",
+    "word_ids": [251, 94, 40, 23, 206, 252]
+  },
+  "192": {
+    "old_id": 193,
+    "id": 192,
+    "th": "คุณ_ง่วง_รึ-ป่าว",
+    "en": "Are you sleepy (or not?)",
+    "word_ids": [28, 91, 391]
+  },
+  "193": {
+    "old_id": 194,
+    "id": 193,
+    "th": "ทุก-วัน_ผม_ขึ้น_รถ-ไฟ_ไป_ทํา-งาน",
+    "en": "Every day, I take the train to work.",
+    "word_ids": [71, 23, 374, 258, 201, 393]
+  },
+  "194": {
+    "old_id": 195,
+    "id": 194,
+    "th": "หนัง-สือ_เล่ม_นี้_ทำ-ให้_ฉัน_ง่วง-นอน",
+    "en": "This book makes me (female) sleepy.",
+    "word_ids": [261, 392, 31, 301, 24, 394]
+  },
+  "195": {
+    "old_id": 196,
+    "id": 195,
+    "th": "คุณ_ง่วง-นอน_รึ-ป่าว",
+    "en": "Are you sleepy or not?",
+    "word_ids": [28, 394, 391]
+  },
+  "196": {
+    "old_id": 197,
+    "id": 196,
+    "th": "คน_ไทย_เป็น_คน_ดี",
+    "en": "Thai people are good people",
+    "word_ids": [343, 345, 207, 343, 82]
+  }
+}

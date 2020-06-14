@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Test/TestAnswer.gd" type="Script" id=2]
+[ext_resource path="res://Test/test_bg.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 9
+font_data = ExtResource( 1 )
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 78.9132
+height = 148.994
+
+[node name="TestAnswer" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -7.6294e-07, 0 )
+scale = Vector2( 0.103209, 0.0944444 )
+texture = ExtResource( 3 )
+centered = false
+flip_h = true
+flip_v = true
+
+[node name="Label" type="Label" parent="."]
+margin_right = 32.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "House"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2( 0.1, 0.1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 163.929, 84.1817 )
+rotation = -1.57079
+shape = SubResource( 2 )
+[connection signal="input_event" from="Area2D" to="." method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_Area2D_mouse_exited"]

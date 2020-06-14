@@ -25,8 +25,9 @@ onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
 
 func _ready() -> void:
-	print('player', self)
 	animationTree.active = true
+	Game.player = self
+	print('player is ', self)
 
 func _physics_process(delta) -> void:
 	match state:
@@ -46,6 +47,9 @@ func _input(_event) -> void:
 			target.initiate_dialog(self)
 	if Input.is_action_just_pressed("print_position"):
 		print("(" + str(position.x) + ", " + str(position.y) + ")")
+		set_hp(Game.hp - 0.5)
+	if Input.is_action_just_pressed("print_known_sentences"):
+		Game.print_known_sentences()
 	if Input.is_action_just_pressed("dict"):
 		if dict:
 			dict.queue_free()
@@ -58,6 +62,8 @@ func _input(_event) -> void:
 
 
 func move_state(delta) -> void:
+	if not Game.can_move:
+		return
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
@@ -116,3 +122,7 @@ func _on_InteractBox_body_exited(_npc) -> void:
 func end_dialog() -> void:
 	can_interact = true
 	can_move = true
+
+func set_hp(hp) -> void:
+	Game.hp = hp
+	$HUD/HpBar.set_life(hp, Game.max_hp)

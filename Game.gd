@@ -2,17 +2,41 @@ extends Node
 
 var change_color = false
 var goal_color = null
-var words
-var current_scene = null
+
+var words = []
+var sentences = []
+
 var known_words = []
+var known_sentences = []
+
+var current_scene = null
 var player = null
+var can_move = true
+
+var hp = 5.0
+var max_hp = 5.0
+
+func set_hp(_hp) -> void:
+	player.set_hp(_hp)
 
 func knows_word(word) -> bool:
 	return word["id"] in known_words
 
-func retrieve_words_from_json():
+func print_known_sentences() -> void:
+	print('print_known_sentences')
+	for known_sentence_id in known_sentences:
+		var sentence = sentences[str(known_sentence_id)]
+		print(sentence["th"])
+
+func pop_victory_screen() -> void:
+	var VictoryScreen = load("res://UI/Victory.tscn")
+	var victory_screen = VictoryScreen.instance()
+	var world = get_tree().current_scene
+	world.add_child(victory_screen)
+
+func retrieve_from_json_file(file):
 	var data_file = File.new()
-	if data_file.open("res://Lexical/Word/words.json", File.READ) != OK:
+	if data_file.open(file, File.READ) != OK:
 		print('problem opening the json file!!!')
 		return
 	var data_text = data_file.get_as_text()
@@ -26,7 +50,8 @@ func retrieve_words_from_json():
 func _ready():
 	var root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count() - 1)
-	words = retrieve_words_from_json()
+	words = retrieve_from_json_file("res://Lexical/Word/words.json")
+	sentences = retrieve_from_json_file("res://Lexical/Sentence/sentences.json")
 
 func _process(_delta):
 	if Input.is_action_pressed("ui_cancel"):
@@ -48,15 +73,12 @@ func _on_teleport_signal(to_map_name, to_x, to_y) -> void:
 
 func _deferred_goto_scene(to_map_name, to_x, to_y):
 	# It is now safe to remove the current scene
-	var ref = weakref(current_scene)
-	print('ref', ref)
-	if ref.get_ref():
-		print('current_scene', current_scene)
-		current_scene.free()
+	# var ref = weakref(current_scene)
+	current_scene.free()
 	# Load and instance the new scene.
 	current_scene = ResourceLoader.load(to_map_name).instance()
-	for child in current_scene.get_children():
-		print('--- ', child.get_name())
+#	for child in current_scene.get_children():
+#		print('--- ', child.get_name())
 	player = current_scene.get_node("YSort").get_node("Player")
 	player.position.x = to_x
 	player.position.y = to_y
@@ -73,8 +95,23 @@ func _on_InteractBox_body_entered(_player, npc) -> void:
 func _on_InteractBox_body_exited(_player, npc) -> void:
 	_player._on_InteractBox_body_exited(npc)
 
-func _on_word_area_entered(id) -> void:
-	known_words.append(id)
+func _on_word_area_entered(id, over_word) -> void:
+	var test = load("res://Test/TestGuessMeaning.tscn").instance()
+	self.add_child(test)
+	test.init(id, over_word)
+
+func add_sentence(sentence_id, x, y):
+	known_sentences.append(sentence_id)
+	var floaty = load("res://UI/Floaty.tscn").instance()
+	floaty.text = "new sentence added!"
+	floaty.position.x = x
+	floaty.position.y = y
+	get_tree().current_scene.add_child(floaty)
+
+
+func _on_sentence_area_entered(sentence_id, x, y) -> void:
+	if not sentence_id in known_sentences:
+		add_sentence(sentence_id, x, y)
 
 func _on_changelight_entered(color) -> void:
 	change_color = true

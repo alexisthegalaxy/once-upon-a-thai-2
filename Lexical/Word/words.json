@@ -1,5 +1,6 @@
 {
   "0": {
+    "old_id": 1,
     "id": 0,
     "split": "ตุ๊ก-แก",
     "en": "gecko",
@@ -9,6 +10,7 @@
     "teaching_order": -1
   },
   "1": {
+    "old_id": 2,
     "id": 1,
     "split": "แมว",
     "en": "cat",
@@ -18,6 +20,7 @@
     "teaching_order": -1
   },
   "2": {
+    "old_id": 3,
     "id": 2,
     "split": "งู",
     "en": "snake",
@@ -27,6 +30,7 @@
     "teaching_order": -1
   },
   "3": {
+    "old_id": 4,
     "id": 3,
     "split": "ส-วัส-ดี",
     "en": "hello",
@@ -36,6 +40,7 @@
     "teaching_order": 15
   },
   "4": {
+    "old_id": 5,
     "id": 4,
     "split": "ขอบ-คุณ",
     "en": "thank you",
@@ -45,6 +50,7 @@
     "teaching_order": 16
   },
   "5": {
+    "old_id": 6,
     "id": 5,
     "split": "พระ-เจ้า",
     "en": "my God!",
@@ -54,6 +60,7 @@
     "teaching_order": -1
   },
   "6": {
+    "old_id": 7,
     "id": 6,
     "split": "เอา-เถอะ",
     "en": "okay, alright",
@@ -63,6 +70,7 @@
     "teaching_order": -1
   },
   "7": {
+    "old_id": 8,
     "id": 7,
     "split": "สา-ธุ",
     "en": "sadhu",
@@ -72,6 +80,7 @@
     "teaching_order": -1
   },
   "8": {
+    "old_id": 9,
     "id": 8,
     "split": "ไม่-เป็น-ไร",
     "en": "nevermind",
@@ -81,6 +90,7 @@
     "teaching_order": -1
   },
   "9": {
+    "old_id": 10,
     "id": 9,
     "split": "ครับ",
     "en": "(male polite particle)",
@@ -90,6 +100,7 @@
     "teaching_order": 19
   },
   "10": {
+    "old_id": 11,
     "id": 10,
     "split": "ไหม",
     "en": "(question particle)",
@@ -99,6 +110,7 @@
     "teaching_order": 14
   },
   "11": {
+    "old_id": 12,
     "id": 11,
     "split": "ค่ะ",
     "en": "(female polite particle)",
@@ -108,6 +120,7 @@
     "teaching_order": 18
   },
   "12": {
+    "old_id": 13,
     "id": 12,
     "split": "คะ",
     "en": "(female polite particle for questions)",
@@ -117,6 +130,7 @@
     "teaching_order": -1
   },
   "13": {
+    "old_id": 14,
     "id": 13,
     "split": "นะ",
     "en": "(particle to make sentence softer or more persuasive)",
@@ -126,6 +140,7 @@
     "teaching_order": -1
   },
   "14": {
+    "old_id": 15,
     "id": 14,
     "split": "ซะ",
     "en": "(particle implying it must be done quickly or completely)",
@@ -135,6 +150,7 @@
     "teaching_order": -1
   },
   "15": {
+    "old_id": 16,
     "id": 15,
     "split": "ล่ะ",
     "en": "(question particle showing a change of state)",
@@ -144,6 +160,7 @@
     "teaching_order": -1
   },
   "16": {
+    "old_id": 17,
     "id": 16,
     "split": "เหรอ",
     "en": "(question particle to make it softer, or seeking confirmation)",
@@ -153,6 +170,7 @@
     "teaching_order": -1
   },
   "17": {
+    "old_id": 18,
     "id": 17,
     "split": "เถอะ",
     "en": "(particle with a sense of urging, like [let's] in English)",
@@ -162,6 +180,7 @@
     "teaching_order": -1
   },
   "18": {
+    "old_id": 19,
     "id": 18,
     "split": "แก้ว",
     "en": "glass, classifier for glasses",
@@ -171,6 +190,7 @@
     "teaching_order": -1
   },
   "19": {
+    "old_id": 20,
     "id": 19,
     "split": "เครื่อง",
     "en": "machine, classifier for machines",
@@ -180,6 +200,7 @@
     "teaching_order": -1
   },
   "20": {
+    "old_id": 21,
     "id": 20,
     "split": "รูป",
     "en": "classifier for pictures and monks",
@@ -189,6 +210,7 @@
     "teaching_order": -1
   },
   "21": {
+    "old_id": 22,
     "id": 21,
     "split": "หลัง",
     "en": "next / classifier for house",
@@ -198,6 +220,7 @@
     "teaching_order": -1
   },
   "22": {
+    "old_id": 23,
     "id": 22,
     "split": "สาย",
     "en": "to be late / line, classifier for roads, rivers",
@@ -207,6 +230,7 @@
     "teaching_order": -1
   },
   "23": {
+    "old_id": 24,
     "id": 23,
     "split": "ผม",
     "en": "I (male)",
@@ -216,6 +240,7 @@
     "teaching_order": 2
   },
   "24": {
+    "old_id": 25,
     "id": 24,
     "split": "ฉัน",
     "en": "I (female)",
@@ -225,6 +250,7 @@
     "teaching_order": 1
   },
   "25": {
+    "old_id": 26,
     "id": 25,
     "split": "เธอ",
     "en": "she",
@@ -234,6 +260,7 @@
     "teaching_order": 61
   },
   "26": {
+    "old_id": 27,
     "id": 26,
     "split": "เขา",
     "en": "he, she, they",
@@ -243,6 +270,7 @@
     "teaching_order": 11
   },
   "27": {
+    "old_id": 28,
     "id": 27,
     "split": "มัน",
     "en": "it",
@@ -252,6 +280,7 @@
     "teaching_order": 62
   },
   "28": {
+    "old_id": 29,
     "id": 28,
     "split": "คุณ",
     "en": "you",
@@ -261,6 +290,7 @@
     "teaching_order": 3
   },
   "29": {
+    "old_id": 30,
     "id": 29,
     "split": "เรา",
     "en": "we / I (familiar)",
@@ -270,6 +300,7 @@
     "teaching_order": -1
   },
   "30": {
+    "old_id": 31,
     "id": 30,
     "split": "พวก-เรา",
     "en": "we",
@@ -279,6 +310,7 @@
     "teaching_order": -1
   },
   "31": {
+    "old_id": 32,
     "id": 31,
     "split": "นี้",
     "en": "this (subject)",
@@ -288,6 +320,7 @@
     "teaching_order": 68
   },
   "32": {
+    "old_id": 33,
     "id": 32,
     "split": "นั่น",
     "en": "that (subject)",
@@ -297,6 +330,7 @@
     "teaching_order": 69
   },
   "33": {
+    "old_id": 34,
     "id": 33,
     "split": "โน่น",
     "en": "that (far)",
@@ -306,6 +340,7 @@
     "teaching_order": -1
   },
   "34": {
+    "old_id": 35,
     "id": 34,
     "split": "ตัว-เอง",
     "en": "self, own",
@@ -315,6 +350,7 @@
     "teaching_order": -1
   },
   "35": {
+    "old_id": 36,
     "id": 35,
     "split": "ทุก-คน",
     "en": "everyone",
@@ -324,6 +360,7 @@
     "teaching_order": -1
   },
   "36": {
+    "old_id": 37,
     "id": 36,
     "split": "พวก-เขา",
     "en": "they",
@@ -333,6 +370,7 @@
     "teaching_order": -1
   },
   "37": {
+    "old_id": 38,
     "id": 37,
     "split": "ที่-นี่",
     "en": "here",
@@ -342,6 +380,7 @@
     "teaching_order": -1
   },
   "38": {
+    "old_id": 39,
     "id": 38,
     "split": "ที่-นั่น",
     "en": "there",
@@ -351,6 +390,7 @@
     "teaching_order": -1
   },
   "39": {
+    "old_id": 40,
     "id": 39,
     "split": "ไม่",
     "en": "not",
@@ -360,6 +400,7 @@
     "teaching_order": 13
   },
   "40": {
+    "old_id": 41,
     "id": 40,
     "split": "ของ",
     "en": "of",
@@ -369,6 +410,7 @@
     "teaching_order": 12
   },
   "41": {
+    "old_id": 42,
     "id": 41,
     "split": "แต่",
     "en": "but",
@@ -378,6 +420,7 @@
     "teaching_order": -1
   },
   "42": {
+    "old_id": 43,
     "id": 42,
     "split": "จะ",
     "en": "will (future)",
@@ -387,6 +430,7 @@
     "teaching_order": -1
   },
   "43": {
+    "old_id": 44,
     "id": 43,
     "split": "จาก",
     "en": "from",
@@ -396,6 +440,7 @@
     "teaching_order": -1
   },
   "44": {
+    "old_id": 45,
     "id": 44,
     "split": "ใน",
     "en": "in",
@@ -405,6 +450,7 @@
     "teaching_order": -1
   },
   "45": {
+    "old_id": 46,
     "id": 45,
     "split": "ที่",
     "en": "to, at, that",
@@ -414,6 +460,7 @@
     "teaching_order": -1
   },
   "46": {
+    "old_id": 47,
     "id": 46,
     "split": "กับ",
     "en": "with",
@@ -423,6 +470,7 @@
     "teaching_order": -1
   },
   "47": {
+    "old_id": 48,
     "id": 47,
     "split": "ใต้",
     "en": "under, south",
@@ -432,6 +480,7 @@
     "teaching_order": -1
   },
   "48": {
+    "old_id": 49,
     "id": 48,
     "split": "เหนือ",
     "en": "over, north",
@@ -441,6 +490,7 @@
     "teaching_order": -1
   },
   "49": {
+    "old_id": 50,
     "id": 49,
     "split": "เรื่อง",
     "en": "about",
@@ -450,6 +500,7 @@
     "teaching_order": -1
   },
   "50": {
+    "old_id": 51,
     "id": 50,
     "split": "เหมือน",
     "en": "like, as",
@@ -459,6 +510,7 @@
     "teaching_order": -1
   },
   "51": {
+    "old_id": 52,
     "id": 51,
     "split": "ให้",
     "en": "to, for (somebody), so that",
@@ -468,6 +520,7 @@
     "teaching_order": -1
   },
   "52": {
+    "old_id": 53,
     "id": 52,
     "split": "ด้วย",
     "en": "as well, with",
@@ -477,6 +530,7 @@
     "teaching_order": -1
   },
   "53": {
+    "old_id": 54,
     "id": 53,
     "split": "หน้า",
     "en": "in front of",
@@ -486,6 +540,7 @@
     "teaching_order": -1
   },
   "54": {
+    "old_id": 55,
     "id": 54,
     "split": "เกี่ยว-กับ",
     "en": "about",
@@ -495,6 +550,7 @@
     "teaching_order": -1
   },
   "55": {
+    "old_id": 56,
     "id": 55,
     "split": "ใคร",
     "en": "who",
@@ -504,6 +560,7 @@
     "teaching_order": 36
   },
   "56": {
+    "old_id": 57,
     "id": 56,
     "split": "อะ-ไร",
     "en": "what",
@@ -513,6 +570,7 @@
     "teaching_order": 34
   },
   "57": {
+    "old_id": 58,
     "id": 57,
     "split": "ที่-ไหน",
     "en": "where",
@@ -522,6 +580,7 @@
     "teaching_order": 35
   },
   "58": {
+    "old_id": 59,
     "id": 58,
     "split": "เมื่อ-ไหร่",
     "en": "when",
@@ -531,6 +590,7 @@
     "teaching_order": 37
   },
   "59": {
+    "old_id": 60,
     "id": 59,
     "split": "ทำ-ไม",
     "en": "why",
@@ -540,6 +600,7 @@
     "teaching_order": 38
   },
   "60": {
+    "old_id": 61,
     "id": 60,
     "split": "ยัง-ไง",
     "en": "how",
@@ -549,6 +610,7 @@
     "teaching_order": 39
   },
   "61": {
+    "old_id": 62,
     "id": 61,
     "split": "เท่า-ไหร่",
     "en": "how much",
@@ -558,6 +620,7 @@
     "teaching_order": -1
   },
   "62": {
+    "old_id": 63,
     "id": 62,
     "split": "จาก-ไหน",
     "en": "from where",
@@ -567,6 +630,7 @@
     "teaching_order": -1
   },
   "63": {
+    "old_id": 64,
     "id": 63,
     "split": "หรือ-ไง",
     "en": "or what?",
@@ -576,6 +640,7 @@
     "teaching_order": -1
   },
   "64": {
+    "old_id": 65,
     "id": 64,
     "split": "วัน-นี้",
     "en": "today",
@@ -585,6 +650,7 @@
     "teaching_order": -1
   },
   "65": {
+    "old_id": 66,
     "id": 65,
     "split": "พรุ่ง-นี้",
     "en": "tomorrow",
@@ -594,6 +660,7 @@
     "teaching_order": -1
   },
   "66": {
+    "old_id": 67,
     "id": 66,
     "split": "เมื่อ-วาน-นี้",
     "en": "yesterday",
@@ -603,6 +670,7 @@
     "teaching_order": -1
   },
   "67": {
+    "old_id": 68,
     "id": 67,
     "split": "ตอน-นี้",
     "en": "now",
@@ -612,6 +680,7 @@
     "teaching_order": -1
   },
   "68": {
+    "old_id": 69,
     "id": 68,
     "split": "คืน-นี้",
     "en": "tonight",
@@ -621,6 +690,7 @@
     "teaching_order": -1
   },
   "69": {
+    "old_id": 70,
     "id": 69,
     "split": "เมื่อ-คืน-นี้",
     "en": "last night",
@@ -630,6 +700,7 @@
     "teaching_order": -1
   },
   "70": {
+    "old_id": 71,
     "id": 70,
     "split": "อา-ทิตย์ห-น้า",
     "en": "next week",
@@ -639,6 +710,7 @@
     "teaching_order": -1
   },
   "71": {
+    "old_id": 72,
     "id": 71,
     "split": "ทุก-วัน",
     "en": "every day",
@@ -648,6 +720,7 @@
     "teaching_order": -1
   },
   "72": {
+    "old_id": 73,
     "id": 72,
     "split": "เส-มอ",
     "en": "always",
@@ -657,6 +730,7 @@
     "teaching_order": -1
   },
   "73": {
+    "old_id": 74,
     "id": 73,
     "split": "บ่อย-ๆ",
     "en": "often",
@@ -666,6 +740,7 @@
     "teaching_order": -1
   },
   "74": {
+    "old_id": 75,
     "id": 74,
     "split": "บาง-ครั้ง",
     "en": "sometimes",
@@ -675,6 +750,7 @@
     "teaching_order": -1
   },
   "75": {
+    "old_id": 76,
     "id": 75,
     "split": "เมื่อ-เช้า",
     "en": "this morning",
@@ -684,6 +760,7 @@
     "teaching_order": -1
   },
   "76": {
+    "old_id": 77,
     "id": 76,
     "split": "ตอน-เช้า",
     "en": "in the morning",
@@ -693,6 +770,7 @@
     "teaching_order": -1
   },
   "77": {
+    "old_id": 78,
     "id": 77,
     "split": "ตอน-บ่าย",
     "en": "in the afternoon",
@@ -702,6 +780,7 @@
     "teaching_order": -1
   },
   "78": {
+    "old_id": 79,
     "id": 78,
     "split": "ตอน-เย็น",
     "en": "in the evening",
@@ -711,6 +790,7 @@
     "teaching_order": -1
   },
   "79": {
+    "old_id": 80,
     "id": 79,
     "split": "ก่อน",
     "en": "first, before",
@@ -720,6 +800,7 @@
     "teaching_order": -1
   },
   "80": {
+    "old_id": 81,
     "id": 80,
     "split": "นาน",
     "en": "for a long time",
@@ -729,6 +810,7 @@
     "teaching_order": -1
   },
   "81": {
+    "old_id": 82,
     "id": 81,
     "split": "อา-ทิตย์",
     "en": "week",
@@ -738,6 +820,7 @@
     "teaching_order": -1
   },
   "82": {
+    "old_id": 83,
     "id": 82,
     "split": "ดี",
     "en": "good",
@@ -747,6 +830,7 @@
     "teaching_order": 32
   },
   "83": {
+    "old_id": 84,
     "id": 83,
     "split": "ใหญ่",
     "en": "big",
@@ -756,6 +840,7 @@
     "teaching_order": -1
   },
   "84": {
+    "old_id": 85,
     "id": 84,
     "split": "ยาว",
     "en": "long",
@@ -765,6 +850,7 @@
     "teaching_order": -1
   },
   "85": {
+    "old_id": 86,
     "id": 85,
     "split": "สั้น",
     "en": "short",
@@ -774,6 +860,7 @@
     "teaching_order": -1
   },
   "86": {
+    "old_id": 87,
     "id": 86,
     "split": "แคบ",
     "en": "narrow",
@@ -783,6 +870,7 @@
     "teaching_order": -1
   },
   "87": {
+    "old_id": 88,
     "id": 87,
     "split": "ลึก",
     "en": "deep",
@@ -792,6 +880,7 @@
     "teaching_order": -1
   },
   "88": {
+    "old_id": 89,
     "id": 88,
     "split": "แข็ง",
     "en": "hard",
@@ -801,6 +890,7 @@
     "teaching_order": -1
   },
   "89": {
+    "old_id": 90,
     "id": 89,
     "split": "หิว",
     "en": "hungry, thirsty",
@@ -810,6 +900,7 @@
     "teaching_order": -1
   },
   "90": {
+    "old_id": 91,
     "id": 90,
     "split": "เร็ว",
     "en": "fast",
@@ -819,6 +910,7 @@
     "teaching_order": -1
   },
   "91": {
+    "old_id": 92,
     "id": 91,
     "split": "ง่วง",
     "en": "sleepy",
@@ -828,6 +920,7 @@
     "teaching_order": -1
   },
   "92": {
+    "old_id": 93,
     "id": 92,
     "split": "ดึก",
     "en": "late",
@@ -837,6 +930,7 @@
     "teaching_order": -1
   },
   "93": {
+    "old_id": 94,
     "id": 93,
     "split": "ใกล้",
     "en": "near",
@@ -846,6 +940,7 @@
     "teaching_order": -1
   },
   "94": {
+    "old_id": 95,
     "id": 94,
     "split": "โปรด",
     "en": "favorite",
@@ -855,6 +950,7 @@
     "teaching_order": -1
   },
   "95": {
+    "old_id": 96,
     "id": 95,
     "split": "พอ",
     "en": "enough",
@@ -864,6 +960,7 @@
     "teaching_order": -1
   },
   "96": {
+    "old_id": 97,
     "id": 96,
     "split": "ไกล",
     "en": "far",
@@ -873,6 +970,7 @@
     "teaching_order": -1
   },
   "97": {
+    "old_id": 98,
     "id": 97,
     "split": "ว่าง",
     "en": "free",
@@ -882,6 +980,7 @@
     "teaching_order": -1
   },
   "98": {
+    "old_id": 99,
     "id": 98,
     "split": "หล่อ",
     "en": "handsome",
@@ -891,6 +990,7 @@
     "teaching_order": -1
   },
   "99": {
+    "old_id": 100,
     "id": 99,
     "split": "อ้วน",
     "en": "fat, overweight",
@@ -900,6 +1000,7 @@
     "teaching_order": -1
   },
   "100": {
+    "old_id": 101,
     "id": 100,
     "split": "เหนื่อย",
     "en": "tired",
@@ -909,6 +1010,7 @@
     "teaching_order": -1
   },
   "101": {
+    "old_id": 102,
     "id": 101,
     "split": "สี-เงิน",
     "en": "silver",
@@ -918,6 +1020,7 @@
     "teaching_order": -1
   },
   "102": {
+    "old_id": 103,
     "id": 102,
     "split": "สี-ส้ม",
     "en": "orange",
@@ -927,6 +1030,7 @@
     "teaching_order": -1
   },
   "103": {
+    "old_id": 104,
     "id": 103,
     "split": "สี-เหลือง",
     "en": "yellow",
@@ -936,6 +1040,7 @@
     "teaching_order": -1
   },
   "104": {
+    "old_id": 105,
     "id": 104,
     "split": "สี-แดง",
     "en": "red",
@@ -945,6 +1050,7 @@
     "teaching_order": -1
   },
   "105": {
+    "old_id": 106,
     "id": 105,
     "split": "สี-ม่วง",
     "en": "purple",
@@ -954,6 +1060,7 @@
     "teaching_order": -1
   },
   "106": {
+    "old_id": 107,
     "id": 106,
     "split": "ที่-แล้ว",
     "en": "previous",
@@ -963,6 +1070,7 @@
     "teaching_order": -1
   },
   "107": {
+    "old_id": 108,
     "id": 107,
     "split": "สี-ฟ้า",
     "en": "blue",
@@ -972,6 +1080,7 @@
     "teaching_order": 70
   },
   "108": {
+    "old_id": 109,
     "id": 108,
     "split": "สี-เขียว",
     "en": "green",
@@ -981,6 +1090,7 @@
     "teaching_order": -1
   },
   "109": {
+    "old_id": 110,
     "id": 109,
     "split": "สี-ดำ",
     "en": "black",
@@ -990,6 +1100,7 @@
     "teaching_order": -1
   },
   "110": {
+    "old_id": 111,
     "id": 110,
     "split": "สี-ขาว",
     "en": "white",
@@ -999,6 +1110,7 @@
     "teaching_order": -1
   },
   "111": {
+    "old_id": 112,
     "id": 111,
     "split": "สี-เทา",
     "en": "grey",
@@ -1008,6 +1120,7 @@
     "teaching_order": -1
   },
   "112": {
+    "old_id": 113,
     "id": 112,
     "split": "คน-เดียว",
     "en": "alone",
@@ -1017,6 +1130,7 @@
     "teaching_order": -1
   },
   "113": {
+    "old_id": 114,
     "id": 113,
     "split": "วิ-เศษ",
     "en": "magical",
@@ -1026,6 +1140,7 @@
     "teaching_order": -1
   },
   "114": {
+    "old_id": 115,
     "id": 114,
     "split": "สุด-ท้าย",
     "en": "last",
@@ -1035,6 +1150,7 @@
     "teaching_order": -1
   },
   "115": {
+    "old_id": 116,
     "id": 115,
     "split": "ใจ-เย็น",
     "en": "calm, cool-headed",
@@ -1044,6 +1160,7 @@
     "teaching_order": -1
   },
   "116": {
+    "old_id": 117,
     "id": 116,
     "split": "ใจ-ร้อน",
     "en": "hot-tempered",
@@ -1053,6 +1170,7 @@
     "teaching_order": -1
   },
   "117": {
+    "old_id": 118,
     "id": 117,
     "split": "สี-น้ำ-ตาล",
     "en": "brown",
@@ -1062,6 +1180,7 @@
     "teaching_order": -1
   },
   "118": {
+    "old_id": 119,
     "id": 118,
     "split": "มี-ความ-สุข",
     "en": "to be happy",
@@ -1071,6 +1190,7 @@
     "teaching_order": -1
   },
   "119": {
+    "old_id": 120,
     "id": 119,
     "split": "สี-ชม-พู",
     "en": "pink",
@@ -1080,6 +1200,7 @@
     "teaching_order": -1
   },
   "120": {
+    "old_id": 121,
     "id": 120,
     "split": "กำ-ลัง-ดี",
     "en": "just right",
@@ -1089,6 +1210,7 @@
     "teaching_order": -1
   },
   "121": {
+    "old_id": 122,
     "id": 121,
     "split": "สี-น้ำ-เงิน",
     "en": "dark blue",
@@ -1098,6 +1220,7 @@
     "teaching_order": -1
   },
   "122": {
+    "old_id": 123,
     "id": 122,
     "split": "สี",
     "en": "color",
@@ -1107,6 +1230,7 @@
     "teaching_order": -1
   },
   "123": {
+    "old_id": 124,
     "id": 123,
     "split": "เหลือง",
     "en": "(yellow)",
@@ -1116,6 +1240,7 @@
     "teaching_order": -1
   },
   "124": {
+    "old_id": 125,
     "id": 124,
     "split": "ส้ม",
     "en": "(orange)",
@@ -1125,6 +1250,7 @@
     "teaching_order": -1
   },
   "125": {
+    "old_id": 126,
     "id": 125,
     "split": "แดง",
     "en": "(red)",
@@ -1134,6 +1260,7 @@
     "teaching_order": -1
   },
   "126": {
+    "old_id": 127,
     "id": 126,
     "split": "ม่วง",
     "en": "(purple)",
@@ -1143,6 +1270,7 @@
     "teaching_order": -1
   },
   "127": {
+    "old_id": 128,
     "id": 127,
     "split": "ฟ้า",
     "en": "sky",
@@ -1152,6 +1280,7 @@
     "teaching_order": -1
   },
   "128": {
+    "old_id": 129,
     "id": 128,
     "split": "เงิน",
     "en": "money",
@@ -1161,6 +1290,7 @@
     "teaching_order": -1
   },
   "129": {
+    "old_id": 130,
     "id": 129,
     "split": "เขียว",
     "en": "green",
@@ -1170,6 +1300,7 @@
     "teaching_order": -1
   },
   "130": {
+    "old_id": 131,
     "id": 130,
     "split": "ตาล",
     "en": "sugar palm",
@@ -1179,6 +1310,7 @@
     "teaching_order": -1
   },
   "131": {
+    "old_id": 132,
     "id": 131,
     "split": "ขาว",
     "en": "(white)",
@@ -1188,6 +1320,7 @@
     "teaching_order": -1
   },
   "132": {
+    "old_id": 133,
     "id": 132,
     "split": "ดำ",
     "en": "dark, black",
@@ -1197,6 +1330,7 @@
     "teaching_order": -1
   },
   "133": {
+    "old_id": 134,
     "id": 133,
     "split": "เทา",
     "en": "(grey)",
@@ -1206,6 +1340,7 @@
     "teaching_order": -1
   },
   "134": {
+    "old_id": 135,
     "id": 134,
     "split": "หมา",
     "en": "dog",
@@ -1215,6 +1350,7 @@
     "teaching_order": -1
   },
   "135": {
+    "old_id": 136,
     "id": 135,
     "split": "หนู",
     "en": "mouse",
@@ -1224,6 +1360,7 @@
     "teaching_order": -1
   },
   "136": {
+    "old_id": 137,
     "id": 136,
     "split": "ช้าง",
     "en": "elephant",
@@ -1233,6 +1370,7 @@
     "teaching_order": -1
   },
   "137": {
+    "old_id": 138,
     "id": 137,
     "split": "ลิง",
     "en": "monkey",
@@ -1242,6 +1380,7 @@
     "teaching_order": -1
   },
   "138": {
+    "old_id": 139,
     "id": 138,
     "split": "ปลา",
     "en": "fish",
@@ -1251,6 +1390,7 @@
     "teaching_order": -1
   },
   "139": {
+    "old_id": 140,
     "id": 139,
     "split": "นก",
     "en": "bird",
@@ -1260,6 +1400,7 @@
     "teaching_order": -1
   },
   "140": {
+    "old_id": 141,
     "id": 140,
     "split": "เสือ",
     "en": "tiger",
@@ -1269,6 +1410,7 @@
     "teaching_order": -1
   },
   "141": {
+    "old_id": 142,
     "id": 141,
     "split": "ผี-เสื้อ",
     "en": "butterfly",
@@ -1278,6 +1420,7 @@
     "teaching_order": -1
   },
   "142": {
+    "old_id": 143,
     "id": 142,
     "split": "สอบ",
     "en": "exam",
@@ -1287,6 +1430,7 @@
     "teaching_order": -1
   },
   "143": {
+    "old_id": 144,
     "id": 143,
     "split": "ดิน",
     "en": "ground",
@@ -1296,6 +1440,7 @@
     "teaching_order": -1
   },
   "144": {
+    "old_id": 145,
     "id": 144,
     "split": "รถ",
     "en": "car",
@@ -1305,6 +1450,7 @@
     "teaching_order": -1
   },
   "145": {
+    "old_id": 146,
     "id": 145,
     "split": "ไฟ",
     "en": "fire",
@@ -1314,6 +1460,7 @@
     "teaching_order": -1
   },
   "146": {
+    "old_id": 147,
     "id": 146,
     "split": "ลม",
     "en": "wind, air",
@@ -1323,6 +1470,7 @@
     "teaching_order": -1
   },
   "147": {
+    "old_id": 148,
     "id": 147,
     "split": "บ้าน",
     "en": "home, house",
@@ -1332,6 +1480,7 @@
     "teaching_order": 8
   },
   "148": {
+    "old_id": 149,
     "id": 148,
     "split": "ขวด",
     "en": "bottle",
@@ -1341,6 +1490,7 @@
     "teaching_order": -1
   },
   "149": {
+    "old_id": 150,
     "id": 149,
     "split": "เด็ก",
     "en": "child",
@@ -1350,6 +1500,7 @@
     "teaching_order": -1
   },
   "150": {
+    "old_id": 151,
     "id": 150,
     "split": "ครู",
     "en": "teacher",
@@ -1359,6 +1510,7 @@
     "teaching_order": -1
   },
   "151": {
+    "old_id": 152,
     "id": 151,
     "split": "หมอ",
     "en": "doctor",
@@ -1368,6 +1520,7 @@
     "teaching_order": -1
   },
   "152": {
+    "old_id": 153,
     "id": 152,
     "split": "จีน",
     "en": "China",
@@ -1377,6 +1530,7 @@
     "teaching_order": -1
   },
   "153": {
+    "old_id": 154,
     "id": 153,
     "split": "กล้วย",
     "en": "banana",
@@ -1386,6 +1540,7 @@
     "teaching_order": -1
   },
   "154": {
+    "old_id": 155,
     "id": 154,
     "split": "เค้ก",
     "en": "cake",
@@ -1395,6 +1550,7 @@
     "teaching_order": -1
   },
   "155": {
+    "old_id": 156,
     "id": 155,
     "split": "ข้าว",
     "en": "rice",
@@ -1404,6 +1560,7 @@
     "teaching_order": 23
   },
   "156": {
+    "old_id": 157,
     "id": 156,
     "split": "น้ำ",
     "en": "water",
@@ -1413,6 +1570,7 @@
     "teaching_order": 22
   },
   "157": {
+    "old_id": 158,
     "id": 157,
     "split": "เหล้า",
     "en": "alcohol",
@@ -1422,6 +1580,7 @@
     "teaching_order": -1
   },
   "158": {
+    "old_id": 159,
     "id": 158,
     "split": "ลาว",
     "en": "Laos",
@@ -1431,6 +1590,7 @@
     "teaching_order": -1
   },
   "159": {
+    "old_id": 160,
     "id": 159,
     "split": "ฝรั่ง",
     "en": "guava, Westerner",
@@ -1440,6 +1600,7 @@
     "teaching_order": 65
   },
   "160": {
+    "old_id": 161,
     "id": 160,
     "split": "บาท",
     "en": "Baht",
@@ -1449,6 +1610,7 @@
     "teaching_order": -1
   },
   "161": {
+    "old_id": 162,
     "id": 161,
     "split": "หนัง",
     "en": "???",
@@ -1458,6 +1620,7 @@
     "teaching_order": -1
   },
   "162": {
+    "old_id": 163,
     "id": 162,
     "split": "ทอง",
     "en": "gold",
@@ -1467,6 +1630,7 @@
     "teaching_order": -1
   },
   "163": {
+    "old_id": 164,
     "id": 163,
     "split": "ไม้",
     "en": "tree",
@@ -1476,6 +1640,7 @@
     "teaching_order": -1
   },
   "164": {
+    "old_id": 165,
     "id": 164,
     "split": "วัน",
     "en": "day",
@@ -1485,6 +1650,7 @@
     "teaching_order": -1
   },
   "165": {
+    "old_id": 166,
     "id": 165,
     "split": "เดือน",
     "en": "month",
@@ -1494,6 +1660,7 @@
     "teaching_order": -1
   },
   "166": {
+    "old_id": 167,
     "id": 166,
     "split": "เสื้อ",
     "en": "shirt",
@@ -1503,6 +1670,7 @@
     "teaching_order": -1
   },
   "167": {
+    "old_id": 168,
     "id": 167,
     "split": "ผี",
     "en": "ghost, spirit",
@@ -1512,6 +1680,7 @@
     "teaching_order": -1
   },
   "168": {
+    "old_id": 169,
     "id": 168,
     "split": "ปี",
     "en": "year",
@@ -1521,6 +1690,7 @@
     "teaching_order": -1
   },
   "169": {
+    "old_id": 170,
     "id": 169,
     "split": "ค่า",
     "en": "cost",
@@ -1530,6 +1700,7 @@
     "teaching_order": -1
   },
   "170": {
+    "old_id": 171,
     "id": 170,
     "split": "เพื่อน",
     "en": "friend",
@@ -1539,6 +1710,7 @@
     "teaching_order": -1
   },
   "171": {
+    "old_id": 172,
     "id": 171,
     "split": "ยิ้ม",
     "en": "smile, to smile",
@@ -1548,6 +1720,7 @@
     "teaching_order": -1
   },
   "172": {
+    "old_id": 173,
     "id": 172,
     "split": "แล้ว",
     "en": "already",
@@ -1557,6 +1730,7 @@
     "teaching_order": -1
   },
   "173": {
+    "old_id": 174,
     "id": 173,
     "split": "เยอะ",
     "en": "(too) much",
@@ -1566,6 +1740,7 @@
     "teaching_order": -1
   },
   "174": {
+    "old_id": 175,
     "id": 174,
     "split": "ทุก",
     "en": "each",
@@ -1575,6 +1750,7 @@
     "teaching_order": -1
   },
   "175": {
+    "old_id": 176,
     "id": 175,
     "split": "อย่า",
     "en": "don't",
@@ -1584,6 +1760,7 @@
     "teaching_order": -1
   },
   "176": {
+    "old_id": 177,
     "id": 176,
     "split": "เอง",
     "en": "oneself",
@@ -1593,6 +1770,7 @@
     "teaching_order": -1
   },
   "177": {
+    "old_id": 178,
     "id": 177,
     "split": "เคย",
     "en": "ever",
@@ -1602,6 +1780,7 @@
     "teaching_order": -1
   },
   "178": {
+    "old_id": 179,
     "id": 178,
     "split": "เพราะ",
     "en": "because",
@@ -1611,6 +1790,7 @@
     "teaching_order": -1
   },
   "179": {
+    "old_id": 180,
     "id": 179,
     "split": "ใช่",
     "en": "yes / right?",
@@ -1620,6 +1800,7 @@
     "teaching_order": 25
   },
   "180": {
+    "old_id": 181,
     "id": 180,
     "split": "ยัง",
     "en": "still, yet",
@@ -1629,6 +1810,7 @@
     "teaching_order": -1
   },
   "181": {
+    "old_id": 182,
     "id": 181,
     "split": "การ",
     "en": "(prefix converting verbs into nouns)",
@@ -1638,6 +1820,7 @@
     "teaching_order": -1
   },
   "182": {
+    "old_id": 183,
     "id": 182,
     "split": "กว่า",
     "en": "more",
@@ -1647,6 +1830,7 @@
     "teaching_order": -1
   },
   "183": {
+    "old_id": 184,
     "id": 183,
     "split": "บ้าง",
     "en": "some",
@@ -1656,6 +1840,7 @@
     "teaching_order": -1
   },
   "184": {
+    "old_id": 185,
     "id": 184,
     "split": "ว่า",
     "en": "(think, say, etc.) that",
@@ -1665,6 +1850,7 @@
     "teaching_order": -1
   },
   "185": {
+    "old_id": 186,
     "id": 185,
     "split": "พระ",
     "en": "Buddha image, monk",
@@ -1674,6 +1860,7 @@
     "teaching_order": 67
   },
   "186": {
+    "old_id": 187,
     "id": 186,
     "split": "ตัว",
     "en": "body",
@@ -1683,6 +1870,7 @@
     "teaching_order": -1
   },
   "187": {
+    "old_id": 188,
     "id": 187,
     "split": "แฟน",
     "en": "lover",
@@ -1692,6 +1880,7 @@
     "teaching_order": -1
   },
   "188": {
+    "old_id": 189,
     "id": 188,
     "split": "ใจ",
     "en": "heart, mind, spirit",
@@ -1701,6 +1890,7 @@
     "teaching_order": -1
   },
   "189": {
+    "old_id": 190,
     "id": 189,
     "split": "หัว",
     "en": "head",
@@ -1710,6 +1900,7 @@
     "teaching_order": -1
   },
   "190": {
+    "old_id": 191,
     "id": 190,
     "split": "ผม",
     "en": "hair",
@@ -1719,6 +1910,7 @@
     "teaching_order": -1
   },
   "191": {
+    "old_id": 192,
     "id": 191,
     "split": "ขา",
     "en": "leg",
@@ -1728,6 +1920,7 @@
     "teaching_order": -1
   },
   "192": {
+    "old_id": 193,
     "id": 192,
     "split": "เท้า",
     "en": "foot",
@@ -1737,6 +1930,7 @@
     "teaching_order": -1
   },
   "193": {
+    "old_id": 194,
     "id": 193,
     "split": "กิน",
     "en": "to eat",
@@ -1746,6 +1940,7 @@
     "teaching_order": 21
   },
   "194": {
+    "old_id": 195,
     "id": 194,
     "split": "เห็น",
     "en": "to see",
@@ -1755,6 +1950,7 @@
     "teaching_order": -1
   },
   "195": {
+    "old_id": 196,
     "id": 195,
     "split": "ดื่ม",
     "en": "to drink",
@@ -1764,6 +1960,7 @@
     "teaching_order": -1
   },
   "196": {
+    "old_id": 197,
     "id": 196,
     "split": "คุย",
     "en": "to talk",
@@ -1773,6 +1970,7 @@
     "teaching_order": -1
   },
   "197": {
+    "old_id": 198,
     "id": 197,
     "split": "คิด",
     "en": "to think",
@@ -1782,6 +1980,7 @@
     "teaching_order": -1
   },
   "198": {
+    "old_id": 199,
     "id": 198,
     "split": "เรียน",
     "en": "to study",
@@ -1791,6 +1990,7 @@
     "teaching_order": 30
   },
   "199": {
+    "old_id": 200,
     "id": 199,
     "split": "ต้อง",
     "en": "to have to, must",
@@ -1800,6 +2000,7 @@
     "teaching_order": -1
   },
   "200": {
+    "old_id": 201,
     "id": 200,
     "split": "บอก",
     "en": "to tell",
@@ -1809,6 +2010,7 @@
     "teaching_order": -1
   },
   "201": {
+    "old_id": 202,
     "id": 201,
     "split": "ไป",
     "en": "to go",
@@ -1818,6 +2020,7 @@
     "teaching_order": -1
   },
   "202": {
+    "old_id": 203,
     "id": 202,
     "split": "มา",
     "en": "to come",
@@ -1827,6 +2030,7 @@
     "teaching_order": -1
   },
   "203": {
+    "old_id": 204,
     "id": 203,
     "split": "อ่าน",
     "en": "to read",
@@ -1836,6 +2040,7 @@
     "teaching_order": -1
   },
   "204": {
+    "old_id": 205,
     "id": 204,
     "split": "ชื่อ",
     "en": "name, to be named",
@@ -1845,6 +2050,7 @@
     "teaching_order": -1
   },
   "205": {
+    "old_id": 206,
     "id": 205,
     "split": "เล่น",
     "en": "to play",
@@ -1854,6 +2060,7 @@
     "teaching_order": -1
   },
   "206": {
+    "old_id": 207,
     "id": 206,
     "split": "คือ",
     "en": "to be (equality)",
@@ -1863,6 +2070,7 @@
     "teaching_order": -1
   },
   "207": {
+    "old_id": 208,
     "id": 207,
     "split": "เป็น",
     "en": "to be (details)",
@@ -1872,6 +2080,7 @@
     "teaching_order": -1
   },
   "208": {
+    "old_id": 209,
     "id": 208,
     "split": "ทำ",
     "en": "to make, to do",
@@ -1881,6 +2090,7 @@
     "teaching_order": -1
   },
   "209": {
+    "old_id": 210,
     "id": 209,
     "split": "ได้",
     "en": "to get, to be able",
@@ -1890,6 +2100,7 @@
     "teaching_order": 24
   },
   "210": {
+    "old_id": 211,
     "id": 210,
     "split": "นอน",
     "en": "to sleep",
@@ -1899,6 +2110,7 @@
     "teaching_order": -1
   },
   "211": {
+    "old_id": 212,
     "id": 211,
     "split": "บิน",
     "en": "to fly",
@@ -1908,6 +2120,7 @@
     "teaching_order": -1
   },
   "212": {
+    "old_id": 213,
     "id": 212,
     "split": "ซื้อ",
     "en": "to buy",
@@ -1917,6 +2130,7 @@
     "teaching_order": -1
   },
   "213": {
+    "old_id": 214,
     "id": 213,
     "split": "จำ",
     "en": "to remember",
@@ -1926,6 +2140,7 @@
     "teaching_order": -1
   },
   "214": {
+    "old_id": 215,
     "id": 214,
     "split": "ฝัน",
     "en": "to dream",
@@ -1935,6 +2150,7 @@
     "teaching_order": -1
   },
   "215": {
+    "old_id": 216,
     "id": 215,
     "split": "เปิด",
     "en": "to open, switch on",
@@ -1944,6 +2160,7 @@
     "teaching_order": -1
   },
   "216": {
+    "old_id": 217,
     "id": 216,
     "split": "ปิด",
     "en": "to close, switch off",
@@ -1953,6 +2170,7 @@
     "teaching_order": -1
   },
   "217": {
+    "old_id": 218,
     "id": 217,
     "split": "ถาม",
     "en": "to ask",
@@ -1962,6 +2180,7 @@
     "teaching_order": -1
   },
   "218": {
+    "old_id": 219,
     "id": 218,
     "split": "เชื่อ",
     "en": "to believe",
@@ -1971,6 +2190,7 @@
     "teaching_order": -1
   },
   "219": {
+    "old_id": 220,
     "id": 219,
     "split": "เกลียด",
     "en": "to hate",
@@ -1980,6 +2200,7 @@
     "teaching_order": -1
   },
   "220": {
+    "old_id": 221,
     "id": 220,
     "split": "กลับ",
     "en": "to return",
@@ -1989,6 +2210,7 @@
     "teaching_order": -1
   },
   "221": {
+    "old_id": 222,
     "id": 221,
     "split": "รับ",
     "en": "to receive",
@@ -1998,6 +2220,7 @@
     "teaching_order": -1
   },
   "222": {
+    "old_id": 223,
     "id": 222,
     "split": "ใช้",
     "en": "to use",
@@ -2007,6 +2230,7 @@
     "teaching_order": -1
   },
   "223": {
+    "old_id": 224,
     "id": 223,
     "split": "ศูนย์",
     "en": "0",
@@ -2016,6 +2240,7 @@
     "teaching_order": -1
   },
   "224": {
+    "old_id": 225,
     "id": 224,
     "split": "หนึ่ง",
     "en": "1",
@@ -2025,6 +2250,7 @@
     "teaching_order": -1
   },
   "225": {
+    "old_id": 226,
     "id": 225,
     "split": "สอง",
     "en": "2",
@@ -2034,6 +2260,7 @@
     "teaching_order": -1
   },
   "226": {
+    "old_id": 227,
     "id": 226,
     "split": "สาม",
     "en": "3",
@@ -2043,6 +2270,7 @@
     "teaching_order": -1
   },
   "227": {
+    "old_id": 228,
     "id": 227,
     "split": "สี่",
     "en": "4",
@@ -2052,6 +2280,7 @@
     "teaching_order": -1
   },
   "228": {
+    "old_id": 229,
     "id": 228,
     "split": "ห้า",
     "en": "5",
@@ -2061,6 +2290,7 @@
     "teaching_order": -1
   },
   "229": {
+    "old_id": 230,
     "id": 229,
     "split": "หก",
     "en": "6",
@@ -2070,6 +2300,7 @@
     "teaching_order": -1
   },
   "230": {
+    "old_id": 231,
     "id": 230,
     "split": "เจ็ด",
     "en": "7",
@@ -2079,6 +2310,7 @@
     "teaching_order": -1
   },
   "231": {
+    "old_id": 232,
     "id": 231,
     "split": "แปด",
     "en": "8",
@@ -2088,6 +2320,7 @@
     "teaching_order": -1
   },
   "232": {
+    "old_id": 233,
     "id": 232,
     "split": "เก้า",
     "en": "9",
@@ -2097,6 +2330,7 @@
     "teaching_order": -1
   },
   "233": {
+    "old_id": 234,
     "id": 233,
     "split": "สิบ",
     "en": "10",
@@ -2106,6 +2340,7 @@
     "teaching_order": -1
   },
   "234": {
+    "old_id": 235,
     "id": 234,
     "split": "พูด",
     "en": "to speak",
@@ -2115,6 +2350,7 @@
     "teaching_order": 29
   },
   "235": {
+    "old_id": 236,
     "id": 235,
     "split": "นั่ง",
     "en": "to sit",
@@ -2124,6 +2360,7 @@
     "teaching_order": -1
   },
   "236": {
+    "old_id": 237,
     "id": 236,
     "split": "มี",
     "en": "to have",
@@ -2133,6 +2370,7 @@
     "teaching_order": -1
   },
   "237": {
+    "old_id": 238,
     "id": 237,
     "split": "อยู่",
     "en": "to be at",
@@ -2142,6 +2380,7 @@
     "teaching_order": 9
   },
   "238": {
+    "old_id": 239,
     "id": 238,
     "split": "ชอบ",
     "en": "to like",
@@ -2151,6 +2390,7 @@
     "teaching_order": 4
   },
   "239": {
+    "old_id": 240,
     "id": 239,
     "split": "รัก",
     "en": "to love",
@@ -2160,6 +2400,7 @@
     "teaching_order": -1
   },
   "240": {
+    "old_id": 241,
     "id": 240,
     "split": "วิ่ง",
     "en": "to run",
@@ -2169,6 +2410,7 @@
     "teaching_order": -1
   },
   "241": {
+    "old_id": 242,
     "id": 241,
     "split": "อยาก",
     "en": "to want",
@@ -2178,6 +2420,7 @@
     "teaching_order": 7
   },
   "242": {
+    "old_id": 243,
     "id": 242,
     "split": "ควร",
     "en": "should",
@@ -2187,6 +2430,7 @@
     "teaching_order": -1
   },
   "243": {
+    "old_id": 246,
     "id": 243,
     "split": "แต่",
     "en": "but",
@@ -2196,6 +2440,7 @@
     "teaching_order": -1
   },
   "244": {
+    "old_id": 248,
     "id": 244,
     "split": "คน-ไทย",
     "en": "Thai people",
@@ -2205,6 +2450,7 @@
     "teaching_order": -1
   },
   "245": {
+    "old_id": 249,
     "id": 245,
     "split": "ชื่อ-เล่น",
     "en": "nickname",
@@ -2214,6 +2460,7 @@
     "teaching_order": -1
   },
   "246": {
+    "old_id": 250,
     "id": 246,
     "split": "ความ-สุข",
     "en": "happiness",
@@ -2223,6 +2470,7 @@
     "teaching_order": -1
   },
   "247": {
+    "old_id": 251,
     "id": 247,
     "split": "หิ-มะ",
     "en": "snow",
@@ -2232,6 +2480,7 @@
     "teaching_order": -1
   },
   "248": {
+    "old_id": 252,
     "id": 248,
     "split": "ใต้-ดิน",
     "en": "underground",
@@ -2241,6 +2490,7 @@
     "teaching_order": -1
   },
   "249": {
+    "old_id": 253,
     "id": 249,
     "split": "ที-วี",
     "en": "TV",
@@ -2250,6 +2500,7 @@
     "teaching_order": -1
   },
   "250": {
+    "old_id": 254,
     "id": 250,
     "split": "ข-นม",
     "en": "sweets, cake",
@@ -2259,6 +2510,7 @@
     "teaching_order": -1
   },
   "251": {
+    "old_id": 255,
     "id": 251,
     "split": "อา-หาร",
     "en": "food",
@@ -2268,6 +2520,7 @@
     "teaching_order": -1
   },
   "252": {
+    "old_id": 256,
     "id": 252,
     "split": "พิซ-ซ่า",
     "en": "pizza",
@@ -2277,6 +2530,7 @@
     "teaching_order": -1
   },
   "253": {
+    "old_id": 257,
     "id": 253,
     "split": "เมือง-ไทย",
     "en": "Thailand",
@@ -2286,6 +2540,7 @@
     "teaching_order": -1
   },
   "254": {
+    "old_id": 258,
     "id": 254,
     "split": "ญี่-ปุ่น",
     "en": "Japan",
@@ -2295,6 +2550,7 @@
     "teaching_order": -1
   },
   "255": {
+    "old_id": 259,
     "id": 255,
     "split": "อัง-กฤษ",
     "en": "England, Britain",
@@ -2304,6 +2560,7 @@
     "teaching_order": -1
   },
   "256": {
+    "old_id": 260,
     "id": 256,
     "split": "สเ-ปน",
     "en": "Spain",
@@ -2313,6 +2570,7 @@
     "teaching_order": -1
   },
   "257": {
+    "old_id": 261,
     "id": 257,
     "split": "พ-ม่า",
     "en": "Myanmar",
@@ -2322,6 +2580,7 @@
     "teaching_order": -1
   },
   "258": {
+    "old_id": 262,
     "id": 258,
     "split": "รถ-ไฟ",
     "en": "train",
@@ -2331,6 +2590,7 @@
     "teaching_order": -1
   },
   "259": {
+    "old_id": 263,
     "id": 259,
     "split": "ไฟ-ฟ้า",
     "en": "electricity",
@@ -2340,6 +2600,7 @@
     "teaching_order": -1
   },
   "260": {
+    "old_id": 264,
     "id": 260,
     "split": "ใจ-ดี",
     "en": "kind",
@@ -2349,6 +2610,7 @@
     "teaching_order": -1
   },
   "261": {
+    "old_id": 265,
     "id": 261,
     "split": "หนัง-สือ",
     "en": "book",
@@ -2358,6 +2620,7 @@
     "teaching_order": -1
   },
   "262": {
+    "old_id": 266,
     "id": 262,
     "split": "มะ-ม่วง",
     "en": "mango",
@@ -2367,6 +2630,7 @@
     "teaching_order": -1
   },
   "263": {
+    "old_id": 267,
     "id": 263,
     "split": "อา-ยุ",
     "en": "age",
@@ -2376,6 +2640,7 @@
     "teaching_order": -1
   },
   "264": {
+    "old_id": 268,
     "id": 264,
     "split": "ประ-เทศ",
     "en": "country",
@@ -2385,6 +2650,7 @@
     "teaching_order": -1
   },
   "265": {
+    "old_id": 269,
     "id": 265,
     "split": "กา-แฟ",
     "en": "coffee",
@@ -2394,6 +2660,7 @@
     "teaching_order": -1
   },
   "266": {
+    "old_id": 270,
     "id": 266,
     "split": "ต้น-ไม้",
     "en": "tree",
@@ -2403,6 +2670,7 @@
     "teaching_order": -1
   },
   "267": {
+    "old_id": 271,
     "id": 267,
     "split": "ดอก-ไม้",
     "en": "flower",
@@ -2412,6 +2680,7 @@
     "teaching_order": -1
   },
   "268": {
+    "old_id": 272,
     "id": 268,
     "split": "ผล-ไม้",
     "en": "fruit",
@@ -2421,6 +2690,7 @@
     "teaching_order": -1
   },
   "269": {
+    "old_id": 273,
     "id": 269,
     "split": "มะ-ขาม",
     "en": "tamarind",
@@ -2430,6 +2700,7 @@
     "teaching_order": -1
   },
   "270": {
+    "old_id": 274,
     "id": 270,
     "split": "คน-ขับ",
     "en": "driver",
@@ -2439,6 +2710,7 @@
     "teaching_order": -1
   },
   "271": {
+    "old_id": 275,
     "id": 271,
     "split": "นัก-ร้อง",
     "en": "singer",
@@ -2448,6 +2720,7 @@
     "teaching_order": -1
   },
   "272": {
+    "old_id": 276,
     "id": 272,
     "split": "เว-ลา",
     "en": "time",
@@ -2457,6 +2730,7 @@
     "teaching_order": -1
   },
   "273": {
+    "old_id": 277,
     "id": 273,
     "split": "ภา-ษา",
     "en": "language",
@@ -2466,6 +2740,7 @@
     "teaching_order": 26
   },
   "274": {
+    "old_id": 278,
     "id": 274,
     "split": "รา-คา",
     "en": "price",
@@ -2475,6 +2750,7 @@
     "teaching_order": -1
   },
   "275": {
+    "old_id": 279,
     "id": 275,
     "split": "โรง-เรียน",
     "en": "school",
@@ -2484,6 +2760,7 @@
     "teaching_order": 10
   },
   "276": {
+    "old_id": 280,
     "id": 276,
     "split": "ต-ลาด",
     "en": "market",
@@ -2493,6 +2770,7 @@
     "teaching_order": -1
   },
   "277": {
+    "old_id": 281,
     "id": 277,
     "split": "ส-นาม",
     "en": "field",
@@ -2502,6 +2780,7 @@
     "teaching_order": -1
   },
   "278": {
+    "old_id": 282,
     "id": 278,
     "split": "กระ-เป๋า",
     "en": "bag",
@@ -2511,6 +2790,7 @@
     "teaching_order": -1
   },
   "279": {
+    "old_id": 283,
     "id": 279,
     "split": "หุ่น-ยนต์",
     "en": "robot",
@@ -2520,6 +2800,7 @@
     "teaching_order": -1
   },
   "280": {
+    "old_id": 284,
     "id": 280,
     "split": "วัน-จันทร์",
     "en": "Monday",
@@ -2529,6 +2810,7 @@
     "teaching_order": -1
   },
   "281": {
+    "old_id": 285,
     "id": 281,
     "split": "พระ-จันทร์",
     "en": "moon",
@@ -2538,6 +2820,7 @@
     "teaching_order": -1
   },
   "282": {
+    "old_id": 286,
     "id": 282,
     "split": "อา-ศัย",
     "en": "to reside",
@@ -2547,6 +2830,7 @@
     "teaching_order": -1
   },
   "283": {
+    "old_id": 287,
     "id": 283,
     "split": "กาง-เกง",
     "en": "trousers",
@@ -2556,6 +2840,7 @@
     "teaching_order": -1
   },
   "284": {
+    "old_id": 288,
     "id": 284,
     "split": "รอง-เท้า",
     "en": "shoes",
@@ -2565,6 +2850,7 @@
     "teaching_order": -1
   },
   "285": {
+    "old_id": 289,
     "id": 285,
     "split": "ถุง-เท้า",
     "en": "socks",
@@ -2574,6 +2860,7 @@
     "teaching_order": -1
   },
   "286": {
+    "old_id": 290,
     "id": 286,
     "split": "คิด-ถึง",
     "en": "to miss, think about",
@@ -2583,6 +2870,7 @@
     "teaching_order": -1
   },
   "287": {
+    "old_id": 291,
     "id": 287,
     "split": "คิด-มาก",
     "en": "to think too much, worry",
@@ -2592,6 +2880,7 @@
     "teaching_order": -1
   },
   "288": {
+    "old_id": 292,
     "id": 288,
     "split": "ทำ-งาน",
     "en": "to work",
@@ -2601,6 +2890,7 @@
     "teaching_order": -1
   },
   "289": {
+    "old_id": 293,
     "id": 289,
     "split": "มา-ถึง",
     "en": "to arrive",
@@ -2610,6 +2900,7 @@
     "teaching_order": -1
   },
   "290": {
+    "old_id": 294,
     "id": 290,
     "split": "ตื่น-นอน",
     "en": "to get up, wake up",
@@ -2619,6 +2910,7 @@
     "teaching_order": -1
   },
   "291": {
+    "old_id": 295,
     "id": 291,
     "split": "กลับ-บ้าน",
     "en": "to go home",
@@ -2628,6 +2920,7 @@
     "teaching_order": -1
   },
   "292": {
+    "old_id": 296,
     "id": 292,
     "split": "เลิก-งาน",
     "en": "to finish work",
@@ -2637,6 +2930,7 @@
     "teaching_order": -1
   },
   "293": {
+    "old_id": 297,
     "id": 293,
     "split": "ได้-ยิน",
     "en": "to hear",
@@ -2646,6 +2940,7 @@
     "teaching_order": -1
   },
   "294": {
+    "old_id": 298,
     "id": 294,
     "split": "อยาก-ให้",
     "en": "to want (someone to do something)",
@@ -2655,6 +2950,7 @@
     "teaching_order": -1
   },
   "295": {
+    "old_id": 299,
     "id": 295,
     "split": "ต้อง-การ",
     "en": "to want (followed by nouns)",
@@ -2664,6 +2960,7 @@
     "teaching_order": -1
   },
   "296": {
+    "old_id": 300,
     "id": 296,
     "split": "ออก-มา",
     "en": "to come out",
@@ -2673,6 +2970,7 @@
     "teaching_order": -1
   },
   "297": {
+    "old_id": 301,
     "id": 297,
     "split": "ขับ-รถ",
     "en": "to drive",
@@ -2682,6 +2980,7 @@
     "teaching_order": -1
   },
   "298": {
+    "old_id": 302,
     "id": 298,
     "split": "บัน-ทึก",
     "en": "to save",
@@ -2691,6 +2990,7 @@
     "teaching_order": -1
   },
   "299": {
+    "old_id": 303,
     "id": 299,
     "split": "ดูเ-หมือน",
     "en": "to look like",
@@ -2700,6 +3000,7 @@
     "teaching_order": -1
   },
   "300": {
+    "old_id": 304,
     "id": 300,
     "split": "รู้-จัก",
     "en": "to know (someone)",
@@ -2709,6 +3010,7 @@
     "teaching_order": -1
   },
   "301": {
+    "old_id": 305,
     "id": 301,
     "split": "ทำ-ให้",
     "en": "to make (someone do something)",
@@ -2718,6 +3020,7 @@
     "teaching_order": -1
   },
   "302": {
+    "old_id": 306,
     "id": 302,
     "split": "คง-จะ",
     "en": "may",
@@ -2727,6 +3030,7 @@
     "teaching_order": -1
   },
   "303": {
+    "old_id": 307,
     "id": 303,
     "split": "ประ-มาณ",
     "en": "approximately",
@@ -2736,6 +3040,7 @@
     "teaching_order": -1
   },
   "304": {
+    "old_id": 308,
     "id": 304,
     "split": "นิด-หน่อย",
     "en": "a little bit",
@@ -2745,6 +3050,7 @@
     "teaching_order": -1
   },
   "305": {
+    "old_id": 309,
     "id": 305,
     "split": "ไม่-ใช่",
     "en": "no",
@@ -2754,6 +3060,7 @@
     "teaching_order": -1
   },
   "306": {
+    "old_id": 310,
     "id": 306,
     "split": "กำ-ลัง",
     "en": "[present continuous]",
@@ -2763,6 +3070,7 @@
     "teaching_order": -1
   },
   "307": {
+    "old_id": 311,
     "id": 307,
     "split": "น่า-จะ",
     "en": "should",
@@ -2772,6 +3080,7 @@
     "teaching_order": -1
   },
   "308": {
+    "old_id": 312,
     "id": 308,
     "split": "กรุง-เทพ",
     "en": "Bangkok",
@@ -2781,6 +3090,7 @@
     "teaching_order": -1
   },
   "309": {
+    "old_id": 313,
     "id": 309,
     "split": "ย่อ-มาน",
     "en": "Yoman",
@@ -2790,6 +3100,7 @@
     "teaching_order": -1
   },
   "310": {
+    "old_id": 314,
     "id": 310,
     "split": "ลอน-ดอน",
     "en": "London",
@@ -2799,6 +3110,7 @@
     "teaching_order": -1
   },
   "311": {
+    "old_id": 315,
     "id": 311,
     "split": "อังก-ฤษ",
     "en": "England",
@@ -2808,6 +3120,7 @@
     "teaching_order": -1
   },
   "312": {
+    "old_id": 316,
     "id": 312,
     "split": "โท-ร-ทัศน์",
     "en": "TV",
@@ -2817,6 +3130,7 @@
     "teaching_order": -1
   },
   "313": {
+    "old_id": 317,
     "id": 313,
     "split": "ก-รุ-ณา",
     "en": "please, kindly...",
@@ -2826,6 +3140,7 @@
     "teaching_order": -1
   },
   "314": {
+    "old_id": 318,
     "id": 314,
     "split": "กัด",
     "en": "to bite",
@@ -2835,6 +3150,7 @@
     "teaching_order": -1
   },
   "315": {
+    "old_id": 319,
     "id": 315,
     "split": "ลง-น-รก",
     "en": "to go to hell",
@@ -2844,6 +3160,7 @@
     "teaching_order": -1
   },
   "316": {
+    "old_id": 320,
     "id": 316,
     "split": "รถ-ไฟ-ฟ้า",
     "en": "skytrain",
@@ -2853,6 +3170,7 @@
     "teaching_order": -1
   },
   "317": {
+    "old_id": 321,
     "id": 317,
     "split": "ด็ก-ผู้-ชาย",
     "en": "boy",
@@ -2862,6 +3180,7 @@
     "teaching_order": -1
   },
   "318": {
+    "old_id": 322,
     "id": 318,
     "split": "มา-เล-เซีย",
     "en": "Malaysia",
@@ -2871,6 +3190,7 @@
     "teaching_order": -1
   },
   "319": {
+    "old_id": 323,
     "id": 319,
     "split": "แค-นา-ดา",
     "en": "Canada",
@@ -2880,6 +3200,7 @@
     "teaching_order": -1
   },
   "320": {
+    "old_id": 324,
     "id": 320,
     "split": "กัม-พู-ชา",
     "en": "Cambodia",
@@ -2889,6 +3210,7 @@
     "teaching_order": -1
   },
   "321": {
+    "old_id": 325,
     "id": 321,
     "split": "ฝ-รั่งเ-ศส",
     "en": "France",
@@ -2898,6 +3220,7 @@
     "teaching_order": -1
   },
   "322": {
+    "old_id": 326,
     "id": 322,
     "split": "ทำ-อา-หาร",
     "en": "to cook",
@@ -2907,6 +3230,7 @@
     "teaching_order": -1
   },
   "323": {
+    "old_id": 327,
     "id": 323,
     "split": "พระ-อา-ทิตย์",
     "en": "sun",
@@ -2916,6 +3240,7 @@
     "teaching_order": -1
   },
   "324": {
+    "old_id": 328,
     "id": 324,
     "split": "ส-นาม-บิน",
     "en": "airport",
@@ -2925,6 +3250,7 @@
     "teaching_order": -1
   },
   "325": {
+    "old_id": 329,
     "id": 325,
     "split": "ภา-ษา-ไทย",
     "en": "Thai language",
@@ -2934,6 +3260,7 @@
     "teaching_order": 27
   },
   "326": {
+    "old_id": 330,
     "id": 326,
     "split": "สับ-ปะ-รด",
     "en": "pineapple",
@@ -2943,6 +3270,7 @@
     "teaching_order": -1
   },
   "327": {
+    "old_id": 331,
     "id": 327,
     "split": "วัน-อา-ทิตย์",
     "en": "Sunday",
@@ -2952,6 +3280,7 @@
     "teaching_order": -1
   },
   "328": {
+    "old_id": 332,
     "id": 328,
     "split": "ภาพ-ยน-ตร์",
     "en": "movie (formal)",
@@ -2961,6 +3290,7 @@
     "teaching_order": -1
   },
   "329": {
+    "old_id": 333,
     "id": 329,
     "split": "มาก-เกิน-ไป",
     "en": "excessively",
@@ -2970,6 +3300,7 @@
     "teaching_order": -1
   },
   "330": {
+    "old_id": 334,
     "id": 330,
     "split": "อ-เล็ก-ซี่",
     "en": "Alexis",
@@ -2979,6 +3310,7 @@
     "teaching_order": -1
   },
   "331": {
+    "old_id": 335,
     "id": 331,
     "split": "วิศวกร",
     "en": "engineer",
@@ -2988,6 +3320,7 @@
     "teaching_order": -1
   },
   "332": {
+    "old_id": 336,
     "id": 332,
     "split": "ส-นาม-เด็ก-เล่น",
     "en": "playground",
@@ -2997,6 +3330,7 @@
     "teaching_order": -1
   },
   "333": {
+    "old_id": 337,
     "id": 333,
     "split": "รถ-ไฟ-ใต้-ดิน",
     "en": "subway, underground train",
@@ -3006,6 +3340,7 @@
     "teaching_order": -1
   },
   "334": {
+    "old_id": 338,
     "id": 334,
     "split": "กาง-เกง-ขา-สั้น",
     "en": "shorts",
@@ -3015,6 +3350,7 @@
     "teaching_order": -1
   },
   "335": {
+    "old_id": 339,
     "id": 335,
     "split": "ภา-ษา-อัง-กฤษ",
     "en": "English language",
@@ -3024,6 +3360,7 @@
     "teaching_order": 28
   },
   "336": {
+    "old_id": 340,
     "id": 336,
     "split": "เยอ-ร-ม-นี",
     "en": "Germany",
@@ -3033,6 +3370,7 @@
     "teaching_order": -1
   },
   "337": {
+    "old_id": 341,
     "id": 337,
     "split": "อเ-ม-ริ-กัน",
     "en": "American",
@@ -3042,6 +3380,7 @@
     "teaching_order": -1
   },
   "338": {
+    "old_id": 342,
     "id": 338,
     "split": "ขอ-โทษ",
     "en": "sorry",
@@ -3051,6 +3390,7 @@
     "teaching_order": 17
   },
   "339": {
+    "old_id": 343,
     "id": 339,
     "split": "ไม่-ดี",
     "en": "bad",
@@ -3060,6 +3400,7 @@
     "teaching_order": 33
   },
   "340": {
+    "old_id": 344,
     "id": 340,
     "split": "สวย",
     "en": "beautiful",
@@ -3069,6 +3410,7 @@
     "teaching_order": -1
   },
   "341": {
+    "old_id": 345,
     "id": 341,
     "split": "เล็ก",
     "en": "small",
@@ -3078,6 +3420,7 @@
     "teaching_order": -1
   },
   "342": {
+    "old_id": 346,
     "id": 342,
     "split": "ป่า",
     "en": "forest",
@@ -3087,6 +3430,7 @@
     "teaching_order": -1
   },
   "343": {
+    "old_id": 347,
     "id": 343,
     "split": "คน",
     "en": "people, person",
@@ -3096,6 +3440,7 @@
     "teaching_order": 6
   },
   "344": {
+    "old_id": 348,
     "id": 344,
     "split": "กด",
     "en": "to press, to push",
@@ -3105,6 +3450,7 @@
     "teaching_order": -1
   },
   "345": {
+    "old_id": 349,
     "id": 345,
     "split": "ไทย",
     "en": "Thai",
@@ -3114,6 +3460,7 @@
     "teaching_order": 5
   },
   "346": {
+    "old_id": 350,
     "id": 346,
     "split": "ผัก",
     "en": "vegetable",
@@ -3123,6 +3470,7 @@
     "teaching_order": 64
   },
   "347": {
+    "old_id": 351,
     "id": 347,
     "split": "อ-ร่อย",
     "en": "delicious",
@@ -3132,6 +3480,7 @@
     "teaching_order": 63
   },
   "348": {
+    "old_id": 352,
     "id": 348,
     "split": "มัน-ฝ-รั่ง",
     "en": "potato",
@@ -3141,6 +3490,7 @@
     "teaching_order": 66
   },
   "349": {
+    "old_id": 353,
     "id": 349,
     "split": "ดี-ใจ",
     "en": "glad",
@@ -3150,6 +3500,7 @@
     "teaching_order": -1
   },
   "350": {
+    "old_id": 354,
     "id": 350,
     "split": "โลก",
     "en": "world, earth",
@@ -3159,6 +3510,7 @@
     "teaching_order": -1
   },
   "351": {
+    "old_id": 355,
     "id": 351,
     "split": "ลา",
     "en": "to leave",
@@ -3168,6 +3520,7 @@
     "teaching_order": -1
   },
   "352": {
+    "old_id": 356,
     "id": 352,
     "split": "นน",
     "en": "[sound for 'non']",
@@ -3177,6 +3530,7 @@
     "teaching_order": -1
   },
   "353": {
+    "old_id": 357,
     "id": 353,
     "split": "นา",
     "en": "field",
@@ -3186,6 +3540,7 @@
     "teaching_order": -1
   },
   "354": {
+    "old_id": 358,
     "id": 354,
     "split": "นา-นา",
     "en": "various",
@@ -3195,6 +3550,7 @@
     "teaching_order": -1
   },
   "355": {
+    "old_id": 359,
     "id": 355,
     "split": "ทำ-นา",
     "en": "to farm",
@@ -3204,6 +3560,7 @@
     "teaching_order": -1
   },
   "356": {
+    "old_id": 360,
     "id": 356,
     "split": "รา",
     "en": "mold, fungus / to cease",
@@ -3213,6 +3570,7 @@
     "teaching_order": -1
   },
   "357": {
+    "old_id": 361,
     "id": 357,
     "split": "รัน",
     "en": "[sound for 'ran']",
@@ -3222,6 +3580,7 @@
     "teaching_order": -1
   },
   "358": {
+    "old_id": 362,
     "id": 358,
     "split": "พร้อม",
     "en": "ready",
@@ -3231,6 +3590,7 @@
     "teaching_order": -1
   },
   "359": {
+    "old_id": 363,
     "id": 359,
     "split": "ยุง",
     "en": "mosquito",
@@ -3240,6 +3600,7 @@
     "teaching_order": -1
   },
   "360": {
+    "old_id": 364,
     "id": 360,
     "split": "สัตว์-เลื้อย-คลาน",
     "en": "reptile",
@@ -3249,6 +3610,7 @@
     "teaching_order": -1
   },
   "361": {
+    "old_id": 365,
     "id": 361,
     "split": "สก-ปรก",
     "en": "dirty",
@@ -3258,6 +3620,7 @@
     "teaching_order": -1
   },
   "362": {
+    "old_id": 366,
     "id": 362,
     "split": "ตะ-เกียบ",
     "en": "chopsticks",
@@ -3267,6 +3630,7 @@
     "teaching_order": -1
   },
   "363": {
+    "old_id": 367,
     "id": 363,
     "split": "ครอบ-ครัว",
     "en": "family",
@@ -3276,6 +3640,7 @@
     "teaching_order": -1
   },
   "364": {
+    "old_id": 368,
     "id": 364,
     "split": "ห้อง-ครัว",
     "en": "kitchen",
@@ -3285,6 +3650,7 @@
     "teaching_order": -1
   },
   "365": {
+    "old_id": 369,
     "id": 365,
     "split": "ส-กุล",
     "en": "family, ancestor, lineage",
@@ -3294,6 +3660,7 @@
     "teaching_order": -1
   },
   "366": {
+    "old_id": 370,
     "id": 366,
     "split": "มาก",
     "en": "very",
@@ -3303,6 +3670,7 @@
     "teaching_order": -1
   },
   "367": {
+    "old_id": 371,
     "id": 367,
     "split": "กลัว",
     "en": "to fear",
@@ -3312,6 +3680,7 @@
     "teaching_order": -1
   },
   "368": {
+    "old_id": 372,
     "id": 368,
     "split": "ดู",
     "en": "to watch, look",
@@ -3321,6 +3690,7 @@
     "teaching_order": -1
   },
   "369": {
+    "old_id": 373,
     "id": 369,
     "split": "รอ",
     "en": "to watch, look",
@@ -3330,6 +3700,7 @@
     "teaching_order": -1
   },
   "370": {
+    "old_id": 374,
     "id": 370,
     "split": "รู้",
     "en": "to know",
@@ -3339,6 +3710,7 @@
     "teaching_order": -1
   },
   "371": {
+    "old_id": 375,
     "id": 371,
     "split": "ตาย",
     "en": "to die",
@@ -3348,6 +3720,7 @@
     "teaching_order": -1
   },
   "372": {
+    "old_id": 376,
     "id": 372,
     "split": "ลา-ก่อน",
     "en": "to say goodbye, leave",
@@ -3357,6 +3730,7 @@
     "teaching_order": -1
   },
   "373": {
+    "old_id": 377,
     "id": 373,
     "split": "พบ",
     "en": "to find, meet, discover",
@@ -3366,6 +3740,7 @@
     "teaching_order": -1
   },
   "374": {
+    "old_id": 378,
     "id": 374,
     "split": "ขึ้น",
     "en": "to enter",
@@ -3375,6 +3750,7 @@
     "teaching_order": -1
   },
   "375": {
+    "old_id": 379,
     "id": 375,
     "split": "เที่ยว",
     "en": "to travel",
@@ -3384,6 +3760,7 @@
     "teaching_order": -1
   },
   "376": {
+    "old_id": 380,
     "id": 376,
     "split": "ความ-หวาน",
     "en": "sweetness",
@@ -3393,6 +3770,7 @@
     "teaching_order": -1
   },
   "377": {
+    "old_id": 381,
     "id": 377,
     "split": "ครั้ง-แรก",
     "en": "the first time",
@@ -3402,6 +3780,7 @@
     "teaching_order": -1
   },
   "378": {
+    "old_id": 382,
     "id": 378,
     "split": "กลาย-เป็น",
     "en": "to become",
@@ -3411,6 +3790,7 @@
     "teaching_order": -1
   },
   "379": {
+    "old_id": 383,
     "id": 379,
     "split": "เด็ก-ๆ",
     "en": "children",
@@ -3420,6 +3800,7 @@
     "teaching_order": -1
   },
   "380": {
+    "old_id": 384,
     "id": 380,
     "split": "เมื่อ",
     "en": "when, as, at",
@@ -3429,6 +3810,7 @@
     "teaching_order": -1
   },
   "381": {
+    "old_id": 385,
     "id": 381,
     "split": "เกิน-ไป",
     "en": "too much",
@@ -3438,6 +3820,7 @@
     "teaching_order": -1
   },
   "382": {
+    "old_id": 386,
     "id": 382,
     "split": "เร็ว-ๆ-นี้",
     "en": "soon, recently",
@@ -3447,6 +3830,7 @@
     "teaching_order": -1
   },
   "383": {
+    "old_id": 387,
     "id": 383,
     "split": "เวียด-นาม",
     "en": "Vietnam",
@@ -3456,6 +3840,7 @@
     "teaching_order": -1
   },
   "384": {
+    "old_id": 388,
     "id": 384,
     "split": "และ",
     "en": "and",
@@ -3465,6 +3850,7 @@
     "teaching_order": -1
   },
   "385": {
+    "old_id": 389,
     "id": 385,
     "split": "ช่วง",
     "en": "period",
@@ -3474,6 +3860,7 @@
     "teaching_order": -1
   },
   "386": {
+    "old_id": 390,
     "id": 386,
     "split": "ฤ-ดู-หนาว",
     "en": "winter",
@@ -3483,6 +3870,7 @@
     "teaching_order": -1
   },
   "387": {
+    "old_id": 391,
     "id": 387,
     "split": "หนาว",
     "en": "cold",
@@ -3492,6 +3880,7 @@
     "teaching_order": -1
   },
   "388": {
+    "old_id": 392,
     "id": 388,
     "split": "ฤ-ดู",
     "en": "season",
@@ -3501,6 +3890,7 @@
     "teaching_order": -1
   },
   "389": {
+    "old_id": 393,
     "id": 389,
     "split": "ป-ฏิ-เสธ",
     "en": "refuse",
@@ -3510,6 +3900,7 @@
     "teaching_order": -1
   },
   "390": {
+    "old_id": 394,
     "id": 390,
     "split": "เริ่ม",
     "en": "to start, begin",
@@ -3519,6 +3910,7 @@
     "teaching_order": -1
   },
   "391": {
+    "old_id": 395,
     "id": 391,
     "split": "รึ-ป่าว",
     "en": "or not?",
@@ -3528,6 +3920,7 @@
     "teaching_order": -1
   },
   "392": {
+    "old_id": 396,
     "id": 392,
     "split": "เล่ม",
     "en": "classifier for books, knives, candles",
@@ -3537,6 +3930,7 @@
     "teaching_order": -1
   },
   "393": {
+    "old_id": 397,
     "id": 393,
     "split": "ทํา-งาน",
     "en": "to work",
@@ -3546,6 +3940,7 @@
     "teaching_order": -1
   },
   "394": {
+    "old_id": 398,
     "id": 394,
     "split": "ง่วง-นอน",
     "en": "sleepy",
@@ -3555,6 +3950,7 @@
     "teaching_order": -1
   },
   "395": {
+    "old_id": 399,
     "id": 395,
     "split": "ตอ",
     "en": "stub",
@@ -3564,6 +3960,7 @@
     "teaching_order": -1
   },
   "396": {
+    "old_id": 400,
     "id": 396,
     "split": "ยาย",
     "en": "grandmother",
@@ -3573,6 +3970,7 @@
     "teaching_order": -1
   },
   "397": {
+    "old_id": 401,
     "id": 397,
     "split": "งง-งวย",
     "en": "to be puzzled",
@@ -3582,6 +3980,7 @@
     "teaching_order": -1
   },
   "398": {
+    "old_id": 402,
     "id": 398,
     "split": "งง",
     "en": "to be confused",
@@ -3591,6 +3990,7 @@
     "teaching_order": -1
   },
   "399": {
+    "old_id": 403,
     "id": 399,
     "split": "คอ",
     "en": "neck",
@@ -3600,6 +4000,7 @@
     "teaching_order": -1
   },
   "400": {
+    "old_id": 404,
     "id": 400,
     "split": "หิน",
     "en": "rock, stone, boulder",
