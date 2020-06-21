@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ไฟ.wav-4540c8a9079ea438c8504bd17a9bf21a.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ไฟ.wav"
+dest_files=[ "res://.import/ไฟ.wav-4540c8a9079ea438c8504bd17a9bf21a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

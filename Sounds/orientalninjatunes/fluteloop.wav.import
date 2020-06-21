@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/fluteloop.wav-1d2f684ec25c63808ef8e543af32d28f.sample"
+
+[deps]
+
+source_file="res://Sounds/orientalninjatunes/fluteloop.wav"
+dest_files=[ "res://.import/fluteloop.wav-1d2f684ec25c63808ef8e543af32d28f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

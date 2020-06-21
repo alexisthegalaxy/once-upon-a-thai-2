@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/สีม่วง.wav-466f8dda4d7843029354574b211f0335.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/สีม่วง.wav"
+dest_files=[ "res://.import/สีม่วง.wav-466f8dda4d7843029354574b211f0335.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

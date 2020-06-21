@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ดึก.wav-8e6adf081e4233d5cc5b562d093feb15.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ดึก.wav"
+dest_files=[ "res://.import/ดึก.wav-8e6adf081e4233d5cc5b562d093feb15.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

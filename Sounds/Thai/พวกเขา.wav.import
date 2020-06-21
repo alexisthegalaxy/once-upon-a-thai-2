@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/พวกเขา.wav-3979d3493c57ff29d0f3f9dae2e8485c.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/พวกเขา.wav"
+dest_files=[ "res://.import/พวกเขา.wav-3979d3493c57ff29d0f3f9dae2e8485c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

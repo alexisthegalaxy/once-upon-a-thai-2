@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ทอง.wav-3ea4ed2816dea1e2936dcb77b0df386b.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ทอง.wav"
+dest_files=[ "res://.import/ทอง.wav-3ea4ed2816dea1e2936dcb77b0df386b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

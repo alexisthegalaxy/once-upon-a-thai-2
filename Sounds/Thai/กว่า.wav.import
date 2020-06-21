@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/กว่า.wav-5a7b576468a029cfc3e78f3ff6bb0653.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/กว่า.wav"
+dest_files=[ "res://.import/กว่า.wav-5a7b576468a029cfc3e78f3ff6bb0653.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

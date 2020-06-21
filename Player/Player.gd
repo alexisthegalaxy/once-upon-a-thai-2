@@ -14,11 +14,13 @@ enum {
 	ROLL,
 }
 var player_name = "Alexis"
-var target  # the thing that the player is currently looking at, for interacting with
-var can_move = true  # false when interacting with a npc, etc.
 var can_interact = false  # meaning the player is near a npc. false during a dialog.
 var state = MOVE
+
 var dict = null
+var hub = null
+var alphabet = null
+var notebook = null
 
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
@@ -32,34 +34,38 @@ func _ready() -> void:
 func _physics_process(delta) -> void:
 	match state:
 		MOVE:
-			if can_move:
+			if Game.can_move:
 				move_state(delta)
 		ROLL:
 			roll_state(delta)
 	
+func _on_press_f():
+	if hub:
+		hub.queue_free()
+		hub = null
+	elif dict:
+		dict.queue_free()
+		dict = null
+	elif alphabet:
+		alphabet.queue_free()
+		alphabet = null
+	else:
+		hub = load("res://UI/UIHub.tscn").instance()
+		hub.init(self)
+		get_tree().current_scene.add_child(hub)
+
 func _input(_event) -> void:
-	if can_interact and Input.is_action_just_pressed("interact"):
-		# print('interac')
-		if target:
-			# print('with target', target)
-			can_interact = false
-			can_move = false
-			target.initiate_dialog(self)
+	if can_interact and Game.current_focus and Input.is_action_just_pressed("interact"):
+		can_interact = false
+		Game.can_move = false
+		Game.current_focus.interact(self)
 	if Input.is_action_just_pressed("print_position"):
 		print("(" + str(position.x) + ", " + str(position.y) + ")")
 		set_hp(Game.hp - 0.5)
 	if Input.is_action_just_pressed("print_known_sentences"):
 		Game.print_known_sentences()
-	if Input.is_action_just_pressed("dict"):
-		if dict:
-			dict.queue_free()
-			dict = null
-		else:
-			dict = load("res://Lexical/Dict/Dict.tscn").instance()
-			dict.init(self)
-			var current_map = get_tree().current_scene
-			current_map.add_child(dict)
-
+	if Input.is_action_just_pressed("hub"):
+		_on_press_f()
 
 func move_state(delta) -> void:
 	if not Game.can_move:
@@ -106,22 +112,9 @@ func roll_animation_finished() -> void:
 func attack_animation_finished() -> void:
 	state = MOVE
 
-func _on_InteractBox_body_entered(npc) -> void:
-#	can_move = false
-#	velocity = Vector2.ZERO
-	can_interact = true
-	target = npc
-	animationState.travel("Idle")
-	# print('player has entered zone around ', npc)
-
-func _on_InteractBox_body_exited(_npc) -> void:
-	can_interact = false
-	target = null
-
-
 func end_dialog() -> void:
 	can_interact = true
-	can_move = true
+	Game.can_move = true
 
 func set_hp(hp) -> void:
 	Game.hp = hp

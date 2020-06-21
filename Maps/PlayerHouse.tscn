@@ -9,7 +9,6 @@
 [ext_resource path="res://Lexical/Word/Word.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Teleport.tscn" type="PackedScene" id=18]
 
-
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 
@@ -524,7 +523,6 @@ __meta__ = {
 
 [node name="Word2" parent="YSort" instance=ExtResource( 16 )]
 position = Vector2( 336, 624 )
-thai = "ผัก"
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 73.3658, 42.1191 )
@@ -551,8 +549,8 @@ script = ExtResource( 14 )
 [node name="Go outside" parent="." instance=ExtResource( 18 )]
 position = Vector2( 24, 112 )
 to_map_name = "res://Maps/Chaiyaphum.tscn"
-to_x = 232
-to_y = 203
+to_x = 688
+to_y = 481
 
 [node name="Go Upstairs" parent="." instance=ExtResource( 18 )]
 position = Vector2( 72, 21.9328 )

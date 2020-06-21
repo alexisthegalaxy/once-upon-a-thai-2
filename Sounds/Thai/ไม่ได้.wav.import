@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ไม่ได้.wav-346a3ace49efc4aa5f9e4cbdb31cb6fd.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ไม่ได้.wav"
+dest_files=[ "res://.import/ไม่ได้.wav-346a3ace49efc4aa5f9e4cbdb31cb6fd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

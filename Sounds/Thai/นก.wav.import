@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/นก.wav-7a1dccc8352af560c7720426f1757a2c.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/นก.wav"
+dest_files=[ "res://.import/นก.wav-7a1dccc8352af560c7720426f1757a2c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

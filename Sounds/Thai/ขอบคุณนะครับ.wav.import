@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ขอบคุณนะครับ.wav-1afb06db8d2d0b0f993b3d9d7f8dd3e7.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ขอบคุณนะครับ.wav"
+dest_files=[ "res://.import/ขอบคุณนะครับ.wav-1afb06db8d2d0b0f993b3d9d7f8dd3e7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

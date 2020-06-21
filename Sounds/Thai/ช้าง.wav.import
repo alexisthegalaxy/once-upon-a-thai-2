@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ช้าง.wav-15d7fcb45505e0f329e57a2c497a1b39.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ช้าง.wav"
+dest_files=[ "res://.import/ช้าง.wav-15d7fcb45505e0f329e57a2c497a1b39.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

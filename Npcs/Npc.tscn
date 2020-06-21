@@ -1,13 +1,19 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Npcs/sprites/old_woman_down.png" type="Texture" id=1]
+[ext_resource path="res://Npcs/sprites/yaai.png" type="Texture" id=1]
 [ext_resource path="res://Npcs/Npc.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 16, 16 )
+extents = Vector2( 8.34115, 5.72016 )
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 24.0
+
+[sub_resource type="Animation" id=3]
+resource_name = "WalkDown"
+length = 0.5
+loop = true
+step = 0.125
 
 [node name="Npc" type="StaticBody2D" groups=[
 "npcs",
@@ -18,9 +24,11 @@ script = ExtResource( 3 )
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0.475456, -8.71101 )
 texture = ExtResource( 1 )
+hframes = 12
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.475456, -8.71101 )
+position = Vector2( -0.468193, -3.0098 )
 shape = SubResource( 1 )
 
 [node name="InteractBox" type="Area2D" parent="."]
@@ -30,5 +38,8 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractBox"]
 position = Vector2( 0, -8 )
 shape = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/WalkDown = SubResource( 3 )
 [connection signal="body_entered" from="InteractBox" to="." method="_on_InteractBox_body_entered"]
 [connection signal="body_exited" from="InteractBox" to="." method="_on_InteractBox_body_exited"]

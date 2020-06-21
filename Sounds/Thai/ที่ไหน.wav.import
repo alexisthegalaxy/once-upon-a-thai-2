@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ที่ไหน.wav-a35f158cdb3df84a2b13d26a31339894.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ที่ไหน.wav"
+dest_files=[ "res://.import/ที่ไหน.wav-a35f158cdb3df84a2b13d26a31339894.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/เหลือง.wav-6118083ead72731d698715ec6d6345d0.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/เหลือง.wav"
+dest_files=[ "res://.import/เหลือง.wav-6118083ead72731d698715ec6d6345d0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

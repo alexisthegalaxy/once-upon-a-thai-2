@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/โอะ.wav-e19d03365ee5ee222ee3e4c0d083b383.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/โอะ.wav"
+dest_files=[ "res://.import/โอะ.wav-e19d03365ee5ee222ee3e4c0d083b383.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

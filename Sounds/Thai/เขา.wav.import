@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/เขา.wav-f7112b88fef4d96293ec1153715caa15.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/เขา.wav"
+dest_files=[ "res://.import/เขา.wav-f7112b88fef4d96293ec1153715caa15.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

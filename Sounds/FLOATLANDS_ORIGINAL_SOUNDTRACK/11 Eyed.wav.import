@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/11 Eyed.wav-dd4b92e11b76c3ca8e97f183414e2db7.sample"
+
+[deps]
+
+source_file="res://Sounds/FLOATLANDS_ORIGINAL_SOUNDTRACK/11 Eyed.wav"
+dest_files=[ "res://.import/11 Eyed.wav-dd4b92e11b76c3ca8e97f183414e2db7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

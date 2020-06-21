@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/เอาเถอะ.wav-1b4fd5281a84ad8a56e53d923279b37a.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/เอาเถอะ.wav"
+dest_files=[ "res://.import/เอาเถอะ.wav-1b4fd5281a84ad8a56e53d923279b37a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

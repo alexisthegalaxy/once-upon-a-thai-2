@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/มา.wav-accb2e3d30f81ce16a362bb34c8141d1.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/มา.wav"
+dest_files=[ "res://.import/มา.wav-accb2e3d30f81ce16a362bb34c8141d1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

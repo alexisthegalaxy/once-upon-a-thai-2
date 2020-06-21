@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/12 Wind.wav-f1812abf9656e8805abe378002fb2ec3.sample"
+
+[deps]
+
+source_file="res://Sounds/FLOATLANDS_ORIGINAL_SOUNDTRACK/12 Wind.wav"
+dest_files=[ "res://.import/12 Wind.wav-f1812abf9656e8805abe378002fb2ec3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

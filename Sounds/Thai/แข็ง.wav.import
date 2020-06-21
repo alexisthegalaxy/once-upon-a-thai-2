@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/แข็ง.wav-2abd8e78ee303f45e1ff32a123702ff7.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/แข็ง.wav"
+dest_files=[ "res://.import/แข็ง.wav-2abd8e78ee303f45e1ff32a123702ff7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

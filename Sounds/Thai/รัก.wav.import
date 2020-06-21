@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/รัก.wav-68770a8d2d03aa3f4a549dd2e59362b1.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/รัก.wav"
+dest_files=[ "res://.import/รัก.wav-68770a8d2d03aa3f4a549dd2e59362b1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

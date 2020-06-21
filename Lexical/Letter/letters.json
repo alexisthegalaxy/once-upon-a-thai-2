@@ -1,0 +1,586 @@
+{
+  "0": {
+    "old_id": 1,
+    "id": 0,
+    "th": "น",
+    "pron": "หนู",
+    "en": "n",
+    "alphabet_index": "25",
+    "final": "",
+    "class": "LOW",
+    "frequency_index": "2",
+    "audio": "นอ",
+    "introduction": [
+      "น: Nice to see you [Name] - I'm น, the n.",
+      "น: Just sayin', I'm the most used letter in the Thai alphabet,",
+      "น: so you better remember me!",
+      "น: If you have a hard time distinguishing me from the ม (m),",
+      "น: Notice that the ม has its loops on the sa>M<e side,",
+      "น: While I have my loops >N<ot on the same side."
+    ],
+    "test": {
+      "prompt": "นอน",
+      "distractors": ["นอม", "มอม", "มอน"]
+    }
+  },
+  "1": {
+    "old_id": 2,
+    "id": 1,
+    "th": "า",
+    "pron": "",
+    "en": "a (long)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "1",
+    "audio": "อา"
+  },
+  "2": {
+    "old_id": 3,
+    "id": 2,
+    "th": "ร",
+    "pron": "เรือ",
+    "en": "r",
+    "alphabet_index": "35",
+    "final": "n",
+    "class": "LOW",
+    "frequency_index": "3",
+    "audio": "รอ"
+  },
+  "3": {
+    "old_id": 4,
+    "id": 3,
+    "th": "-ั",
+    "pron": "",
+    "en": "a (short)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "13",
+    "audio": "อะ",
+    "introduction": [
+      "-ั: Yo!",
+      "-ั: I'm the letter -ั and I'm pronounced like a short \"ah\" sound.",
+      "-ั: I'm a vowel and I float over a consonant like an accent:",
+      "-ั: For example, นั is pronounced \"na\"."
+    ]
+  },
+  "4": {
+    "old_id": 5,
+    "id": 4,
+    "th": "ก",
+    "pron": "ไก่",
+    "en": "g",
+    "alphabet_index": "1",
+    "final": "k",
+    "class": "MID",
+    "frequency_index": "5",
+    "audio": "กอ",
+    "introduction": [
+      "ก: Hey [Name], coming here to learn me?",
+      "ก: I'm ก, the g sound, like in the word good.",
+      "ก: I'm the first letter of the alphabet.",
+      "ก: Careful though - I'm pronounced k at the end of a syllable.",
+      "ก: For example, the word reed in Thai is กก, and is pronounced \"gok\"."
+    ]
+  },
+  "5": {
+    "old_id": 6,
+    "id": 5,
+    "th": "ม",
+    "pron": "ม้า",
+    "en": "m",
+    "alphabet_index": "33",
+    "final": "",
+    "class": "LOW",
+    "frequency_index": "9",
+    "audio": "มอ",
+    "introduction": [
+      "ม: Hello [Name],",
+      "ม: I am ม, the letter m.",
+      "ม: I look a lot like my sister น, the n,",
+      "ม: but my loops are on the sa>M<e side.",
+      "ม: and the น's loops are >N<ot on the same side!"
+    ]
+  },
+  "6": {
+    "old_id": 7,
+    "id": 6,
+    "th": "เ-",
+    "pron": "",
+    "en": "é (long)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "6",
+    "audio": "เอ",
+    "introduction": [
+      "เ-: Hééé [Name]!",
+      "เ-: I'm the vowel เ- pronounced with a long é sound,",
+      "เ-: Like in \"café\" or \"Pokémon\".",
+      "เ-: See how I've got a dash next to me?",
+      "เ-: That's because I come before the consonant.",
+      "เ-: For example เน is pronounced \"nay\"."
+    ],
+    "test": {
+      "prompt": "เด็ก",
+      "distractors": ["ดเก", "ด็ก", "แด็ก", "แดก"]
+    }
+  },
+  "7": {
+    "old_id": 8,
+    "id": 7,
+    "th": "อ",
+    "pron": "อ่าง",
+    "en": "or (long)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "MID",
+    "frequency_index": "4",
+    "audio": "ออ"
+  },
+  "8": {
+    "old_id": 9,
+    "id": 8,
+    "th": "ล",
+    "pron": "ลิง",
+    "en": "l",
+    "alphabet_index": "36",
+    "final": "n",
+    "class": "LOW",
+    "frequency_index": "14",
+    "audio": "ลอ"
+  },
+  "9": {
+    "old_id": 10,
+    "id": 9,
+    "th": "-ี",
+    "pron": "",
+    "en": "i (long)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "12",
+    "audio": "อี",
+    "introduction": [
+      "-ี: Greetings, [Name].",
+      "-ี: I'm -ี, the long \"i\" sound like in \"knee\".",
+      "-ี: I'm a vowel floating gracefully over the consonant,",
+      "-ี: For example, นี is pronounced \"nee\"."
+    ],
+    "test": {
+      "prompt": "ดี",
+      "distractors": ["ด", "ดิ่", "ดี่", "ดิ", "ดื"]
+    }
+  },
+  "10": {
+    "old_id": 11,
+    "id": 10,
+    "th": "ง",
+    "pron": "งู",
+    "en": "ng",
+    "alphabet_index": "7",
+    "final": "",
+    "class": "LOW",
+    "frequency_index": "7",
+    "audio": "งอ"
+  },
+  "11": {
+    "old_id": 12,
+    "id": 11,
+    "th": "ท",
+    "pron": "ทหาร",
+    "en": "t'h",
+    "alphabet_index": "23",
+    "final": "t",
+    "class": "LOW",
+    "frequency_index": "17",
+    "audio": "ทอ",
+    "introduction": [
+      "ท: I'm ท. I'm pronounced t, but aspirated,",
+      "ท: so you can write me t'h.",
+      "ท: The \"t\" sound actually doesn't exist in Thai.",
+      "ท: It's either d, dt, or t'h.",
+      "ท: Although all three are actually pronounced \"t\",",
+      "ท: at the end of a syllable."
+    ],
+    "test": {
+      "prompt": "บาท",
+      "distractors": ["ทาบ", "ทาม", "ทาน"]
+    }
+  },
+  "12": {
+    "old_id": 13,
+    "id": 12,
+    "th": "ว",
+    "pron": "แหวน",
+    "en": "w",
+    "alphabet_index": "37",
+    "final": "",
+    "class": "LOW",
+    "frequency_index": "15",
+    "audio": "วอ"
+  },
+  "13": {
+    "old_id": 14,
+    "id": 13,
+    "th": "ย",
+    "pron": "ยักษ์",
+    "en": "y",
+    "alphabet_index": "34",
+    "final": "",
+    "class": "LOW",
+    "frequency_index": "11",
+    "audio": "ยอ",
+    "introduction": [
+      "ย: Yo [Name]!",
+      "ย: I'm the consonant ย and I'm pronounced y,",
+      "ย: I kinda look like the y used in English, don't you think?"
+    ]
+  },
+  "14": {
+    "old_id": 15,
+    "id": 14,
+    "th": "-ิ",
+    "pron": "",
+    "en": "i (short)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "16",
+    "audio": "อิ",
+    "introduction": [
+      "-ิ: What’s crackin’ [Name]?",
+      "-ิ: I'm -ิ, the shorter brother of -ี, and the vowel for the short \"i\" sound.",
+      "-ิ: Do you see the difference between my long brother ee -ี and me?"
+    ]
+  },
+  "15": {
+    "old_id": 16,
+    "id": 15,
+    "th": "ส",
+    "pron": "เสือ",
+    "en": "s",
+    "alphabet_index": "40",
+    "final": "t",
+    "class": "HIGH",
+    "frequency_index": "19",
+    "audio": "สอ"
+  },
+  "16": {
+    "old_id": 17,
+    "id": 16,
+    "th": "ต",
+    "pron": "เต่า",
+    "en": "dt",
+    "alphabet_index": "21",
+    "final": "t",
+    "class": "MID",
+    "frequency_index": "20",
+    "audio": "ตอ"
+  },
+  "17": {
+    "old_id": 18,
+    "id": 17,
+    "th": "ด",
+    "pron": "เด็ก",
+    "en": "d",
+    "alphabet_index": "20",
+    "final": "t",
+    "class": "MID",
+    "frequency_index": "18",
+    "audio": "ดอ",
+    "introduction": [
+      "ด: Howdy! I ด the d!",
+      "ด: Don't get me confused with the ค (k'h).",
+      "ด: Also, I'm pronounced t at the end of a syllable,",
+      "ด: Because Thai people don't voice the last consonant in a syllable.",
+      "ด: That's why Thai people can have a hard time dealing between words like side and site!"
+    ]
+  },
+  "18": {
+    "old_id": 19,
+    "id": 18,
+    "th": "บ",
+    "pron": "ใบไม้",
+    "en": "b",
+    "alphabet_index": "26",
+    "final": "p",
+    "class": "MID",
+    "frequency_index": "22",
+    "audio": "บอ"
+  },
+  "19": {
+    "old_id": 20,
+    "id": 19,
+    "th": "ป",
+    "pron": "ปลา",
+    "en": "bp",
+    "alphabet_index": "27",
+    "final": "bp",
+    "class": "MID",
+    "frequency_index": "23",
+    "audio": "ปอ",
+    "introduction": [
+      "ป: [Name]!",
+      "ป: I'm ป, the bp sound.",
+      "ป: Don't get me confused with the บ (b): I'm longer.",
+      "ป: I'm pronounced bp at the beginning of a syllable, p at the end.",
+      "ป: That's because you don't release the air at the end of syllables."
+    ]
+  },
+  "20": {
+    "old_id": 21,
+    "id": 20,
+    "th": "ะ",
+    "pron": "",
+    "en": "a (final)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "21",
+    "audio": "อะ"
+  },
+  "21": {
+    "old_id": 22,
+    "id": 21,
+    "th": "ค",
+    "pron": "ควาย",
+    "en": "k'h (khwai)",
+    "alphabet_index": "4",
+    "final": "k",
+    "class": "LOW",
+    "frequency_index": "24",
+    "audio": "คอ",
+    "introduction": [
+      "ค: Hey, I'm ค.",
+      "ค: I'm pronounced k'h, just like a k, but aspirated.",
+      "ค: Don't get me confused with the ด, the d:",
+      "ค: I look like a cow (>K'H<ow) looking at you,",
+      "ค: while ด spirals in like a >D<igital finger print.",
+      "ค: Also! I'm not the only letter in Thai that's pronounced k'h.",
+      "ค: The other ones are "
+    ],
+    "test": {
+      "prompt": "คน",
+      "distractors": ["กน", "โคน", "คอน"]
+    }
+  },
+  "22": {
+    "old_id": 23,
+    "id": 22,
+    "th": "จ",
+    "pron": "จาน",
+    "en": "j",
+    "alphabet_index": "8",
+    "final": "t",
+    "class": "MID",
+    "frequency_index": "28",
+    "audio": "จอ"
+  },
+  "23": {
+    "old_id": 24,
+    "id": 23,
+    "th": "-ื",
+    "pron": "",
+    "en": "eu",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "34",
+    "audio": "อื"
+  },
+  "24": {
+    "old_id": 25,
+    "id": 24,
+    "th": "พ",
+    "pron": "พาน",
+    "en": "p'h",
+    "alphabet_index": "30",
+    "final": "p",
+    "class": "LOW",
+    "frequency_index": "27",
+    "audio": "พอ"
+  },
+  "25": {
+    "old_id": 26,
+    "id": 25,
+    "th": "แ-",
+    "pron": "",
+    "en": "ae (long)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "26",
+    "audio": "แอ"
+  },
+  "26": {
+    "old_id": 27,
+    "id": 26,
+    "th": "ห",
+    "pron": "หีบ",
+    "en": "h",
+    "alphabet_index": "41",
+    "final": "",
+    "class": "HIGH",
+    "frequency_index": "25",
+    "audio": "หอ"
+  },
+  "27": {
+    "old_id": 28,
+    "id": 27,
+    "th": "ใ-",
+    "pron": "",
+    "en": "ai (maimuan)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "33",
+    "audio": "ไม้ม้วน"
+  },
+  "28": {
+    "old_id": 29,
+    "id": 28,
+    "th": "ไ-",
+    "pron": "",
+    "en": "ai (maimalai)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "35",
+    "audio": "ไม้มลาย",
+    "introduction": [
+      "ไ-: Hi [Name]!",
+      "ไ-: I'm ไ-, also called Ai Maimalai and I'm pronounced \"ai\",",
+      "ไ-: like in I or eye.",
+      "ไ-: Just like the vowel เ-, I come before the consonant:",
+      "ไ-: for example ไกล (ai-g-l) is pronounced glai!"
+    ],
+    "test": {
+      "prompt": "ไป",
+      "distractors": ["ป็ไ", "ไป็", "ปไ"]
+    }
+  },
+  "29": {
+    "old_id": 30,
+    "id": 29,
+    "th": "โ-",
+    "pron": "",
+    "en": "oh (long)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "36",
+    "audio": "โอ"
+  },
+  "30": {
+    "old_id": 31,
+    "id": 30,
+    "th": "ช",
+    "pron": "ช้าง",
+    "en": "ch",
+    "alphabet_index": "10",
+    "final": "t",
+    "class": "LOW",
+    "frequency_index": "30",
+    "audio": "ชอ"
+  },
+  "31": {
+    "old_id": 32,
+    "id": 31,
+    "th": "ข",
+    "pron": "ไข่",
+    "en": "k'h (khai)",
+    "alphabet_index": "2",
+    "final": "k",
+    "class": "HIGH",
+    "frequency_index": "31",
+    "audio": "ขอ"
+  },
+  "32": {
+    "old_id": 33,
+    "id": 32,
+    "th": "-ู",
+    "pron": "",
+    "en": "u (long)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "38",
+    "audio": "อู"
+  },
+  "33": {
+    "old_id": 34,
+    "id": 33,
+    "th": "-ุ",
+    "pron": "",
+    "en": "u (short)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "32",
+    "audio": "อุ"
+  },
+  "34": {
+    "old_id": 35,
+    "id": 34,
+    "th": "ฟ",
+    "pron": "ฟัน",
+    "en": "f",
+    "alphabet_index": "31",
+    "final": "",
+    "class": "LOW",
+    "frequency_index": "50",
+    "audio": "ฟอ"
+  },
+  "35": {
+    "old_id": 36,
+    "id": 35,
+    "th": "-",
+    "pron": "",
+    "en": "or (short)",
+    "alphabet_index": "0",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "0",
+    "audio": "โอะ",
+    "introduction": [
+      "-: Me? I'm nobody.",
+      "-: I'm the absence of vowel in between two consonants.",
+      "-: I use the symbol \"-\" so that you can see me, but in reality I'm invisible.",
+      "-: I'm wherever there is no vowel.",
+      "-: I still have a sound though!",
+      "-: In Thai, the absence of vowel is pronounced with a short \"oh\" sound",
+      "-: Don't be so surprised, English does it too! With words like rhythm or sarcasm.",
+      "-: For example, the word system: ระบบ (R-A-B-P) is pronounced \"rabop\".",
+      "-: Or, the word six: หก (H-K) is pronounced \"hok\".",
+      "-: You got it? You better, because I'm very common!"
+    ],
+    "test": {
+      "prompt": "คน",
+      "distractors": ["คโน", "โคน", "คอน", "ค็อน"]
+    }
+  },
+  "36": {
+    "old_id": 37,
+    "id": 36,
+    "th": "-็",
+    "pron": "",
+    "en": "[shortens the sound]",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "ACCENT",
+    "frequency_index": "37",
+    "audio": "None",
+    "introduction": [
+      "-็: Hi.",
+      "-็: I make long sounds short.",
+      "-็: For example, เปน is long (bpehn) and เป็น is short (bpen).",
+      "-็: Put me over the main consonant of the syllable."
+    ],
+    "test": {
+      "prompt": "เล็ก",
+      "distractors": ["เลก", "เปลี่ย็น", "ก็"]
+    }
+  }
+}

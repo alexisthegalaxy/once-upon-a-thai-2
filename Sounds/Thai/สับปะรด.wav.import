@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/สับปะรด.wav-7ac4c508e645ea690a48532fe3558b47.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/สับปะรด.wav"
+dest_files=[ "res://.import/สับปะรด.wav-7ac4c508e645ea690a48532fe3558b47.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

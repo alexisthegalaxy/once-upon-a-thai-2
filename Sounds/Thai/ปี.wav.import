@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ปี.wav-f375ec388f8501d2d9866ab1c9f406bc.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ปี.wav"
+dest_files=[ "res://.import/ปี.wav-f375ec388f8501d2d9866ab1c9f406bc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ที่นี่.wav-bec33b1086407c4ecc5df7089d6b8870.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ที่นี่.wav"
+dest_files=[ "res://.import/ที่นี่.wav-bec33b1086407c4ecc5df7089d6b8870.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

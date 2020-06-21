@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/คน.wav-960ea07479e1f7275ee54170a4b4b5eb.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/คน.wav"
+dest_files=[ "res://.import/คน.wav-960ea07479e1f7275ee54170a4b4b5eb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

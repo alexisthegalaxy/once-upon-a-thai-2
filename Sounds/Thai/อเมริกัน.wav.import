@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/อเมริกัน.wav-ca5462722f99b55ef1ab1a8bb864a02b.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/อเมริกัน.wav"
+dest_files=[ "res://.import/อเมริกัน.wav-ca5462722f99b55ef1ab1a8bb864a02b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

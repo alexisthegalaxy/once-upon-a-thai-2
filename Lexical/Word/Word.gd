@@ -4,16 +4,26 @@ export var id = 0
 var word
 var is_disappearing = false
 var ratio = 1
+var wobbles = true
+var wobbling_time = 0
+var y = 0
 
-signal word_area_entered
+# events are an array that contains first the event name, then the array of parameters
+export(Array) var pre_dialog_event = []
+export(Array) var post_dialog_event = []
 
 func _ready():
-	var _e = self.connect("word_area_entered", Game, "_on_word_area_entered", [])
+	y = self.position.y
 	word = Game.words[str(id)]
 	$Label.text = word["th"]
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if wobbles:
+		wobbling_time += delta
+		var wobbling_delta = cos(wobbling_time) * 3
+		self.position.y = y + wobbling_delta
+	
 	if is_disappearing:
 		ratio -= 3 * delta
 		self.scale.x = ratio
@@ -26,7 +36,18 @@ func _process(delta):
 func starts_disappearing():
 	is_disappearing = true
 
-func _on_Area2D_body_entered(_body):
-	if _body == Game.player:
-		emit_signal('word_area_entered', id, self)
-		# starts_disappearing()
+func interact(player):
+	player.animationState.travel("Idle")
+	player.velocity = Vector2.ZERO
+	Game.start_test("res://Test/TestGuessMeaning.tscn", id, self)
+
+func _on_Area2D_body_entered(body):
+	if body == Game.player:
+		Game.current_focus = self
+		Game.player.can_interact = true
+
+func _on_Area2D_body_exited(body):
+	if body == Game.player:
+		if Game.current_focus == self:
+			Game.current_focus = null
+			Game.player.can_interact = false

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/เยอะ.wav-31d2f10fd10b2fbb2085cbb2055a8163.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/เยอะ.wav"
+dest_files=[ "res://.import/เยอะ.wav-31d2f10fd10b2fbb2085cbb2055a8163.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

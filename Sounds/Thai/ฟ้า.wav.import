@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ฟ้า.wav-4d34a9baa2dd07df400c6833f4f1fd32.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ฟ้า.wav"
+dest_files=[ "res://.import/ฟ้า.wav-4d34a9baa2dd07df400c6833f4f1fd32.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

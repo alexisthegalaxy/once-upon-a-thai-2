@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/นานา.wav-5f805e0009d3e8bdbc54f43e75227113.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/นานา.wav"
+dest_files=[ "res://.import/นานา.wav-5f805e0009d3e8bdbc54f43e75227113.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

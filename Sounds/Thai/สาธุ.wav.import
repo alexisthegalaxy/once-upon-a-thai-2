@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/สาธุ.wav-e352b21f303b0824a9e8c9620ed8b087.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/สาธุ.wav"
+dest_files=[ "res://.import/สาธุ.wav-e352b21f303b0824a9e8c9620ed8b087.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

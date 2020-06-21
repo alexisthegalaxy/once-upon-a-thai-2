@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/inevitableconsequences.wav-444ab86333e243d2578693e11a7f68be.sample"
+
+[deps]
+
+source_file="res://Sounds/orientalninjatunes/inevitableconsequences.wav"
+dest_files=[ "res://.import/inevitableconsequences.wav-444ab86333e243d2578693e11a7f68be.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

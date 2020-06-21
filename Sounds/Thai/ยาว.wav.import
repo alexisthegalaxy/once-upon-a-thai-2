@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ยาว.wav-557efd97af5aeb756f71cb4248c74e87.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ยาว.wav"
+dest_files=[ "res://.import/ยาว.wav-557efd97af5aeb756f71cb4248c74e87.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

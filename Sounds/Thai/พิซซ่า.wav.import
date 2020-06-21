@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/พิซซ่า.wav-50e0f6fca49dbd1c6464ebcf4177fb40.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/พิซซ่า.wav"
+dest_files=[ "res://.import/พิซซ่า.wav-50e0f6fca49dbd1c6464ebcf4177fb40.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

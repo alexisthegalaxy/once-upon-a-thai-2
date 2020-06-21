@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/สีน้ำเงิน.wav-bf4e7f498ecff2b34973e0820a4330ee.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/สีน้ำเงิน.wav"
+dest_files=[ "res://.import/สีน้ำเงิน.wav-bf4e7f498ecff2b34973e0820a4330ee.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

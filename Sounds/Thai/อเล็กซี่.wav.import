@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/อเล็กซี่.wav-6eabad1309e0aeec5596930633df617d.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/อเล็กซี่.wav"
+dest_files=[ "res://.import/อเล็กซี่.wav-6eabad1309e0aeec5596930633df617d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

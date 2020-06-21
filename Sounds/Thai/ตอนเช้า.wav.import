@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ตอนเช้า.wav-0c8d1341cb8d400e2589b4e7d38e03e5.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ตอนเช้า.wav"
+dest_files=[ "res://.import/ตอนเช้า.wav-0c8d1341cb8d400e2589b4e7d38e03e5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

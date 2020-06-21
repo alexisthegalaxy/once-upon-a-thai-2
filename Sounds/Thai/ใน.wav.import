@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ใน.wav-ae3baa260c4357351f4fc0eb07db7760.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ใน.wav"
+dest_files=[ "res://.import/ใน.wav-ae3baa260c4357351f4fc0eb07db7760.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

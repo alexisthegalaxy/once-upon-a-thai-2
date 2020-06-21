@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ดื่ม.wav-1623645d69b0bb3ee0b79c73e0bac76a.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ดื่ม.wav"
+dest_files=[ "res://.import/ดื่ม.wav-1623645d69b0bb3ee0b79c73e0bac76a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

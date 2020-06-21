@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/03 Reveal.wav-96327c47d902c6a3bed9d6f0b5d639f5.sample"
+
+[deps]
+
+source_file="res://Sounds/FLOATLANDS_ORIGINAL_SOUNDTRACK/03 Reveal.wav"
+dest_files=[ "res://.import/03 Reveal.wav-96327c47d902c6a3bed9d6f0b5d639f5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

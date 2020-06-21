@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ว่าง.wav-870fa076be8ffbf9de5a4e725a92916b.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ว่าง.wav"
+dest_files=[ "res://.import/ว่าง.wav-870fa076be8ffbf9de5a4e725a92916b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

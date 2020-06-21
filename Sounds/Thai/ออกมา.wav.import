@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ออกมา.wav-bb19a83ed046874deb0c6d2135d38b21.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ออกมา.wav"
+dest_files=[ "res://.import/ออกมา.wav-bb19a83ed046874deb0c6d2135d38b21.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Test/Letter/TestThaiSyllableFromPronLet.gd" type="Script" id=1]
+[ext_resource path="res://Test/TestAnswer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Test/MainWordThaiLabel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Test/test_bg.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 5 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Explanation" type="Label" parent="."]
+anchor_right = 1.0
+margin_top = 18.2215
+margin_bottom = 32.2215
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.309804, 0.309804, 0.309804, 1 )
+text = "Which letter correspond to this sound?"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Thai" parent="." instance=ExtResource( 4 )]
+
+[node name="answer_1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 78.2628, 122.14 )
+
+[node name="answer_2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 210.367, 97.6873 )
+
+[node name="answer_3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 108.367, 100.977 )
+
+[node name="answer_4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 136.911, 128.4 )
+
+[node name="answer_5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 35.3733, 100.977 )
+
+[node name="answer_6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 222.798, 128.4 )
+
+[node name="answer_7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 173.752, 114.401 )

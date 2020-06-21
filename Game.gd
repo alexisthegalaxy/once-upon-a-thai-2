@@ -5,12 +5,17 @@ var goal_color = null
 
 var words = []
 var sentences = []
+var letters = []
 
 var known_words = []
 var known_sentences = []
+var known_letters = []
 
+var current_focus = null  # if player is around a npc/word/letter, this becomes it
 var current_scene = null
+var active_test = null
 var player = null
+
 var can_move = true
 
 var hp = 5.0
@@ -21,6 +26,9 @@ func set_hp(_hp) -> void:
 
 func knows_word(word) -> bool:
 	return word["id"] in known_words
+
+func knows_letter(letter) -> bool:
+	return letter["id"] in known_letters
 
 func print_known_sentences() -> void:
 	print('print_known_sentences')
@@ -52,6 +60,7 @@ func _ready():
 	current_scene = root.get_child(root.get_child_count() - 1)
 	words = retrieve_from_json_file("res://Lexical/Word/words.json")
 	sentences = retrieve_from_json_file("res://Lexical/Sentence/sentences.json")
+	letters = retrieve_from_json_file("res://Lexical/Letter/letters.json")
 
 func _process(_delta):
 	if Input.is_action_pressed("ui_cancel"):
@@ -76,6 +85,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 	# var ref = weakref(current_scene)
 	current_scene.free()
 	# Load and instance the new scene.
+	assert(to_map_name != "")
 	current_scene = ResourceLoader.load(to_map_name).instance()
 #	for child in current_scene.get_children():
 #		print('--- ', child.get_name())
@@ -95,11 +105,6 @@ func _on_InteractBox_body_entered(_player, npc) -> void:
 func _on_InteractBox_body_exited(_player, npc) -> void:
 	_player._on_InteractBox_body_exited(npc)
 
-func _on_word_area_entered(id, over_word) -> void:
-	var test = load("res://Test/TestGuessMeaning.tscn").instance()
-	self.add_child(test)
-	test.init(id, over_word)
-
 func add_sentence(sentence_id, x, y):
 	known_sentences.append(sentence_id)
 	var floaty = load("res://UI/Floaty.tscn").instance()
@@ -116,3 +121,13 @@ func _on_sentence_area_entered(sentence_id, x, y) -> void:
 func _on_changelight_entered(color) -> void:
 	change_color = true
 	goal_color = color
+
+func start_test(test_scene, entity_id, over_entity) -> void:
+	"""
+	entity either refers to a letter or to a word
+	(maybe to a phrase too, later on?)
+	"""
+	var test = load(test_scene).instance()
+	self.add_child(test)
+	active_test = test
+	test.init(entity_id, over_entity)

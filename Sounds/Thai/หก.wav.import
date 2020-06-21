@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/หก.wav-9f37cb4b1a4e71cffcff8f78bb8b3760.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/หก.wav"
+dest_files=[ "res://.import/หก.wav-9f37cb4b1a4e71cffcff8f78bb8b3760.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

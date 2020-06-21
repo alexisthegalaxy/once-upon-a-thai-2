@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ก่อน.wav-2fbec93ff5e58c9d3a54c029e604f8b5.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ก่อน.wav"
+dest_files=[ "res://.import/ก่อน.wav-2fbec93ff5e58c9d3a54c029e604f8b5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

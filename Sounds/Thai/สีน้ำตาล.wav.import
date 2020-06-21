@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/สีน้ำตาล.wav-50d47bb255f0d6b9d9e06a2b31bb6bf3.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/สีน้ำตาล.wav"
+dest_files=[ "res://.import/สีน้ำตาล.wav-50d47bb255f0d6b9d9e06a2b31bb6bf3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

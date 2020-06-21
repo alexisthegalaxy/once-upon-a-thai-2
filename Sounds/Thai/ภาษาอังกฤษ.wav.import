@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ภาษาอังกฤษ.wav-bdf385827f9af4dc6a89e2478469f660.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ภาษาอังกฤษ.wav"
+dest_files=[ "res://.import/ภาษาอังกฤษ.wav-bdf385827f9af4dc6a89e2478469f660.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

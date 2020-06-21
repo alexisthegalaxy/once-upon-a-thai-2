@@ -1,8 +1,7 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://Player/Player.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
-[ext_resource path="res://Hitbox.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player/HpBar.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
@@ -451,12 +450,8 @@ start_node = "Idle"
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=45]
 
-[sub_resource type="CapsuleShape2D" id=46]
-radius = 12.0
-height = 12.0
-
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( -202.662, 280.356 )
+position = Vector2( 163.418, 97.7062 )
 collision_layer = 2
 script = ExtResource( 2 )
 __meta__ = {
@@ -505,21 +500,6 @@ parameters/Idle/blend_position = Vector2( 0, 0 )
 parameters/Roll/blend_position = Vector2( 0.0281863, 0.796552 )
 parameters/Run/blend_position = Vector2( -0.603272, 0.602428 )
 
-[node name="HitboxPivot" type="Position2D" parent="."]
-visible = false
-position = Vector2( 0, -4 )
-rotation = 1.5708
-
-[node name="SwordHitbox" parent="HitboxPivot" instance=ExtResource( 3 )]
-position = Vector2( 15.5788, -1.80749 )
-collision_mask = 8
-
-[node name="CollisionShape2D" parent="HitboxPivot/SwordHitbox" index="0"]
-shape = SubResource( 46 )
-disabled = true
-
 [node name="HUD" type="CanvasLayer" parent="."]
 
 [node name="HpBar" parent="HUD" instance=ExtResource( 4 )]
-
-[editable path="HitboxPivot/SwordHitbox"]

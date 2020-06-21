@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ชื่อเล่น.wav-8a73bb3221490474af064d393f69f5eb.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ชื่อเล่น.wav"
+dest_files=[ "res://.import/ชื่อเล่น.wav-8a73bb3221490474af064d393f69f5eb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/อาทิตย์.wav-6c91a9f9896d11ddd8917f13289c8e38.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/อาทิตย์.wav"
+dest_files=[ "res://.import/อาทิตย์.wav-6c91a9f9896d11ddd8917f13289c8e38.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,26 @@
+extends Node2D
+
+var words = []
+var children = []
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+func init(sentence, main_word_id):
+	var current_x = 0
+	for child in children:
+		child.queue_free()
+	children = []
+	$Translation.text = sentence["en"]
+	for word_id in sentence["word_ids"]:
+		var word = Game.words[str(word_id)]
+		var is_main_word = word_id == main_word_id
+		words.append(word)
+		var word_instance = load("res://Test/WordInSentenceCarousel.tscn").instance()
+		
+		word_instance.position.x = current_x
+		word_instance.init(word_id, is_main_word)
+		current_x += word_instance.width
+		add_child(word_instance)
+		children.append(word_instance)

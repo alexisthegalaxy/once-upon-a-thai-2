@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ฉัน.wav-354b1d785eebaf6da54d36424f2c6c51.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ฉัน.wav"
+dest_files=[ "res://.import/ฉัน.wav-354b1d785eebaf6da54d36424f2c6c51.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

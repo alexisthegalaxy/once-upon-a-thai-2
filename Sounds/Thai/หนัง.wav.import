@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/หนัง.wav-f3b21b5033b7d82afae9d3be36c1a633.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/หนัง.wav"
+dest_files=[ "res://.import/หนัง.wav-f3b21b5033b7d82afae9d3be36c1a633.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

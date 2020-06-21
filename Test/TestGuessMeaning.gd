@@ -23,6 +23,9 @@ func hide_answers():
 	$answer_7.hide()
 
 func set_distractors():
+	if "distractors" in word:
+		for distractor_id in word["distractors"]:
+			distractors.append(Game.words[str(distractor_id)])
 	while len(distractors) < number_of_choices - 1:
 		var random_word = Game.words[str(rng.randi() % Game.words.size())]
 		distractors.append(random_word)
@@ -36,6 +39,7 @@ func set_choices():
 
 func init(word_id, _over_word):
 	Game.can_move = false
+	Game.active_test = self
 	over_word = _over_word
 	rng.randomize()
 	word = Game.words[str(word_id)]
@@ -59,6 +63,8 @@ func init(word_id, _over_word):
 		$answer_5.show()
 		$answer_5.init(self, choices[4]["en"], choices[4]["id"] == word["id"])
 	
+	$SentenceCarousel.init(word_id)
+	
 func _ready():
 	set_alpha()
 	$SentenceCarousel.hide()
@@ -73,6 +79,10 @@ func _process(delta):
 
 func answered_correctly():
 	Game.can_move = true
+	Game.active_test = null
 	Game.known_words.append(word["id"])
 	over_word.starts_disappearing()
 	queue_free()
+
+func _on_Button_pressed():
+	$SentenceCarousel.show()

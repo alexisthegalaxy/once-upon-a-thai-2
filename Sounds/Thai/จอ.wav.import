@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/จอ.wav-b6af441e1c203c65d907d64f4818d12a.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/จอ.wav"
+dest_files=[ "res://.import/จอ.wav-b6af441e1c203c65d907d64f4818d12a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ผีเสื้อ.wav-7c4023268779b75efa003b5e98adbdda.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ผีเสื้อ.wav"
+dest_files=[ "res://.import/ผีเสื้อ.wav-7c4023268779b75efa003b5e98adbdda.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

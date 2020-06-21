@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ตุ๊กแก.wav-96fe5b429f40614097090ba8a7be6236.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ตุ๊กแก.wav"
+dest_files=[ "res://.import/ตุ๊กแก.wav-96fe5b429f40614097090ba8a7be6236.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

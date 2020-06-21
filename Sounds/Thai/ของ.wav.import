@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ของ.wav-0d7ce9d952c62d71024d0be10437b10b.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ของ.wav"
+dest_files=[ "res://.import/ของ.wav-0d7ce9d952c62d71024d0be10437b10b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

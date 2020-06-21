@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/สีเขียว.wav-1a242b88bbcbb0a2f3b5c85fa7e7e2a1.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/สีเขียว.wav"
+dest_files=[ "res://.import/สีเขียว.wav-1a242b88bbcbb0a2f3b5c85fa7e7e2a1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

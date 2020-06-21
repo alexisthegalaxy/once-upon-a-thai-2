@@ -7,7 +7,6 @@ const ENG_START_STORY = "Start Story"
 const ENG_LANGUAGE_CHALLENGES = "Language Challenges"
 const ENG_QUIT = "Quit"
 
-onready var audio_stream_player = $AudioStreamPlayer
 var file = File.new()
 
 func _ready():
@@ -17,7 +16,7 @@ func _ready():
 
 func _on_Start_Story_mouse_entered():
 	$"CanvasLayer/Start Story".text = ENG_START_STORY
-	play_sound(THAI_START_STORY)
+	SoundPlayer.play_thai(THAI_START_STORY)
 
 func _on_Start_Story_button_down():
 	Game.call_deferred("_deferred_goto_scene", "res://Maps/Chaiyaphum.tscn", 228, 243)
@@ -27,23 +26,17 @@ func _on_Start_Story_mouse_exited():
 
 func _on_Language_Challenges_mouse_entered():
 	$"CanvasLayer/Language Challenges".text = ENG_LANGUAGE_CHALLENGES
-	play_sound(THAI_LANGUAGE_CHALLENGES)
+	SoundPlayer.play_thai(THAI_LANGUAGE_CHALLENGES)
 
 func _on_Language_Challenges_mouse_exited():
 	$"CanvasLayer/Language Challenges".text = THAI_LANGUAGE_CHALLENGES
 
 func _on_Quit_mouse_entered():
 	$CanvasLayer/Quit.text = ENG_QUIT
-	play_sound(THAI_QUIT)
+	SoundPlayer.play_thai(THAI_QUIT)
 
 func _on_Quit_mouse_exited():
 	$CanvasLayer/Quit.text = THAI_QUIT
-
-func play_sound(thai):
-	var audio_file_name = "res://Sounds/Thai/" + thai + ".wav"
-	audio_stream_player.stream = load(audio_file_name)
-	audio_stream_player.play()
-
 
 func _on_Language_Challenges_button_down():
 	var _e = get_tree().change_scene("res://UI/Victory.tscn")

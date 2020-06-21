@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ขนม.wav-6574a2f9b520ebe97db195f474712e01.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ขนม.wav"
+dest_files=[ "res://.import/ขนม.wav-6574a2f9b520ebe97db195f474712e01.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

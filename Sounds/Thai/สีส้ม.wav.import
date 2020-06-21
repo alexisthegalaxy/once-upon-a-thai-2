@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/สีส้ม.wav-4c733b4752d36fd2d358aa76bc6f18b0.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/สีส้ม.wav"
+dest_files=[ "res://.import/สีส้ม.wav-4c733b4752d36fd2d358aa76bc6f18b0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

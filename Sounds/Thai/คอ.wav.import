@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/คอ.wav-edfd9c4e5628996f366062812d800582.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/คอ.wav"
+dest_files=[ "res://.import/คอ.wav-edfd9c4e5628996f366062812d800582.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

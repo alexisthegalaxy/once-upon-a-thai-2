@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/สาม.wav-5e06f7bb7e373db9b485064efd6e2f85.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/สาม.wav"
+dest_files=[ "res://.import/สาม.wav-5e06f7bb7e373db9b485064efd6e2f85.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

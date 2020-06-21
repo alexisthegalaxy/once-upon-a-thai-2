@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ขอโทษ.wav-8109fe00005c2a09bf48475aabe6f8fd.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ขอโทษ.wav"
+dest_files=[ "res://.import/ขอโทษ.wav-8109fe00005c2a09bf48475aabe6f8fd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

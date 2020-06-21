@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/เหนือ.wav-1b72669ec31f5770e8fd9285188a1fea.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/เหนือ.wav"
+dest_files=[ "res://.import/เหนือ.wav-1b72669ec31f5770e8fd9285188a1fea.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/นน.wav-bc50a01faf3f4fce1678ecf3151146a0.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/นน.wav"
+dest_files=[ "res://.import/นน.wav-bc50a01faf3f4fce1678ecf3151146a0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

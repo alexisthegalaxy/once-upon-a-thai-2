@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/มีความสุข.wav-709f1a0ccc475a39a8839d5d059e4b5f.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/มีความสุข.wav"
+dest_files=[ "res://.import/มีความสุข.wav-709f1a0ccc475a39a8839d5d059e4b5f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
