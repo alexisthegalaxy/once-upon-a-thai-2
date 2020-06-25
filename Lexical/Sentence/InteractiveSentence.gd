@@ -12,7 +12,10 @@ func init(sentence, main_word_id):
 	for child in children:
 		child.queue_free()
 	children = []
-	$Translation.text = sentence["en"]
+	if sentence["id"] in Game.known_sentences:
+		$Node2D/Translation.text = sentence["en"]
+	else:
+		$Node2D/Translation.text = "Unknown meaning"
 	for word_id in sentence["word_ids"]:
 		var word = Game.words[str(word_id)]
 		var is_main_word = word_id == main_word_id
@@ -24,3 +27,10 @@ func init(sentence, main_word_id):
 		current_x += word_instance.width
 		add_child(word_instance)
 		children.append(word_instance)
+	
+	# Let's center everything
+	var center_x = current_x / 2
+	print('center_x ', center_x)
+	for word in children:
+		word.position.x -= center_x
+	$Node2D.position.x = -$Node2D/Translation.get_minimum_size()[0] / 2

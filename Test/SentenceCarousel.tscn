@@ -101,7 +101,8 @@ __meta__ = {
 }
 
 [node name="InteractiveSentence" parent="." instance=ExtResource( 6 )]
-position = Vector2( 64, 32 )
+position = Vector2( 160, 40 )
+scale = Vector2( 1, 0.897581 )
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="input_event" from="RightArea" to="." method="_on_RightArea_input_event"]
 [connection signal="mouse_entered" from="RightArea" to="." method="_on_RightArea_mouse_entered"]

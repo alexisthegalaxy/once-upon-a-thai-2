@@ -47,7 +47,7 @@ func dialog_ends():
 		Events.execute(post_dialog_event[0], post_dialog_event[1])
 	if post_dialog_signal:
 		caller.dialog_ended()
-	Game.current_focus = null
+	Game.loses_focus(Game.current_focus)
 
 func next_line():
 	page += 1

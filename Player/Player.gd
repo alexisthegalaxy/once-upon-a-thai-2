@@ -14,7 +14,7 @@ enum {
 	ROLL,
 }
 var player_name = "Alexis"
-var can_interact = false  # meaning the player is near a npc. false during a dialog.
+var can_interact = true  # meaning the player is near a npc. false during a dialog.
 var state = MOVE
 
 var dict = null
@@ -55,13 +55,19 @@ func _on_press_f():
 		get_tree().current_scene.add_child(hub)
 
 func _input(_event) -> void:
+	if Input.is_action_just_pressed("interact"):
+		print('can_interact ', can_interact)
+		print('Game.current_focus ', Game.current_focus)
 	if can_interact and Game.current_focus and Input.is_action_just_pressed("interact"):
 		can_interact = false
 		Game.can_move = false
 		Game.current_focus.interact(self)
+		Game.space_bar_to_interact.queue_free()
+		Game.space_bar_to_interact = null
 	if Input.is_action_just_pressed("print_position"):
 		print("(" + str(position.x) + ", " + str(position.y) + ")")
 		set_hp(Game.hp - 0.5)
+		Game.add_random_letter_to_letters_to_look_for()
 	if Input.is_action_just_pressed("print_known_sentences"):
 		Game.print_known_sentences()
 	if Input.is_action_just_pressed("hub"):

@@ -5,28 +5,43 @@ export(int) var to_x
 export(int) var to_y
 export(Texture) var sprite = preload("res://World/LexicalWorld/mc_door.png")
 export var leads_to = "This door leads back to the Lexical Nexus."
+export var leads_to_letters = []  # a list of ids
+var time = 0
+var door_text = ""
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	$Sprite.set_texture(sprite)
+	if leads_to_letters:
+		for letter_we_look_for in Game.letters_we_look_for:
+			if letter_we_look_for["id"] in leads_to_letters:
+				door_text += letter_we_look_for["th"] + "  "
+		if door_text:
+			$Node2D/Label.text = door_text
+		else:
+			$Node2D.hide()
+	else:
+		$Node2D.hide()
 
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if door_text:
+		time += delta
+		var alpha = 0.5 + 0.5 * cos(time * 3)
+		$Node2D.modulate = Color(0.5, 1, 1, alpha)
+		
 func _on_InteractArea_body_entered(body):
 	if body == Game.player:
-		Game.current_focus = self
-		Game.player.can_interact = true
+		Game.gains_focus(self)
 
 func _on_InteractArea_body_exited(body):
 	if body == Game.player:
-		if Game.current_focus == self:
-			Game.current_focus = null
-			Game.player.can_interact = false
+		Game.loses_focus(self)
 
 func dialog_option(value):
 	if value == 1:
 		Game.call_deferred("_deferred_goto_scene", to_map_name, to_x, to_y)
 
 func interact(player):
-	print('interact with a door...')
 	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var dialog = [
 		leads_to,

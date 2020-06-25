@@ -78,11 +78,14 @@ func _process(delta):
 		set_alpha()
 
 func answered_correctly():
-	Game.can_move = true
-	Game.active_test = null
+#	Game.can_move = true
+#	Game.active_test = null
+	Game.player.can_interact = true
 	Game.known_words.append(word["id"])
 	over_word.starts_disappearing()
+	Game.dialog_press_e_to_see_it('word')
 	queue_free()
+	
 
 func _on_Button_pressed():
 	$SentenceCarousel.show()

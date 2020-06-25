@@ -24,7 +24,7 @@ func hide_answers():
 
 func set_distractors():
 	distractors = letter["test"]["distractors"]
-	number_of_choices = len(distractors)
+	number_of_choices = len(distractors) + 1
 #	if "distractors" in letter:
 #		for distractor_id in letter["distractors"]:
 #			distractors.append(Game.letters[str(distractor_id)])
@@ -55,6 +55,8 @@ func init(_letter_id, _over_letter):
 	set_distractors()
 	set_choices()
 	hide_answers()
+	print('choices')
+	print(choices)
 	if number_of_choices >= 1:
 		$answer_1.show()
 		$answer_1.init(self, choices[0], choices[0] == letter["test"]["prompt"])
@@ -90,8 +92,11 @@ func _process(delta):
 
 func answered_correctly():
 	# This is the fourth and currently last test
-	Game.can_move = true
+#	Game.can_move = true
 	Game.active_test = null
-	Game.known_letters.append(letter["id"])
+#	Game.player.can_interact = true
+	Game.learn_letter(letter)
 	over_letter.starts_disappearing()
+	Game.dialog_press_e_to_see_it('letter')
 	queue_free()
+

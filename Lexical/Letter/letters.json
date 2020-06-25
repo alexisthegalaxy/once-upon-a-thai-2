@@ -20,7 +20,7 @@
     ],
     "test": {
       "prompt": "นอน",
-      "distractors": ["นอม", "มอม", "มอน"]
+      "distractors": ["ลอม", "ลอล", "มอน", "มอม", "มอล"]
     }
   },
   "1": {
@@ -327,7 +327,11 @@
       "ป: Don't get me confused with the บ (b): I'm longer.",
       "ป: I'm pronounced bp at the beginning of a syllable, p at the end.",
       "ป: That's because you don't release the air at the end of syllables."
-    ]
+    ],
+    "test": {
+      "prompt": "ไป",
+      "distractors": ["ปไ", "บไ", "ไบ", "ไบ่", "บ่ไ"]
+    }
   },
   "20": {
     "old_id": 21,

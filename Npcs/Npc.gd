@@ -106,11 +106,10 @@ func interact(player):
 	if pre_dialog_event:
 		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
 
-func _on_InteractBox_body_entered(_body):
-	Game.current_focus = self
-	Game.player.can_interact = true
+func _on_InteractBox_body_entered(body):
+	if body == Game.player:
+		Game.gains_focus(self)
 
-func _on_InteractBox_body_exited(_body):
-	if Game.current_focus == self:
-		Game.current_focus = null
-		Game.player.can_interact = false
+func _on_InteractBox_body_exited(body):
+	if body == Game.player:
+		Game.loses_focus(self)

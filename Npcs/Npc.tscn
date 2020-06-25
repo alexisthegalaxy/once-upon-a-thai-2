@@ -7,7 +7,7 @@
 extents = Vector2( 8.34115, 5.72016 )
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 24.0
+radius = 29.2755
 
 [sub_resource type="Animation" id=3]
 resource_name = "WalkDown"
@@ -36,7 +36,7 @@ collision_layer = 16
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractBox"]
-position = Vector2( 0, -8 )
+position = Vector2( 0, -1.95129 )
 shape = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

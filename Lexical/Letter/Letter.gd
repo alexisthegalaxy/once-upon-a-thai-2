@@ -60,14 +60,8 @@ func dialog_ended():
 
 func _on_Area2D_body_entered(body):
 	if body == Game.player:
-		Game.current_focus = self
-		Game.player.can_interact = true
-#	if _body == Game.player:
-#		Game.start_test("res://Test/Letter/TestPronFromThaiLet.tscn", id, self)
-#		wobbles = false
+		Game.gains_focus(self)
 
 func _on_Area2D_body_exited(body):
 	if body == Game.player:
-		if Game.current_focus == self:
-			Game.current_focus = null
-			Game.player.can_interact = false
+		Game.loses_focus(self)

@@ -8,7 +8,7 @@ func _ready():
 func init(_word_id):
 	word_id = _word_id
 	$Thai.text = Game.words[str(word_id)]["th"]
-	for sentence_id in Game.known_sentences:
+	for sentence_id in Game.seen_sentences:
 		var sentence = Game.sentences[str(sentence_id)]
 		if word_id in sentence["word_ids"]:
 			sentences.append(sentence)
