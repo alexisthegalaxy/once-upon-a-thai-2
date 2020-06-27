@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 41.6215, 27.6644 )
 
-[node name="Tree2" type="StaticBody2D"]
+[node name="House" type="StaticBody2D"]
 collision_mask = 0
 
 [node name="Sprite" type="Sprite" parent="."]

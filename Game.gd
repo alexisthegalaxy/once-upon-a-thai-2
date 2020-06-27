@@ -20,8 +20,10 @@ var space_bar_to_interact = null
 var current_scene = null
 var active_test = null
 var player = null
-
+var player_name = "Alexis"
+var player_sprite_path = "res://Npcs/sprites/main_A.png"
 var can_move = true
+var can_read_thai = false
 
 var hp = 5.0
 var max_hp = 5.0
@@ -31,11 +33,11 @@ func dialog_press_e_to_see_it(learnt_item):
 	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var lines = []
 	if learnt_item == "sentence":
-		lines = ["Press E to open your notebook and see your sentences."]
+		lines = ["Press F to open your notebook and see your sentences."]
 	if learnt_item == "letter":
-		lines = ["Press E to open your alphabet and see your letters."]
+		lines = ["Press F to open your alphabet and see your letters."]
 	if learnt_item == "word":
-		lines = ["Press E to open your dictionary and see your words"]
+		lines = ["Press F to open your dictionary and see your words"]
 	print('lines ', lines)
 	ui_dialog.init(lines, player, null, null, null)
 	get_tree().current_scene.add_child(ui_dialog)
@@ -143,14 +145,20 @@ func update_letters_to_look_for_if_necesssary(to_map_name):
 		get_tree().current_scene.add_child(looking_for_letter__node)
 
 func _deferred_goto_scene(to_map_name, to_x, to_y):
-	var player_velocity = player.velocity
-	current_scene.free()
+	var player_velocity = Vector2.ZERO
+	if player:
+		player_velocity = player.velocity
+	if current_scene:
+		print('current_scene')
+		print(current_scene)
+		current_scene.free()
 	assert(to_map_name != "")
 	current_scene = ResourceLoader.load(to_map_name).instance()
 	player = current_scene.get_node("YSort").get_node("Player")
 	player.position = Vector2(to_x, to_y)
 	player.velocity = player_velocity
 	print('player.velocity', player.velocity)
+	SoundPlayer.start_music_upon_entering_map(to_map_name)
 	get_tree().get_root().add_child(current_scene)
 	get_tree().set_current_scene(current_scene)
 	update_letters_to_look_for_if_necesssary(to_map_name)

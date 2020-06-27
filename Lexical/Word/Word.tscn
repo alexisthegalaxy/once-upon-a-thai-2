@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Light/light.png" type="Texture" id=1]
 [ext_resource path="res://Lexical/Word/Word.gd" type="Script" id=2]
-[ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://UI/fonts/THSarabunNew Bold.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Light/spot.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]

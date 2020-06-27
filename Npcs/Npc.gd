@@ -41,8 +41,6 @@ func update_animation():
 	$AnimationPlayer.play(state  + "_" + direction)
 
 func _ready():
-#	var _e = self.connect("npc_body_entered", Game, "_on_InteractBox_body_entered", [self])
-#	var _f = self.connect("npc_body_exited", Game, "_on_InteractBox_body_exited", [self])
 	$Sprite.texture = load(sprite_path)
 	$Sprite.vframes = 1
 	$Sprite.hframes = 12
@@ -100,8 +98,7 @@ func interact(player):
 	npc_turn_towards(player.position)
 	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
 	ui_dialog.init(dialog, player, self, post_dialog_event, false)
-	player.animationState.travel("Idle")
-	player.velocity = Vector2.ZERO
+	player.stop_walking()
 	get_tree().current_scene.add_child(ui_dialog)
 	if pre_dialog_event:
 		Events.execute(pre_dialog_event[0], pre_dialog_event[1])

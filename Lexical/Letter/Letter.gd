@@ -44,8 +44,7 @@ func interact(player):
 	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
 	
 	ui_dialog.init(get_introduction(), player, self, post_dialog_event, true)
-	player.animationState.travel("Idle")
-	player.velocity = Vector2.ZERO
+	player.stop_walking()
 	get_tree().current_scene.add_child(ui_dialog)
 	if pre_dialog_event:
 		Events.execute(pre_dialog_event[0], pre_dialog_event[1])

@@ -15,7 +15,7 @@ func _ready():
 	$Control/Answers.hide()
 
 func process(dialog_line: String) -> String:
-	var processed_dialog = dialog_line.replace("[Name]", Game.player.player_name)
+	var processed_dialog = dialog_line.replace("[Name]", Game.player_name)
 	if processed_dialog[0] == "-":
 		processed_dialog = " " + processed_dialog
 	if current_line_has_question:
@@ -47,7 +47,7 @@ func dialog_ends():
 		Events.execute(post_dialog_event[0], post_dialog_event[1])
 	if post_dialog_signal:
 		caller.dialog_ended()
-	Game.loses_focus(Game.current_focus)
+#	Game.loses_focus(Game.current_focus)
 
 func next_line():
 	page += 1

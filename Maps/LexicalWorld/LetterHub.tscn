@@ -6,14 +6,16 @@
 [ext_resource path="res://World/LexicalWorld/black_bg.png" type="Texture" id=4]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=6]
 [ext_resource path="res://Light/light.png" type="Texture" id=7]
-[ext_resource path="res://TileMap.tscn" type="PackedScene" id=9]
+[ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Teleport.tscn" type="PackedScene" id=12]
+[ext_resource path="res://World/Teleport.tscn" type="PackedScene" id=12]
 [ext_resource path="res://World/LexicalWorld/weird_door.png" type="Texture" id=13]
 [ext_resource path="res://Maps/LexicalWorld/LexicalHubDoor.tscn" type="PackedScene" id=15]
 [ext_resource path="res://World/LexicalWorld/hc_door.png" type="Texture" id=16]
 [ext_resource path="res://World/LexicalWorld/lc_door.png" type="Texture" id=17]
 [ext_resource path="res://World/LexicalWorld/vowel_door.png" type="Texture" id=18]
+
+
 
 [node name="Map" type="Node2D"]
 

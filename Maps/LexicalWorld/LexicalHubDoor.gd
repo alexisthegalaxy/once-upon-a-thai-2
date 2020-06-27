@@ -40,6 +40,7 @@ func _on_InteractArea_body_exited(body):
 func dialog_option(value):
 	if value == 1:
 		Game.call_deferred("_deferred_goto_scene", to_map_name, to_x, to_y)
+		SoundPlayer.play_sound("res://Sounds/door.wav")
 
 func interact(player):
 	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
@@ -48,6 +49,6 @@ func interact(player):
 		"Do you want to take it? @QYes/No"
 	]
 	ui_dialog.init(dialog, player, self, null, false)
-	player.animationState.travel("Idle")
-	player.velocity = Vector2.ZERO
+#	player.animationState.travel("Idle")
+	player.stop_walking()
 	get_tree().current_scene.add_child(ui_dialog)

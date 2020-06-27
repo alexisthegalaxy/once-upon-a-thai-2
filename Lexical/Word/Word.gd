@@ -37,8 +37,7 @@ func starts_disappearing():
 	is_disappearing = true
 
 func interact(player):
-	player.animationState.travel("Idle")
-	player.velocity = Vector2.ZERO
+	player.stop_walking()
 	Game.start_test("res://Test/TestGuessMeaning.tscn", id, self)
 
 func _on_Area2D_body_entered(body):

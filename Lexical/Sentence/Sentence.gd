@@ -5,8 +5,7 @@ export var is_translated = false
 signal sentence_area_entered
 
 func interact(player):
-	player.animationState.travel("Idle")
-	player.velocity = Vector2.ZERO
+	player.stop_walking()
 	Game.discovers_sentence(id, is_translated)
 
 func _on_Area2D_body_entered(body):

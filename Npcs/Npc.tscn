@@ -4,10 +4,10 @@
 [ext_resource path="res://Npcs/Npc.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8.34115, 5.72016 )
+extents = Vector2( 9.77933, 5.90847 )
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 29.2755
+radius = 23.1433
 
 [sub_resource type="Animation" id=3]
 resource_name = "WalkDown"
