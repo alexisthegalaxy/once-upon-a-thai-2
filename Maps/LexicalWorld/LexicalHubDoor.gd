@@ -50,8 +50,7 @@ func dialog_option(value):
 func interact(player):
 	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var dialog = [
-		leads_to,
-		"Do you want to take it? @QYes/No"
+		leads_to + " \nDo you want to take it? @QYes/No"
 	]
 	ui_dialog.init(dialog, player, self, null, false)
 	player.stop_walking()

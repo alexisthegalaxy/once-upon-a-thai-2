@@ -7,10 +7,13 @@ var words = []
 var sentences = []
 var letters = []
 
+# The following are a list of IDs
 var known_words = []
 var known_sentences = []  # we know the translation
 var seen_sentences = []  # we don't know the translation
-var known_letters = []
+var known_letters = []  # list of IDs
+
+var exit_screen = false
 
 var this_letter_world_has_letters = []  # a list of letter ids
 var letters_we_look_for = []  # a list of letters
@@ -52,6 +55,7 @@ func dialog_press_e_to_see_it(learnt_item):
 	get_tree().current_scene.add_child(ui_dialog)
 
 func discovers_sentence(sentence_id, is_translated):
+	Game.can_move = false
 	var sentence_discovery = load("res://Lexical/Sentence/SentenceDiscovery.tscn").instance()
 	sentence_discovery.init(sentence_id, is_translated)
 	get_tree().current_scene.add_child(sentence_discovery)
@@ -159,16 +163,24 @@ func _ready():
 	sentences = retrieve_from_json_file("res://Lexical/Sentence/sentences.json")
 	letters = retrieve_from_json_file("res://Lexical/Letter/letters.json")
 
-func _process(_delta):
+func _input(_event):
 	if Input.is_action_pressed("ui_cancel"):
-		var exit_screen = load("res://UI/ExitAreYouSure.tscn").instance()
-		get_tree().current_scene.add_child(exit_screen)
+		if not exit_screen:
+			exit_screen = load("res://UI/ExitAreYouSure.tscn").instance()
+			get_tree().current_scene.add_child(exit_screen)
+		else:
+			if is_instance_valid(exit_screen):
+				exit_screen.stay()
 
+func _process(delta):
 	if change_color:
 		var canvas_modulate = get_tree().current_scene.get_node("Lights").get_node("CanvasModulate")
-		canvas_modulate.color.r = (canvas_modulate.color.r * 99 + goal_color.r) / 100
-		canvas_modulate.color.g = (canvas_modulate.color.g * 99 + goal_color.g) / 100
-		canvas_modulate.color.b = (canvas_modulate.color.b * 99 + goal_color.b) / 100
+		var direction = Vector3(goal_color.r, goal_color.g, goal_color.b) - Vector3(canvas_modulate.color.r, canvas_modulate.color.g, canvas_modulate.color.b)
+		if direction.length() < 0.0001:
+			change_color = false
+		canvas_modulate.color.r += delta * direction.x
+		canvas_modulate.color.g += delta * direction.y
+		canvas_modulate.color.b += delta * direction.z
 
 func _on_teleport_signal(to_map_name, to_x, to_y) -> void:
 	call_deferred("_deferred_goto_scene", to_map_name, to_x, to_y)

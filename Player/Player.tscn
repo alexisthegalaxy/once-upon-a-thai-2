@@ -4,9 +4,8 @@
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
 [ext_resource path="res://Player/HpBar.tscn" type="PackedScene" id=4]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 0.0779457
-height = 0.164003
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 0.0688174, 0.139715 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "AttackDown"
@@ -329,7 +328,7 @@ tracks/0/keys = {
 }
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( 163.418, 97.7062 )
+position = Vector2( 162.712, 97.7062 )
 collision_layer = 2
 script = ExtResource( 2 )
 __meta__ = {

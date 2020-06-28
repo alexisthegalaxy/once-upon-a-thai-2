@@ -78,7 +78,6 @@ func _process(delta):
 		set_alpha()
 
 func answered_correctly():
-	
 	# This is the second test
 	# When it ends, we got to the third test: TestThaiFromPronLet16
 	Game.start_test("res://Test/Letter/TestThaiFromPronLet16.tscn", letter_id, over_letter)

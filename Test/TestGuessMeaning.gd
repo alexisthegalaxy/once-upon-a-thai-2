@@ -80,6 +80,7 @@ func _process(delta):
 func answered_correctly():
 #	Game.can_move = true
 #	Game.active_test = null
+	SoundPlayer.play_thai(word["th"])
 	Game.player.can_interact = true
 	Game.known_words.append(word["id"])
 	over_word.starts_disappearing()

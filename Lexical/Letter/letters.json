@@ -11,7 +11,7 @@
     "frequency_index": "2",
     "audio": "นอ",
     "introduction": [
-      "น: Nice to see you [Name] - I'm น, the n.",
+      "น: Nice to see you [Name] - I'm น, the n. [sound]",
       "น: Just sayin', I'm the most used letter in the Thai alphabet,",
       "น: so you better remember me!",
       "น: If you have a hard time distinguishing me from the ม (m),",
@@ -60,7 +60,7 @@
     "audio": "อะ",
     "introduction": [
       "-ั: Yo!",
-      "-ั: I'm the letter -ั and I'm pronounced like a short \"ah\" sound.",
+      "-ั: I'm the letter -ั and I'm pronounced like a short \"ah\" sound. [sound]",
       "-ั: I'm a vowel and I float over a consonant like an accent:",
       "-ั: For example, นั is pronounced \"na\"."
     ]
@@ -78,8 +78,9 @@
     "audio": "กอ",
     "introduction": [
       "ก: Hey [Name], coming here to learn me?",
-      "ก: I'm ก, the g sound, like in the word good.",
+      "ก: I'm ก, the g sound, like in the word good. [sound]",
       "ก: I'm the first letter of the alphabet.",
+      "ก: I look like a n, but I have a ziGzaG leG: that's why I'm the g!",
       "ก: Careful though - I'm pronounced k at the end of a syllable.",
       "ก: For example, the word reed in Thai is กก, and is pronounced \"gok\"."
     ]
@@ -97,7 +98,7 @@
     "audio": "มอ",
     "introduction": [
       "ม: Hello [Name],",
-      "ม: I am ม, the letter m.",
+      "ม: I am ม, the letter m. [sound]",
       "ม: I look a lot like my sister น, the n,",
       "ม: but my loops are on the sa>M<e side.",
       "ม: and the น's loops are >N<ot on the same side!"
@@ -116,11 +117,12 @@
     "audio": "เอ",
     "introduction": [
       "เ-: Hééé [Name]!",
-      "เ-: I'm the vowel เ- pronounced with a long é sound,",
+      "เ-: I'm the vowel เ- pronounced with a long é sound, [sound]",
       "เ-: Like in \"café\" or \"Pokémon\".",
       "เ-: See how I've got a dash next to me?",
       "เ-: That's because I come before the consonant.",
-      "เ-: For example เน is pronounced \"nay\"."
+      "เ-: For example เน is pronounced \"néé\", or \"nay\".",
+      "เ-: I look like a leg, so that's how you can remember me: I'l a léég!"
     ],
     "test": {
       "prompt": "เด็ก",
@@ -164,7 +166,7 @@
     "audio": "อี",
     "introduction": [
       "-ี: Greetings, [Name].",
-      "-ี: I'm -ี, the long \"i\" sound like in \"knee\".",
+      "-ี: I'm -ี, the long \"ee\" sound like in \"knee\". [sound]",
       "-ี: I'm a vowel floating gracefully over the consonant,",
       "-ี: For example, นี is pronounced \"nee\"."
     ],
@@ -197,7 +199,7 @@
     "frequency_index": "17",
     "audio": "ทอ",
     "introduction": [
-      "ท: I'm ท. I'm pronounced t, but aspirated,",
+      "ท: I'm ท. I'm pronounced t, but aspirated, [sound]",
       "ท: so you can write me t'h.",
       "ท: The \"t\" sound actually doesn't exist in Thai.",
       "ท: It's either d, dt, or t'h.",
@@ -234,7 +236,7 @@
     "audio": "ยอ",
     "introduction": [
       "ย: Yo [Name]!",
-      "ย: I'm the consonant ย and I'm pronounced y,",
+      "ย: I'm the consonant ย and I'm pronounced y, [sound]",
       "ย: I kinda look like the top part of the y used in English, don't you think?"
     ]
   },
@@ -251,7 +253,7 @@
     "audio": "อิ",
     "introduction": [
       "-ิ: What’s crackin’ [Name]?",
-      "-ิ: I'm -ิ, the shorter brother of -ี, and the vowel for the short \"i\" sound.",
+      "-ิ: I'm -ิ, the shorter brother of -ี, and the vowel for the short \"i\" sound. [sound]",
       "-ิ: Do you see the difference between my long brother ee -ี and me?"
     ]
   },
@@ -291,10 +293,9 @@
     "frequency_index": "18",
     "audio": "ดอ",
     "introduction": [
-      "ด: Howdy! I ด the d!",
+      "ด: Howdy! I ด the d! [sound]",
       "ด: Don't get me confused with the ค (k'h).",
-      "ด: Also, I'm pronounced t at the end of a syllable,",
-      "ด: Because Thai people don't voice the last consonant in a syllable.",
+      "ด: Also, I'm pronounced t at the end of a syllable, because Thai people don't voice the last consonant in a syllable.",
       "ด: That's why Thai people can have a hard time dealing between words like side and site!"
     ]
   },
@@ -323,7 +324,7 @@
     "audio": "ปอ",
     "introduction": [
       "ป: [Name]!",
-      "ป: I'm ป, the bp sound.",
+      "ป: I'm ป, the bp sound. [sound]",
       "ป: Don't get me confused with the บ (b): I've got a longer tail.",
       "ป: I'm pronounced bp at the beginning of a syllable, p at the end.",
       "ป: That's because you don't release the air at the end of syllables."
@@ -358,8 +359,8 @@
     "audio": "คอ",
     "introduction": [
       "ค: Hey, I'm ค.",
-      "ค: I'm pronounced k'h, just like a k, but aspirated.",
-      "ค: Don't get me confused with the ด, the d:",
+      "ค: I'm pronounced k'h, just like a k, but aspirated. [sound]",
+      "ค: Don't get me confused with the ด, the d, you see the difference?",
       "ค: I look like a peacock (pea>K'H<ock) looking at you, while ด spirals in like a >D<igital finger print.",
       "ค: Also! I'm not the only letter in Thai that's pronounced k'h.",
       "ค: The other ones are "
@@ -454,10 +455,8 @@
     "audio": "ไม้มลาย",
     "introduction": [
       "ไ-: Hi [Name]!",
-      "ไ-: I'm ไ-, also called Ai Maimalai and I'm pronounced \"ai\",",
-      "ไ-: like in I or eye.",
-      "ไ-: Just like the vowel เ-, I come before the consonant:",
-      "ไ-: for example ไกล (ai-g-l) is pronounced glai!"
+      "ไ-: I'm ไ-, also called Ai Maimalai and I'm pronounced \"ai\", like in \"eye\". [sound]",
+      "ไ-: Just like the vowel เ-, I come before the consonant: for example ไกล (ai-g-l) is pronounced glai!"
     ],
     "test": {
       "prompt": "ไป",
@@ -553,7 +552,7 @@
       "-: I use the symbol \"-\" so that you can see me, but in reality I'm invisible.",
       "-: I'm wherever there is no vowel.",
       "-: I still have a sound though!",
-      "-: In Thai, the absence of vowel is pronounced with a short \"oh\" sound",
+      "-: In Thai, the absence of vowel is pronounced with a short \"oh\" sound. [sound]",
       "-: Don't be so surprised, English does it too! With words like rhythm or sarcasm.",
       "-: For example, the word system: ระบบ (R-A-B-P) is pronounced \"rabop\".",
       "-: Or, the word six: หก (H-K) is pronounced \"hok\".",

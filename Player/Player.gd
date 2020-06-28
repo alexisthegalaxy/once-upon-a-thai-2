@@ -82,7 +82,8 @@ func _input(_event) -> void:
 	if Input.is_action_just_pressed("interact"):
 		print('can_interact ', can_interact)
 		print('Game.current_focus ', Game.current_focus)
-	if can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]) and Input.is_action_just_pressed("interact"):
+	if Game.can_move and can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]) and Input.is_action_just_pressed("interact"):
+		get_tree().set_input_as_handled()
 		can_interact = false
 		Game.can_move = false
 		Game.current_focus[0].interact(self)

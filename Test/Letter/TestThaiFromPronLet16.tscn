@@ -81,7 +81,7 @@ position = Vector2( 256, 57 )
 position = Vector2( 35.3733, 57 )
 
 [node name="answer_15" parent="." instance=ExtResource( 2 )]
-position = Vector2( 64, 38 )
+position = Vector2( 32, 131.401 )
 
 [node name="answer_16" parent="." instance=ExtResource( 2 )]
-position = Vector2( 216, 38 )
+position = Vector2( 264, 90 )

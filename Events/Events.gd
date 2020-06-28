@@ -51,9 +51,11 @@ func npc_walks_to(parameters):
 	else:
 		print('nowhere to go!')
 
-func learns_first_sentence(_parameters):
+func learns_first_sentence(calling_npc):
 	Game.loses_focus(Game.current_focus)
 	Game.discovers_sentence(196, true)
+	calling_npc.dialog = ["Yaai: Well done [Name]! Now, go deeper in the forest."]
+	calling_npc.post_dialog_event = []
 
 func immediately_enters_lexical_world():
 	Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", 13, 71.66)
@@ -68,7 +70,7 @@ func enters_lexical_world(_parameters):
 	timer.autostart = true
 	timer.start()
 	add_child(timer)
-	
+
 #	var target_positions = [
 #		Vector2(266.69, 528.84),
 #		Vector2(273.62, 623.76),

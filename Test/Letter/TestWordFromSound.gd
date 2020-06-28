@@ -39,6 +39,18 @@ func set_choices():
 	choices.append(letter["test"]["prompt"])
 	choices.shuffle()
 
+func play_audio():
+	SoundPlayer.play_thai(letter["test"]["prompt"])
+
+func play_audio_after_one_second():
+	var timer = Timer.new()
+	timer.connect("timeout", self, "play_audio")
+	timer.set_wait_time(1)
+	timer.set_one_shot(true)
+	timer.autostart = true
+	timer.start()
+	add_child(timer)
+
 func init(_letter_id, _over_letter):
 	letter_id = _letter_id
 	Game.can_move = false
@@ -49,8 +61,9 @@ func init(_letter_id, _over_letter):
 	if not "test" in letter:
 		answered_correctly()
 		return
+	# TODO
+	play_audio_after_one_second()
 	
-	SoundPlayer.play_thai(letter["test"]["prompt"])
 	$TestSoundPlayer.init(letter["test"]["prompt"])
 	set_distractors()
 	set_choices()

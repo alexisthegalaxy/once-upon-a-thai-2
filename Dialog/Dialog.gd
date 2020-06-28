@@ -18,6 +18,9 @@ func process(dialog_line: String) -> String:
 	var processed_dialog = dialog_line.replace("[Name]", Game.player_name)
 	if processed_dialog[0] == "-":
 		processed_dialog = " " + processed_dialog
+	if "[sound]" in processed_dialog:
+		SoundPlayer.play_thai(caller.letter["audio"])
+		processed_dialog = processed_dialog.replace("[sound]", "")
 	if current_line_has_question:
 		processed_dialog = processed_dialog.split("@Q")[0]
 	return processed_dialog
@@ -59,6 +62,7 @@ func next_line():
 
 func _process(_delta):
 	if Input.is_action_just_pressed("interact"):
+		get_tree().set_input_as_handled()
 		if $Control/RichTextLabel.get_visible_characters() > $Control/RichTextLabel.get_total_character_count():
 			if current_line_has_question:
 				if current_answer_index == 1:
