@@ -12,10 +12,19 @@ var known_sentences = []  # we know the translation
 var seen_sentences = []  # we don't know the translation
 var known_letters = []
 
+var this_letter_world_has_letters = []  # a list of letter ids
 var letters_we_look_for = []  # a list of letters
 var looking_for_letter__node = null
+var player_position_on_overworld = null  # used when coming back from Letter World
+var player_last_overworld_map_visited = "res://Maps/Chaiyaphum.tscn"
+var current_map_name = "res://Maps/Chaiyaphum.tscn"
 
-var current_focus = null  # if player is around a npc/word/letter, this becomes it
+var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]
+#var initial_letters = [0]
+
+# when players comes near a npc/word/letter/sentence,
+# it get appended to current_focus, and gets removed when leaving
+var current_focus = []
 var space_bar_to_interact = null
 var current_scene = null
 var active_test = null
@@ -52,26 +61,51 @@ func gains_focus(target):
 	if not space_bar_to_interact:
 		space_bar_to_interact = load("res://UI/SpaceBarToInteract.tscn").instance()
 		get_tree().current_scene.add_child(space_bar_to_interact)
-	current_focus = target
+	current_focus.append(target)
+
+func reset_focus():
+	if current_focus:
+		if not space_bar_to_interact:
+			space_bar_to_interact = load("res://UI/SpaceBarToInteract.tscn").instance()
+			get_tree().current_scene.add_child(space_bar_to_interact)
 
 func loses_focus(target):
-	if target == current_focus:
+	if target in current_focus:
+		current_focus.erase(target)
+	if not current_focus:
 		if space_bar_to_interact:
 			space_bar_to_interact.queue_free()
 			space_bar_to_interact = null
-	else:
-		print('current_focus ', current_focus)
-	current_focus = null
+		else:
+			print('weird, we should have space_bar_to_interact')
+#	else:
+#		print('current_focus ', current_focus)
+#	current_focus = null
 
 func learn_letter(letter):
 	Game.known_letters.append(letter["id"])
 	if looking_for_letter__node:
 		looking_for_letter__node.update_label_text()
+	var knows_the_letters_from_the_beginning = true
+	for letter_id_from_the_beginning in initial_letters:
+		if not letter_id_from_the_beginning in known_letters:
+			knows_the_letters_from_the_beginning = false
+	if not Events.events["has_finished_the_letter_world_the_first_time"] and knows_the_letters_from_the_beginning:
+		Events.events["has_finished_the_letter_world_the_first_time"] = true
+		var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
+		var dialog = [
+			"Yaai: [Name]!",
+			"Yaai: [Name], do you hear me?",
+			"You have found all the letters you needed for now - you can come back amongst us now.",
+			"To leave this world, press the F key.",
+		]
+		ui_dialog.init(dialog, player, null, null, false)
+		player.stop_walking()
+		get_tree().current_scene.add_child(ui_dialog)
 
 func add_random_letter_to_letters_to_look_for():
 	var random_letter = Game.letters[str(rng.randi() % Game.letters.size())]
 	if not random_letter in letters_we_look_for:
-		print('random_letter ', random_letter)
 		letters_we_look_for.append(random_letter)
 		if looking_for_letter__node:
 			looking_for_letter__node.init(letters_we_look_for)
@@ -127,7 +161,8 @@ func _ready():
 
 func _process(_delta):
 	if Input.is_action_pressed("ui_cancel"):
-		get_tree().quit()
+		var exit_screen = load("res://UI/ExitAreYouSure.tscn").instance()
+		get_tree().current_scene.add_child(exit_screen)
 
 	if change_color:
 		var canvas_modulate = get_tree().current_scene.get_node("Lights").get_node("CanvasModulate")
@@ -139,12 +174,28 @@ func _on_teleport_signal(to_map_name, to_x, to_y) -> void:
 	call_deferred("_deferred_goto_scene", to_map_name, to_x, to_y)
 
 func update_letters_to_look_for_if_necesssary(to_map_name):
-	if "LexicalWorld" in to_map_name:
-		looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
-		looking_for_letter__node.init(letters_we_look_for)
-		get_tree().current_scene.add_child(looking_for_letter__node)
+	if Events.events["has_been_in_the_letter_world"]:
+		if "LexicalWorld" in to_map_name:
+			looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
+			var letters_we_look_for_here = []
+			if this_letter_world_has_letters:
+				for letter_id in this_letter_world_has_letters:
+					var letter = letters[str(letter_id)]
+					if letter in letters_we_look_for:
+						letters_we_look_for_here.append(letter)
+			else: 
+				letters_we_look_for_here = letters_we_look_for
+			looking_for_letter__node.init(letters_we_look_for_here)
+			get_tree().current_scene.add_child(looking_for_letter__node)
+
 
 func _deferred_goto_scene(to_map_name, to_x, to_y):
+	can_move = true
+	if not "LexicalWorld" in current_map_name:
+		if player:
+			player_position_on_overworld = player.position
+			player_last_overworld_map_visited = current_map_name
+	current_map_name = to_map_name
 	var player_velocity = Vector2.ZERO
 	if player:
 		player_velocity = player.velocity
@@ -154,6 +205,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 		current_scene.free()
 	assert(to_map_name != "")
 	current_scene = ResourceLoader.load(to_map_name).instance()
+	
 	player = current_scene.get_node("YSort").get_node("Player")
 	player.position = Vector2(to_x, to_y)
 	player.velocity = player_velocity

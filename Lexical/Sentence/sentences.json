@@ -1375,7 +1375,21 @@
     "old_id": 197,
     "id": 196,
     "th": "คน_ไทย_เป็น_คน_ดี",
-    "en": "Thai people are good people",
+    "en": "Thai people are good people.",
     "word_ids": [343, 345, 207, 343, 82]
+  },
+  "197": {
+    "old_id": 198,
+    "id": 197,
+    "th": "ฉัน_ชอบ_คน_ไทย",
+    "en": "I (female) like Thai people.",
+    "word_ids": [24, 238, 343, 345]
+  },
+  "198": {
+    "old_id": 199,
+    "id": 198,
+    "th": "คน_ดี_ชอบ_ฉัน",
+    "en": "Good people like me (female).",
+    "word_ids": [343, 82, 238, 24]
   }
 }

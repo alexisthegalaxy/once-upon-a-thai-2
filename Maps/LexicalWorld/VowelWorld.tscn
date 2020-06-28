@@ -10,7 +10,6 @@
 [ext_resource path="res://Lexical/Letter/Letter.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Maps/LexicalWorld/LexicalHubDoor.tscn" type="PackedScene" id=15]
 
-
 [node name="Map" type="Node2D"]
 
 [node name="blackness" type="Sprite" parent="."]
@@ -63,11 +62,11 @@ position = Vector2( 302.494, -804.051 )
 id = 32
 
 [node name="Letter เ-" parent="YSort" instance=ExtResource( 11 )]
-position = Vector2( 132.31, -137.32 )
+position = Vector2( 263.515, -159.433 )
 id = 6
 
 [node name="Letter แ-" parent="YSort" instance=ExtResource( 11 )]
-position = Vector2( 267.225, -163.104 )
+position = Vector2( 438.971, -213.227 )
 id = 25
 
 [node name="Letter ai maimalai" parent="YSort" instance=ExtResource( 11 )]

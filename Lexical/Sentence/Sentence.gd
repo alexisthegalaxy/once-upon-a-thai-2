@@ -2,7 +2,6 @@ extends StaticBody2D
 
 export var id = 0
 export var is_translated = false
-signal sentence_area_entered
 
 func interact(player):
 	player.stop_walking()

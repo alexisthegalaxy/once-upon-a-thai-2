@@ -53,8 +53,8 @@ func starts_disappearing():
 	is_disappearing = true
 
 func dialog_ended():
-#	Game.start_test("res://Test/Letter/TestPronFromThaiLet.tscn", id, self)
-	Game.start_test("res://Test/Letter/TestWordFromSound.tscn", id, self)
+	Game.start_test("res://Test/Letter/TestPronFromThaiLet.tscn", id, self)
+#	Game.start_test("res://Test/Letter/TestWordFromSound.tscn", id, self)
 #	wobbles = false
 
 func _on_Area2D_body_entered(body):

@@ -51,7 +51,7 @@ animations = [ {
 radius = 1.99017
 
 [sub_resource type="CircleShape2D" id=12]
-radius = 17.4013
+radius = 28.6209
 
 [node name="StaticBody2D" type="StaticBody2D"]
 script = ExtResource( 2 )
@@ -59,7 +59,7 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 10 )
 animation = "blink"
-frame = 1
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

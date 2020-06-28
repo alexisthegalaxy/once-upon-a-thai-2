@@ -10,14 +10,14 @@ var velocity = Vector2.ZERO
 var roll_vector = Vector2.DOWN
 export var state = "stand"  # can be "stand" or "walk"
 export var direction = "down"
-
+var speed_when_forced = 75
 var can_interact = true  # meaning the player is near a npc. false during a dialog.
 
 var dict = null
 var hub = null
 var alphabet = null
 var notebook = null
-
+var is_forced_towards = null
 func make_animation(animation_name, key_1, key_2, key_3, key_4):
 	var animation = Animation.new()
 	animation.add_track(Animation.TYPE_VALUE)
@@ -56,7 +56,12 @@ func _ready() -> void:
 	print('player is ', self)
 
 func _physics_process(delta) -> void:
-	move_state(delta)
+	if is_forced_towards:
+		position = position + velocity * delta * speed_when_forced
+		if position.distance_to(is_forced_towards) < 3:
+			is_forced_towards = null
+	else:
+		move_state(delta)
 	
 func _on_press_f():
 	if hub:
@@ -77,10 +82,10 @@ func _input(_event) -> void:
 	if Input.is_action_just_pressed("interact"):
 		print('can_interact ', can_interact)
 		print('Game.current_focus ', Game.current_focus)
-	if can_interact and Game.current_focus and Input.is_action_just_pressed("interact"):
+	if can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]) and Input.is_action_just_pressed("interact"):
 		can_interact = false
 		Game.can_move = false
-		Game.current_focus.interact(self)
+		Game.current_focus[0].interact(self)
 		if Game.space_bar_to_interact:
 			Game.space_bar_to_interact.queue_free()
 			Game.space_bar_to_interact = null
@@ -107,6 +112,10 @@ func move_state(delta) -> void:
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	
+	move(input_vector, delta)
+
+func move(input_vector, delta) -> void:
 	if Input.get_action_strength("ui_down") > 0:
 		direction = "down"
 	if Input.get_action_strength("ui_up") > 0:
@@ -124,9 +133,6 @@ func move_state(delta) -> void:
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	if velocity.length() < 1:
 		update_state("stand")
-	move()
-
-func move() -> void:
 	velocity = move_and_slide(velocity)
 
 func end_dialog() -> void:
@@ -136,3 +142,10 @@ func end_dialog() -> void:
 func set_hp(hp) -> void:
 	Game.hp = hp
 	$HUD/HpBar.set_life(hp, Game.max_hp)
+
+func forced_toward(target_position):
+	is_forced_towards = target_position
+	velocity = (target_position - position).normalized()
+	Game.can_move = false
+	
+	

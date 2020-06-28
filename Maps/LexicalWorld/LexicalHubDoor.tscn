@@ -11,6 +11,8 @@ extents = Vector2( 11.4879, 4.04037 )
 radius = 26.1295
 
 [sub_resource type="DynamicFont" id=3]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 3 )
 
 [node name="Door" type="StaticBody2D"]

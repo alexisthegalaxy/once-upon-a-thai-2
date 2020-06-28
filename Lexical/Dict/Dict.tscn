@@ -7,6 +7,16 @@
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource( 2 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -9.58859
+margin_top = -6.8918
+margin_right = 344.411
+margin_bottom = 209.108
+color = Color( 0, 0, 0, 0.501961 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Control" type="Control" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5

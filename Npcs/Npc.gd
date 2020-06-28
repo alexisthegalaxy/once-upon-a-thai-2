@@ -40,6 +40,9 @@ func make_animations():
 func update_animation():
 	$AnimationPlayer.play(state  + "_" + direction)
 
+func dialog_option(_value):
+	pass
+
 func _ready():
 	$Sprite.texture = load(sprite_path)
 	$Sprite.vframes = 1
@@ -73,12 +76,11 @@ func starts_going_toward(target_position):
 	npc_turn_towards(target_position)
 	update_animation()
 
-func _on_InteractBox_area_entered(body) -> void:
-	print(body.get_parent().get_name())
-	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
-	ui_dialog.dialog = dialog
-	var current_map = get_tree().current_scene
-	current_map.add_child(ui_dialog)
+#func _on_InteractBox_area_entered(body) -> void:
+#		var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
+#		ui_dialog.dialog = dialog
+#		var current_map = get_tree().current_scene
+#		current_map.add_child(ui_dialog)
 
 func npc_turn_towards(target):
 	# Turns toward the Vector2 target (can be a place to go, the player...)
@@ -95,13 +97,16 @@ func npc_turn_towards(target):
 	update_animation()
 
 func interact(player):
-	npc_turn_towards(player.position)
-	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
-	ui_dialog.init(dialog, player, self, post_dialog_event, false)
-	player.stop_walking()
-	get_tree().current_scene.add_child(ui_dialog)
-	if pre_dialog_event:
-		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
+	if not is_walking_towards:
+		npc_turn_towards(player.position)
+		var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
+		ui_dialog.init(dialog, player, self, post_dialog_event, false)
+		player.stop_walking()
+		get_tree().current_scene.add_child(ui_dialog)
+		if pre_dialog_event:
+			Events.execute(pre_dialog_event[0], pre_dialog_event[1])
+	else:
+		Game.can_move = true
 
 func _on_InteractBox_body_entered(body):
 	if body == Game.player:

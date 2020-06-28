@@ -1,9 +1,10 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Light/light.png" type="Texture" id=2]
 [ext_resource path="res://Npcs/Npc.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/RoomBackground.png" type="Texture" id=4]
+[ext_resource path="res://Maps/PlayerHouse.gd" type="Script" id=5]
 [ext_resource path="res://World/tilesets/CliffTileset.png" type="Texture" id=7]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
@@ -496,6 +497,7 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 0/z_index = 0
 
 [node name="Map1" type="Node2D"]
+script = ExtResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 1.65646, 1.73626 )
@@ -526,12 +528,13 @@ __meta__ = {
 position = Vector2( 336, 624 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 73.3658, 42.1191 )
+position = Vector2( 42.1198, -84.9306 )
 
-[node name="Npc" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( 73.3658, -114.655 )
-dialog = [ "Oh [Name], you woke up?", "Today is your big day, did you manage to sleep at all?", "Grandma is already waiting for you outside.", "Be brave, okay?" ]
+[node name="Nim" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 96.3966, -100.452 )
+dialog = [ "Nim: Oh [Name], you woke up?", "Nim: Today is your big day, did you manage to sleep at all?", "Nim: Granny is already waiting for you outside.", "Nim: Be brave, okay?" ]
 sprite_path = "res://Npcs/sprites/dude.png"
+post_dialog_event = [ "nim_walks_to", [ [ Vector2( 83.66, -132.53 ), Vector2( 93.32, -132.53 ) ] ] ]
 
 [node name="Lights" type="Node" parent="."]
 
@@ -543,11 +546,14 @@ energy = 1.16
 shadow_enabled = true
 
 [node name="Light2D2" type="Light2D" parent="Lights"]
-position = Vector2( 58.0503, -75.2177 )
+position = Vector2( 57.9678, -66.1796 )
 texture = ExtResource( 2 )
 texture_scale = 0.09
 energy = 1.16
 shadow_enabled = true
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CanvasModulate" type="CanvasModulate" parent="Lights"]
 position = Vector2( -95.2873, -89.348 )

@@ -12,6 +12,14 @@ func _ready():
 
 func init(_player):
 	player = _player
+	if Events.events["has_finished_the_letter_world_the_first_time"]:
+		$LetterWorld.show()
+		if "LexicalWorld" in Game.current_map_name:
+			$LetterWorld.text = "Go back to the real world"
+		else:
+			$LetterWorld.text = "Go to the letter world"
+	else:
+		$LetterWorld.hide()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
@@ -34,3 +42,15 @@ func _on_Letters_pressed():
 	close_hub()
 	alphabet.init(player)
 	get_tree().current_scene.add_child(alphabet)
+
+
+func _on_LetterWorld_pressed():
+	if "LexicalWorld" in Game.current_map_name:
+		Game.call_deferred(
+			"_deferred_goto_scene",
+			Game.player_last_overworld_map_visited,
+			Game.player_position_on_overworld.x,
+			Game.player_position_on_overworld.y
+		)
+	else:
+		Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", 13, 71.66)

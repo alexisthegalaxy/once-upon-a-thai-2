@@ -156,7 +156,7 @@
     "id": 9,
     "th": "-ี",
     "pron": "",
-    "en": "i (long)",
+    "en": "ee (long i)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
@@ -235,7 +235,7 @@
     "introduction": [
       "ย: Yo [Name]!",
       "ย: I'm the consonant ย and I'm pronounced y,",
-      "ย: I kinda look like the y used in English, don't you think?"
+      "ย: I kinda look like the top part of the y used in English, don't you think?"
     ]
   },
   "14": {
@@ -324,7 +324,7 @@
     "introduction": [
       "ป: [Name]!",
       "ป: I'm ป, the bp sound.",
-      "ป: Don't get me confused with the บ (b): I'm longer.",
+      "ป: Don't get me confused with the บ (b): I've got a longer tail.",
       "ป: I'm pronounced bp at the beginning of a syllable, p at the end.",
       "ป: That's because you don't release the air at the end of syllables."
     ],
@@ -360,8 +360,7 @@
       "ค: Hey, I'm ค.",
       "ค: I'm pronounced k'h, just like a k, but aspirated.",
       "ค: Don't get me confused with the ด, the d:",
-      "ค: I look like a cow (>K'H<ow) looking at you,",
-      "ค: while ด spirals in like a >D<igital finger print.",
+      "ค: I look like a peacock (pea>K'H<ock) looking at you, while ด spirals in like a >D<igital finger print.",
       "ค: Also! I'm not the only letter in Thai that's pronounced k'h.",
       "ค: The other ones are "
     ],

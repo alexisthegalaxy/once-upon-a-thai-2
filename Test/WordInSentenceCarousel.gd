@@ -3,10 +3,10 @@ extends Node2D
 var width = 0
 var height = 0
 var is_main_word
-
+var word = null
 
 func init(word_id, _is_main_word):
-	var word = Game.words[str(word_id)]
+	word = Game.words[str(word_id)]
 	var text = word["th"]
 	is_main_word = _is_main_word
 	$Label.text = text
@@ -24,6 +24,8 @@ func init(word_id, _is_main_word):
 	$ColorRect.set_size(Vector2(width, height))
 	if is_main_word:
 		$ColorRect.color = Color(1, 0.7, 0.7, 1)
+	elif word["id"] in Game.known_words:
+		$ColorRect.color = Color(0.7, 1, 0.7, 1)
 	else:
 		$ColorRect.hide()
 	
@@ -44,5 +46,7 @@ func _on_Area2D_mouse_exited():
 	$Popup/Label.hide()
 	if is_main_word:
 		$ColorRect.color = Color(1, 0.7, 0.7, 1)
+	elif word["id"] in Game.known_words:
+		$ColorRect.color = Color(0.7, 1, 0.7, 1)
 	else:
 		$ColorRect.hide()
