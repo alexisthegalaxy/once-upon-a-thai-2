@@ -9,6 +9,7 @@ var post_dialog_signal
 var current_line_has_question = false
 var current_answer_index = 1
 var answers_are_revealed = false
+var test = "test test"
 
 func _ready():
 	reset_line()
