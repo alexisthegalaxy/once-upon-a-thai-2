@@ -51,7 +51,7 @@ func dialog_press_e_to_see_it(learnt_item):
 	if learnt_item == "word":
 		lines = ["Press F to open your dictionary and see your words"]
 	print('lines ', lines)
-	ui_dialog.init(lines, player, null, null, null)
+	ui_dialog.init(lines, null, null, null)
 	get_tree().current_scene.add_child(ui_dialog)
 
 func discovers_sentence(sentence_id, is_translated):
@@ -103,7 +103,7 @@ func learn_letter(letter):
 			"You have found all the letters you needed for now - you can come back amongst us now.",
 			"To leave this world, press the F key.",
 		]
-		ui_dialog.init(dialog, player, null, null, false)
+		ui_dialog.init(dialog, null, null, false)
 		player.stop_walking()
 		get_tree().current_scene.add_child(ui_dialog)
 

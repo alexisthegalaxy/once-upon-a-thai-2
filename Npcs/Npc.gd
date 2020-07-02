@@ -54,7 +54,7 @@ func _ready():
 func _process(delta):
 	if is_walking_towards:
 		position = position + velocity * delta * speed
-		if position.distance_to(is_walking_towards) < 3:
+		if position.distance_to(is_walking_towards) < 1:
 			is_walking_towards = null
 			if will_go_to:
 				is_walking_towards = will_go_to.pop_front()
@@ -100,7 +100,7 @@ func interact(player):
 	if not is_walking_towards:
 		npc_turn_towards(player.position)
 		var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
-		ui_dialog.init(dialog, player, self, post_dialog_event, false)
+		ui_dialog.init(dialog, self, post_dialog_event, false)
 		player.stop_walking()
 		get_tree().current_scene.add_child(ui_dialog)
 		if pre_dialog_event:

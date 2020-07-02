@@ -2799,7 +2799,7 @@ position = Vector2( 883.408, 656.371 )
 position = Vector2( 893.635, 574.298 )
 
 [node name="Tree187" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 838.827, 479.207 )
+position = Vector2( 836.053, 481.12 )
 
 [node name="Tree744" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 939.593, 454.173 )
@@ -4104,7 +4104,7 @@ id = 25
 position = Vector2( 699.744, 467.54 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 571.551, 36.3795 )
+position = Vector2( 715.689, 529.567 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -4129,7 +4129,7 @@ post_dialog_event = [ "yaai_walks_to", [ [ Vector2( 602.4, 509 ), Vector2( 554.8
 [node name="Npc3" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 807.828, 77.367 )
 dialog = [ "You've finished the game so far!", "Congratulations!" ]
-sprite_path = "res://Npcs/sprites/dude.png"
+sprite_path = "res://Npcs/sprites/beach_boy.png"
 direction = "left"
 
 [node name="Npc 2" parent="YSort/NPCs" instance=ExtResource( 11 )]
@@ -4229,7 +4229,7 @@ to_map_name = "res://Maps/PlayerHouse.tscn"
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="Blocker" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 542.163, 219.062 )
+position = Vector2( 542.163, 219.452 )
 shape = SubResource( 53 )
 
 [node name="Area2D5" type="Area2D" parent="."]

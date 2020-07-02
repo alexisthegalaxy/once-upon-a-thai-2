@@ -2,7 +2,6 @@ extends CanvasLayer
 
 export var dialog = []
 var page = 0
-var player
 var caller
 var post_dialog_event
 var post_dialog_signal
@@ -37,16 +36,15 @@ func reset_line():
 	$Control/RichTextLabel.set_bbcode(processed_dialog)
 	$Control/RichTextLabel.set_visible_characters(0)
 
-func init(_dialog, _player, _caller, _post_dialog_event, _post_dialog_signal):
+func init(_dialog, _caller, _post_dialog_event, _post_dialog_signal):
 	dialog = _dialog
-	player = _player
 	caller = _caller
 	post_dialog_event = _post_dialog_event
 	post_dialog_signal = _post_dialog_signal
 
 func dialog_ends():
 	queue_free()
-	player.end_dialog()
+	Game.player.end_dialog()
 	if post_dialog_event:
 		Events.execute(post_dialog_event[0], post_dialog_event[1])
 	if post_dialog_signal:

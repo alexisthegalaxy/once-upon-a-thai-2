@@ -43,7 +43,7 @@ func interact(player):
 	print('interact!')
 	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
 	
-	ui_dialog.init(get_introduction(), player, self, post_dialog_event, true)
+	ui_dialog.init(get_introduction(), self, post_dialog_event, true)
 	player.stop_walking()
 	get_tree().current_scene.add_child(ui_dialog)
 	if pre_dialog_event:

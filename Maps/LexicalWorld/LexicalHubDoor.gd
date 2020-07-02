@@ -52,6 +52,6 @@ func interact(player):
 	var dialog = [
 		leads_to + " \nDo you want to take it? @QYes/No"
 	]
-	ui_dialog.init(dialog, player, self, null, false)
+	ui_dialog.init(dialog, self, null, false)
 	player.stop_walking()
 	get_tree().current_scene.add_child(ui_dialog)
