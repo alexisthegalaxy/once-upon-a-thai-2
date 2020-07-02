@@ -10,6 +10,7 @@ func init(sentence_id, is_translated):
 		$Label.text = "You've learned a sentence!"
 		$LabelSmall.text = ""
 	else:
+		Game.seen_sentences.append(sentence_id)
 		$Label.text = "You've discovered a sentence!"
 		$LabelSmall.text = "It might help you later to guess the meaning of its words"
 	$Sentence.init(Game.sentences[str(sentence_id)], null)

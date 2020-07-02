@@ -54,9 +54,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="NumbersLabel" type="Node2D" parent="."]
+[node name="NumbersLabel" type="Node2D" parent="Control"]
+position = Vector2( -20, -10 )
 
-[node name="Label" type="Label" parent="NumbersLabel"]
+[node name="Label" type="Label" parent="Control/NumbersLabel"]
 margin_right = 43.0
 margin_bottom = 47.0
 custom_fonts/font = SubResource( 1 )
@@ -67,9 +68,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AccentsLabel" type="Node2D" parent="."]
+[node name="AccentsLabel" type="Node2D" parent="Control"]
+position = Vector2( -20, -10 )
 
-[node name="Label" type="Label" parent="AccentsLabel"]
+[node name="Label" type="Label" parent="Control/AccentsLabel"]
 margin_right = 40.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 1 )
@@ -79,9 +81,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HCLabel" type="Node2D" parent="."]
+[node name="HCLabel" type="Node2D" parent="Control"]
+position = Vector2( -20, -10 )
 
-[node name="Label" type="Label" parent="HCLabel"]
+[node name="Label" type="Label" parent="Control/HCLabel"]
 margin_right = 109.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 1 )
@@ -91,9 +94,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="VowelsLabel" type="Node2D" parent="."]
+[node name="VowelsLabel" type="Node2D" parent="Control"]
+position = Vector2( -20, -10 )
 
-[node name="Label" type="Label" parent="VowelsLabel"]
+[node name="Label" type="Label" parent="Control/VowelsLabel"]
 margin_right = 40.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 1 )
@@ -103,9 +107,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MCLabel" type="Node2D" parent="."]
+[node name="MCLabel" type="Node2D" parent="Control"]
+position = Vector2( -20, -10 )
 
-[node name="Label" type="Label" parent="MCLabel"]
+[node name="Label" type="Label" parent="Control/MCLabel"]
 margin_right = 106.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 1 )
@@ -115,9 +120,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="LCLabel" type="Node2D" parent="."]
+[node name="LCLabel" type="Node2D" parent="Control"]
+position = Vector2( -20, -10 )
 
-[node name="Label" type="Label" parent="LCLabel"]
+[node name="Label" type="Label" parent="Control/LCLabel"]
 margin_right = 109.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 1 )
@@ -127,6 +133,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" parent="." instance=ExtResource( 4 )]
+[node name="PressFToExit" parent="." instance=ExtResource( 4 )]
 margin_top = -3.69312
 margin_bottom = 18.3069

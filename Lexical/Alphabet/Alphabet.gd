@@ -57,13 +57,13 @@ func get_letters(letter_class):
 	
 func init():
 	init_words()
-	var label_y = 10
-	$VowelsLabel.position = Vector2(s_x(0), label_y)
-	$LCLabel.position = Vector2(s_x(NUMBER_OF_LETTERS_PER_LINE + 2), label_y)
-	$MCLabel.position = Vector2(s_x(2 * (NUMBER_OF_LETTERS_PER_LINE + 2)), label_y)
-	$HCLabel.position = Vector2(s_x(3 * (NUMBER_OF_LETTERS_PER_LINE + 2)), label_y)
-	$AccentsLabel.position = Vector2(s_x(4 * (NUMBER_OF_LETTERS_PER_LINE + 2)), label_y)
-	$NumbersLabel.position = Vector2(s_x(5 * (NUMBER_OF_LETTERS_PER_LINE + 2)), label_y)
+	var label_y = 0
+	$Control/VowelsLabel.position = Vector2(s_x(0), label_y)
+	$Control/LCLabel.position = Vector2(s_x(NUMBER_OF_LETTERS_PER_LINE + 2), label_y)
+	$Control/MCLabel.position = Vector2(s_x(2 * (NUMBER_OF_LETTERS_PER_LINE + 2)), label_y)
+	$Control/HCLabel.position = Vector2(s_x(3 * (NUMBER_OF_LETTERS_PER_LINE + 2)), label_y)
+	$Control/AccentsLabel.position = Vector2(s_x(4 * (NUMBER_OF_LETTERS_PER_LINE + 2)), label_y)
+	$Control/NumbersLabel.position = Vector2(s_x(5 * (NUMBER_OF_LETTERS_PER_LINE + 2)), label_y)
 	
 
 func init_words():
@@ -111,5 +111,5 @@ func _input(event) -> void:
 		x_bottom += x_delta
 		for letter in displayed_letters:
 			letter.position.x += x_delta
-		for label in [$VowelsLabel, $LCLabel, $MCLabel, $HCLabel, $AccentsLabel, $NumbersLabel]:
+		for label in [$Control/VowelsLabel, $Control/LCLabel, $Control/MCLabel, $Control/HCLabel, $Control/AccentsLabel, $Control/NumbersLabel]:
 			label.position.x += x_delta

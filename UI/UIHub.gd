@@ -60,5 +60,5 @@ func _on_Sentences_pressed():
 	var notebook = load("res://Lexical/Notebook/Notebook.tscn").instance()
 	player.notebook = notebook
 	close_hub()
-	notebook.init()
 	get_tree().current_scene.add_child(notebook)
+	notebook.init(0)

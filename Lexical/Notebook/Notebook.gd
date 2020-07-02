@@ -1,60 +1,71 @@
 extends CanvasLayer
 
-const NUMBER_OF_WORDS_PER_LINE = 7
+const NUMBER_OF_SENTENCES_PER_PAGE = 4
 const NUMBER_OF_DISPLAYED_LINES = 6
-var displayed_words = []
+var all_sentences = []
+var interactive_sentences = []
 var y_bottom = 0
+var current_page_index = 0  # a page has 8 sentences, 4 per side
+var active_page = "left"
+const CENTER_LEFT_PAGE_X = 90 - 15 - 5
+const CENTER_RIGHT_PAGE_X = 230 - 15 - 5
+const X_TOP_OF_PAGE = 14
+
 func s_x(x):
 	return x * 32 + 28
 
 func s_y(y):
 	return y * 32 + 16
 
-func sort_on_teaching_order(a, b):
-	return a["teaching_order"] < b["teaching_order"]
-
-func get_words_with_order():
-	var words_with_order = []
-	for word_id in Game.words:
-		var word = Game.words[word_id]
-		if int(word["teaching_order"]) > -1:
-			words_with_order.append(word)
-	return words_with_order
-	
-
-func init_words():
-	var DictWord = load("res://Lexical/Dict/DictWord.tscn")
-	var x = 0
-	var y = 0
-	var words_with_order = get_words_with_order()
-	words_with_order.sort_custom(self, "sort_on_teaching_order")
-	
-	for word in words_with_order:
-		var dict_word = DictWord.instance()
-		$Control.add_child(dict_word)
-		displayed_words.append(dict_word)
-		dict_word.set_thai(word["th"])
-		dict_word.set_known(Game.knows_word(word))
-		dict_word.position = Vector2(s_x(x), s_y(y))
-		
-		x += 1
-		if x > NUMBER_OF_WORDS_PER_LINE:
-			y += 1
-			x = 0
-
-func _input(event) -> void:
-	if event is InputEventPanGesture:
-		var y_delta = -event.delta.y
-		if y_bottom >= 0 and y_delta > 0:
+func get_sentences_for_page(page_index):
+	all_sentences = []
+	var i = 0
+	for sentence_id in Game.known_sentences + Game.seen_sentences:
+		if i >= page_index * NUMBER_OF_SENTENCES_PER_PAGE * 2:
+			all_sentences.append(Game.sentences[str(sentence_id)])
+		if len(all_sentences) >= NUMBER_OF_SENTENCES_PER_PAGE * 2:
 			return
-		y_bottom += y_delta
-		for word in displayed_words:
-			word.position.y += y_delta
-#	if Input.is_action_just_pressed("ui_page_down"):
-#		print('ui_page_down')
-#	if Input.is_action_just_pressed("ui_page_up"):
-#		print('ui_page_up')
+		i += 1
 
-func init():
-	init_words()
+func init(page_index):
+	get_sentences_for_page(page_index)
+	var InteractiveSentence = load("res://Lexical/Sentence/InteractiveSentence.tscn")
+	for interactive_sentence in interactive_sentences:
+		interactive_sentence.queue_free()
+	interactive_sentences = []
+	active_page = "left"
+	var x = X_TOP_OF_PAGE
+	var y = CENTER_LEFT_PAGE_X
+	var index_in_page = 0
+	for sentence in all_sentences:
+		var interactive_sentence = InteractiveSentence.instance()
+		interactive_sentence.init(sentence, null)
+		interactive_sentences.append(interactive_sentence)
+		$Control.add_child(interactive_sentence)
+		interactive_sentence.position = Vector2(y, x)
+		interactive_sentence.scale = Vector2(0.5, 0.5)
+		x += 30
+		index_in_page += 1
+		if index_in_page >= NUMBER_OF_SENTENCES_PER_PAGE:
+			if active_page == "left":
+				x = X_TOP_OF_PAGE
+				y = CENTER_RIGHT_PAGE_X
+				index_in_page = 0
+				active_page = "right"
+			else:
+				break
+
+func next_page():
+	current_page_index += 1
+	init(current_page_index)
 	
+func previous_page():
+	if current_page_index > 0:
+		current_page_index -= 1
+		init(current_page_index)
+
+func _on_NextPage_pressed():
+	next_page()
+
+func _on_PreviousPage_pressed():
+	previous_page()
