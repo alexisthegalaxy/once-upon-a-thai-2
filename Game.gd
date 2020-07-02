@@ -164,7 +164,7 @@ func _ready():
 	letters = retrieve_from_json_file("res://Lexical/Letter/letters.json")
 
 func _input(_event):
-	if Input.is_action_pressed("ui_cancel"):
+	if _event.is_action_pressed("ui_cancel"):
 		if not exit_screen:
 			exit_screen = load("res://UI/ExitAreYouSure.tscn").instance()
 			get_tree().current_scene.add_child(exit_screen)
