@@ -55,7 +55,7 @@ func get_letters(letter_class):
 			letters.append(letter)
 	return letters
 	
-func init(_player):
+func init():
 	init_words()
 	var label_y = 10
 	$VowelsLabel.position = Vector2(s_x(0), label_y)

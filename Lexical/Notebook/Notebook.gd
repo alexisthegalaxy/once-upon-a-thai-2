@@ -21,20 +21,8 @@ func get_words_with_order():
 			words_with_order.append(word)
 	return words_with_order
 	
-func _input(event) -> void:
-	if event is InputEventPanGesture:
-		var y_delta = -event.delta.y
-		if y_bottom >= 0 and y_delta > 0:
-			return
-		y_bottom += y_delta
-		for word in displayed_words:
-			word.position.y += y_delta
-#	if Input.is_action_just_pressed("ui_page_down"):
-#		print('ui_page_down')
-#	if Input.is_action_just_pressed("ui_page_up"):
-#		print('ui_page_up')
 
-func init():
+func init_words():
 	var DictWord = load("res://Lexical/Dict/DictWord.tscn")
 	var x = 0
 	var y = 0
@@ -53,4 +41,20 @@ func init():
 		if x > NUMBER_OF_WORDS_PER_LINE:
 			y += 1
 			x = 0
+
+func _input(event) -> void:
+	if event is InputEventPanGesture:
+		var y_delta = -event.delta.y
+		if y_bottom >= 0 and y_delta > 0:
+			return
+		y_bottom += y_delta
+		for word in displayed_words:
+			word.position.y += y_delta
+#	if Input.is_action_just_pressed("ui_page_down"):
+#		print('ui_page_down')
+#	if Input.is_action_just_pressed("ui_page_up"):
+#		print('ui_page_up')
+
+func init():
+	init_words()
 	

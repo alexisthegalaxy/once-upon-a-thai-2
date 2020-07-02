@@ -1,12 +1,6 @@
 extends Node
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	if Events.events["talked_to_nim_at_the_beginning"]:
 		$YSort/Nim.position = Vector2(72, -114)

@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Lexical/Dict/dict-background.png" type="Texture" id=1]
+[ext_resource path="res://Lexical/Notebook/Notebook.gd" type="Script" id=2]
+[ext_resource path="res://UI/pressFtoExit.tscn" type="PackedScene" id=3]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -9.58859
+margin_top = -6.8918
+margin_right = 344.411
+margin_bottom = 209.108
+color = Color( 0, 0, 0, 0.501961 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -140.0
+margin_top = -72.0
+margin_right = 140.0
+margin_bottom = 89.0
+rect_clip_content = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -139.5
+margin_top = -80.0
+margin_right = 139.5
+margin_bottom = 80.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 1
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" parent="." instance=ExtResource( 3 )]
+margin_top = -2.0975
+margin_bottom = 19.9025

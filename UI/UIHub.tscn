@@ -73,4 +73,5 @@ __meta__ = {
 }
 [connection signal="pressed" from="Letters" to="." method="_on_Letters_pressed"]
 [connection signal="pressed" from="Words" to="." method="_on_Words_pressed"]
+[connection signal="pressed" from="Sentences" to="." method="_on_Sentences_pressed"]
 [connection signal="pressed" from="LetterWorld" to="." method="_on_LetterWorld_pressed"]

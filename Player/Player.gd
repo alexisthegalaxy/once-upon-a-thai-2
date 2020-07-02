@@ -73,6 +73,9 @@ func _on_press_f():
 	elif alphabet:
 		alphabet.queue_free()
 		alphabet = null
+	elif notebook:
+		notebook.queue_free()
+		notebook = null
 	else:
 		hub = load("res://UI/UIHub.tscn").instance()
 		hub.init(self)

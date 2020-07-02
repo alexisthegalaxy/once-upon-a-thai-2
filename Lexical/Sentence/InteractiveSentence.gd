@@ -3,10 +3,6 @@ extends Node2D
 var words = []
 var children = []
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
 func init(sentence, main_word_id):
 	var current_x = 0
 	for child in children:

@@ -32,7 +32,7 @@ func _on_Words_pressed():
 	var dict = load("res://Lexical/Dict/Dict.tscn").instance()
 	player.dict = dict
 	close_hub()
-	dict.init(player)
+	dict.init()
 	get_tree().current_scene.add_child(dict)
 
 
@@ -40,7 +40,7 @@ func _on_Letters_pressed():
 	var alphabet = load("res://Lexical/Alphabet/Alphabet.tscn").instance()
 	player.alphabet = alphabet
 	close_hub()
-	alphabet.init(player)
+	alphabet.init()
 	get_tree().current_scene.add_child(alphabet)
 
 
@@ -54,3 +54,11 @@ func _on_LetterWorld_pressed():
 		)
 	else:
 		Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", 13, 71.66)
+
+
+func _on_Sentences_pressed():
+	var notebook = load("res://Lexical/Notebook/Notebook.tscn").instance()
+	player.notebook = notebook
+	close_hub()
+	notebook.init()
+	get_tree().current_scene.add_child(notebook)
