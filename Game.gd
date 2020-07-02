@@ -182,8 +182,7 @@ func _process(delta):
 		canvas_modulate.color.g += delta * direction.y
 		canvas_modulate.color.b += delta * direction.z
 
-func _on_teleport_signal(to_map_name, to_x, to_y) -> void:
-	call_deferred("_deferred_goto_scene", to_map_name, to_x, to_y)
+	
 
 func update_letters_to_look_for_if_necesssary(to_map_name):
 	if Events.events["has_been_in_the_letter_world"]:
