@@ -53,7 +53,6 @@ func _ready() -> void:
 	make_animations()
 	update_animation()
 	Game.player = self
-	print('player is ', self)
 
 func _physics_process(delta) -> void:
 	if is_forced_towards:
@@ -82,14 +81,14 @@ func _on_press_f():
 		get_tree().current_scene.add_child(hub)
 
 func _input(_event) -> void:
-	if Input.is_action_just_pressed("interact"):
-		print('can_interact ', can_interact)
-		print('Game.current_focus ', Game.current_focus)
+#	if Input.is_action_just_pressed("interact"):
+#		print('can_interact ', can_interact)
+#		print('Game.current_focus ', Game.current_focus)
 	if Game.can_move and can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]) and Input.is_action_just_pressed("interact"):
 		get_tree().set_input_as_handled()
-		can_interact = false
+		Game.player.can_interact = false
 		Game.can_move = false
-		Game.current_focus[0].interact(self)
+		Game.current_focus[0].interact()
 		if Game.space_bar_to_interact:
 			Game.space_bar_to_interact.queue_free()
 			Game.space_bar_to_interact = null

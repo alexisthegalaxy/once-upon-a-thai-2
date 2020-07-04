@@ -517,7 +517,7 @@ extents = Vector2( 22.738, 15.7798 )
 extents = Vector2( 36.9489, 41.9385 )
 
 [sub_resource type="RectangleShape2D" id=55]
-extents = Vector2( 11.6567, 29.5685 )
+extents = Vector2( 11.6567, 38.2656 )
 
 [node name="Map" type="Node2D"]
 script = ExtResource( 22 )
@@ -552,6 +552,7 @@ sprite = ExtResource( 20 )
 leads_to = "This door leads to the Lexical Nexus."
 
 [node name="MajesticTree" parent="YSort" instance=ExtResource( 24 )]
+modulate = Color( 0.564706, 0.698039, 0.596078, 1 )
 position = Vector2( 206.986, 492.268 )
 
 [node name="Grass" type="YSort" parent="YSort"]
@@ -4104,7 +4105,7 @@ id = 25
 position = Vector2( 699.744, 467.54 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 715.689, 529.567 )
+position = Vector2( 176.969, 504.703 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -4186,7 +4187,7 @@ scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 3 )
 
 [node name="ForestShadow" type="Light2D" parent="Lights"]
-position = Vector2( 212.38, 338.901 )
+position = Vector2( 213.301, 338.901 )
 scale = Vector2( 0.424523, 0.449627 )
 texture = ExtResource( 15 )
 texture_scale = 1.71
@@ -4253,7 +4254,7 @@ shape = SubResource( 54 )
 [node name="Area2D4" type="Area2D" parent="."]
 
 [node name="Ceremony starts" type="CollisionShape2D" parent="Area2D4"]
-position = Vector2( 206.283, 536.532 )
+position = Vector2( 206.673, 526.773 )
 shape = SubResource( 55 )
 
 [node name="Sentence - I like Thai people" parent="." instance=ExtResource( 5 )]

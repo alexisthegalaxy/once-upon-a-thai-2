@@ -215,6 +215,8 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 		print(current_scene)
 		current_scene.free()
 	assert(to_map_name != "")
+	print("to_map_name")
+	print(to_map_name)
 	current_scene = ResourceLoader.load(to_map_name).instance()
 	
 	player = current_scene.get_node("YSort").get_node("Player")

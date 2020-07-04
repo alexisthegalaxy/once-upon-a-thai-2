@@ -6,9 +6,9 @@ var events = {
 	"has_finished_the_letter_world_the_first_time": false,
 	"has_been_in_the_letter_world": false,
 	"ceremony_started": false,
-	"yaai_went_to_forest_entrance": false,
-	"talked_to_yaai_for_the_first_time": false,
-	"talked_to_nim_at_the_beginning": false,
+	"yaai_went_to_forest_entrance": true,
+	"talked_to_yaai_for_the_first_time": true,
+	"talked_to_nim_at_the_beginning": true,
 }
 
 func lose_focus(_parameters):
@@ -68,8 +68,8 @@ func enters_lexical_world(_parameters):
 	timer.set_wait_time(1)
 	timer.set_one_shot(true)
 	timer.autostart = true
-	timer.start()
 	add_child(timer)
+	timer.start()
 
 #	var target_positions = [
 #		Vector2(266.69, 528.84),

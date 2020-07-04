@@ -11,6 +11,7 @@ var door_text = ""
 
 func init_letters():
 	if leads_to_letters:
+		door_text = ""
 		for letter_we_look_for in Game.letters_we_look_for:
 			if letter_we_look_for["id"] in leads_to_letters:
 				door_text += letter_we_look_for["th"] + "  "
@@ -47,11 +48,11 @@ func dialog_option(value):
 		Game.call_deferred("_deferred_goto_scene", to_map_name, to_x, to_y)
 		SoundPlayer.play_sound("res://Sounds/door.wav")
 
-func interact(player):
+func interact():
 	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var dialog = [
 		leads_to + " \nDo you want to take it? @QYes/No"
 	]
 	ui_dialog.init(dialog, self, null, false)
-	player.stop_walking()
+	Game.player.stop_walking()
 	get_tree().current_scene.add_child(ui_dialog)

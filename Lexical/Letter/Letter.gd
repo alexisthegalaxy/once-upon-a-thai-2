@@ -39,12 +39,11 @@ func get_introduction():
 	else:
 		return [letter["th"] + ": Hey [Name], I'm the " + letter["en"] + " sound."]
 
-func interact(player):
-	print('interact!')
+func interact():
 	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
 	
 	ui_dialog.init(get_introduction(), self, post_dialog_event, true)
-	player.stop_walking()
+	Game.player.stop_walking()
 	get_tree().current_scene.add_child(ui_dialog)
 	if pre_dialog_event:
 		Events.execute(pre_dialog_event[0], pre_dialog_event[1])

@@ -4,7 +4,7 @@ export(Array) var dialog = []
 export var sprite_path = "res://Npcs/sprites/yaai.png"
 export var direction = "down"
 export var state = "stand"  # can be "stand" or "walk"
-var speed = 55
+var speed = 65
 var velocity = Vector2.ZERO
 var is_walking_towards = null
 var will_go_to = []  # array of vector2 positions
@@ -96,12 +96,14 @@ func npc_turn_towards(target):
 		direction = "down"
 	update_animation()
 
-func interact(player):
+func interact():
 	if not is_walking_towards:
-		npc_turn_towards(player.position)
+		Game.player.can_interact = false
+		Game.can_move = false
+		npc_turn_towards(Game.player.position)
 		var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
 		ui_dialog.init(dialog, self, post_dialog_event, false)
-		player.stop_walking()
+		Game.player.stop_walking()
 		get_tree().current_scene.add_child(ui_dialog)
 		if pre_dialog_event:
 			Events.execute(pre_dialog_event[0], pre_dialog_event[1])

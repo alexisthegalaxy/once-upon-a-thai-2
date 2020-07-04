@@ -3,8 +3,8 @@ extends StaticBody2D
 export var id = 0
 export var is_translated = false
 
-func interact(player):
-	player.stop_walking()
+func interact():
+	Game.player.stop_walking()
 	Game.discovers_sentence(id, is_translated)
 
 func _on_Area2D_body_entered(body):

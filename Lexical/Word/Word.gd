@@ -36,8 +36,8 @@ func _process(delta):
 func starts_disappearing():
 	is_disappearing = true
 
-func interact(player):
-	player.stop_walking()
+func interact():
+	Game.player.stop_walking()
 	Game.start_test("res://Test/TestGuessMeaning.tscn", id, self)
 
 func _on_Area2D_body_entered(body):
