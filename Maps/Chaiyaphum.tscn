@@ -4105,7 +4105,7 @@ id = 25
 position = Vector2( 699.744, 467.54 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 176.969, 504.703 )
+position = Vector2( 915.402, 139.142 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -4136,6 +4136,7 @@ direction = "left"
 [node name="Npc 2" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 954.061, 83.5898 )
 dialog = [ "ไม่จริงจัง" ]
+sprite_path = "res://Npcs/sprites/old_man.png"
 
 [node name="Changelights" type="Node" parent="."]
 
@@ -4207,7 +4208,7 @@ mode = 1
 shadow_enabled = true
 
 [node name="ForestShadow3" type="Light2D" parent="Lights"]
-position = Vector2( 122.416, 523.786 )
+position = Vector2( 126.404, 517.139 )
 scale = Vector2( 0.424523, 0.449627 )
 texture = ExtResource( 15 )
 texture_scale = 1.71
