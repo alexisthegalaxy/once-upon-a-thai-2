@@ -5,7 +5,27 @@ var alpha = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if Events.events["yaai_went_to_forest_entrance"]:
+	if Events.events["has_gone_to_rock"]:
+		$YSort/NPCs/Yaai.position = Vector2(202.29, 654.29)
+		$YSort/NPCs/Yaai.direction = "right"
+	elif Events.events["has_finished_the_letter_world_the_first_time"]:
+		Events.events["has_gone_to_rock"] = true
+		Game.player.can_interact = false
+		Game.can_move = false
+		$YSort/NPCs/Yaai.position = Vector2(207.81, 513.20)
+		$YSort/NPCs/Yaai.dialog = [
+			"Yaai: Welcome back, [Name].",
+#			"Yaai: You can always go back to your Memory Palace using the F key.",
+#			"Yaai: For now, follow me into the forest.",
+		]
+		$YSort/NPCs/Yaai.post_dialog_event = ["yaai_walks_to", [[
+			Vector2(285.5, 561.6),
+			Vector2(247, 619.5),
+			Vector2(199, 652.5),
+			Vector2(205, 655.57),
+		]]]
+		$YSort/NPCs/Yaai.interact()
+	elif Events.events["yaai_went_to_forest_entrance"]:
 		$YSort/NPCs/Yaai.position = Vector2(207.81, 513.20)
 	elif Events.events["talked_to_yaai_for_the_first_time"]:
 		$YSort/NPCs/Yaai.position = Vector2(490, 260)
@@ -36,7 +56,7 @@ func _on_Area2D5_body_entered(body):
 func _on_Area2D_body_entered(body):
 	# Blocker 2
 	if body == Game.player:
-		if not Events.events["ceremony_finished"]:
+		if not Events.events["yaai_explains_rock"]:
 			var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
 			var dialog = [
 				"[Name]: I shouldn't go there now..."
@@ -71,13 +91,13 @@ func _on_Area2D4_body_entered(body):
 		if not Events.events["ceremony_started"]:
 			Events.events["ceremony_started"] = true
 			$YSort/NPCs/Yaai.dialog = [
-#				"Yaai: Here's the place, and now is the time.",
-#				"Yaai: Let's start your shamanic initiation.",
-#				"Yaai: Once you drink this potion, you will gain power over spirits and spells,",
-#				"Yaai: But there is a cost:",
-#				"Yaai: you will forget all you know of the Thai language and you’ll have to learn Thai again from scratch.",
-#				"Yaai: You trade your fluency in your mother tongue for power over the spirit world.",
-#				"Yaai: Are you ready?",
+				"Yaai: Here's the place, and now is the time.",
+				"Yaai: Let's start your shamanic initiation.",
+				"Yaai: Once you drink this potion, you will gain power over spirits and spells,",
+				"Yaai: But there is a cost:",
+				"Yaai: you will forget all you know of the Thai language and you’ll have to learn Thai again from scratch.",
+				"Yaai: You trade your fluency in your mother tongue for power over the spirit world.",
+				"Yaai: Are you ready?",
 				"[Name] drinks the potion.",
 			]
 			$YSort/NPCs/Yaai.post_dialog_event = ["enters_lexical_world", null]
@@ -86,3 +106,20 @@ func _on_Area2D4_body_entered(body):
 			Game.letters_we_look_for = []
 			for letter_id in Game.initial_letters:
 				Game.letters_we_look_for.append(Game.letters[str(letter_id)])
+
+func _on_Area2D3_body_entered(body):
+	# Player enters near the rock
+	if body == Game.player:
+		print(Events.events["has_gone_to_rock"])
+		if Events.events["has_gone_to_rock"] and not Events.events["yaai_explains_rock"]:
+			Events.events["yaai_explains_rock"] = true
+			$YSort/NPCs/Yaai.dialog = [
+				"Yaai: [Name], you see the sentence written on this rock?",
+				"Yaai: This will be your first sentence since you're restarted to learn Thai!",
+				"Yaai: This sentence means \"Thai people are good people\" - don't ask me why.",
+				"Yaai: Sentences like this will help you understand the meaning of words, you should write it in your notebook.",
+			]
+			$YSort/NPCs/Yaai.post_dialog_event = ["learns_first_sentence", $YSort/NPCs/Yaai]
+			$YSort/NPCs/Yaai.is_walking_towards = []  # to make sure NPC can interact
+			$YSort/NPCs/Yaai.interact()
+

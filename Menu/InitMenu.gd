@@ -27,7 +27,7 @@ func on_selected_character():
 	$Character_E.set_selected(false)
 
 func _on_Button_pressed():
-	Game.call_deferred("_deferred_goto_scene", "res://Maps/PlayerHouse.tscn", 26, -124)
+	Game.call_deferred("_deferred_goto_scene", "res://Maps/PlayerHouse.tscn", 24, -143)
 
 func _on_TextEdit_text_changed():
 	Game.player_name = $TextEdit.text

@@ -1391,5 +1391,12 @@
     "th": "คน_ดี_ชอบ_ฉัน",
     "en": "Good people like me (female).",
     "word_ids": [343, 82, 238, 24]
+  },
+  "199": {
+    "old_id": 200,
+    "id": 199,
+    "th": "คน_นี้_เป็น_คน_ดี",
+    "en": "This person is a good person",
+    "word_ids": [343, 31, 207, 343, 82]
   }
 }

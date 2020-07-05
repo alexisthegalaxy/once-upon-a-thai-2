@@ -37,12 +37,25 @@ func set_choices():
 	choices.append(word)
 	choices.shuffle()
 
+func init_learn_letter_button():
+	var unknown_letter_ids = []
+	if "letters" in word:
+		for letter_id in word["letters"]:
+			if not letter_id in Game.known_letters:
+				unknown_letter_ids.append(letter_id)
+	print('unknown_letter_ids', unknown_letter_ids)
+	if unknown_letter_ids:
+		$LearnLetterButton.init(unknown_letter_ids)
+	else:
+		$LearnLetterButton.queue_free()
+
 func init(word_id, _over_word):
 	Game.can_move = false
 	Game.active_test = self
 	over_word = _over_word
 	rng.randomize()
 	word = Game.words[str(word_id)]
+	init_learn_letter_button()
 	$Thai.text = word["th"]
 	set_distractors()
 	set_choices()

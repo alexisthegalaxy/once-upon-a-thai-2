@@ -1,11 +1,11 @@
 extends Node
 
 var events = {
-	"yaai_explains_rock": false,
-	"ceremony_finished": false,
-	"has_finished_the_letter_world_the_first_time": false,
-	"has_been_in_the_letter_world": false,
-	"ceremony_started": false,
+	"yaai_explains_rock": true,
+	"has_gone_to_rock": true,
+	"has_finished_the_letter_world_the_first_time": true,
+	"has_been_in_the_letter_world": true,
+	"ceremony_started": true,
 	"yaai_went_to_forest_entrance": true,
 	"talked_to_yaai_for_the_first_time": true,
 	"talked_to_nim_at_the_beginning": true,
@@ -58,6 +58,7 @@ func learns_first_sentence(calling_npc):
 	calling_npc.post_dialog_event = []
 
 func immediately_enters_lexical_world():
+	print('successfully arrived here!')
 	Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", 13, 71.66)
 
 func enters_lexical_world(_parameters):

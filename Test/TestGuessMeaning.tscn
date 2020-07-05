@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Test/TestGuessMeaning.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Test/TestAnswer.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Test/SentenceCarousel.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Test/MainWordThaiLabel.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Lexical/Letter/LearnLetterButton.tscn" type="PackedScene" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
@@ -58,6 +59,9 @@ position = Vector2( 222.798, 128.4 )
 
 [node name="answer_7" parent="." instance=ExtResource( 4 )]
 position = Vector2( 173.752, 114.401 )
+
+[node name="LearnLetterButton" parent="." instance=ExtResource( 7 )]
+position = Vector2( 32.8155, 60.6655 )
 
 [node name="SentenceCarousel" parent="." instance=ExtResource( 5 )]
 

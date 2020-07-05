@@ -313,7 +313,7 @@
     "old_id": 32,
     "id": 31,
     "split": "นี้",
-    "en": "this (subject)",
+    "en": "this",
     "tones": "H",
     "pos": "PRON",
     "th": "นี้",
@@ -3461,7 +3461,8 @@
     "pos": "ADJ",
     "th": "ไทย",
     "teaching_order": 2,
-    "distractors": [319, 158, 264, 72]
+    "distractors": [319, 158, 264, 72],
+    "letters": [11, 13, 28]
   },
   "346": {
     "old_id": 350,

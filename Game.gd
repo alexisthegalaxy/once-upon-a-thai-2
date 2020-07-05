@@ -11,7 +11,7 @@ var letters = []
 var known_words = []
 var known_sentences = []  # we know the translation
 var seen_sentences = []  # we don't know the translation
-var known_letters = []  # list of IDs
+var known_letters = [11, 13]  # list of IDs
 
 var exit_screen = false
 
@@ -22,8 +22,8 @@ var player_position_on_overworld = null  # used when coming back from Letter Wor
 var player_last_overworld_map_visited = "res://Maps/Chaiyaphum.tscn"
 var current_map_name = "res://Maps/Chaiyaphum.tscn"
 
-var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]
-#var initial_letters = [0]
+#var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]
+var initial_letters = [0]
 
 # when players comes near a npc/word/letter/sentence,
 # it get appended to current_focus, and gets removed when leaving
@@ -182,8 +182,6 @@ func _process(delta):
 		canvas_modulate.color.g += delta * direction.y
 		canvas_modulate.color.b += delta * direction.z
 
-	
-
 func update_letters_to_look_for_if_necesssary(to_map_name):
 	if Events.events["has_been_in_the_letter_world"]:
 		if "LexicalWorld" in to_map_name:
@@ -199,8 +197,8 @@ func update_letters_to_look_for_if_necesssary(to_map_name):
 			looking_for_letter__node.init(letters_we_look_for_here)
 			get_tree().current_scene.add_child(looking_for_letter__node)
 
-
 func _deferred_goto_scene(to_map_name, to_x, to_y):
+	print('yay!!!!!!!!!!!!!')
 	can_move = true
 	if not "LexicalWorld" in current_map_name:
 		if player:

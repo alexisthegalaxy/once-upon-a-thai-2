@@ -23,14 +23,14 @@ func _process(delta):
 		wobbling_time += delta
 		var wobbling_delta = cos(wobbling_time) * 3
 		self.position.y = y + wobbling_delta
-	
+
 	if is_disappearing:
 		ratio -= 3 * delta
 		self.scale.x = ratio
 		self.scale.y = ratio
 		if ratio <= 0:
 			queue_free()
-			if len(Game.known_words) == 4:
+			if len(Game.known_words) == 6:
 				Game.pop_victory_screen()
 	
 func starts_disappearing():
