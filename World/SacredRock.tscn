@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://World/assets/SacredRock.png" type="Texture" id=1]
 [ext_resource path="res://World/assets/SacredRockLight.png" type="Texture" id=2]
 [ext_resource path="res://World/assets/PulsingSacredRock.png" type="Texture" id=3]
 [ext_resource path="res://World/SacredRock.gd" type="Script" id=4]
+[ext_resource path="res://World/assets/CorruptedRock.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 19.2333, 8.20599 )
@@ -11,13 +12,6 @@ extents = Vector2( 19.2333, 8.20599 )
 [node name="SacredRock" type="StaticBody2D"]
 collision_mask = 0
 script = ExtResource( 4 )
-
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0, -24 )
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.0148523, -9.75317 )
@@ -34,3 +28,18 @@ position = Vector2( 0.0148523, -24 )
 texture = ExtResource( 2 )
 range_item_cull_mask = 2
 shadow_item_cull_mask = 2
+
+[node name="CorruptedSprite" type="Sprite" parent="."]
+position = Vector2( 0, -24 )
+texture = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -24 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.3
+autostart = true

@@ -3,7 +3,7 @@ extends Node2D
 export var word_id = 1
 var current_words = []
 var time = 0
-export var max_number_of_words = 200
+export var max_number_of_words = 3
 
 func prune_removed_words():
 	var new_current_words = []
@@ -25,6 +25,7 @@ func timeout():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$Sprite.hide()
 	var _e = $Timer.connect("timeout", self, "timeout")
 
 ## Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -828,7 +828,8 @@
     "pos": "ADJ",
     "th": "ดี",
     "teaching_order": 4,
-    "distractors": [345, 207, 343, 26]
+    "distractors": [345, 207, 343, 26],
+    "letters": [17, 9]
   },
   "83": {
     "old_id": 84,
@@ -2079,7 +2080,8 @@
     "pos": "VERB",
     "th": "เป็น",
     "teaching_order": 3,
-    "distractors": [236, 241, 293, 378]
+    "distractors": [236, 241, 293, 378],
+    "letters": [0, 19, 6, 36]
   },
   "208": {
     "old_id": 209,
@@ -3440,7 +3442,8 @@
     "pos": "NOUN",
     "th": "คน",
     "teaching_order": 1,
-    "distractors": [345, 207, 82, 26]
+    "distractors": [345, 207, 82, 26],
+    "letters": [21, 0]
   },
   "344": {
     "old_id": 348,

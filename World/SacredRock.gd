@@ -1,13 +1,31 @@
 extends StaticBody2D
 
 export var is_pulsating = false
+export var is_corrupted = false
 var time = 0
+var rng = RandomNumberGenerator.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	rng.randomize()
 	if not is_pulsating:
 		$PulsatingSprite.hide()
 		$Light.hide()
+	if is_corrupted:
+		$Sprite.hide()
+		var _e = $Timer.connect("timeout", self, "timeout")
+	else:
+		$CorruptedSprite.hide()
+
+func timeout():
+	var new_orb = load("res://World/CorruptionOrb.tscn").instance()
+	new_orb.position = Vector2(0, -25.595)
+#	new_orb.position = position
+	var scale = rng.randf_range(0.2, 0.5)
+	new_orb.max_scale = Vector2(scale, scale)
+	new_orb.velocity = Vector2(rng.randf_range(-2, 2), -8)
+#	get_tree().current_scene.add_child(new_orb)
+	self.add_child(new_orb)
 
 func _process(delta):
 	if is_pulsating:
