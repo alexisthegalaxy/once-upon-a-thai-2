@@ -26,21 +26,6 @@ func _on_Area2D_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		for letter_id in letter_ids:
 			Game.letters_we_look_for.append(Game.letters[str(letter_id)])
-		
-#		var timer = Timer.new()
-#		timer.connect("timeout", Events, "immediately_enters_lexical_world")
-#		Events.immediately_enters_lexical_world()
 		Events.enters_lexical_world(null)
 		Game.active_test.queue_free()
-		print('letter_ids')
-		print(letter_ids)
-#		get_tree().current_scene.blackens()
-		
-#		Game.can_move = false
-		
-#		timer.set_wait_time(1)
-#		timer.set_one_shot(true)
-#		timer.autostart = true
-#		add_child(timer)
-#		timer.start()
-		
+		Game.active_test = null

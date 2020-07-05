@@ -95,7 +95,8 @@ func answered_correctly():
 #	Game.active_test = null
 	SoundPlayer.play_thai(word["th"])
 	Game.player.can_interact = true
-	Game.known_words.append(word["id"])
+	if not word["id"] in Game.known_words:
+		Game.known_words.append(word["id"])
 	over_word.starts_disappearing()
 	Game.dialog_press_e_to_see_it('word')
 	queue_free()

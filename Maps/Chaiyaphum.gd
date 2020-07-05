@@ -15,8 +15,8 @@ func _ready():
 		$YSort/NPCs/Yaai.position = Vector2(207.81, 513.20)
 		$YSort/NPCs/Yaai.dialog = [
 			"Yaai: Welcome back, [Name].",
-#			"Yaai: You can always go back to your Memory Palace using the F key.",
-#			"Yaai: For now, follow me into the forest.",
+			"Yaai: You can always go back to your Memory Palace using the F key.",
+			"Yaai: For now, follow me into the forest.",
 		]
 		$YSort/NPCs/Yaai.post_dialog_event = ["yaai_walks_to", [[
 			Vector2(285.5, 561.6),
