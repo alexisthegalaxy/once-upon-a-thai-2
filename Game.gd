@@ -9,11 +9,14 @@ var letters = []
 
 # The following are a list of IDs
 var known_words = []
-var known_sentences = []  # we know the translation
+var known_sentences = []  # we know the translation. Does not contain seen_sentences.
 var seen_sentences = []  # we don't know the translation
-var known_letters = [0, 11, 13, 21, 28]  # list of IDs
+var known_letters = []  # list of IDs
+#var known_letters = [0, 11, 13, 21, 28]  # list of IDs
+var collected_letters = []
 
 var exit_screen = false
+var current_dialog = null
 
 var this_letter_world_has_letters = []  # a list of letter ids
 var letters_we_look_for = []  # a list of letters
@@ -41,8 +44,11 @@ var hp = 5.0
 var max_hp = 5.0
 var rng = RandomNumberGenerator.new()
 
+func is_overworld_frozen():
+	return active_test or current_dialog
+
 func dialog_press_e_to_see_it(learnt_item):
-	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
+	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var lines = []
 	if learnt_item == "sentence":
 		lines = ["Press F to open your notebook and see your sentences."]
@@ -50,9 +56,8 @@ func dialog_press_e_to_see_it(learnt_item):
 		lines = ["Press F to open your alphabet and see your letters."]
 	if learnt_item == "word":
 		lines = ["Press F to open your dictionary and see your words"]
-	print('lines ', lines)
-	ui_dialog.init(lines, null, null, null)
-	get_tree().current_scene.add_child(ui_dialog)
+	Game.current_dialog.init(lines, null, null, null)
+	get_tree().current_scene.add_child(Game.current_dialog)
 
 func discovers_sentence(sentence_id, is_translated):
 	Game.can_move = false
@@ -74,7 +79,7 @@ func reset_focus():
 			get_tree().current_scene.add_child(space_bar_to_interact)
 
 func loses_focus(target):
-	if target in current_focus:
+	while target in current_focus:
 		current_focus.erase(target)
 	if not current_focus:
 		if space_bar_to_interact:
@@ -96,16 +101,16 @@ func learn_letter(letter):
 			knows_the_letters_from_the_beginning = false
 	if not Events.events["has_finished_the_letter_world_the_first_time"] and knows_the_letters_from_the_beginning:
 		Events.events["has_finished_the_letter_world_the_first_time"] = true
-		var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
+		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 		var dialog = [
 			"Yaai: [Name]!",
 			"Yaai: [Name], do you hear me?",
 			"You have found all the letters you needed for now - you can come back amongst us now.",
 			"To leave this world, press the F key.",
 		]
-		ui_dialog.init(dialog, null, null, false)
+		Game.current_dialog.init(dialog, null, null, false)
 		player.stop_walking()
-		get_tree().current_scene.add_child(ui_dialog)
+		get_tree().current_scene.add_child(Game.current_dialog)
 
 func add_random_letter_to_letters_to_look_for():
 	var random_letter = Game.letters[str(rng.randi() % Game.letters.size())]
@@ -196,6 +201,7 @@ func update_letters_to_look_for_if_necesssary(to_map_name):
 				letters_we_look_for_here = letters_we_look_for
 			looking_for_letter__node.init(letters_we_look_for_here)
 			get_tree().current_scene.add_child(looking_for_letter__node)
+			print("Add look")
 
 func _deferred_goto_scene(to_map_name, to_x, to_y):
 	can_move = true
@@ -221,6 +227,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 	player.velocity = player_velocity
 	print('player.velocity', player.velocity)
 	SoundPlayer.start_music_upon_entering_map(to_map_name)
+#	get_tree().set_current_scene(current_scene)
 	get_tree().get_root().add_child(current_scene)
 	get_tree().set_current_scene(current_scene)
 	update_letters_to_look_for_if_necesssary(to_map_name)
@@ -256,3 +263,5 @@ func start_test(test_scene, entity_id, over_entity) -> void:
 	self.add_child(test)
 	active_test = test
 	test.init(entity_id, over_entity)
+	if looking_for_letter__node:
+		looking_for_letter__node.get_node("Node2D").hide()

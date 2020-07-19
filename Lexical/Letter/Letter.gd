@@ -40,11 +40,10 @@ func get_introduction():
 		return [letter["th"] + ": Hey [Name], I'm the " + letter["en"] + " sound."]
 
 func interact():
-	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
-	
-	ui_dialog.init(get_introduction(), self, post_dialog_event, true)
+	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+	Game.current_dialog.init(get_introduction(), self, post_dialog_event, true)
 	Game.player.stop_walking()
-	get_tree().current_scene.add_child(ui_dialog)
+	get_tree().current_scene.add_child(Game.current_dialog)
 	if pre_dialog_event:
 		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
 
@@ -52,6 +51,7 @@ func starts_disappearing():
 	is_disappearing = true
 
 func dialog_ended():
+	print("starts test!")
 	Game.start_test("res://Test/Letter/TestPronFromThaiLet.tscn", id, self)
 #	Game.start_test("res://Test/Letter/TestWordFromSound.tscn", id, self)
 #	wobbles = false

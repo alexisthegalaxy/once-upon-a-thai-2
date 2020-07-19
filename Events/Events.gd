@@ -33,6 +33,8 @@ func nim_walks_to(parameters):
 	
 func yaai_walks_to(parameters):
 	events["talked_to_yaai_for_the_first_time"] = true
+	if not Game.current_focus:
+		Game.current_focus.append(get_tree().current_scene.get_node("YSort").get_node("NPCs").get_node("Yaai"))
 	npc_walks_to(parameters)
 #	var target_positions = parameters[0]
 #	Game.current_focus.will_go_to = target_positions
@@ -43,8 +45,6 @@ func yaai_walks_to(parameters):
 
 func npc_walks_to(parameters):
 	var target_positions = parameters[0]
-#	print('target_positions')
-#	print(target_positions)
 	Game.current_focus[0].will_go_to = target_positions
 	if target_positions:
 		Game.current_focus[0].starts_going_toward(target_positions[0])

@@ -21,12 +21,16 @@ func timeout():
 		new_word.can_move = true
 		new_word.position = position
 		current_words.append(new_word)
-		get_tree().current_scene.get_node("YSort").add_child(new_word)
+		call_deferred("add_word", new_word)
+
+func add_word(new_word):
+	get_tree().current_scene.get_node("YSort").add_child(new_word)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Sprite.hide()
 	var _e = $Timer.connect("timeout", self, "timeout")
+	timeout()
 
 ## Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

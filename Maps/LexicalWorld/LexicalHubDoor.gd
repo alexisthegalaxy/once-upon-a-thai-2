@@ -49,10 +49,10 @@ func dialog_option(value):
 		SoundPlayer.play_sound("res://Sounds/door.wav")
 
 func interact():
-	var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
+	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var dialog = [
 		leads_to + " \nDo you want to take it? @QYes/No"
 	]
-	ui_dialog.init(dialog, self, null, false)
+	Game.current_dialog.init(dialog, self, null, false)
 	Game.player.stop_walking()
-	get_tree().current_scene.add_child(ui_dialog)
+	get_tree().current_scene.add_child(Game.current_dialog)

@@ -111,5 +111,7 @@ func answered_correctly():
 	Game.learn_letter(letter)
 	over_letter.starts_disappearing()
 	Game.dialog_press_e_to_see_it('letter')
+	if Game.looking_for_letter__node:
+		Game.looking_for_letter__node.get_node("Node2D").show()
 	queue_free()
 

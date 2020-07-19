@@ -11,6 +11,7 @@ var max_scale = Vector2(0.5, 0.5)
 
 func _ready():
 	scale = Vector2(0.01, 0.01)
+	var _e = $Timer.connect("timeout", self, "timeout")
 
 func timeout():
 	is_disappearing = true
@@ -18,7 +19,6 @@ func timeout():
 func _process(delta):
 	position = position + delta * velocity
 	velocity.y += 0.05
-	var _e = $Timer.connect("timeout", self, "timeout")
 
 	if is_being_born:
 		scale = (scale * 9 + max_scale * 1.1) / 10

@@ -29,6 +29,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if Game.is_overworld_frozen():
+		return
 	if wobbles and not can_move:
 		wobbling_time += delta
 		var wobbling_delta = cos(wobbling_time) * 3
@@ -54,7 +56,7 @@ func _process(delta):
 				Game.pop_victory_screen()
 	
 	if can_move:
-		var next_position = self.position + velocity * delta
+#		var next_position = self.position + velocity * delta
 		velocity = self.move_and_slide(velocity)
 		if rng.randi() % 50 == 1:
 			velocity = 4 * Vector2(rng.randi() % 100 - 50, rng.randi() % 100 - 50)

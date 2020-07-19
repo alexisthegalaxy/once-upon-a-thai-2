@@ -19,14 +19,14 @@ func init(sentence_id, is_translated):
 func _on_Button_pressed():
 	queue_free()
 	if has_learnt_the_sentence:
-		var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
+		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 		var dialog = [
 			"""You've learnt a new sentence!
 Press f to see your sentence."""
 		]
-		ui_dialog.init(dialog, self, null, false)
+		Game.current_dialog.init(dialog, self, null, false)
 		Game.player.stop_walking()
-		get_tree().current_scene.add_child(ui_dialog)
+		get_tree().current_scene.add_child(Game.current_dialog)
 	else:
 		Game.can_move = true
 		Game.player.can_interact = true

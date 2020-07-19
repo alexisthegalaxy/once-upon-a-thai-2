@@ -13,4 +13,5 @@ func show_first_dialog():
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	call_deferred("show_first_dialog")
+	Game.letters_we_look_for.append(Game.letters[str(11)])
 	

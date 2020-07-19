@@ -77,10 +77,10 @@ func starts_going_toward(target_position):
 	update_animation()
 
 #func _on_InteractBox_area_entered(body) -> void:
-#		var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
-#		ui_dialog.dialog = dialog
+#		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+#		Game.current_dialog.dialog = dialog
 #		var current_map = get_tree().current_scene
-#		current_map.add_child(ui_dialog)
+#		current_map.add_child(Game.current_dialog)
 
 func npc_turn_towards(target):
 	# Turns toward the Vector2 target (can be a place to go, the player...)
@@ -94,6 +94,9 @@ func npc_turn_towards(target):
 		direction = "right"
 	else:
 		direction = "down"
+#	state = "stand"
+	if not is_walking_towards:
+		stop_walking()
 	update_animation()
 
 func interact():
@@ -101,10 +104,10 @@ func interact():
 		Game.player.can_interact = false
 		Game.can_move = false
 		npc_turn_towards(Game.player.position)
-		var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
-		ui_dialog.init(dialog, self, post_dialog_event, false)
+		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+		Game.current_dialog.init(dialog, self, post_dialog_event, false)
 		Game.player.stop_walking()
-		get_tree().current_scene.add_child(ui_dialog)
+		get_tree().current_scene.add_child(Game.current_dialog)
 		if pre_dialog_event:
 			Events.execute(pre_dialog_event[0], pre_dialog_event[1])
 	else:

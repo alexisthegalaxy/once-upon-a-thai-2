@@ -24,7 +24,7 @@ func _ready():
 			Vector2(199, 652.5),
 			Vector2(205, 655.57),
 		]]]
-		$YSort/NPCs/Yaai.interact()
+		$YSort/NPCs/Yaai.call_deferred("interact")
 	elif Events.events["yaai_went_to_forest_entrance"]:
 		$YSort/NPCs/Yaai.position = Vector2(207.81, 513.20)
 	elif Events.events["talked_to_yaai_for_the_first_time"]:
@@ -44,26 +44,26 @@ func _on_Area2D5_body_entered(body):
 	# Blocker 1
 	if body == Game.player:
 		if not Events.events["talked_to_yaai_for_the_first_time"]:
-			var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
+			Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 			var dialog = [
 				"[Name]: I should talk to my grandmother first..."
 			]
-			ui_dialog.init(dialog, self, null, false)
+			Game.current_dialog.init(dialog, self, null, false)
 			Game.player.stop_walking()
-			get_tree().current_scene.add_child(ui_dialog)
+			get_tree().current_scene.add_child(Game.current_dialog)
 			Game.player.forced_toward(Vector2(553, 442))
 
 func _on_Area2D_body_entered(body):
 	# Blocker 2
 	if body == Game.player:
 		if not Events.events["yaai_explains_rock"]:
-			var ui_dialog = load("res://Dialog/Dialog.tscn").instance()
+			Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 			var dialog = [
 				"[Name]: I shouldn't go there now..."
 			]
-			ui_dialog.init(dialog, self, null, false)
+			Game.current_dialog.init(dialog, self, null, false)
 			Game.player.stop_walking()
-			get_tree().current_scene.add_child(ui_dialog)
+			get_tree().current_scene.add_child(Game.current_dialog)
 			Game.player.forced_toward(Vector2(541, 240))
 
 func _on_Area2D2_body_entered(body):
