@@ -23,7 +23,7 @@ export(Array) var post_dialog_event = []
 func _ready():
 	y = self.position.y
 	word = Game.words[str(id)]
-	$Label.text = word["th"]
+	$Sprite/label.text = word["th"]
 	rng.randomize()
 	
 
@@ -34,7 +34,9 @@ func _process(delta):
 	if wobbles and not can_move:
 		wobbling_time += delta
 		var wobbling_delta = cos(wobbling_time) * 3
-		self.position.y = y + wobbling_delta
+#		self.position.y = y + wobbling_delta
+		$Sprite.position.y = $Sprite.position.y + wobbling_delta / 50
+#		 * $Sprite.scale.x
 
 	if is_birthing:
 		if ratio < 1:

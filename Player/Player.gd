@@ -137,6 +137,7 @@ func move(input_vector, delta) -> void:
 	if velocity.length() < 1:
 		update_state("stand")
 	velocity = move_and_slide(velocity)
+#	velocity = move_and_slide(Vector2(floor(velocity.x), floor(velocity.y)))
 
 func end_dialog() -> void:
 	can_interact = true

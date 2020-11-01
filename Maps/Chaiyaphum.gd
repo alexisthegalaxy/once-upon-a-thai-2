@@ -115,7 +115,7 @@ func _on_Area2D3_body_entered(body):
 			Events.events["yaai_explains_rock"] = true
 			$YSort/NPCs/Yaai.dialog = [
 				"Yaai: [Name], you see the sentence written on this rock?",
-				"Yaai: This will be your first sentence since you're restarted to learn Thai!",
+				"Yaai: This will be your first sentence since you've restarted to learn Thai!",
 				"Yaai: This sentence means \"Thai people are good people\" - don't ask me why.",
 				"Yaai: Sentences like this will help you understand the meaning of words, you should write it in your notebook.",
 			]

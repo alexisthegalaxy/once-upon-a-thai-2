@@ -15,7 +15,7 @@ func init(_player):
 	if Events.events["has_finished_the_letter_world_the_first_time"]:
 		$LetterWorld.show()
 		if "LexicalWorld" in Game.current_map_name:
-			$LetterWorld.text = "Go back to the real world"
+			$LetterWorld.text = "Go back to the material world"
 		else:
 			$LetterWorld.text = "Go to the letter world"
 	else:

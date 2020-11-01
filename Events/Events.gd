@@ -1,14 +1,14 @@
 extends Node
 
 var events = {
-	"yaai_explains_rock": true,
-	"has_gone_to_rock": true,
-	"has_finished_the_letter_world_the_first_time": true,
-	"has_been_in_the_letter_world": true,
-	"ceremony_started": true,
-	"yaai_went_to_forest_entrance": true,
-	"talked_to_yaai_for_the_first_time": true,
-	"talked_to_nim_at_the_beginning": true,
+	"yaai_explains_rock": false,
+	"has_gone_to_rock": false,
+	"has_finished_the_letter_world_the_first_time": false,
+	"has_been_in_the_letter_world": false,
+	"ceremony_started": false,
+	"yaai_went_to_forest_entrance": false,
+	"talked_to_yaai_for_the_first_time": false,
+	"talked_to_nim_at_the_beginning": false,
 }
 
 func lose_focus(_parameters):

@@ -337,7 +337,6 @@ __meta__ = {
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-smoothing_enabled = true
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -1.06718, -9.37597 )
