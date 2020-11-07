@@ -1354,7 +1354,7 @@
     "old_id": 194,
     "id": 193,
     "th": "ทุก-วัน_ผม_ขึ้น_รถ-ไฟ_ไป_ทํา-งาน",
-    "en": "Every day, I take the train to work.",
+    "en": "Every day, I (male) take the train to work.",
     "word_ids": [71, 23, 374, 258, 201, 393]
   },
   "194": {
@@ -1381,9 +1381,9 @@
   "197": {
     "old_id": 198,
     "id": 197,
-    "th": "ฉัน_ชอบ_คน_ไทย",
-    "en": "I (female) like Thai people.",
-    "word_ids": [24, 238, 343, 345]
+    "th": "ผม_ชอบ_คน_ไทย",
+    "en": "I (male) like Thai people.",
+    "word_ids": [23, 238, 343, 345]
   },
   "198": {
     "old_id": 199,
@@ -1398,5 +1398,12 @@
     "th": "คน_นี้_เป็น_คน_ดี",
     "en": "This person is a good person",
     "word_ids": [343, 31, 207, 343, 82]
+  },
+  "200": {
+    "old_id": 201,
+    "id": 200,
+    "th": "ฉัน_ไม่_ชอบ_คน_ไม่_ดี",
+    "en": "I (female) don't like bad people.",
+    "word_ids": [24, 39, 238, 343, 39, 82]
   }
 }

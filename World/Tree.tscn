@@ -5,10 +5,10 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16.3636, 11.6644 )
 
-[node name="Tree" type="StaticBody2D"]
+[node name="Vegetable" type="StaticBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -0.143646, -12.2819 )
+position = Vector2( 0.308533, -8.89057 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

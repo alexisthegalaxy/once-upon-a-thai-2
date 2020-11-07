@@ -8,8 +8,17 @@ var rng = RandomNumberGenerator.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	var main_sprite = "res://World/assets/" + type + ".png"
+	var pulsating_sprite = "res://World/assets/Pulsing" + type + ".png"
+	var light_sprite = "res://World/assets/" + type + "Light.png"
+	print(main_sprite)
+	print(pulsating_sprite)
+	print(light_sprite)
+	$Sprite.texture = load(main_sprite)
+	$PulsatingSprite.texture = load(pulsating_sprite)
+	$Light.texture = load(light_sprite)
 	
-	$Sprite.texture = load(Game.player_sprite_path)
+	
 	rng.randomize()
 	if not is_pulsating:
 		$PulsatingSprite.hide()
