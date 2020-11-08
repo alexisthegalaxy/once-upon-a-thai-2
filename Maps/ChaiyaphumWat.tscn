@@ -41,6 +41,11 @@ position = Vector2( -22.2562, -7.97239 )
 dialog = [ "Yo yo!" ]
 sprite_path = "res://Npcs/sprites/monk.png"
 
+[node name="Npc2" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 72.4346, 42.158 )
+dialog = [ "Yo yo!" ]
+sprite_path = "res://Npcs/sprites/ploysgrandmother.png"
+
 [node name="Lights" type="Node" parent="."]
 
 [node name="Light2D4" type="Light2D" parent="Lights"]

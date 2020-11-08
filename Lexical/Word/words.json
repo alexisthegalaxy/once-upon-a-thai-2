@@ -4013,8 +4013,18 @@
     "split": "หิน",
     "en": "rock, stone, boulder",
     "tones": "R",
-    "pos": "None",
+    "pos": "NOUN",
     "th": "หิน",
+    "teaching_order": -1
+  },
+  "401": {
+    "old_id": 405,
+    "id": 401,
+    "split": "ตัด",
+    "en": "to cut",
+    "tones": "L",
+    "pos": "VERB",
+    "th": "ตัด",
     "teaching_order": -1
   }
 }
