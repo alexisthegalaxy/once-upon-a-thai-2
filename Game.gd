@@ -179,6 +179,7 @@ func _input(_event):
 				exit_screen.stay()
 
 func _process(delta):
+	OS.set_window_title("Once upon a Thai | fps: " + str(Engine.get_frames_per_second()))
 	if change_color:
 		var canvas_modulate = get_tree().current_scene.get_node("Lights").get_node("CanvasModulate")
 		var direction = Vector3(goal_color.r, goal_color.g, goal_color.b) - Vector3(canvas_modulate.color.r, canvas_modulate.color.g, canvas_modulate.color.b)

@@ -3401,7 +3401,7 @@
     "tones": "FM",
     "pos": "ADJ",
     "th": "ไม่ดี",
-    "teaching_order": 33,
+    "teaching_order": 33
   },
   "340": {
     "old_id": 344,
@@ -3464,7 +3464,7 @@
     "pos": "ADJ",
     "th": "ไทย",
     "teaching_order": 2,
-    "distractors": [319, 158, 264, 72],
+    "distractors": [83, 82, 343, 72],
     "letters": [11, 13, 28]
   },
   "346": {

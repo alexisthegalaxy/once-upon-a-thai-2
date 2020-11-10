@@ -8,7 +8,6 @@ var rng = RandomNumberGenerator.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
 	$Sprite.texture = load(Game.player_sprite_path)
 	rng.randomize()
 	if not is_pulsating:
@@ -21,6 +20,8 @@ func _ready():
 		$CorruptedSprite.hide()
 
 func timeout():
+	if Game.player.position.distance_to(position) > 200:
+		return
 	var new_orb = load("res://World/CorruptionOrb.tscn").instance()
 	new_orb.position = Vector2(0, -25.595)
 #	new_orb.position = position

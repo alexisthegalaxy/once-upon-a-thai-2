@@ -6,6 +6,7 @@ export var is_following_player = false
 # Moving
 const ACCELERATION = 1200
 const FRICTION = 1200
+const MAX_SPEED = 30  # 100
 export var can_move = false
 var velocity = Vector2.ZERO
 var will_move_in = 0
@@ -34,6 +35,10 @@ func _ready():
 func _process(delta):
 	if Game.is_overworld_frozen():
 		return
+	if Game.player.position.distance_to(position) > 200:
+		$Sprite/Light2D.hide()
+		return
+	$Sprite/Light2D.show()
 	if wobbles and not can_move:
 		wobbling_time += delta
 		var wobbling_delta = cos(wobbling_time) * 3
@@ -78,7 +83,7 @@ func _process(delta):
 	#		var next_position = self.position + velocity * delta
 			velocity = self.move_and_slide(velocity)
 			if rng.randi() % 50 == 1:
-				velocity = 4 * Vector2(rng.randi() % 100 - 50, rng.randi() % 100 - 50)
+				velocity = 4 * Vector2(rng.randi() % MAX_SPEED - MAX_SPEED / 2, rng.randi() % MAX_SPEED - MAX_SPEED / 2)
 			elif rng.randi() % 50 == 1:
 				velocity = Vector2(0, 0)
 

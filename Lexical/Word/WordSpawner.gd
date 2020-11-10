@@ -13,6 +13,8 @@ func prune_removed_words():
 	current_words = new_current_words
 
 func timeout():
+	if Game.player.position.distance_to(position) > 200:
+		return
 	prune_removed_words()
 	if len(current_words) < max_number_of_words:
 		var new_word = load("res://Lexical/Word/Spell.tscn").instance()

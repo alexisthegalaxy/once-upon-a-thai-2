@@ -1,0 +1,80 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://World/assets/WoodenSentenceSign.png" type="Texture" id=2]
+[ext_resource path="res://World/SentenceSign.gd" type="Script" id=3]
+[ext_resource path="res://World/assets/StoneSentenceSign.png" type="Texture" id=4]
+[ext_resource path="res://Lexical/Sentence/Sentence.tscn" type="PackedScene" id=5]
+[ext_resource path="res://World/assets/SmallStoneSentenceSign.png" type="Texture" id=6]
+[ext_resource path="res://World/assets/SmallWoodenSentenceSign.png" type="Texture" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 11.2491, 5.73206 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 8
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="StaticBody2D"]
+script = ExtResource( 3 )
+
+[node name="WoodenSentenceSign" type="Sprite" parent="."]
+position = Vector2( -0.209286, -9.93445 )
+texture = ExtResource( 2 )
+
+[node name="StoneSentenceSign" type="Sprite" parent="."]
+visible = false
+position = Vector2( -0.511627, -11.8996 )
+texture = ExtResource( 4 )
+
+[node name="SmallStoneSentenceSign" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0.0628052, -12.595 )
+texture = ExtResource( 6 )
+
+[node name="SmallWoodenSentenceSign" type="Sprite" parent="."]
+visible = false
+position = Vector2( -0.239529, -9.79842 )
+texture = ExtResource( 7 )
+
+[node name="MediumCollision" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( -0.680252, -6.04664 )
+shape = SubResource( 1 )
+disabled = true
+
+[node name="SmallCollision" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( -1.66283, -5.97105 )
+shape = SubResource( 1 )
+disabled = true
+
+[node name="Sentence" parent="." instance=ExtResource( 5 )]
+visible = false
+position = Vector2( -0.299973, -14.9532 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -11.6047
+margin_top = -21.0815
+margin_right = 9.39534
+margin_bottom = -8.08147
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ชัยภูมิ"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BlinkingLabel" type="Label" parent="."]
+margin_left = -11.6047
+margin_top = -21.0815
+margin_right = 9.39534
+margin_bottom = -8.08147
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.137255, 1, 0.952941, 1 )
+text = "ชัยภูมิ"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

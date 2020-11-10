@@ -369,7 +369,7 @@
     ],
     "test": {
       "prompt": "คน",
-      "distractors": ["กน", "โคน", "คอน"]
+      "distractors": ["กน", "คค", "นค"]
     }
   },
   "22": {
@@ -458,11 +458,13 @@
     "introduction": [
       "ไ-: Hi [Name]!",
       "ไ-: I'm ไ-, also called Ai Maimalai and I'm pronounced \"ai\", like in \"eye\". [sound]",
-      "ไ-: Just like the vowel เ-, I come before the consonant: for example ไกล (ai-g-l) is pronounced glai!"
+      "ไ-: Don't get me confused with my brother Maimuan: he's loopy ใ-, and I'm pointy ไ-.",
+      "ไ-: We both make the same sound though.",
+      "ไ-: We come before the consonant: for example ไกล (ai-g-l) is pronounced glai!"
     ],
     "test": {
       "prompt": "ไป",
-      "distractors": ["ป็ไ", "ไป็", "ปไ"]
+      "distractors": ["ปไ", "ใป", "ปใ"]
     }
   },
   "29": {
