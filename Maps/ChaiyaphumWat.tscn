@@ -8,7 +8,7 @@
 [ext_resource path="res://World/IndoorBuddhaShrine.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
-[ext_resource path="res://Lexical/Word/Word.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Lexical/Word/Spell.tscn" type="PackedScene" id=16]
 [ext_resource path="res://World/Teleport.tscn" type="PackedScene" id=18]
 
 [node name="ChaiyaphumWat" type="Node2D"]

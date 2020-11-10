@@ -25,8 +25,9 @@ var player_position_on_overworld = null  # used when coming back from Letter Wor
 var player_last_overworld_map_visited = "res://Maps/Chaiyaphum.tscn"
 var current_map_name = "res://Maps/Chaiyaphum.tscn"
 
+# This is the letters yaai asks us to fetch the first time we come in the Memory Palace
 #var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]
-var initial_letters = [11, 13, 28]
+var initial_letters = [11, 13, 28, 0, 21]
 
 # when players comes near a npc/word/letter/sentence,
 # it get appended to current_focus, and gets removed when leaving
@@ -225,7 +226,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 	player = current_scene.get_node("YSort").get_node("Player")
 	player.position = Vector2(to_x, to_y)
 	player.velocity = player_velocity
-	print('player.velocity', player.velocity)
+#	print('player.velocity', player.velocity)
 	SoundPlayer.start_music_upon_entering_map(to_map_name)
 #	get_tree().set_current_scene(current_scene)
 	get_tree().get_root().add_child(current_scene)

@@ -15,7 +15,7 @@ func prune_removed_words():
 func timeout():
 	prune_removed_words()
 	if len(current_words) < max_number_of_words:
-		var new_word = load("res://Lexical/Word/Word.tscn").instance()
+		var new_word = load("res://Lexical/Word/Spell.tscn").instance()
 		new_word.id = word_id
 		new_word.word = Game.words[str(word_id)]
 		new_word.can_move = true

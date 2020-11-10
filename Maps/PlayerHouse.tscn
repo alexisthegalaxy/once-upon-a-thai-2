@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Light/light.png" type="Texture" id=2]
@@ -9,7 +9,6 @@
 [ext_resource path="res://World/tilesets/CliffTileset.png" type="Texture" id=7]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
-[ext_resource path="res://Lexical/Word/Word.tscn" type="PackedScene" id=16]
 [ext_resource path="res://World/Teleport.tscn" type="PackedScene" id=18]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
@@ -535,9 +534,6 @@ shape = SubResource( 53 )
 
 [node name="YSort" type="YSort" parent="."]
 
-[node name="Word2" parent="YSort" instance=ExtResource( 16 )]
-position = Vector2( 336, 624 )
-
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 24, -143.767 )
 
@@ -545,7 +541,7 @@ position = Vector2( 24, -143.767 )
 position = Vector2( 88.3377, -114.453 )
 dialog = [ "Nim: Oh [Name], you woke up?", "Nim: Today is your big day, did you manage to sleep at all?", "Nim: Granny is already waiting for you outside.", "Nim: Be brave, okay?" ]
 sprite_path = "res://Npcs/sprites/nim.png"
-post_dialog_event = [ "nim_walks_to", [ [ Vector2( 70, -137 ), Vector2( 72, -137 ) ] ] ]
+post_dialog_event = [ "nim_walks_to", [ [ Vector2( 70, -139 ), Vector2( 72, -137 ) ] ] ]
 
 [node name="House" parent="YSort" instance=ExtResource( 6 )]
 position = Vector2( 31.4182, 44.4915 )

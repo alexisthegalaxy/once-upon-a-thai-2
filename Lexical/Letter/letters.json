@@ -122,7 +122,7 @@
       "เ-: See how I've got a dash next to me?",
       "เ-: That's because I come before the consonant.",
       "เ-: For example เน is pronounced \"néé\", or \"nay\".",
-      "เ-: I look like a leg, so that's how you can remember me: I'l a léég!"
+      "เ-: I look like a leg, so that's how you can remember me: I'm a léég!"
     ],
     "test": {
       "prompt": "เด็ก",
@@ -294,7 +294,9 @@
     "introduction": [
       "ด: Howdy! I ด the d! [sound]",
       "ด: Don't get me confused with the ค (k'h).",
-      "ด: Also, I'm pronounced t at the end of a syllable, because Thai people don't voice the last consonant in a syllable.",
+      "ด: I spiral in like a >D<igital finger print, while ค looks like a peacock (pea>K'H<ock).",
+      "ต: Also, don't get me confused with ต, my brother the dt sound: he's got a dent (dt) on his head.",
+      "ด: I'm pronounced t at the end of a syllable, because Thai people don't voice the last consonant in a syllable.",
       "ด: That's why Thai people can have a hard time dealing between words like side and site!"
     ]
   },
@@ -362,7 +364,8 @@
       "ค: Don't get me confused with the ด, the d, you see the difference?",
       "ค: I look like a peacock (pea>K'H<ock) looking at you, while ด spirals in like a >D<igital finger print.",
       "ค: Also! I'm not the only letter in Thai that's pronounced k'h.",
-      "ค: The other ones are "
+      "ค: The other ones are ข, which is quite popular, and ฆ, which is rarer. There's also the obsolete ฃ.",
+      "ค: Alright, test time!"
     ],
     "test": {
       "prompt": "คน",

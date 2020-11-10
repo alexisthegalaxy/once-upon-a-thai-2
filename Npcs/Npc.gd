@@ -53,8 +53,9 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if is_walking_towards:
+		print(position)
 		position = position + velocity * delta * speed
-		if position.distance_to(is_walking_towards) < 1:
+		if position.distance_to(is_walking_towards) < 5:
 			is_walking_towards = null
 			if will_go_to:
 				is_walking_towards = will_go_to.pop_front()
