@@ -4,11 +4,12 @@ var events = {
 	"yaai_explains_rock": false,
 	"has_gone_to_rock": false,
 	"has_finished_the_letter_world_the_first_time": false,
+	"can_see_the_looking_for_letter_banner": false,
 	"has_been_in_the_letter_world": false,
 	"ceremony_started": false,
-	"yaai_went_to_forest_entrance": false,
-	"talked_to_yaai_for_the_first_time": false,
-	"talked_to_nim_at_the_beginning": false,
+	"yaai_went_to_forest_entrance": true,
+	"talked_to_yaai_for_the_first_time": true,
+	"talked_to_nim_at_the_beginning": true,
 }
 
 func lose_focus(_parameters):
@@ -16,6 +17,10 @@ func lose_focus(_parameters):
 		Game.loses_focus(focus)
 
 func show_looking_for_letters(_parameters):
+	events["can_see_the_looking_for_letter_banner"] = true
+	print("  ---  ")
+	print("Inside show_looking_for_letters")
+	print("  ---  ")
 	Game.looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
 	Game.looking_for_letter__node.init(Game.letters_we_look_for)
 	get_tree().current_scene.add_child(Game.looking_for_letter__node)
@@ -24,7 +29,7 @@ func show_looking_for_letters(_parameters):
 	get_tree().current_scene.get_node("YSort").get_node("Door MC").init_letters()
 	get_tree().current_scene.get_node("YSort").get_node("Door HC").init_letters()
 	get_tree().current_scene.get_node("YSort").get_node("Door LC").init_letters()
-	Events.events["has_been_in_the_letter_world"] = true
+	
 	
 func nim_walks_to(parameters):
 	events["talked_to_nim_at_the_beginning"] = true
@@ -58,7 +63,6 @@ func learns_first_sentence(calling_npc):
 	calling_npc.post_dialog_event = []
 
 func immediately_enters_lexical_world():
-	print('successfully arrived here!')
 	Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", 13, 71.66)
 
 func enters_lexical_world(_parameters):

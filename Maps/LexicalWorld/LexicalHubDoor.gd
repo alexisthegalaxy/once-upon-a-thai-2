@@ -14,7 +14,8 @@ func init_letters():
 		door_text = ""
 		for letter_we_look_for in Game.letters_we_look_for:
 			if letter_we_look_for["id"] in leads_to_letters:
-				door_text += letter_we_look_for["th"] + "  "
+				if not letter_we_look_for["id"] in Game.known_letters:
+					door_text += letter_we_look_for["th"] + "  "
 		if door_text:
 			$Node2D.show()
 			$Node2D/Label.text = door_text

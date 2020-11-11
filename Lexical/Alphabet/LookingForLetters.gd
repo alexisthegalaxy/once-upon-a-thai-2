@@ -1,9 +1,11 @@
 extends CanvasLayer
 
-
 var letters_we_look_for = []  # list of letters
 var letters_we_look_for_that_we_know = []  # list of letters
 var letters_we_look_for_that_we_dont_know = []  # list of letters
+
+const TRANSPARENT_BLACK = "[color=#22000000]"
+const OPAQUE_BLACK = "[color=#FF000000]"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -25,9 +27,9 @@ func update_label_text():
 	var text = "Looking for letters: "
 	for letter in letters_we_look_for:
 		if letter["id"] in letters_we_look_for_that_we_know:
-			text += "[color=#22000000]" + letter["th"] + "[/color]" + ", "
+			text += TRANSPARENT_BLACK + letter["th"] + "[/color]" + ", "
 		else:
-			text += "[color=#FF000000]" + letter["th"] +"[/color]" +  ", "
+			text += OPAQUE_BLACK + letter["th"] +"[/color]" +  ", "
 	text = text.trim_suffix(", ")
 	print('text', text)
 	$Node2D/Label.bbcode_text = text

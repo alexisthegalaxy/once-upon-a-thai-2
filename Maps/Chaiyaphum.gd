@@ -32,13 +32,14 @@ func _ready():
 
 func blackens():
 	is_blackening = true
-	$CanvasLayer/ColorRect.show()
+	$CanvasLayer/BlackFadeOut.modulate = Color(1, 1, 1, 0)
+	$CanvasLayer/BlackFadeOut.show()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if is_blackening:
 		alpha += delta
-		$CanvasLayer/ColorRect.modulate = Color(1, 1, 1, alpha)
+		$CanvasLayer/BlackFadeOut.modulate = Color(1, 1, 1, alpha)
 
 func _on_Area2D5_body_entered(body):
 	# Blocker 1
@@ -91,13 +92,13 @@ func _on_Area2D4_body_entered(body):
 		if not Events.events["ceremony_started"]:
 			Events.events["ceremony_started"] = true
 			$YSort/NPCs/Yaai.dialog = [
-				"Yaai: Here's the place, and now is the time.",
-				"Yaai: Let's start your shamanic initiation.",
-				"Yaai: Once you drink this potion, you will gain power over spirits and spells,",
-				"Yaai: But there is a cost:",
-				"Yaai: you will forget all you know of the Thai language and you’ll have to learn Thai again from scratch.",
-				"Yaai: You trade your fluency in your mother tongue for power over the spirit world.",
-				"Yaai: Are you ready?",
+#				"Yaai: Here's the place, and now is the time.",
+#				"Yaai: Let's start your shamanic initiation.",
+#				"Yaai: Once you drink this potion, you will gain power over spirits and spells,",
+#				"Yaai: But there is a cost:",
+#				"Yaai: you will forget everything you know of the Thai language and you’ll have to learn Thai again from scratch.",
+#				"Yaai: You trade your fluency in your mother tongue for power over the spirit world.",
+#				"Yaai: Are you ready?",
 				"[Name] drinks the potion.",
 			]
 			$YSort/NPCs/Yaai.post_dialog_event = ["enters_lexical_world", null]
@@ -114,7 +115,7 @@ func _on_Area2D3_body_entered(body):
 		if Events.events["has_gone_to_rock"] and not Events.events["yaai_explains_rock"]:
 			Events.events["yaai_explains_rock"] = true
 			$YSort/NPCs/Yaai.dialog = [
-				"Yaai: [Name], you see the sentence written on this rock?",
+				"Yaai: [Name], you see the sentence written here?",
 				"Yaai: This will be your first sentence since you've restarted to learn Thai!",
 				"Yaai: This sentence means \"Thai people are good people\" - don't ask me why.",
 				"Yaai: Sentences like this will help you understand the meaning of words, you should write it in your notebook.",

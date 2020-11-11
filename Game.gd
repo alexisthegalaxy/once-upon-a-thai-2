@@ -11,8 +11,8 @@ var letters = []
 var known_words = []
 var known_sentences = []  # we know the translation. Does not contain seen_sentences.
 var seen_sentences = []  # we don't know the translation
-var known_letters = []  # list of IDs
-#var known_letters = [0, 11, 13, 21, 28]  # list of IDs
+#var known_letters = []  # list of IDs
+var known_letters = [0, 11, 13, 21, 28]  # five letters
 var collected_letters = []
 
 var exit_screen = false
@@ -190,20 +190,25 @@ func _process(delta):
 		canvas_modulate.color.b += delta * direction.z
 
 func update_letters_to_look_for_if_necesssary(to_map_name):
-	if Events.events["has_been_in_the_letter_world"]:
-		if "LexicalWorld" in to_map_name:
-			looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
-			var letters_we_look_for_here = []
-			if this_letter_world_has_letters:
-				for letter_id in this_letter_world_has_letters:
-					var letter = letters[str(letter_id)]
-					if letter in letters_we_look_for:
-						letters_we_look_for_here.append(letter)
-			else: 
-				letters_we_look_for_here = letters_we_look_for
-			looking_for_letter__node.init(letters_we_look_for_here)
-			get_tree().current_scene.add_child(looking_for_letter__node)
-			print("Add look")
+	if not Events.events["can_see_the_looking_for_letter_banner"]:
+		return
+	if not Events.events["has_been_in_the_letter_world"]:
+		return
+	if not "LexicalWorld" in to_map_name:
+		return
+
+	looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
+	var letters_we_look_for_here = []
+	if this_letter_world_has_letters:
+		for letter_id in this_letter_world_has_letters:
+			var letter = letters[str(letter_id)]
+			if letter in letters_we_look_for:
+				letters_we_look_for_here.append(letter)
+	else: 
+		letters_we_look_for_here = letters_we_look_for
+	looking_for_letter__node.init(letters_we_look_for_here)
+	get_tree().current_scene.add_child(looking_for_letter__node)
+	print("Add look")
 
 func _deferred_goto_scene(to_map_name, to_x, to_y):
 	can_move = true
@@ -220,8 +225,8 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 		print(current_scene)
 		current_scene.free()
 	assert(to_map_name != "")
-	print("to_map_name")
-	print(to_map_name)
+#	print("to_map_name")
+#	print(to_map_name)
 	current_scene = ResourceLoader.load(to_map_name).instance()
 	
 	player = current_scene.get_node("YSort").get_node("Player")

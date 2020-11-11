@@ -16,7 +16,8 @@
       "น: so you better remember me!",
       "น: If you have a hard time distinguishing me from the ม (m),",
       "น: Notice that the ม has its loops on the sa>M<e side,",
-      "น: While I have my loops >N<ot on the same side."
+      "น: While I have my loops >N<ot on the same side.",
+      "น: Alright, test time!"
     ],
     "test": {
       "prompt": "นอน",
@@ -201,13 +202,14 @@
     "introduction": [
       "ท: I'm ท. I'm pronounced t, but aspirated, [sound]",
       "ท: so you can write me t'h.",
-      "ท: The \"t\" sound actually doesn't exist in Thai.",
-      "ท: It's either d, dt, or t'h.",
-      "ท: Although all three are actually pronounced \"t\", at the end of a syllable."
+      "ท: I'm the \"t'h\" sound in Thai: ไทย.",
+      "ท: Here's how you can remember me:",
+      "ท: I look like a snake with a long tail (t'h ail).",
+      "ท: Alright, get ready to be tested!"
     ],
     "test": {
       "prompt": "บาท",
-      "distractors": ["ทาบ", "ทาม", "ทาน"]
+      "distractors": ["ทาบ", "ทาม", "ทาน", "ทาท"]
     }
   },
   "12": {
@@ -236,7 +238,8 @@
     "introduction": [
       "ย: Yo [Name]!",
       "ย: I'm the consonant ย and I'm pronounced y, [sound]",
-      "ย: I kinda look like the top part of the y used in English, don't you think?"
+      "ย: I kinda look like the top part of the y used in English, don't you think?",
+      "ย: Alright, let's get you tested!"
     ]
   },
   "14": {
@@ -361,7 +364,7 @@
     "introduction": [
       "ค: Hey, I'm ค.",
       "ค: I'm pronounced k'h, just like a k, but aspirated. [sound]",
-      "ค: Don't get me confused with the ด, the d, you see the difference?",
+      "ค: Don't get me confused with the ด, the d. Do you see the difference?",
       "ค: I look like a peacock (pea>K'H<ock) looking at you, while ด spirals in like a >D<igital finger print.",
       "ค: Also! I'm not the only letter in Thai that's pronounced k'h.",
       "ค: The other ones are ข, which is quite popular, and ฆ, which is rarer. There's also the obsolete ฃ.",
@@ -460,7 +463,9 @@
       "ไ-: I'm ไ-, also called Ai Maimalai and I'm pronounced \"ai\", like in \"eye\". [sound]",
       "ไ-: Don't get me confused with my brother Maimuan: he's loopy ใ-, and I'm pointy ไ-.",
       "ไ-: We both make the same sound though.",
-      "ไ-: We come before the consonant: for example ไกล (ai-g-l) is pronounced glai!"
+      "ไ-: We come before the consonant: for example ไกล (ai-g-l) is pronounced glai!",
+      "ไ-: To remember me, notice how I look like a lightning str>ai<ke!",
+      "ไ-: Alright, time to get you tested!"
     ],
     "test": {
       "prompt": "ไป",
@@ -582,11 +587,12 @@
       "-็: Hi.",
       "-็: I make long sounds short.",
       "-็: For example, เปน is long (bpehn) and เป็น is short (bpen).",
-      "-็: Put me over the main consonant of the syllable."
+      "-็: Put me over the main consonant of the syllable.",
+      "-็: Don't get me confused with the -๊, which is used to indicate the high tone."
     ],
     "test": {
       "prompt": "เล็ก",
-      "distractors": ["เลก", "เปลี่ย็น", "ก็"]
+      "distractors": ["เลก", "เ็ลก", "เล๊ก", "เ๊ลก"]
     }
   }
 }
