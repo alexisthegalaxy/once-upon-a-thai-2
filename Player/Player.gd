@@ -13,8 +13,9 @@ export var direction = "down"
 var speed_when_forced = 75
 var can_interact = true  # meaning the player is near a npc. false during a dialog.
 
+var arrow = null  # the arrow that is sometimes shown to indicate direction to follow
+var hub = null  # The screen that appears when pressing f and gives access to sentences, etc.
 var dict = null
-var hub = null
 var alphabet = null
 var notebook = null
 var is_forced_towards = null
@@ -53,6 +54,8 @@ func _ready() -> void:
 	make_animations()
 	update_animation()
 	Game.player = self
+	arrow = $Arrow
+	arrow.hide()
 
 func _physics_process(delta) -> void:
 	if is_forced_towards:
@@ -93,8 +96,11 @@ func _input(_event) -> void:
 			Game.space_bar_to_interact.queue_free()
 			Game.space_bar_to_interact = null
 	if Input.is_action_just_pressed("print_position"):
-		print("(" + str(position.x) + ", " + str(position.y) + ")")
+		print("current position: (" + str(position.x) + ", " + str(position.y) + ")")
 		set_hp(Game.hp - 0.5)
+		print('\n\n\nqqqqqq')
+		print(Game.letters["1"])
+		Game.letters_we_look_for.append(Game.letters["1"])
 #		Game.add_random_letter_to_letters_to_look_for()
 	if Input.is_action_just_pressed("print_known_sentences"):
 		Game.print_known_sentences()

@@ -120,7 +120,7 @@ func _process(delta):
 
 func answered_correctly():
 	#	This is the third test
-	print("16 answered correctly!")
+#	print("16 answered correctly!")
 	Game.start_test("res://Test/Letter/TestWordFromSound.tscn", letter_id, over_letter)
 	queue_free()
 

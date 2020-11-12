@@ -8,16 +8,16 @@ func _ready():
 func init(_word_id):
 	word_id = _word_id
 	$Thai.text = Game.words[str(word_id)]["th"]
-	print('Game.seen_sentences')
+#	print('Game.seen_sentences')
 	for sentence_id in Game.seen_sentences + Game.known_sentences:
-		print('    sentence_id ', sentence_id)
+#		print('    sentence_id ', sentence_id)
 		var sentence = Game.sentences[str(sentence_id)]
 		if word_id in sentence["word_ids"]:
-			print('word_id ', word_id, ' is seen!')
+#			print('word_id ', word_id, ' is seen!')
 			sentences.append(sentence)
 	if sentences:
 		init_interactive_sentence()
-	print(sentences)
+#	print(sentences)
 
 func init_interactive_sentence():
 	$InteractiveSentence.init(sentences[current_sentence_index], word_id)

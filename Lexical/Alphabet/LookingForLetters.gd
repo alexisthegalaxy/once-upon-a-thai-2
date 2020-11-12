@@ -31,7 +31,6 @@ func update_label_text():
 		else:
 			text += OPAQUE_BLACK + letter["th"] +"[/color]" +  ", "
 	text = text.trim_suffix(", ")
-	print('text', text)
 	$Node2D/Label.bbcode_text = text
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.

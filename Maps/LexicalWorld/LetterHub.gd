@@ -27,9 +27,9 @@ func _process(delta):
 		if alpha >= 1:
 			alpha = 1
 			fading_in = false
-			print("call_deferred(show_first_dialog)")
+#			print("call_deferred(show_first_dialog)")
 			call_deferred("show_first_dialog")
-			print("after call_deferred(show_first_dialog)")
+#			print("after call_deferred(show_first_dialog)")
 		$CanvasLayer/BlackFadeIn.modulate = Color(1, 1, 1, 1 - alpha)
 		
 	

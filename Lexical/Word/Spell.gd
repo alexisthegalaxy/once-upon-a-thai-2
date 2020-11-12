@@ -35,9 +35,9 @@ func _ready():
 func _process(delta):
 	if Game.is_overworld_frozen():
 		return
-	if Game.player.position.distance_to(position) > 200:
-		$Sprite/Light2D.hide()
-		return
+#	if Game.player.position.distance_to(position) > 200:
+#		$Sprite/Light2D.hide()
+#		return
 	$Sprite/Light2D.show()
 	if wobbles and not can_move:
 		wobbling_time += delta
@@ -68,9 +68,9 @@ func _process(delta):
 #		print('is_following_player', is_following_player)
 		if is_following_player:
 			var player_position = Game.player.position
-#			print(player_position)
+#			print('player_position', player_position)
 			var direction = (player_position - position).normalized()
-			print(direction)
+#			print('direction', direction)
 			if player_position.distance_to(position) > 15:
 				velocity = velocity.move_toward(direction * following_speed, ACCELERATION * delta)
 			else:

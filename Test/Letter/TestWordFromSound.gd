@@ -68,8 +68,7 @@ func init(_letter_id, _over_letter):
 	set_distractors()
 	set_choices()
 	hide_answers()
-	print('choices')
-	print(choices)
+#	print('choices', choices)
 	if number_of_choices >= 1:
 		$answer_1.show()
 		$answer_1.init(self, choices[0], choices[0] == letter["test"]["prompt"])

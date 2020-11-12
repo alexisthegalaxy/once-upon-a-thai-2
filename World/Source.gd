@@ -11,9 +11,9 @@ func _ready():
 	var main_sprite = "res://World/assets/" + type + ".png"
 	var pulsating_sprite = "res://World/assets/Pulsing" + type + ".png"
 	var light_sprite = "res://World/assets/" + type + "Light.png"
-	print(main_sprite)
-	print(pulsating_sprite)
-	print(light_sprite)
+#	print(main_sprite)
+#	print(pulsating_sprite)
+#	print(light_sprite)
 	$Sprite.texture = load(main_sprite)
 	$PulsatingSprite.texture = load(pulsating_sprite)
 	$Light.texture = load(light_sprite)

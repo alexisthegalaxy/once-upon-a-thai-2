@@ -111,7 +111,7 @@ func _on_Area2D4_body_entered(body):
 func _on_Area2D3_body_entered(body):
 	# Player enters near the rock
 	if body == Game.player:
-		print(Events.events["has_gone_to_rock"])
+#		print('has_gone_to_rock', Events.events["has_gone_to_rock"])
 		if Events.events["has_gone_to_rock"] and not Events.events["yaai_explains_rock"]:
 			Events.events["yaai_explains_rock"] = true
 			$YSort/NPCs/Yaai.dialog = [

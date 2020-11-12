@@ -1,10 +1,9 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Light/light.png" type="Texture" id=2]
 [ext_resource path="res://Light/spot.png" type="Texture" id=3]
 [ext_resource path="res://World/Tree.tscn" type="PackedScene" id=4]
-[ext_resource path="res://UI/Arrow.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=6]
 [ext_resource path="res://CliffTileMap.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
@@ -6256,11 +6255,8 @@ position = Vector2( 699.744, 467.54 )
 [node name="SmallWat2" parent="YSort" instance=ExtResource( 27 )]
 position = Vector2( 1295.12, 160.862 )
 
-[node name="Arrow" parent="YSort" instance=ExtResource( 5 )]
-position = Vector2( 447.155, 1066.01 )
-
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 74.9549, -41.9193 )
+position = Vector2( -24.8415, 585.514 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 

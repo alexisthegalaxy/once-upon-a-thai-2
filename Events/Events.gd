@@ -1,12 +1,12 @@
 extends Node
 
 var events = {
-	"yaai_explains_rock": false,
-	"has_gone_to_rock": false,
-	"has_finished_the_letter_world_the_first_time": false,
-	"can_see_the_looking_for_letter_banner": false,
-	"has_been_in_the_letter_world": false,
-	"ceremony_started": false,
+	"yaai_explains_rock": true,
+	"has_gone_to_rock": true,
+	"has_finished_the_letter_world_the_first_time": true,
+	"can_see_the_looking_for_letter_banner": true,
+	"has_been_in_the_letter_world": true,
+	"ceremony_started": true,
 	"yaai_went_to_forest_entrance": true,
 	"talked_to_yaai_for_the_first_time": true,
 	"talked_to_nim_at_the_beginning": true,
@@ -18,9 +18,9 @@ func lose_focus(_parameters):
 
 func show_looking_for_letters(_parameters):
 	events["can_see_the_looking_for_letter_banner"] = true
-	print("  ---  ")
-	print("Inside show_looking_for_letters")
-	print("  ---  ")
+#	print("  ---  ")
+#	print("Inside show_looking_for_letters")
+#	print("  ---  ")
 	Game.looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
 	Game.looking_for_letter__node.init(Game.letters_we_look_for)
 	get_tree().current_scene.add_child(Game.looking_for_letter__node)

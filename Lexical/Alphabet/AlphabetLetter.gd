@@ -25,5 +25,5 @@ func _on_Area2D_mouse_exited():
 
 func _on_Area2D_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
-		print('play ', letter["audio"])
+#		print('play ', letter["audio"])
 		SoundPlayer.play_thai(letter["audio"])

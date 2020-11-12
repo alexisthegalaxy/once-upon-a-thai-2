@@ -63,7 +63,7 @@ func dialog_press_e_to_see_it(learnt_item):
 func discovers_sentence(sentence_id, is_translated):
 	Game.can_move = false
 	var sentence_discovery = load("res://Lexical/Sentence/SentenceDiscovery.tscn").instance()
-	sentence_discovery.init(sentence_id, is_translated)
+	sentence_discovery.sentence_discovery_init(sentence_id, is_translated)
 	get_tree().current_scene.add_child(sentence_discovery)
 	
 func gains_focus(target):
@@ -96,6 +96,7 @@ func learn_letter(letter):
 	Game.known_letters.append(letter["id"])
 	if looking_for_letter__node:
 		looking_for_letter__node.update_label_text()
+	Game.player.arrow.arrow_letter_update()
 	var knows_the_letters_from_the_beginning = true
 	for letter_id_from_the_beginning in initial_letters:
 		if not letter_id_from_the_beginning in known_letters:
@@ -142,6 +143,7 @@ func print_known_sentences() -> void:
 	for seen_sentence_id in seen_sentences:
 		var sentence = sentences[str(seen_sentence_id)]
 		print(sentence["th"])
+	print("\n")
 
 func pop_victory_screen() -> void:
 	var VictoryScreen = load("res://UI/Victory.tscn")
@@ -196,19 +198,19 @@ func update_letters_to_look_for_if_necesssary(to_map_name):
 		return
 	if not "LexicalWorld" in to_map_name:
 		return
-
+	Game.player.arrow.arrow_letter_update()
 	looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
+	
 	var letters_we_look_for_here = []
 	if this_letter_world_has_letters:
 		for letter_id in this_letter_world_has_letters:
 			var letter = letters[str(letter_id)]
 			if letter in letters_we_look_for:
 				letters_we_look_for_here.append(letter)
-	else: 
+	else:
 		letters_we_look_for_here = letters_we_look_for
 	looking_for_letter__node.init(letters_we_look_for_here)
 	get_tree().current_scene.add_child(looking_for_letter__node)
-	print("Add look")
 
 func _deferred_goto_scene(to_map_name, to_x, to_y):
 	can_move = true
@@ -221,8 +223,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 	if player:
 		player_velocity = player.velocity
 	if current_scene:
-		print('current_scene')
-		print(current_scene)
+#		print('current_scene', current_scene)
 		current_scene.free()
 	assert(to_map_name != "")
 #	print("to_map_name")
