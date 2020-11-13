@@ -66,6 +66,7 @@ func immediately_enters_lexical_world():
 	Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", 13, 71.66)
 
 func enters_lexical_world(_parameters):
+	# Blackens the screen, and then call immediately_enters_lexical_world
 	get_tree().current_scene.blackens()
 	var timer = Timer.new()
 	Game.can_move = false

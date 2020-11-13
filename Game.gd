@@ -47,6 +47,11 @@ var max_hp = 5.0
 var rng = RandomNumberGenerator.new()
 var is_frozen = false
 
+var should_start_test_when_back_from_MP = [
+	null,  # "res://Test/TestGuessMeaning.tscn"
+	null,  # word_id
+]
+
 func is_overworld_frozen():
 	return active_test or current_dialog or is_frozen
 
@@ -214,12 +219,31 @@ func update_letters_to_look_for_if_necesssary(to_map_name):
 	looking_for_letter__node.init(letters_we_look_for_here)
 	get_tree().current_scene.add_child(looking_for_letter__node)
 
+func start_test_when_back_from_MP():
+	if should_start_test_when_back_from_MP[0]:
+		var word_id = should_start_test_when_back_from_MP[1]
+		print('Game should_start_test_when_back_from_MP', should_start_test_when_back_from_MP)
+		var new_word = load("res://Lexical/Word/Spell.tscn").instance()
+		new_word.id = word_id
+		new_word.word = Game.words[str(word_id)]
+		new_word.can_move = true
+		new_word.position = player.position
+		print('get_tree().current_scene', get_tree().current_scene)
+		get_tree().current_scene.get_node("YSort").add_child(new_word)
+		start_test(
+			should_start_test_when_back_from_MP[0],
+			word_id,
+			new_word
+		)
+
 func _deferred_goto_scene(to_map_name, to_x, to_y):
 	can_move = true
+	
 	if not "LexicalWorld" in current_map_name:
 		if player:
 			player_position_on_overworld = player.position
 			player_last_overworld_map_visited = current_map_name
+	var previous_map_name = current_map_name
 	current_map_name = to_map_name
 	var player_velocity = Vector2.ZERO
 	if player:
@@ -241,7 +265,10 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 	get_tree().get_root().add_child(current_scene)
 	get_tree().set_current_scene(current_scene)
 	update_letters_to_look_for_if_necesssary(to_map_name)
-	get_tree().current_scene.get_node("Lights").get_node("CanvasModulate").color = Game.last_goal_color
+	
+	if "LexicalWorld" in previous_map_name and not "LexicalWorld" in current_map_name:
+		get_tree().current_scene.get_node("Lights").get_node("CanvasModulate").color = Game.last_goal_color
+		start_test_when_back_from_MP()
 	
 func _on_InteractBox_body_entered(_player, npc) -> void:
 	_player._on_InteractBox_body_entered(npc)

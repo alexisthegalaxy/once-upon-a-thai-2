@@ -10,7 +10,7 @@ func init_sentence_carousel(_word_id):
 	word_id = _word_id
 	$Thai.text = Game.words[str(word_id)]["th"]
 #	print('Game.seen_sentences')
-	for sentence_id in Game.seen_sentences + Game.known_sentences:
+	for sentence_id in Game.known_sentences + Game.seen_sentences:
 #		print('    sentence_id ', sentence_id)
 		var sentence = Game.sentences[str(sentence_id)]
 		if word_id in sentence["word_ids"]:

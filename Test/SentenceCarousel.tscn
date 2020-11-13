@@ -97,7 +97,7 @@ position = Vector2( 160, 40 )
 scale = Vector2( 1, 0.897581 )
 
 [node name="SentenceCounter" type="Label" parent="."]
-anchor_left = -0.000674665
+anchor_left = -0.000674677
 anchor_right = -0.000674677
 anchor_bottom = 0.0722224
 margin_left = 52.2159

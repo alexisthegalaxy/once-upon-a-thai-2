@@ -45,9 +45,20 @@ func init_learn_letter_button():
 				unknown_letter_ids.append(letter_id)
 #	print('unknown_letter_ids', unknown_letter_ids)
 	if unknown_letter_ids:
-		$LearnLetterButton.init(unknown_letter_ids)
+		$LearnLetterButton.init(unknown_letter_ids, self)
 	else:
 		$LearnLetterButton.queue_free()
+
+func leaves_test_to_go_to_MP():
+	# We need to reopen the test when we're back.
+	# where do we save it?
+	Game.should_start_test_when_back_from_MP = [
+		"res://Test/TestGuessMeaning.tscn",
+		word["id"],
+		over_word,
+	]
+	over_word.is_frozen = true
+	print('leaves_test_to_go_to_MP!!')
 
 func init(word_id, _over_word):
 	Game.can_move = false

@@ -114,7 +114,7 @@ func _on_Area2D_body_entered(body):
 		# if the Player starts the interaction
 #		Game.gains_focus(self)  
 		# if the Spell starts the interaction
-		if not Game.is_overworld_frozen():
+		if not Game.is_overworld_frozen() and not is_frozen:
 			interact()
 
 func _on_Area2D_body_exited(body):

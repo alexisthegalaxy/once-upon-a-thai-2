@@ -5,13 +5,16 @@ var time = 0
 var mouse_in = false
 var letter_ids = []
 
-func init(_letter_ids):
+signal leaves_test_to_go_to_MP
+
+func init(_letter_ids, test):
 	letter_ids = _letter_ids
 	var text = "Go to your Memory Palace to learn:\n\n"
 	for letter_id in letter_ids:
 		text += Game.letters[str(letter_id)]["th"] + ", "
 	text = text.trim_suffix(", ")
 	$Label.text = text
+	var _e = self.connect("leaves_test_to_go_to_MP", test, "leaves_test_to_go_to_MP")
 
 func _process(delta):
 	if mouse_in:
@@ -32,5 +35,6 @@ func _on_Area2D_input_event(_viewport, event, _shape_idx):
 		for letter_id in letter_ids:
 			Game.letters_we_look_for.append(Game.letters[str(letter_id)])
 		Events.enters_lexical_world(null)
-		Game.active_test.queue_free()  # TODO!
+		emit_signal("leaves_test_to_go_to_MP")
+		Game.active_test.queue_free()
 		Game.active_test = null
