@@ -1,6 +1,7 @@
 extends Node
 
 var change_color = false
+var last_goal_color = Color(1, 1, 1, 1)
 var goal_color = null
 
 var words = []
@@ -26,7 +27,7 @@ var player_last_overworld_map_visited = "res://Maps/Chaiyaphum.tscn"
 var current_map_name = "res://Maps/Chaiyaphum.tscn"
 
 # This is the letters yaai asks us to fetch the first time we come in the Memory Palace
-#var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]
+#var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]  # outdated
 var initial_letters = [11, 13, 28, 0, 21]
 
 # when players comes near a npc/word/letter/sentence,
@@ -108,8 +109,8 @@ func learn_letter(letter):
 		var dialog = [
 			"Yaai: [Name]!",
 			"Yaai: [Name], do you hear me?",
-			"You have found all the letters you needed for now - you can come back amongst us now.",
-			"To leave this world, press the F key.",
+			"Yaai: You have found all the letters you needed for now - you can come back amongst us now.",
+			"Yaai: To leave this world, press the F key.",
 		]
 		Game.current_dialog.init(dialog, null, null, false)
 		player.stop_walking()
@@ -240,6 +241,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 	get_tree().get_root().add_child(current_scene)
 	get_tree().set_current_scene(current_scene)
 	update_letters_to_look_for_if_necesssary(to_map_name)
+	get_tree().current_scene.get_node("Lights").get_node("CanvasModulate").color = Game.last_goal_color
 	
 func _on_InteractBox_body_entered(_player, npc) -> void:
 	_player._on_InteractBox_body_entered(npc)
@@ -262,6 +264,7 @@ func _on_sentence_area_entered(sentence_id, x, y) -> void:
 func _on_changelight_entered(color) -> void:
 	change_color = true
 	goal_color = color
+	last_goal_color = color
 
 func start_test(test_scene, entity_id, over_entity) -> void:
 	"""

@@ -43,18 +43,19 @@ func _on_Letters_pressed():
 	alphabet.init()
 	get_tree().current_scene.add_child(alphabet)
 
-
 func _on_LetterWorld_pressed():
+	# Going to the material world
 	if "LexicalWorld" in Game.current_map_name:
+		Game.letters_we_look_for = []
 		Game.call_deferred(
 			"_deferred_goto_scene",
 			Game.player_last_overworld_map_visited,
 			Game.player_position_on_overworld.x,
 			Game.player_position_on_overworld.y
 		)
-	else:
+		
+	else:  # Going to the letter world
 		Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", 13, 71.66)
-
 
 func _on_Sentences_pressed():
 	var notebook = load("res://Lexical/Notebook/Notebook.tscn").instance()

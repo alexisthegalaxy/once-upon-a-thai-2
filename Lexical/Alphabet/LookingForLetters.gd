@@ -19,6 +19,7 @@ func init(_letters_we_look_for):
 		queue_free()
 		
 func update_label_text():
+	var all_letters_are_known = true
 	for letter in letters_we_look_for:
 		if letter["id"] in Game.known_letters:
 			letters_we_look_for_that_we_know.append(letter["id"])
@@ -29,9 +30,13 @@ func update_label_text():
 		if letter["id"] in letters_we_look_for_that_we_know:
 			text += TRANSPARENT_BLACK + letter["th"] + "[/color]" + ", "
 		else:
+			all_letters_are_known = false
 			text += OPAQUE_BLACK + letter["th"] +"[/color]" +  ", "
-	text = text.trim_suffix(", ")
-	$Node2D/Label.bbcode_text = text
+	if all_letters_are_known:
+		$Node2D/Label.bbcode_text = "Found all required letters"
+	else:
+		text = text.trim_suffix(", ")
+		$Node2D/Label.bbcode_text = text
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

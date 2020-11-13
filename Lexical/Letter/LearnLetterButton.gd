@@ -27,5 +27,5 @@ func _on_Area2D_input_event(_viewport, event, _shape_idx):
 		for letter_id in letter_ids:
 			Game.letters_we_look_for.append(Game.letters[str(letter_id)])
 		Events.enters_lexical_world(null)
-		Game.active_test.queue_free()
+		Game.active_test.queue_free()  # TODO!
 		Game.active_test = null

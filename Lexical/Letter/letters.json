@@ -240,7 +240,11 @@
       "ย: I'm the consonant ย and I'm pronounced y, [sound]",
       "ย: I kinda look like the top part of the y used in English, don't you think?",
       "ย: Alright, let's get you tested!"
-    ]
+    ],
+    "test": {
+      "prompt": "ยา",
+      "distractors": ["ปา", "บา"]
+    }
   },
   "14": {
     "old_id": 15,
@@ -301,7 +305,11 @@
       "ต: Also, don't get me confused with ต, my brother the dt sound: he's got a dent (dt) on his head.",
       "ด: I'm pronounced t at the end of a syllable, because Thai people don't voice the last consonant in a syllable.",
       "ด: That's why Thai people can have a hard time dealing between words like side and site!"
-    ]
+    ],
+    "test": {
+      "prompt": "ได",
+      "distractors": ["ปไ", "บไ", "ไค", "ไต"]
+    }
   },
   "18": {
     "old_id": 19,

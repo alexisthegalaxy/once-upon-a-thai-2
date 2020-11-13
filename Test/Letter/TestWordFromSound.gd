@@ -64,7 +64,7 @@ func init(_letter_id, _over_letter):
 	# TODO
 	play_audio_after_one_second()
 	
-	$TestSoundPlayer.init(letter["test"]["prompt"])
+	$TestSoundPlayer.init_sound_player(letter["test"]["prompt"])
 	set_distractors()
 	set_choices()
 	hide_answers()
