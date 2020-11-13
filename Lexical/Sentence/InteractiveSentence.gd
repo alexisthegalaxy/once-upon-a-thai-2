@@ -3,11 +3,12 @@ extends Node2D
 var words = []
 var children = []
 
-func init(sentence, main_word_id):
+func init_interactive_sentence(sentence, main_word_id):
 	var current_x = 0
 	for child in children:
 		child.queue_free()
 	children = []
+	$Node2D/TestSoundPlayer.init_sound_player(sentence["th"].replace("_", ""))
 	if sentence["id"] in Game.known_sentences:
 		$Node2D/Translation.text = sentence["en"]
 	else:

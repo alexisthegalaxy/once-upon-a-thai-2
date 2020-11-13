@@ -2,8 +2,10 @@ extends CanvasLayer
 
 var has_learnt_the_sentence = false
 var has_seen_the_sentence = false
+var sentence = null
 
 func sentence_discovery_init(sentence_id, is_translated):
+	sentence = Game.sentences[str(sentence_id)]
 	if is_translated:
 		$LabelSmall.hide()
 		$Label.text = "You've learned a sentence!"
@@ -21,7 +23,7 @@ func sentence_discovery_init(sentence_id, is_translated):
 			has_seen_the_sentence = true
 #		$Label.text = "You've discovered a sentence!"
 #		$LabelSmall.text = "It might help you later to guess the meaning of its words"
-	$Sentence.init(Game.sentences[str(sentence_id)], null)
+	$Sentence.init_interactive_sentence(sentence, null)
 	
 func _on_Button_pressed():
 	queue_free()

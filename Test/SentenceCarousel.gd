@@ -2,10 +2,11 @@ extends CanvasLayer
 var sentences = []
 var current_sentence_index = 0
 var word_id
+
 func _ready():
 	pass # Replace with function body.
 
-func init(_word_id):
+func init_sentence_carousel(_word_id):
 	word_id = _word_id
 	$Thai.text = Game.words[str(word_id)]["th"]
 #	print('Game.seen_sentences')
@@ -17,10 +18,13 @@ func init(_word_id):
 			sentences.append(sentence)
 	if sentences:
 		init_interactive_sentence()
-#	print(sentences)
+	update_sentence_counter()
+
+func update_sentence_counter():
+	$SentenceCounter.text = str(current_sentence_index + 1) + " / " + str(len(sentences))
 
 func init_interactive_sentence():
-	$InteractiveSentence.init(sentences[current_sentence_index], word_id)
+	$InteractiveSentence.init_interactive_sentence(sentences[current_sentence_index], word_id)
 
 func hide():
 	$bg.hide()
@@ -30,6 +34,7 @@ func hide():
 	$Button.hide()
 	$NoSentence.hide()
 	$InteractiveSentence.hide()
+	$SentenceCounter.hide()
 
 func show():
 	$bg.show()
@@ -38,6 +43,7 @@ func show():
 		if len(sentences) > 1:
 			$right_arrow.show()
 			$left_arrow.show()
+			$SentenceCounter.show()
 	$Thai.show()
 	$Button.show()
 	if not sentences:
@@ -59,7 +65,6 @@ func _on_LeftArea_mouse_entered():
 func _on_LeftArea_mouse_exited():
 	$left_arrow.modulate = Color(1, 1, 1, 1)
 
-
 func _on_Button_pressed():
 	hide()
 
@@ -69,6 +74,7 @@ func _on_LeftArea_input_event(_viewport, event, _shape_idx):
 		if current_sentence_index < 0:
 			current_sentence_index += len(sentences)
 		init_interactive_sentence()
+		update_sentence_counter()
 
 func _on_RightArea_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
@@ -76,3 +82,4 @@ func _on_RightArea_input_event(_viewport, event, _shape_idx):
 		if current_sentence_index == len(sentences):
 			current_sentence_index = 0
 		init_interactive_sentence()
+		update_sentence_counter()

@@ -6179,11 +6179,11 @@ position = Vector2( 177.275, 1020.77 )
 is_pulsating = true
 
 [node name="Sacred Rock4" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 423.365, 927.186 )
+position = Vector2( 424.003, 919.102 )
 is_pulsating = true
 
 [node name="Sacred Rock7" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 274.109, 836.47 )
+position = Vector2( 271.131, 823.281 )
 is_pulsating = true
 
 [node name="Sacred Rock8" parent="YSort" instance=ExtResource( 23 )]
@@ -6193,7 +6193,7 @@ position = Vector2( 936.329, 377.283 )
 position = Vector2( 1173.96, 594.042 )
 
 [node name="Sacred Rock6" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 364.922, 1171.83 )
+position = Vector2( 369.994, 1178.12 )
 is_pulsating = true
 
 [node name="Sacred Rock5" parent="YSort" instance=ExtResource( 23 )]
@@ -6256,7 +6256,7 @@ position = Vector2( 699.744, 467.54 )
 position = Vector2( 1295.12, 160.862 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( -24.8415, 585.514 )
+position = Vector2( 352.365, 985.415 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6540,11 +6540,11 @@ position = Vector2( 1073.69, -161.101 )
 word_id = 156
 
 [node name="Node2D4" parent="." instance=ExtResource( 28 )]
-position = Vector2( 425.768, 926.376 )
+position = Vector2( 427.257, 935.098 )
 word_id = 82
 
 [node name="Node2D5" parent="." instance=ExtResource( 28 )]
-position = Vector2( 363.44, 1140.96 )
+position = Vector2( 367.903, 1136.09 )
 word_id = 207
 
 [node name="Node2D2" parent="." instance=ExtResource( 29 )]

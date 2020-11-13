@@ -83,20 +83,30 @@ func _process(delta):
 	#		var next_position = self.position + velocity * delta
 			velocity = self.move_and_slide(velocity)
 			if rng.randi() % 50 == 1:
-				velocity = 4 * Vector2(rng.randi() % MAX_SPEED - MAX_SPEED / 2, rng.randi() % MAX_SPEED - MAX_SPEED / 2)
+				velocity = 4 * Vector2(rng.randi() % MAX_SPEED - MAX_SPEED / 2.0, rng.randi() % MAX_SPEED - MAX_SPEED / 2.0)
 			elif rng.randi() % 50 == 1:
 				velocity = Vector2(0, 0)
 
 func starts_disappearing():
 	is_disappearing = true
 
+# interact functions such as this one are lauched by the space_bar_to_interact in player.gd
 func interact():
 	Game.player.stop_walking()
+	start_test()
+
+func start_test():
+#	get_tree().get_current_scene().rotate(0.1)
 	Game.start_test("res://Test/TestGuessMeaning.tscn", id, self)
+	
 
 func _on_Area2D_body_entered(body):
 	if body == Game.player:
-		Game.gains_focus(self)
+		# if the Player starts the interaction
+#		Game.gains_focus(self)  
+		# if the Spell starts the interaction
+		if not Game.is_overworld_frozen():
+			interact()
 
 func _on_Area2D_body_exited(body):
 	if body == Game.player:

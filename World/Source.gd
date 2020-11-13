@@ -25,6 +25,7 @@ func _ready():
 		$Light.hide()
 	if is_corrupted:
 		$Sprite.hide()
+		$CorruptedSprite.show()
 		var _e = $Timer.connect("timeout", self, "timeout")
 	else:
 		$CorruptedSprite.hide()

@@ -124,6 +124,6 @@ func answered_correctly():
 	Game.start_test("res://Test/Letter/TestWordFromSound.tscn", letter_id, over_letter)
 	queue_free()
 
-
-func _on_Button_pressed():
-	$SentenceCarousel.show()
+#func _on_Button_pressed():
+#	# not sure if this is used
+#	$SentenceCarousel.show()

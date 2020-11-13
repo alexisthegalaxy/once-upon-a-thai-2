@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Test/test_bg.png" type="Texture" id=1]
 [ext_resource path="res://Test/arrow_next.png" type="Texture" id=2]
@@ -7,14 +7,18 @@
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Lexical/Sentence/InteractiveSentence.tscn" type="PackedScene" id=6]
 
-[sub_resource type="DynamicFont" id=1]
-size = 11
-font_data = ExtResource( 5 )
-
 [sub_resource type="CapsuleShape2D" id=2]
 
 [sub_resource type="DynamicFont" id=3]
 size = 14
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 11
 font_data = ExtResource( 5 )
 
 [node name="SentenceCarousel" type="CanvasLayer"]
@@ -25,21 +29,6 @@ modulate = Color( 0.917647, 0.917647, 0.917647, 1 )
 scale = Vector2( 1, 0.666667 )
 texture = ExtResource( 1 )
 centered = false
-
-[node name="Button" type="Button" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -11.0
-margin_right = 11.0
-margin_bottom = 11.0
-custom_fonts/font = SubResource( 1 )
-text = "OK"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="RightArea" type="Area2D" parent="."]
 __meta__ = {
@@ -103,10 +92,40 @@ __meta__ = {
 [node name="InteractiveSentence" parent="." instance=ExtResource( 6 )]
 position = Vector2( 160, 40 )
 scale = Vector2( 1, 0.897581 )
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+
+[node name="SentenceCounter" type="Label" parent="."]
+anchor_left = -0.000674665
+anchor_right = -0.000674665
+anchor_bottom = 0.0722222
+margin_left = 30.6566
+margin_top = 9.28333
+margin_right = 70.6566
+margin_bottom = 23.2833
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "-1 / -1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -11.0
+margin_right = 11.0
+margin_bottom = 11.0
+custom_fonts/font = SubResource( 1 )
+text = "OK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="input_event" from="RightArea" to="." method="_on_RightArea_input_event"]
 [connection signal="mouse_entered" from="RightArea" to="." method="_on_RightArea_mouse_entered"]
 [connection signal="mouse_exited" from="RightArea" to="." method="_on_RightArea_mouse_exited"]
 [connection signal="input_event" from="LeftArea" to="." method="_on_LeftArea_input_event"]
 [connection signal="mouse_entered" from="LeftArea" to="." method="_on_LeftArea_mouse_entered"]
 [connection signal="mouse_exited" from="LeftArea" to="." method="_on_LeftArea_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

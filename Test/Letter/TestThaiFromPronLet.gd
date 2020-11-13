@@ -45,7 +45,7 @@ func init(_letter_id, _over_letter):
 	rng.randomize()
 	letter = Game.letters[str(letter_id)]
 	SoundPlayer.play_thai(letter["audio"])
-	$TestSoundPlayer.init(letter["audio"])
+	$TestSoundPlayer.init_sound_player(letter["audio"])
 	$Thai.text = letter["en"]
 	set_distractors()
 	set_choices()

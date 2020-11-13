@@ -63,8 +63,6 @@ position = Vector2( 173.752, 114.401 )
 [node name="LearnLetterButton" parent="." instance=ExtResource( 7 )]
 position = Vector2( 32.8155, 60.6655 )
 
-[node name="SentenceCarousel" parent="." instance=ExtResource( 5 )]
-
 [node name="Button" type="Button" parent="."]
 margin_left = 108.367
 margin_top = 68.5
@@ -75,4 +73,6 @@ text = "Show sentences with that word"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="SentenceCarousel" parent="." instance=ExtResource( 5 )]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

@@ -50,6 +50,7 @@ func init_learn_letter_button():
 		$LearnLetterButton.queue_free()
 
 func init(word_id, _over_word):
+	
 	Game.can_move = false
 	Game.active_test = self
 	over_word = _over_word
@@ -76,11 +77,12 @@ func init(word_id, _over_word):
 		$answer_5.show()
 		$answer_5.init(self, choices[4]["en"], choices[4]["id"] == word["id"])
 	
-	$SentenceCarousel.init(word_id)
+	$SentenceCarousel.init_sentence_carousel(word_id)
 	
 func _ready():
 	set_alpha()
 	$SentenceCarousel.hide()
+	$Button.show()
 
 func _process(delta):
 	if alpha < 1:
@@ -101,6 +103,5 @@ func answered_correctly():
 	Game.dialog_press_e_to_see_it('word')
 	queue_free()
 	
-
 func _on_Button_pressed():
 	$SentenceCarousel.show()
