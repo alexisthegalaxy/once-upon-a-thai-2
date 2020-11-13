@@ -3,10 +3,11 @@ extends KinematicBody2D
 export var id = 0
 export var is_following_player = false
 
+
 # Moving
 const ACCELERATION = 1200
 const FRICTION = 1200
-const MAX_SPEED = 30  # 100
+const MAX_SPEED = 60  # 100
 export var can_move = false
 var velocity = Vector2.ZERO
 var will_move_in = 0
@@ -19,6 +20,7 @@ export var wobbles = true
 var wobbling_time = 0
 var y = 0
 var is_birthing = true
+var is_frozen = false
 
 # events are an array that contains first the event name, then the array of parameters
 export(Array) var pre_dialog_event = []
@@ -96,9 +98,16 @@ func interact():
 	start_test()
 
 func start_test():
-#	get_tree().get_current_scene().rotate(0.1)
-	Game.start_test("res://Test/TestGuessMeaning.tscn", id, self)
-	
+	Game.is_frozen = true
+	Game.can_move = false
+	var test_start_animation = load("res://Test/TestStartAnimation.tscn").instance()
+	test_start_animation.init(word["th"], "Spell")
+	self.add_child(test_start_animation)
+	test_start_animation.connect("test_can_start", self, "start_test_after_animation" )
+
+func start_test_after_animation():
+	var first_test = "res://Test/TestGuessMeaning.tscn"
+	Game.start_test(first_test, id, self)
 
 func _on_Area2D_body_entered(body):
 	if body == Game.player:

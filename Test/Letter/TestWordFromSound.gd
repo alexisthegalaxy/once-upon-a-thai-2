@@ -106,10 +106,11 @@ func answered_correctly():
 	# This is the fourth and currently last test
 #	Game.can_move = true
 	Game.active_test = null
+	Game.is_frozen = false
 #	Game.player.can_interact = true
 	Game.learn_letter(letter)
 	over_letter.starts_disappearing()
-	Game.dialog_press_e_to_see_it('letter')
+	Game.dialog_press_f_to_see_it('letter')
 	if Game.looking_for_letter__node:
 		Game.looking_for_letter__node.get_node("Node2D").show()
 	queue_free()

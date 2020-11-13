@@ -44,11 +44,12 @@ var can_read_thai = false
 var hp = 5.0
 var max_hp = 5.0
 var rng = RandomNumberGenerator.new()
+var is_frozen = false
 
 func is_overworld_frozen():
-	return active_test or current_dialog
+	return active_test or current_dialog or is_frozen
 
-func dialog_press_e_to_see_it(learnt_item):
+func dialog_press_f_to_see_it(learnt_item):
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var lines = []
 	if learnt_item == "sentence":

@@ -50,7 +50,6 @@ func init_learn_letter_button():
 		$LearnLetterButton.queue_free()
 
 func init(word_id, _over_word):
-	
 	Game.can_move = false
 	Game.active_test = self
 	over_word = _over_word
@@ -97,10 +96,11 @@ func answered_correctly():
 #	Game.active_test = null
 	SoundPlayer.play_thai(word["th"])
 	Game.player.can_interact = true
+	Game.is_frozen = false
 	if not word["id"] in Game.known_words:
 		Game.known_words.append(word["id"])
 	over_word.starts_disappearing()
-	Game.dialog_press_e_to_see_it('word')
+	Game.dialog_press_f_to_see_it('word')
 	queue_free()
 	
 func _on_Button_pressed():
