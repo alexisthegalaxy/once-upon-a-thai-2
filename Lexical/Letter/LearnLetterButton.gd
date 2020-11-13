@@ -7,6 +7,11 @@ var letter_ids = []
 
 func init(_letter_ids):
 	letter_ids = _letter_ids
+	var text = "Go to your Memory Palace to learn:\n\n"
+	for letter_id in letter_ids:
+		text += Game.letters[str(letter_id)]["th"] + ", "
+	text = text.trim_suffix(", ")
+	$Label.text = text
 
 func _process(delta):
 	if mouse_in:
