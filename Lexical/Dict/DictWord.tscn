@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Lexical/Dict/DictWord.gd" type="Script" id=1]
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=3]
@@ -15,6 +15,8 @@ region_rect = Rect2( 0, 0, 555, 555 )
 [sub_resource type="StyleBoxTexture" id=5]
 texture = ExtResource( 4 )
 region_rect = Rect2( 0, 0, 555, 555 )
+
+[sub_resource type="StyleBoxFlat" id=6]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 4 )
@@ -35,6 +37,7 @@ margin_bottom = 10.7572
 custom_styles/hover = SubResource( 3 )
 custom_styles/pressed = SubResource( 4 )
 custom_styles/focus = SubResource( 5 )
+custom_styles/disabled = SubResource( 6 )
 custom_styles/normal = SubResource( 1 )
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )

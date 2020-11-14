@@ -8,6 +8,7 @@ var word
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$SentenceCarousel.hide()
 	pass # Replace with function body.
 
 func init_word_page(_word):
@@ -19,4 +20,14 @@ func init_word_page(_word):
 	$ToneDisplay.init_tone_display(word["tones"])
 
 func _on_Button_pressed():
+	print('ya!')
 	$SentenceCarousel.show()
+
+
+func _on_OkButton_pressed():
+	var dict = load("res://Lexical/Dict/Dict.tscn").instance()
+	Game.player.dict = dict
+	dict.init()
+	get_tree().current_scene.add_child(dict)
+	Game.player.word_page = null
+	self.queue_free()

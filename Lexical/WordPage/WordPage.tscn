@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Lexical/Dict/dict-background.png" type="Texture" id=1]
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=2]
@@ -16,6 +16,9 @@ font_data = ExtResource( 2 )
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
 font_data = ExtResource( 2 )
 
 [node name="WordPage" type="CanvasLayer"]
@@ -59,10 +62,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -88.0
-margin_top = -40.5165
-margin_right = 88.0
-margin_bottom = -12.5165
+margin_left = -88.2845
+margin_top = -87.7378
+margin_right = 87.7155
+margin_bottom = -59.7378
 custom_fonts/font = SubResource( 3 )
 text = "Show sentences with that word"
 __meta__ = {
@@ -76,5 +79,21 @@ position = Vector2( 59.4534, 70.2631 )
 
 [node name="SentenceCarousel" parent="." instance=ExtResource( 3 )]
 visible = false
-position = Vector2( 151.002, 117.296 )
+position = Vector2( 154.415, 109.9 )
+
+[node name="OkButton" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -28.0894
+margin_top = -42.1113
+margin_right = 27.9106
+margin_bottom = -14.1113
+custom_fonts/font = SubResource( 4 )
+text = "Ok"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="OkButton" to="." method="_on_OkButton_pressed"]

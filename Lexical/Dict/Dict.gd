@@ -23,10 +23,10 @@ func get_words_with_order():
 	
 func _input(event) -> void:
 	if event is InputEventPanGesture:
-		var y_delta = -event.delta.y
+		var y_delta = -event.delta.y * 10
 		if y_bottom >= 0 and y_delta > 0:
 			return
-		y_bottom += y_delta
+		y_bottom = y_bottom + y_delta
 		for word in displayed_words:
 			word.position.y += y_delta
 #	if Input.is_action_just_pressed("ui_page_down"):
@@ -38,6 +38,7 @@ func init():
 	var DictWord = load("res://Lexical/Dict/DictWord.tscn")
 	var x = 0
 	var y = 0
+	var varying_y = 3
 	var words_with_order = get_words_with_order()
 	words_with_order.sort_custom(self, "sort_on_teaching_order")
 	
@@ -46,8 +47,8 @@ func init():
 		$Control.add_child(dict_word)
 		displayed_words.append(dict_word)
 		dict_word.init_dict_word(word["id"])
-		dict_word.position = Vector2(s_x(x), s_y(y))
-		
+		dict_word.position = Vector2(s_x(x), s_y(y) + varying_y)
+		varying_y = -varying_y
 		x += 1
 		if x > NUMBER_OF_WORDS_PER_LINE:
 			y += 1

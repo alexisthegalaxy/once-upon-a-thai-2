@@ -8,6 +8,7 @@ func init_dict_word(word_id):
 	if Game.knows_word(word):
 		$Button.modulate = Color(0, 1, 1, 1)
 	else:
+#		$Button.disabled = true
 		$Button.modulate = Color(1, 1, 1, 1)
 
 #func _on_StaticBody2D_input_event(viewport, event, shape_idx):
@@ -15,10 +16,11 @@ func init_dict_word(word_id):
 #		SoundPlayer.play_sound(word["th"])
 
 func _on_Button_pressed():
-	SoundPlayer.play_thai(word["th"])
-	var word_page = load("res://Lexical/WordPage/WordPage.tscn").instance()
-	Game.player.word_page = word_page
-	get_tree().current_scene.add_child(word_page)
-	word_page.init_word_page(word["id"])
-	Game.player.dict.queue_free()
-	Game.player.dict = null
+	if Game.knows_word(word):
+		SoundPlayer.play_thai(word["th"])
+		var word_page = load("res://Lexical/WordPage/WordPage.tscn").instance()
+		Game.player.word_page = word_page
+		get_tree().current_scene.add_child(word_page)
+		word_page.init_word_page(word["id"])
+		Game.player.dict.queue_free()
+		Game.player.dict = null
