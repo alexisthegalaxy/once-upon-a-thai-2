@@ -64,8 +64,8 @@ func _process(delta):
 		self.scale.y = ratio
 		if ratio <= 0:
 			queue_free()
-			if len(Game.known_words) == 6:
-				Game.pop_victory_screen()
+			
+			Game.a_word_is_learnt()
 	if can_move:
 #		print('is_following_player', is_following_player)
 		if is_following_player:
@@ -112,7 +112,7 @@ func start_test_after_animation():
 func _on_Area2D_body_entered(body):
 	if body == Game.player:
 		# if the Player starts the interaction
-#		Game.gains_focus(self)  
+#		Game.gains_focus(self)
 		# if the Spell starts the interaction
 		if not Game.is_overworld_frozen() and not is_frozen:
 			interact()

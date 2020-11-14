@@ -1,8 +1,9 @@
 extends Node
 
 var events = {
-	"yaai_has_given_last_warning_before_forest": false,
-	"yaai_explains_rock": false,
+	"has_learnt_four_first_words": false,
+	"yaai_has_given_last_warning_before_forest": true,
+	"yaai_explains_rock": true,
 	"has_gone_to_rock": true,
 	"has_finished_the_letter_world_the_first_time": true,
 	"can_see_the_looking_for_letter_banner": true,
@@ -56,6 +57,10 @@ func npc_walks_to(parameters):
 		Game.current_focus[0].starts_going_toward(target_positions[0])
 	else:
 		print('nowhere to go!')
+
+func npc_disappears_in_white_orb(parameters):
+	var npc = parameters[0]
+	npc.disappear_in_white_orb()
 
 func learns_first_sentence(calling_npc):
 	Game.loses_focus(Game.current_focus)

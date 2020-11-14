@@ -125,6 +125,11 @@ func _on_Area2D3_body_entered(body):
 			$YSort/NPCs/Yaai.interact()
 
 func _on_Area2D6_body_entered(body):
+	if not body == Game.player:
+		return
+	# This is the are athat leads into the first forest.
+	# It can be used the first time for Yaai warning,
+	# and the second time for Yaai's instruction to go to Chaiyaphum
 	if not Events.events.yaai_has_given_last_warning_before_forest and Events.events.yaai_explains_rock:
 		Events.events.yaai_has_given_last_warning_before_forest = true
 		$YSort/NPCs/Yaai.dialog = [
@@ -134,3 +139,15 @@ func _on_Area2D6_body_entered(body):
 			"Yaai: Good luck, I'll watch you from here.",
 			]
 		$YSort/NPCs/Yaai.interact()
+	if not Events.events.has_learnt_four_first_words:
+		if 343 in Game.known_words and 345 in Game.known_words and 207 in Game.known_words and 82 in Game.known_words:
+			Events.events.has_learnt_four_first_words = true
+			$YSort/NPCs/Yaai.dialog = [
+#				"Yaai: That's good, [Name], very good!",
+#				"Yaai: Now, go to Chaiyaphum, and ask the grandmother of your friend Ploy to carry on with your training.",
+#				"Yaai: I have very important issues to solve in the spirit world.",
+				"Yaai: If everything goes well, I'll be seeing you soon, [Name].",
+				]
+			$YSort/NPCs/Yaai.post_dialog_event = ["npc_disappears_in_white_orb", [$YSort/NPCs/Yaai]]
+			$YSort/NPCs/Yaai.interact()
+			

@@ -9,7 +9,7 @@ var sentences = []
 var letters = []
 
 # The following are a list of IDs
-var known_words = [1, 2, 3]
+var known_words = [1, 2, 3, 343, 345, 207, 82] 
 var known_sentences = [196, 197, 198, 199]  # we know the translation. Does not contain seen_sentences.
 var seen_sentences = []  # we don't know the translation
 #var known_letters = []  # list of IDs
@@ -66,6 +66,18 @@ func dialog_press_f_to_see_it(learnt_item):
 		lines = ["Press F to open your dictionary and see your words"]
 	Game.current_dialog.init(lines, null, null, null)
 	get_tree().current_scene.add_child(Game.current_dialog)
+
+func a_word_is_learnt():
+	# Whenever a word is learnt, we run this function
+	if len(Game.known_words) == 10:
+		Game.pop_victory_screen()
+#	if not Events.events.has_learnt_four_first_words:
+#		if 343 in Game.known_words and 345 in Game.known_words and 207 in Game.known_words and 82 in Game.known_words:
+#			Events.events.has_learnt_four_first_words = true
+#			if not Game.current_focus:
+#				Game.current_focus.append(get_tree().current_scene.get_node("YSort").get_node("NPCs").get_node("Yaai"))
+#			Events.npc_walks_to([[player.position]])
+			
 
 func discovers_sentence(sentence_id, is_translated):
 	Game.can_move = false

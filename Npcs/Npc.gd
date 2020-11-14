@@ -53,7 +53,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if is_walking_towards:
-#		print(position)
 		position = position + velocity * delta * speed
 		if position.distance_to(is_walking_towards) < 5:
 			is_walking_towards = null
@@ -82,6 +81,9 @@ func starts_going_toward(target_position):
 #		Game.current_dialog.dialog = dialog
 #		var current_map = get_tree().current_scene
 #		current_map.add_child(Game.current_dialog)
+
+func disappear_in_white_orb():
+	queue_free()
 
 func npc_turn_towards(target):
 	# Turns toward the Vector2 target (can be a place to go, the player...)
