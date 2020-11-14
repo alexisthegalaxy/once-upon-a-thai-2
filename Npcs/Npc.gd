@@ -12,6 +12,11 @@ var will_go_to = []  # array of vector2 positions
 export(Array) var pre_dialog_event = []
 export(Array) var post_dialog_event = []
 
+# white orb disappearance
+var white_orb_growing = false
+var white_orb_fading = false
+var alpha = 1
+
 func make_animation(animation_name, key_1, key_2, key_3, key_4):
 	var animation = Animation.new()
 	animation.add_track(Animation.TYPE_VALUE)
@@ -52,6 +57,14 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if white_orb_growing:
+		$SpecialEffect/WhiteCircle.scale.x += delta * 4
+		$SpecialEffect/WhiteCircle.scale.y += delta * 4
+	if white_orb_fading:
+		alpha = max(0, alpha - delta)
+		$SpecialEffect/WhiteCircle.modulate = Color(1, 1, 1, alpha)
+		if alpha == 0:
+			free_npc()
 	if is_walking_towards:
 		position = position + velocity * delta * speed
 		if position.distance_to(is_walking_towards) < 5:
@@ -83,6 +96,24 @@ func starts_going_toward(target_position):
 #		current_map.add_child(Game.current_dialog)
 
 func disappear_in_white_orb():
+	$SpecialEffect/WhiteCircle.show()
+	white_orb_growing = true
+	# a white orb expands from the NPC
+	# When the white orbs makes the entire screen, the NPC disappears
+	# The white orb becomes more transparent
+	var timer_to_hide_npc = Timer.new()
+	timer_to_hide_npc.connect("timeout", self, "hide_npc_and_white_orb_fades")
+	timer_to_hide_npc.set_wait_time(0.3)
+	timer_to_hide_npc.set_one_shot(true)
+	timer_to_hide_npc.autostart = true
+	timer_to_hide_npc.start()
+	add_child(timer_to_hide_npc)
+	
+func hide_npc_and_white_orb_fades():
+	white_orb_fading = true
+	$Sprite.hide()
+	
+func free_npc():
 	queue_free()
 
 func npc_turn_towards(target):

@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Npcs/sprites/yaai.png" type="Texture" id=1]
+[ext_resource path="res://UI/WhiteCircle.png" type="Texture" id=2]
 [ext_resource path="res://Npcs/Npc.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -41,5 +42,13 @@ shape = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/WalkDown = SubResource( 3 )
+
+[node name="SpecialEffect" type="CanvasLayer" parent="."]
+
+[node name="WhiteCircle" type="Sprite" parent="SpecialEffect"]
+visible = false
+position = Vector2( 0.234039, -0.837585 )
+scale = Vector2( 0.079, 0.079 )
+texture = ExtResource( 2 )
 [connection signal="body_entered" from="InteractBox" to="." method="_on_InteractBox_body_entered"]
 [connection signal="body_exited" from="InteractBox" to="." method="_on_InteractBox_body_exited"]
