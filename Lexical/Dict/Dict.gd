@@ -45,8 +45,7 @@ func init():
 		var dict_word = DictWord.instance()
 		$Control.add_child(dict_word)
 		displayed_words.append(dict_word)
-		dict_word.set_thai(word["th"])
-		dict_word.set_known(Game.knows_word(word))
+		dict_word.init_dict_word(word["id"])
 		dict_word.position = Vector2(s_x(x), s_y(y))
 		
 		x += 1

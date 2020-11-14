@@ -23,15 +23,16 @@ func convert_tone_letter_to_name(tone_letter):
 		return "Falling"
 	return "Unknown"
 
-func init(tones):
+func init_tone_display(tones):
 	var SingleToneDisplay = load("res://Lexical/Tones/SingleToneDisplay.tscn")
-	var x = position.x
+	var x = position.x - 36
+	var y = position.y - 60
 	for tone in tones:
 		var single_tone_display = SingleToneDisplay.instance()
 		single_tone_display.init_single_tone_display(convert_tone_letter_to_name(tone))
-		x += 10
-		$ToneDisplay.add_child(single_tone_display)
-		single_tone_display.position = Vector2(x, position.y)
+		x += 28
+		self.add_child(single_tone_display)
+		single_tone_display.position = Vector2(x, y)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -1,24 +1,24 @@
 extends Node2D
 
-var thai = "นาม"
-var is_known = false
+var word
 
-func set_thai(_thai):
-	thai = _thai
-	$Button.text = thai
-
-func set_known(_is_known):
-	is_known = _is_known
-	if is_known:
+func init_dict_word(word_id):
+	word = Game.words[str(word_id)]
+	$Button.text = word["th"]
+	if Game.knows_word(word):
 		$Button.modulate = Color(0, 1, 1, 1)
 	else:
 		$Button.modulate = Color(1, 1, 1, 1)
 
-func _on_StaticBody2D_input_event(viewport, event, shape_idx):
-	print("click")
-	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
-		SoundPlayer.play_sound(thai)
+#func _on_StaticBody2D_input_event(viewport, event, shape_idx):
+#	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
+#		SoundPlayer.play_sound(word["th"])
 
 func _on_Button_pressed():
-	print("click ", thai)
-	SoundPlayer.play_thai(thai)
+	SoundPlayer.play_thai(word["th"])
+	var word_page = load("res://Lexical/WordPage/WordPage.tscn").instance()
+	Game.player.word_page = word_page
+	get_tree().current_scene.add_child(word_page)
+	word_page.init_word_page(word["id"])
+	Game.player.dict.queue_free()
+	Game.player.dict = null

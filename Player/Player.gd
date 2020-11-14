@@ -14,10 +14,14 @@ var speed_when_forced = 75
 var can_interact = true  # meaning the player is near a npc. false during a dialog.
 
 var arrow = null  # the arrow that is sometimes shown to indicate direction to follow
+# UI
 var hub = null  # The screen that appears when pressing f and gives access to sentences, etc.
 var dict = null
 var alphabet = null
 var notebook = null
+var word_page = null
+var letter_page = null
+
 var is_forced_towards = null
 func make_animation(animation_name, key_1, key_2, key_3, key_4):
 	var animation = Animation.new()
@@ -78,6 +82,12 @@ func _on_press_f():
 	elif notebook:
 		notebook.queue_free()
 		notebook = null
+	elif word_page:
+		word_page.queue_free()
+		word_page = null
+	elif letter_page:
+		letter_page.queue_free()
+		letter_page = null
 	else:
 		hub = load("res://UI/UIHub.tscn").instance()
 		hub.init(self)
