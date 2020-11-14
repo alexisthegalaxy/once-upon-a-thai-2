@@ -54,5 +54,13 @@ func _on_Area2D_mouse_exited():
 
 func _on_Area2D_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
-		SoundPlayer.play_thai(word["th"])
+		if Game.player.notebook:
+			SoundPlayer.play_thai(word["th"])
+			var word_page = load("res://Lexical/WordPage/WordPage.tscn").instance()
+			Game.player.word_page = word_page
+			get_tree().current_scene.add_child(word_page)
+			word_page.init_word_page(word["id"])
+			Game.player.notebook.queue_free()
+			Game.player.notebook = null
+			
 

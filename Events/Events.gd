@@ -1,7 +1,8 @@
 extends Node
 
 var events = {
-	"yaai_explains_rock": true,
+	"yaai_has_given_last_warning_before_forest": false,
+	"yaai_explains_rock": false,
 	"has_gone_to_rock": true,
 	"has_finished_the_letter_world_the_first_time": true,
 	"can_see_the_looking_for_letter_banner": true,
@@ -59,8 +60,16 @@ func npc_walks_to(parameters):
 func learns_first_sentence(calling_npc):
 	Game.loses_focus(Game.current_focus)
 	Game.discovers_sentence(196, true)
-	calling_npc.dialog = ["Yaai: Well done [Name]! Now, go deeper in the forest."]
-	calling_npc.post_dialog_event = []
+	calling_npc.dialog = [
+		"Yaai: Well done [Name]!",
+		"Yaai: Now, your test will be to guess the meannig of all words you will find deeper in the forest.",
+		"Yaai: I believe four types of Spells live there.",
+		"Yaai: Good luck, I'll watch you from here.",
+		]
+	calling_npc.post_dialog_event = ["set_yaai_has_given_last_warning_before_forest_as_true", $YSort/NPCs/Yaai]
+
+func set_yaai_has_given_last_warning_before_forest_as_true(calling_npc):
+	events.yaai_has_given_last_warning_before_forest = true
 
 func immediately_enters_lexical_world():
 	Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", 13, 71.66)

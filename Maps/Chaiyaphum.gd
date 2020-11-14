@@ -124,3 +124,13 @@ func _on_Area2D3_body_entered(body):
 			$YSort/NPCs/Yaai.is_walking_towards = []  # to make sure NPC can interact
 			$YSort/NPCs/Yaai.interact()
 
+func _on_Area2D6_body_entered(body):
+	if not Events.events.yaai_has_given_last_warning_before_forest and Events.events.yaai_explains_rock:
+		Events.events.yaai_has_given_last_warning_before_forest = true
+		$YSort/NPCs/Yaai.dialog = [
+			"Yaai: Well done [Name]!",
+			"Yaai: Now, your test will be to guess the meannig of all words you will find deeper in the forest.",
+			"Yaai: I believe four types of Spells live there.",
+			"Yaai: Good luck, I'll watch you from here.",
+			]
+		$YSort/NPCs/Yaai.interact()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Lexical/Letter/LetterPage.gd" type="Script" id=1]
 [ext_resource path="res://Dialog/PlainDialogBackground.png" type="Texture" id=2]
@@ -17,6 +17,11 @@ font_data = ExtResource( 6 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 26
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 11
+extra_spacing_top = -10
 font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=4]
@@ -79,6 +84,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Mem" type="Label" parent="."]
+margin_left = 23.0891
+margin_top = 119.849
+margin_right = 166.089
+margin_bottom = 161.849
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "-ุ is placed under the consonant (>u<nder), and is shorter than the long u sound -ู."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="PronunciationLabel" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0.498039 )
 margin_left = 17.8782
@@ -96,14 +114,29 @@ __meta__ = {
 [node name="RegularFontLabel" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0.498039 )
 margin_left = 104.1
-margin_top = 26.7706
+margin_top = 26.592
 margin_right = 154.1
-margin_bottom = 48.7706
+margin_bottom = 48.592
 custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "standard font"
 align = 1
 __meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MemLabel" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0.498039 )
+margin_left = 17.6229
+margin_top = 100.071
+margin_right = 95.6229
+margin_bottom = 122.071
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "How to remember it?"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 

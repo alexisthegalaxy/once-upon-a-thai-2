@@ -11,6 +11,9 @@ func init_letter_page(_letter_id):
 	$Thai.text = letter.th
 	$ThaiFont2.text = letter.th
 	$English.text = letter.en
+	$Mem.text = letter.mem
+	if letter.mem == "":
+		$MemLabel.hide()
 	$TestSoundPlayer.init_sound_player(letter["pron"])
 	if letter.class in ["LOW", "MID", "HIGH"]:
 		$Class.text = letter.class

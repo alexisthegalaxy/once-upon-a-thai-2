@@ -11,8 +11,8 @@ func init_alphabet_letter(letter_id):
 		$Button.modulate = Color(1, 1, 1, 1)
 
 func _on_Button_pressed():
-	if not Game.knows_letter(letter):
-		return
+#	if not Game.knows_letter(letter):  # should not be commented
+#		return
 	SoundPlayer.play_thai(letter["pron"])
 	var letter_page = load("res://Lexical/Letter/LetterPage.tscn").instance()
 	Game.player.letter_page = letter_page

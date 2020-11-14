@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Light/light.png" type="Texture" id=2]
@@ -43,10 +43,13 @@ extents = Vector2( 22.738, 15.7798 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 36.9489, 41.9385 )
 
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 87.3137, 7.46277 )
+
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 11.6567, 38.2656 )
 
-[node name="Map" type="Node2D"]
+[node name="Chaiyaphum" type="Node2D"]
 script = ExtResource( 22 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -151,6 +154,10 @@ position = Vector2( 706.331, -121.716 )
 position = Vector2( -98.8582, 631.194 )
 id = 1
 
+[node name="CollectibleLetter5" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 378.67, 699.718 )
+id = 1
+
 [node name="MajesticTree" parent="YSort" instance=ExtResource( 24 )]
 modulate = Color( 0.564706, 0.698039, 0.596078, 1 )
 position = Vector2( 206.986, 492.268 )
@@ -168,6 +175,9 @@ position = Vector2( 612.439, 777.079 )
 
 [node name="Bush41" parent="YSort/Bushes" instance=ExtResource( 9 )]
 position = Vector2( 795.223, 903.849 )
+
+[node name="Bush45" parent="YSort/Bushes" instance=ExtResource( 9 )]
+position = Vector2( 461.418, 1065.17 )
 
 [node name="Bush11" parent="YSort/Bushes" instance=ExtResource( 9 )]
 position = Vector2( 881.019, 369.106 )
@@ -612,9 +622,6 @@ position = Vector2( 941.961, 1021.3 )
 [node name="Tree739" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 731.324, 1182.4 )
 
-[node name="Tree39" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 783.226, 1201.49 )
-
 [node name="Tree40" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 253.612, 1090.93 )
 
@@ -883,7 +890,7 @@ position = Vector2( 800.463, 1081.51 )
 position = Vector2( 446.702, 1130.95 )
 
 [node name="Tree141" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 448.241, 1031.13 )
+position = Vector2( 448.241, 1034.56 )
 
 [node name="Tree2026" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 320.059, 1096.43 )
@@ -1126,7 +1133,7 @@ position = Vector2( 269.911, 737.64 )
 position = Vector2( 240.194, 748.172 )
 
 [node name="Tree139" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 369.946, 715.604 )
+position = Vector2( 454.187, 760.964 )
 
 [node name="Tree138" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 335.632, 699.544 )
@@ -1407,9 +1414,6 @@ position = Vector2( 415.762, 463.869 )
 [node name="Tree219" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 398.279, 660.746 )
 
-[node name="Tree226" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 394.978, 703.652 )
-
 [node name="Tree233" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 387.552, 747.384 )
 
@@ -1432,10 +1436,10 @@ position = Vector2( 278.162, 709.586 )
 position = Vector2( 233.31, 713.274 )
 
 [node name="Tree144" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 384.798, 696.626 )
+position = Vector2( 469.039, 741.986 )
 
 [node name="Tree143" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 357.715, 698.883 )
+position = Vector2( 447.673, 679.824 )
 
 [node name="Tree142" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 689.505, 732.698 )
@@ -1881,9 +1885,6 @@ position = Vector2( 910.708, 191.582 )
 [node name="Tree913" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 175.897, 169.382 )
 
-[node name="Tree411" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 403.107, 427.139 )
-
 [node name="Tree410" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 376.023, 429.396 )
 
@@ -2122,7 +2123,7 @@ position = Vector2( 465.946, 383.349 )
 position = Vector2( 457.71, 417.019 )
 
 [node name="Tree400" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 426.489, 406.11 )
+position = Vector2( 432.889, 406.863 )
 
 [node name="Tree399" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 488.92, 453.543 )
@@ -2270,9 +2271,6 @@ position = Vector2( 870.889, 921.643 )
 
 [node name="Tree231" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 505.882, 887.474 )
-
-[node name="Tree230" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 402.405, 728.406 )
 
 [node name="Tree239" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 390.739, 782.626 )
@@ -2668,7 +2666,7 @@ position = Vector2( 129.196, 1344.59 )
 position = Vector2( 102.113, 1346.85 )
 
 [node name="Tree590" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 685.684, 1186.66 )
+position = Vector2( 477.163, 1012.75 )
 
 [node name="Tree687" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 365.357, 1373 )
@@ -3249,9 +3247,6 @@ position = Vector2( 143.612, 726.897 )
 [node name="Tree284" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 112.391, 715.988 )
 
-[node name="Tree283" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 430.035, 717.809 )
-
 [node name="Tree282" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( -53.4993, 703.216 )
 
@@ -3650,9 +3645,6 @@ position = Vector2( 444.51, 444.894 )
 
 [node name="Tree368" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 482.87, 386.942 )
-
-[node name="Tree367" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 410.811, 428.389 )
 
 [node name="Tree366" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 464.166, 481.597 )
@@ -5533,7 +5525,7 @@ position = Vector2( 262.496, 944.213 )
 position = Vector2( 646.648, 1118.98 )
 
 [node name="Tree52" parent="YSort/Trees" instance=ExtResource( 13 )]
-position = Vector2( 765.008, 1202.37 )
+position = Vector2( 481.832, 1033.89 )
 
 [node name="Tree44" parent="YSort/Trees" instance=ExtResource( 13 )]
 position = Vector2( 132.988, 1011.78 )
@@ -6154,7 +6146,7 @@ position = Vector2( 423.087, 1139.57 )
 position = Vector2( 375.156, 1037.33 )
 
 [node name="Tree62" parent="YSort/Trees" instance=ExtResource( 13 )]
-position = Vector2( 808.444, 1215.9 )
+position = Vector2( 477.214, 1089.47 )
 
 [node name="Tree75" parent="YSort/Trees" instance=ExtResource( 13 )]
 position = Vector2( 688.619, 1169.59 )
@@ -6245,10 +6237,6 @@ can_move = true
 position = Vector2( 550.615, -72.3932 )
 id = 238
 
-[node name="Word8" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 477.808, 688.538 )
-id = 333
-
 [node name="PlayerHouse" parent="YSort" instance=ExtResource( 17 )]
 position = Vector2( 699.744, 467.54 )
 
@@ -6256,7 +6244,7 @@ position = Vector2( 699.744, 467.54 )
 position = Vector2( 1295.12, 160.862 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 605.844, 1019.75 )
+position = Vector2( 260.357, 621.682 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6272,17 +6260,16 @@ dialog = [ "Dad: Be strong [Name]." ]
 sprite_path = "res://Npcs/sprites/dad.png"
 direction = "left"
 
-[node name="Pet\'s Dad" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 591.223, 694.42 )
-dialog = [ "Are you looking for Pet? He's not here right now." ]
-sprite_path = "res://Npcs/sprites/dad.png"
-direction = "left"
+[node name="Pet\'s Mom" parent="YSort/NPCs" instance=ExtResource( 11 )]
+position = Vector2( 603.748, 683.811 )
+dialog = [ "Pet's mom: Are you looking for Pet? He's just left, he’s doing his shamanic initiation with his dad.", "Pet's mom: Come again later, you could be training together!" ]
+sprite_path = "res://Npcs/sprites/pets_mom.png"
 
 [node name="Pet" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 541.055, 744.049 )
+position = Vector2( 759.542, 827.493 )
 dialog = [ "Hey [Name]!" ]
 sprite_path = "res://Npcs/sprites/pet.png"
-direction = "left"
+direction = "right"
 
 [node name="Yaai" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 741.585, 508.096 )
@@ -6361,7 +6348,7 @@ position = Vector2( 99.6782, 661.502 )
 color = Color( 0.333333, 0.423529, 0.329412, 1 )
 
 [node name="Changelight in the forest4" parent="Changelights" instance=ExtResource( 12 )]
-position = Vector2( 204.055, 719.431 )
+position = Vector2( 203.429, 721.31 )
 color = Color( 0.462745, 0.54902, 0.454902, 1 )
 
 [node name="Changelight in the forest9" parent="Changelights" instance=ExtResource( 12 )]
@@ -6487,6 +6474,13 @@ shape = SubResource( 1 )
 position = Vector2( 483.01, 258.91 )
 shape = SubResource( 2 )
 
+[node name="Area2D6" type="Area2D" parent="."]
+position = Vector2( -287.205, 429.387 )
+
+[node name="YaaiGivesWarningBeforeForest" type="CollisionShape2D" parent="Area2D6"]
+position = Vector2( 482.477, 269.205 )
+shape = SubResource( 4 )
+
 [node name="Area2D3" type="Area2D" parent="."]
 
 [node name="Yaai talks about the rock and teaches the first sentence" type="CollisionShape2D" parent="Area2D3"]
@@ -6557,5 +6551,6 @@ stops_ids = [ 345, 343, 82, 207 ]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D5" to="." method="_on_Area2D5_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
+[connection signal="body_entered" from="Area2D6" to="." method="_on_Area2D6_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="." method="_on_Area2D3_body_entered"]
 [connection signal="body_entered" from="Area2D4" to="." method="_on_Area2D4_body_entered"]
