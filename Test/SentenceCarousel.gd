@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends Node2D
 var sentences = []
 var current_sentence_index = 0
 var word_id

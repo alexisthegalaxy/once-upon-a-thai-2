@@ -24,46 +24,35 @@ font_data = SubResource( 3 )
 size = 11
 font_data = ExtResource( 5 )
 
-[node name="SentenceCarousel" type="CanvasLayer"]
+[node name="SentenceCarousel" type="Node2D"]
 script = ExtResource( 3 )
 
 [node name="bg" type="Sprite" parent="."]
 modulate = Color( 0.917647, 0.917647, 0.917647, 1 )
+position = Vector2( -155.481, -92.5765 )
 scale = Vector2( 1, 0.666667 )
 texture = ExtResource( 1 )
 centered = false
 
 [node name="RightArea" type="Area2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="RightAreaCollision" type="CollisionShape2D" parent="RightArea"]
-position = Vector2( 40, 48 )
+position = Vector2( -119.437, -33.499 )
 shape = SubResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="LeftArea" type="Area2D" parent="."]
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="LeftAreaCollision" type="CollisionShape2D" parent="LeftArea"]
-position = Vector2( 280, 48 )
+position = Vector2( 120.563, -33.499 )
 shape = SubResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="right_arrow" type="Sprite" parent="."]
-position = Vector2( 40, 46 )
+position = Vector2( -119.437, -35.499 )
 scale = Vector2( 0.33, 0.41 )
 texture = ExtResource( 2 )
 
 [node name="left_arrow" type="Sprite" parent="."]
-position = Vector2( 280, 46 )
+position = Vector2( 120.563, -35.499 )
 scale = Vector2( 0.33, 0.41 )
 texture = ExtResource( 2 )
 flip_h = true
@@ -93,17 +82,17 @@ __meta__ = {
 }
 
 [node name="InteractiveSentence" parent="." instance=ExtResource( 6 )]
-position = Vector2( 160, 40 )
+position = Vector2( 0.0309029, -50.8937 )
 scale = Vector2( 1, 0.897581 )
 
 [node name="SentenceCounter" type="Label" parent="."]
 anchor_left = -0.000674677
 anchor_right = -0.000674677
 anchor_bottom = 0.0722224
-margin_left = 52.2159
-margin_top = 10.0
-margin_right = 98.2159
-margin_bottom = 19.0
+margin_left = -107.221
+margin_top = -71.499
+margin_right = -61.2215
+margin_bottom = -51.499
 custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "-1 / -1"
@@ -123,6 +112,7 @@ margin_bottom = 11.0
 custom_fonts/font = SubResource( 5 )
 text = "OK"
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 [connection signal="input_event" from="RightArea" to="." method="_on_RightArea_input_event"]

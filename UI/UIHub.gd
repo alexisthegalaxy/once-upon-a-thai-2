@@ -53,7 +53,6 @@ func _on_LetterWorld_pressed():
 			Game.player_position_on_overworld.x,
 			Game.player_position_on_overworld.y
 		)
-		
 	else:  # Going to the letter world
 		Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", 13, 71.66)
 

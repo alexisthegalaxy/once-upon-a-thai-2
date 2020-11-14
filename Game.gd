@@ -9,8 +9,8 @@ var sentences = []
 var letters = []
 
 # The following are a list of IDs
-var known_words = []
-var known_sentences = []  # we know the translation. Does not contain seen_sentences.
+var known_words = [1, 2, 3]
+var known_sentences = [196, 197, 198, 199]  # we know the translation. Does not contain seen_sentences.
 var seen_sentences = []  # we don't know the translation
 #var known_letters = []  # list of IDs
 var known_letters = [0, 11, 13, 21, 28]  # five letters

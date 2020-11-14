@@ -15,6 +15,7 @@ script = ExtResource( 3 )
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 320.0
 margin_bottom = 180.0
+mouse_filter = 1
 color = Color( 0, 0, 0, 0.501961 )
 __meta__ = {
 "_edit_use_anchors_": false
