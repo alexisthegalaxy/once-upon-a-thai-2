@@ -11,10 +11,6 @@ func init_dict_word(word_id):
 #		$Button.disabled = true
 		$Button.modulate = Color(1, 1, 1, 1)
 
-#func _on_StaticBody2D_input_event(viewport, event, shape_idx):
-#	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
-#		SoundPlayer.play_sound(word["th"])
-
 func _on_Button_pressed():
 	if Game.knows_word(word):
 		SoundPlayer.play_thai(word["th"])

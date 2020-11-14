@@ -22,7 +22,8 @@
     "test": {
       "prompt": "นอน",
       "distractors": ["ลอม", "ลอล", "มอน", "มอม", "มอล"]
-    }
+    },
+    "mem": "น has its loops >n<ot on the same side."
   },
   "1": {
     "old_id": 2,
@@ -34,7 +35,8 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "1",
-    "audio": "อา"
+    "audio": "อา",
+    "mem": "า looks like the right side of the letter A."
   },
   "2": {
     "old_id": 3,
@@ -46,7 +48,8 @@
     "final": "n",
     "class": "LOW",
     "frequency_index": "3",
-    "audio": "รอ"
+    "audio": "รอ",
+    "mem": "ร looks like a r that looks towards the left."
   },
   "3": {
     "old_id": 4,
@@ -64,7 +67,8 @@
       "-ั: I'm the letter -ั and I'm pronounced like a short \"ah\" sound. [sound]",
       "-ั: I'm a vowel and I float over a consonant like an accent:",
       "-ั: For example, นั is pronounced \"na\"."
-    ]
+    ],
+    "mem": ""
   },
   "4": {
     "old_id": 5,
@@ -84,7 +88,8 @@
       "ก: I look like a n, but I have a ziGzaG leG: that's why I'm the g!",
       "ก: Careful though - I'm pronounced k at the end of a syllable.",
       "ก: For example, the word reed in Thai is กก, and is pronounced \"gok\"."
-    ]
+    ],
+    "mem": "ร looks like a n, but it has a zi>g<za>g< le>g<."
   },
   "5": {
     "old_id": 6,
@@ -103,7 +108,8 @@
       "ม: I look a lot like my sister น, the n,",
       "ม: but my loops are on the sa>M<e side.",
       "ม: and the น's loops are >N<ot on the same side!"
-    ]
+    ],
+    "mem": "ม has its loops on the sa>m<e side."
   },
   "6": {
     "old_id": 7,
@@ -128,7 +134,8 @@
     "test": {
       "prompt": "เด็ก",
       "distractors": ["ดเก", "ด็ก", "แด็ก", "แดก"]
-    }
+    },
+    "mem": "เ looks like a leg (léég)."
   },
   "7": {
     "old_id": 8,
@@ -140,7 +147,8 @@
     "final": "",
     "class": "MID",
     "frequency_index": "4",
-    "audio": "ออ"
+    "audio": "ออ",
+    "mem": "อ looks like an open mouth saying the \"or\" sound."
   },
   "8": {
     "old_id": 9,
@@ -152,7 +160,8 @@
     "final": "n",
     "class": "LOW",
     "frequency_index": "14",
-    "audio": "ลอ"
+    "audio": "ลอ",
+    "mem": ""
   },
   "9": {
     "old_id": 10,
@@ -174,7 +183,8 @@
     "test": {
       "prompt": "ดี",
       "distractors": ["ด", "ดิ่", "ดี่", "ดิ", "ดื"]
-    }
+    },
+    "mem": "-ี looks like a roof with a chimn>ey<."
   },
   "10": {
     "old_id": 11,
@@ -186,7 +196,8 @@
     "final": "",
     "class": "LOW",
     "frequency_index": "7",
-    "audio": "งอ"
+    "audio": "งอ",
+    "mem": "ง looks like the arm of somebody flexing their muscle and saying \"ng\" because of the effort."
   },
   "11": {
     "old_id": 12,
@@ -210,7 +221,8 @@
     "test": {
       "prompt": "บาท",
       "distractors": ["ทาบ", "ทาม", "ทาน", "ทาท"]
-    }
+    },
+    "mem": "ท looks like a snake (head on the left) with a long tail (>t'h<ail)."
   },
   "12": {
     "old_id": 13,
@@ -222,7 +234,8 @@
     "final": "",
     "class": "LOW",
     "frequency_index": "15",
-    "audio": "วอ"
+    "audio": "วอ",
+    "mem": "ว looks like a question mark. วhat?"
   },
   "13": {
     "old_id": 14,
@@ -244,7 +257,8 @@
     "test": {
       "prompt": "ยา",
       "distractors": ["ปา", "บา"]
-    }
+    },
+    "mem": "ย looks like the y, but without the lower part."
   },
   "14": {
     "old_id": 15,
@@ -261,7 +275,8 @@
       "-ิ: What’s crackin’ [Name]?",
       "-ิ: I'm -ิ, the shorter brother of -ี, and the vowel for the short \"i\" sound. [sound]",
       "-ิ: Do you see the difference between my long brother ee -ี and me?"
-    ]
+    ],
+    "mem": "-ิ looks like l>i<ps."
   },
   "15": {
     "old_id": 16,
@@ -273,7 +288,8 @@
     "final": "t",
     "class": "HIGH",
     "frequency_index": "19",
-    "audio": "สอ"
+    "audio": "สอ",
+    "mem": "ส looks like a ล with an extra >s<trike through it."
   },
   "16": {
     "old_id": 17,
@@ -285,7 +301,8 @@
     "final": "t",
     "class": "MID",
     "frequency_index": "20",
-    "audio": "ตอ"
+    "audio": "ตอ",
+    "mem": "ต looks like ด with a dent (dt) on top."
   },
   "17": {
     "old_id": 18,
@@ -309,7 +326,8 @@
     "test": {
       "prompt": "ได",
       "distractors": ["ปไ", "บไ", "ไค", "ไต"]
-    }
+    },
+    "mem": "ด looks like a >d<igital finger print, or a hobbit house >d<oor."
   },
   "18": {
     "old_id": 19,
@@ -321,7 +339,8 @@
     "final": "p",
     "class": "MID",
     "frequency_index": "22",
-    "audio": "บอ"
+    "audio": "บอ",
+    "mem": "บ looks like a >b<ucket."
   },
   "19": {
     "old_id": 20,
@@ -344,7 +363,8 @@
     "test": {
       "prompt": "ไป",
       "distractors": ["ปไ", "บไ", "ไบ", "ไบ่", "บ่ไ"]
-    }
+    },
+    "mem": "ป looks like a much >b<igger >p<ail than the บ."
   },
   "20": {
     "old_id": 21,
@@ -356,7 +376,8 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "21",
-    "audio": "อะ"
+    "audio": "อะ",
+    "mem": ""
   },
   "21": {
     "old_id": 22,
@@ -381,7 +402,8 @@
     "test": {
       "prompt": "คน",
       "distractors": ["กน", "คค", "นค"]
-    }
+    },
+    "mem": "ค looks like a peacock (pea>k'h<ock) facing towards you."
   },
   "22": {
     "old_id": 23,
@@ -393,7 +415,8 @@
     "final": "t",
     "class": "MID",
     "frequency_index": "28",
-    "audio": "จอ"
+    "audio": "จอ",
+    "mem": "จ looks like a dolphin plunging (plun>j<ing) into the water."
   },
   "23": {
     "old_id": 24,
@@ -405,7 +428,8 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "34",
-    "audio": "อื"
+    "audio": "อื",
+    "mem": ""
   },
   "24": {
     "old_id": 25,
@@ -417,7 +441,8 @@
     "final": "p",
     "class": "LOW",
     "frequency_index": "27",
-    "audio": "พอ"
+    "audio": "พอ",
+    "mem": "พ looks like the beak of a bird (the eye is on the left) pecking (>p'h<ecking) on the floor."
   },
   "25": {
     "old_id": 26,
@@ -429,7 +454,8 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "26",
-    "audio": "แอ"
+    "audio": "แอ",
+    "mem": ""
   },
   "26": {
     "old_id": 27,
@@ -441,7 +467,8 @@
     "final": "",
     "class": "HIGH",
     "frequency_index": "25",
-    "audio": "หอ"
+    "audio": "หอ",
+    "mem": "ห is the only letter that has two loops that are placed >h<igh."
   },
   "27": {
     "old_id": 28,
@@ -453,7 +480,8 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "33",
-    "audio": "ไม้ม้วน"
+    "audio": "ไม้ม้วน",
+    "mem": "ใ looks like the staff of a high-ranking (h>ai<) bishop."
   },
   "28": {
     "old_id": 29,
@@ -478,7 +506,8 @@
     "test": {
       "prompt": "ไป",
       "distractors": ["ปไ", "ใป", "ปใ"]
-    }
+    },
+    "mem": "ไ looks like a lightning strike (str>ai<ke)."
   },
   "29": {
     "old_id": 30,
@@ -490,7 +519,8 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "36",
-    "audio": "โอ"
+    "audio": "โอ",
+    "mem": "โ looks like a ร that is tall (t>oh<l)."
   },
   "30": {
     "old_id": 31,
@@ -502,7 +532,8 @@
     "final": "t",
     "class": "LOW",
     "frequency_index": "30",
-    "audio": "ชอ"
+    "audio": "ชอ",
+    "mem": "ช looks like the body of a >ch<ick (head on the left, tail on the right)."
   },
   "31": {
     "old_id": 32,
@@ -514,7 +545,8 @@
     "final": "k",
     "class": "HIGH",
     "frequency_index": "31",
-    "audio": "ขอ"
+    "audio": "ขอ",
+    "mem": "ข looks like a curly บ (>k'h<urly)."
   },
   "32": {
     "old_id": 33,
@@ -526,7 +558,8 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "38",
-    "audio": "อู"
+    "audio": "อู",
+    "mem": "-ู is placed under the consonant (>oo<nder), and is longer than the short u sound -ุ."
   },
   "33": {
     "old_id": 34,
@@ -538,7 +571,8 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "32",
-    "audio": "อุ"
+    "audio": "อุ",
+    "mem": "-ุ is placed under the consonant (>u<nder), and is shorter than the long u sound -ู."
   },
   "34": {
     "old_id": 35,
@@ -550,7 +584,8 @@
     "final": "",
     "class": "LOW",
     "frequency_index": "50",
-    "audio": "ฟอ"
+    "audio": "ฟอ",
+    "mem": "The tail of ฟ goes >f<arther than the one of พ."
   },
   "35": {
     "old_id": 36,
@@ -578,7 +613,8 @@
     "test": {
       "prompt": "คน",
       "distractors": ["คโน", "โคน", "คอน", "ค็อน"]
-    }
+    },
+    "mem": "Nothingness, or zero, is also pronounced \"oh\" in English, when spelling a number."
   },
   "36": {
     "old_id": 37,
@@ -601,6 +637,7 @@
     "test": {
       "prompt": "เล็ก",
       "distractors": ["เลก", "เ็ลก", "เล๊ก", "เ๊ลก"]
-    }
+    },
+    "mem": "-็ looks like a >small< fetus."
   }
 }

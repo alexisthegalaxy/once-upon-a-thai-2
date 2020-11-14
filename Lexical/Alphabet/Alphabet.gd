@@ -91,8 +91,7 @@ func init_words():
 			var alphabet_letter = AlphabetLetter.instance()
 			$Control.add_child(alphabet_letter)
 			displayed_letters.append(alphabet_letter)
-			alphabet_letter.init(letter)
-			alphabet_letter.set_known(Game.knows_letter(letter))
+			alphabet_letter.init_alphabet_letter(letter["id"])
 			alphabet_letter.position = Vector2(s_x(x), s_y(y))
 			
 			x += 1
@@ -105,7 +104,7 @@ func init_words():
 
 func _input(event) -> void:
 	if event is InputEventPanGesture:
-		var x_delta = -event.delta.x
+		var x_delta = -event.delta.x * 10
 		if x_bottom >= 0 and x_delta > 0:
 			return
 		x_bottom += x_delta

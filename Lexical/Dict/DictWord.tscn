@@ -4,25 +4,25 @@
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://UI/WhiteCircle.png" type="Texture" id=4]
 
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 555, 555 )
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 555, 555 )
+
 [sub_resource type="StyleBoxTexture" id=3]
 texture = ExtResource( 4 )
 region_rect = Rect2( 0, 0, 555, 555 )
 
-[sub_resource type="StyleBoxTexture" id=4]
-texture = ExtResource( 4 )
-region_rect = Rect2( 0, 0, 555, 555 )
+[sub_resource type="StyleBoxFlat" id=4]
 
 [sub_resource type="StyleBoxTexture" id=5]
 texture = ExtResource( 4 )
 region_rect = Rect2( 0, 0, 555, 555 )
 
-[sub_resource type="StyleBoxFlat" id=6]
-
-[sub_resource type="StyleBoxTexture" id=1]
-texture = ExtResource( 4 )
-region_rect = Rect2( 0, 0, 555, 555 )
-
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=6]
 size = 11
 font_data = ExtResource( 3 )
 
@@ -34,12 +34,12 @@ margin_left = -10.5737
 margin_top = -10.2428
 margin_right = 10.4263
 margin_bottom = 10.7572
-custom_styles/hover = SubResource( 3 )
-custom_styles/pressed = SubResource( 4 )
-custom_styles/focus = SubResource( 5 )
-custom_styles/disabled = SubResource( 6 )
-custom_styles/normal = SubResource( 1 )
-custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "ee"
 expand_icon = true
