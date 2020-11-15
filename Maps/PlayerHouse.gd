@@ -3,7 +3,8 @@ extends Node
 
 func _ready():
 	if Events.events["talked_to_nim_at_the_beginning"]:
-		$YSort/Nim.position = Vector2(72, -114)
+		$YSort/Nim.dialog = ["Nim: Granny is waiting for you outside.", "Nim: Be brave, okay?"]
+		$YSort/Nim.position = Vector2(72, -137)
 
 
 func _on_Area2D_body_entered(body):

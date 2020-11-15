@@ -35,7 +35,7 @@ position = Vector2( 828.359, -297.159 )
 [node name="Letters" type="YSort" parent="YSort"]
 
 [node name="Letter -็" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( 0.0751953, -112.589 )
+position = Vector2( -0.86644, 111.914 )
 id = 36
 
 [node name="Lights" type="Node" parent="."]

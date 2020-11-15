@@ -2,8 +2,6 @@ extends Node
 
 
 func _ready():
-#	if Events.events["talked_to_nim_at_the_beginning"]:
-#		$YSort/Nim.position = Vector2(72, -114)
 	pass
 #
 #

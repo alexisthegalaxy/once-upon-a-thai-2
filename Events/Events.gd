@@ -3,21 +3,22 @@ extends Node
 var events = {
 	"ploy_has_stopped_in_front_of_house": false,
 	"has_met_ploy": false,
-	"has_met_pet": false,
-	"has_learnt_four_first_words": false,
-	"yaai_has_given_last_warning_before_forest": false,
-	"yaai_explains_rock": false,
-	"has_gone_to_rock": false,
-	"has_finished_the_letter_world_the_first_time": false,
-	"can_see_the_looking_for_letter_banner": false,
-	"has_been_in_the_letter_world": false,
-	"ceremony_started": false,
-	"yaai_went_to_forest_entrance": false,
-	"talked_to_yaai_for_the_first_time": false,
-	"talked_to_nim_at_the_beginning": false,
+	"has_met_pet": true,
+	"has_learnt_four_first_words": true,
+	"yaai_has_given_last_warning_before_forest": true,
+	"yaai_explains_rock": true,
+	"has_gone_to_rock": true,
+	"has_finished_the_letter_world_the_first_time": true,
+	"can_see_the_looking_for_letter_banner": true,
+	"has_been_in_the_letter_world": true,
+	"ceremony_started": true,
+	"yaai_went_to_forest_entrance": true,
+	"talked_to_yaai_for_the_first_time": true,
+	"talked_to_nim_at_the_beginning": true,
 }
 
-var bush = null  # let's find a cleaner way
+var var_1 = null  # let's find a cleaner way
+var var_2 = null  # let's find a cleaner way
 
 func lose_focus(_parameters):
 	for focus in Game.current_focus:
@@ -89,7 +90,7 @@ func teach_sentence(sentence_id):
 	Game.loses_focus(Game.current_focus)
 	Game.discovers_sentence(sentence_id, true)
 
-func set_yaai_has_given_last_warning_before_forest_as_true():
+func set_yaai_has_given_last_warning_before_forest_as_true(_parameters):
 	events.yaai_has_given_last_warning_before_forest = true
 
 func immediately_enters_lexical_world():
@@ -147,7 +148,8 @@ func ploy_goes_towards_her_house(ploy):
 
 func ploy_cuts_bush(parameters):
 	var ploy = parameters[0]
-	bush = parameters[1]
+	var_1 = parameters[1]
+	var_2 = ploy
 	ploy.will_go_to = [
 		Vector2(689, 88),
 		Vector2(689, 110)
@@ -168,9 +170,20 @@ func ploy_cuts_bush(parameters):
 	timer.autostart = true
 	timer.start()
 	add_child(timer)
+	
+	var timer_2 = Timer.new()
+	timer_2.connect("timeout", self, "ploy_talks_again")
+	timer_2.set_wait_time(2.5)
+	timer_2.set_one_shot(true)
+	timer_2.autostart = true
+	timer_2.start()
+	add_child(timer_2)
 
 func destroy_bush():
-	bush.queue_free()
+	var_1.queue_free()
+
+func ploy_talks_again():
+	var_2.interact()
 
 func ceremony_special_effect(_parameters):
 #	Game.current_scene.

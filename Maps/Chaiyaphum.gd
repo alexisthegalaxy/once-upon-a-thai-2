@@ -5,6 +5,9 @@ var alpha = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if Events.events.ploy_has_stopped_in_front_of_house:
+		$YSort/NPCs/Ploy.queue_free()
+		$YSort/Bushes/BushThatWillGetCut.queue_free()
 	if Events.events.has_learnt_four_first_words:
 		set_events_when_has_learnt_four_first_words()
 	if Events.events.has_gone_to_rock:
@@ -140,6 +143,7 @@ func _on_Area2D6_body_entered(body):
 			"Yaai: I believe four types of Spells live there.",
 			"Yaai: Good luck, I'll watch you from here.",
 			]
+		$YSort/NPCs/Yaai.post_dialog_event = []
 		$YSort/NPCs/Yaai.interact()
 		
 	if not Events.events.has_learnt_four_first_words:

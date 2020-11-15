@@ -30,7 +30,7 @@ func _on_Button_pressed():
 	if has_learnt_the_sentence or has_seen_the_sentence:
 		var dialog_text = [
 			"""[Name] writes the sentence in the notebook.
-Press f to see all your sentences."""
+Press F to see all your sentences."""
 		]
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 		Game.current_dialog.init(dialog_text, self, null, false)
