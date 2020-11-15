@@ -4018,13 +4018,21 @@
     "teaching_order": -1
   },
   "401": {
-    "old_id": 405,
     "id": 401,
     "split": "ตัด",
     "en": "to cut",
     "tones": "L",
     "pos": "VERB",
     "th": "ตัด",
+    "teaching_order": -1
+  },
+  "402": {
+    "id": 402,
+    "split": "แบบ-ไหน",
+    "en": "what kind",
+    "tones": "LR",
+    "pos": "",
+    "th": "แบบไหน",
     "teaching_order": -1
   }
 }

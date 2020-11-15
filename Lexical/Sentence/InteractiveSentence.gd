@@ -1,9 +1,11 @@
 extends Node2D
 
+var can_listen_to_words
 var words = []
 var children = []
 
-func init_interactive_sentence(sentence, main_word_id):
+func init_interactive_sentence(sentence, main_word_id, _can_listen_to_words):
+	can_listen_to_words = _can_listen_to_words
 	var current_x = 0
 	for child in children:
 		child.queue_free()
@@ -20,7 +22,7 @@ func init_interactive_sentence(sentence, main_word_id):
 		var word_instance = load("res://Test/WordInSentenceCarousel.tscn").instance()
 		
 		word_instance.position.x = current_x
-		word_instance.init(word_id, is_main_word)
+		word_instance.init_word_in_sentence(word_id, is_main_word, can_listen_to_words)
 		current_x += word_instance.width
 		add_child(word_instance)
 		children.append(word_instance)

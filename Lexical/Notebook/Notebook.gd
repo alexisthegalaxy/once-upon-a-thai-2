@@ -39,7 +39,7 @@ func init(page_index):
 	var index_in_page = 0
 	for sentence in all_sentences:
 		var interactive_sentence = InteractiveSentence.instance()
-		interactive_sentence.init_interactive_sentence(sentence, null)
+		interactive_sentence.init_interactive_sentence(sentence, null, true)
 		interactive_sentences.append(interactive_sentence)
 		$Control.add_child(interactive_sentence)
 		interactive_sentence.position = Vector2(y, x)

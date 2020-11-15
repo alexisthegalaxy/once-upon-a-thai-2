@@ -17,14 +17,11 @@ func init_sentence_carousel(_word_id):
 #			print('word_id ', word_id, ' is seen!')
 			sentences.append(sentence)
 	if sentences:
-		init_interactive_sentence()
+		$InteractiveSentence.init_interactive_sentence(sentences[current_sentence_index], word_id, false)
 	update_sentence_counter()
 
 func update_sentence_counter():
 	$SentenceCounter.text = str(current_sentence_index + 1) + " / " + str(len(sentences))
-
-func init_interactive_sentence():
-	$InteractiveSentence.init_interactive_sentence(sentences[current_sentence_index], word_id)
 
 func hide():
 	$bg.hide()
@@ -73,7 +70,7 @@ func _on_LeftArea_input_event(_viewport, event, _shape_idx):
 		current_sentence_index -= 1
 		if current_sentence_index < 0:
 			current_sentence_index += len(sentences)
-		init_interactive_sentence()
+		$InteractiveSentence.init_interactive_sentence(sentences[current_sentence_index], word_id, false)
 		update_sentence_counter()
 
 func _on_RightArea_input_event(_viewport, event, _shape_idx):
@@ -81,5 +78,5 @@ func _on_RightArea_input_event(_viewport, event, _shape_idx):
 		current_sentence_index += 1
 		if current_sentence_index == len(sentences):
 			current_sentence_index = 0
-		init_interactive_sentence()
+		$InteractiveSentence.init_interactive_sentence(sentences[current_sentence_index], word_id, false)
 		update_sentence_counter()

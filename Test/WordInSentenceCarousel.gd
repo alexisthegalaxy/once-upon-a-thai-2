@@ -4,15 +4,16 @@ var width = 0
 var height = 0
 var is_main_word
 var word = null
+var can_be_listened
 
-func init(word_id, _is_main_word):
+func init_word_in_sentence(word_id, _is_main_word, _can_be_listened):
+	can_be_listened = _can_be_listened
 	word = Game.words[str(word_id)]
 	var text = word["th"]
 	is_main_word = _is_main_word
 	$Label.text = text
 	width = $Label.get_minimum_size()[0]
 	height = $Label.get_minimum_size()[1]
-	
 	
 	# Set collisionShape
 	var shape = RectangleShape2D.new()
@@ -51,11 +52,16 @@ func _on_Area2D_mouse_exited():
 	else:
 		$ColorRect.hide()
 
-
 func _on_Area2D_input_event(viewport, event, shape_idx):
+	# We can listen to a word when:
+	# - looking at the notebook
+	# - looking at a sign
+	# But not when:
+	# - Looking at the sentences containing a word
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
-		if Game.player.notebook:
+		if can_be_listened:
 			SoundPlayer.play_thai(word["th"])
+		if Game.player.notebook:
 			var word_page = load("res://Lexical/WordPage/WordPage.tscn").instance()
 			Game.player.word_page = word_page
 			get_tree().current_scene.add_child(word_page)
