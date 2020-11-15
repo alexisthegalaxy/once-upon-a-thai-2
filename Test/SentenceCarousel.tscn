@@ -34,24 +34,24 @@ scale = Vector2( 1, 0.666667 )
 texture = ExtResource( 1 )
 centered = false
 
-[node name="RightArea" type="Area2D" parent="."]
-
-[node name="RightAreaCollision" type="CollisionShape2D" parent="RightArea"]
-position = Vector2( -119.437, -33.499 )
-shape = SubResource( 1 )
-
 [node name="LeftArea" type="Area2D" parent="."]
 
 [node name="LeftAreaCollision" type="CollisionShape2D" parent="LeftArea"]
+position = Vector2( -119.437, -33.499 )
+shape = SubResource( 1 )
+
+[node name="RightArea" type="Area2D" parent="."]
+
+[node name="RightAreaCollision" type="CollisionShape2D" parent="RightArea"]
 position = Vector2( 120.563, -33.499 )
 shape = SubResource( 1 )
 
-[node name="right_arrow" type="Sprite" parent="."]
+[node name="left_arrow" type="Sprite" parent="."]
 position = Vector2( -119.437, -35.499 )
 scale = Vector2( 0.33, 0.41 )
 texture = ExtResource( 2 )
 
-[node name="left_arrow" type="Sprite" parent="."]
+[node name="right_arrow" type="Sprite" parent="."]
 position = Vector2( 120.563, -35.499 )
 scale = Vector2( 0.33, 0.41 )
 texture = ExtResource( 2 )
@@ -115,10 +115,10 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
-[connection signal="input_event" from="RightArea" to="." method="_on_RightArea_input_event"]
-[connection signal="mouse_entered" from="RightArea" to="." method="_on_RightArea_mouse_entered"]
-[connection signal="mouse_exited" from="RightArea" to="." method="_on_RightArea_mouse_exited"]
 [connection signal="input_event" from="LeftArea" to="." method="_on_LeftArea_input_event"]
 [connection signal="mouse_entered" from="LeftArea" to="." method="_on_LeftArea_mouse_entered"]
 [connection signal="mouse_exited" from="LeftArea" to="." method="_on_LeftArea_mouse_exited"]
+[connection signal="input_event" from="RightArea" to="." method="_on_RightArea_input_event"]
+[connection signal="mouse_entered" from="RightArea" to="." method="_on_RightArea_mouse_entered"]
+[connection signal="mouse_exited" from="RightArea" to="." method="_on_RightArea_mouse_exited"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
