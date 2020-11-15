@@ -77,6 +77,10 @@ func learns_first_sentence(calling_npc):
 		]
 	calling_npc.post_dialog_event = ["set_yaai_has_given_last_warning_before_forest_as_true", $YSort/NPCs/Yaai]
 
+func learns_sentence(sentence_id):
+	Game.loses_focus(Game.current_focus)
+	Game.discovers_sentence(sentence_id, true)
+
 func set_yaai_has_given_last_warning_before_forest_as_true(calling_npc):
 	events.yaai_has_given_last_warning_before_forest = true
 
