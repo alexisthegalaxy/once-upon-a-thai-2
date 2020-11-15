@@ -1,8 +1,7 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Light/light.png" type="Texture" id=2]
-[ext_resource path="res://Light/spot.png" type="Texture" id=3]
 [ext_resource path="res://World/Tree.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=6]
 [ext_resource path="res://CliffTileMap.tscn" type="PackedScene" id=7]
@@ -1037,7 +1036,7 @@ position = Vector2( 617.504, -175.815 )
 position = Vector2( 417.261, 136.781 )
 
 [node name="Tree923" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 198.98, 77.4694 )
+position = Vector2( 152.837, -14.3928 )
 
 [node name="Tree1133" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 877.522, 241.249 )
@@ -1379,7 +1378,7 @@ position = Vector2( -127.746, 601.694 )
 position = Vector2( 527.627, -108.973 )
 
 [node name="Tree954" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 420.142, -87.0735 )
+position = Vector2( 318.12, -164.966 )
 
 [node name="Tree953" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 508.481, 8.88434 )
@@ -1472,7 +1471,7 @@ position = Vector2( 575.421, -62.9897 )
 position = Vector2( 454.158, 22.6015 )
 
 [node name="Tree950" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 194.874, 137.18 )
+position = Vector2( 126.295, 87.2273 )
 
 [node name="Tree355" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 916.312, 707.031 )
@@ -1967,7 +1966,7 @@ position = Vector2( 905.308, 773.149 )
 position = Vector2( -30.5487, 407.504 )
 
 [node name="Tree943" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 414.746, -125.523 )
+position = Vector2( 312.724, -203.415 )
 
 [node name="Tree342" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 110.096, 383.454 )
@@ -2048,25 +2047,25 @@ position = Vector2( 555.231, -13.7319 )
 position = Vector2( 445.58, 32.7305 )
 
 [node name="Tree940" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 284.499, 12.1772 )
+position = Vector2( 309.957, 19.3234 )
 
 [node name="Tree957" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 301.259, -6.59402 )
 
 [node name="Tree958" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 324.052, -24.9183 )
+position = Vector2( 364.692, -134.56 )
 
 [node name="Tree959" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 443.474, -116.449 )
+position = Vector2( 341.452, -194.341 )
 
 [node name="Tree960" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 358.466, -55.0864 )
+position = Vector2( 256.444, -132.979 )
 
 [node name="Tree961" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 369.64, -75.8688 )
+position = Vector2( 267.618, -153.761 )
 
 [node name="Tree962" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 391.092, -92.8523 )
+position = Vector2( 289.07, -170.745 )
 
 [node name="Tree339" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 147.506, 376.452 )
@@ -3098,7 +3097,16 @@ position = Vector2( 637.784, 84.7197 )
 position = Vector2( 562.231, 7.84614 )
 
 [node name="Tree909" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 332.701, -48.0527 )
+position = Vector2( 373.34, -157.695 )
+
+[node name="Tree1079" parent="YSort/Trees" instance=ExtResource( 4 )]
+position = Vector2( 464.008, -205.932 )
+
+[node name="Tree1081" parent="YSort/Trees" instance=ExtResource( 4 )]
+position = Vector2( 494.826, -153.675 )
+
+[node name="Tree1082" parent="YSort/Trees" instance=ExtResource( 4 )]
+position = Vector2( 470.708, -175.56 )
 
 [node name="Tree462" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 632.443, 334.095 )
@@ -3362,10 +3370,10 @@ position = Vector2( 467.28, -119.956 )
 position = Vector2( 611.299, -81.9971 )
 
 [node name="Tree934" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 399.071, -57.0268 )
+position = Vector2( 235.666, -129.416 )
 
 [node name="Tree933" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 388.621, -76.2074 )
+position = Vector2( 286.599, -154.1 )
 
 [node name="Tree932" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 165.143, 130.365 )
@@ -3545,10 +3553,10 @@ position = Vector2( 429.283, 178.099 )
 position = Vector2( 395.27, 222.938 )
 
 [node name="Tree496" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 209.108, 97.9821 )
+position = Vector2( 151.959, 103.062 )
 
 [node name="Tree964" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 168.91, 77.7423 )
+position = Vector2( 177.377, -31.053 )
 
 [node name="Tree965" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 119.942, -67.8637 )
@@ -3566,13 +3574,13 @@ position = Vector2( -107.816, 578.58 )
 position = Vector2( -243.062, 654.106 )
 
 [node name="Tree928" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 450.55, -87.8362 )
+position = Vector2( 348.528, -165.729 )
 
 [node name="Tree927" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 428.348, 56.2489 )
 
 [node name="Tree926" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 269.331, 32.0801 )
+position = Vector2( 334.987, -48.7616 )
 
 [node name="Tree264" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 643.76, 604.885 )
@@ -6199,6 +6207,18 @@ is_corrupted = true
 position = Vector2( 618.635, 231.052 )
 is_pulsating = true
 
+[node name="Sacred Rock10" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 313.103, -118.527 )
+is_pulsating = true
+
+[node name="Sacred Rock12" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 273.352, 27.9705 )
+is_pulsating = true
+
+[node name="Sacred Rock11" parent="YSort" instance=ExtResource( 23 )]
+position = Vector2( 432.802, -175.697 )
+is_pulsating = true
+
 [node name="Sacred Well" parent="YSort" instance=ExtResource( 23 )]
 position = Vector2( 1071.88, -170.07 )
 is_pulsating = true
@@ -6210,17 +6230,8 @@ type = "Well"
 position = Vector2( -293.035, 817.58 )
 id = 343
 
-[node name="chan" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 319.046, 16.0695 )
-id = 24
-can_move = true
-
-[node name="chan2" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 480.348, -30.5451 )
-id = 24
-
 [node name="pom" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 394.974, -8.7656 )
+position = Vector2( 416.413, -13.6786 )
 id = 23
 can_move = true
 
@@ -6232,13 +6243,9 @@ can_move = true
 wobbles = false
 
 [node name="chawp" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 347.139, 86.3184 )
+position = Vector2( 651.3, -68.2188 )
 id = 238
 can_move = true
-
-[node name="chawp2" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 550.615, -72.3932 )
-id = 238
 
 [node name="PlayerHouse" parent="YSort" instance=ExtResource( 17 )]
 position = Vector2( 699.744, 467.54 )
@@ -6385,7 +6392,7 @@ color = Color( 0.964706, 0.956863, 0.956863, 1 )
 [node name="Lights" type="Node" parent="."]
 
 [node name="Light2D2" type="Light2D" parent="Lights"]
-position = Vector2( 1355.97, 136.639 )
+position = Vector2( 1359.66, 132.948 )
 scale = Vector2( 0.675093, 0.731376 )
 texture = ExtResource( 2 )
 texture_scale = 0.09
@@ -6393,9 +6400,14 @@ color = Color( 0.584314, 0.137255, 0.137255, 1 )
 energy = 2.98
 shadow_enabled = true
 
-[node name="Sprite" type="Sprite" parent="Lights/Light2D2"]
-position = Vector2( 362.122, -329.693 )
-texture = ExtResource( 3 )
+[node name="Light2D3" type="Light2D" parent="Lights"]
+position = Vector2( 1234.79, 136.639 )
+scale = Vector2( 0.675093, 0.731376 )
+texture = ExtResource( 2 )
+texture_scale = 0.09
+color = Color( 0.584314, 0.137255, 0.137255, 1 )
+energy = 2.98
+shadow_enabled = true
 
 [node name="ForestShadow" type="Light2D" parent="Lights"]
 position = Vector2( 213.301, 338.901 )
@@ -6535,6 +6547,18 @@ word_id = 345
 [node name="Node2D10" parent="." instance=ExtResource( 28 )]
 position = Vector2( 644.396, 243.254 )
 word_id = 346
+
+[node name="Node2D11" parent="." instance=ExtResource( 28 )]
+position = Vector2( 310.164, -105.978 )
+word_id = 23
+
+[node name="Node2D13" parent="." instance=ExtResource( 28 )]
+position = Vector2( 275.327, 40.0732 )
+word_id = 238
+
+[node name="Node2D12" parent="." instance=ExtResource( 28 )]
+position = Vector2( 433.437, -157.341 )
+word_id = 24
 
 [node name="Node2D8" parent="." instance=ExtResource( 28 )]
 position = Vector2( 936.568, 385.993 )
