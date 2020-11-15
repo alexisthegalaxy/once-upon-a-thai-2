@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ผมเป็นพระครับ.wav-39330fc6d37583131cfceeb0ffc44ef4.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/ผมเป็นพระครับ.wav"
+dest_files=[ "res://.import/ผมเป็นพระครับ.wav-39330fc6d37583131cfceeb0ffc44ef4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

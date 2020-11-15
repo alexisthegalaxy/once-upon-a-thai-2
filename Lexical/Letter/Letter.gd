@@ -53,9 +53,9 @@ func starts_disappearing():
 func dialog_ended():
 #	print("starts test!")
 	# first test
-#	Game.start_test("res://Test/Letter/TestPronFromThaiLet.tscn", id, self)
-	  # final test - just for debugging
-	Game.start_test("res://Test/Letter/TestWordFromSound.tscn", id, self)
+	Game.start_test("res://Test/Letter/TestPronFromThaiLet.tscn", id, self)
+	# final test - just for debugging - keep commented out
+#	Game.start_test("res://Test/Letter/TestWordFromSound.tscn", id, self)
 #	wobbles = false
 
 func _on_Area2D_body_entered(body):

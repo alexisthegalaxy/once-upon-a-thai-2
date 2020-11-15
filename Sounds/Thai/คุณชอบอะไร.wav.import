@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/คุณชอบอะไร.wav-de5d4a88759f6daf9779304e0e7b2478.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/คุณชอบอะไร.wav"
+dest_files=[ "res://.import/คุณชอบอะไร.wav-de5d4a88759f6daf9779304e0e7b2478.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

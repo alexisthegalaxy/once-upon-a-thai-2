@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/คุณชอบคนแบบไหน.wav-424fe5e58a0e1c951f7a03611ab39f06.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/คุณชอบคนแบบไหน.wav"
+dest_files=[ "res://.import/คุณชอบคนแบบไหน.wav-424fe5e58a0e1c951f7a03611ab39f06.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

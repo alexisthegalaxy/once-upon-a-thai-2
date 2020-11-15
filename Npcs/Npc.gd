@@ -74,6 +74,8 @@ func dialog_option(parameters):
 			Vector2(1297.967773, 260.826782),
 			Vector2(1297.967773, 291.826782),
 			Vector2(1297.967773, 257.826782),
+			Vector2(1298, 177),
+			"disappears"
 		]]]
 		dialog_node.post_dialog_event = post_dialog_event
 #		Game.player.can_interact = false
@@ -105,6 +107,8 @@ func _process(delta):
 				is_walking_towards = will_go_to.pop_front()
 			if not is_walking_towards:
 				stop_walking()
+			elif str(is_walking_towards) == "disappears":
+				queue_free()
 			else:
 				starts_going_toward(is_walking_towards)
 

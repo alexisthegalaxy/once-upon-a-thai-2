@@ -94,13 +94,13 @@ func _on_Area2D4_body_entered(body):
 		if not Events.events["ceremony_started"]:
 			Events.events["ceremony_started"] = true
 			$YSort/NPCs/Yaai.dialog = [
-#				"Yaai: Here's the place, and now is the time.",
-#				"Yaai: Let's start your shamanic initiation.",
-#				"Yaai: Once you drink this potion, you will gain power over spirits and spells,",
-#				"Yaai: But there is a cost:",
-#				"Yaai: you will forget everything you know of the Thai language and you’ll have to learn Thai again from scratch.",
-#				"Yaai: You trade your fluency in your mother tongue for power over the spirit world.",
-#				"Yaai: Are you ready?",
+				"Yaai: Here's the place, and now is the time.",
+				"Yaai: Let's start your shamanic initiation.",
+				"Yaai: Once you drink this potion, you will gain power over spirits and spells,",
+				"Yaai: But there is a cost:",
+				"Yaai: you will forget everything you know of the Thai language and you’ll have to learn Thai again from scratch.",
+				"Yaai: You trade your fluency in your mother tongue for power over the spirit world.",
+				"Yaai: Are you ready?",
 				"[Name] drinks the potion.",
 			]
 			$YSort/NPCs/Yaai.post_dialog_event = ["enters_lexical_world", null]
@@ -170,10 +170,10 @@ func _on_PetWillWalk_body_entered(body):
 	if Events.events.has_met_pet:
 		return
 	$YSort/NPCs/Pet.dialog = [
-#		"Pet: Oh, hey [Name].",
-#		"Pet: What, you finished your initiation?",
-#		"Pet: Tch. It took you long enough. I finished mine thirty minutes ago already.",
-#		"Pet: I’d like to have you as a training partner but I doubt you’ll be able to match my intellect.",
+		"Pet: Oh, hey [Name].",
+		"Pet: What, you finished your initiation?",
+		"Pet: Tch. It took you long enough. I finished mine thirty minutes ago already.",
+		"Pet: I’d like to have you as a training partner but I doubt you’ll be able to match my intellect.",
 		"Pet: I’m guessing you don’t even know how to write a basic word such as \"bpai\". @Qไท/ปไ/ไป/ทไ",
 	]
 	$YSort/NPCs/Pet.position = Vector2(557.0, 432.6)
@@ -183,3 +183,29 @@ func _on_PetWillWalk_body_entered(body):
 		Vector2(504.0, 254.6),
 	]
 	$YSort/NPCs/Pet.starts_going_toward($YSort/NPCs/Pet.will_go_to[0])
+
+func _on_PloyWillCome_body_entered(body):
+	if not body == Game.player:
+		return
+	if not Events.events.has_met_ploy:
+		Events.events.has_met_ploy = true
+		$YSort/NPCs/Ploy.dialog = [
+			"Ploy: [Name]! How was your shamanic initiation?",
+			"Ploy: Mine went well too! My grandmother has been teaching me super cool stuff!",
+			"Ploy: Look!"
+		]
+		$YSort/NPCs/Ploy.will_go_to = [
+			Vector2(992, 117.146461),
+			Vector2(790, 117.146461),
+		]
+		$YSort/NPCs/Ploy.post_dialog_event = ["ploy_cuts_bush", [$YSort/NPCs/Ploy, $YSort/Bushes/BushThatWillGetCut]]
+		$YSort/NPCs/Ploy.starts_going_toward($YSort/NPCs/Ploy.will_go_to[0])
+
+func _on_PloyInFrontOfHouse_body_entered(body):
+	if not body == Game.player:
+		return
+	if Events.events.ploy_has_stopped_in_front_of_house:
+		return
+	Events.events.ploy_has_stopped_in_front_of_house = true
+	$YSort/NPCs/Ploy.is_walking_towards = []
+	$YSort/NPCs/Ploy.interact()

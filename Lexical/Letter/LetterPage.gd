@@ -14,7 +14,7 @@ func init_letter_page(_letter_id):
 	$Mem.text = letter.mem
 	if letter.mem == "":
 		$MemLabel.hide()
-	$TestSoundPlayer.init_sound_player(letter["pron"])
+	$TestSoundPlayer.init_sound_player(letter.audio)
 	if letter.class in ["LOW", "MID", "HIGH"]:
 		$Class.text = letter.class
 	else:

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/คุณเป็นใคร.wav-3cda17ba59475c802925512ae6099fb6.sample"
+
+[deps]
+
+source_file="res://Sounds/Thai/คุณเป็นใคร.wav"
+dest_files=[ "res://.import/คุณเป็นใคร.wav-3cda17ba59475c802925512ae6099fb6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
