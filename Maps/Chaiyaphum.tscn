@@ -6247,7 +6247,7 @@ position = Vector2( 699.744, 467.54 )
 position = Vector2( 1295.12, 160.862 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1017.75, 227.405 )
+position = Vector2( 1237.13, -34.7594 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6453,6 +6453,11 @@ to_map_name = "res://Maps/ChaiyaphumWat.tscn"
 position = Vector2( 992.397, 57.9214 )
 to_position = Vector2( 24, 90 )
 to_map_name = "res://Maps/PloyHouse.tscn"
+
+[node name="ToFarmerHouse" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1244.2, -72.2586 )
+to_position = Vector2( 24, 90 )
+to_map_name = "res://Maps/ChaiyaphumFarmersHouse.tscn"
 
 [node name="ToHouse4" parent="." instance=ExtResource( 18 )]
 position = Vector2( 989.214, 167.88 )
