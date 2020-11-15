@@ -5,7 +5,9 @@ var alpha = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if Events.events["has_gone_to_rock"]:
+	if Events.events.has_learnt_four_first_words:
+		set_events_when_has_learnt_four_first_words()
+	if Events.events.has_gone_to_rock:
 		$YSort/NPCs/Yaai.position = Vector2(202.29, 654.29)
 		$YSort/NPCs/Yaai.direction = "right"
 	elif Events.events["has_finished_the_letter_world_the_first_time"]:
@@ -139,15 +141,45 @@ func _on_Area2D6_body_entered(body):
 			"Yaai: Good luck, I'll watch you from here.",
 			]
 		$YSort/NPCs/Yaai.interact()
+		
 	if not Events.events.has_learnt_four_first_words:
 		if 343 in Game.known_words and 345 in Game.known_words and 207 in Game.known_words and 82 in Game.known_words:
 			Events.events.has_learnt_four_first_words = true
-			$YSort/NPCs/Yaai.dialog = [
-#				"Yaai: That's good, [Name], very good!",
-#				"Yaai: Now, go to Chaiyaphum, and ask the grandmother of your friend Ploy to carry on with your training.",
-#				"Yaai: I have very important issues to solve in the spirit world.",
-				"Yaai: If everything goes well, I'll be seeing you soon, [Name].",
-				]
-			$YSort/NPCs/Yaai.post_dialog_event = ["npc_disappears_in_white_orb", [$YSort/NPCs/Yaai]]
+			set_events_when_has_learnt_four_first_words()
 			$YSort/NPCs/Yaai.interact()
-			
+
+func set_events_when_has_learnt_four_first_words():
+	$YSort/NPCs/PetsMom.dialog = [
+		"Pet’s mom: I’m so happy for Pet, his shamanic initiation went well.",
+		"Pet’s mom: He’s in Chaiyaphum now, tell him to drop by if you meet him!"
+	]
+	$YSort/NPCs/Yaai.dialog = [
+		"Yaai: That's good, [Name], very good!",
+		"Yaai: Now, go to Chaiyaphum, and ask the grandmother of your friend Ploy to carry on with your training.",
+		"Yaai: I have very important issues to solve in the spirit world.",
+		"Yaai: If everything goes well, I'll be seeing you soon, [Name].",
+		]
+	$YSort/NPCs/Yaai.post_dialog_event = ["npc_disappears_in_white_orb", [$YSort/NPCs/Yaai]]
+	$YSort/NPCs/Pet.position = Vector2(557.0, 432.6)
+
+func _on_PetWillWalk_body_entered(body):
+	if not body == Game.player:
+		return
+	if not Events.events.has_learnt_four_first_words:
+		return
+	if Events.events.has_met_pet:
+		return
+	$YSort/NPCs/Pet.dialog = [
+#		"Pet: Oh, hey [Name].",
+#		"Pet: What, you finished your initiation?",
+#		"Pet: Tch. It took you long enough. I finished mine thirty minutes ago already.",
+#		"Pet: I’d like to have you as a training partner but I doubt you’ll be able to match my intellect.",
+		"Pet: I’m guessing you don’t even know how to write a basic word such as \"bpai\". @Qไท/ปไ/ไป/ทไ",
+	]
+	$YSort/NPCs/Pet.position = Vector2(557.0, 432.6)
+	$YSort/NPCs/Pet.will_go_to = [
+		Vector2 (519.2, 375.6),
+		Vector2(534.0, 254.6),
+		Vector2(504.0, 254.6),
+	]
+	$YSort/NPCs/Pet.starts_going_toward($YSort/NPCs/Pet.will_go_to[0])

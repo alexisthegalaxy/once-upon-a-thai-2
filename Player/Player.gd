@@ -107,9 +107,7 @@ func _input(_event) -> void:
 			Game.space_bar_to_interact = null
 	if Input.is_action_just_pressed("print_position"):
 		print("current position: (" + str(position.x) + ", " + str(position.y) + ")")
-		set_hp(Game.hp - 0.5)
-		print('\n\n\nqqqqqq')
-		print(Game.letters["1"])
+#		set_hp(Game.hp - 0.5)
 		Game.letters_we_look_for.append(Game.letters["1"])
 #		Game.add_random_letter_to_letters_to_look_for()
 	if Input.is_action_just_pressed("print_known_sentences"):

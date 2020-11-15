@@ -43,7 +43,8 @@ func _on_InteractArea_body_exited(body):
 	if body == Game.player:
 		Game.loses_focus(self)
 
-func dialog_option(value):
+func dialog_option(parameters):
+	var value = parameters[1]
 	if value == 1:
 		Game.this_letter_world_has_letters = leads_to_letters
 		Game.call_deferred("_deferred_goto_scene", to_map_name, to_x, to_y)

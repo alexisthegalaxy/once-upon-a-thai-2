@@ -6,13 +6,17 @@ var caller
 var post_dialog_event
 var post_dialog_signal
 var current_line_has_question = false
+var options = []
 var current_answer_index = 1
 var answers_are_revealed = false
 var test = "test test"
 
 func _ready():
 	reset_line()
-	$Control/Answers.hide()
+	$Control/Options/Option1.hide()
+	$Control/Options/Option2.hide()
+	$Control/Options/Option3.hide()
+	$Control/Options/Option4.hide()
 
 func process(dialog_line: String) -> String:
 	var processed_dialog = dialog_line.replace("[Name]", Game.player_name)
@@ -26,12 +30,20 @@ func process(dialog_line: String) -> String:
 	return processed_dialog
 
 func reset_line():
-	answers_are_revealed = false
+	
 	current_line_has_question = "@Q" in dialog[page]
 	if current_line_has_question:
-		var options = dialog[page].split("@Q")[1].split("/")
-		$Control/Answers/Answer1.text = options[0]
-		$Control/Answers/Answer2.text = options[1]
+		options = dialog[page].split("@Q")[1].split("/")
+		if len(options) >= 2:
+			$Control/Options/Option1/Label.text = options[0]
+			$Control/Options/Option2/Label.text = options[1]
+		if len(options) >= 3:
+			$Control/Options/Option3/Label.text = options[2]
+		if len(options) >= 4:
+			$Control/Options/Option4/Label.text = options[3]
+	elif answers_are_revealed:
+		answers_are_revealed = false
+		hide_answers()
 	var processed_dialog = process(dialog[page])
 	$Control/RichTextLabel.set_bbcode(processed_dialog)
 	$Control/RichTextLabel.set_visible_characters(0)
@@ -65,9 +77,13 @@ func _process(_delta):
 		if $Control/RichTextLabel.get_visible_characters() > $Control/RichTextLabel.get_total_character_count():
 			if current_line_has_question:
 				if current_answer_index == 1:
-					caller.dialog_option(1)
+					caller.dialog_option([self, 1])
 				if current_answer_index == 2:
-					caller.dialog_option(2)
+					caller.dialog_option([self, 2])
+				if current_answer_index == 3:
+					caller.dialog_option([self, 3])
+				if current_answer_index == 4:
+					caller.dialog_option([self, 4])
 			next_line()
 
 func _on_Timer_timeout():
@@ -76,24 +92,48 @@ func _on_Timer_timeout():
 	if current_line_has_question && number_of_characters_before + 2 >= len(dialog[page]):
 		if not answers_are_revealed:
 			answers_are_revealed = true
-			$Control/Answers.show()
-			$Control/Answers/SpriteAnswer2.hide()
+			reveal_answers()
 
+func hide_answers():
+	$Control/Options/Option1.hide()
+	$Control/Options/Option2.hide()
+	$Control/Options/Option3.hide()
+	$Control/Options/Option4.hide()
+
+func reveal_answers():
+	$Control/Options/Option1.show()
+	$Control/Options/Option2.show()
+	if len(options) >= 3:
+		$Control/Options/Option3.show()
+	if len(options) >= 4:
+		$Control/Options/Option4.show()
+	reset_answer_index()
+	
 func _input(_event) -> void:
 	if Input.is_action_just_pressed("ui_up"):
-		current_answer_index = 1
+		current_answer_index += 1
+		if current_answer_index == len(options) + 1:
+			current_answer_index = 1
 		reset_answer_index()
 	if Input.is_action_just_pressed("ui_down"):
-		current_answer_index = 2
+		current_answer_index -= 1
+		if current_answer_index == 0:
+			current_answer_index = len(options)
 		reset_answer_index()
 
 func reset_answer_index():
+	$Control/Options/Option1/SpriteAnswer.hide()
+	$Control/Options/Option2/SpriteAnswer.hide()
+	$Control/Options/Option3/SpriteAnswer.hide()
+	$Control/Options/Option4/SpriteAnswer.hide()
 	if current_answer_index == 1:
-		$Control/Answers/SpriteAnswer1.show()
-		$Control/Answers/SpriteAnswer2.hide()
+		$Control/Options/Option1/SpriteAnswer.show()
 	elif current_answer_index == 2:
-		$Control/Answers/SpriteAnswer2.show()
-		$Control/Answers/SpriteAnswer1.hide()
+		$Control/Options/Option2/SpriteAnswer.show()
+	elif current_answer_index == 3:
+		$Control/Options/Option3/SpriteAnswer.show()
+	elif current_answer_index == 4:
+		$Control/Options/Option4/SpriteAnswer.show()
 
 func _on_Answer1InteractArea_mouse_entered():
 	current_answer_index = 1
@@ -101,6 +141,14 @@ func _on_Answer1InteractArea_mouse_entered():
 
 func _on_Answer2InteractArea_mouse_entered():
 	current_answer_index = 2
+	reset_answer_index()
+
+func _on_Answer3InteractArea_mouse_entered():
+	current_answer_index = 3
+	reset_answer_index()
+
+func _on_Answer4InteractArea_mouse_entered():
+	current_answer_index = 4
 	reset_answer_index()
 
 func _on_Answer1InteractArea_input_event(_viewport, event, _shape_idx):
@@ -114,3 +162,16 @@ func _on_Answer2InteractArea_input_event(_viewport, event, _shape_idx):
 		current_answer_index = 2
 		next_line()
 		caller.dialog_option(2)
+
+
+func _on_Answer3InteractArea_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
+		current_answer_index = 3
+		next_line()
+		caller.dialog_option(3)
+
+func _on_Answer4InteractArea_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
+		current_answer_index = 4
+		next_line()
+		caller.dialog_option(4)

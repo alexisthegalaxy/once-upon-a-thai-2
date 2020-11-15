@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Light/light.png" type="Texture" id=2]
@@ -43,10 +43,13 @@ extents = Vector2( 22.738, 15.7798 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 36.9489, 41.9385 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 87.3137, 7.46277 )
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 36.9876, 29.4021 )
+
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 11.6567, 38.2656 )
 
 [node name="Chaiyaphum" type="Node2D"]
@@ -6244,7 +6247,7 @@ position = Vector2( 699.744, 467.54 )
 position = Vector2( 1295.12, 160.862 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 175.009, 666.361 )
+position = Vector2( 202.123, 376.326 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6260,7 +6263,7 @@ dialog = [ "Dad: Be strong [Name]." ]
 sprite_path = "res://Npcs/sprites/dad.png"
 direction = "left"
 
-[node name="Pet\'s Mom" parent="YSort/NPCs" instance=ExtResource( 11 )]
+[node name="PetsMom" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 603.748, 683.811 )
 dialog = [ "Pet's mom: Are you looking for Pet? He's just left, he’s doing his shamanic initiation with his dad.", "Pet's mom: Come again later, you could be training together!" ]
 sprite_path = "res://Npcs/sprites/pets_mom.png"
@@ -6474,11 +6477,18 @@ shape = SubResource( 1 )
 position = Vector2( 483.01, 258.91 )
 shape = SubResource( 2 )
 
-[node name="Area2D6" type="Area2D" parent="."]
+[node name="YaaiGivesWarningBeforeForest" type="Area2D" parent="."]
 position = Vector2( -287.205, 429.387 )
 
-[node name="YaaiGivesWarningBeforeForest" type="CollisionShape2D" parent="Area2D6"]
+[node name="YaaiGivesWarningBeforeForest" type="CollisionShape2D" parent="YaaiGivesWarningBeforeForest"]
 position = Vector2( 482.477, 269.205 )
+shape = SubResource( 3 )
+
+[node name="PetWillWalk" type="Area2D" parent="."]
+position = Vector2( -287.205, 429.387 )
+
+[node name="PetWillWalk" type="CollisionShape2D" parent="PetWillWalk"]
+position = Vector2( 514.974, -118.716 )
 shape = SubResource( 4 )
 
 [node name="Area2D3" type="Area2D" parent="."]
@@ -6494,7 +6504,7 @@ __meta__ = {
 
 [node name="Ceremony starts" type="CollisionShape2D" parent="Area2D4"]
 position = Vector2( 206.673, 526.773 )
-shape = SubResource( 3 )
+shape = SubResource( 5 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -6551,6 +6561,7 @@ stops_ids = [ 345, 343, 82, 207 ]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D5" to="." method="_on_Area2D5_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
-[connection signal="body_entered" from="Area2D6" to="." method="_on_Area2D6_body_entered"]
+[connection signal="body_entered" from="YaaiGivesWarningBeforeForest" to="." method="_on_Area2D6_body_entered"]
+[connection signal="body_entered" from="PetWillWalk" to="." method="_on_PetWillWalk_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="." method="_on_Area2D3_body_entered"]
 [connection signal="body_entered" from="Area2D4" to="." method="_on_Area2D4_body_entered"]

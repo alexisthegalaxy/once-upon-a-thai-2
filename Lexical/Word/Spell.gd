@@ -112,10 +112,10 @@ func start_test_after_animation():
 func _on_Area2D_body_entered(body):
 	if body == Game.player:
 		# if the Player starts the interaction
-#		Game.gains_focus(self)
+		Game.gains_focus(self)
 		# if the Spell starts the interaction
-		if not Game.is_overworld_frozen() and not is_frozen:
-			interact()
+#		if not Game.is_overworld_frozen() and not is_frozen:
+#			interact()
 
 func _on_Area2D_body_exited(body):
 	if body == Game.player:

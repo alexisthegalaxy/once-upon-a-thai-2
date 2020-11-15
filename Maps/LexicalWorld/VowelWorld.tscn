@@ -36,7 +36,7 @@ to_y = 75
 sprite = ExtResource( 8 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( -134.083, -198.735 )
+position = Vector2( -18.9133, -51.8106 )
 
 [node name="Letters" type="YSort" parent="YSort"]
 

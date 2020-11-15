@@ -41,7 +41,7 @@ __meta__ = {
 }
 
 [node name="Timer" type="Timer" parent="Control"]
-wait_time = 0.001
+wait_time = 0.05
 autostart = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control"]
@@ -59,12 +59,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Answers" type="Node2D" parent="Control"]
+[node name="Options" type="Node2D" parent="Control"]
 position = Vector2( 24, 128 )
 
-[node name="Background" type="TextureRect" parent="Control/Answers"]
+[node name="Option1" type="Node2D" parent="Control/Options"]
+
+[node name="Background" type="TextureRect" parent="Control/Options/Option1"]
 margin_left = 168.0
-margin_top = -56.0
+margin_top = -32.0
 margin_right = 272.0
 margin_bottom = -8.0
 mouse_filter = 2
@@ -75,50 +77,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SpriteAnswer1" type="Sprite" parent="Control/Answers"]
-modulate = Color( 1, 0.752941, 0.435294, 1 )
-position = Vector2( 176.688, -45.8795 )
-scale = Vector2( 0.1392, 0.186275 )
-texture = ExtResource( 6 )
-
-[node name="SpriteAnswer2" type="Sprite" parent="Control/Answers"]
+[node name="SpriteAnswer" type="Sprite" parent="Control/Options/Option1"]
 modulate = Color( 1, 0.752941, 0.435294, 1 )
 position = Vector2( 177.242, -22.0562 )
 scale = Vector2( 0.1392, 0.186275 )
 texture = ExtResource( 6 )
 
-[node name="Answer1InteractArea" type="Area2D" parent="Control/Answers"]
-position = Vector2( 182, -56 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Answers/Answer1InteractArea"]
-position = Vector2( 38.0433, 11.4499 )
-shape = SubResource( 3 )
-
-[node name="Answer2InteractArea" type="Area2D" parent="Control/Answers"]
-position = Vector2( 182, -56 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Answers/Answer2InteractArea"]
-position = Vector2( 38.4127, 34.7191 )
-shape = SubResource( 3 )
-
-[node name="Answer1" type="RichTextLabel" parent="Control/Answers"]
-margin_left = 182.0
-margin_top = -56.0
-margin_right = 271.0
-margin_bottom = -32.0
-mouse_filter = 2
-custom_fonts/mono_font = SubResource( 1 )
-custom_fonts/normal_font = SubResource( 2 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-bbcode_enabled = true
-bbcode_text = "Gros geck!"
-text = "Gros geck!"
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
-}
-
-[node name="Answer2" type="RichTextLabel" parent="Control/Answers"]
+[node name="Label" type="RichTextLabel" parent="Control/Options/Option1"]
 margin_left = 182.0
 margin_top = -32.0
 margin_right = 272.0
@@ -133,8 +98,153 @@ text = "Gros geck!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Answer1InteractArea" type="Area2D" parent="Control/Options/Option1"]
+position = Vector2( 182, -56 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Options/Option1/Answer1InteractArea"]
+position = Vector2( 38.3112, 35.6401 )
+shape = SubResource( 3 )
+
+[node name="Option2" type="Node2D" parent="Control/Options"]
+
+[node name="Background" type="TextureRect" parent="Control/Options/Option2"]
+margin_left = 168.0
+margin_top = -56.4003
+margin_right = 272.0
+margin_bottom = -32.4003
+mouse_filter = 2
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpriteAnswer" type="Sprite" parent="Control/Options/Option2"]
+modulate = Color( 1, 0.752941, 0.435294, 1 )
+position = Vector2( 176.688, -45.8795 )
+scale = Vector2( 0.1392, 0.186275 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="RichTextLabel" parent="Control/Options/Option2"]
+margin_left = 182.0
+margin_top = -56.0
+margin_right = 271.0
+margin_bottom = -32.0
+mouse_filter = 2
+custom_fonts/mono_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Gros geck!"
+text = "Gros geck!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Answer2InteractArea" type="Area2D" parent="Control/Options/Option2"]
+position = Vector2( 182, -56 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Options/Option2/Answer2InteractArea"]
+position = Vector2( 38.3313, 11.9135 )
+shape = SubResource( 3 )
+
+[node name="Option3" type="Node2D" parent="Control/Options"]
+position = Vector2( 0, -24.0273 )
+
+[node name="Background" type="TextureRect" parent="Control/Options/Option3"]
+margin_left = 168.0
+margin_top = -56.4003
+margin_right = 272.0
+margin_bottom = -32.4003
+mouse_filter = 2
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpriteAnswer" type="Sprite" parent="Control/Options/Option3"]
+modulate = Color( 1, 0.752941, 0.435294, 1 )
+position = Vector2( 176.688, -45.8795 )
+scale = Vector2( 0.1392, 0.186275 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="RichTextLabel" parent="Control/Options/Option3"]
+margin_left = 182.0
+margin_top = -56.0
+margin_right = 271.0
+margin_bottom = -32.0
+mouse_filter = 2
+custom_fonts/mono_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Gros geck!"
+text = "Gros geck!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Answer3InteractArea" type="Area2D" parent="Control/Options/Option3"]
+position = Vector2( 182, -56 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Options/Option3/Answer3InteractArea"]
+position = Vector2( 38.3313, 11.9135 )
+shape = SubResource( 3 )
+
+[node name="Option4" type="Node2D" parent="Control/Options"]
+position = Vector2( 0, -47.5334 )
+
+[node name="Background" type="TextureRect" parent="Control/Options/Option4"]
+margin_left = 168.0
+margin_top = -56.4003
+margin_right = 272.0
+margin_bottom = -32.4003
+mouse_filter = 2
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpriteAnswer" type="Sprite" parent="Control/Options/Option4"]
+modulate = Color( 1, 0.752941, 0.435294, 1 )
+position = Vector2( 176.688, -45.8795 )
+scale = Vector2( 0.1392, 0.186275 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="RichTextLabel" parent="Control/Options/Option4"]
+margin_left = 182.0
+margin_top = -56.0
+margin_right = 271.0
+margin_bottom = -32.0
+mouse_filter = 2
+custom_fonts/mono_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Gros geck!"
+text = "Gros geck!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Answer4InteractArea" type="Area2D" parent="Control/Options/Option4"]
+position = Vector2( 182, -56 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Options/Option4/Answer4InteractArea"]
+position = Vector2( 38.3313, 11.9135 )
+shape = SubResource( 3 )
 [connection signal="timeout" from="Control/Timer" to="." method="_on_Timer_timeout"]
-[connection signal="input_event" from="Control/Answers/Answer1InteractArea" to="." method="_on_Answer1InteractArea_input_event"]
-[connection signal="mouse_entered" from="Control/Answers/Answer1InteractArea" to="." method="_on_Answer1InteractArea_mouse_entered"]
-[connection signal="input_event" from="Control/Answers/Answer2InteractArea" to="." method="_on_Answer2InteractArea_input_event"]
-[connection signal="mouse_entered" from="Control/Answers/Answer2InteractArea" to="." method="_on_Answer2InteractArea_mouse_entered"]
+[connection signal="input_event" from="Control/Options/Option1/Answer1InteractArea" to="." method="_on_Answer1InteractArea_input_event"]
+[connection signal="mouse_entered" from="Control/Options/Option1/Answer1InteractArea" to="." method="_on_Answer1InteractArea_mouse_entered"]
+[connection signal="input_event" from="Control/Options/Option2/Answer2InteractArea" to="." method="_on_Answer2InteractArea_input_event"]
+[connection signal="mouse_entered" from="Control/Options/Option2/Answer2InteractArea" to="." method="_on_Answer2InteractArea_mouse_entered"]
+[connection signal="input_event" from="Control/Options/Option3/Answer3InteractArea" to="." method="_on_Answer3InteractArea_input_event"]
+[connection signal="mouse_entered" from="Control/Options/Option3/Answer3InteractArea" to="." method="_on_Answer3InteractArea_mouse_entered"]
+[connection signal="input_event" from="Control/Options/Option4/Answer4InteractArea" to="." method="_on_Answer4InteractArea_input_event"]
+[connection signal="mouse_entered" from="Control/Options/Option4/Answer4InteractArea" to="." method="_on_Answer4InteractArea_mouse_entered"]

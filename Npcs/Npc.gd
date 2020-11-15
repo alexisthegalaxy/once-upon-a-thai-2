@@ -45,8 +45,40 @@ func make_animations():
 func update_animation():
 	$AnimationPlayer.play(state  + "_" + direction)
 
-func dialog_option(_value):
-	pass
+func dialog_option(parameters):
+	var dialog_node = parameters[0]
+	var chosen_option = parameters[1]
+	
+	if sprite_path == "res://Npcs/sprites/pet.png":
+		if chosen_option == 3:
+			dialog = ["Pet: Hmph, yeah. In any case, I’ve got important stuff to do in Chaiyaphum. Smell ya later, loser!"]
+			dialog_node.dialog = dialog
+			dialog_node.page = -1
+		else:
+			dialog = ["Pet: See? \"bpai\" is written ไป. In any case, I’ve got important stuff to do in Chaiyaphum. Smell ya later, loser!"]
+			dialog_node.dialog = dialog
+			dialog_node.page = -1
+		post_dialog_event = ["npc_walks_to", [[
+			Vector2(543.984375, 244.238388),
+			Vector2(543.984375, 100.238388),
+			Vector2(359.984375, 100.238388),
+			Vector2(359.984375, 54.238388),
+			Vector2(438.039154, -15.019601),
+			Vector2(534.457153, -30.081276),
+			Vector2(596.457153, -30.081276),
+			Vector2(657.126892, -52.954685),
+			Vector2(657.126892, 11.045315),
+			Vector2(782.301086, 115.493446),
+			Vector2(1187.967773, 115.493446),
+			Vector2(1187.967773, 260.826782),
+			Vector2(1297.967773, 260.826782),
+			Vector2(1297.967773, 291.826782),
+			Vector2(1297.967773, 257.826782),
+		]]]
+		dialog_node.post_dialog_event = post_dialog_event
+#		Game.player.can_interact = false
+#		Game.can_move = false
+#		interact()
 
 func _ready():
 	$Sprite.texture = load(sprite_path)
