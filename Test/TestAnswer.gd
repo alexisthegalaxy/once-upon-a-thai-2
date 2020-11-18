@@ -10,19 +10,19 @@ var alpha = 0
 var text
 var is_correct
 var test
+var has_been_answered_and_is_wrong = false
 
 signal test_answered_correctly
 
 func set_alpha():
-	$Sprite.modulate = Color(1, 1, 1, alpha)
-	$Label.modulate = Color(1, 1, 1, alpha)
+	$Button.modulate = Color(1, 1, 1, alpha)
 
 func init(_test, answer_string, _is_correct):
 	test = _test
 	var _e = self.connect("test_answered_correctly", test, "answered_correctly", [])
 	text = answer_string
 	is_correct = _is_correct
-	$Label.text = answer_string
+	$Button/Label.text = answer_string
 
 func _ready():
 	set_alpha()
@@ -41,17 +41,11 @@ func _process(delta):
 		alpha += delta * 2
 		set_alpha()
 
-func _on_Area2D_mouse_entered():
-	$Sprite.modulate = Color(1, 0.9, 1, alpha)
-
-func _on_Area2D_mouse_exited():
-	$Sprite.modulate = Color(1, 1, 1, alpha)
-
-
-func _on_Area2D_input_event(_viewport, event, _shape_idx):
-	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
-		if is_correct:
-			emit_signal("test_answered_correctly")
-		else:
-			Game.set_hp(Game.hp - 0.5)
-			queue_free()
+func _on_Button_pressed():
+	if is_correct:
+		SoundPlayer.play_sound("res://Sounds/ding.wav")
+		emit_signal("test_answered_correctly")
+	else:
+		SoundPlayer.play_sound("res://Sounds/incorrect.wav")
+		has_been_answered_and_is_wrong = true
+		$Button.disabled = true

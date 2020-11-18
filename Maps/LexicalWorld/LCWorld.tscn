@@ -43,12 +43,18 @@ id = 21
 position = Vector2( 241.563, -182.479 )
 
 [node name="Letter ท" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( -63.7367, -85.5181 )
+position = Vector2( -63.7367, -86.2425 )
 id = 11
+
+[node name="Letter ม" parent="YSort/Letters" instance=ExtResource( 11 )]
+position = Vector2( -131.106, -95.6598 )
+id = 5
+display_name = "ม"
 
 [node name="Letter ย" parent="YSort/Letters" instance=ExtResource( 11 )]
 position = Vector2( 134.397, -158.022 )
 id = 13
+display_name = "ย"
 
 [node name="Letter ย2" parent="YSort/Letters" instance=ExtResource( 11 )]
 position = Vector2( 364.659, -155.868 )

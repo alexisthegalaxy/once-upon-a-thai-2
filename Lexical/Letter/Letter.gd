@@ -7,6 +7,7 @@ var ratio = 1
 var wobbles = true
 var wobbling_time = 0
 var y = 0
+export var display_name = ""
 
 # events are an array that contains first the event name, then the array of parameters
 export(Array) var pre_dialog_event = []
@@ -15,6 +16,7 @@ export(Array) var post_dialog_event = []
 func _ready():
 	y = self.position.y
 	letter = Game.letters[str(id)]
+	display_name = letter["th"]
 	$Label.text = letter["th"]
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

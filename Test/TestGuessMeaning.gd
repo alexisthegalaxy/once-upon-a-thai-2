@@ -57,7 +57,6 @@ func leaves_test_to_go_to_MP():
 		over_word,
 	]
 	over_word.is_frozen = true
-	print('leaves_test_to_go_to_MP!!')
 
 func init(word_id, _over_word):
 	Game.can_move = false

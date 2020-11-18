@@ -12,6 +12,8 @@ func _ready():
 
 
 func _on_Area2D_body_entered(body):
-	if (not body == Game.player) and ("@Word@" in body.name):
+	if body == Game.player:
+		return
+	if ("@Spell@" in body.name):
 		if body.id in stops_ids:
 			body.starts_disappearing()

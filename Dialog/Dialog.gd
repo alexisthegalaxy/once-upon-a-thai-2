@@ -13,10 +13,12 @@ var test = "test test"
 var time = 0
 var this_line_doesnt_show_the_name = false
 var display_name = ""
+var answered_are_revealed = false
 #var can_skip = false
 
 func _ready():
 	reset_line()
+	answered_are_revealed = false
 	$Control/Options/Option1.hide()
 	$Control/Options/Option2.hide()
 	$Control/Options/Option3.hide()
@@ -132,7 +134,16 @@ func _on_Timer_timeout():
 			line_has_finished_writing = true
 			$Control/NextPage.show()
 			if current_line_has_question:
-				reveal_answers()
+				will_reveal_answers_in_one_half_second()
+
+func will_reveal_answers_in_one_half_second():
+	var timer = Timer.new()
+	timer.connect("timeout", self, "reveal_answers")
+	timer.set_wait_time(0.5)
+	timer.set_one_shot(true)
+	timer.autostart = true
+	timer.start()
+	add_child(timer)
 
 func hide_answers():
 	$Control/Options/Option1.hide()
@@ -141,6 +152,7 @@ func hide_answers():
 	$Control/Options/Option4.hide()
 
 func reveal_answers():
+	answered_are_revealed = true
 	$Control/Options/Option1.show()
 	$Control/Options/Option2.show()
 	if len(options) >= 3:
@@ -176,41 +188,56 @@ func reset_answer_index():
 		$Control/Options/Option4/SpriteAnswer.show()
 
 func _on_Answer1InteractArea_mouse_entered():
+	if not answered_are_revealed:
+		return
 	current_answer_index = 1
 	reset_answer_index()
 
 func _on_Answer2InteractArea_mouse_entered():
+	if not answered_are_revealed:
+		return
 	current_answer_index = 2
 	reset_answer_index()
 
 func _on_Answer3InteractArea_mouse_entered():
+	if not answered_are_revealed:
+		return
 	current_answer_index = 3
 	reset_answer_index()
 
 func _on_Answer4InteractArea_mouse_entered():
+	if not answered_are_revealed:
+		return
 	current_answer_index = 4
 	reset_answer_index()
 
 func _on_Answer1InteractArea_input_event(_viewport, event, _shape_idx):
+	if not answered_are_revealed:
+		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		current_answer_index = 1
 		next_line()
 		caller.dialog_option([self, 1])
 
 func _on_Answer2InteractArea_input_event(_viewport, event, _shape_idx):
+	if not answered_are_revealed:
+		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		current_answer_index = 2
 		next_line()
 		caller.dialog_option([self, 2])
 
-
 func _on_Answer3InteractArea_input_event(_viewport, event, _shape_idx):
+	if not answered_are_revealed:
+		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		current_answer_index = 3
 		next_line()
 		caller.dialog_option([self, 3])
 
 func _on_Answer4InteractArea_input_event(_viewport, event, _shape_idx):
+	if not answered_are_revealed:
+		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		current_answer_index = 4
 		next_line()

@@ -1496,7 +1496,7 @@ position = Vector2( 498.585, -123.313 )
 position = Vector2( 300.924, 78.8307 )
 
 [node name="Tree947" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 382.541, -35.8808 )
+position = Vector2( 405.568, -39.9445 )
 
 [node name="Tree353" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 697.162, 773.016 )
@@ -1616,7 +1616,7 @@ position = Vector2( 707.56, -172.144 )
 position = Vector2( 707.56, -172.144 )
 
 [node name="Tree916" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 352.055, 17.2771 )
+position = Vector2( 346.185, 27.2105 )
 
 [node name="Tree420" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 399.806, 467.57 )
@@ -3338,7 +3338,7 @@ position = Vector2( 559.743, -126.995 )
 position = Vector2( 467.28, -119.956 )
 
 [node name="Tree935" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 611.299, -81.9971 )
+position = Vector2( 600.914, -81.9971 )
 
 [node name="Tree934" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 235.666, -129.416 )
@@ -3353,7 +3353,7 @@ position = Vector2( 165.143, 130.365 )
 position = Vector2( 393.587, 63.8351 )
 
 [node name="Tree930" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 470.325, -49.8895 )
+position = Vector2( 452.264, -4.7376 )
 
 [node name="Tree963" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 480.166, 11.7548 )
@@ -6178,7 +6178,7 @@ position = Vector2( 273.352, 27.9705 )
 is_pulsating = true
 
 [node name="Sacred Rock11" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 432.679, -127.44 )
+position = Vector2( 370.369, -71.0001 )
 is_pulsating = true
 
 [node name="Sacred Well" parent="YSort" instance=ExtResource( 23 )]
@@ -6193,9 +6193,12 @@ position = Vector2( -293.035, 817.58 )
 id = 343
 
 [node name="pom" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 416.413, -13.6786 )
+position = Vector2( 370.358, 41.8582 )
 id = 23
-can_move = true
+
+[node name="chan" parent="YSort/Words" instance=ExtResource( 16 )]
+position = Vector2( 429.959, -30.8363 )
+id = 24
 
 [node name="rao" parent="YSort/Words" instance=ExtResource( 16 )]
 position = Vector2( 1546.1, -122.128 )
@@ -6205,9 +6208,8 @@ can_move = true
 wobbles = false
 
 [node name="chawp" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 651.3, -68.2188 )
+position = Vector2( 569.124, -37.5155 )
 id = 238
-can_move = true
 
 [node name="PlayerHouse" parent="YSort" instance=ExtResource( 17 )]
 position = Vector2( 699.744, 467.54 )
@@ -6216,7 +6218,7 @@ position = Vector2( 699.744, 467.54 )
 position = Vector2( 1295.12, 160.862 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 186.306, 634.709 )
+position = Vector2( 354.602, 103.07 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6557,35 +6559,36 @@ position = Vector2( 275.327, 40.0732 )
 word_id = 238
 
 [node name="Node2D12" parent="." instance=ExtResource( 28 )]
-position = Vector2( 426.933, -105.634 )
+position = Vector2( 371.396, -54.1608 )
 word_id = 24
 
-[node name="Node2D8" parent="." instance=ExtResource( 28 )]
+[node name="Spawner house" parent="." instance=ExtResource( 28 )]
 position = Vector2( 936.568, 385.993 )
 word_id = 147
 
-[node name="Node2D9" parent="." instance=ExtResource( 28 )]
+[node name="Spawner you" parent="." instance=ExtResource( 28 )]
 position = Vector2( 1208.85, 577.878 )
 word_id = 28
 
-[node name="Node2D14" parent="." instance=ExtResource( 28 )]
+[node name="Spawner not" parent="." instance=ExtResource( 28 )]
 position = Vector2( 1326.43, 333.029 )
 word_id = 39
 
-[node name="Node2D4" parent="." instance=ExtResource( 28 )]
+[node name="Spawner good" parent="." instance=ExtResource( 28 )]
 position = Vector2( 427.257, 934.013 )
 word_id = 82
 
-[node name="Node2D5" parent="." instance=ExtResource( 28 )]
+[node name="Spawner to be" parent="." instance=ExtResource( 28 )]
 position = Vector2( 367.903, 1136.09 )
 word_id = 207
 
-[node name="Node2D2" parent="." instance=ExtResource( 29 )]
+[node name="WordStopper2" parent="." instance=ExtResource( 29 )]
 position = Vector2( 201.705, 786.993 )
+scale = Vector2( 0.840001, 0.32 )
 stops_ids = [ 345, 343, 82, 207 ]
 
-[node name="Node2D6" parent="." instance=ExtResource( 29 )]
-position = Vector2( 575.712, 1060.56 )
+[node name="WordStopper" parent="." instance=ExtResource( 29 )]
+position = Vector2( 1201.69, -10.7517 )
 stops_ids = [ 345, 343, 82, 207 ]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D5" to="." method="_on_Area2D5_body_entered"]

@@ -97,29 +97,21 @@ func clear_deleted_focuses():
 
 func gains_focus(target):
 	clear_deleted_focuses()
-	print('--- gains_focus')
-	print('current_focus before', current_focus)
 	# When the player enters into the interat zone of npc/word/letter
 	if not space_bar_to_interact:
 		space_bar_to_interact = load("res://UI/SpaceBarToInteract.tscn").instance()
 		current_scene.add_child(space_bar_to_interact)
 	current_focus.append(target)
-	print('current_focus after', current_focus)
 
 func reset_focus():
 	clear_deleted_focuses()
-	print('--- reset focus')
-	print('current_focus before', current_focus)
 	if current_focus:
 		if not space_bar_to_interact:
 			space_bar_to_interact = load("res://UI/SpaceBarToInteract.tscn").instance()
 			Game.current_scene.add_child(space_bar_to_interact)
-	print('current_focus after', current_focus)
 
 func lose_focus(target):
 	clear_deleted_focuses()
-	print('--- lose focus')
-	print('current_focus before', current_focus)
 	while target in current_focus:
 		current_focus.erase(target)
 	if not current_focus:
@@ -129,7 +121,6 @@ func lose_focus(target):
 		else:
 			print('weird')
 			print('we called loses_focus while space_bar_to_interact was already deleted.')
-	print('current_focus after', current_focus)
 #	current_focus = null
 
 func learn_letter(letter):
@@ -210,6 +201,7 @@ func _ready():
 	words = retrieve_from_json_file("res://Lexical/Word/words.json")
 	sentences = retrieve_from_json_file("res://Lexical/Sentence/sentences.json")
 	letters = retrieve_from_json_file("res://Lexical/Letter/letters.json")
+	print('letters')
 	
 
 func _input(_event):
@@ -292,7 +284,6 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 		player_velocity = player.velocity
 	
 	if current_scene:
-		print("QUEUE FREE")
 		current_scene.queue_free()
 	
 	assert(to_map_name != "")

@@ -34,18 +34,22 @@ position = Vector2( 35.8049, 125.592 )
 [node name="Letter ป" parent="YSort/Letters" instance=ExtResource( 11 )]
 position = Vector2( -40.5964, 49.5751 )
 id = 19
+display_name = "ป"
 
 [node name="Letter บ" parent="YSort/Letters" instance=ExtResource( 11 )]
 position = Vector2( -45.9267, 111.939 )
 id = 18
+display_name = "บ"
 
-[node name="Letter บ2" parent="YSort/Letters" instance=ExtResource( 11 )]
+[node name="Letter อ" parent="YSort/Letters" instance=ExtResource( 11 )]
 position = Vector2( 73.0898, 110.119 )
 id = 7
+display_name = "อ"
 
 [node name="Letter ด" parent="YSort/Letters" instance=ExtResource( 11 )]
 position = Vector2( 57.8227, 40.995 )
 id = 17
+display_name = "ด"
 
 [node name="Lights" type="Node" parent="."]
 

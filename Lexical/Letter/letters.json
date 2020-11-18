@@ -11,13 +11,13 @@
     "frequency_index": "2",
     "audio": "นอ",
     "introduction": [
-      "น: Nice to see you [Name] - I'm น, the n. [sound]",
-      "น: Just sayin', I'm the most used letter in the Thai alphabet,",
-      "น: so you better remember me!",
-      "น: If you have a hard time distinguishing me from the ม (m),",
-      "น: Notice that the ม has its loops on the sa>M<e side,",
-      "น: While I have my loops >N<ot on the same side.",
-      "น: Alright, test time!"
+      "Nice to see you [Name] - I'm น, the n. [sound]",
+      "Just sayin', I'm the most used letter in the Thai alphabet,",
+      "so you better remember me!",
+      "If you have a hard time distinguishing me from the ม (m),",
+      "Notice that the ม has its loops on the sa>M<e side,",
+      "While I have my loops >N<ot on the same side.",
+      "Alright, test time!"
     ],
     "test": {
       "prompt": "นอน",
@@ -63,10 +63,10 @@
     "frequency_index": "13",
     "audio": "อะ",
     "introduction": [
-      "-ั: Yo!",
-      "-ั: I'm the letter -ั and I'm pronounced like a short \"ah\" sound. [sound]",
-      "-ั: I'm a vowel and I float over a consonant like an accent:",
-      "-ั: For example, นั is pronounced \"na\"."
+      "Yo!",
+      "I'm the letter -ั and I'm pronounced like a short \"ah\" sound. [sound]",
+      "I'm a vowel and I float over a consonant like an accent:",
+      "For example, นั is pronounced \"na\"."
     ],
     "mem": ""
   },
@@ -82,12 +82,12 @@
     "frequency_index": "5",
     "audio": "กอ",
     "introduction": [
-      "ก: Hey [Name], coming here to learn me?",
-      "ก: I'm ก, the g sound, like in the word good. [sound]",
-      "ก: I'm the first letter of the alphabet.",
-      "ก: I look like a n, but I have a ziGzaG leG: that's why I'm the g!",
-      "ก: Careful though - I'm pronounced k at the end of a syllable.",
-      "ก: For example, the word reed in Thai is กก, and is pronounced \"gok\"."
+      "Hey [Name], coming here to learn me?",
+      "I'm ก, the g sound, like in the word good. [sound]",
+      "I'm the first letter of the alphabet.",
+      "I look like a n, but I have a ziGzaG leG: that's why I'm the g!",
+      "Careful though - I'm pronounced k at the end of a syllable.",
+      "For example, the word reed in Thai is กก, and is pronounced \"gok\"."
     ],
     "mem": "ร looks like a n, but it has a zi>g<za>g< le>g<."
   },
@@ -103,11 +103,11 @@
     "frequency_index": "9",
     "audio": "มอ",
     "introduction": [
-      "ม: Hello [Name],",
-      "ม: I am ม, the letter m. [sound]",
-      "ม: I look a lot like my sister น, the n,",
-      "ม: but my loops are on the sa>M<e side.",
-      "ม: and the น's loops are >N<ot on the same side!"
+      "Hello [Name],",
+      "I am ม, the letter m. [sound]",
+      "I look a lot like my sister น, the n,",
+      "but my loops are on the sa>M<e side.",
+      "and the น's loops are >N<ot on the same side!"
     ],
     "mem": "ม has its loops on the sa>m<e side."
   },
@@ -123,13 +123,13 @@
     "frequency_index": "6",
     "audio": "เอ",
     "introduction": [
-      "เ-: Hééé [Name]!",
-      "เ-: I'm the vowel เ- pronounced with a long é sound, [sound]",
-      "เ-: Like in \"café\" or \"Pokémon\".",
-      "เ-: See how I've got a dash next to me?",
-      "เ-: That's because I come before the consonant.",
-      "เ-: For example เน is pronounced \"néé\", or \"nay\".",
-      "เ-: I look like a leg, so that's how you can remember me: I'm a léég!"
+      "Hééé [Name]!",
+      "I'm the vowel เ- pronounced with a long é sound, [sound]",
+      "Like in \"café\" or \"Pokémon\".",
+      "See how I've got a dash next to me?",
+      "That's because I come before the consonant.",
+      "For example เน is pronounced \"néé\", or \"nay\".",
+      "I look like a leg, so that's how you can remember me: I'm a léég!"
     ],
     "test": {
       "prompt": "เท",
@@ -149,14 +149,14 @@
     "frequency_index": "4",
     "audio": "ออ",
     "introduction": [
-      "อ: Hello!",
-      "อ: I'm อ, the long \"o\" vowel like in \"ore\". [sound]",
-      "อ: But I'm special: I can also be a consonant.",
-      "อ: If a word has no starting consonant (for example: the Thai word for piece is \"an\")",
-      "อ: Then I am the placeholder for the consonant: \"an\" is written อัน.",
-      "อ: So, นอ is pronounced \"nor\", ไอ is pronounced \"ai\", and ออ is pronounced \"or\".",
-      "อ: To remember me, think that I look like a 0 (zero sound)",
-      "อ: or like an open mouth saying the \"or\" sound."
+      "Hello!",
+      "I'm อ, the long \"o\" vowel like in \"ore\". [sound]",
+      "But I'm special: I can also be a consonant.",
+      "If a word has no starting consonant (for example: the Thai word for piece is \"an\")",
+      "Then I am the placeholder for the consonant: \"an\" is written อัน.",
+      "So, นอ is pronounced \"nor\", ไอ is pronounced \"ai\", and ออ is pronounced \"or\".",
+      "To remember me, think that I look like a 0 (zero sound)",
+      "or like an open mouth saying the \"or\" sound."
     ],
     "test": {
       "prompt": "ชอบ",
@@ -189,10 +189,10 @@
     "frequency_index": "12",
     "audio": "อี",
     "introduction": [
-      "-ี: Greetings, [Name].",
-      "-ี: I'm -ี, the long \"ee\" sound like in \"knee\". [sound]",
-      "-ี: I'm a vowel floating gracefully over the consonant,",
-      "-ี: For example, นี is pronounced \"nee\"."
+      "Greetings, [Name].",
+      "I'm -ี, the long \"ee\" sound like in \"knee\". [sound]",
+      "I'm a vowel floating gracefully over the consonant,",
+      "For example, นี is pronounced \"nee\"."
     ],
     "test": {
       "prompt": "ดี",
@@ -225,12 +225,12 @@
     "frequency_index": "17",
     "audio": "ทอ",
     "introduction": [
-      "ท: I'm ท. I'm pronounced t, but aspirated, [sound]",
-      "ท: so you can write me t'h.",
-      "ท: I'm the \"t'h\" sound in Thai: ไทย.",
-      "ท: Here's how you can remember me:",
-      "ท: I look like a snake with a long tail (t'h ail).",
-      "ท: Alright, get ready to be tested!"
+      "I'm ท. I'm pronounced t, but aspirated, [sound]",
+      "so you can write me t'h.",
+      "I'm the \"t'h\" sound in Thai: ไทย.",
+      "Here's how you can remember me:",
+      "I look like a snake with a long tail (t'h ail).",
+      "Alright, get ready to be tested!"
     ],
     "test": {
       "prompt": "บาท",
@@ -263,10 +263,10 @@
     "frequency_index": "11",
     "audio": "ยอ",
     "introduction": [
-      "ย: Yo [Name]!",
-      "ย: I'm the consonant ย and I'm pronounced y, [sound]",
-      "ย: I look like the top part of the lowercase \"y\", don't you think?",
-      "ย: Alright, let's get you tested!"
+      "Yo [Name]!",
+      "I'm the consonant ย and I'm pronounced y, [sound]",
+      "I look like the top part of the lowercase \"y\", don't you think?",
+      "Alright, let's get you tested!"
     ],
     "test": {
       "prompt": "ยา",
@@ -286,9 +286,9 @@
     "frequency_index": "16",
     "audio": "อิ",
     "introduction": [
-      "-ิ: What’s crackin’ [Name]?",
-      "-ิ: I'm -ิ, the shorter brother of -ี, and the vowel for the short \"i\" sound. [sound]",
-      "-ิ: Do you see the difference between my long brother ee -ี and me?"
+      "What’s crackin’ [Name]?",
+      "I'm -ิ, the shorter brother of -ี, and the vowel for the short \"i\" sound. [sound]",
+      "Do you see the difference between my long brother ee -ี and me?"
     ],
     "mem": "-ิ looks like l>i<ps."
   },
@@ -330,12 +330,12 @@
     "frequency_index": "18",
     "audio": "ดอ",
     "introduction": [
-      "ด: Howdy! I'm ด the d! [sound]",
-      "ด: Don't get me confused with the ค (k'h).",
-      "ด: I spiral in like a >D<igital finger print, while ค looks like a peacock (pea>K'H<ock).",
-      "ด: Also, don't get me confused with ต, my brother the dt sound: he's got a dent (dt) on his head.",
-      "ด: I'm pronounced t at the end of a syllable, because Thai people don't voice the last consonant in a syllable.",
-      "ด: That's why Thai people can have a hard time dealing between words like side and site!"
+      "Howdy! I'm ด the d! [sound]",
+      "Don't get me confused with the ค (k'h).",
+      "I spiral in like a >D<igital finger print, while ค looks like a peacock (pea>K'H<ock).",
+      "Also, don't get me confused with ต, my brother the dt sound: he's got a dent (dt) on his head.",
+      "I'm pronounced t at the end of a syllable, because Thai people don't voice the last consonant in a syllable.",
+      "That's why Thai people can have a hard time dealing between words like side and site!"
     ],
     "test": {
       "prompt": "ได",
@@ -355,9 +355,9 @@
     "frequency_index": "22",
     "audio": "บอ",
     "introduction": [
-      "บ: Bonjour, I'm the b! [sound]",
-      "บ: I look like my brother ป (bp), and we're both pronounced \"p\" at the end of a syllable.",
-      "บ: I look like a >b<ucket, right?"
+      "Bonjour, I'm the b! [sound]",
+      "I look like my brother ป (bp), and we're both pronounced \"p\" at the end of a syllable.",
+      "I look like a >b<ucket, right?"
     ],
     "mem": "บ looks like a >b<ucket."
   },
@@ -373,11 +373,11 @@
     "frequency_index": "23",
     "audio": "ปอ",
     "introduction": [
-      "ป: [Name]!",
-      "ป: I'm ป, the bp sound. [sound]",
-      "ป: Don't get me confused with the บ (b): I've got a longer tail.",
-      "ป: I'm pronounced bp at the beginning of a syllable, p at the end.",
-      "ป: That's because you don't release the air at the end of syllables."
+      "[Name]!",
+      "I'm ป, the bp sound. [sound]",
+      "Don't get me confused with the บ (b): I've got a longer tail.",
+      "I'm pronounced bp at the beginning of a syllable, p at the end.",
+      "That's because you don't release the air at the end of syllables."
     ],
     "test": {
       "prompt": "ไป",
@@ -410,13 +410,13 @@
     "frequency_index": "24",
     "audio": "คอ",
     "introduction": [
-      "ค: Hey, I'm ค.",
-      "ค: I'm pronounced k'h, just like a k, but aspirated. [sound]",
-      "ค: Don't get me confused with the ด, the d. Do you see the difference?",
-      "ค: I look like a peacock (pea>K'H<ock) looking at you, while ด spirals in like a >D<igital finger print.",
-      "ค: Also! I'm not the only letter in Thai that's pronounced k'h.",
-      "ค: The other ones are ข, which is quite popular, and ฆ, which is rarer. There's also the obsolete ฃ.",
-      "ค: Alright, test time!"
+      "Hey, I'm ค.",
+      "I'm pronounced k'h, just like a k, but aspirated. [sound]",
+      "Don't get me confused with the ด, the d. Do you see the difference?",
+      "I look like a peacock (pea>K'H<ock) looking at you, while ด spirals in like a >D<igital finger print.",
+      "Also! I'm not the only letter in Thai that's pronounced k'h.",
+      "The other ones are ข, which is quite popular, and ฆ, which is rarer. There's also the obsolete ฃ.",
+      "Alright, test time!"
     ],
     "test": {
       "prompt": "คน",
@@ -500,6 +500,19 @@
     "class": "VOWEL",
     "frequency_index": "33",
     "audio": "ไม้ม้วน",
+    "introduction": [
+      "Hi [Name]!",
+      "I'm ใ-, also called Ai Maimuan and I'm pronounced \"ai\", like in \"eye\". [sound]",
+      "Don't get me confused with my brother Maimalai: he's pointy ไ-, and I'm loopy ใ-.",
+      "I'm only used in 20 words - but these are very common words! For example \"big\" (ใหญ่), \"heart\" (ใจ), or \"to give\" (ให้).",
+      "We both make the same sound, and both come before the consonant.",
+      "To remember me, notice how I look like the staff of a high-ranking (h>ai<) bishop!",
+      "Alright, time to get you tested!"
+    ],
+    "test": {
+      "prompt": "ไป",
+      "distractors": ["ปไ", "ใป", "ปใ"]
+    },
     "mem": "ใ looks like the staff of a high-ranking (h>ai<) bishop."
   },
   "28": {
@@ -514,13 +527,13 @@
     "frequency_index": "35",
     "audio": "ไม้มลาย",
     "introduction": [
-      "ไ-: Hi [Name]!",
-      "ไ-: I'm ไ-, also called Ai Maimalai and I'm pronounced \"ai\", like in \"eye\". [sound]",
-      "ไ-: Don't get me confused with my brother Maimuan: he's loopy ใ-, and I'm pointy ไ-.",
-      "ไ-: We both make the same sound though.",
-      "ไ-: We come before the consonant: for example ไกล (ai-g-l) is pronounced glai!",
-      "ไ-: To remember me, notice how I look like a lightning str>ai<ke!",
-      "ไ-: Alright, time to get you tested!"
+      "Hi [Name]!",
+      "I'm ไ-, also called Ai Maimalai and I'm pronounced \"ai\", like in \"eye\". [sound]",
+      "Don't get me confused with my brother Maimuan: he's loopy ใ-, and I'm pointy ไ-.",
+      "We both make the same sound though.",
+      "We come before the consonant: for example ไกล (ai-g-l) is pronounced glai!",
+      "To remember me, notice how I look like a lightning str>ai<ke!",
+      "Alright, time to get you tested!"
     ],
     "test": {
       "prompt": "ไป",
@@ -553,12 +566,12 @@
     "frequency_index": "30",
     "audio": "ชอ",
     "introduction": [
-      "ช: Hey, I'm the charming \"ch\" sound! [sound]",
-      "ช: I'm not the only one - ฉ and ฌ also make the sound \"ch\", but they're rare.",
-      "ช: But the \"ch\" sound becomes \"t\" at the end of a syllable.",
-      "ช: To remember me, notice how I look like the body of a >ch<ick (head on the left, tail on the right).",
-      "ช: And also: don't get me confused with the ซ (s), the บ (b) or the ข (k'h)!",
-      "ช: Anyway - test time!"
+      "Hey, I'm the charming \"ch\" sound! [sound]",
+      "I'm not the only one - ฉ and ฌ also make the sound \"ch\", but they're rare.",
+      "But the \"ch\" sound becomes \"t\" at the end of a syllable.",
+      "To remember me, notice how I look like the body of a >ch<ick (head on the left, tail on the right).",
+      "And also: don't get me confused with the ซ (s), the บ (b) or the ข (k'h)!",
+      "Anyway - test time!"
     ],
     "test": {
       "prompt": "ชอบ",
@@ -604,10 +617,10 @@
     "frequency_index": "32",
     "audio": "อุ",
     "introduction": [
-      "-ุ: Hey! I'm the short \"u\" sound, like in \"good\".",
-      "-ุ: I go under the main consonant: for example, นุ is read \"nu\".",
-      "-ุ: Me and my long \"oo\" brother -ู are the only one to go under,",
-      "-ุ: So it's easy to remember us! u linke >u<nder!"
+      "Hey! I'm the short \"u\" sound, like in \"good\".",
+      "I go under the main consonant: for example, นุ is read \"nu\".",
+      "Me and my long \"oo\" brother -ู are the only one to go under,",
+      "So it's easy to remember us! u linke >u<nder!"
     ],
     "test": {
       "prompt": "คุณ",
@@ -631,25 +644,25 @@
   "35": {
     "old_id": 36,
     "id": 35,
-    "th": "-",
+    "th": "∅",
     "pron": "",
-    "en": "or (short)",
+    "en": "o (short)",
     "alphabet_index": "0",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "0",
     "audio": "โอะ",
     "introduction": [
-      "-: Me? I'm nobody.",
-      "-: I'm the absence of vowel in between two consonants.",
-      "-: I use the symbol \"-\" so that you can see me, but in reality I'm invisible.",
-      "-: I'm wherever there is no vowel.",
-      "-: I still have a sound though!",
-      "-: In Thai, the absence of vowel is pronounced with a short \"oh\" sound. [sound]",
-      "-: Don't be so surprised, English does it too! With words like rhythm or sarcasm.",
-      "-: For example, the word system: ระบบ (R-A-B-P) is pronounced \"rabop\".",
-      "-: Or, the word six: หก (H-K) is pronounced \"hok\".",
-      "-: You got it? You better, because I'm very common!"
+      "Me? I'm nobody.",
+      "I'm the absence of vowel in between two consonants.",
+      "I use the symbol \"∅\" so that you can see me, but in reality I'm invisible.",
+      "I'm wherever there is no vowel.",
+      "I still have a sound though!",
+      "In Thai, the absence of vowel is pronounced with a short \"oh\" sound. [sound]",
+      "Don't be so surprised, English does it too! With words like rhythm or sarcasm.",
+      "For example, the word system: ระบบ (R-A-B-P) is pronounced \"rabop\".",
+      "Or, the word six: หก (H-K) is pronounced \"hok\".",
+      "You got it? You better, because I'm very common!"
     ],
     "test": {
       "prompt": "คน",
@@ -669,12 +682,12 @@
     "frequency_index": "37",
     "audio": "None",
     "introduction": [
-      "-็: Hi.",
-      "-็: I make long sounds short.",
-      "-็: For example, เปน is long (bpehn) and เป็น is short (bpen).",
-      "-็: Put me over the main consonant of the syllable.",
-      "-็: Don't get me confused with the -๊, which is used to indicate the high tone.",
-      "-็: Some say I look like a short fetus. That will be your mnemonic device."
+      "Hi.",
+      "I make long sounds short.",
+      "For example, เปน is long (bpehn) and เป็น is short (bpen).",
+      "Put me over the main consonant of the syllable.",
+      "Don't get me confused with the -๊, which is used to indicate the high tone.",
+      "Some say I look like a short fetus. That will be your mnemonic device."
     ],
     "test": {
       "prompt": "เล็ก",
@@ -693,10 +706,10 @@
     "frequency_index": "37",
     "audio": "ผอ",
     "introduction": [
-      "ผ: Wassap! I'm the p'h sound! [sound]",
-      "ผ: Don't get me confused with the พ.",
-      "ผ: We make the same \"p'h\" sound, but he's a trashy low-class while I'm high-class. [sound]",
-      "ผ: To remember me, notice how I look like the head of a bird pecking (>p'h<ecking) at the ground."
+      "Wassap! I'm the p'h sound! [sound]",
+      "Don't get me confused with the พ.",
+      "We make the same \"p'h\" sound, but he's a trashy low-class while I'm high-class. [sound]",
+      "To remember me, notice how I look like the head of a bird pecking (>p'h<ecking) at the ground."
     ],
     "test": {
       "prompt": "ผม",
@@ -715,12 +728,12 @@
     "frequency_index": "38",
     "audio": "ฉอ",
     "introduction": [
-      "ฉ: Wassap! I'm the \"ch\" sound! [sound]",
-      "ฉ: I'm not the only one - ช and ฌ also make the sound \"ch\".",
-      "ฉ: To remember me, notice how I look like a wheel>ch<air:",
-      "ฉ: the bottom-right loop is the wheel, and the top part is the chairback!",
-      "ฉ: Granted, you need imagination for that one.",
-      "ฉ: Anyway - test time!"
+      "Wassap! I'm the \"ch\" sound! [sound]",
+      "I'm not the only one - ช and ฌ also make the sound \"ch\".",
+      "To remember me, notice how I look like a wheel>ch<air:",
+      "the bottom-right loop is the wheel, and the top part is the chairback!",
+      "Granted, you need imagination for that one.",
+      "Anyway - test time!"
     ],
     "test": {
       "prompt": "ฉัน",
@@ -739,12 +752,12 @@
     "frequency_index": "39",
     "audio": "ณอ",
     "introduction": [
-      "ณ: Nice to meet you, I'm the useless one in the \"n\" duo.[sound]",
-      "ณ: You probably already met น - he's much popular than me.",
-      "ณ: A long time ago, in the Devanagari script, we were different sounds,",
-      "ณ: I was a \"n\" with the tongue rolled, but we make the same \"n\" sound now.",
-      "ณ: To remember me, notice how I look like a weird capital \"N\".",
-      "ณ: Don't get me confused with the ญ (y) or the ฌ (ch): my right part is like the น."
+      "Nice to meet you, I'm the useless one in the \"n\" duo.[sound]",
+      "You probably already met น - he's much popular than me.",
+      "A long time ago, in the Devanagari script, we were different sounds,",
+      "I was a \"n\" with the tongue rolled, but we make the same \"n\" sound now.",
+      "To remember me, notice how I look like a weird capital \"N\".",
+      "Don't get me confused with the ญ (y) or the ฌ (ch): my right part is like the น."
     ],
     "test": {
       "prompt": "คุณ",

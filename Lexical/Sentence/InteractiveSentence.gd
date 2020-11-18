@@ -10,7 +10,10 @@ func init_interactive_sentence(sentence, main_word_id, _can_listen_to_words):
 	for child in children:
 		child.queue_free()
 	children = []
-	$Node2D/TestSoundPlayer.init_sound_player(sentence["th"].replace("_", ""))
+	
+	var playable_sentence = sentence["th"].replace("_", "")
+	SoundPlayer.play_thai(playable_sentence)
+	$Node2D/TestSoundPlayer.init_sound_player(playable_sentence)
 	if sentence["id"] in Game.known_sentences:
 		$Node2D/Translation.text = sentence["en"]
 	else:

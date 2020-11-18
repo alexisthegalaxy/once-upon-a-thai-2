@@ -64,9 +64,9 @@ func start_music_upon_entering_map(map):
 
 func play_thai(thai):
 	var audio_file_name = "res://Sounds/Thai/" + thai + ".wav"
-	$AudioStreamPlayer.stream = load(audio_file_name)
-	$AudioStreamPlayer.play()
+	$ThaiAudioStreamPlayer.stream = load(audio_file_name)
+	$ThaiAudioStreamPlayer.play()
 
 func play_sound(audio_file_name):
-	$AudioStreamPlayer.stream = load(audio_file_name)
-	$AudioStreamPlayer.play()
+	$GeneralAudioStreamPlayer.stream = load(audio_file_name)
+	$GeneralAudioStreamPlayer.play()

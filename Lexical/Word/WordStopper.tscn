@@ -3,7 +3,7 @@
 [ext_resource path="res://Lexical/Word/WordStopper.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 36.0824, 25.6004 )
+extents = Vector2( 48.6788, 51.9388 )
 
 [node name="WordStopper" type="Node2D"]
 script = ExtResource( 1 )
