@@ -11,9 +11,10 @@ outline_color = Color( 0.984314, 0, 0, 1 )
 font_data = ExtResource( 3 )
 
 [sub_resource type="CircleShape2D" id=2]
+radius = 6.66361
 
 [sub_resource type="CircleShape2D" id=3]
-radius = 24.0
+radius = 10.2139
 
 [node name="Spell" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -40,7 +41,6 @@ __meta__ = {
 }
 
 [node name="Light2D" type="Light2D" parent="Sprite"]
-visible = false
 position = Vector2( 2.11037e-06, -8.42762e-06 )
 scale = Vector2( 2.47815, 2.57364 )
 texture = ExtResource( 1 )
@@ -51,11 +51,9 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 shape = SubResource( 2 )
 
 [node name="Area2D" type="Area2D" parent="."]
-visible = false
 collision_mask = 2
 
 [node name="InteractZone" type="CollisionShape2D" parent="Area2D"]

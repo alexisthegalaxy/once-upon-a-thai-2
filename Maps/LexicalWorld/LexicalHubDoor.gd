@@ -41,7 +41,7 @@ func _on_InteractArea_body_entered(body):
 
 func _on_InteractArea_body_exited(body):
 	if body == Game.player:
-		Game.loses_focus(self)
+		Game.lose_focus(self)
 
 func dialog_option(parameters):
 	var value = parameters[1]
@@ -55,6 +55,6 @@ func interact():
 	var dialog = [
 		leads_to + " \nDo you want to take it? @QYes/No"
 	]
-	Game.current_dialog.init(dialog, self, null, false)
+	Game.current_dialog.init_dialog(dialog, self, null, false)
 	Game.player.stop_walking()
-	get_tree().current_scene.add_child(Game.current_dialog)
+	Game.current_scene.add_child(Game.current_dialog)

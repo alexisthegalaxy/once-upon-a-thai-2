@@ -119,4 +119,4 @@ func _on_Area2D_body_entered(body):
 
 func _on_Area2D_body_exited(body):
 	if body == Game.player:
-		Game.loses_focus(self)
+		Game.lose_focus(self)

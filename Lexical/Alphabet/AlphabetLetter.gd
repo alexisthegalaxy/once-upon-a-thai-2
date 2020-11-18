@@ -16,7 +16,7 @@ func _on_Button_pressed():
 	SoundPlayer.play_thai(letter["pron"])
 	var letter_page = load("res://Lexical/Letter/LetterPage.tscn").instance()
 	Game.player.letter_page = letter_page
-	get_tree().current_scene.add_child(letter_page)
+	Game.current_scene.add_child(letter_page)
 	letter_page.init_letter_page(letter["id"])
 	Game.player.alphabet.queue_free()
 	Game.player.alphabet = null

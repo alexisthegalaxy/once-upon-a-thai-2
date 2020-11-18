@@ -34,11 +34,11 @@ func _process(delta):
 	if phase == PHASE_1:
 		alpha = min(1, alpha + delta / 2)
 		$White.modulate = Color(1, 1, 1, alpha)
-		get_tree().get_current_scene().rotation = random_sign * pow(sin(2 * time * time), 2) / 5
+		Game.current_scene.rotation = random_sign * pow(sin(2 * time * time), 2) / 5
 	elif phase == PHASE_2:
 		alpha = min(1, alpha + delta)
 		$White.modulate = Color(1, 1, 1, alpha)
-		get_tree().get_current_scene().rotation = random_sign * pow(sin(2 * time * time), 2) / 5
+		Game.current_scene.rotation = random_sign * pow(sin(2 * time * time), 2) / 5
 		
 		$TextNode.position.y -= delta * 200
 		$SpellNode.position.y += delta * 200
@@ -54,7 +54,7 @@ func _on_TimerUntilSpellAppears_timeout():
 	phase = PHASE_2
 
 func _on_TimerUntilTextDisappears_timeout():
-	get_tree().get_current_scene().rotation = 0
+	Game.current_scene.rotation = 0
 	time = 0
 	alpha = 1
 	emit_signal("test_can_start")

@@ -33,9 +33,9 @@ func _on_Button_pressed():
 Press F to see all your sentences."""
 		]
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-		Game.current_dialog.init(dialog_text, self, null, false)
+		Game.current_dialog.init_dialog(dialog_text, self, null, false)
 		Game.player.stop_walking()
-		get_tree().current_scene.add_child(Game.current_dialog)
+		Game.current_scene.add_child(Game.current_dialog)
 	else:
 		Game.can_move = true
 		Game.player.can_interact = true

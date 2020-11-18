@@ -28,7 +28,8 @@ func timeout():
 		call_deferred("add_word", new_word)
 
 func add_word(new_word):
-	get_tree().current_scene.get_node("YSort").add_child(new_word)
+	Game.current_scene.get_node("YSort").add_child(new_word)
+#	get_tree().current_scene.get_node("YSort").add_child(new_word)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

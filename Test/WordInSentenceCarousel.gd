@@ -52,7 +52,7 @@ func _on_Area2D_mouse_exited():
 	else:
 		$ColorRect.hide()
 
-func _on_Area2D_input_event(viewport, event, shape_idx):
+func _on_Area2D_input_event(_viewport, event, _shape_idx):
 	# We can listen to a word when:
 	# - looking at the notebook
 	# - looking at a sign
@@ -64,7 +64,7 @@ func _on_Area2D_input_event(viewport, event, shape_idx):
 		if Game.player.notebook:
 			var word_page = load("res://Lexical/WordPage/WordPage.tscn").instance()
 			Game.player.word_page = word_page
-			get_tree().current_scene.add_child(word_page)
+			Game.current_scene.add_child(word_page)
 			word_page.init_word_page(word["id"])
 			Game.player.notebook.queue_free()
 			Game.player.notebook = null

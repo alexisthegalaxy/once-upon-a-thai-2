@@ -24,6 +24,6 @@ func _on_OkButton_pressed():
 	var dict = load("res://Lexical/Dict/Dict.tscn").instance()
 	Game.player.dict = dict
 	dict.init()
-	get_tree().current_scene.add_child(dict)
+	Game.current_scene.add_child(dict)
 	Game.player.word_page = null
 	self.queue_free()

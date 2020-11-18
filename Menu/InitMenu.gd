@@ -28,6 +28,10 @@ func on_selected_character():
 
 func _on_Button_pressed():
 	Game.call_deferred("_deferred_goto_scene", "res://Maps/PlayerHouse.tscn", 24, -143)
+#	Game.call_deferred("_deferred_goto_scene", "res://Maps/Chaiyaphum.tscn", 1298, 212)
+#	Game.call_deferred("_deferred_goto_scene", "res://Maps/PlayerHouseTest.tscn", 24, -143)
+#	Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LCWorld.tscn", 0, 0)
+#	Game.call_deferred("_deferred_goto_scene", "res://Maps/TestScene.tscn", 24, -143)
 
 #func _on_TextEdit_text_changed():
 #	var text = $TextEdit.text
@@ -52,7 +56,7 @@ func _on_Yes_pressed():
 	$Yes.pressed = true
 	$No.pressed = false
 
-func _on_LineEdit_text_changed(new_text):
+func _on_LineEdit_text_changed(_new_text):
 #	print('aaaaa')
 #	var text = $TextEdit.text
 #	print(text)

@@ -132,8 +132,8 @@
       "เ-: I look like a leg, so that's how you can remember me: I'm a léég!"
     ],
     "test": {
-      "prompt": "เด็ก",
-      "distractors": ["ดเก", "ด็ก", "แด็ก", "แดก"]
+      "prompt": "เท",
+      "distractors": ["ทเ", "ทแ", "แท", "วท", "ทว"]
     },
     "mem": "เ looks like a leg (léég)."
   },
@@ -148,6 +148,20 @@
     "class": "MID",
     "frequency_index": "4",
     "audio": "ออ",
+    "introduction": [
+      "อ: Hello!",
+      "อ: I'm อ, the long \"o\" vowel like in \"ore\". [sound]",
+      "อ: But I'm special: I can also be a consonant.",
+      "อ: If a word has no starting consonant (for example: the Thai word for piece is \"an\")",
+      "อ: Then I am the placeholder for the consonant: \"an\" is written อัน.",
+      "อ: So, นอ is pronounced \"nor\", ไอ is pronounced \"ai\", and ออ is pronounced \"or\".",
+      "อ: To remember me, think that I look like a 0 (zero sound)",
+      "อ: or like an open mouth saying the \"or\" sound."
+    ],
+    "test": {
+      "prompt": "ชอบ",
+      "distractors": ["ชบ", "อชบ", "ออบ"]
+    },
     "mem": "อ looks like an open mouth saying the \"or\" sound."
   },
   "8": {
@@ -251,7 +265,7 @@
     "introduction": [
       "ย: Yo [Name]!",
       "ย: I'm the consonant ย and I'm pronounced y, [sound]",
-      "ย: I kinda look like the top part of the y used in English, don't you think?",
+      "ย: I look like the top part of the lowercase \"y\", don't you think?",
       "ย: Alright, let's get you tested!"
     ],
     "test": {
@@ -316,10 +330,10 @@
     "frequency_index": "18",
     "audio": "ดอ",
     "introduction": [
-      "ด: Howdy! I ด the d! [sound]",
+      "ด: Howdy! I'm ด the d! [sound]",
       "ด: Don't get me confused with the ค (k'h).",
       "ด: I spiral in like a >D<igital finger print, while ค looks like a peacock (pea>K'H<ock).",
-      "ต: Also, don't get me confused with ต, my brother the dt sound: he's got a dent (dt) on his head.",
+      "ด: Also, don't get me confused with ต, my brother the dt sound: he's got a dent (dt) on his head.",
       "ด: I'm pronounced t at the end of a syllable, because Thai people don't voice the last consonant in a syllable.",
       "ด: That's why Thai people can have a hard time dealing between words like side and site!"
     ],
@@ -340,6 +354,11 @@
     "class": "MID",
     "frequency_index": "22",
     "audio": "บอ",
+    "introduction": [
+      "บ: Bonjour, I'm the b! [sound]",
+      "บ: I look like my brother ป (bp), and we're both pronounced \"p\" at the end of a syllable.",
+      "บ: I look like a >b<ucket, right?"
+    ],
     "mem": "บ looks like a >b<ucket."
   },
   "19": {
@@ -533,6 +552,18 @@
     "class": "LOW",
     "frequency_index": "30",
     "audio": "ชอ",
+    "introduction": [
+      "ช: Hey, I'm the charming \"ch\" sound! [sound]",
+      "ช: I'm not the only one - ฉ and ฌ also make the sound \"ch\", but they're rare.",
+      "ช: But the \"ch\" sound becomes \"t\" at the end of a syllable.",
+      "ช: To remember me, notice how I look like the body of a >ch<ick (head on the left, tail on the right).",
+      "ช: And also: don't get me confused with the ซ (s), the บ (b) or the ข (k'h)!",
+      "ช: Anyway - test time!"
+    ],
+    "test": {
+      "prompt": "ชอบ",
+      "distractors": ["ฉอบ", "ซอบ", "บอบ", "ขอบ"]
+    },
     "mem": "ช looks like the body of a >ch<ick (head on the left, tail on the right)."
   },
   "31": {
@@ -572,6 +603,16 @@
     "class": "VOWEL",
     "frequency_index": "32",
     "audio": "อุ",
+    "introduction": [
+      "-ุ: Hey! I'm the short \"u\" sound, like in \"good\".",
+      "-ุ: I go under the main consonant: for example, นุ is read \"nu\".",
+      "-ุ: Me and my long \"oo\" brother -ู are the only one to go under,",
+      "-ุ: So it's easy to remember us! u linke >u<nder!"
+    ],
+    "test": {
+      "prompt": "คุณ",
+      "distractors": ["คูณ", "คเณ"]
+    },
     "mem": "-ุ is placed under the consonant (>u<nder), and is shorter than the long u sound -ู."
   },
   "34": {
@@ -632,12 +673,83 @@
       "-็: I make long sounds short.",
       "-็: For example, เปน is long (bpehn) and เป็น is short (bpen).",
       "-็: Put me over the main consonant of the syllable.",
-      "-็: Don't get me confused with the -๊, which is used to indicate the high tone."
+      "-็: Don't get me confused with the -๊, which is used to indicate the high tone.",
+      "-็: Some say I look like a short fetus. That will be your mnemonic device."
     ],
     "test": {
       "prompt": "เล็ก",
-      "distractors": ["เลก", "เ็ลก", "เล๊ก", "เ๊ลก"]
+      "distractors": ["เลก", "ลเ็ก", "เล๊ก", "เ๊ลก"]
     },
     "mem": "-็ looks like a >small< fetus."
+  },
+  "37": {
+    "id": 37,
+    "th": "ผ",
+    "pron": "ผึ้ง",
+    "en": "p'h",
+    "alphabet_index": "None",
+    "final": "p",
+    "class": "HIGH",
+    "frequency_index": "37",
+    "audio": "ผอ",
+    "introduction": [
+      "ผ: Wassap! I'm the p'h sound! [sound]",
+      "ผ: Don't get me confused with the พ.",
+      "ผ: We make the same \"p'h\" sound, but he's a trashy low-class while I'm high-class. [sound]",
+      "ผ: To remember me, notice how I look like the head of a bird pecking (>p'h<ecking) at the ground."
+    ],
+    "test": {
+      "prompt": "ผม",
+      "distractors": ["พม", "ฝม", "ฟม"]
+    },
+    "mem": "ผ looks like the head of a bird pecking (>p'h<ecking) at the ground."
+  },
+  "38": {
+    "id": 38,
+    "th": "ฉ",
+    "pron": "ฉิ่ง",
+    "en": "ch",
+    "alphabet_index": "None",
+    "final": "t",
+    "class": "HIGH",
+    "frequency_index": "38",
+    "audio": "ฉอ",
+    "introduction": [
+      "ฉ: Wassap! I'm the \"ch\" sound! [sound]",
+      "ฉ: I'm not the only one - ช and ฌ also make the sound \"ch\".",
+      "ฉ: To remember me, notice how I look like a wheel>ch<air:",
+      "ฉ: the bottom-right loop is the wheel, and the top part is the chairback!",
+      "ฉ: Granted, you need imagination for that one.",
+      "ฉ: Anyway - test time!"
+    ],
+    "test": {
+      "prompt": "ฉัน",
+      "distractors": ["พฉ", "ฉัฉ", "ชัน"]
+    },
+    "mem": "ฉ looks like wheel>ch<air: the bottom-right loop is the wheel, and the top part is the chairback."
+  },
+  "39": {
+    "id": 39,
+    "th": "ณ",
+    "pron": "เณร",
+    "en": "n",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "LOW",
+    "frequency_index": "39",
+    "audio": "ณอ",
+    "introduction": [
+      "ณ: Nice to meet you, I'm the useless one in the \"n\" duo.[sound]",
+      "ณ: You probably already met น - he's much popular than me.",
+      "ณ: A long time ago, in the Devanagari script, we were different sounds,",
+      "ณ: I was a \"n\" with the tongue rolled, but we make the same \"n\" sound now.",
+      "ณ: To remember me, notice how I look like a weird capital \"N\".",
+      "ณ: Don't get me confused with the ญ (y) or the ฌ (ch): my right part is like the น."
+    ],
+    "test": {
+      "prompt": "คุณ",
+      "distractors": ["คุญ", "คุฌ"]
+    },
+    "mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
   }
 }

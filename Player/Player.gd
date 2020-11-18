@@ -91,13 +91,14 @@ func _on_press_f():
 	else:
 		hub = load("res://UI/UIHub.tscn").instance()
 		hub.init(self)
-		get_tree().current_scene.add_child(hub)
+		Game.current_scene.add_child(hub)
 
 func _input(_event) -> void:
 #	if Input.is_action_just_pressed("interact"):
 #		print('can_interact ', can_interact)
 #		print('Game.current_focus ', Game.current_focus)
-	if Game.can_move and can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]) and Input.is_action_just_pressed("interact"):
+	if Input.is_action_just_pressed("interact") and Game.can_move and can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]):
+		print('wahan')
 		get_tree().set_input_as_handled()
 		Game.player.can_interact = false
 		Game.can_move = false

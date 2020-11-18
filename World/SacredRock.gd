@@ -28,7 +28,6 @@ func timeout():
 	var scale = rng.randf_range(0.2, 0.5)
 	new_orb.max_scale = Vector2(scale, scale)
 	new_orb.velocity = Vector2(rng.randf_range(-2, 2), -8)
-#	get_tree().current_scene.add_child(new_orb)
 	self.add_child(new_orb)
 
 func _process(delta):

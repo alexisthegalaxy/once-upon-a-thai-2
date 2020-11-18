@@ -33,7 +33,7 @@ func _on_Words_pressed():
 	player.dict = dict
 	close_hub()
 	dict.init()
-	get_tree().current_scene.add_child(dict)
+	Game.current_scene.add_child(dict)
 
 
 func _on_Letters_pressed():
@@ -41,7 +41,7 @@ func _on_Letters_pressed():
 	player.alphabet = alphabet
 	close_hub()
 	alphabet.init()
-	get_tree().current_scene.add_child(alphabet)
+	Game.current_scene.add_child(alphabet)
 
 func _on_LetterWorld_pressed():
 	# Going to the material world
@@ -60,5 +60,5 @@ func _on_Sentences_pressed():
 	var notebook = load("res://Lexical/Notebook/Notebook.tscn").instance()
 	player.notebook = notebook
 	close_hub()
-	get_tree().current_scene.add_child(notebook)
+	Game.current_scene.add_child(notebook)
 	notebook.init(0)

@@ -22,7 +22,7 @@ func arrow_letter_update():
 					all_letters_are_known = false
 	if all_letters_are_known:
 		if "LexicalWorld" in Game.current_map_name and not "Hub" in Game.current_map_name:
-			to = get_tree().current_scene.get_node("YSort").get_node("BackDoor").position
+			to = Game.current_scene.get_node("YSort").get_node("BackDoor").position
 			show()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

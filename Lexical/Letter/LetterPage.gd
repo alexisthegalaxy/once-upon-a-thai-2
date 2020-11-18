@@ -25,6 +25,6 @@ func _on_OkButton_pressed():
 	var alphabet = load("res://Lexical/Alphabet/Alphabet.tscn").instance()
 	Game.player.alphabet = alphabet
 	alphabet.init()
-	get_tree().current_scene.add_child(alphabet)
+	Game.current_scene.add_child(alphabet)
 	Game.player.letter_page = null
 	self.queue_free()

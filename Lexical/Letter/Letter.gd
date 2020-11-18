@@ -41,9 +41,9 @@ func get_introduction():
 
 func interact():
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-	Game.current_dialog.init(get_introduction(), self, post_dialog_event, true)
+	Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true)
 	Game.player.stop_walking()
-	get_tree().current_scene.add_child(Game.current_dialog)
+	Game.current_scene.add_child(Game.current_dialog)
 	if pre_dialog_event:
 		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
 
@@ -64,4 +64,4 @@ func _on_Area2D_body_entered(body):
 
 func _on_Area2D_body_exited(body):
 	if body == Game.player:
-		Game.loses_focus(self)
+		Game.lose_focus(self)

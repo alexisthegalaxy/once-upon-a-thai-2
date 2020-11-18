@@ -31,24 +31,32 @@ to_y = 75
 sprite = ExtResource( 5 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 1668.25, -917.185 )
+position = Vector2( -123.987, 6.93719 )
 
 [node name="Letters" type="YSort" parent="YSort"]
 
 [node name="Letter ค" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( -17.502, -202.436 )
+position = Vector2( 34.6552, -116.232 )
 id = 21
 
 [node name="Letter น" parent="YSort/Letters" instance=ExtResource( 11 )]
 position = Vector2( 241.563, -182.479 )
 
 [node name="Letter ท" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( -149.941, -178.242 )
+position = Vector2( -63.7367, -85.5181 )
 id = 11
 
 [node name="Letter ย" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( 105.421, -212.352 )
+position = Vector2( 134.397, -158.022 )
 id = 13
+
+[node name="Letter ย2" parent="YSort/Letters" instance=ExtResource( 11 )]
+position = Vector2( 364.659, -155.868 )
+id = 30
+
+[node name="Letter ณ" parent="YSort/Letters" instance=ExtResource( 11 )]
+position = Vector2( 426.233, -77.6326 )
+id = 39
 
 [node name="Lights" type="Node" parent="."]
 

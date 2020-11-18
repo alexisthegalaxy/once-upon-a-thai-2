@@ -4,7 +4,9 @@ export(Array) var dialog = []
 export var sprite_path = "res://Npcs/sprites/yaai.png"
 export var direction = "down"
 export var state = "stand"  # can be "stand" or "walk"
-var speed = 65
+export var display_name = ""  # Is shown in dialogs. For example: "Nim".
+
+var speed = 100  # 65
 var velocity = Vector2.ZERO
 var is_walking_towards = null
 var will_go_to = []  # array of vector2 positions
@@ -171,22 +173,26 @@ func npc_turn_towards(target):
 
 func interact():
 	if not is_walking_towards:
+		get_tree().set_input_as_handled()
 		Game.player.can_interact = false
 		Game.can_move = false
 		npc_turn_towards(Game.player.position)
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-		Game.current_dialog.init(dialog, self, post_dialog_event, false)
+		Game.current_dialog.init_dialog(dialog, self, post_dialog_event, false)
 		Game.player.stop_walking()
-		get_tree().current_scene.add_child(Game.current_dialog)
+		Game.current_scene.add_child(Game.current_dialog)
 		if pre_dialog_event:
 			Events.execute(pre_dialog_event[0], pre_dialog_event[1])
 	else:
 		Game.can_move = true
 
 func _on_InteractBox_body_entered(body):
-	if body == Game.player:
-		Game.gains_focus(self)
+	if is_walking_towards:
+		return
+	if not body == Game.player:
+		return
+	Game.gains_focus(self)
 
 func _on_InteractBox_body_exited(body):
 	if body == Game.player:
-		Game.loses_focus(self)
+		Game.lose_focus(self)

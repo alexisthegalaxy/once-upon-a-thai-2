@@ -9,11 +9,14 @@ var sentences = []
 var letters = []
 
 # The following are a list of IDs
-#var known_words = [1, 2, 3, 343, 345, 207, 82] 
-var known_words = [] 
+#var known_words = [343, 345, 207, 82] 
+var known_words = []
 #var known_sentences = [196, 197, 198, 199]  # we know the translation. Does not contain seen_sentences.
+#var known_sentences = [196, 197, 198]  # we know the translation. Does not contain seen_sentences.
 var known_sentences = []  # we know the translation. Does not contain seen_sentences.
 var seen_sentences = []  # we don't know the translation
+#var known_letters = [0, 11, 13, 21]  # list of IDs
+#var known_letters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]  # list of IDs
 var known_letters = []  # list of IDs
 #var known_letters = [0, 11, 13, 21, 28]  # five letters
 var collected_letters = []
@@ -66,8 +69,8 @@ func dialog_press_f_to_see_it(learnt_item):
 		lines = ["Press F to open your alphabet and see your letters."]
 	if learnt_item == "word":
 		lines = ["Press F to open your dictionary and see your words"]
-	Game.current_dialog.init(lines, null, null, null)
-	get_tree().current_scene.add_child(Game.current_dialog)
+	Game.current_dialog.init_dialog(lines, null, null, null)
+	current_scene.add_child(Game.current_dialog)
 
 func a_word_is_learnt():
 	# Whenever a word is learnt, we run this function
@@ -77,7 +80,7 @@ func a_word_is_learnt():
 #		if 343 in Game.known_words and 345 in Game.known_words and 207 in Game.known_words and 82 in Game.known_words:
 #			Events.events.has_learnt_four_first_words = true
 #			if not Game.current_focus:
-#				Game.current_focus.append(get_tree().current_scene.get_node("YSort").get_node("NPCs").get_node("Yaai"))
+#				Game.current_focus.append(Game.current_scene.get_node("YSort").get_node("NPCs").get_node("Yaai"))
 #			Events.npc_walks_to([[player.position]])
 			
 
@@ -85,22 +88,38 @@ func discovers_sentence(sentence_id, is_translated):
 	Game.can_move = false
 	var sentence_discovery = load("res://Lexical/Sentence/SentenceDiscovery.tscn").instance()
 	sentence_discovery.sentence_discovery_init(sentence_id, is_translated)
-	get_tree().current_scene.add_child(sentence_discovery)
-	
+	current_scene.add_child(sentence_discovery)
+
+func clear_deleted_focuses():
+	for object in current_focus:
+		if not is_instance_valid(object):
+			current_focus.erase(object)
+
 func gains_focus(target):
+	clear_deleted_focuses()
+	print('--- gains_focus')
+	print('current_focus before', current_focus)
 	# When the player enters into the interat zone of npc/word/letter
 	if not space_bar_to_interact:
 		space_bar_to_interact = load("res://UI/SpaceBarToInteract.tscn").instance()
-		get_tree().current_scene.add_child(space_bar_to_interact)
+		current_scene.add_child(space_bar_to_interact)
 	current_focus.append(target)
+	print('current_focus after', current_focus)
 
 func reset_focus():
+	clear_deleted_focuses()
+	print('--- reset focus')
+	print('current_focus before', current_focus)
 	if current_focus:
 		if not space_bar_to_interact:
 			space_bar_to_interact = load("res://UI/SpaceBarToInteract.tscn").instance()
-			get_tree().current_scene.add_child(space_bar_to_interact)
+			Game.current_scene.add_child(space_bar_to_interact)
+	print('current_focus after', current_focus)
 
-func loses_focus(target):
+func lose_focus(target):
+	clear_deleted_focuses()
+	print('--- lose focus')
+	print('current_focus before', current_focus)
 	while target in current_focus:
 		current_focus.erase(target)
 	if not current_focus:
@@ -108,9 +127,9 @@ func loses_focus(target):
 			space_bar_to_interact.queue_free()
 			space_bar_to_interact = null
 		else:
-			print('weird, we should have space_bar_to_interact')
-#	else:
-#		print('current_focus ', current_focus)
+			print('weird')
+			print('we called loses_focus while space_bar_to_interact was already deleted.')
+	print('current_focus after', current_focus)
 #	current_focus = null
 
 func learn_letter(letter):
@@ -131,9 +150,9 @@ func learn_letter(letter):
 			"Yaai: You have found all the letters you needed for now - you can come back amongst us now.",
 			"Yaai: To leave this world, press the F key.",
 		]
-		Game.current_dialog.init(dialog, null, null, false)
+		Game.current_dialog.init_dialog(dialog, null, null, false)
 		player.stop_walking()
-		get_tree().current_scene.add_child(Game.current_dialog)
+		Game.current_scene.add_child(Game.current_dialog)
 
 func add_random_letter_to_letters_to_look_for():
 	var random_letter = Game.letters[str(rng.randi() % Game.letters.size())]
@@ -144,7 +163,7 @@ func add_random_letter_to_letters_to_look_for():
 		else:
 			looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
 			looking_for_letter__node.init(letters_we_look_for)
-			get_tree().current_scene.add_child(looking_for_letter__node)
+			Game.current_scene.add_child(looking_for_letter__node)
 
 func set_hp(_hp) -> void:
 	player.set_hp(_hp)
@@ -169,7 +188,7 @@ func print_known_sentences() -> void:
 func pop_victory_screen() -> void:
 	var VictoryScreen = load("res://UI/Victory.tscn")
 	var victory_screen = VictoryScreen.instance()
-	var world = get_tree().current_scene
+	var world = current_scene
 	world.add_child(victory_screen)
 
 func retrieve_from_json_file(file):
@@ -191,12 +210,14 @@ func _ready():
 	words = retrieve_from_json_file("res://Lexical/Word/words.json")
 	sentences = retrieve_from_json_file("res://Lexical/Sentence/sentences.json")
 	letters = retrieve_from_json_file("res://Lexical/Letter/letters.json")
+	
 
 func _input(_event):
 	if _event.is_action_pressed("ui_cancel"):
 		if not exit_screen:
 			exit_screen = load("res://UI/ExitAreYouSure.tscn").instance()
-			get_tree().current_scene.add_child(exit_screen)
+#			get_tree().current_scene.add_child(exit_screen)
+			Game.current_scene.add_child(exit_screen)
 		else:
 			if is_instance_valid(exit_screen):
 				exit_screen.stay()
@@ -204,7 +225,7 @@ func _input(_event):
 func _process(delta):
 	OS.set_window_title("Once upon a Thai | fps: " + str(Engine.get_frames_per_second()))
 	if change_color:
-		var canvas_modulate = get_tree().current_scene.get_node("Lights").get_node("CanvasModulate")
+		var canvas_modulate = current_scene.get_node("Lights").get_node("CanvasModulate")
 		var direction = Vector3(goal_color.r, goal_color.g, goal_color.b) - Vector3(canvas_modulate.color.r, canvas_modulate.color.g, canvas_modulate.color.b)
 		if direction.length() < 0.0001:
 			change_color = false
@@ -231,7 +252,7 @@ func update_letters_to_look_for_if_necesssary(to_map_name):
 	else:
 		letters_we_look_for_here = letters_we_look_for
 	looking_for_letter__node.init(letters_we_look_for_here)
-	get_tree().current_scene.add_child(looking_for_letter__node)
+	current_scene.add_child(looking_for_letter__node)
 
 func start_test_when_back_from_MP():
 	if should_start_test_when_back_from_MP[0]:
@@ -242,47 +263,102 @@ func start_test_when_back_from_MP():
 		new_word.word = Game.words[str(word_id)]
 		new_word.can_move = true
 		new_word.position = player.position
-		print('get_tree().current_scene', get_tree().current_scene)
-		get_tree().current_scene.get_node("YSort").add_child(new_word)
+		print('current_scene', current_scene)
+		current_scene.get_node("YSort").add_child(new_word)
 		start_test(
 			should_start_test_when_back_from_MP[0],
 			word_id,
 			new_word
 		)
 
+#func _clear_non_singletons():
+	# TODO: Use it in _deferred_goto_scene before we set a new child
+#	for child in get_tree().get_root().get_children():
+#		print('--- child name ', child.get_name())
+#		if not child.get_name() in ["Game", "Events", "SoundPlayer"]:
+#			child.queue_free()
+
 func _deferred_goto_scene(to_map_name, to_x, to_y):
 	can_move = true
-	
 	if not "LexicalWorld" in current_map_name:
 		if player:
 			player_position_on_overworld = player.position
 			player_last_overworld_map_visited = current_map_name
 	var previous_map_name = current_map_name
 	current_map_name = to_map_name
+	
 	var player_velocity = Vector2.ZERO
 	if player:
 		player_velocity = player.velocity
-	if current_scene:
-#		print('current_scene', current_scene)
-		current_scene.free()
-	assert(to_map_name != "")
-#	print("to_map_name")
-#	print(to_map_name)
-	current_scene = ResourceLoader.load(to_map_name).instance()
 	
+	if current_scene:
+		print("QUEUE FREE")
+		current_scene.queue_free()
+	
+	assert(to_map_name != "")
+	current_scene = ResourceLoader.load(to_map_name).instance()
+#	print('current_scene', current_scene.get_children())
+#	if len(current_scene.get_children()) == 3:
+#		SoundPlayer.play_thai("ตุ๊กแก")
+#		yield(get_tree().create_timer(1.0), "timeout")
+	
+#	var b = current_scene.get_node("YSort")
+#	SoundPlayer.play_thai("คน")
+#	yield(get_tree().create_timer(1.0), "timeout")
+#	var children = b.get_children()  # crash only on production!
+	
+#	SoundPlayer.play_thai("คน")
+#	yield(get_tree().create_timer(1.0), "timeout")
+	
+	# Problem here!!!!
+	# It looks like it fails to find .get_node("Player")
+	# inside current_scene.get_node("YSort")!
+#	var c = current_scene.get_node("YSort").get_node("Player")
+	
+#	SoundPlayer.play_thai("ไทย")
+#	yield(get_tree().create_timer(1.0), "timeout")
+#	SoundPlayer.play_thai("เป็น")
+#	yield(get_tree().create_timer(1.0), "timeout")
+
 	player = current_scene.get_node("YSort").get_node("Player")
 	player.position = Vector2(to_x, to_y)
 	player.velocity = player_velocity
-#	print('player.velocity', player.velocity)
 	SoundPlayer.start_music_upon_entering_map(to_map_name)
-#	get_tree().set_current_scene(current_scene)
-	get_tree().get_root().add_child(current_scene)
-	get_tree().set_current_scene(current_scene)
-	update_letters_to_look_for_if_necesssary(to_map_name)
 	
+#	SoundPlayer.play_thai("ไทย")
+#	yield(get_tree().create_timer(1.0), "timeout")
+#	SoundPlayer.play_thai("เป็น")
+#	yield(get_tree().create_timer(1.0), "timeout")
+	
+	# If we add a yield(get_tree().create_timer(1.0), "timeout")
+	# between the next two lines, we get a crash. Why?
+	for child in get_tree().get_root().get_children():
+		if not child.get_name() in ["Game", "Events", "SoundPlayer"]:
+			child.queue_free()
+#	for child in get_tree().get_root().get_children():
+#		print('--- child name ', child.get_name())
+#	print('get_tree().get_root().get_children()', get_tree().get_root().get_children())  # ViewPort
+	get_tree().get_root().add_child(current_scene)
+	
+#	for child in get_tree().get_root().get_children():
+#		print('--- child name ', child.get_name())
+#		if child.get_name() == "PlayerHouse":
+#			SoundPlayer.play_thai("เป็น")
+#			yield(get_tree().create_timer(1.0), "timeout")
+#	print('get_tree().get_root().get_children()', get_tree().get_root().get_children())  # ViewPort
+#	get_tree().set_current_scene(current_scene)
+
+#	SoundPlayer.play_thai("เป็น")
+#	yield(get_tree().create_timer(1.0), "timeout")
+	
+	update_letters_to_look_for_if_necesssary(to_map_name)
+
 	if "LexicalWorld" in previous_map_name and not "LexicalWorld" in current_map_name:
-		get_tree().current_scene.get_node("Lights").get_node("CanvasModulate").color = Game.last_goal_color
+		current_scene.get_node("Lights").get_node("CanvasModulate").color = Game.last_goal_color
 		start_test_when_back_from_MP()
+	
+#	SoundPlayer.play_thai("ดี")
+#	yield(get_tree().create_timer(1.0), "timeout")
 	
 func _on_InteractBox_body_entered(_player, npc) -> void:
 	_player._on_InteractBox_body_entered(npc)
@@ -296,7 +372,7 @@ func add_sentence(sentence_id, x, y):
 	floaty.text = "new sentence added!"
 	floaty.position.x = x
 	floaty.position.y = y
-	get_tree().current_scene.add_child(floaty)
+	current_scene.add_child(floaty)
 
 func _on_sentence_area_entered(sentence_id, x, y) -> void:
 	if not sentence_id in known_sentences:

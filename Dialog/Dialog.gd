@@ -8,8 +8,10 @@ var post_dialog_signal
 var current_line_has_question = false
 var options = []
 var current_answer_index = 1
-var answers_are_revealed = false
+var line_has_finished_writing = false
 var test = "test test"
+var time = 0
+#var can_skip = false
 
 func _ready():
 	reset_line()
@@ -30,7 +32,6 @@ func process(dialog_line: String) -> String:
 	return processed_dialog
 
 func reset_line():
-	
 	current_line_has_question = "@Q" in dialog[page]
 	if current_line_has_question:
 		options = dialog[page].split("@Q")[1].split("/")
@@ -41,18 +42,25 @@ func reset_line():
 			$Control/Options/Option3/Label.text = options[2]
 		if len(options) >= 4:
 			$Control/Options/Option4/Label.text = options[3]
-	elif answers_are_revealed:
-		answers_are_revealed = false
+	elif line_has_finished_writing:
+		line_has_finished_writing = false
 		hide_answers()
+		$Control/NextPage.hide()
 	var processed_dialog = process(dialog[page])
 	$Control/RichTextLabel.set_bbcode(processed_dialog)
 	$Control/RichTextLabel.set_visible_characters(0)
 
-func init(_dialog, _caller, _post_dialog_event, _post_dialog_signal):
+func init_dialog(_dialog, _caller, _post_dialog_event, _post_dialog_signal):
 	dialog = _dialog
 	caller = _caller
 	post_dialog_event = _post_dialog_event
 	post_dialog_signal = _post_dialog_signal
+	if _caller and _caller.get("display_name"):
+		print('_caller.display_name', _caller.display_name)
+		$Control/NameLabel.set_bbcode("[center]" + _caller.display_name + "[/center]")
+	else:
+		$Control/NameLabel.hide()
+		$Control/NameTexture.hide()
 
 func dialog_ends():
 	queue_free()
@@ -71,7 +79,7 @@ func next_line():
 	else:
 		reset_line()
 
-func _process(_delta):
+func _process(delta):
 	if Input.is_action_just_pressed("interact"):
 		get_tree().set_input_as_handled()
 		if $Control/RichTextLabel.get_visible_characters() > $Control/RichTextLabel.get_total_character_count():
@@ -85,14 +93,26 @@ func _process(_delta):
 				if current_answer_index == 4:
 					caller.dialog_option([self, 4])
 			next_line()
+	if line_has_finished_writing:
+		time += delta
+		$Control/NextPage.modulate = Color(1, 1, 1, cos(time * 10) / 2 + 0.5)
+#		elif can_skip:
+#			$Control/RichTextLabel.set_visible_characters($Control/RichTextLabel.get_total_character_count())
+#			if current_line_has_question:
+#				if not line_has_finished_writing:
+#					line_has_finished_writing = true
+#					reveal_answers()
 
 func _on_Timer_timeout():
+#	can_skip = true
 	var number_of_characters_before = $Control/RichTextLabel.get_visible_characters()
 	$Control/RichTextLabel.set_visible_characters(number_of_characters_before + 2)
-	if current_line_has_question && number_of_characters_before + 2 >= len(dialog[page]):
-		if not answers_are_revealed:
-			answers_are_revealed = true
-			reveal_answers()
+	if number_of_characters_before + 2 >= len(dialog[page]):
+		if not line_has_finished_writing:
+			line_has_finished_writing = true
+			$Control/NextPage.show()
+			if current_line_has_question:
+				reveal_answers()
 
 func hide_answers():
 	$Control/Options/Option1.hide()
@@ -155,23 +175,23 @@ func _on_Answer1InteractArea_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		current_answer_index = 1
 		next_line()
-		caller.dialog_option(1)
+		caller.dialog_option([self, 1])
 
 func _on_Answer2InteractArea_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		current_answer_index = 2
 		next_line()
-		caller.dialog_option(2)
+		caller.dialog_option([self, 2])
 
 
-func _on_Answer3InteractArea_input_event(viewport, event, shape_idx):
+func _on_Answer3InteractArea_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		current_answer_index = 3
 		next_line()
-		caller.dialog_option(3)
+		caller.dialog_option([self, 3])
 
-func _on_Answer4InteractArea_input_event(viewport, event, shape_idx):
+func _on_Answer4InteractArea_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		current_answer_index = 4
 		next_line()
-		caller.dialog_option(4)
+		caller.dialog_option([self, 4])

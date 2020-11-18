@@ -43,7 +43,6 @@ func init_learn_letter_button():
 		for letter_id in word["letters"]:
 			if not letter_id in Game.known_letters:
 				unknown_letter_ids.append(letter_id)
-#	print('unknown_letter_ids', unknown_letter_ids)
 	if unknown_letter_ids:
 		$LearnLetterButton.init(unknown_letter_ids, self)
 	else:

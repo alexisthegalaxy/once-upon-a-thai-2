@@ -56,6 +56,10 @@ id = 35
 position = Vector2( 137.764, -679.067 )
 id = 33
 
+[node name="Letter u2" parent="YSort/Letters" instance=ExtResource( 11 )]
+position = Vector2( 19.848, -697.612 )
+id = 3
+
 [node name="Letter uu" parent="YSort/Letters" instance=ExtResource( 11 )]
 position = Vector2( 302.494, -804.051 )
 id = 32

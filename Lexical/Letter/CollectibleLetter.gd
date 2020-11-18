@@ -30,9 +30,9 @@ func _process(delta):
 
 func interact():
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-	Game.current_dialog.init(["You've found the letter " + letter["th"] + ". You put it in your bag. It might come in handy later!"], self, null, null)
+	Game.current_dialog.init_dialog(["You've found the letter " + letter["th"] + ". You put it in your bag. It might come in handy later!"], self, null, null)
 	Game.player.stop_walking()
-	get_tree().current_scene.add_child(Game.current_dialog)
+	Game.current_scene.add_child(Game.current_dialog)
 	is_disappearing = true
 	Game.collected_letters.append(letter["id"])
 #	if pre_dialog_event:
@@ -47,4 +47,4 @@ func _on_Area2D_body_entered(body):
 
 func _on_Area2D_body_exited(body):
 	if body == Game.player:
-		Game.loses_focus(self)
+		Game.lose_focus(self)

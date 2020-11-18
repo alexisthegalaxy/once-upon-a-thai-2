@@ -39,7 +39,8 @@ __meta__ = {
 shape = SubResource( 2 )
 
 [node name="Light" type="Light2D" parent="."]
-scale = Vector2( 1.52501, 1.40967 )
+position = Vector2( -3.05176e-05, -0.27343 )
+scale = Vector2( 0.674272, 0.601285 )
 texture = ExtResource( 1 )
 texture_scale = 0.29
 energy = 0.75

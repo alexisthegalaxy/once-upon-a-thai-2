@@ -28,7 +28,7 @@ tile_data = PoolIntArray( -1179663, 0, 0, -1179662, 0, 0, -1179661, 0, 0, -11796
 position = Vector2( 336, 624 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( -119.011, 25.2464 )
+position = Vector2( -108.695, 76.8247 )
 direction = "up"
 
 [node name="House" parent="YSort" instance=ExtResource( 6 )]
@@ -36,41 +36,47 @@ position = Vector2( 78.6973, 47.0629 )
 
 [node name="Mother" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( 51.0433, 37.9107 )
-dialog = [ "Som's mother: คนไทยชอบคนดี" ]
+dialog = [ "คนไทยชอบคนดี" ]
 sprite_path = "res://Npcs/sprites/mom.png"
 direction = "left"
+display_name = "Som's mother"
 post_dialog_event = [ "say_sentence", 203 ]
 
 [node name="Father" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( 6.59915, 39.4345 )
-dialog = [ "Som's father: คนไทยชอบอะไร" ]
+dialog = [ "คนไทยชอบอะไร" ]
 sprite_path = "res://Npcs/sprites/dad.png"
 direction = "right"
+display_name = "Som's father"
 post_dialog_event = [ "say_sentence", 204 ]
 
 [node name="Grandmother" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( -69.5908, 30.0377 )
-dialog = [ "Som's grandmother: ฉันคิดว่าคุณเป็นคนดี" ]
+dialog = [ "ฉันคิดว่าคุณเป็นคนดี" ]
 sprite_path = "res://Npcs/sprites/ploysgrandmother.png"
+display_name = "Som's grandmother"
 post_dialog_event = [ "say_sentence", 207 ]
 
 [node name="Brother" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( 54.3616, -311.644 )
-dialog = [ "Som's brother: ผมไม่ชอบคุณ" ]
-sprite_path = "res://Npcs/sprites/som.png"
+dialog = [ "ผมไม่ชอบคุณ" ]
+sprite_path = "res://Npcs/sprites/boy.png"
 direction = "left"
+display_name = "Som's brother"
 post_dialog_event = [ "say_sentence", 205 ]
 
 [node name="Sister" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( 38.8696, -271.009 )
-dialog = [ "Som's sister: ฉันเป็นคนไทย" ]
-sprite_path = "res://Npcs/sprites/som.png"
+dialog = [ "ฉันเป็นคนไทย" ]
+sprite_path = "res://Npcs/sprites/girl.png"
+display_name = "Som's sister"
 post_dialog_event = [ "say_sentence", 206 ]
 
 [node name="Som" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( -46.8872, -252.724 )
-dialog = [ "Som: Hey, my name is Som, I just moved here recently.", "Som: Oh, you're learning Thai. Here's a Thai sentence for you:", "Som: คุณชอบคนแบบไหน" ]
+dialog = [ "Hey, my name is Som, I just moved here recently.", "Oh, you're learning Thai. Here's a Thai sentence for you:", "คุณชอบคนแบบไหน" ]
 sprite_path = "res://Npcs/sprites/som.png"
+display_name = "Som"
 post_dialog_event = [ "teach_sentence", 208 ]
 
 [node name="Lights" type="Node" parent="."]

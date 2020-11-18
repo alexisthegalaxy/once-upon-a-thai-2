@@ -237,7 +237,8 @@
     "tones": "R",
     "pos": "PRON",
     "th": "ผม",
-    "teaching_order": 5
+    "teaching_order": 5,
+    "letters": [37, 35, 5]
   },
   "24": {
     "old_id": 25,
@@ -247,7 +248,8 @@
     "tones": "R",
     "pos": "PRON",
     "th": "ฉัน",
-    "teaching_order": 6
+    "teaching_order": 6,
+    "letters": [38, 3, 0]
   },
   "25": {
     "old_id": 26,
@@ -287,7 +289,8 @@
     "tones": "M",
     "pos": "PRON",
     "th": "คุณ",
-    "teaching_order": -1
+    "teaching_order": -1,
+    "letters": [31, 33, 39]
   },
   "29": {
     "old_id": 30,
@@ -2391,7 +2394,8 @@
     "tones": "F",
     "pos": "VERB",
     "th": "ชอบ",
-    "teaching_order": 32
+    "teaching_order": 32,
+    "letters": [30, 7, 18]
   },
   "239": {
     "old_id": 240,
@@ -3443,7 +3447,7 @@
     "th": "คน",
     "teaching_order": 1,
     "distractors": [345, 207, 82, 26],
-    "letters": [21, 0]
+    "letters": [21, 35, 0]
   },
   "344": {
     "old_id": 348,

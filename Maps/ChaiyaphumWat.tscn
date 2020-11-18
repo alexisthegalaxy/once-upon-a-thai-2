@@ -51,8 +51,9 @@ direction = "right"
 
 [node name="PloysGrandmother" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( 23.9241, -24.7354 )
-dialog = [ "Ploy’s grandmother: Welcome back to Chaiyaphum, [Name]. You’ve grown a lot since last time I saw you!", "Ploy’s grandmother: Your grandmother asked me to overlook your shamanic training for a bit.", "Ploy’s grandmother: Your first quest will be to talk to everybody in Chaiyaphum to gather sentences in Thai.", "Ploy’s grandmother: Come back to me when you’re done!" ]
+dialog = [ "Welcome back to Chaiyaphum, [Name]. You’ve grown a lot since last time I saw you!", "Your grandmother asked me to overlook your shamanic training for a bit.", "Your first quest will be to talk to everybody in Chaiyaphum to gather sentences in Thai.", "Come back to me when you’re done!" ]
 sprite_path = "res://Npcs/sprites/ploysgrandmother.png"
+display_name = "Ploy’s grandmother"
 
 [node name="Lights" type="Node" parent="."]
 
