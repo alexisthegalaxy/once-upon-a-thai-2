@@ -41,7 +41,7 @@ func get_introduction():
 
 func interact():
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-	Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true)
+	Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true, null)
 	Game.player.stop_walking()
 	Game.current_scene.add_child(Game.current_dialog)
 	if pre_dialog_event:

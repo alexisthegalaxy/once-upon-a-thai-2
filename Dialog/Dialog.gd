@@ -11,6 +11,8 @@ var current_answer_index = 1
 var line_has_finished_writing = false
 var test = "test test"
 var time = 0
+var this_line_doesnt_show_the_name = false
+var display_name = ""
 #var can_skip = false
 
 func _ready():
@@ -21,6 +23,18 @@ func _ready():
 	$Control/Options/Option4.hide()
 
 func process(dialog_line: String) -> String:
+	this_line_doesnt_show_the_name = false
+	if "[ShowNoName]" in dialog_line:
+		this_line_doesnt_show_the_name = true
+		dialog_line = dialog_line.replace("[ShowNoName]", "")
+		
+	if this_line_doesnt_show_the_name:
+		$Control/NameLabel.hide()
+		$Control/NameTexture.hide()	
+	elif display_name:
+		$Control/NameLabel.show()
+		$Control/NameTexture.show()	
+	
 	var processed_dialog = dialog_line.replace("[Name]", Game.player_name)
 	if processed_dialog[0] == "-":
 		processed_dialog = " " + processed_dialog
@@ -50,14 +64,17 @@ func reset_line():
 	$Control/RichTextLabel.set_bbcode(processed_dialog)
 	$Control/RichTextLabel.set_visible_characters(0)
 
-func init_dialog(_dialog, _caller, _post_dialog_event, _post_dialog_signal):
+func init_dialog(_dialog, _caller, _post_dialog_event, _post_dialog_signal, speaker_name_if_no_caller):
 	dialog = _dialog
 	caller = _caller
 	post_dialog_event = _post_dialog_event
 	post_dialog_signal = _post_dialog_signal
-	if _caller and _caller.get("display_name"):
-		print('_caller.display_name', _caller.display_name)
-		$Control/NameLabel.set_bbcode("[center]" + _caller.display_name + "[/center]")
+	if speaker_name_if_no_caller:
+		display_name = speaker_name_if_no_caller
+	elif _caller and _caller.get("display_name"):
+		display_name = _caller.display_name
+	if display_name:
+		$Control/NameLabel.set_bbcode("[center]" + display_name + "[/center]")
 	else:
 		$Control/NameLabel.hide()
 		$Control/NameTexture.hide()
@@ -66,7 +83,10 @@ func dialog_ends():
 	queue_free()
 	Game.player.end_dialog()
 	if post_dialog_event:
-		Events.execute(post_dialog_event[0], post_dialog_event[1])
+		if typeof(post_dialog_event) == TYPE_STRING and post_dialog_event == "post_dialog":
+			caller.post_dialog()
+		else:
+			Events.execute(post_dialog_event[0], post_dialog_event[1])
 	if post_dialog_signal:
 		caller.dialog_ended()
 	Game.reset_focus()

@@ -15,6 +15,7 @@ func init(to_):
 func arrow_letter_update():
 	var all_letters_are_known = true
 	if Game.this_letter_world_has_letters:
+		print('Game.this_letter_world_has_letters', Game.this_letter_world_has_letters)
 		for letter_id in Game.this_letter_world_has_letters:
 			var letter = Game.letters[str(letter_id)]
 			if letter in Game.letters_we_look_for:

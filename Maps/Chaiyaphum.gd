@@ -54,7 +54,7 @@ func _on_Area2D5_body_entered(body):
 			var dialog = [
 				"I should talk to my grandmother first..."
 			]
-			Game.current_dialog.init_dialog(dialog, self, null, false)
+			Game.current_dialog.init_dialog(dialog, self, null, false, null)
 			Game.player.stop_walking()
 			Game.current_scene.add_child(Game.current_dialog)
 			Game.player.forced_toward(Vector2(553, 442))
@@ -67,7 +67,7 @@ func _on_Area2D_body_entered(body):
 			var dialog = [
 				"I shouldn't go there now..."
 			]
-			Game.current_dialog.init_dialog(dialog, self, null, false)
+			Game.current_dialog.init_dialog(dialog, self, null, false, null)
 			Game.player.stop_walking()
 			Game.current_scene.add_child(Game.current_dialog)
 			Game.player.forced_toward(Vector2(541, 240))

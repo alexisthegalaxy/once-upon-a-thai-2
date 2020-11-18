@@ -4,7 +4,7 @@ export(String) var to_map_name
 export(int) var to_x
 export(int) var to_y
 export(Texture) var sprite = preload("res://World/LexicalWorld/mc_door.png")
-export var leads_to = "This door leads back to the Lexical Nexus."
+export var leads_to = "Lexical Nexus"
 export var leads_to_letters = []  # a list of ids
 var time = 0
 var door_text = ""
@@ -43,6 +43,11 @@ func _on_InteractArea_body_exited(body):
 	if body == Game.player:
 		Game.lose_focus(self)
 
+func post_dialog():
+	Game.this_letter_world_has_letters = leads_to_letters
+	Game.call_deferred("_deferred_goto_scene", to_map_name, to_x, to_y)
+	SoundPlayer.play_sound("res://Sounds/door.wav")
+
 func dialog_option(parameters):
 	var value = parameters[1]
 	if value == 1:
@@ -53,8 +58,9 @@ func dialog_option(parameters):
 func interact():
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var dialog = [
-		leads_to + " \nDo you want to take it? @QYes/No"
+#		leads_to + " \nDo you want to take it? @QYes/No"
+		"[Name] takes the door to the " + leads_to + "."
 	]
-	Game.current_dialog.init_dialog(dialog, self, null, false)
+	Game.current_dialog.init_dialog(dialog, self, "post_dialog", false, null)
 	Game.player.stop_walking()
 	Game.current_scene.add_child(Game.current_dialog)

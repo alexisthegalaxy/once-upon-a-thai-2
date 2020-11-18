@@ -178,7 +178,7 @@ func interact():
 		Game.can_move = false
 		npc_turn_towards(Game.player.position)
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-		Game.current_dialog.init_dialog(dialog, self, post_dialog_event, false)
+		Game.current_dialog.init_dialog(dialog, self, post_dialog_event, false, null)
 		Game.player.stop_walking()
 		Game.current_scene.add_child(Game.current_dialog)
 		if pre_dialog_event:

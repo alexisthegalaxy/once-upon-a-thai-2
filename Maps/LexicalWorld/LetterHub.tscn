@@ -53,7 +53,7 @@ position = Vector2( 11.2124, 71.1742 )
 position = Vector2( -8.1393, 6.10005 )
 to_map_name = "res://Maps/LexicalWorld/VowelWorld.tscn"
 sprite = ExtResource( 18 )
-leads_to = "This door leads to the Vowel World."
+leads_to = "Vowel World"
 leads_to_letters = [ 1, 3, 6, 9, 14, 20, 23, 25, 27, 28, 29, 32, 33, 35 ]
 
 [node name="Door MC" parent="YSort" instance=ExtResource( 15 )]
@@ -61,7 +61,7 @@ position = Vector2( 90.0974, 75.8807 )
 to_map_name = "res://Maps/LexicalWorld/MCWorld.tscn"
 to_x = 4
 to_y = 17
-leads_to = "This door leads to the Mid Class Consonant World."
+leads_to = "Middle Consonant World"
 leads_to_letters = [ 4, 7, 16, 17, 18, 19, 22 ]
 
 [node name="Door HC" parent="YSort" instance=ExtResource( 15 )]
@@ -70,17 +70,17 @@ to_map_name = "res://Maps/LexicalWorld/HCWorld.tscn"
 to_x = -1
 to_y = 5
 sprite = ExtResource( 16 )
-leads_to = "This door leads to the High Class Consonant World."
-leads_to_letters = [ 15, 26, 31, null ]
+leads_to = "High Consonant World"
+leads_to_letters = [ 15, 26, 31, 38, 37 ]
 
 [node name="Door LC" parent="YSort" instance=ExtResource( 15 )]
-position = Vector2( 62.7993, 134.274 )
+position = Vector2( 62.5831, 134.274 )
 to_map_name = "res://Maps/LexicalWorld/LCWorld.tscn"
 to_x = 4
 to_y = 15
 sprite = ExtResource( 17 )
-leads_to = "This door leads to the Low Class Consonant World."
-leads_to_letters = [ 0, 2, 5, 8, 10, 11, 12, 13, 21, 24, 30, 34 ]
+leads_to = "Low Consonant World"
+leads_to_letters = [ 0, 2, 5, 8, 10, 11, 12, 13, 21, 24, 30, 34, 39 ]
 
 [node name="Door Accents" parent="YSort" instance=ExtResource( 15 )]
 position = Vector2( -15.2572, 148.456 )
@@ -88,14 +88,15 @@ to_map_name = "res://Maps/LexicalWorld/AccentsWorld.tscn"
 to_x = 26
 to_y = 92
 sprite = ExtResource( 13 )
-leads_to = "This door leads to the Accent World."
+leads_to = "Accent World"
 leads_to_letters = [ 36 ]
 
 [node name="Player" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( 11.9778, 73.2581 )
 
 [node name="Yaai" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( -1752.99, 1225.23 )
+position = Vector2( -732.576, 48.9893 )
+display_name = "Yaai"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

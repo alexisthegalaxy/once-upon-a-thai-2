@@ -33,7 +33,7 @@ func _on_Button_pressed():
 Press F to see all your sentences."""
 		]
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-		Game.current_dialog.init_dialog(dialog_text, self, null, false)
+		Game.current_dialog.init_dialog(dialog_text, self, null, false, null)
 		Game.player.stop_walking()
 		Game.current_scene.add_child(Game.current_dialog)
 	else:

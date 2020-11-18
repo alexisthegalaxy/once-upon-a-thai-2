@@ -69,7 +69,7 @@ func dialog_press_f_to_see_it(learnt_item):
 		lines = ["Press F to open your alphabet and see your letters."]
 	if learnt_item == "word":
 		lines = ["Press F to open your dictionary and see your words"]
-	Game.current_dialog.init_dialog(lines, null, null, null)
+	Game.current_dialog.init_dialog(lines, null, null, null, null)
 	current_scene.add_child(Game.current_dialog)
 
 func a_word_is_learnt():
@@ -145,12 +145,12 @@ func learn_letter(letter):
 		Events.events["has_finished_the_letter_world_the_first_time"] = true
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 		var dialog = [
-			"Yaai: [Name]!",
-			"Yaai: [Name], do you hear me?",
-			"Yaai: You have found all the letters you needed for now - you can come back amongst us now.",
-			"Yaai: To leave this world, press the F key.",
+			"[Name]!",
+			"[Name], do you hear me?",
+			"You have found all the letters you needed for now - you can come back amongst us now.",
+			"To leave this world, press the F key.",
 		]
-		Game.current_dialog.init_dialog(dialog, null, null, false)
+		Game.current_dialog.init_dialog(dialog, null, null, false, "Yaai")
 		player.stop_walking()
 		Game.current_scene.add_child(Game.current_dialog)
 

@@ -53,7 +53,7 @@ post_dialog_event = [ "say_sentence", 204 ]
 [node name="Grandmother" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( -69.5908, 30.0377 )
 dialog = [ "ฉันคิดว่าคุณเป็นคนดี" ]
-sprite_path = "res://Npcs/sprites/ploysgrandmother.png"
+sprite_path = "res://Npcs/sprites/somsgrandmother.png"
 display_name = "Som's grandmother"
 post_dialog_event = [ "say_sentence", 207 ]
 
