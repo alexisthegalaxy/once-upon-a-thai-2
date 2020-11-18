@@ -57,7 +57,6 @@ func _on_Yes_pressed():
 	$No.pressed = false
 
 func _on_LineEdit_text_changed(_new_text):
-#	print('aaaaa')
 #	var text = $TextEdit.text
 #	print(text)
 #	print(len(text))

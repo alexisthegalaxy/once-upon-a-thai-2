@@ -39,7 +39,7 @@ func get_introduction():
 	if "introduction" in letter:
 		return letter["introduction"]
 	else:
-		return [letter["th"] + ": Hey [Name], I'm the " + letter["en"] + " sound."]
+		return ["Hey [Name], I'm the " + letter["en"] + " sound."]
 
 func interact():
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()

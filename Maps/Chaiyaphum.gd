@@ -174,10 +174,10 @@ func _on_PetWillWalk_body_entered(body):
 	if Events.events.has_met_pet:
 		return
 	$YSort/NPCs/Pet.dialog = [
-#		"Oh, hey [Name].",
-#		"What, you finished your initiation?",
-#		"Tch. It took you long enough. I finished mine thirty minutes ago already.",
-#		"I’d like to have you as a training partner but I doubt you’ll be able to match my intellect.",
+		"Oh, hey [Name].",
+		"What, you finished your initiation?",
+		"Tch. It took you long enough. I finished mine thirty minutes ago already.",
+		"I’d like to have you as a training partner but I doubt you’ll be able to match my intellect.",
 		"I’m guessing you don’t even know how to write a basic word such as \"bpai\". @Q ไท/ ปไ/ ไป/ ทไ",
 	]
 	$YSort/NPCs/Pet.position = Vector2(557.0, 532.6)

@@ -201,7 +201,6 @@ func _ready():
 	words = retrieve_from_json_file("res://Lexical/Word/words.json")
 	sentences = retrieve_from_json_file("res://Lexical/Sentence/sentences.json")
 	letters = retrieve_from_json_file("res://Lexical/Letter/letters.json")
-	print('letters')
 	
 
 func _input(_event):

@@ -56,10 +56,12 @@ func dialog_option(parameters):
 			dialog = ["Pet: Hmph, yeah. In any case, I’ve got important stuff to do in Chaiyaphum. Smell ya later, loser!"]
 			dialog_node.dialog = dialog
 			dialog_node.page = -1
+			SoundPlayer.play_sound("res://Sounds/ding.wav")
 		else:
 			dialog = ["Pet: See? \"bpai\" is written ไป. In any case, I’ve got important stuff to do in Chaiyaphum. Smell ya later, loser!"]
 			dialog_node.dialog = dialog
 			dialog_node.page = -1
+			SoundPlayer.play_sound("res://Sounds/incorrect.wav")
 		post_dialog_event = ["npc_walks_to", [[
 			Vector2(543.984375, 244.238388),
 			Vector2(543.984375, 100.238388),

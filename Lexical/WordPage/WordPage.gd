@@ -16,7 +16,6 @@ func init_word_page(_word):
 	$ToneDisplay.init_tone_display(word["tones"])
 
 func _on_Button_pressed():
-	print('ya!')
 	$SentenceCarousel.show()
 
 

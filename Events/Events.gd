@@ -26,9 +26,6 @@ var var_2 = null  # let's find a cleaner way
 
 func show_looking_for_letters(_parameters):
 	events["can_see_the_looking_for_letter_banner"] = true
-#	print("  ---  ")
-#	print("Inside show_looking_for_letters")
-#	print("  ---  ")
 	Game.looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
 	Game.looking_for_letter__node.init(Game.letters_we_look_for)
 	Game.current_scene.add_child(Game.looking_for_letter__node)
