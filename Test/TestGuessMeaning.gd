@@ -22,14 +22,6 @@ func hide_answers():
 	$answer_6.hide()
 	$answer_7.hide()
 
-func set_distractors():
-	if "distractors" in word:
-		for distractor_id in word["distractors"]:
-			distractors.append(Game.words[str(distractor_id)])
-	while len(distractors) < number_of_choices - 1:
-		var random_word = Game.words[str(rng.randi() % Game.words.size())]
-		distractors.append(random_word)
-
 func init_learn_letter_button():
 	var unknown_letter_ids = []
 	if "letters" in word:
@@ -57,10 +49,11 @@ func init(word_id, _over_word):
 	over_word = _over_word
 	rng.randomize()
 	word = Game.words[str(word_id)]
+	SoundPlayer.play_thai(word["th"])
 	init_learn_letter_button()
 	$Thai.text = word["th"]
-	set_distractors()
-	set_choices()
+	distractors = DistractorsHelper.get_word_distractors(word, number_of_choices)
+	choices = DistractorsHelper.get_choices(distractors, word)
 	hide_answers()
 	if number_of_choices >= 1:
 		$answer_1.show()

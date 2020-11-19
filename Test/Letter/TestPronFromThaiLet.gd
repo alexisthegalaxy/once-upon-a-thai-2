@@ -30,7 +30,7 @@ func init(_letter_id, _over_letter):
 	rng.randomize()
 	letter = Game.letters[str(letter_id)]
 	$Thai.text = letter["th"]
-	distractors = DistractorsHelper.get_distractors(letter, number_of_choices)
+	distractors = DistractorsHelper.get_letter_distractors(letter, number_of_choices)
 	choices = DistractorsHelper.get_choices(distractors, letter)
 	hide_answers()
 	if number_of_choices >= 1:
