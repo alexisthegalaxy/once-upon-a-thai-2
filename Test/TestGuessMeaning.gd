@@ -30,13 +30,6 @@ func set_distractors():
 		var random_word = Game.words[str(rng.randi() % Game.words.size())]
 		distractors.append(random_word)
 
-func set_choices():
-	choices = []
-	for distractor in distractors:
-		choices.append(distractor)
-	choices.append(word)
-	choices.shuffle()
-
 func init_learn_letter_button():
 	var unknown_letter_ids = []
 	if "letters" in word:

@@ -23,21 +23,6 @@ func hide_answers():
 	$answer_6.hide()
 	$answer_7.hide()
 
-func set_distractors():
-	if "distractors" in letter:
-		for distractor_id in letter["distractors"]:
-			distractors.append(Game.letters[str(distractor_id)])
-	while len(distractors) < number_of_choices - 1:
-		var random_letter = Game.letters[str(rng.randi() % Game.letters.size())]
-		distractors.append(random_letter)
-
-func set_choices():
-	choices = []
-	for distractor in distractors:
-		choices.append(distractor)
-	choices.append(letter)
-	choices.shuffle()
-
 func init(_letter_id, _over_letter):
 	letter_id = _letter_id
 	Game.can_move = false
@@ -45,8 +30,8 @@ func init(_letter_id, _over_letter):
 	rng.randomize()
 	letter = Game.letters[str(letter_id)]
 	$Thai.text = letter["th"]
-	set_distractors()
-	set_choices()
+	distractors = DistractorsHelper.get_distractors(letter, number_of_choices)
+	choices = DistractorsHelper.get_choices(distractors, letter)
 	hide_answers()
 	if number_of_choices >= 1:
 		$answer_1.show()

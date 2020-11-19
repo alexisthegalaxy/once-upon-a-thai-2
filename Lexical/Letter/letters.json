@@ -510,8 +510,8 @@
       "Alright, time to get you tested!"
     ],
     "test": {
-      "prompt": "ไป",
-      "distractors": ["ปไ", "ใป", "ปใ"]
+      "prompt": "ใน",
+      "distractors": ["นไ", "ไน", "นใ"]
     },
     "mem": "ใ looks like the staff of a high-ranking (h>ai<) bishop."
   },

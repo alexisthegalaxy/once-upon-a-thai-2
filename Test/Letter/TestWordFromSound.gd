@@ -22,23 +22,6 @@ func hide_answers():
 	$answer_6.hide()
 	$answer_7.hide()
 
-func set_distractors():
-	distractors = letter["test"]["distractors"]
-	number_of_choices = len(distractors) + 1
-#	if "distractors" in letter:
-#		for distractor_id in letter["distractors"]:
-#			distractors.append(Game.letters[str(distractor_id)])
-#	while len(distractors) < number_of_choices - 1:
-#		var random_letter = Game.letters[str(rng.randi() % Game.letters.size())]
-#		distractors.append(random_letter)
-
-func set_choices():
-	choices = []
-	for distractor in distractors:
-		choices.append(distractor)
-	choices.append(letter["test"]["prompt"])
-	choices.shuffle()
-
 func play_audio():
 	SoundPlayer.play_thai(letter["test"]["prompt"])
 
@@ -65,31 +48,32 @@ func init(_letter_id, _over_letter):
 	play_audio_after_one_second()
 	
 	$TestSoundPlayer.init_sound_player(letter["test"]["prompt"])
-	set_distractors()
-	set_choices()
+	distractors = letter["test"]["distractors"]
+	number_of_choices = len(distractors) + 1
+	choices = DistractorsHelper.get_choices(distractors, letter.test.prompt)
 	hide_answers()
 #	print('choices', choices)
 	if number_of_choices >= 1:
 		$answer_1.show()
-		$answer_1.init(self, choices[0], choices[0] == letter["test"]["prompt"])
+		$answer_1.init(self, choices[0], choices[0] == letter.test.prompt)
 	if number_of_choices >= 2:
 		$answer_2.show()
-		$answer_2.init(self, choices[1], choices[1] == letter["test"]["prompt"])
+		$answer_2.init(self, choices[1], choices[1] == letter.test.prompt)
 	if number_of_choices >= 3:
 		$answer_3.show()
-		$answer_3.init(self, choices[2], choices[2] == letter["test"]["prompt"])
+		$answer_3.init(self, choices[2], choices[2] == letter.test.prompt)
 	if number_of_choices >= 4:
 		$answer_4.show()
-		$answer_4.init(self, choices[3], choices[3] == letter["test"]["prompt"])
+		$answer_4.init(self, choices[3], choices[3] == letter.test.prompt)
 	if number_of_choices >= 5:
 		$answer_5.show()
-		$answer_5.init(self, choices[4], choices[4] == letter["test"]["prompt"])
+		$answer_5.init(self, choices[4], choices[4] == letter.test.prompt)
 	if number_of_choices >= 6:
 		$answer_6.show()
-		$answer_6.init(self, choices[5], choices[5] == letter["test"]["prompt"])
+		$answer_6.init(self, choices[5], choices[5] == letter.test.prompt)
 	if number_of_choices >= 7:
 		$answer_7.show()
-		$answer_7.init(self, choices[6], choices[6] == letter["test"]["prompt"])
+		$answer_7.init(self, choices[6], choices[6] == letter.test.prompt)
 
 func _ready():
 	set_alpha()
