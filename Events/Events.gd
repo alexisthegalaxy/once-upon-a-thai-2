@@ -1,20 +1,21 @@
 extends Node
 
+var initial_state = true
 var events = {
-	"ploy_has_stopped_in_front_of_house": false,
-	"has_met_ploy": false,
-	"has_met_pet": false,
-	"has_learnt_four_first_words": true,
-	"yaai_has_given_last_warning_before_forest": true,
-	"yaai_explains_rock": true,
-	"has_gone_to_rock": true,
-	"has_finished_the_letter_world_the_first_time": true,
-	"can_see_the_looking_for_letter_banner": true,
-	"has_been_in_the_letter_world": true,
-	"ceremony_started": true,
-	"yaai_went_to_forest_entrance": true,
-	"talked_to_yaai_for_the_first_time": true,
-	"talked_to_nim_at_the_beginning": true,
+	"ploy_has_stopped_in_front_of_house": initial_state,
+	"has_met_ploy": initial_state,
+	"has_met_pet": initial_state,
+	"has_learnt_four_first_words": initial_state,
+	"yaai_has_given_last_warning_before_forest": initial_state,
+	"yaai_explains_rock": initial_state,
+	"has_gone_to_rock": initial_state,
+	"has_finished_the_letter_world_the_first_time": initial_state,
+	"can_see_the_looking_for_letter_banner": initial_state,
+	"has_been_in_the_letter_world": initial_state,
+	"ceremony_started": initial_state,
+	"yaai_went_to_forest_entrance": initial_state,
+	"talked_to_yaai_for_the_first_time": initial_state,
+	"talked_to_nim_at_the_beginning": initial_state,
 }
 
 var var_1 = null  # let's find a cleaner way

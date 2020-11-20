@@ -25,6 +25,7 @@ Game="*res://Game.tscn"
 Events="*res://Events/Events.gd"
 SoundPlayer="*res://UI/SoundPlayer.tscn"
 DistractorsHelper="*res://Test/DistractorsHelper.gd"
+Quests="*res://Quests/quests.gd"
 
 [display]
 

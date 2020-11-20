@@ -323,7 +323,13 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 	# If we add a yield(get_tree().create_timer(1.0), "timeout")
 	# between the next two lines, we get a crash. Why?
 	for child in get_tree().get_root().get_children():
-		if not child.get_name() in ["Game", "Events", "SoundPlayer"]:
+		if not child.get_name() in [
+			"Game",
+			"Events",
+			"SoundPlayer",
+			"DistractorsHelper",
+			"Quests"
+		]:
 			child.queue_free()
 #	for child in get_tree().get_root().get_children():
 #		print('--- child name ', child.get_name())

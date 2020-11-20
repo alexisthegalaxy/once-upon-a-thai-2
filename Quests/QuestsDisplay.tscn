@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Quests/QuestsDisplay.gd" type="Script" id=1]
+[ext_resource path="res://Dialog/next-indicator.png" type="Texture" id=2]
+[ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="MenuButton" type="MenuButton" parent="."]
+margin_left = 220.501
+margin_top = 2.81092
+margin_right = 319.501
+margin_bottom = 22.8109
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Active quests"
+icon = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
