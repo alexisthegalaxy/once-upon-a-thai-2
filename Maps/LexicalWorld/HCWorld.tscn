@@ -31,8 +31,8 @@ centered = false
 
 [node name="BackDoor" parent="YSort" instance=ExtResource( 15 )]
 to_map_name = "res://Maps/LexicalWorld/LetterHub.tscn"
-to_x = 12
-to_y = 75
+to_x = 189
+to_y = -129
 sprite = ExtResource( 2 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 10 )]

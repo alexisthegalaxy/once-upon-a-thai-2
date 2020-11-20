@@ -26,8 +26,8 @@ __meta__ = {
 
 [node name="BackDoor" parent="YSort" instance=ExtResource( 15 )]
 to_map_name = "res://Maps/LexicalWorld/LetterHub.tscn"
-to_x = 12
-to_y = 75
+to_x = 109
+to_y = 123
 sprite = ExtResource( 5 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 10 )]
@@ -43,7 +43,7 @@ id = 21
 position = Vector2( 241.563, -182.479 )
 
 [node name="Letter ท" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( -63.7367, -86.2425 )
+position = Vector2( -63.0123, -86.2425 )
 id = 11
 
 [node name="Letter ม" parent="YSort/Letters" instance=ExtResource( 11 )]
