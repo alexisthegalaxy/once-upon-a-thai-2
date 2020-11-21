@@ -18,14 +18,15 @@ func _ready():
 		quests[quest_id].counter = 0
 		if quests[quest_id].type == "find_sentences":
 			quests[quest_id].counter_max = len(quests[quest_id].parameters[0])
-	print('questsˀ')
-	for quest_id in quests:
-		print('------------------------')
-		print(quests[quest_id])
 
 func start_quest(quest_id):
 	print('we start the quest ', quest_id)
 	quests[quest_id].status = IN_PROGRESS
+	if quests[quest_id].type == "find_sentences":
+		for id_of_sentence_to_find in quests[quest_id].parameters[0]:
+			if id_of_sentence_to_find in Game.seen_sentences or id_of_sentence_to_find in Game.known_sentences:
+				quests[quest_id].parameters[1].append(id_of_sentence_to_find)
+				quests[quest_id].counter += 1
 	update_quests_display()
 
 func update_quests_display():
@@ -54,6 +55,13 @@ func get_finished_quest_ids():
 		if quests[quest_id].status == FINISHED:
 			finished_quest_ids.append(quest_id)
 	return finished_quest_ids
+
+func get_not_started_quest_ids():
+	var not_started_quest_ids = []
+	for quest_id in quests:
+		if quests[quest_id].status == NOT_STARTED:
+			not_started_quest_ids.append(quest_id)
+	return not_started_quest_ids
 
 func mark_quest_as_done(quest_id):
 	quests[quest_id].status = DONE

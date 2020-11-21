@@ -6287,7 +6287,6 @@ position = Vector2( 1508.29, 50.9584 )
 dialog = [ "เกิดนั่นล่ะคือตาย" ]
 sprite_path = "res://Npcs/sprites/girl.png"
 direction = "left"
-start_quest = "find_sentences_in_chaiyaphum"
 
 [node name="OldManExplainsSource" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 701.216, 979.567 )

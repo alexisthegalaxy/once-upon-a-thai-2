@@ -1,5 +1,6 @@
 {
   "first_quest": {
+    "blockers": [],
     "en_name": "My first quest",
     "fr_name": "Ma première quête",
     "type": "talk_to",
@@ -9,36 +10,72 @@
     "counter_max": 1
   },
   "find_sentences_in_chaiyaphum": {
+    "blockers": [],
     "en_name": "Sentences in Chaiyaphum",
     "fr_name": "Les phrases de Chaiyaphum",
     "en_description": "Talk to everybody in Chaiyaphum and collect their sentences.",
     "fr_description": "Parle à tous les habitants de Chaiyaphum et collecte leurs phrases.",
     "en_counter_name": "Sentences found",
     "fr_counter_name": "Phrases trouvées ",
-    "en_end_description": "Go back to Illo in Chaiyaphum's temple.",
-    "fr_end_description": "Retourne voir Illo au temple de Chaiyaphum.",
+    "en_end_description": "Go back to Anchalee in Chaiyaphum's temple.",
+    "fr_end_description": "Retourne voir Anchalee au temple de Chaiyaphum.",
     "en_finish_dialog": [
-      "Congratulations, [Name], you've found all the sentences!",
+      "Congratulations, [Name], you've found all the sentences!"
     ],
     "fr_finish_dialog": [
-      "Félicitations, [Name], t'as trouvé toutes les phrases.",
+      "Félicitations, [Name], t'as trouvé toutes les phrases."
+    ],
+    "en_start_dialog": [
+      "Welcome back to Chaiyaphum, [Name].",
+      "Your grandmother asked me to overlook your shamanic training for a bit.",
+      "Your first task will be to talk to everybody in Chaiyaphum to gather sentences in Thai.",
+      "Come back to me when you’ve found at least ten sentences!"
+    ],
+    "fr_start_dialog": [
+      "Il est bon de te revoir à Chaiyaphum, [Name].",
+      "Ta grand-mère m'a demandé de m'occuper de ton éducation linguistique pendant quelques temps.",
+      "Ta première tâche sera de parler à tout les gens qui habitent ici à Chaiyaphum, et collecter leurs phrases.",
+      "Reviens me voir quand tu auras trouvé au moins dix phrases."
     ],
     "type": "find_sentences",
-    "parameters": [[203], []]
+    "parameters": [[200, 201, 202, 203, 204, 205, 206, 207, 208, 209], []]
   },
   "implant_source_behind_the_temple": {
+    "blockers": ["find_sentences_in_chaiyaphum"],
     "en_name": "First source implant",
-    "en_description": "Go behind the temple, produce the word อะไร, and implant it into the source that is used for training shamans.",
+    "fr_name": "Première implémentation d'un Mot",
     "counter_max": 1,
-    "type": "implant"
+    "en_start_dialog": [
+      "Ok, [Name], let's carry on with your training.",
+      "As you may know, Spells stem from sources.",
+      "Our role as shaman is to make sure each Spell has a home, so that we never run out of Spells.",
+      "It appears that the Spell อะไร has no more home, so we need to implant it into a source, otherwise it will disappear.",
+      "Take this Spell, and go implant it in the sacred stone behind the temple."
+    ],
+    "fr_start_dialog": [
+      "Ok, [Name], continuons ton éducation de chaman.",
+      "Comme tu le sais peut-être déjà, les Mots proviennent de sources.",
+      "Notre rôle en tant que chamans est de s'assurer que chaque Mot aie un foyer,",
+      "pour qu'aucun ne soit perdu à jamais.",
+      "Il se trouve que le Mot อะไร n'a plus de foyer, alors il faut l'implanter dans une source, sinon il va disparaitre.",
+      "Prend ce mot, et va l'implanter dans la source sacrée derrière le temple."
+    ],
+    "en_description": "Implant the Spell อะไร in the source of the sacred stone behind Chaiyaphum's temple.",
+    "fr_description": "Implante le Mot อะไร dans la source de la pierre sacréee derrière le temple du Chaiyaphum.",
+    "en_end_description": "Go back to Anchalee in Chaiyaphum's temple.",
+    "fr_end_description": "Retourne voir Anchalee au temple de Chaiyaphum.",
+    "type": "implant_source",
+    "parameters": [[203], []]
   },
   "implant_word_cut": {
+    "blockers": [],
     "en_name": "Repopulate ตัด",
     "en_description": "We get the Spell for cut: ตัด. We have to implant it into a source. When we have done so, the quest is complete. Until we do so, we can get the Spell again and again at the shaman.",
     "counter_max": 1,
     "type": "implant"
   },
   "go_back_home_and_talk_to_yaai": {
+    "blockers": [],
     "en_name": "Back home",
     "en_description": "Talk to yaai at home.",
     "counter_max": 1,

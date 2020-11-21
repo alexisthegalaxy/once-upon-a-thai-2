@@ -39,7 +39,7 @@ position = Vector2( 51.0433, 37.9107 )
 dialog = [ "คนไทยชอบคนดี" ]
 sprite_path = "res://Npcs/sprites/mom.png"
 direction = "left"
-display_name = "Som's mother"
+display_name = "_som_s_mother"
 post_dialog_event = [ "say_sentence", 203 ]
 
 [node name="Father" parent="YSort" instance=ExtResource( 3 )]
@@ -47,30 +47,14 @@ position = Vector2( 6.59915, 39.4345 )
 dialog = [ "คนไทยชอบอะไร" ]
 sprite_path = "res://Npcs/sprites/dad.png"
 direction = "right"
-display_name = "Som's father"
+display_name = "_som_s_father"
 post_dialog_event = [ "say_sentence", 204 ]
-
-[node name="QuestGirl" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( 70.5872, 76.9868 )
-dialog = [ "Sup!" ]
-sprite_path = "res://Npcs/sprites/girl.png"
-direction = "left"
-display_name = "Quest girl"
-start_quest = "find_sentences_in_chaiyaphum"
-
-[node name="OldQuestWoman" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( -26.6644, 89.8832 )
-dialog = [ "What do you want?" ]
-sprite_path = "res://Npcs/sprites/ploysgrandmother.png"
-direction = "right"
-display_name = "Old Quest Woman"
-finish_quests = [ "find_sentences_in_chaiyaphum" ]
 
 [node name="Grandmother" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( -69.5908, 30.0377 )
 dialog = [ "ฉันคิดว่าคุณเป็นคนดี" ]
 sprite_path = "res://Npcs/sprites/somsgrandmother.png"
-display_name = "Som's grandmother"
+display_name = "_som_s_grandmother"
 post_dialog_event = [ "say_sentence", 207 ]
 
 [node name="Brother" parent="YSort" instance=ExtResource( 3 )]
@@ -125,7 +109,7 @@ color = Color( 0.854902, 0.827451, 0.827451, 1 )
 script = ExtResource( 14 )
 
 [node name="Go outside" parent="." instance=ExtResource( 18 )]
-position = Vector2( 24, 112 )
+position = Vector2( 24.2114, 117.92 )
 to_position = Vector2( 990, 191 )
 to_map_name = "res://Maps/Chaiyaphum.tscn"
 

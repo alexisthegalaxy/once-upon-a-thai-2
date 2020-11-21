@@ -34,7 +34,7 @@ func init_word_in_sentence(word_id, _is_main_word, _can_be_listened):
 	if word_id in Game.known_words:
 		$Popup/Label.text = word["en"]
 	else:
-		$Popup/Label.text = "Unknown meaning"
+		$Popup/Label.text = tr("_unknown_meaning")
 	$Popup/Label.hide()
 
 func _on_Area2D_mouse_entered():

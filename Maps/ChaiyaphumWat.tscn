@@ -44,16 +44,19 @@ direction = "left"
 post_dialog_event = [ "say_sentence", 210 ]
 
 [node name="Ploy" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( -14.852, -25.8447 )
-dialog = [ "Ploy: My grandmother is super cool, right?" ]
+position = Vector2( -21.9801, -25.4127 )
+dialog = [ "_my_grandmother_is_super_cool_right" ]
 sprite_path = "res://Npcs/sprites/ploy.png"
 direction = "right"
+display_name = "Ploy"
 
 [node name="PloysGrandmother" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( 23.9241, -24.7354 )
-dialog = [ "Welcome back to Chaiyaphum, [Name]. You’ve grown a lot since last time I saw you!", "Your grandmother asked me to overlook your shamanic training for a bit.", "Your first quest will be to talk to everybody in Chaiyaphum to gather sentences in Thai.", "Come back to me when you’re done!" ]
+position = Vector2( 24.1401, -24.7354 )
+dialog = [ "_how_s_progress_with_training_name" ]
 sprite_path = "res://Npcs/sprites/ploysgrandmother.png"
 display_name = "Ploy’s grandmother"
+start_quests = [ "find_sentences_in_chaiyaphum", "implant_source_behind_the_temple" ]
+finish_quests = [ "find_sentences_in_chaiyaphum", "implant_source_behind_the_temple" ]
 
 [node name="Lights" type="Node" parent="."]
 

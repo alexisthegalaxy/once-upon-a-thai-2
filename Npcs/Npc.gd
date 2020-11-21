@@ -1,12 +1,12 @@
 extends StaticBody2D
 
-export(Array) var dialog = []
+export(Array, String) var dialog = []
 export var sprite_path = "res://Npcs/sprites/yaai.png"
 export var direction = "down"
 export var state = "stand"  # can be "stand" or "walk"
 export var display_name = ""  # Is shown in dialogs. For example: "Nim".
-export var start_quest = ""
-export(Array) var finish_quests = []  # ["find_sentences_in_chaiyaphum", "first_quest"]
+export(Array, String) var start_quests = []  # ["find_sentences_in_chaiyaphum", "first_quest"]
+export(Array, String) var finish_quests = []  # ["find_sentences_in_chaiyaphum", "first_quest"]
 
 var speed = 100  # 65
 var velocity = Vector2.ZERO
@@ -183,7 +183,7 @@ func interact():
 	Game.player.can_interact = false
 	Game.can_move = false
 	Game.player.stop_walking()
-	var dialog_to_use = change_dialog_if_finished_quest()
+	var dialog_to_use = get_dialog_to_use()
 	npc_turn_towards(Game.player.position)
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	Game.current_dialog.init_dialog(dialog_to_use, self, post_dialog_event, false, null)
@@ -191,10 +191,13 @@ func interact():
 	if pre_dialog_event:
 		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
 
-func change_dialog_if_finished_quest():
+func get_dialog_to_use():
+	# By default, we use the dialog field in the NPC
 	var new_dialog = dialog
+	var lo = TranslationServer.get_locale()
+	
+	var found_finished_quest_id = null
 	if finish_quests:
-		var found_finished_quest_id = null
 		var finished_quest_ids = Quests.get_finished_quest_ids()
 		for finished_quest_id in finished_quest_ids:
 			if finished_quest_id in finish_quests:
@@ -202,8 +205,41 @@ func change_dialog_if_finished_quest():
 				break
 		if found_finished_quest_id:
 			Quests.mark_quest_as_done(found_finished_quest_id)
-			new_dialog = Quests.quests[found_finished_quest_id][TranslationServer.get_locale() + "_finish_dialog"]
+			new_dialog = Quests.quests[found_finished_quest_id][lo + "_finish_dialog"]
+	
+	# the second highest priority is to start a new quest
+	if start_quests:
+		var starting_quest_id = get_starting_quest()
+		if starting_quest_id:
+			var quest_starting_dialog = Quests.quests[starting_quest_id][lo + "_start_dialog"]
+			# if we have a finishing dialog, we append the starting dialog to it.
+			if found_finished_quest_id:
+				new_dialog += quest_starting_dialog
+			else:
+				new_dialog = quest_starting_dialog
 	return new_dialog
+
+# This is called by dialog_ends in dialog.gd
+func start_quest():
+	if start_quests:
+		var starting_quest_id = get_starting_quest()
+		if starting_quest_id:
+			Quests.start_quest(starting_quest_id)
+
+func get_starting_quest():
+	var found_not_started_quest_id = null
+	for id_of_quest_started_by_npc in start_quests:
+		if Quests.quests[id_of_quest_started_by_npc].status == Quests.NOT_STARTED:
+#			let's make sure this quest is not blocked
+			var quest_is_blocked = false
+			for blocking_quest_id in Quests.quests[id_of_quest_started_by_npc].blockers:
+				if not Quests.quests[blocking_quest_id].status == Quests.DONE:
+					quest_is_blocked = true
+					break
+			if not quest_is_blocked:
+				found_not_started_quest_id = id_of_quest_started_by_npc
+				break
+	return found_not_started_quest_id
 
 func _on_InteractBox_body_entered(body):
 	if is_walking_towards:

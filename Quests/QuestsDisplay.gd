@@ -30,6 +30,7 @@ func update():
 	else:
 		$Quests.hide()
 		$Button.hide()
+		is_showing_quests = false
 
 func _on_item_pressed(id):
 	print($MenuButton.get_popup().get_item_text(id), " pressed")

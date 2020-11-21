@@ -31,3 +31,4 @@ func update_display():
 		$green_check_mark.show()
 	else:
 		$Description.text = quest[lo + "_description"]
+		$green_check_mark.hide()

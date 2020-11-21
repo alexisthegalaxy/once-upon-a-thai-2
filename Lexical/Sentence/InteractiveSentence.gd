@@ -17,7 +17,7 @@ func init_interactive_sentence(sentence, main_word_id, _can_listen_to_words):
 	if sentence["id"] in Game.known_sentences:
 		$Node2D/Translation.text = sentence["en"]
 	else:
-		$Node2D/Translation.text = "Unknown meaning"
+		$Node2D/Translation.text = tr("_unknown_meaning")
 	for word_id in sentence["word_ids"]:
 		var word = Game.words[str(word_id)]
 		var is_main_word = word_id == main_word_id
