@@ -1,24 +1,35 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Quests/QuestsDisplay.gd" type="Script" id=1]
-[ext_resource path="res://Dialog/next-indicator.png" type="Texture" id=2]
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Dialog/PlainDialogBackground.png" type="Texture" id=4]
+[ext_resource path="res://UI/main_theme.tres" type="Theme" id=5]
 
 [sub_resource type="DynamicFont" id=1]
+size = 10
 font_data = ExtResource( 3 )
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource( 1 )
 
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 292.259, 4.77067 )
+scale = Vector2( 0.0474045, 0.0338405 )
+texture = ExtResource( 4 )
+
 [node name="MenuButton" type="MenuButton" parent="."]
-margin_left = 220.501
-margin_top = 2.81092
-margin_right = 319.501
-margin_bottom = 22.8109
+margin_left = 223.0
+margin_top = -6.0
+margin_right = 320.0
+margin_bottom = 14.0
+theme = ExtResource( 5 )
 custom_fonts/font = SubResource( 1 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Active quests"
-icon = ExtResource( 2 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "_active_quests"
+align = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }

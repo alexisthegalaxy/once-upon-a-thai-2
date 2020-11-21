@@ -1,10 +1,18 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Menu/Main Menu.gd" type="Script" id=2]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 10
+extra_spacing_top = -12
+extra_spacing_bottom = -12
+font_data = ExtResource( 1 )
+
+[sub_resource type="ButtonGroup" id=2]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource( 2 )
@@ -20,7 +28,7 @@ margin_top = -66.0
 margin_right = -96.0
 margin_bottom = -34.0
 custom_fonts/font = SubResource( 1 )
-text = "Start Story"
+text = "_start_story"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -34,7 +42,7 @@ margin_top = -10.0
 margin_right = -96.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 1 )
-text = "Language Challenges"
+text = "_language_challenges"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -48,7 +56,19 @@ margin_top = 46.0
 margin_right = -96.0
 margin_bottom = 78.0
 custom_fonts/font = SubResource( 1 )
-text = "Quit"
+text = "_quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LanguageSelector" type="OptionButton" parent="CanvasLayer"]
+margin_left = 262.0
+margin_top = 8.0
+margin_right = 312.0
+margin_bottom = 26.0
+custom_fonts/font = SubResource( 3 )
+group = SubResource( 2 )
+text = "English"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -62,3 +82,4 @@ __meta__ = {
 [connection signal="mouse_entered" from="CanvasLayer/Quit" to="." method="_on_Quit_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/Quit" to="." method="_on_Quit_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="item_selected" from="CanvasLayer/LanguageSelector" to="." method="_on_LanguageSelector_item_selected"]

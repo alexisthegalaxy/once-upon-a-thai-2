@@ -7,14 +7,14 @@
 [ext_resource path="res://Dialog/next-indicator.png" type="Texture" id=6]
 [ext_resource path="res://Dialog/DialogOption.tscn" type="PackedScene" id=7]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=2]
 size = 18
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=3]
 size = 11
 font_data = ExtResource( 4 )
 
@@ -50,7 +50,7 @@ margin_left = 29.1115
 margin_top = 121.584
 margin_right = 291.112
 margin_bottom = 171.584
-custom_fonts/normal_font = SubResource( 2 )
+custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 bbcode_text = "Gros geck!"
@@ -78,7 +78,7 @@ margin_top = 95.9145
 margin_right = 155.007
 margin_bottom = 122.914
 rect_pivot_offset = Vector2( 46.6291, 12.3908 )
-custom_fonts/normal_font = SubResource( 4 )
+custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 bbcode_text = "หมอความ"
@@ -95,9 +95,9 @@ margin_left = 253.0
 margin_top = 159.0
 margin_right = 291.0
 margin_bottom = 175.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Press Space"
+text = "_press_space"
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -6229,17 +6229,17 @@ position = Vector2( 1225.55, 312.963 )
 
 [node name="Mom" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 787.432, 540.969 )
-dialog = [ "You’ll be brave, alright?", "Granny is the best shaman in all Isan, you have nothing to fear.", "And whatever you will forget, remember your mom loves you!" ]
+dialog = [ "_you_ll_be_brave_alright", "_granny_is_best_nothing_to_fear", "_dont_forget_i_love_you" ]
 sprite_path = "res://Npcs/sprites/mom.png"
 direction = "up"
-display_name = "Mom"
+display_name = "_mom"
 
 [node name="Dad" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 795.133, 488.9 )
-dialog = [ "Be strong [Name]." ]
+dialog = [ "_be_strong_name" ]
 sprite_path = "res://Npcs/sprites/dad.png"
 direction = "left"
-display_name = "Dad"
+display_name = "_dad"
 
 [node name="PetsMom" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 603.748, 683.811 )
@@ -6256,7 +6256,7 @@ display_name = "Pet"
 
 [node name="Yaai" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 741.585, 508.096 )
-dialog = [ "Alright [Name], let’s go." ]
+dialog = [ "_alright_name_lets_go" ]
 direction = "right"
 display_name = "Yaai"
 post_dialog_event = [ "yaai_walks_to", [ [ Vector2( 615, 505 ), Vector2( 552, 434 ), Vector2( 514, 354 ), Vector2( 514, 262.6 ), Vector2( 461, 257 ), Vector2( 481, 257 ) ] ] ]

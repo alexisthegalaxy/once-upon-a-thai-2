@@ -1,6 +1,6 @@
 extends Node
 
-var initial_state = true
+var initial_state = false
 var events = {
 	"ploy_has_stopped_in_front_of_house": initial_state,
 	"has_met_ploy": initial_state,
@@ -39,7 +39,10 @@ func show_looking_for_letters(_parameters):
 	
 func nim_walks_to(parameters):
 	events["talked_to_nim_at_the_beginning"] = true
-	Game.current_focus[0].dialog = ["Granny is waiting for you outside.", "Be brave, okay?"]
+	Game.current_focus[0].dialog = [
+		tr("_granny_is_waiting_outside"),
+		tr("_be_brave_okay")
+		]
 	npc_walks_to(parameters)
 	
 func yaai_walks_to(parameters):

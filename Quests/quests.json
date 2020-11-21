@@ -1,24 +1,28 @@
 {
   "find_sentences_in_chaiyaphum": {
+    "name": "Sentences in Chaiyaphum",
     "description": [
       "Talk to everybody in Chaiyaphum and learn the sentences they have to teach."
     ],
     "counter": 10,
   },
-  "implant_mo_hin_khao_source": {
+  "implant_source_behind_the_temple": {
+    "name": "First source implant",
     "description": [
-      "Go to Mo Hin Khao, produce the word อะไร, and implant it into the source."
+      "Go behind the temple, produce the word อะไร, and implant it into the source that is used for training shamans."
     ],
-    "counter": 1,
+    "counter": 1
   },
   "implant_word_cut": {
+    "name": "Repopulate ตัด",
     "description": [
-      "We get the word for Cut. We have to implant it into a source. When we have done so, the quest is complete.",
+      "We get the Spell for cut: ตัด. We have to implant it into a source. When we have done so, the quest is complete.",
       "Until we do so, we can get the Spell again and again at the shaman."
     ],
     "counter": 1
   },
   "go_back_home_and_talk_to_yaai": {
+    "name": "Back home",
     "description": [
       "Talk to yaai at home."
     ],

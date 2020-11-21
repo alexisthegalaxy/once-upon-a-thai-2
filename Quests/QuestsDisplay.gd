@@ -12,9 +12,10 @@ func _ready():
 
 func update():
 	for quest_id in Quests.quests:
-		if Quests.quests[quest_id].status == Quests.IN_PROGRESS:
-			shown_quest_ids.append(quest_id)
-			$MenuButton.get_popup().add_item(quest_id)
+		var quest = Quests.quests[quest_id]
+		if quest.status == Quests.IN_PROGRESS:
+			shown_quest_ids.append(quest.id)
+			$MenuButton.get_popup().add_item(quest.name)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

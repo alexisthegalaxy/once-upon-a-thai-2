@@ -43,7 +43,7 @@ position = Vector2( 24, -138.129 )
 
 [node name="Nim" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( 87.8695, -117.418 )
-dialog = [ "Oh [Name], you woke up?", "Today is your big day, did you manage to sleep at all?", "Granny is already waiting for you outside.", "Be brave, okay?" ]
+dialog = [ "_oh_name_you_woke_up", "_today_is_your_big_day", "_granny_is_waiting_outside", "_be_brave_okay" ]
 sprite_path = "res://Npcs/sprites/nim.png"
 display_name = "Nim"
 post_dialog_event = [ "nim_walks_to", [ [ Vector2( 70, -139 ), Vector2( 72, -137 ) ] ] ]

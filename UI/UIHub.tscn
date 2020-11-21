@@ -35,7 +35,7 @@ margin_top = 48.0
 margin_right = 128.0
 margin_bottom = 71.0
 custom_fonts/font = SubResource( 1 )
-text = "See my letters"
+text = "_see_my_letters"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -46,7 +46,7 @@ margin_top = 48.0
 margin_right = 288.0
 margin_bottom = 71.0
 custom_fonts/font = SubResource( 1 )
-text = "See my words"
+text = "_see_my_words"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -57,7 +57,7 @@ margin_top = 120.0
 margin_right = 209.0
 margin_bottom = 143.0
 custom_fonts/font = SubResource( 1 )
-text = "See my sentences"
+text = "_see_my_sentences"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -68,7 +68,7 @@ margin_top = 80.0
 margin_right = 216.0
 margin_bottom = 103.0
 custom_fonts/font = SubResource( 1 )
-text = "Go to Letter World"
+text = "_go_to_the_letter_world"
 __meta__ = {
 "_edit_use_anchors_": false
 }

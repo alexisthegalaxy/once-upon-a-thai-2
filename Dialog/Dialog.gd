@@ -19,7 +19,8 @@ func _ready():
 	reset_line()
 	hide_answers()
 
-func process(dialog_line: String) -> String:
+func process(_dialog_line: String) -> String:
+	var dialog_line = tr(_dialog_line)
 	this_line_doesnt_show_the_name = false
 	if "[ShowNoName]" in dialog_line:
 		this_line_doesnt_show_the_name = true
@@ -71,7 +72,7 @@ func init_dialog(_dialog, _caller, _post_dialog_event, _post_dialog_signal, spea
 	elif _caller and _caller.get("display_name"):
 		display_name = _caller.display_name
 	if display_name:
-		$Control/NameLabel.set_bbcode("[center]" + display_name + "[/center]")
+		$Control/NameLabel.set_bbcode("[center]" + tr(display_name) + "[/center]")
 	else:
 		$Control/NameLabel.hide()
 		$Control/NameTexture.hide()
