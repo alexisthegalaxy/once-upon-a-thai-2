@@ -92,6 +92,14 @@ func dialog_ends():
 			Events.execute(post_dialog_event[0], post_dialog_event[1])
 	if post_dialog_signal:
 		caller.dialog_ended()
+#	print("start_quest in caller:")
+#	print("start_quest" in caller)
+	if caller and "start_quest" in caller:
+		if caller.start_quest:
+			Quests.start_quest(caller.start_quest)
+	else:
+		print('start_quest not in caller')
+		
 	Game.reset_focus()
 #	Game.loses_focus(Game.current_focus)
 

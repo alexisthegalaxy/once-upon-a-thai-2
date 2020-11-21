@@ -370,4 +370,4 @@ anims/RunUp = SubResource( 17 )
 
 [node name="Arrow" parent="." instance=ExtResource( 3 )]
 
-[node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
+[node name="QuestDisplay" parent="." instance=ExtResource( 4 )]

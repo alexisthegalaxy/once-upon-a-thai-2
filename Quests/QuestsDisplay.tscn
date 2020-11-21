@@ -1,27 +1,30 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Quests/QuestsDisplay.gd" type="Script" id=1]
+[ext_resource path="res://Quests/QuestDisplay.tscn" type="PackedScene" id=2]
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Dialog/PlainDialogBackground.png" type="Texture" id=4]
 [ext_resource path="res://UI/main_theme.tres" type="Theme" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 10
+size = 9
 font_data = ExtResource( 3 )
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="QuestsDisplay" type="CanvasLayer"]
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 292.259, 4.77067 )
-scale = Vector2( 0.0474045, 0.0338405 )
+visible = false
+position = Vector2( 286.141, 5.80111 )
+scale = Vector2( 0.0570511, 0.0411867 )
 texture = ExtResource( 4 )
 
 [node name="MenuButton" type="MenuButton" parent="."]
-margin_left = 223.0
-margin_top = -6.0
-margin_right = 320.0
-margin_bottom = 14.0
+visible = false
+margin_left = 222.549
+margin_top = -4.00353
+margin_right = 319.549
+margin_bottom = 15.9965
 theme = ExtResource( 5 )
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
@@ -33,3 +36,32 @@ align = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Button" type="Button" parent="."]
+margin_left = 211.0
+margin_top = 1.0
+margin_right = 319.0
+margin_bottom = 21.0
+theme = ExtResource( 5 )
+text = "_active_quests"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quests" type="Control" parent="."]
+visible = false
+margin_left = 191.787
+margin_top = 22.1389
+margin_right = 231.787
+margin_bottom = 62.1389
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuestDisplay1" parent="Quests" instance=ExtResource( 2 )]
+visible = false
+
+[node name="QuestDisplay2" parent="Quests" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 97.9902, 55.8112 )
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

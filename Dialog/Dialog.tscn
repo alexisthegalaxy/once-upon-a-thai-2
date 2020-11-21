@@ -88,16 +88,16 @@ __meta__ = {
 }
 
 [node name="NextPage" type="Node2D" parent="Control"]
-visible = false
 
 [node name="NextPageLabel" type="Label" parent="Control/NextPage"]
-margin_left = 253.0
-margin_top = 159.0
-margin_right = 291.0
-margin_bottom = 175.0
+margin_left = 176.502
+margin_top = 159.102
+margin_right = 291.502
+margin_bottom = 175.102
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "_press_space"
+align = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -163,4 +163,5 @@ func forced_toward(target_position):
 	velocity = (target_position - position).normalized()
 	Game.can_move = false
 	
-	
+func update_quest_display():
+	$QuestDisplay.update()

@@ -1,6 +1,6 @@
 extends Node
 
-var initial_state = false
+var initial_state = true
 var events = {
 	"ploy_has_stopped_in_front_of_house": initial_state,
 	"has_met_ploy": initial_state,

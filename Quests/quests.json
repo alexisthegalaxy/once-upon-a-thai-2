@@ -1,31 +1,35 @@
 {
+  "first_quest": {
+    "en_name": "My first quest",
+    "fr_name": "Ma première quête",
+    "type": "talk_to",
+    "parameters": ["Chaiyaphum", "RandomMonk"],
+    "en_description": "Go talk to the random monk.",
+    "fr_description": "Va parler au moine derrière le temple.",
+    "counter_max": 1
+  },
   "find_sentences_in_chaiyaphum": {
-    "name": "Sentences in Chaiyaphum",
-    "description": [
-      "Talk to everybody in Chaiyaphum and learn the sentences they have to teach."
-    ],
-    "counter": 10,
+    "en_name": "Sentences in Chaiyaphum",
+    "fr_name": "Les phrases de Chaiyaphum",
+    "en_description": "Talk to everybody in Chaiyaphum and collect their sentences.",
+    "fr_description": "Parle à tous les habitants de Chaiyaphum et collecte leurs phrases.",
+    "counter_max": 10,
+    "en_counter_name": "Sentences found",
+    "fr_counter_name": "Phrases trouvées "
   },
   "implant_source_behind_the_temple": {
-    "name": "First source implant",
-    "description": [
-      "Go behind the temple, produce the word อะไร, and implant it into the source that is used for training shamans."
-    ],
-    "counter": 1
+    "en_name": "First source implant",
+    "en_description": "Go behind the temple, produce the word อะไร, and implant it into the source that is used for training shamans.",
+    "counter_max": 1
   },
   "implant_word_cut": {
-    "name": "Repopulate ตัด",
-    "description": [
-      "We get the Spell for cut: ตัด. We have to implant it into a source. When we have done so, the quest is complete.",
-      "Until we do so, we can get the Spell again and again at the shaman."
-    ],
-    "counter": 1
+    "en_name": "Repopulate ตัด",
+    "en_description": "We get the Spell for cut: ตัด. We have to implant it into a source. When we have done so, the quest is complete. Until we do so, we can get the Spell again and again at the shaman.",
+    "counter_max": 1
   },
   "go_back_home_and_talk_to_yaai": {
-    "name": "Back home",
-    "description": [
-      "Talk to yaai at home."
-    ],
-    "counter": 1
+    "en_name": "Back home",
+    "en_description": "Talk to yaai at home.",
+    "counter_max": 1
   }
 }

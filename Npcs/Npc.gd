@@ -5,6 +5,7 @@ export var sprite_path = "res://Npcs/sprites/yaai.png"
 export var direction = "down"
 export var state = "stand"  # can be "stand" or "walk"
 export var display_name = ""  # Is shown in dialogs. For example: "Nim".
+export var start_quest = ""
 
 var speed = 100  # 65
 var velocity = Vector2.ZERO
