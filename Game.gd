@@ -20,6 +20,13 @@ var seen_sentences = []  # we don't know the translation
 var known_letters = []  # list of IDs
 #var known_letters = [0, 11, 13, 21, 28]  # five letters
 var collected_letters = []
+var following_spells = []
+#var following_spells = [
+#	{
+#		"id": 400,
+#		"ttl": 1000,
+#	}
+#]
 
 var exit_screen = false
 var current_dialog = null
@@ -59,6 +66,23 @@ var should_start_test_when_back_from_MP = [
 
 func is_overworld_frozen():
 	return active_test or current_dialog or is_frozen
+
+func generate_following_spells_after_map_change():
+	for following_spell in following_spells:
+		var new_spell = load("res://Lexical/Word/Spell.tscn").instance()
+		new_spell.id = following_spell.id
+		new_spell.word = Game.words[str(following_spell.id)]
+		new_spell.can_move = true
+		new_spell.position = player.position
+		new_spell.set_as_following()
+		current_scene.get_node("YSort").add_child(new_spell)
+
+func add_following_spell(word_id, over_word):
+	over_word.set_as_following()
+	following_spells.append({
+		"id": word_id,
+		"ttl": 100,
+	})
 
 func dialog_press_f_to_see_it(learnt_item):
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
@@ -351,7 +375,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 
 #	SoundPlayer.play_thai("เป็น")
 #	yield(get_tree().create_timer(1.0), "timeout")
-	
+	generate_following_spells_after_map_change()
 	update_letters_to_look_for_if_necesssary(to_map_name)
 
 	if "LexicalWorld" in previous_map_name and not "LexicalWorld" in current_map_name:

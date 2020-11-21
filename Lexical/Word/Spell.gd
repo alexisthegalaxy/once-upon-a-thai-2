@@ -3,10 +3,10 @@ extends KinematicBody2D
 export var id = 0
 export var is_following_player = false
 
-
 # Moving
-const ACCELERATION = 1200
+const ACCELERATION = 1200 * 3
 const FRICTION = 1200
+const MAX_FOLLOWING_SPEED = 90
 const MAX_SPEED = 60  # 100
 export var can_move = false
 var velocity = Vector2.ZERO
@@ -29,24 +29,29 @@ export(Array) var post_dialog_event = []
 func _ready():
 	y = self.position.y
 	word = Game.words[str(id)]
-	$Sprite/label.text = word["th"]
+	$Visible/thai.text = word["th"]
 	rng.randomize()
+	if is_following_player:
+		set_as_following()
 	
+func set_as_following():
+	is_following_player = true
+	$CollisionShape2D.disabled = true
+	$Visible/thai.add_color_override("font_color", Color(0.137, 1, 0.952, 1))
+	$Visible.scale = Vector2(0.4, 0.4)
+	$Visible/Light2D.hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Game.is_overworld_frozen():
 		return
 #	if Game.player.position.distance_to(position) > 200:
-#		$Sprite/Light2D.hide()
+#		$Light2D.hide()
 #		return
-	$Sprite/Light2D.show()
-	if wobbles and not can_move:
+#	$Visible/Light2D.show()
+	if wobbles:
 		wobbling_time += delta
-		var wobbling_delta = cos(wobbling_time) * 3
-#		self.position.y = y + wobbling_delta
-		$Sprite.position.y = $Sprite.position.y + wobbling_delta / 50
-#		 * $Sprite.scale.x
+		$Visible.position.y = cos(wobbling_time) * 5
 
 	if is_birthing:
 		if ratio < 1:
@@ -74,10 +79,10 @@ func _process(delta):
 			var direction = (player_position - position).normalized()
 #			print('direction', direction)
 			if player_position.distance_to(position) > 15:
-				velocity = velocity.move_toward(direction * following_speed, ACCELERATION * delta)
+				velocity = velocity.move_toward(direction * min(following_speed, MAX_FOLLOWING_SPEED), ACCELERATION * delta)
 			else:
 				velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
-				velocity = move_and_slide(velocity)
+			velocity = move_and_slide(velocity)
 #			move(direction * following_speed, delta)
 #				self.move_and_slide(velocity)
 #						position = position + velocity * delta * speed
@@ -110,12 +115,15 @@ func start_test_after_animation():
 	Game.start_test(first_test, id, self)
 
 func _on_Area2D_body_entered(body):
-	if body == Game.player:
-		# if the Player starts the interaction - keep commented out
-#		Game.gains_focus(self)
-		# if the Spell starts the interaction
-		if not Game.is_overworld_frozen() and not is_frozen:
-			interact()
+	if is_following_player:
+		return
+	if not body == Game.player:
+		return
+#	if the Player starts the interaction - keep commented out
+#	Game.gains_focus(self)
+#	if the Spell starts the interaction
+	if not Game.is_overworld_frozen() and not is_frozen:
+		interact()
 
 func _on_Area2D_body_exited(body):
 	if body == Game.player:

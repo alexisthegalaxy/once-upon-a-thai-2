@@ -89,12 +89,13 @@ func _process(delta):
 func answered_correctly():
 #	Game.can_move = true
 #	Game.active_test = null
-	SoundPlayer.play_thai(word["th"])
+	SoundPlayer.play_thai(word.th)
 	Game.player.can_interact = true
 	Game.is_frozen = false
-	if not word["id"] in Game.known_words:
-		Game.known_words.append(word["id"])
-	over_word.starts_disappearing()
+	if not word.id in Game.known_words:
+		Game.known_words.append(word.id)
+	Game.add_following_spell(word.id, over_word)
+#	over_word.starts_disappearing()
 	Game.dialog_press_f_to_see_it('word')
 	queue_free()
 	

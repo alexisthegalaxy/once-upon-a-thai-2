@@ -6,7 +6,7 @@
 [ext_resource path="res://Light/spot.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
-size = 10
+size = 11
 outline_color = Color( 0.984314, 0, 0, 1 )
 font_data = ExtResource( 3 )
 
@@ -19,35 +19,36 @@ radius = 10.2139
 [node name="Spell" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Visible" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Visible"]
 position = Vector2( -4.76837e-07, 9.53674e-07 )
 scale = Vector2( 0.225949, 0.226321 )
 texture = ExtResource( 4 )
 
-[node name="label" type="Label" parent="Sprite"]
-margin_left = -212.437
-margin_top = -70.696
-margin_right = -116.437
-margin_bottom = -38.696
-rect_scale = Vector2( 4.425, 4.425 )
+[node name="Light2D" type="Light2D" parent="Visible"]
+position = Vector2( -9.9476e-13, -9.53673e-07 )
+scale = Vector2( 0.559936, 0.582469 )
+texture = ExtResource( 1 )
+texture_scale = 0.07
+energy = 1.2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="thai" type="Label" parent="Visible"]
+margin_left = -48.2695
+margin_top = -15.7824
+margin_right = 47.7305
+margin_bottom = 16.2176
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_color = Color( 1, 0.137255, 0.137255, 1 )
 text = "รถไฟใต้ดิน"
 align = 1
 valign = 1
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
-}
-
-[node name="Light2D" type="Light2D" parent="Sprite"]
-position = Vector2( 2.11037e-06, -8.42762e-06 )
-scale = Vector2( 2.47815, 2.57364 )
-texture = ExtResource( 1 )
-texture_scale = 0.07
-energy = 1.2
-__meta__ = {
-"_edit_lock_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

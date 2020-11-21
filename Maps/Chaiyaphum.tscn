@@ -2176,7 +2176,7 @@ position = Vector2( 984.547, 254.483 )
 position = Vector2( 1349.32, 51.7197 )
 
 [node name="Tree1704" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 1394.73, -49.1716 )
+position = Vector2( 1488.92, -109.761 )
 
 [node name="Tree1705" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 1106.47, -215.666 )
@@ -3997,7 +3997,7 @@ position = Vector2( 1759.54, 131.07 )
 position = Vector2( 1813.83, 86.4946 )
 
 [node name="Tree1826" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 1794.25, 115.21 )
+position = Vector2( 1454.95, -98.5059 )
 
 [node name="Tree1827" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 1788.6, 146.148 )
@@ -4042,7 +4042,7 @@ position = Vector2( 1684.02, 171.913 )
 position = Vector2( 1801.85, 211.578 )
 
 [node name="Tree1841" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 1814.16, 146.726 )
+position = Vector2( 1522.23, -64.2359 )
 
 [node name="Tree1842" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 1764.46, 163.985 )
@@ -6206,11 +6206,9 @@ position = Vector2( 429.959, -30.8363 )
 id = 24
 
 [node name="rao" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 1546.1, -122.128 )
+position = Vector2( 1564.28, -114.967 )
 id = 29
-is_following_player = true
 can_move = true
-wobbles = false
 
 [node name="chawp" parent="YSort/Words" instance=ExtResource( 16 )]
 position = Vector2( 569.124, -37.5155 )
@@ -6223,7 +6221,7 @@ position = Vector2( 699.744, 467.54 )
 position = Vector2( 1295.12, 160.862 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 504.364, 103.246 )
+position = Vector2( 1094.84, 405.643 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
