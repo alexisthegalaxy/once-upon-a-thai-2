@@ -29,13 +29,14 @@ func _on_Button_pressed():
 	queue_free()
 	if has_learnt_the_sentence or has_seen_the_sentence:
 		var dialog_text = [
-			"""[Name] writes the sentence in the notebook.
-Press F to see all your sentences."""
+			"_names_writes_sentence_in_notebook", 
+			"_press_f_to_see_all_sentences"
 		]
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 		Game.current_dialog.init_dialog(dialog_text, self, null, false, null)
 		Game.player.stop_walking()
 		Game.current_scene.add_child(Game.current_dialog)
+		Quests.update_find_sentences_quests(sentence.id)
 	else:
 		Game.can_move = true
 		Game.player.can_interact = true

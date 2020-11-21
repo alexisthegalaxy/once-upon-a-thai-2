@@ -37,7 +37,7 @@ direction = "up"
 position = Vector2( -79.7083, 40.4501 )
 
 [node name="OldMan" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( 75.5253, 36.1329 )
+position = Vector2( 75.5253, 36.3419 )
 dialog = [ "คุณเป็นใคร" ]
 sprite_path = "res://Npcs/sprites/old_man.png"
 post_dialog_event = [ "say_sentence", 202 ]

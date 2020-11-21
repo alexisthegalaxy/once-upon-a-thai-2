@@ -15,9 +15,9 @@ func init(_player):
 	if Events.events["has_finished_the_letter_world_the_first_time"]:
 		$LetterWorld.show()
 		if "LexicalWorld" in Game.current_map_name:
-			$LetterWorld.text = "Go back to the material world"
+			$LetterWorld.text = tr("_go_back_to_the_material_world")
 		else:
-			$LetterWorld.text = "Go to the letter world"
+			$LetterWorld.text = tr("_go_to_the_letter_world")
 	else:
 		$LetterWorld.hide()
 # Called every frame. 'delta' is the elapsed time since the previous frame.

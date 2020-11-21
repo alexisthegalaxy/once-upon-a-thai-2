@@ -22,7 +22,7 @@ func update():
 	var number_of_active_quests = 0
 	for quest_id in Quests.quests:
 		var quest = Quests.quests[quest_id]
-		if quest.status == Quests.IN_PROGRESS:
+		if quest.status in [Quests.IN_PROGRESS, Quests.FINISHED]:
 			number_of_active_quests += 1
 			if number_of_active_quests == 1:
 				$Quests/QuestDisplay1.init_quest_display(quest_id)

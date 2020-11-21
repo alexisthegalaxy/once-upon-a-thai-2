@@ -28,7 +28,7 @@ tile_data = PoolIntArray( -1179663, 0, 0, -1179662, 0, 0, -1179661, 0, 0, -11796
 position = Vector2( 336, 624 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( -108.695, 76.8247 )
+position = Vector2( 22.8061, 81.6873 )
 direction = "up"
 
 [node name="House" parent="YSort" instance=ExtResource( 6 )]
@@ -49,6 +49,14 @@ sprite_path = "res://Npcs/sprites/dad.png"
 direction = "right"
 display_name = "Som's father"
 post_dialog_event = [ "say_sentence", 204 ]
+
+[node name="QuestGirl" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 70.5872, 77.1982 )
+dialog = [ "Sup!" ]
+sprite_path = "res://Npcs/sprites/girl.png"
+direction = "left"
+display_name = "Quest girl"
+start_quest = "find_sentences_in_chaiyaphum"
 
 [node name="Grandmother" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( -69.5908, 30.0377 )
@@ -82,12 +90,15 @@ post_dialog_event = [ "teach_sentence", 208 ]
 [node name="Lights" type="Node" parent="."]
 
 [node name="Light2D6" type="Light2D" parent="Lights"]
-position = Vector2( -64.6287, 103.832 )
+position = Vector2( -60.189, 102.775 )
 scale = Vector2( 1.39649, 1.31358 )
 texture = ExtResource( 2 )
 texture_scale = 0.09
 energy = 0.6
 shadow_enabled = true
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Light2D7" type="Light2D" parent="Lights"]
 position = Vector2( -45.1733, -219.298 )

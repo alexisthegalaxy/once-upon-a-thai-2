@@ -15,11 +15,19 @@ func _ready():
 #func _process(delta):
 #	pass
 func init_quest_display(quest_id):
-	var lo = TranslationServer.get_locale()
 	quest = Quests.quests[quest_id]
+	update_display()
+	
+func update_display():
+	var lo = TranslationServer.get_locale()
 	$Title.text = quest[lo + "_name"]
-	$Description.text = quest[lo + "_description"]
-	if quest.counter > 1:
-		$Counter.text = quest[lo + "_description"] + ":" + str(quest.counter) + " / " + str(quest.counter_max)
+	
+	if quest.counter_max > 1:
+		$Counter.text = quest[lo + "_counter_name"] + ": " + str(quest.counter) + " / " + str(quest.counter_max)
 	else:
 		$Counter.hide()
+	if quest.status == Quests.FINISHED:
+		$Description.text = quest[lo + "_end_description"]
+		$green_check_mark.show()
+	else:
+		$Description.text = quest[lo + "_description"]

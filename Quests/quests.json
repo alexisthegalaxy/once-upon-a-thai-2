@@ -13,23 +13,29 @@
     "fr_name": "Les phrases de Chaiyaphum",
     "en_description": "Talk to everybody in Chaiyaphum and collect their sentences.",
     "fr_description": "Parle à tous les habitants de Chaiyaphum et collecte leurs phrases.",
-    "counter_max": 10,
     "en_counter_name": "Sentences found",
-    "fr_counter_name": "Phrases trouvées "
+    "fr_counter_name": "Phrases trouvées ",
+    "en_end_description": "Go back to Illo in Chaiyaphum's temple.",
+    "fr_end_description": "Retourne voir Illo au temple de Chaiyaphum.",
+    "type": "find_sentences",
+    "parameters": [[203, 204], []]
   },
   "implant_source_behind_the_temple": {
     "en_name": "First source implant",
     "en_description": "Go behind the temple, produce the word อะไร, and implant it into the source that is used for training shamans.",
-    "counter_max": 1
+    "counter_max": 1,
+    "type": "implant"
   },
   "implant_word_cut": {
     "en_name": "Repopulate ตัด",
     "en_description": "We get the Spell for cut: ตัด. We have to implant it into a source. When we have done so, the quest is complete. Until we do so, we can get the Spell again and again at the shaman.",
-    "counter_max": 1
+    "counter_max": 1,
+    "type": "implant"
   },
   "go_back_home_and_talk_to_yaai": {
     "en_name": "Back home",
     "en_description": "Talk to yaai at home.",
-    "counter_max": 1
+    "counter_max": 1,
+    "type": "talk_to"
   }
 }
