@@ -47,3 +47,15 @@ func update_find_sentences_quests(sentence_id):
 					if quest.counter >= quest.counter_max:
 						quest.status = FINISHED
 					update_quests_display()
+
+func get_finished_quest_ids():
+	var finished_quest_ids = []
+	for quest_id in quests:
+		if quests[quest_id].status == FINISHED:
+			finished_quest_ids.append(quest_id)
+	return finished_quest_ids
+
+func mark_quest_as_done(quest_id):
+	quests[quest_id].status = DONE
+	print('quests[quest_id].status', quests[quest_id].status)
+	update_quests_display()

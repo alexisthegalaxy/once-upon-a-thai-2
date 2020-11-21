@@ -51,12 +51,20 @@ display_name = "Som's father"
 post_dialog_event = [ "say_sentence", 204 ]
 
 [node name="QuestGirl" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( 70.5872, 77.1982 )
+position = Vector2( 70.5872, 76.9868 )
 dialog = [ "Sup!" ]
 sprite_path = "res://Npcs/sprites/girl.png"
 direction = "left"
 display_name = "Quest girl"
 start_quest = "find_sentences_in_chaiyaphum"
+
+[node name="OldQuestWoman" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( -26.6644, 89.8832 )
+dialog = [ "What do you want?" ]
+sprite_path = "res://Npcs/sprites/ploysgrandmother.png"
+direction = "right"
+display_name = "Old Quest Woman"
+finish_quests = [ "find_sentences_in_chaiyaphum" ]
 
 [node name="Grandmother" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( -69.5908, 30.0377 )

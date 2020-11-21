@@ -17,8 +17,14 @@
     "fr_counter_name": "Phrases trouvées ",
     "en_end_description": "Go back to Illo in Chaiyaphum's temple.",
     "fr_end_description": "Retourne voir Illo au temple de Chaiyaphum.",
+    "en_finish_dialog": [
+      "Congratulations, [Name], you've found all the sentences!",
+    ],
+    "fr_finish_dialog": [
+      "Félicitations, [Name], t'as trouvé toutes les phrases.",
+    ],
     "type": "find_sentences",
-    "parameters": [[203, 204], []]
+    "parameters": [[203], []]
   },
   "implant_source_behind_the_temple": {
     "en_name": "First source implant",

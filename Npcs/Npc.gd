@@ -6,6 +6,7 @@ export var direction = "down"
 export var state = "stand"  # can be "stand" or "walk"
 export var display_name = ""  # Is shown in dialogs. For example: "Nim".
 export var start_quest = ""
+export(Array) var finish_quests = []  # ["find_sentences_in_chaiyaphum", "first_quest"]
 
 var speed = 100  # 65
 var velocity = Vector2.ZERO
@@ -175,19 +176,34 @@ func npc_turn_towards(target):
 	update_animation()
 
 func interact():
-	if not is_walking_towards:
-		get_tree().set_input_as_handled()
-		Game.player.can_interact = false
-		Game.can_move = false
-		npc_turn_towards(Game.player.position)
-		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-		Game.current_dialog.init_dialog(dialog, self, post_dialog_event, false, null)
-		Game.player.stop_walking()
-		Game.current_scene.add_child(Game.current_dialog)
-		if pre_dialog_event:
-			Events.execute(pre_dialog_event[0], pre_dialog_event[1])
-	else:
-		Game.can_move = true
+	if is_walking_towards:
+#		Game.can_move = true
+		return
+	get_tree().set_input_as_handled()
+	Game.player.can_interact = false
+	Game.can_move = false
+	Game.player.stop_walking()
+	var dialog_to_use = change_dialog_if_finished_quest()
+	npc_turn_towards(Game.player.position)
+	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+	Game.current_dialog.init_dialog(dialog_to_use, self, post_dialog_event, false, null)
+	Game.current_scene.add_child(Game.current_dialog)
+	if pre_dialog_event:
+		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
+
+func change_dialog_if_finished_quest():
+	var new_dialog = dialog
+	if finish_quests:
+		var found_finished_quest_id = null
+		var finished_quest_ids = Quests.get_finished_quest_ids()
+		for finished_quest_id in finished_quest_ids:
+			if finished_quest_id in finish_quests:
+				found_finished_quest_id = finished_quest_id
+				break
+		if found_finished_quest_id:
+			Quests.mark_quest_as_done(found_finished_quest_id)
+			new_dialog = Quests.quests[found_finished_quest_id][TranslationServer.get_locale() + "_finish_dialog"]
+	return new_dialog
 
 func _on_InteractBox_body_entered(body):
 	if is_walking_towards:

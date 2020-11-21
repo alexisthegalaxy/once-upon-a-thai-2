@@ -4,22 +4,14 @@ extends CanvasLayer
 var shown_quest_ids = []
 var is_showing_quests = false
 
-func hide_all():
-	$Sprite.hide()
-	$MenuButton.hide()
-	$Button.hide()
-
-func show_all():
-#	$Sprite.show()
-#	$MenuButton.show()
-	$Button.show()
-
 func _ready():
-	hide_all()
+	$Button.hide()
+	$Quests.hide()
 	update()
 
 func update():
 	var number_of_active_quests = 0
+	
 	for quest_id in Quests.quests:
 		var quest = Quests.quests[quest_id]
 		if quest.status in [Quests.IN_PROGRESS, Quests.FINISHED]:
@@ -31,14 +23,13 @@ func update():
 				$Quests/QuestDisplay2.init_quest_display(quest_id)
 				$Quests/QuestDisplay2.show()
 			shown_quest_ids.append(quest.id)
-#			$MenuButton.get_popup().add_item(quest[TranslationServer.get_locale() + "_name"])
 	var button_text = tr("_active_quests") + " (" + str(number_of_active_quests) + ")"
-#	$MenuButton.get_popup().connect("id_pressed", self, "_on_item_pressed")
 	if number_of_active_quests > 0:
-#		$MenuButton.text = button_text
 		$Button.text = button_text
 		$Button.show()
-#		show_all()
+	else:
+		$Quests.hide()
+		$Button.hide()
 
 func _on_item_pressed(id):
 	print($MenuButton.get_popup().get_item_text(id), " pressed")
