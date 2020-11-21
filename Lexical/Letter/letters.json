@@ -1,7 +1,5 @@
 {
   "0": {
-    "old_id": 1,
-    "id": 0,
     "th": "น",
     "pron": "หนู",
     "en": "n",
@@ -26,8 +24,6 @@
     "mem": "น has its loops >n<ot on the same side."
   },
   "1": {
-    "old_id": 2,
-    "id": 1,
     "th": "า",
     "pron": "",
     "en": "a (long)",
@@ -39,8 +35,6 @@
     "mem": "า looks like the right side of the letter A."
   },
   "2": {
-    "old_id": 3,
-    "id": 2,
     "th": "ร",
     "pron": "เรือ",
     "en": "r",
@@ -52,8 +46,6 @@
     "mem": "ร looks like a r that looks towards the left."
   },
   "3": {
-    "old_id": 4,
-    "id": 3,
     "th": "-ั",
     "pron": "",
     "en": "a (short)",
@@ -71,8 +63,6 @@
     "mem": ""
   },
   "4": {
-    "old_id": 5,
-    "id": 4,
     "th": "ก",
     "pron": "ไก่",
     "en": "g",
@@ -92,8 +82,6 @@
     "mem": "ร looks like a n, but it has a zi>g<za>g< le>g<."
   },
   "5": {
-    "old_id": 6,
-    "id": 5,
     "th": "ม",
     "pron": "ม้า",
     "en": "m",
@@ -112,8 +100,6 @@
     "mem": "ม has its loops on the sa>m<e side."
   },
   "6": {
-    "old_id": 7,
-    "id": 6,
     "th": "เ-",
     "pron": "",
     "en": "é (long)",
@@ -138,8 +124,6 @@
     "mem": "เ looks like a leg (léég)."
   },
   "7": {
-    "old_id": 8,
-    "id": 7,
     "th": "อ",
     "pron": "อ่าง",
     "en": "or (long)",
@@ -165,8 +149,6 @@
     "mem": "อ looks like an open mouth saying the \"or\" sound."
   },
   "8": {
-    "old_id": 9,
-    "id": 8,
     "th": "ล",
     "pron": "ลิง",
     "en": "l",
@@ -178,8 +160,6 @@
     "mem": ""
   },
   "9": {
-    "old_id": 10,
-    "id": 9,
     "th": "-ี",
     "pron": "",
     "en": "ee (long i)",
@@ -201,8 +181,6 @@
     "mem": "-ี looks like a roof with a chimn>ey<."
   },
   "10": {
-    "old_id": 11,
-    "id": 10,
     "th": "ง",
     "pron": "งู",
     "en": "ng",
@@ -214,8 +192,6 @@
     "mem": "ง looks like the arm of somebody flexing their muscle and saying \"ng\" because of the effort."
   },
   "11": {
-    "old_id": 12,
-    "id": 11,
     "th": "ท",
     "pron": "ทหาร",
     "en": "t'h",
@@ -239,8 +215,6 @@
     "mem": "ท looks like a snake (head on the left) with a long tail (>t'h<ail)."
   },
   "12": {
-    "old_id": 13,
-    "id": 12,
     "th": "ว",
     "pron": "แหวน",
     "en": "w",
@@ -252,8 +226,6 @@
     "mem": "ว looks like a question mark. วhat?"
   },
   "13": {
-    "old_id": 14,
-    "id": 13,
     "th": "ย",
     "pron": "ยักษ์",
     "en": "y",
@@ -275,8 +247,6 @@
     "mem": "ย looks like the y, but without the lower part."
   },
   "14": {
-    "old_id": 15,
-    "id": 14,
     "th": "-ิ",
     "pron": "",
     "en": "i (short)",
@@ -293,8 +263,6 @@
     "mem": "-ิ looks like l>i<ps."
   },
   "15": {
-    "old_id": 16,
-    "id": 15,
     "th": "ส",
     "pron": "เสือ",
     "en": "s",
@@ -306,8 +274,6 @@
     "mem": "ส looks like a ล with an extra >s<trike through it."
   },
   "16": {
-    "old_id": 17,
-    "id": 16,
     "th": "ต",
     "pron": "เต่า",
     "en": "dt",
@@ -319,8 +285,6 @@
     "mem": "ต looks like ด with a dent (dt) on top."
   },
   "17": {
-    "old_id": 18,
-    "id": 17,
     "th": "ด",
     "pron": "เด็ก",
     "en": "d",
@@ -344,8 +308,6 @@
     "mem": "ด looks like a >d<igital finger print, or a hobbit house >d<oor."
   },
   "18": {
-    "old_id": 19,
-    "id": 18,
     "th": "บ",
     "pron": "ใบไม้",
     "en": "b",
@@ -362,8 +324,6 @@
     "mem": "บ looks like a >b<ucket."
   },
   "19": {
-    "old_id": 20,
-    "id": 19,
     "th": "ป",
     "pron": "ปลา",
     "en": "bp",
@@ -386,8 +346,6 @@
     "mem": "ป looks like a much >b<igger >p<ail than the บ."
   },
   "20": {
-    "old_id": 21,
-    "id": 20,
     "th": "ะ",
     "pron": "",
     "en": "a (final)",
@@ -399,8 +357,6 @@
     "mem": ""
   },
   "21": {
-    "old_id": 22,
-    "id": 21,
     "th": "ค",
     "pron": "ควาย",
     "en": "k'h (khwai)",
@@ -425,8 +381,6 @@
     "mem": "ค looks like a peacock (pea>k'h<ock) facing towards you."
   },
   "22": {
-    "old_id": 23,
-    "id": 22,
     "th": "จ",
     "pron": "จาน",
     "en": "j",
@@ -438,8 +392,6 @@
     "mem": "จ looks like a dolphin plunging (plun>j<ing) into the water."
   },
   "23": {
-    "old_id": 24,
-    "id": 23,
     "th": "-ื",
     "pron": "",
     "en": "eu",
@@ -451,8 +403,6 @@
     "mem": ""
   },
   "24": {
-    "old_id": 25,
-    "id": 24,
     "th": "พ",
     "pron": "พาน",
     "en": "p'h",
@@ -464,8 +414,6 @@
     "mem": "พ looks like the beak of a bird (the eye is on the left) pecking (>p'h<ecking) on the floor."
   },
   "25": {
-    "old_id": 26,
-    "id": 25,
     "th": "แ-",
     "pron": "",
     "en": "ae (long)",
@@ -477,8 +425,6 @@
     "mem": ""
   },
   "26": {
-    "old_id": 27,
-    "id": 26,
     "th": "ห",
     "pron": "หีบ",
     "en": "h",
@@ -490,8 +436,6 @@
     "mem": "ห is the only letter that has two loops that are placed >h<igh."
   },
   "27": {
-    "old_id": 28,
-    "id": 27,
     "th": "ใ-",
     "pron": "",
     "en": "ai (maimuan)",
@@ -516,8 +460,6 @@
     "mem": "ใ looks like the staff of a high-ranking (h>ai<) bishop."
   },
   "28": {
-    "old_id": 29,
-    "id": 28,
     "th": "ไ-",
     "pron": "",
     "en": "ai (maimalai)",
@@ -542,8 +484,6 @@
     "mem": "ไ looks like a lightning strike (str>ai<ke)."
   },
   "29": {
-    "old_id": 30,
-    "id": 29,
     "th": "โ-",
     "pron": "",
     "en": "oh (long)",
@@ -555,8 +495,6 @@
     "mem": "โ looks like a ร that is tall (t>oh<l)."
   },
   "30": {
-    "old_id": 31,
-    "id": 30,
     "th": "ช",
     "pron": "ช้าง",
     "en": "ch",
@@ -580,8 +518,6 @@
     "mem": "ช looks like the body of a >ch<ick (head on the left, tail on the right)."
   },
   "31": {
-    "old_id": 32,
-    "id": 31,
     "th": "ข",
     "pron": "ไข่",
     "en": "k'h (khai)",
@@ -593,8 +529,6 @@
     "mem": "ข looks like a curly บ (>k'h<urly)."
   },
   "32": {
-    "old_id": 33,
-    "id": 32,
     "th": "-ู",
     "pron": "",
     "en": "u (long)",
@@ -606,8 +540,6 @@
     "mem": "-ู is placed under the consonant (>oo<nder), and is longer than the short u sound -ุ."
   },
   "33": {
-    "old_id": 34,
-    "id": 33,
     "th": "-ุ",
     "pron": "",
     "en": "u (short)",
@@ -629,8 +561,6 @@
     "mem": "-ุ is placed under the consonant (>u<nder), and is shorter than the long u sound -ู."
   },
   "34": {
-    "old_id": 35,
-    "id": 34,
     "th": "ฟ",
     "pron": "ฟัน",
     "en": "f",
@@ -642,8 +572,6 @@
     "mem": "The tail of ฟ goes >f<arther than the one of พ."
   },
   "35": {
-    "old_id": 36,
-    "id": 35,
     "th": "∅",
     "pron": "",
     "en": "o (short)",
@@ -671,8 +599,6 @@
     "mem": "Nothingness, or zero, is also pronounced \"oh\" in English, when spelling a number."
   },
   "36": {
-    "old_id": 37,
-    "id": 36,
     "th": "-็",
     "pron": "",
     "en": "[shortens the sound]",
@@ -696,7 +622,6 @@
     "mem": "-็ looks like a >small< fetus."
   },
   "37": {
-    "id": 37,
     "th": "ผ",
     "pron": "ผึ้ง",
     "en": "p'h",
@@ -718,7 +643,6 @@
     "mem": "ผ looks like the head of a bird pecking (>p'h<ecking) at the ground."
   },
   "38": {
-    "id": 38,
     "th": "ฉ",
     "pron": "ฉิ่ง",
     "en": "ch",
@@ -742,7 +666,6 @@
     "mem": "ฉ looks like wheel>ch<air: the bottom-right loop is the wheel, and the top part is the chairback."
   },
   "39": {
-    "id": 39,
     "th": "ณ",
     "pron": "เณร",
     "en": "n",
@@ -766,7 +689,6 @@
     "mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
   },
   "40": {
-    "id": 40,
     "th": "-่",
     "pron": "ไม้เอก",
     "en": "first tone mark",
@@ -792,7 +714,6 @@
     "mem": "The shape of the first tone mark -่ comes from the number 1. It marks the low tone, except for low-class based syllables where it marks the falling tones."
   },
   "41": {
-    "id": 41,
     "th": "-้",
     "pron": "ไม้โท",
     "en": "second tone mark",
@@ -818,7 +739,6 @@
     "mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
   },
   "42": {
-    "id": 42,
     "th": "-๊",
     "pron": "ไม้ตรี",
     "en": "third tone mark",
@@ -840,7 +760,6 @@
     "mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
   },
   "43": {
-    "id": 43,
     "th": "-๋",
     "pron": "ไม้จัตวา",
     "en": "third tone mark",

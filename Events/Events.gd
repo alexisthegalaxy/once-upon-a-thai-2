@@ -1,6 +1,6 @@
 extends Node
 
-var initial_state = false
+var initial_state = true
 var events = {
 	"ploy_has_stopped_in_front_of_house": initial_state,
 	"has_met_ploy": initial_state,
@@ -95,7 +95,7 @@ func set_yaai_has_given_last_warning_before_forest_as_true(_parameters):
 	events.yaai_has_given_last_warning_before_forest = true
 
 func immediately_enters_lexical_world():
-	Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", 13, 71.66)
+	Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75)
 
 func enters_lexical_world(_parameters):
 	# Blackens the screen, and then call immediately_enters_lexical_world

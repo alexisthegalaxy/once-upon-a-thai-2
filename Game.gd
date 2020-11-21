@@ -201,7 +201,12 @@ func _ready():
 	words = retrieve_from_json_file("res://Lexical/Word/words.json")
 	sentences = retrieve_from_json_file("res://Lexical/Sentence/sentences.json")
 	letters = retrieve_from_json_file("res://Lexical/Letter/letters.json")
-	
+	for word_id in words:
+		words[word_id]["id"] = int(word_id)
+	for sentence_id in sentences:
+		sentences[sentence_id]["id"] = int(sentence_id)
+	for letter_id in letters:
+		letters[letter_id]["id"] = int(letter_id)
 
 func _input(_event):
 	if _event.is_action_pressed("ui_cancel"):

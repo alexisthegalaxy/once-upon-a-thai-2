@@ -90,7 +90,7 @@ func _on_press_f():
 		letter_page = null
 	else:
 		hub = load("res://UI/UIHub.tscn").instance()
-		hub.init(self)
+#		hub.init()
 		Game.current_scene.add_child(hub)
 
 func _input(_event) -> void:

@@ -33,16 +33,11 @@ func update_quests_display():
 	Game.player.update_quest_display()
 
 func update_find_sentences_quests(sentence_id):
-	print('sentence_id', sentence_id)
 	for quest_id in quests:
 		var quest = quests[quest_id]
 		if quest.status == IN_PROGRESS and quest.type == "find_sentences":
 			if sentence_id in quest.parameters[0]:
-				print('this sentence is part of the quest!')
-				if sentence_id in quest.parameters[1]:
-					print('this sentence was found already')
-				else:
-					print('great! this sentence wasnt found already!')
+				if not sentence_id in quest.parameters[1]:
 					quest.parameters[1].append(sentence_id)
 					quest.counter += 1
 					if quest.counter >= quest.counter_max:

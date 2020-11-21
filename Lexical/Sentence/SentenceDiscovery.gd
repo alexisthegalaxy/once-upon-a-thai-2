@@ -8,7 +8,7 @@ func sentence_discovery_init(sentence_id, is_translated):
 	sentence = Game.sentences[str(sentence_id)]
 	if is_translated:
 		$LabelSmall.hide()
-		$Label.text = "You've learned a sentence!"
+		$Label.text = tr("_you_ve_learned_a_sentence")
 		if sentence_id in Game.known_sentences:
 			$Label.hide()
 		else:  # first time we see it
