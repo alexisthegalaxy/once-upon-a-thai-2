@@ -54,3 +54,15 @@ _ok,OK,OK
 _press_f_to_open_your_alphabet_and_see_your_letters,Press F to open your alphabet and see your letters.,Appuie sur F pour ouvrir ton alphabet et voir tes lettres.
 _press_f_to_open_your_notebook_and_see_your_sentences,Press F to open your notebook and see your sentences.,Appuie sur F pour ouvrir ton carnet et voir tes phrases.
 _go_to_the_letter_world_to_learn,Go to the letter world to learn:,Va dans le monde des lettres pour apprendre :
+_this_is_a_shrine,This is a shrine to Buddha. It is very clean!,C'est un autel à Buddha. Il est très propre !
+_this_road_leads_to_chaiyaphum,This road leads to Chaiyaphum City. [sound:ชัยภูมิ],Cette route mène à la ville de Chaiyaphum. [sound:ชัยภูมิ]
+_select_spell_to_implant,Select the Spell to implant inside the source,Choisis le mot que tu veux implanter dans la source.
+_you_dont_have_any_spell_come_back_with_spells,"You don't any Spells, come back when you have Spells.","Tu n'as pas de mots, reviens avec un mot à implanter."
+_do_you_want_to_take_it_out,Do you want to take it out? @QYes/No,Veux-tu le sortir de la source ? @QOui/Non
+_it_looks_like_the_spell,It looks like the Spell ,On dirait que le mot 
+_lives_inside_that_source, lives inside that source., vit dans cette source.
+_it_looks_like,It looks like ,On dirait que 
+_different_words_live_inside_that_source, different words live inside that source., mots différents vivent dans cette source.
+_this_is_a_source_empty+house_spell_inside,"This is a source. It is currently empty, do you want to house a Spell inside? @QYes/No","C'est une source. Elle est vide, veux-tu mettre un mot dedans? @QOui/Non"
+_this_is_a_source_it_is_currently_empty_do_you_want_to_house_the_spell,"This is a source. It is currently empty, do you want to house the Spell ","C'est une source. Elle est vide, veux-tu mettre le mot "
+_inside_q_yes_no, inside? @QYes/No, dedans? @QOui/Non

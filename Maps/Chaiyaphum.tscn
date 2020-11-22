@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://ImageScreen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Light/light.png" type="Texture" id=2]
@@ -24,7 +24,6 @@
 [ext_resource path="res://World/MajesticTree.tscn" type="PackedScene" id=24]
 [ext_resource path="res://World/DirectionSign.tscn" type="PackedScene" id=26]
 [ext_resource path="res://World/SmallWat.tscn" type="PackedScene" id=27]
-[ext_resource path="res://Lexical/Word/WordSpawner.tscn" type="PackedScene" id=28]
 [ext_resource path="res://Lexical/Word/WordStopper.tscn" type="PackedScene" id=29]
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=30]
 [ext_resource path="res://World/PetHouse.tscn" type="PackedScene" id=31]
@@ -6141,55 +6140,62 @@ position = Vector2( 603.954, 681.923 )
 [node name="Som House" parent="YSort" instance=ExtResource( 31 )]
 position = Vector2( 988.373, 186.555 )
 
-[node name="Sacred Rock" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 177.275, 1020.77 )
-is_pulsating = true
+[node name="Sources" type="YSort" parent="YSort"]
+position = Vector2( 1071.88, -169.316 )
 
-[node name="Sacred Rock4" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 424.003, 919.102 )
-is_pulsating = true
-
-[node name="Sacred Rock7" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 271.131, 823.281 )
-is_pulsating = true
-
-[node name="Sacred Rock8" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 936.329, 377.283 )
-
-[node name="Sacred Rock9" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 1173.96, 594.042 )
-
-[node name="Sacred Rock13" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 1352.41, 316.685 )
-
-[node name="Sacred Rock6" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 369.994, 1178.12 )
-is_pulsating = true
-
-[node name="Sacred Rock5" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 757.02, 983.528 )
-is_corrupted = true
-
-[node name="Sacred Rock3" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 618.635, 231.052 )
-is_pulsating = true
-
-[node name="Sacred Rock10" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 313.103, -118.527 )
-is_pulsating = true
-
-[node name="Sacred Rock12" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 273.352, 27.9705 )
-is_pulsating = true
-
-[node name="Sacred Rock11" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 370.369, -71.0001 )
-is_pulsating = true
-
-[node name="Sacred Well" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 1071.88, -170.07 )
-is_pulsating = true
+[node name="Source น้ำ" parent="YSort/Sources" instance=ExtResource( 23 )]
 type = "Well"
+word_ids = [ 156 ]
+
+[node name="Source คน" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( -894.605, 1190.09 )
+word_ids = [ 343 ]
+
+[node name="Source ดี" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( -647.877, 1088.42 )
+word_ids = [ 82 ]
+
+[node name="Source ไทย" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( -800.749, 992.597 )
+word_ids = [ 345 ]
+
+[node name="Source บ้าน" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( -135.551, 546.599 )
+word_ids = [ 147 ]
+
+[node name="Source คุณ" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( 96.8046, 736.228 )
+word_ids = [ 28 ]
+
+[node name="Source ไม่" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( 280.53, 486.001 )
+word_ids = [ 39 ]
+
+[node name="Empty Source" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( 367.827, 170.58 )
+word_ids = [  ]
+
+[node name="Source เป็น" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( -816.816, 1292.74 )
+word_ids = [ 207 ]
+
+[node name="Source อยาก" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( -453.245, 400.368 )
+word_ids = [ 241 ]
+
+[node name="Source ผม" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( -758.777, 50.7894 )
+word_ids = [ 23 ]
+max_number_of_words = 4
+wait_time = 1
+
+[node name="Source ชอบ" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( -798.528, 197.287 )
+word_ids = [ 238 ]
+
+[node name="Source ฉัน" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( -701.511, 98.3163 )
+word_ids = [ 24 ]
 
 [node name="Words" type="YSort" parent="YSort"]
 
@@ -6206,9 +6212,12 @@ position = Vector2( 429.959, -30.8363 )
 id = 24
 
 [node name="rao" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 1564.28, -114.967 )
+position = Vector2( 1344.21, -21.8837 )
 id = 29
-can_move = true
+
+[node name="rao2" parent="YSort/Words" instance=ExtResource( 16 )]
+position = Vector2( 1344.06, 4.38155 )
+id = 30
 
 [node name="chawp" parent="YSort/Words" instance=ExtResource( 16 )]
 position = Vector2( 569.124, -37.5155 )
@@ -6221,7 +6230,7 @@ position = Vector2( 699.744, 467.54 )
 position = Vector2( 1295.12, 160.862 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1107.08, -94.4349 )
+position = Vector2( 1389.66, -3.26381 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6315,7 +6324,7 @@ position = Vector2( -19.1435, 540.092 )
 sentence_id = 199
 
 [node name="Node2D" parent="YSort" instance=ExtResource( 26 )]
-position = Vector2( 527.404, 174.846 )
+position = Vector2( 562.741, 194.658 )
 
 [node name="Changelights" type="Node" parent="."]
 
@@ -6544,56 +6553,6 @@ color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Node2D" parent="." instance=ExtResource( 28 )]
-position = Vector2( 189.357, 1031.09 )
-word_id = 343
-max_number_of_words = 2
-
-[node name="Node2D3" parent="." instance=ExtResource( 28 )]
-position = Vector2( 279.634, 846.287 )
-word_id = 345
-max_number_of_words = 2
-
-[node name="Node2D10" parent="." instance=ExtResource( 28 )]
-position = Vector2( 644.396, 243.254 )
-word_id = 346
-
-[node name="Node2D11" parent="." instance=ExtResource( 28 )]
-position = Vector2( 310.164, -105.978 )
-word_id = 23
-
-[node name="Node2D13" parent="." instance=ExtResource( 28 )]
-position = Vector2( 275.327, 40.0732 )
-word_id = 238
-
-[node name="Node2D12" parent="." instance=ExtResource( 28 )]
-position = Vector2( 371.396, -54.1608 )
-word_id = 24
-
-[node name="Spawner house" parent="." instance=ExtResource( 28 )]
-position = Vector2( 943.721, 385.17 )
-word_id = 147
-
-[node name="Spawner you" parent="." instance=ExtResource( 28 )]
-position = Vector2( 1208.85, 577.878 )
-word_id = 28
-
-[node name="Spawner not" parent="." instance=ExtResource( 28 )]
-position = Vector2( 1326.43, 333.029 )
-word_id = 39
-
-[node name="Spawner water" parent="." instance=ExtResource( 28 )]
-position = Vector2( 1075.26, -156.645 )
-word_id = 156
-
-[node name="Spawner good" parent="." instance=ExtResource( 28 )]
-position = Vector2( 427.257, 934.013 )
-word_id = 82
-
-[node name="Spawner to be" parent="." instance=ExtResource( 28 )]
-position = Vector2( 367.903, 1136.09 )
-word_id = 207
 
 [node name="WordStopper2" parent="." instance=ExtResource( 29 )]
 position = Vector2( 201.705, 786.993 )

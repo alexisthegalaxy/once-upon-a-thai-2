@@ -1,10 +1,10 @@
-extends Node2D
+extends StaticBody2D
 
-export(String) var content = "ชัยภูมิ"
-export(Array, String) var dialog = ["_this_road_leads_to_chaiyaphum"]
+export(Array, String) var dialog = ["_this_is_a_shrine"]
+export var sprite_path = "res://World/assets/IndoorBuddhaShrine.png"
 
 func _ready():
-	$Label.text = content
+	$Sprite.texture = load(sprite_path)
 
 func interact():
 	get_tree().set_input_as_handled()
@@ -15,12 +15,12 @@ func interact():
 	Game.current_dialog.init_dialog(dialog, self, null, false, null)
 	Game.current_scene.add_child(Game.current_dialog)
 
-func _on_Area2D2_body_entered(body):
+func _on_InterractZone_body_entered(body):
 	if not body == Game.player:
 		return
 	Game.gains_focus(self)
 
-func _on_Area2D2_body_exited(body):
+func _on_InterractZone_body_exited(body):
 	if not body == Game.player:
 		return
 	Game.lose_focus(self)

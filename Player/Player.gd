@@ -88,9 +88,11 @@ func _on_press_f():
 	elif letter_page:
 		letter_page.queue_free()
 		letter_page = null
+	elif Game.select_follower_to_implant_screen:
+		Game.select_follower_to_implant_screen.queue_free()
+		Game.select_follower_to_implant_screen = null
 	else:
 		hub = load("res://UI/UIHub.tscn").instance()
-#		hub.init()
 		Game.current_scene.add_child(hub)
 
 func _input(_event) -> void:

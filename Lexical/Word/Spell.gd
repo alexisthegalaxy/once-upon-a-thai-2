@@ -42,6 +42,7 @@ func _ready():
 	
 func set_as_following():
 	is_following_player = true
+	can_move = true
 	$CollisionShape2D.disabled = true
 	$Visible/thai.add_color_override("font_color", Color(0.137, 1, 0.952, 1))
 	$Visible.scale = Vector2(0.6, 0.6)
@@ -49,7 +50,7 @@ func set_as_following():
 	MAX_FOLLOWING_SPEED += randi() % 30 - 15
 	random_following_offset = Vector2(randi() % 30 - 15, randi() % 30 - 15)
 	closeness_to_player += randi() % 20 - 10
-	time_to_live = 6  # in seconds
+	time_to_live = 60  # in seconds
 
 func remove_following_spell():
 	var new_following_spells = []
@@ -93,12 +94,9 @@ func _process(delta):
 			
 			Game.a_word_is_learnt()
 	if can_move:
-#		print('is_following_player', is_following_player)
 		if is_following_player:
 			var player_position = Game.player.position + random_following_offset
-#			print('player_position', player_position)
 			var direction = (player_position - position).normalized()
-#			print('direction', direction)
 			if player_position.distance_to(position) > closeness_to_player:
 				velocity = velocity.move_toward(direction * min(following_speed, MAX_FOLLOWING_SPEED), ACCELERATION * delta)
 			else:
@@ -116,6 +114,7 @@ func _process(delta):
 				velocity = Vector2(0, 0)
 
 func starts_disappearing():
+	print('starts_disappearing')
 	is_disappearing = true
 
 # interact functions such as this one are lauched by the space_bar_to_interact in player.gd

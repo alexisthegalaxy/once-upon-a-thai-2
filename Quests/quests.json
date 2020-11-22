@@ -29,16 +29,16 @@
       "Welcome back to Chaiyaphum, [Name].",
       "Your grandmother asked me to overlook your shamanic training for a bit.",
       "Your first task will be to talk to everybody in Chaiyaphum to gather sentences in Thai.",
-      "Come back to me when you’ve found at least ten sentences!"
+      "Come back to me when you’ve found at least eleven sentences!"
     ],
     "fr_start_dialog": [
       "Il est bon de te revoir à Chaiyaphum, [Name].",
       "Ta grand-mère m'a demandé de m'occuper de ton éducation linguistique pendant quelques temps.",
       "Ta première tâche sera de parler à tout les gens qui habitent ici à Chaiyaphum, et collecter leurs phrases.",
-      "Reviens me voir quand tu auras trouvé au moins dix phrases."
+      "Reviens me voir quand tu auras trouvé au moins onze phrases."
     ],
     "type": "find_sentences",
-    "parameters": [[200, 201, 202, 203, 204, 205, 206, 207, 208, 209], []]
+    "parameters": [[200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210], []]
   },
   "implant_source_behind_the_temple": {
     "blockers": ["find_sentences_in_chaiyaphum"],

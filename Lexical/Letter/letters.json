@@ -663,10 +663,10 @@
     "pron": "ผึ้ง",
     "en": "p'h",
     "fr": "p'h",
-    "alphabet_index": "None",
+    "alphabet_index": "28",
     "final": "p",
     "class": "HIGH",
-    "frequency_index": "37",
+    "frequency_index": "48",
     "audio": "ผอ",
     "en_introduction": [
       "Wassap! I'm the p'h sound! [sound]",
@@ -685,10 +685,10 @@
     "pron": "ฉิ่ง",
     "en": "ch",
     "fr": "tch",
-    "alphabet_index": "None",
+    "alphabet_index": "9",
     "final": "t",
     "class": "HIGH",
-    "frequency_index": "38",
+    "frequency_index": "53",
     "audio": "ฉอ",
     "en_introduction": [
       "Wassap! I'm the \"ch\" sound! [sound]",
@@ -709,10 +709,10 @@
     "pron": "เณร",
     "en": "n",
     "fr": "n",
-    "alphabet_index": "None",
+    "alphabet_index": "19",
     "final": "",
     "class": "LOW",
-    "frequency_index": "39",
+    "frequency_index": "46",
     "audio": "ณอ",
     "en_introduction": [
       "Nice to meet you, I'm the useless one in the \"n\" duo.[sound]",
@@ -767,12 +767,12 @@
     "en_introduction": [
       "Hey, I'm Mai Tho, the second tone mark. I go over the main consonant.[sound]",
       "I indicate that the syllable is a falling tone.",
-      "For example กี is pronounced with a normal middle tone, but กี่ is pronounced with a low tone.",
+      "For example ได is pronounced with a normal middle tone, but ได้ is pronounced with a falling tone.",
       "However!",
       "If the main consonant in the syllable is low class, then the syllable is high tone.",
-      "For example, ไม is pronounced with a normal middle tone, but ไม่ is high tone.",
+      "For example, ไม is pronounced with a normal middle tone, but ไม้ is high tone.",
       "So remember this rule: second tone mark is falling tone, but with low consonant is high tone.",
-      "We are 4 tone marks, and our shape come from the numbers: I'm 1 (-่), 2 (-้), 3 (-๊) and 4 (-๋)."
+      "We are 4 tone marks, and our shape come from the numbers: 1 (-่), 2 (-้), 3 (-๊) and 4 (-๋)."
     ],
     "test": {
       "prompt": "ไม้",
@@ -793,8 +793,8 @@
     "en_introduction": [
       "Hey, I'm Mai Dtri, the third tone mark. I go over the main consonant.[sound]",
       "I indicate that the syllable is a high tone.",
-      "For example กี is pronounced with a normal middle tone, but กี่ is pronounced with a low tone.",
-      "We are 4 tone marks, and our shape come from the numbers: I'm 1 (-่), 2 (-้), 3 (-๊) and 4 (-๋)."
+      "For example ตุ๊ก is pronounced with a high tone.",
+      "We are 4 tone marks, and our shape come from the numbers: 1 (-่), 2 (-้), 3 (-๊) and 4 (-๋)."
     ],
     "test": {
       "prompt": "ไม้",
@@ -815,8 +815,8 @@
     "en_introduction": [
       "Hey, I'm Mai Chattawa, the fourth tone mark. I go over the main consonant.[sound]",
       "I indicate that the syllable is a rising tone.",
-      "For example กี is pronounced with a normal middle tone, but กี่ is pronounced with a low tone.",
-      "We are 4 tone marks, and our shape come from the numbers: I'm 1 (-่), 2 (-้), 3 (-๊) and 4 (-๋)."
+      "For example ก๋วยเตี๋ยว (noodles) is pronounced with two rising tones.",
+      "We are 4 tone marks, and our shape come from the numbers: 1 (-่), 2 (-้), 3 (-๊) and 4 (-๋)."
     ],
     "test": {
       "prompt": "ไม้",

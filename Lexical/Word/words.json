@@ -1221,6 +1221,7 @@
   "145": {
     "split": "ไฟ",
     "en": "fire",
+    "fr": "le feu",
     "tones": "M",
     "pos": "NOUN",
     "th": "ไฟ",
@@ -1323,6 +1324,7 @@
   "157": {
     "split": "เหล้า",
     "en": "alcohol",
+    "fr": "alcool",
     "tones": "F",
     "pos": "NOUN",
     "th": "เหล้า",

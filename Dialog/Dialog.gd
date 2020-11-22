@@ -39,6 +39,10 @@ func process(_dialog_line: String) -> String:
 	if "[sound]" in processed_dialog:
 		SoundPlayer.play_thai(caller.letter["audio"])
 		processed_dialog = processed_dialog.replace("[sound]", "")
+	elif "[sound:" in processed_dialog:
+		var sound_to_play = processed_dialog.split("[sound:")[1].split("]")[0]
+		processed_dialog = processed_dialog.replace("[sound:" + sound_to_play + "]", "")
+		SoundPlayer.play_thai(sound_to_play)
 	if current_line_has_question:
 		processed_dialog = processed_dialog.split("@Q")[0]
 	return processed_dialog
@@ -94,8 +98,6 @@ func dialog_ends():
 		caller.dialog_ended()
 	if caller and caller.has_method("start_quest"):
 		caller.start_quest()
-	else:
-		print('start_quest not in caller')
 		
 	Game.reset_focus()
 #	Game.loses_focus(Game.current_focus)
@@ -149,7 +151,6 @@ func hide_answers():
 	$Control/Options/Option4.hide()
 
 func reveal_answers():
-	print('reveal_answers')
 	line_has_finished_writing = true
 	$Control/Options/Option1.show()
 	$Control/Options/Option2.show()

@@ -65,6 +65,8 @@ var should_start_test_when_back_from_MP = [
 	null,  # word_id
 ]
 
+var select_follower_to_implant_screen = null
+
 func is_overworld_frozen():
 	return active_test or current_dialog or is_frozen
 
@@ -115,10 +117,10 @@ func a_word_is_learnt():
 #			if not Game.current_focus:
 #				Game.current_focus.append(Game.current_scene.get_node("YSort").get_node("NPCs").get_node("Yaai"))
 #			Events.npc_walks_to([[player.position]])
-			
 
 func discovers_sentence(sentence_id, is_translated):
 	Game.can_move = false
+	Game.lose_focus(null)
 	var sentence_discovery = load("res://Lexical/Sentence/SentenceDiscovery.tscn").instance()
 	sentence_discovery.sentence_discovery_init(sentence_id, is_translated)
 	current_scene.add_child(sentence_discovery)
@@ -145,6 +147,8 @@ func reset_focus():
 
 func lose_focus(target):
 	clear_deleted_focuses()
+	if not target:
+		current_focus = []
 	while target in current_focus:
 		current_focus.erase(target)
 	if not current_focus:
