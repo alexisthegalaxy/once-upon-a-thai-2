@@ -42,9 +42,10 @@ dialog = [ "คุณเป็นใคร" ]
 sprite_path = "res://Npcs/sprites/old_man.png"
 post_dialog_event = [ "say_sentence", 202 ]
 
-[node name="OldMan2" parent="YSort" instance=ExtResource( 3 )]
+[node name="OldWoman" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( -25.8195, 38.8494 )
 dialog = [ "คุณเป็นคนแบบไหน" ]
+sprite_path = "res://Npcs/sprites/old_farmer_woman.png"
 post_dialog_event = [ "say_sentence", 209 ]
 
 [node name="Lights" type="Node" parent="."]
