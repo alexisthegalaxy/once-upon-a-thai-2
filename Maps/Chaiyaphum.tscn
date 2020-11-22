@@ -6221,7 +6221,7 @@ position = Vector2( 699.744, 467.54 )
 position = Vector2( 1295.12, 160.862 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1094.84, 405.643 )
+position = Vector2( 1107.08, -94.4349 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6582,6 +6582,10 @@ word_id = 28
 [node name="Spawner not" parent="." instance=ExtResource( 28 )]
 position = Vector2( 1326.43, 333.029 )
 word_id = 39
+
+[node name="Spawner water" parent="." instance=ExtResource( 28 )]
+position = Vector2( 1075.26, -156.645 )
+word_id = 156
 
 [node name="Spawner good" parent="." instance=ExtResource( 28 )]
 position = Vector2( 427.257, 934.013 )

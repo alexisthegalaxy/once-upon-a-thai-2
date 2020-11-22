@@ -2,6 +2,7 @@
   "0": {
     "split": "ตุ๊ก-แก",
     "en": "gecko",
+    "fr": "gecko",
     "tones": "HM",
     "pos": "NOUN",
     "th": "ตุ๊กแก",
@@ -10,6 +11,7 @@
   "1": {
     "split": "แมว",
     "en": "cat",
+    "fr": "chat",
     "tones": "M",
     "pos": "NOUN",
     "th": "แมว",
@@ -18,6 +20,7 @@
   "2": {
     "split": "งู",
     "en": "snake",
+    "fr": "serpent",
     "tones": "M",
     "pos": "NOUN",
     "th": "งู",
@@ -44,6 +47,7 @@
   "5": {
     "split": "พระ-เจ้า",
     "en": "my God!",
+    "fr": "mon Dieu!",
     "tones": "HF",
     "pos": "INTE",
     "th": "พระเจ้า",
@@ -60,6 +64,7 @@
   "7": {
     "split": "สา-ธุ",
     "en": "sadhu",
+    "fr": "sadhu",
     "tones": "RH",
     "pos": "INTE",
     "th": "สาธุ",
@@ -68,6 +73,7 @@
   "8": {
     "split": "ไม่-เป็น-ไร",
     "en": "nevermind",
+    "fr": "c'est pas grave",
     "tones": "FMM",
     "pos": "INTE",
     "th": "ไม่เป็นไร",
@@ -103,6 +109,7 @@
   "12": {
     "split": "คะ",
     "en": "(female polite particle for questions)",
+    "fr": "(particule de politesse feminine interrogative)",
     "tones": "H",
     "pos": "PART",
     "th": "คะ",
@@ -332,11 +339,12 @@
   "39": {
     "split": "ไม่",
     "en": "not",
-    "fr": "pas",
+    "fr": "ne pas",
     "tones": "F",
     "pos": "NEG",
     "th": "ไม่",
-    "teaching_order": 13
+    "teaching_order": 13,
+    "letters": [28, 5, 40]
   },
   "40": {
     "split": "ของ",
@@ -358,6 +366,7 @@
   "42": {
     "split": "จะ",
     "en": "will (future)",
+    "fr": "aller (indique le futur)",
     "tones": "L",
     "pos": "WILL",
     "th": "จะ",
@@ -413,7 +422,8 @@
   },
   "49": {
     "split": "เรื่อง",
-    "en": "about",
+    "en": "about, regarding",
+    "fr": "à propos de",
     "tones": "F",
     "pos": "PREP",
     "th": "เรื่อง",
@@ -475,6 +485,7 @@
     "tones": "LM",
     "pos": "None",
     "th": "อะไร",
+    "letters": [7, 20, 28, 2],
     "teaching_order": 34
   },
   "57": {
@@ -929,6 +940,7 @@
   "110": {
     "split": "สี-ขาว",
     "en": "white",
+    "fr": "blanc",
     "tones": "RR",
     "pos": "ADJ",
     "th": "สีขาว",
@@ -1229,7 +1241,8 @@
     "tones": "F",
     "pos": "NOUN",
     "th": "บ้าน",
-    "teaching_order": 8
+    "teaching_order": 8,
+    "letters": [18, 41, 1, 0]
   },
   "148": {
     "split": "ขวด",
@@ -1237,7 +1250,8 @@
     "tones": "L",
     "pos": "NOUN",
     "th": "ขวด",
-    "teaching_order": -1
+    "teaching_order": -1,
+    "letters": [31, 12, 17]
   },
   "149": {
     "split": "เด็ก",
@@ -1245,7 +1259,8 @@
     "tones": "L",
     "pos": "NOUN",
     "th": "เด็ก",
-    "teaching_order": -1
+    "teaching_order": -1,
+    "letters": [6, 17, 36, 4]
   },
   "150": {
     "split": "ครู",
@@ -1452,6 +1467,7 @@
   "175": {
     "split": "อย่า",
     "en": "don't",
+    "fr": "prière de ne pas",
     "tones": "L",
     "pos": "None",
     "th": "อย่า",
@@ -1493,6 +1509,7 @@
   "180": {
     "split": "ยัง",
     "en": "still, yet",
+    "fr": "encore, toujours pas",
     "tones": "M",
     "pos": "None",
     "th": "ยัง",
@@ -1549,6 +1566,7 @@
   "187": {
     "split": "แฟน",
     "en": "lover",
+    "fr": "amoureux.se",
     "tones": "M",
     "pos": "NOUN",
     "th": "แฟน",
@@ -1622,6 +1640,7 @@
   "196": {
     "split": "คุย",
     "en": "to talk",
+    "fr": "parler, discuter",
     "tones": "M",
     "pos": "VERB",
     "th": "คุย",
@@ -2378,6 +2397,7 @@
   "289": {
     "split": "มา-ถึง",
     "en": "to arrive",
+    "fr": "arriver",
     "tones": "MR",
     "pos": "VERB",
     "th": "มาถึง",
@@ -2418,6 +2438,7 @@
   "294": {
     "split": "อยาก-ให้",
     "en": "to want (someone to do something)",
+    "fr": "vouloir (que quelqu'un fasse quelque chose)",
     "tones": "LF",
     "pos": "VERB",
     "th": "อยากให้",
@@ -2426,6 +2447,7 @@
   "295": {
     "split": "ต้อง-การ",
     "en": "to want (followed by nouns)",
+    "en": "vouloir (suivi d'un nom)",
     "tones": "FM",
     "pos": "VERB",
     "th": "ต้องการ",
@@ -2456,8 +2478,9 @@
     "teaching_order": -1
   },
   "299": {
-    "split": "ดูเ-หมือน",
+    "split": "ดู-เหมือน",
     "en": "to look like",
+    "fr": "ressembler à",
     "tones": "MR",
     "pos": "VERB",
     "th": "ดูเหมือน",
@@ -2466,6 +2489,7 @@
   "300": {
     "split": "รู้-จัก",
     "en": "to know (someone)",
+    "fr": "connaître",
     "tones": "HL",
     "pos": "VERB",
     "th": "รู้จัก",
@@ -2578,6 +2602,7 @@
   "314": {
     "split": "กัด",
     "en": "to bite",
+    "fr": "mordre",
     "tones": "L",
     "pos": "None",
     "th": "กัด",
@@ -3173,6 +3198,7 @@
   "387": {
     "split": "หนาว",
     "en": "cold",
+    "fr": "froid",
     "tones": "R",
     "pos": "None",
     "th": "หนาว",
@@ -3236,11 +3262,12 @@
   },
   "395": {
     "split": "ตอ",
-    "en": "stub",
+    "en": "stump, stub",
     "tones": "M",
     "pos": "None",
     "th": "ตอ",
-    "teaching_order": -1
+    "teaching_order": -1,
+    "letters": [16, 7]
   },
   "396": {
     "split": "ยาย",
@@ -3248,7 +3275,8 @@
     "tones": "M",
     "pos": "NOUN",
     "th": "ยาย",
-    "teaching_order": -1
+    "teaching_order": -1,
+    "letters": [13, 1]
   },
   "397": {
     "split": "งง-งวย",
@@ -3256,7 +3284,8 @@
     "tones": "MM",
     "pos": "ADJ",
     "th": "งงงวย",
-    "teaching_order": -1
+    "teaching_order": -1,
+    "letters": [10, 12, 13]
   },
   "398": {
     "split": "งง",
@@ -3264,7 +3293,8 @@
     "tones": "M",
     "pos": "ADJ",
     "th": "งง",
-    "teaching_order": -1
+    "teaching_order": -1,
+    "letters": [10]
   },
   "399": {
     "split": "คอ",
@@ -3272,7 +3302,8 @@
     "tones": "M",
     "pos": "NOUN",
     "th": "คอ",
-    "teaching_order": -1
+    "teaching_order": -1,
+    "letters": [21, 7]
   },
   "400": {
     "split": "หิน",
@@ -3280,7 +3311,8 @@
     "tones": "R",
     "pos": "NOUN",
     "th": "หิน",
-    "teaching_order": -1
+    "teaching_order": -1,
+    "letters": [26, 14, 0]
   },
   "401": {
     "split": "ตัด",
@@ -3288,7 +3320,8 @@
     "tones": "L",
     "pos": "VERB",
     "th": "ตัด",
-    "teaching_order": -1
+    "teaching_order": -1,
+    "letters": [16, 3, 17]
   },
   "402": {
     "split": "แบบ-ไหน",
@@ -3296,6 +3329,7 @@
     "tones": "LR",
     "pos": "",
     "th": "แบบไหน",
-    "teaching_order": -1
+    "teaching_order": -1,
+    "letters": [25, 18, 28, 26, 0]
   }
 }

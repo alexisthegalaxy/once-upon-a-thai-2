@@ -24,7 +24,8 @@ var following_spells = []
 #var following_spells = [
 #	{
 #		"id": 400,
-#		"overword": null,
+#		"over_word": null,
+#		"time_to_live": 2.3  # the time_to_live is saved before the map change
 #	}
 #]
 
@@ -76,7 +77,14 @@ func generate_following_spells_after_map_change():
 		new_spell.position = player.position
 		new_spell.set_as_following()
 		current_scene.get_node("YSort").add_child(new_spell)
-		following_spell.overword = new_spell
+		following_spell.over_word = new_spell
+		following_spell.over_word.time_to_live = following_spell.time_to_live
+
+func save_following_spells_data_before_map_change():
+	for following_spell in following_spells:
+		print('following_spell ', following_spell)
+		following_spell.time_to_live = following_spell.over_word.time_to_live
+	
 
 func add_following_spell(word_id, over_word):
 	over_word.set_as_following()
@@ -89,11 +97,11 @@ func dialog_press_f_to_see_it(learnt_item):
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var lines = []
 	if learnt_item == "sentence":
-		lines = ["Press F to open your notebook and see your sentences."]
+		lines = [tr("_press_f_to_open_your_notebook_and_see_your_sentences")]
 	if learnt_item == "letter":
-		lines = ["Press F to open your alphabet and see your letters."]
+		lines = [tr("_press_f_to_open_your_alphabet_and_see_your_letters")]
 	if learnt_item == "word":
-		lines = ["Press F to open your dictionary and see your words"]
+		lines = [tr("_press_f_to_open_your_dictionary_and_see_that_word")]
 	Game.current_dialog.init_dialog(lines, null, null, null, null)
 	current_scene.add_child(Game.current_dialog)
 
@@ -306,6 +314,7 @@ func start_test_when_back_from_MP():
 #			child.queue_free()
 
 func _deferred_goto_scene(to_map_name, to_x, to_y):
+	save_following_spells_data_before_map_change()
 	can_move = true
 	if not "LexicalWorld" in current_map_name:
 		if player:

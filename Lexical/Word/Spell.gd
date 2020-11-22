@@ -1,18 +1,15 @@
 extends KinematicBody2D
 
 export var id = 0
-export var is_following_player = false
 
 # Moving
 const ACCELERATION = 1200 * 3
 const FRICTION = 1200
-var MAX_FOLLOWING_SPEED = 90
 const MAX_SPEED = 60  # 100
 export var can_move = false
 var velocity = Vector2.ZERO
 var will_move_in = 0
 var rng = RandomNumberGenerator.new()
-var following_speed = 1000
 var word
 var is_disappearing = false
 var ratio = 0.001
@@ -21,7 +18,13 @@ var wobbling_time = 0
 var y = 0
 var is_birthing = true
 var is_frozen = false
+
+# variables linked to following
+export var is_following_player = false
+var following_speed = 1000
+var MAX_FOLLOWING_SPEED = 90
 var time_to_live
+var closeness_to_player = 15
 
 var random_following_offset = Vector2.ZERO
 
@@ -43,11 +46,19 @@ func set_as_following():
 	$Visible/thai.add_color_override("font_color", Color(0.137, 1, 0.952, 1))
 	$Visible.scale = Vector2(0.6, 0.6)
 	$Visible/Light2D.hide()
-	MAX_FOLLOWING_SPEED += randi() % 20 - 10
-	random_following_offset = Vector2(randi() % 20 - 10, randi() % 20 - 10)
-	time_to_live = 60  # in seconds
+	MAX_FOLLOWING_SPEED += randi() % 30 - 15
+	random_following_offset = Vector2(randi() % 30 - 15, randi() % 30 - 15)
+	closeness_to_player += randi() % 20 - 10
+	time_to_live = 6  # in seconds
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+func remove_following_spell():
+	var new_following_spells = []
+	for following_spell in Game.following_spells:
+		if not following_spell.over_word == self:
+			new_following_spells.append(following_spell)
+	Game.following_spells = new_following_spells
+	starts_disappearing()
+
 func _process(delta):
 	if Game.is_overworld_frozen():
 		return
@@ -59,11 +70,10 @@ func _process(delta):
 		wobbling_time += delta
 		$Visible.position.y = cos(wobbling_time) * 5
 	if is_following_player:
-		print("time to live", time_to_live)
 		if can_move:
 			time_to_live -= delta
 			if time_to_live < 0:
-				starts_disappearing()
+				remove_following_spell()
 	if is_birthing:
 		if ratio < 1:
 			ratio += delta
@@ -89,7 +99,7 @@ func _process(delta):
 #			print('player_position', player_position)
 			var direction = (player_position - position).normalized()
 #			print('direction', direction)
-			if player_position.distance_to(position) > 15:
+			if player_position.distance_to(position) > closeness_to_player:
 				velocity = velocity.move_toward(direction * min(following_speed, MAX_FOLLOWING_SPEED), ACCELERATION * delta)
 			else:
 				velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
@@ -117,7 +127,7 @@ func start_test():
 	Game.is_frozen = true
 	Game.can_move = false
 	var test_start_animation = load("res://Test/TestStartAnimation.tscn").instance()
-	test_start_animation.init(word["th"], "Spell")
+	test_start_animation.init_start_animation(word["th"], "Spell")
 	self.add_child(test_start_animation)
 	test_start_animation.connect("test_can_start", self, "start_test_after_animation" )
 

@@ -74,7 +74,7 @@ margin_right = 107.0
 margin_bottom = -31.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "You don't know any sentence containing that word"
+text = "_you_dont_know_any_sentence_containing_that_word"
 align = 1
 valign = 1
 __meta__ = {
@@ -110,7 +110,7 @@ margin_top = -11.0
 margin_right = 11.0
 margin_bottom = 11.0
 custom_fonts/font = SubResource( 5 )
-text = "OK"
+text = "_ok"
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false

@@ -9,7 +9,7 @@ signal leaves_test_to_go_to_MP
 
 func init(_letter_ids, test):
 	letter_ids = _letter_ids
-	var text = "Go to your Memory Palace to learn:\n\n"
+	var text = tr("_go_to_the_letter_world_to_learn") + "\n\n"
 	for letter_id in letter_ids:
 		text += Game.letters[str(letter_id)]["th"] + ", "
 	text = text.trim_suffix(", ")

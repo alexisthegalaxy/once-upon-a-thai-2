@@ -25,8 +25,11 @@ func _ready():
 	$TextNode.position.y += 200
 	$SpellNode.position.y -= 200
 
-func init(enemy_name, enemy_type):
-	$TextNode/Text.text = "A wild " + enemy_type + " attacks!"
+func init_start_animation(enemy_name, enemy_type):
+	if enemy_type == "Spell":
+		$TextNode/Text.text = tr("_a_wil_spell_attacks")
+	else:
+		$TextNode/Text.text = "Something attacks!"
 	$SpellNode/Spell.text = enemy_name
 
 func _process(delta):
