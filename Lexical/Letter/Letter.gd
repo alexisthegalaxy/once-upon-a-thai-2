@@ -36,10 +36,11 @@ func _process(delta):
 				Game.pop_victory_screen()
 
 func get_introduction():
-	if "introduction" in letter:
-		return letter["introduction"]
+	var introduction_key = TranslationServer.get_locale() + "_introduction"
+	if introduction_key in letter:
+		return letter[introduction_key]
 	else:
-		return ["Hey [Name], I'm the " + letter["en"] + " sound."]
+		return ["Hey [Name], I'm the " + letter[TranslationServer.get_locale()] + " sound."]
 
 func interact():
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()

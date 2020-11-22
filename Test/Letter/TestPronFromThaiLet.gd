@@ -35,19 +35,19 @@ func init(_letter_id, _over_letter):
 	hide_answers()
 	if number_of_choices >= 1:
 		$answer_1.show()
-		$answer_1.init(self, choices[0]["en"], choices[0]["id"] == letter["id"])
+		$answer_1.init(self, choices[0][TranslationServer.get_locale()], choices[0]["id"] == letter["id"])
 	if number_of_choices >= 2:
 		$answer_2.show()
-		$answer_2.init(self, choices[1]["en"], choices[1]["id"] == letter["id"])
+		$answer_2.init(self, choices[1][TranslationServer.get_locale()], choices[1]["id"] == letter["id"])
 	if number_of_choices >= 3:
 		$answer_3.show()
-		$answer_3.init(self, choices[2]["en"], choices[2]["id"] == letter["id"])
+		$answer_3.init(self, choices[2][TranslationServer.get_locale()], choices[2]["id"] == letter["id"])
 	if number_of_choices >= 4:
 		$answer_4.show()
-		$answer_4.init(self, choices[3]["en"], choices[3]["id"] == letter["id"])
+		$answer_4.init(self, choices[3][TranslationServer.get_locale()], choices[3]["id"] == letter["id"])
 	if number_of_choices >= 5:
 		$answer_5.show()
-		$answer_5.init(self, choices[4]["en"], choices[4]["id"] == letter["id"])
+		$answer_5.init(self, choices[4][TranslationServer.get_locale()], choices[4]["id"] == letter["id"])
 	
 func _ready():
 	set_alpha()

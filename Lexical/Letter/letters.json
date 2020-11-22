@@ -3,12 +3,13 @@
     "th": "น",
     "pron": "หนู",
     "en": "n",
+    "fr": "n",
     "alphabet_index": "25",
     "final": "",
     "class": "LOW",
     "frequency_index": "2",
     "audio": "นอ",
-    "introduction": [
+    "en_introduction": [
       "Nice to see you [Name] - I'm น, the n. [sound]",
       "Just sayin', I'm the most used letter in the Thai alphabet,",
       "so you better remember me!",
@@ -21,57 +22,61 @@
       "prompt": "นอน",
       "distractors": ["ลอม", "ลอล", "มอน", "มอม", "มอล"]
     },
-    "mem": "น has its loops >n<ot on the same side."
+    "en_mem": "น has its loops >n<ot on the same side."
   },
   "1": {
     "th": "า",
     "pron": "",
     "en": "a (long)",
+    "fr": "a (long)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "1",
     "audio": "อา",
-    "mem": "า looks like the right side of the letter A."
+    "en_mem": "า looks like the right side of the letter A."
   },
   "2": {
     "th": "ร",
     "pron": "เรือ",
     "en": "r",
+    "fr": "r",
     "alphabet_index": "35",
     "final": "n",
     "class": "LOW",
     "frequency_index": "3",
     "audio": "รอ",
-    "mem": "ร looks like a r that looks towards the left."
+    "en_mem": "ร looks like a r that looks towards the left."
   },
   "3": {
     "th": "-ั",
     "pron": "",
     "en": "a (short)",
+    "fr": "a (court)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "13",
     "audio": "อะ",
-    "introduction": [
+    "en_introduction": [
       "Yo!",
       "I'm the letter -ั and I'm pronounced like a short \"ah\" sound. [sound]",
       "I'm a vowel and I float over a consonant like an accent:",
       "For example, นั is pronounced \"na\"."
     ],
-    "mem": ""
+    "en_mem": ""
   },
   "4": {
     "th": "ก",
     "pron": "ไก่",
     "en": "g",
+    "fr": "g",
     "alphabet_index": "1",
     "final": "k",
     "class": "MID",
     "frequency_index": "5",
     "audio": "กอ",
-    "introduction": [
+    "en_introduction": [
       "Hey [Name], coming here to learn me?",
       "I'm ก, the g sound, like in the word good. [sound]",
       "I'm the first letter of the alphabet.",
@@ -79,36 +84,38 @@
       "Careful though - I'm pronounced k at the end of a syllable.",
       "For example, the word reed in Thai is กก, and is pronounced \"gok\"."
     ],
-    "mem": "ร looks like a n, but it has a zi>g<za>g< le>g<."
+    "en_mem": "ร looks like a n, but it has a zi>g<za>g< le>g<."
   },
   "5": {
     "th": "ม",
     "pron": "ม้า",
     "en": "m",
+    "fr": "m",
     "alphabet_index": "33",
     "final": "",
     "class": "LOW",
     "frequency_index": "9",
     "audio": "มอ",
-    "introduction": [
+    "en_introduction": [
       "Hello [Name],",
       "I am ม, the letter m. [sound]",
       "I look a lot like my sister น, the n,",
       "but my loops are on the sa>M<e side.",
       "and the น's loops are >N<ot on the same side!"
     ],
-    "mem": "ม has its loops on the sa>m<e side."
+    "en_mem": "ม has its loops on the sa>m<e side."
   },
   "6": {
     "th": "เ-",
     "pron": "",
     "en": "é (long)",
+    "fr": "é (long)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "6",
     "audio": "เอ",
-    "introduction": [
+    "en_introduction": [
       "Hééé [Name]!",
       "I'm the vowel เ- pronounced with a long é sound, [sound]",
       "Like in \"café\" or \"Pokémon\".",
@@ -121,18 +128,19 @@
       "prompt": "เท",
       "distractors": ["ทเ", "ทแ", "แท", "วท", "ทว"]
     },
-    "mem": "เ looks like a leg (léég)."
+    "en_mem": "เ looks like a leg (léég)."
   },
   "7": {
     "th": "อ",
     "pron": "อ่าง",
     "en": "or (long)",
+    "fr": "o ouvert (long)",
     "alphabet_index": "None",
     "final": "",
     "class": "MID",
     "frequency_index": "4",
     "audio": "ออ",
-    "introduction": [
+    "en_introduction": [
       "Hello!",
       "I'm อ, the long \"o\" vowel like in \"ore\". [sound]",
       "But I'm special: I can also be a consonant.",
@@ -146,29 +154,31 @@
       "prompt": "ชอบ",
       "distractors": ["ชบ", "อชบ", "ออบ"]
     },
-    "mem": "อ looks like an open mouth saying the \"or\" sound."
+    "en_mem": "อ looks like an open mouth saying the \"or\" sound."
   },
   "8": {
     "th": "ล",
     "pron": "ลิง",
     "en": "l",
+    "fr": "l",
     "alphabet_index": "36",
     "final": "n",
     "class": "LOW",
     "frequency_index": "14",
     "audio": "ลอ",
-    "mem": ""
+    "en_mem": ""
   },
   "9": {
     "th": "-ี",
     "pron": "",
     "en": "ee (long i)",
+    "fr": "i (long)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "12",
     "audio": "อี",
-    "introduction": [
+    "en_introduction": [
       "Greetings, [Name].",
       "I'm -ี, the long \"ee\" sound like in \"knee\". [sound]",
       "I'm a vowel floating gracefully over the consonant,",
@@ -178,29 +188,31 @@
       "prompt": "ดี",
       "distractors": ["ด", "ดิ่", "ดี่", "ดิ", "ดื"]
     },
-    "mem": "-ี looks like a roof with a chimn>ey<."
+    "en_mem": "-ี looks like a roof with a chimn>ey<."
   },
   "10": {
     "th": "ง",
     "pron": "งู",
     "en": "ng",
+    "fr": "ng",
     "alphabet_index": "7",
     "final": "",
     "class": "LOW",
     "frequency_index": "7",
     "audio": "งอ",
-    "mem": "ง looks like the arm of somebody flexing their muscle and saying \"ng\" because of the effort."
+    "en_mem": "ง looks like the arm of somebody flexing their muscle and saying \"ng\" because of the effort."
   },
   "11": {
     "th": "ท",
     "pron": "ทหาร",
     "en": "t'h",
+    "fr": "t'h",
     "alphabet_index": "23",
     "final": "t",
     "class": "LOW",
     "frequency_index": "17",
     "audio": "ทอ",
-    "introduction": [
+    "en_introduction": [
       "I'm ท. I'm pronounced t, but aspirated, [sound]",
       "so you can write me t'h.",
       "I'm the \"t'h\" sound in Thai: ไทย.",
@@ -212,29 +224,31 @@
       "prompt": "บาท",
       "distractors": ["ทาบ", "ทาม", "ทาน", "ทาท"]
     },
-    "mem": "ท looks like a snake (head on the left) with a long tail (>t'h<ail)."
+    "en_mem": "ท looks like a snake (head on the left) with a long tail (>t'h<ail)."
   },
   "12": {
     "th": "ว",
     "pron": "แหวน",
     "en": "w",
+    "fr": "w",
     "alphabet_index": "37",
     "final": "",
     "class": "LOW",
     "frequency_index": "15",
     "audio": "วอ",
-    "mem": "ว looks like a question mark. วhat?"
+    "en_mem": "ว looks like a question mark. วhat?"
   },
   "13": {
     "th": "ย",
     "pron": "ยักษ์",
     "en": "y",
+    "fr": "y",
     "alphabet_index": "34",
     "final": "",
     "class": "LOW",
     "frequency_index": "11",
     "audio": "ยอ",
-    "introduction": [
+    "en_introduction": [
       "Yo [Name]!",
       "I'm the consonant ย and I'm pronounced y, [sound]",
       "I look like the top part of the lowercase \"y\", don't you think?",
@@ -244,56 +258,60 @@
       "prompt": "ยา",
       "distractors": ["ปา", "บา"]
     },
-    "mem": "ย looks like the y, but without the lower part."
+    "en_mem": "ย looks like the y, but without the lower part."
   },
   "14": {
     "th": "-ิ",
     "pron": "",
     "en": "i (short)",
+    "fr": "i (court)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "16",
     "audio": "อิ",
-    "introduction": [
+    "en_introduction": [
       "What’s crackin’ [Name]?",
       "I'm -ิ, the shorter brother of -ี, and the vowel for the short \"i\" sound. [sound]",
       "Do you see the difference between my long brother ee -ี and me?"
     ],
-    "mem": "-ิ looks like l>i<ps."
+    "en_mem": "-ิ looks like l>i<ps."
   },
   "15": {
     "th": "ส",
     "pron": "เสือ",
     "en": "s",
+    "fr": "s",
     "alphabet_index": "40",
     "final": "t",
     "class": "HIGH",
     "frequency_index": "19",
     "audio": "สอ",
-    "mem": "ส looks like a ล with an extra >s<trike through it."
+    "en_mem": "ส looks like a ล with an extra >s<trike through it."
   },
   "16": {
     "th": "ต",
     "pron": "เต่า",
     "en": "dt",
+    "fr": "dt",
     "alphabet_index": "21",
     "final": "t",
     "class": "MID",
     "frequency_index": "20",
     "audio": "ตอ",
-    "mem": "ต looks like ด with a dent (dt) on top."
+    "en_mem": "ต looks like ด with a dent (dt) on top."
   },
   "17": {
     "th": "ด",
     "pron": "เด็ก",
     "en": "d",
+    "fr": "d",
     "alphabet_index": "20",
     "final": "t",
     "class": "MID",
     "frequency_index": "18",
     "audio": "ดอ",
-    "introduction": [
+    "en_introduction": [
       "Howdy! I'm ด the d! [sound]",
       "Don't get me confused with the ค (k'h).",
       "I spiral in like a >D<igital finger print, while ค looks like a peacock (pea>K'H<ock).",
@@ -305,34 +323,36 @@
       "prompt": "ได",
       "distractors": ["ปไ", "บไ", "ไค", "ไต"]
     },
-    "mem": "ด looks like a >d<igital finger print, or a hobbit house >d<oor."
+    "en_mem": "ด looks like a >d<igital finger print, or a hobbit house >d<oor."
   },
   "18": {
     "th": "บ",
     "pron": "ใบไม้",
     "en": "b",
+    "fr": "b",
     "alphabet_index": "26",
     "final": "p",
     "class": "MID",
     "frequency_index": "22",
     "audio": "บอ",
-    "introduction": [
+    "en_introduction": [
       "Bonjour, I'm the b! [sound]",
       "I look like my brother ป (bp), and we're both pronounced \"p\" at the end of a syllable.",
       "I look like a >b<ucket, right?"
     ],
-    "mem": "บ looks like a >b<ucket."
+    "en_mem": "บ looks like a >b<ucket."
   },
   "19": {
     "th": "ป",
     "pron": "ปลา",
     "en": "bp",
+    "fr": "bp",
     "alphabet_index": "27",
     "final": "bp",
     "class": "MID",
     "frequency_index": "23",
     "audio": "ปอ",
-    "introduction": [
+    "en_introduction": [
       "[Name]!",
       "I'm ป, the bp sound. [sound]",
       "Don't get me confused with the บ (b): I've got a longer tail.",
@@ -343,29 +363,31 @@
       "prompt": "ไป",
       "distractors": ["ปไ", "บไ", "ไบ", "ไบ่", "บ่ไ"]
     },
-    "mem": "ป looks like a much >b<igger >p<ail than the บ."
+    "en_mem": "ป looks like a much >b<igger >p<ail than the บ."
   },
   "20": {
     "th": "ะ",
     "pron": "",
     "en": "a (final)",
+    "fr": "a (final)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "21",
     "audio": "อะ",
-    "mem": ""
+    "en_mem": ""
   },
   "21": {
     "th": "ค",
     "pron": "ควาย",
     "en": "k'h (khwai)",
+    "fr": "k'h (khwai)",
     "alphabet_index": "4",
     "final": "k",
     "class": "LOW",
     "frequency_index": "24",
     "audio": "คอ",
-    "introduction": [
+    "en_introduction": [
       "Hey, I'm ค.",
       "I'm pronounced k'h, just like a k, but aspirated. [sound]",
       "Don't get me confused with the ด, the d. Do you see the difference?",
@@ -378,73 +400,79 @@
       "prompt": "คน",
       "distractors": ["กน", "คค", "นค"]
     },
-    "mem": "ค looks like a peacock (pea>k'h<ock) facing towards you."
+    "en_mem": "ค looks like a peacock (pea>k'h<ock) facing towards you."
   },
   "22": {
     "th": "จ",
     "pron": "จาน",
     "en": "j",
+    "fr": "j",
     "alphabet_index": "8",
     "final": "t",
     "class": "MID",
     "frequency_index": "28",
     "audio": "จอ",
-    "mem": "จ looks like a dolphin plunging (plun>j<ing) into the water."
+    "en_mem": "จ looks like a dolphin plunging (plun>j<ing) into the water."
   },
   "23": {
     "th": "-ื",
     "pron": "",
     "en": "eu",
+    "fr": "eu",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "34",
     "audio": "อื",
-    "mem": ""
+    "en_mem": ""
   },
   "24": {
     "th": "พ",
     "pron": "พาน",
     "en": "p'h",
+    "fr": "p'h",
     "alphabet_index": "30",
     "final": "p",
     "class": "LOW",
     "frequency_index": "27",
     "audio": "พอ",
-    "mem": "พ looks like the beak of a bird (the eye is on the left) pecking (>p'h<ecking) on the floor."
+    "en_mem": "พ looks like the beak of a bird (the eye is on the left) pecking (>p'h<ecking) on the floor."
   },
   "25": {
     "th": "แ-",
     "pron": "",
     "en": "ae (long)",
+    "fr": "è",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "26",
     "audio": "แอ",
-    "mem": ""
+    "en_mem": ""
   },
   "26": {
     "th": "ห",
     "pron": "หีบ",
     "en": "h",
+    "fr": "h",
     "alphabet_index": "41",
     "final": "",
     "class": "HIGH",
     "frequency_index": "25",
     "audio": "หอ",
-    "mem": "ห is the only letter that has two loops that are placed >h<igh."
+    "en_mem": "ห is the only letter that has two loops that are placed >h<igh."
   },
   "27": {
     "th": "ใ-",
     "pron": "",
     "en": "ai (maimuan)",
+    "fr": "aï (maimuan)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "33",
     "audio": "ไม้ม้วน",
-    "introduction": [
+    "en_introduction": [
       "Hi [Name]!",
       "I'm ใ-, also called Ai Maimuan and I'm pronounced \"ai\", like in \"eye\". [sound]",
       "Don't get me confused with my brother Maimalai: he's pointy ไ-, and I'm loopy ใ-.",
@@ -457,18 +485,19 @@
       "prompt": "ใน",
       "distractors": ["นไ", "ไน", "นใ"]
     },
-    "mem": "ใ looks like the staff of a high-ranking (h>ai<) bishop."
+    "en_mem": "ใ looks like the staff of a high-ranking (h>ai<) bishop."
   },
   "28": {
     "th": "ไ-",
     "pron": "",
     "en": "ai (maimalai)",
+    "fr": "aï (maimalai)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "35",
     "audio": "ไม้มลาย",
-    "introduction": [
+    "en_introduction": [
       "Hi [Name]!",
       "I'm ไ-, also called Ai Maimalai and I'm pronounced \"ai\", like in \"eye\". [sound]",
       "Don't get me confused with my brother Maimuan: he's loopy ใ-, and I'm pointy ไ-.",
@@ -481,29 +510,31 @@
       "prompt": "ไป",
       "distractors": ["ปไ", "ใป", "ปใ"]
     },
-    "mem": "ไ looks like a lightning strike (str>ai<ke)."
+    "en_mem": "ไ looks like a lightning strike (str>ai<ke)."
   },
   "29": {
     "th": "โ-",
     "pron": "",
     "en": "oh (long)",
+    "fr": "o fermé (long)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "36",
     "audio": "โอ",
-    "mem": "โ looks like a ร that is tall (t>oh<l)."
+    "en_mem": "โ looks like a ร that is tall (t>oh<l)."
   },
   "30": {
     "th": "ช",
     "pron": "ช้าง",
     "en": "ch",
+    "fr": "tch",
     "alphabet_index": "10",
     "final": "t",
     "class": "LOW",
     "frequency_index": "30",
     "audio": "ชอ",
-    "introduction": [
+    "en_introduction": [
       "Hey, I'm the charming \"ch\" sound! [sound]",
       "I'm not the only one - ฉ and ฌ also make the sound \"ch\", but they're rare.",
       "But the \"ch\" sound becomes \"t\" at the end of a syllable.",
@@ -515,40 +546,43 @@
       "prompt": "ชอบ",
       "distractors": ["ฉอบ", "ซอบ", "บอบ", "ขอบ"]
     },
-    "mem": "ช looks like the body of a >ch<ick (head on the left, tail on the right)."
+    "en_mem": "ช looks like the body of a >ch<ick (head on the left, tail on the right)."
   },
   "31": {
     "th": "ข",
     "pron": "ไข่",
-    "en": "k'h (khai)",
+    "en": "k'h",
+    "fr": "k'h",
     "alphabet_index": "2",
     "final": "k",
     "class": "HIGH",
     "frequency_index": "31",
     "audio": "ขอ",
-    "mem": "ข looks like a curly บ (>k'h<urly)."
+    "en_mem": "ข looks like a curly บ (>k'h<urly)."
   },
   "32": {
     "th": "-ู",
     "pron": "",
     "en": "u (long)",
+    "fr": "ou (long)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "38",
     "audio": "อู",
-    "mem": "-ู is placed under the consonant (>oo<nder), and is longer than the short u sound -ุ."
+    "en_mem": "-ู is placed under the consonant (>oo<nder), and is longer than the short u sound -ุ."
   },
   "33": {
     "th": "-ุ",
     "pron": "",
     "en": "u (short)",
+    "fr": "ou (court)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "32",
     "audio": "อุ",
-    "introduction": [
+    "en_introduction": [
       "Hey! I'm the short \"u\" sound, like in \"good\".",
       "I go under the main consonant: for example, นุ is read \"nu\".",
       "Me and my long \"oo\" brother -ู are the only one to go under,",
@@ -558,29 +592,31 @@
       "prompt": "คุณ",
       "distractors": ["คูณ", "คเณ"]
     },
-    "mem": "-ุ is placed under the consonant (>u<nder), and is shorter than the long u sound -ู."
+    "en_mem": "-ุ is placed under the consonant (>u<nder), and is shorter than the long u sound -ู."
   },
   "34": {
     "th": "ฟ",
     "pron": "ฟัน",
     "en": "f",
+    "fr": "f",
     "alphabet_index": "31",
     "final": "",
     "class": "LOW",
     "frequency_index": "50",
     "audio": "ฟอ",
-    "mem": "The tail of ฟ goes >f<arther than the one of พ."
+    "en_mem": "The tail of ฟ goes >f<arther than the one of พ."
   },
   "35": {
     "th": "∅",
     "pron": "",
     "en": "o (short)",
+    "fr": "o ouvert (court)",
     "alphabet_index": "0",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "0",
     "audio": "โอะ",
-    "introduction": [
+    "en_introduction": [
       "Me? I'm nobody.",
       "I'm the absence of vowel in between two consonants.",
       "I use the symbol \"∅\" so that you can see me, but in reality I'm invisible.",
@@ -596,18 +632,19 @@
       "prompt": "คน",
       "distractors": ["คโน", "โคน", "คอน", "ค็อน"]
     },
-    "mem": "Nothingness, or zero, is also pronounced \"oh\" in English, when spelling a number."
+    "en_mem": "Nothingness, or zero, is also pronounced \"oh\" in English, when spelling a number."
   },
   "36": {
     "th": "-็",
     "pron": "",
     "en": "[shortens the sound]",
+    "fr": "[raccourci la syllabe]",
     "alphabet_index": "None",
     "final": "",
     "class": "ACCENT",
     "frequency_index": "37",
     "audio": "None",
-    "introduction": [
+    "en_introduction": [
       "Hi.",
       "I make long sounds short.",
       "For example, เปน is long (bpehn) and เป็น is short (bpen).",
@@ -619,18 +656,19 @@
       "prompt": "เล็ก",
       "distractors": ["เลก", "ลเ็ก", "เล๊ก", "เ๊ลก"]
     },
-    "mem": "-็ looks like a >small< fetus."
+    "en_mem": "-็ looks like a >small< fetus."
   },
   "37": {
     "th": "ผ",
     "pron": "ผึ้ง",
     "en": "p'h",
+    "fr": "p'h",
     "alphabet_index": "None",
     "final": "p",
     "class": "HIGH",
     "frequency_index": "37",
     "audio": "ผอ",
-    "introduction": [
+    "en_introduction": [
       "Wassap! I'm the p'h sound! [sound]",
       "Don't get me confused with the พ.",
       "We make the same \"p'h\" sound, but he's a trashy low-class while I'm high-class. [sound]",
@@ -640,18 +678,19 @@
       "prompt": "ผม",
       "distractors": ["พม", "ฝม", "ฟม"]
     },
-    "mem": "ผ looks like the head of a bird pecking (>p'h<ecking) at the ground."
+    "en_mem": "ผ looks like the head of a bird pecking (>p'h<ecking) at the ground."
   },
   "38": {
     "th": "ฉ",
     "pron": "ฉิ่ง",
     "en": "ch",
+    "fr": "tch",
     "alphabet_index": "None",
     "final": "t",
     "class": "HIGH",
     "frequency_index": "38",
     "audio": "ฉอ",
-    "introduction": [
+    "en_introduction": [
       "Wassap! I'm the \"ch\" sound! [sound]",
       "I'm not the only one - ช and ฌ also make the sound \"ch\".",
       "To remember me, notice how I look like a wheel>ch<air:",
@@ -663,18 +702,19 @@
       "prompt": "ฉัน",
       "distractors": ["พฉ", "ฉัฉ", "ชัน"]
     },
-    "mem": "ฉ looks like wheel>ch<air: the bottom-right loop is the wheel, and the top part is the chairback."
+    "en_mem": "ฉ looks like wheel>ch<air: the bottom-right loop is the wheel, and the top part is the chairback."
   },
   "39": {
     "th": "ณ",
     "pron": "เณร",
     "en": "n",
+    "fr": "n",
     "alphabet_index": "None",
     "final": "",
     "class": "LOW",
     "frequency_index": "39",
     "audio": "ณอ",
-    "introduction": [
+    "en_introduction": [
       "Nice to meet you, I'm the useless one in the \"n\" duo.[sound]",
       "You probably already met น - he's much popular than me.",
       "A long time ago, in the Devanagari script, we were different sounds,",
@@ -686,18 +726,19 @@
       "prompt": "คุณ",
       "distractors": ["คุญ", "คุฌ"]
     },
-    "mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
+    "en_mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
   },
   "40": {
     "th": "-่",
     "pron": "ไม้เอก",
     "en": "first tone mark",
+    "fr": "premier signe tonal",
     "alphabet_index": "None",
     "final": "",
     "class": "ACCENT",
     "frequency_index": "8",
     "audio": "ไม้เอก",
-    "introduction": [
+    "en_introduction": [
       "Hey, I'm Mai Ek, the first tone mark. I go over the main consonant.[sound]",
       "I indicate that the syllable is a low tone.",
       "For example กี is pronounced with a normal middle tone, but กี่ is pronounced with a low tone.",
@@ -711,18 +752,19 @@
       "prompt": "ไม่",
       "distractors": ["ไม้", "ไม", "ไม์", "ไม้", "ไม็", "ไม๊", "ไม๋"]
     },
-    "mem": "The shape of the first tone mark -่ comes from the number 1. It marks the low tone, except for low-class based syllables where it marks the falling tones."
+    "en_mem": "The shape of the first tone mark -่ comes from the number 1. It marks the low tone, except for low-class based syllables where it marks the falling tones."
   },
   "41": {
     "th": "-้",
     "pron": "ไม้โท",
     "en": "second tone mark",
+    "fr": "deuxième signe tonal",
     "alphabet_index": "None",
     "final": "",
     "class": "ACCENT",
     "frequency_index": "13",
     "audio": "ไม้โท",
-    "introduction": [
+    "en_introduction": [
       "Hey, I'm Mai Tho, the second tone mark. I go over the main consonant.[sound]",
       "I indicate that the syllable is a falling tone.",
       "For example กี is pronounced with a normal middle tone, but กี่ is pronounced with a low tone.",
@@ -736,18 +778,19 @@
       "prompt": "ไม้",
       "distractors": ["ไม่", "ไม", "ไม์", "ไม้", "ไม็", "ไม๊", "ไม๋"]
     },
-    "mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
+    "en_mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
   },
   "42": {
     "th": "-๊",
     "pron": "ไม้ตรี",
     "en": "third tone mark",
+    "fr": "troisième signe tonal",
     "alphabet_index": "None",
     "final": "",
     "class": "ACCENT",
     "frequency_index": "60",
     "audio": "ไม้ตรี",
-    "introduction": [
+    "en_introduction": [
       "Hey, I'm Mai Dtri, the third tone mark. I go over the main consonant.[sound]",
       "I indicate that the syllable is a high tone.",
       "For example กี is pronounced with a normal middle tone, but กี่ is pronounced with a low tone.",
@@ -757,19 +800,20 @@
       "prompt": "ไม้",
       "distractors": ["ไม่", "ไม", "ไม์", "ไม้", "ไม็", "ไม๊", "ไม๋"]
     },
-    "mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
+    "en_mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
   },
   "43": {
     "th": "-๋",
     "pron": "ไม้จัตวา",
-    "en": "third tone mark",
+    "en": "fourth tone mark",
+    "fr": "quatrième signe tonal",
     "alphabet_index": "None",
     "final": "",
     "class": "ACCENT",
     "frequency_index": "65",
     "audio": "ไม้ตรี",
-    "introduction": [
-      "Hey, I'm Mai Chattawa, the third tone mark. I go over the main consonant.[sound]",
+    "en_introduction": [
+      "Hey, I'm Mai Chattawa, the fourth tone mark. I go over the main consonant.[sound]",
       "I indicate that the syllable is a rising tone.",
       "For example กี is pronounced with a normal middle tone, but กี่ is pronounced with a low tone.",
       "We are 4 tone marks, and our shape come from the numbers: I'm 1 (-่), 2 (-้), 3 (-๊) and 4 (-๋)."
@@ -778,6 +822,6 @@
       "prompt": "ไม้",
       "distractors": ["ไม่", "ไม", "ไม์", "ไม้", "ไม็", "ไม๊", "ไม๋"]
     },
-    "mem": "It looks like a plus, which makes number rise: -๋ indicates the rising tone."
+    "en_mem": "It looks like a plus, which makes number rise: -๋ indicates the rising tone."
   }
 }

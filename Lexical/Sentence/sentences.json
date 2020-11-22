@@ -972,86 +972,103 @@
   "194": {
     "th": "หนัง-สือ_เล่ม_นี้_ทำ-ให้_ฉัน_ง่วง-นอน",
     "en": "This book makes me (female) sleepy.",
+    "fr": "Ce livre me rend endormie.",
     "word_ids": [261, 392, 31, 301, 24, 394]
   },
   "195": {
     "th": "คุณ_ง่วง-นอน_รึ-ป่าว",
     "en": "Are you sleepy or not?",
+    "fr": "Est-ce que tu es endormi.e ?",
     "word_ids": [28, 394, 391]
   },
   "196": {
     "th": "คน_ไทย_เป็น_คน_ดี",
     "en": "Thai people are good people.",
+    "fr": "Les Thaïlandais sont des gens biens.",
     "word_ids": [343, 345, 207, 343, 82]
   },
   "197": {
     "th": "ผม_ชอบ_คน_ไทย",
     "en": "I (male) like Thai people.",
+    "fr": "J'aime bien les Thaïlandais.",
     "word_ids": [23, 238, 343, 345]
   },
   "198": {
     "th": "คน_ดี_ชอบ_ฉัน",
     "en": "Good people like me (female).",
+    "fr": "Les gens biens m'aiment bien.",
     "word_ids": [343, 82, 238, 24]
   },
   "199": {
     "th": "คน_นี้_เป็น_คน_ดี",
     "en": "This person is a good person",
+    "fr": "Cette personne est une bonne personne.",
     "word_ids": [343, 31, 207, 343, 82]
   },
   "200": {
     "th": "ผม_ไม่_ชอบ_คน_ไม่_ดี",
     "en": "I (male) don't like bad people.",
+    "fr": "Je (masculin) n'aime pas les gens pas biens.",
     "word_ids": [23, 39, 238, 343, 39, 82]
   },
   "201": {
     "th": "คุณ_ชอบ_อะ-ไร",
     "en": "What do you like?",
+    "fr": "Qu'est-ce que tu aimes ?",
     "word_ids": [28, 238, 56]
   },
   "202": {
     "th": "คุณ_เป็น_ใคร",
     "en": "Who are you?",
+    "fr": "Qui es-tu ?",
     "word_ids": [28, 207, 55]
   },
   "203": {
     "th": "คน_ไทย_ชอบ_คน_ดี",
     "en": "Thai people like good people.",
+    "fr": "Les Thaïlandais aiment bien les gens bien.",
     "word_ids": [343, 345, 238, 343, 82]
   },
   "204": {
     "th": "คน_ไทย_ชอบ_อะ-ไร",
     "en": "What do Thai people like?",
+    "fr": "Qu'est-ce que les Thaïlandais aiment bien ?",
     "word_ids": [343, 345, 238, 56]
   },
   "205": {
     "th": "ผม_ไม่_ชอบ_คุณ",
     "en": "I (male) don't like you.",
+    "fr": "Je t'aime pas bien.",
     "word_ids": [23, 39, 238, 28]
   },
   "206": {
     "th": "ฉัน_เป็น_คน_ไทย",
     "en": "I am Thai.",
+    "fr": "Je suis Thaïlandaise.",
     "word_ids": [24, 207, 343, 345]
   },
   "207": {
     "th": "ฉัน_คิด_ว่า_คุณ_เป็น_คน_ดี",
     "en": "I think that you're a good person.",
+    "fr": "Je pense que tu es une bonne personne.",
     "word_ids": [24, 197, 184, 28, 207, 343, 82]
   },
   "208": {
     "th": "คุณ_ชอบ_คน_แบบ-ไหน",
     "en": "What kind of person do you like?",
+    "fr": "Quel genre de personne aimes-tu ?",
     "word_ids": [28, 238, 343, 402]
   },
   "209": {
     "th": "คุณ_เป็น_คน_แบบ-ไหน",
     "en": "What kind of person are you?",
+    "fr": "Quel genre de personne es-tu ?",
     "word_ids": [28, 207, 343, 402]
   },
   "210": {
     "th": "ผม_เป็น_พระ_ครับ",
-    "en": "I'm a monk",
+    "en": "I'm a monk.",
+    "fr": "Je suis un moine.",
     "word_ids": [23, 207, 185, 9]
   }
 }

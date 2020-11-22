@@ -31,7 +31,7 @@ func init(_letter_id, _over_letter):
 	letter = Game.letters[str(letter_id)]
 	SoundPlayer.play_thai(letter["audio"])
 	$TestSoundPlayer.init_sound_player(letter["audio"])
-	$Thai.text = letter["en"]
+	$Thai.text = letter[TranslationServer.get_locale()]
 	distractors = DistractorsHelper.get_letter_distractors(letter, number_of_choices)
 	choices = DistractorsHelper.get_choices(distractors, letter)
 	hide_answers()

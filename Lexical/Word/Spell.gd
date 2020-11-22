@@ -6,7 +6,7 @@ export var is_following_player = false
 # Moving
 const ACCELERATION = 1200 * 3
 const FRICTION = 1200
-const MAX_FOLLOWING_SPEED = 90
+var MAX_FOLLOWING_SPEED = 90
 const MAX_SPEED = 60  # 100
 export var can_move = false
 var velocity = Vector2.ZERO
@@ -21,6 +21,9 @@ var wobbling_time = 0
 var y = 0
 var is_birthing = true
 var is_frozen = false
+var time_to_live
+
+var random_following_offset = Vector2.ZERO
 
 # events are an array that contains first the event name, then the array of parameters
 export(Array) var pre_dialog_event = []
@@ -38,8 +41,11 @@ func set_as_following():
 	is_following_player = true
 	$CollisionShape2D.disabled = true
 	$Visible/thai.add_color_override("font_color", Color(0.137, 1, 0.952, 1))
-	$Visible.scale = Vector2(0.4, 0.4)
+	$Visible.scale = Vector2(0.6, 0.6)
 	$Visible/Light2D.hide()
+	MAX_FOLLOWING_SPEED += randi() % 20 - 10
+	random_following_offset = Vector2(randi() % 20 - 10, randi() % 20 - 10)
+	time_to_live = 60  # in seconds
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -52,7 +58,12 @@ func _process(delta):
 	if wobbles:
 		wobbling_time += delta
 		$Visible.position.y = cos(wobbling_time) * 5
-
+	if is_following_player:
+		print("time to live", time_to_live)
+		if can_move:
+			time_to_live -= delta
+			if time_to_live < 0:
+				starts_disappearing()
 	if is_birthing:
 		if ratio < 1:
 			ratio += delta
@@ -74,7 +85,7 @@ func _process(delta):
 	if can_move:
 #		print('is_following_player', is_following_player)
 		if is_following_player:
-			var player_position = Game.player.position
+			var player_position = Game.player.position + random_following_offset
 #			print('player_position', player_position)
 			var direction = (player_position - position).normalized()
 #			print('direction', direction)

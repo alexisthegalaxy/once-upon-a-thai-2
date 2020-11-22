@@ -15,7 +15,7 @@ func init_interactive_sentence(sentence, main_word_id, _can_listen_to_words):
 	SoundPlayer.play_thai(playable_sentence)
 	$Node2D/TestSoundPlayer.init_sound_player(playable_sentence)
 	if sentence.id in Game.known_sentences:
-		$Node2D/Translation.text = sentence.en
+		$Node2D/Translation.text = sentence[TranslationServer.get_locale()]
 	else:
 		$Node2D/Translation.text = tr("_unknown_meaning")
 	for word_id in sentence["word_ids"]:

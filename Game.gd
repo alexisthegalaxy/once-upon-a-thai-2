@@ -24,7 +24,7 @@ var following_spells = []
 #var following_spells = [
 #	{
 #		"id": 400,
-#		"ttl": 1000,
+#		"overword": null,
 #	}
 #]
 
@@ -76,12 +76,13 @@ func generate_following_spells_after_map_change():
 		new_spell.position = player.position
 		new_spell.set_as_following()
 		current_scene.get_node("YSort").add_child(new_spell)
+		following_spell.overword = new_spell
 
 func add_following_spell(word_id, over_word):
 	over_word.set_as_following()
 	following_spells.append({
 		"id": word_id,
-		"ttl": 100,
+		"over_word": over_word,
 	})
 
 func dialog_press_f_to_see_it(learnt_item):
@@ -227,10 +228,16 @@ func _ready():
 	letters = retrieve_from_json_file("res://Lexical/Letter/letters.json")
 	for word_id in words:
 		words[word_id]["id"] = int(word_id)
+		if not "fr" in words[word_id]:
+			words[word_id].fr = words[word_id].en
 	for sentence_id in sentences:
 		sentences[sentence_id]["id"] = int(sentence_id)
+		if not "fr" in sentences[sentence_id]:
+			sentences[sentence_id].fr = sentences[sentence_id].en
 	for letter_id in letters:
 		letters[letter_id]["id"] = int(letter_id)
+		if not "fr" in letters[letter_id]:
+			letters[letter_id].fr = letters[letter_id].en
 
 func _input(_event):
 	if _event.is_action_pressed("ui_cancel"):

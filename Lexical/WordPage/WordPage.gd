@@ -10,7 +10,7 @@ func _ready():
 func init_word_page(_word):
 	word = Game.words[str(_word)]
 	$Thai.text = word["th"]
-	$English.text = word["en"]
+	$English.text = word[TranslationServer.get_locale()]
 	$TestSoundPlayer.init_sound_player(word["th"])
 	$SentenceCarousel.init_sentence_carousel(word["id"])
 	$ToneDisplay.init_tone_display(word["tones"])
