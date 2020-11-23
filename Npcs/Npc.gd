@@ -85,7 +85,7 @@ func dialog_option(parameters):
 		]]]
 		dialog_node.post_dialog_event = post_dialog_event
 #		Game.player.can_interact = false
-#		Game.can_move = false
+#		Game.is_frozen = true
 #		interact()
 
 func _ready():
@@ -177,11 +177,10 @@ func npc_turn_towards(target):
 
 func interact():
 	if is_walking_towards:
-#		Game.can_move = true
 		return
 	get_tree().set_input_as_handled()
 	Game.player.can_interact = false
-	Game.can_move = false
+	Game.is_frozen = true
 	Game.player.stop_walking()
 	var dialog_to_use = get_dialog_to_use()
 	npc_turn_towards(Game.player.position)

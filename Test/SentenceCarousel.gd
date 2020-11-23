@@ -2,7 +2,7 @@ extends Node2D
 var sentences = []
 var current_sentence_index = 0
 var word_id
-
+var is_hidden
 func _ready():
 	pass # Replace with function body.
 
@@ -32,6 +32,7 @@ func hide():
 	$NoSentence.hide()
 	$InteractiveSentence.hide()
 	$SentenceCounter.hide()
+	is_hidden = true
 
 func show():
 	$bg.show()
@@ -45,6 +46,7 @@ func show():
 	$Button.show()
 	if not sentences:
 		$NoSentence.show()
+	is_hidden = false
 
 
 func _on_RightArea_mouse_entered():
@@ -66,6 +68,8 @@ func _on_Button_pressed():
 	hide()
 
 func _on_LeftArea_input_event(_viewport, event, _shape_idx):
+	if is_hidden or not $left_arrow.is_visible():
+		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		current_sentence_index -= 1
 		if current_sentence_index < 0:
@@ -74,6 +78,8 @@ func _on_LeftArea_input_event(_viewport, event, _shape_idx):
 		update_sentence_counter()
 
 func _on_RightArea_input_event(_viewport, event, _shape_idx):
+	if is_hidden or not $right_arrow.is_visible():
+		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		current_sentence_index += 1
 		if current_sentence_index == len(sentences):

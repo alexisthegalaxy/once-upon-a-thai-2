@@ -9,7 +9,7 @@ func _ready():
 func interact():
 	get_tree().set_input_as_handled()
 	Game.player.can_interact = false
-	Game.can_move = false
+	Game.is_frozen = true
 	Game.player.stop_walking()
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	Game.current_dialog.init_dialog(dialog, self, null, false, null)

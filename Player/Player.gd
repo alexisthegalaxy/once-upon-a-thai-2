@@ -99,7 +99,7 @@ func _input(_event) -> void:
 	if Input.is_action_just_pressed("interact") and not Game.is_overworld_frozen() and can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]):
 		get_tree().set_input_as_handled()
 		Game.player.can_interact = false
-		Game.can_move = false
+		Game.is_frozen = true
 		Game.current_focus[0].interact()
 		if Game.space_bar_to_interact:
 			Game.space_bar_to_interact.queue_free()
@@ -154,7 +154,7 @@ func move(input_vector, delta) -> void:
 
 func end_dialog() -> void:
 	can_interact = true
-	Game.can_move = true
+	Game.is_frozen = false
 
 func set_hp(hp) -> void:
 	Game.hp = hp
@@ -163,7 +163,7 @@ func set_hp(hp) -> void:
 func forced_toward(target_position):
 	is_forced_towards = target_position
 	velocity = (target_position - position).normalized()
-	Game.can_move = false
+	Game.is_frozen = true
 	
 func update_quest_display():
 	$QuestDisplay.update()

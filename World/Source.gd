@@ -61,7 +61,7 @@ func interact():
 			dialog = [tr("_this_is_a_source_empty+house_spell_inside")]
 	get_tree().set_input_as_handled()
 	Game.player.can_interact = false
-	Game.can_move = false
+	Game.is_frozen = true
 	Game.lose_focus(null)
 	Game.player.stop_walking()
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
