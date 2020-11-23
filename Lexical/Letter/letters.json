@@ -18,11 +18,18 @@
       "While I have my loops >N<ot on the same side.",
       "Alright, test time!"
     ],
+    "fr_introduction": [
+      "Bonne journée [Name] - Je suis น, le n. [sound]",
+      "Je vais juste placer ça là : je suis la lettre la plus utilisée en thaï, alors fais bien attention !",
+      "Si tu as du mal à me différencier du ม (m), note qu'il a ses boucles du >M<ême coté, mais moi >N<on.",
+      "Allez, je vais te tester !"
+    ],
     "test": {
       "prompt": "นอน",
       "distractors": ["ลอม", "ลอล", "มอน", "มอม", "มอล"]
     },
-    "en_mem": "น has its loops >n<ot on the same side."
+    "en_mem": "น has its loops >n<ot on the same side.",
+    "fr_mem": "ม (m) a ses boucles du >M<ême coté, mais น >N<on."
   },
   "1": {
     "th": "า",
@@ -46,7 +53,22 @@
     "class": "LOW",
     "frequency_index": "3",
     "audio": "รอ",
-    "en_mem": "ร looks like a r that looks towards the left."
+    "en_introduction": [
+      "Hey there !",
+      "I'm the \"r\" sound - and I actually look like a mirrored \"r\", right? [sound]",
+      "Formally, I'm pronounced like a rolled r, like in Spanish or in Russian,",
+      "but actually in informal situations people pronounce me like a \"l\" : c'est plus facile.",
+      "When I'm in the final position in a syllable, I'm pronounced \"n\" though."
+    ],
+    "fr_introduction": [
+      "Bonjour !",
+      "He suis le \"r\" - et je ressemble à un \"r\" retourné d'ailleurs, non ? [sound]",
+      "Formellement, on me prononce comme un \"r\" roulé, comme en espagnol ou en russe,",
+      "mais pour de vrai dans les situations informelles on me prononce comme un \"l\" : c'est plus facile.",
+      "Quand je suis en position finale dans la syllabe, on me prononce \"n\" par contre."
+    ],
+    "en_mem": "ร looks like a \"r\" that looks towards the left.",
+    "fr_mem": "ร ressemble à un \"r\" qui regarde à gauche."
   },
   "3": {
     "th": "-ั",
@@ -61,10 +83,19 @@
     "en_introduction": [
       "Yo!",
       "I'm the letter -ั and I'm pronounced like a short \"ah\" sound. [sound]",
+      "Unlike า qhich is the long \"ah\" sound, I'm short - in Thai all vowels are either short or long.",
       "I'm a vowel and I float over a consonant like an accent:",
       "For example, นั is pronounced \"na\"."
     ],
-    "en_mem": ""
+    "fr_introduction": [
+      "Salut !",
+      "Je suis la lettre -ั et on me prononce \"a\". [sound]",
+      "Contrairement à า qui est long, je suis un son court : en thaï, toutes les voyelles sont soit longues soit courtes.",
+      "Je flotte comme un accent au-dessus de la voyelle.",
+      "Par exemple, นั se prononce \"na\"."
+    ],
+    "en_mem": "",
+    "fr_mem": ""
   },
   "4": {
     "th": "ก",
@@ -150,11 +181,21 @@
       "To remember me, think that I look like a 0 (zero sound)",
       "or like an open mouth saying the \"or\" sound."
     ],
+    "fr_introduction": [
+      "Hello! Je suis อ, et je représente le long son \"o\", un o ouvert comme dans \"homme\".[sound]",
+      "Mais je suis spécial : je peux aussi être une consonne.",
+      "Si un mot n'a pas de consonne principale (par example, \"un morceau\" en Thaï c'est \"an\")",
+      "Alors je remplace la consonne: \"an\" s'écrit อัน.",
+      "Du coup, นอ se dit \"no\", ไอ se dit \"aï\", et ออ se dit \"o\".",
+      "Pour te rappeler que je marque l'absence de consonne, dis-toi que je ressemble à un zéro 0!",
+      "Et je fais le son o parce que je ressemble à une bouche ouverte qui dit \"o\"!"
+    ],
     "test": {
       "prompt": "ชอบ",
       "distractors": ["ชบ", "อชบ", "ออบ"]
     },
-    "en_mem": "อ looks like an open mouth saying the \"or\" sound."
+    "en_mem": "อ makes the \"or\" sound because it looks like an open mouth saying \"o\", and replace syllables with no consonants because it looks like a zero 0.",
+    "fr_mem": "อ fait le son \"o\" car il ressemble à une bouche ouverte qui dit \"o\", et remplace l'absence de consonne car il ressemble au zéro 0."
   },
   "8": {
     "th": "ล",
@@ -299,7 +340,18 @@
     "class": "MID",
     "frequency_index": "20",
     "audio": "ตอ",
-    "en_mem": "ต looks like ด with a dent (dt) on top."
+    "en_introduction": [
+      "Hey, I'm the \"dt\" sound, like in \"bedtime\" or \"midterms\"! [sound]",
+      "I look a lot like the \"ด\", but I have a dent on my head.",
+      "That makes me easy to remember: I'm \"dt\" and I have a DenT!"
+    ],
+    "fr_introduction": [
+      "Salut, je suis le \"dt\", tu arrives à me prononcer ? [sound]",
+      "Je ressemble beaucoup au \"ด\", mais j'ai plus de détail sur le dessus de ma tête.",
+      "Ça me rend facile à me rappeler: je suis \"dt\" et je suis DéTaillé !"
+    ],
+    "en_mem": "ต looks like ด with a DenT on top.",
+    "fr_mem": "ต ressemble à un ด avec des DéTails sur sa tête."
   },
   "17": {
     "th": "ด",
@@ -316,14 +368,23 @@
       "Don't get me confused with the ค (k'h).",
       "I spiral in like a >D<igital finger print, while ค looks like a peacock (pea>K'H<ock).",
       "Also, don't get me confused with ต, my brother the dt sound: he's got a dent (dt) on his head.",
-      "I'm pronounced t at the end of a syllable, because Thai people don't voice the last consonant in a syllable.",
+      "I'm pronounced \"t\" at the end of a syllable, because Thai people don't voice the last consonant in a syllable.",
       "That's why Thai people can have a hard time dealing between words like side and site!"
+    ],
+    "fr_introduction": [
+      "Salut, je suis ด le d ! [sound]",
+      "Ne me confonds pas avec le ค (k'h).",
+      "Je spirale comme une empreinte >D<igitale, alors que ค ressemble à un paon qui fait la >C<our avec sa >Q<ueue.",
+      "Ne me confonds pas non plus avec ต, mon frère le \"dt\": il a plus de DéTails sur sa tête.",
+      "On me prononce \"t\" à la fin des syllabes, car les Thaïs ne voisent pas la dernière consonne dans une syllabe.",
+      "C'est pourquoi ils ont parfois du mal avec des mots comme ride et rite !"
     ],
     "test": {
       "prompt": "ได",
       "distractors": ["ปไ", "บไ", "ไค", "ไต"]
     },
-    "en_mem": "ด looks like a >d<igital finger print, or a hobbit house >d<oor."
+    "en_mem": "ด looks like a >d<igital finger print, or a hobbit house >d<oor.",
+    "fr_mem": "ด ressemble à une empreinte >D<igitale."
   },
   "18": {
     "th": "บ",
@@ -368,14 +429,31 @@
   "20": {
     "th": "ะ",
     "pron": "",
-    "en": "a (final)",
-    "fr": "a (final)",
+    "en": "a (short, final)",
+    "fr": "a (short, final)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
     "frequency_index": "21",
     "audio": "อะ",
-    "en_mem": ""
+    "en_introduction": [
+      "Heya!",
+      "Do you remember the -ั ?",
+      "It indicates a short \"a\" sound. Well, I'm the shape it takes when it's the last letter in the syllable.",
+      "For example, \"an\" is อัน but if you remove the \"n\", \"a\" is อะ.",
+      "You get it?",
+      "Because there are no spaces in Thai, I'm quite useful to know the end of a syllable!"
+    ],
+    "fr_introduction": [
+      "Hola!",
+      "Tu te rappelles du  -ั ?",
+      "Il indique le son \"a\" court. Hé ben moi je suis la forme qu'il prend quand c'est la dernière lettre dans une syllabe.",
+      "Par exemple, \"an\" s'écrit อัน mais si on enlève le \"n\", \"a\" s'écrit อะ.",
+      "Tu piges ?",
+      "Vu qu'il n'y a pas d'espaces en thaï, je permets de trouver facilement la fin d'une syllabe !"
+    ],
+    "en_mem": "ะ is the same as -ั but in a final position.",
+    "fr_mem": "ะ est la même lettre que -ั mais en position finale."
   },
   "21": {
     "th": "ค",
@@ -506,11 +584,21 @@
       "To remember me, notice how I look like a lightning str>ai<ke!",
       "Alright, time to get you tested!"
     ],
+    "fr_introduction": [
+      "Hi [Name]!",
+      "On m'appelle Aï Maïmalaï et on me prononce \"aï\", comme dans le mot \"paille\". [sound]",
+      "Ne me confonds pas avec mon frère Maïmuan: il est enroulé ใ- mais je suis pointu ไ-.",
+      "On fait tous les deux le même son \"aï\" cela dit.",
+      "On vient avant la consonne : par exemple ไกล (aï-g-l) se prononce glaï !",
+      "Pour te rappeler de moi, imagine que je suis une tête d'ail en train de germer !",
+      "Allez, je vais te tester maintenant !"
+    ],
     "test": {
       "prompt": "ไป",
       "distractors": ["ปไ", "ใป", "ปใ"]
     },
-    "en_mem": "ไ looks like a lightning strike (str>ai<ke)."
+    "en_mem": "ไ looks like a lightning strike (str>ai<ke).",
+    "fr_mem": "ไ ressemble à une pousse qui sort d'une téte d'ail."
   },
   "29": {
     "th": "โ-",
@@ -772,13 +860,24 @@
       "If the main consonant in the syllable is low class, then the syllable is high tone.",
       "For example, ไม is pronounced with a normal middle tone, but ไม้ is high tone.",
       "So remember this rule: second tone mark is falling tone, but with low consonant is high tone.",
-      "We are 4 tone marks, and our shape come from the numbers: 1 (-่), 2 (-้), 3 (-๊) and 4 (-๋)."
+      "We are 4 tone marks, and our shape come from the Indian numbers: 1 (-่), 2 (-้), 3 (-๊) and 4 (-๋)."
+    ],
+    "fr_introduction": [
+      "Salut, je suis Maï Tho, le deuxième signe tonal. On me place au-dessus de la consonne principale dans une voyelle. [sound]",
+      "J'indique qu'une syllabe a un ton descendant.",
+      "Par exemple, ได se prononce avec le ton neutre normalement, mais ได้ se prononce avec un ton descendant.",
+      "Par contre,",
+      "si la consonne principale est une syllabe de basse classe, alros j'indique le ton haut.",
+      "Par exemple, ไม se prononce avec un ton neutre normalement, mais ไม้ a un ton haut.",
+      "Alors rappelle-toi : j'indique le ton descendant, sauf pour les syllabes basées sur des consonnes de basses classe, où j'indique le ton haut.",
+      "Il y a qutre signes tonaux, et nos formes proviennent des nombres indiens: 1 (-่), 2 (-้), 3 (-๊) et 4 (-๋)."
     ],
     "test": {
       "prompt": "ไม้",
       "distractors": ["ไม่", "ไม", "ไม์", "ไม้", "ไม็", "ไม๊", "ไม๋"]
     },
-    "en_mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
+    "en_mem": "The shape of the second tone mark -้ comes from the number 2. It marks the falling tone, except for low-class based syllables where it marks the high tones.",
+    "fr_mem": "La forme du deuxième signe tonal -้ vient du chiffre 2. Il indique le ton descendant, sauf pour les syllabes basées sur des consonnes, où il indique le ton haut."
   },
   "42": {
     "th": "-๊",
@@ -823,5 +922,36 @@
       "distractors": ["ไม่", "ไม", "ไม์", "ไม้", "ไม็", "ไม๊", "ไม๋"]
     },
     "en_mem": "It looks like a plus, which makes number rise: -๋ indicates the rising tone."
+  },
+  "44": {
+    "th": "-ำ",
+    "pron": "",
+    "en": "am",
+    "fr": "am",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "40",
+    "audio": "-ำ",
+    "en_introduction": [
+      "Bam! I know I look like two separate letters, but I'm actually one! On a keyboard, I'm also one!",
+      "Unlike the I'm pronounced \"am\", like in jam, and unlike the long า \"ah\" sound, I'm short. [sound]",
+      "For example, ตำ is pronounced \"dtam\".",
+      "I always indicate the end of a syllable.",
+      "To remember me, think how I look like a madam with a stylish round hat and a cane."
+    ],
+    "fr_introduction": [
+      "Bam! Je sais que je ressemble à deux lettres séparées, mais je ne suis qu'un ! Même sur un clavier, je n'ai qu'une touche !",
+      "On me prononce \"am\", comme dans dame, et contrairement au า qui est le long son \"a\", je suis court. [sound]",
+      "Par exemple, ตำ se dit \"dtam\".",
+      "J'indique toujours la fin d'une syllabe.",
+      "Pour te rappeler de moi, imagine que je suis une dame qui a une canne et un élégant chapeau rond."
+    ],
+    "test": {
+      "prompt": "ไม้",
+      "distractors": ["ไม่", "ไม", "ไม์", "ไม้", "ไม็", "ไม๊", "ไม๋"]
+    },
+    "en_mem": "-ำ looks like an elegant madam wearing a round hat.",
+    "fr_mem": "-ำ ressemble à un \"a\" : า, et le cercle ressemble à une âme qui s'envole."
   }
 }

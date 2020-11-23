@@ -6145,7 +6145,7 @@ position = Vector2( 1071.88, -169.316 )
 
 [node name="Source น้ำ" parent="YSort/Sources" instance=ExtResource( 23 )]
 type = "Well"
-word_ids = [ 156 ]
+word_ids = [  ]
 
 [node name="Source คน" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( -894.605, 1190.09 )
@@ -6173,6 +6173,10 @@ word_ids = [ 39 ]
 
 [node name="Empty Source" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( 367.827, 170.58 )
+word_ids = [  ]
+
+[node name="Empty Source2" parent="YSort/Sources" instance=ExtResource( 23 )]
+position = Vector2( -189.055, 154.248 )
 word_ids = [  ]
 
 [node name="Source เป็น" parent="YSort/Sources" instance=ExtResource( 23 )]

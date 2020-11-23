@@ -47,6 +47,7 @@ func interact():
 	Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true, null)
 	Game.player.stop_walking()
 	Game.current_scene.add_child(Game.current_dialog)
+	Game.lose_focus(null)
 	if pre_dialog_event:
 		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
 

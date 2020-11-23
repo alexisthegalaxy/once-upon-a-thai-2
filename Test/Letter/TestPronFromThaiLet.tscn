@@ -25,7 +25,7 @@ margin_top = 18.2215
 margin_bottom = 32.2215
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.309804, 0.309804, 0.309804, 1 )
-text = "How do you pronounce this letter?"
+text = "_how_do_you_pronounce_this_letter"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false

@@ -66,3 +66,7 @@ _different_words_live_inside_that_source, different words live inside that sourc
 _this_is_a_source_empty+house_spell_inside,"This is a source. It is currently empty, do you want to house a Spell inside? @QYes/No","C'est une source. Elle est vide, veux-tu mettre un mot dedans? @QOui/Non"
 _this_is_a_source_it_is_currently_empty_do_you_want_to_house_the_spell,"This is a source. It is currently empty, do you want to house the Spell ","C'est une source. Elle est vide, veux-tu mettre le mot "
 _inside_q_yes_no, inside? @QYes/No, dedans? @QOui/Non
+_which_letter_corresponds_to_this_sound,Which letter corresponds to this sound?,Quelle letter correspond à ce son ?
+_how_do_you_write_this_sound,How do you write this sound?,Comment écrit-on ce son ?
+_how_do_you_pronounce_this_letter,How do you pronounce this letter?,Comment prononce-t-on cette lettre ?
+_which_word_corresponds_to_this_sound,Which word corresponds to this sound?,Quel mot correspond à ce son ?

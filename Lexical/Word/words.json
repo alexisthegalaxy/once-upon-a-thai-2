@@ -1319,7 +1319,8 @@
     "tones": "H",
     "pos": "NOUN",
     "th": "น้ำ",
-    "teaching_order": 22
+    "teaching_order": 22,
+    "letters": [0, 41, 44]
   },
   "157": {
     "split": "เหล้า",
