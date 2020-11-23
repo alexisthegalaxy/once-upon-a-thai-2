@@ -96,7 +96,7 @@ func _on_press_f():
 		Game.current_scene.add_child(hub)
 
 func _input(_event) -> void:
-	if Input.is_action_just_pressed("interact") and Game.can_move and can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]):
+	if Input.is_action_just_pressed("interact") and not Game.is_overworld_frozen() and can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]):
 		get_tree().set_input_as_handled()
 		Game.player.can_interact = false
 		Game.can_move = false
@@ -123,7 +123,7 @@ func update_state(_state):
 	update_animation()
 
 func move_state(delta) -> void:
-	if not Game.can_move:
+	if Game.is_overworld_frozen():
 		return
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")

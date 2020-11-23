@@ -36,7 +36,7 @@ func play_audio_after_one_second():
 
 func init(_letter_id, _over_letter):
 	letter_id = _letter_id
-	Game.can_move = false
+	Game.is_frozen = true
 	over_letter = _over_letter
 	rng.randomize()
 	letter = Game.letters[str(letter_id)]
@@ -88,7 +88,6 @@ func _process(delta):
 
 func answered_correctly():
 	# This is the fourth and currently last test
-#	Game.can_move = true
 	Game.active_test = null
 	Game.is_frozen = false
 #	Game.player.can_interact = true

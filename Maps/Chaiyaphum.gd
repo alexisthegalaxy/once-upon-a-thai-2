@@ -16,7 +16,7 @@ func _ready():
 	elif Events.events["has_finished_the_letter_world_the_first_time"]:
 		Events.events["has_gone_to_rock"] = true
 		Game.player.can_interact = false
-		Game.can_move = false
+		Game.is_frozen = true
 		$YSort/NPCs/Yaai.position = Vector2(207.81, 513.20)
 		$YSort/NPCs/Yaai.dialog = [
 			"Welcome back, [Name].",

@@ -26,7 +26,7 @@ func hide_answers():
 func init(_letter_id, _over_letter):
 	letter_id = _letter_id
 	over_letter = _over_letter
-	Game.can_move = false
+	Game.is_frozen = true
 	rng.randomize()
 	letter = Game.letters[str(letter_id)]
 	SoundPlayer.play_thai(letter["audio"])

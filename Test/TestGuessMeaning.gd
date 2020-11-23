@@ -44,7 +44,7 @@ func leaves_test_to_go_to_MP():
 	over_word.is_frozen = true
 
 func init(word_id, _over_word):
-	Game.can_move = false
+	Game.is_frozen = true
 	Game.active_test = self
 	over_word = _over_word
 	rng.randomize()
@@ -87,7 +87,6 @@ func _process(delta):
 		set_alpha()
 
 func answered_correctly():
-#	Game.can_move = true
 #	Game.active_test = null
 	SoundPlayer.play_thai(word.th)
 	Game.player.can_interact = true

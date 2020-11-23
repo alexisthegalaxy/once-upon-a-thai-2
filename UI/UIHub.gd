@@ -13,6 +13,7 @@ func _ready():
 func close_hub():
 	Game.player.hub.queue_free()
 	Game.player.hub = null
+	
 
 func _on_Words_pressed():
 	var dict = load("res://Lexical/Dict/Dict.tscn").instance()

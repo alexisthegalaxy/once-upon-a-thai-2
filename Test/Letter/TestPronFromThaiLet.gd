@@ -25,7 +25,7 @@ func hide_answers():
 
 func init(_letter_id, _over_letter):
 	letter_id = _letter_id
-	Game.can_move = false
+	Game.is_frozen = true
 	over_letter = _over_letter
 	rng.randomize()
 	letter = Game.letters[str(letter_id)]

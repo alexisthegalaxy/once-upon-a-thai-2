@@ -124,7 +124,6 @@ func interact():
 
 func start_test():
 	Game.is_frozen = true
-	Game.can_move = false
 	var test_start_animation = load("res://Test/TestStartAnimation.tscn").instance()
 	test_start_animation.init_start_animation(word["th"], "Spell")
 	self.add_child(test_start_animation)

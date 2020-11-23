@@ -52,7 +52,6 @@ var active_test = null
 var player = null
 var player_name = "Alexis"
 var player_sprite_path = "res://Npcs/sprites/main_E.png"
-var can_move = true
 var can_read_thai = false
 
 var hp = 5.0
@@ -68,7 +67,20 @@ var should_start_test_when_back_from_MP = [
 var select_follower_to_implant_screen = null
 
 func is_overworld_frozen():
-	return active_test or current_dialog or is_frozen
+	return (
+		active_test or
+		current_dialog or
+		is_frozen or
+		select_follower_to_implant_screen or
+		(player and (
+			player.hub or
+			player.dict or
+			player.alphabet or
+			player.notebook or
+			player.word_page or
+			player.letter_page
+		))
+	)
 
 func generate_following_spells_after_map_change():
 	for following_spell in following_spells:
@@ -119,7 +131,7 @@ func a_word_is_learnt():
 #			Events.npc_walks_to([[player.position]])
 
 func discovers_sentence(sentence_id, is_translated):
-	Game.can_move = false
+	Game.is_frozen = true
 	Game.lose_focus(null)
 	var sentence_discovery = load("res://Lexical/Sentence/SentenceDiscovery.tscn").instance()
 	sentence_discovery.sentence_discovery_init(sentence_id, is_translated)
@@ -319,7 +331,7 @@ func start_test_when_back_from_MP():
 
 func _deferred_goto_scene(to_map_name, to_x, to_y):
 	save_following_spells_data_before_map_change()
-	can_move = true
+	is_frozen = false
 	if not "LexicalWorld" in current_map_name:
 		if player:
 			player_position_on_overworld = player.position

@@ -38,5 +38,5 @@ func _on_Button_pressed():
 		Game.current_scene.add_child(Game.current_dialog)
 		Quests.update_find_sentences_quests(sentence.id)
 	else:
-		Game.can_move = true
+		Game.is_frozen = false
 		Game.player.can_interact = true
