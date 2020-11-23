@@ -41,7 +41,8 @@
     "class": "VOWEL",
     "frequency_index": "1",
     "audio": "อา",
-    "en_mem": "า looks like the right side of the letter A."
+    "en_mem": "า looks like the right side of the letter A.",
+    "fr_mem": ""
   },
   "2": {
     "th": "ร",
@@ -115,7 +116,8 @@
       "Careful though - I'm pronounced k at the end of a syllable.",
       "For example, the word reed in Thai is กก, and is pronounced \"gok\"."
     ],
-    "en_mem": "ร looks like a n, but it has a zi>g<za>g< le>g<."
+    "en_mem": "ร looks like a n, but it has a zi>g<za>g< le>g<.",
+    "fr_mem": ""
   },
   "5": {
     "th": "ม",
@@ -134,7 +136,8 @@
       "but my loops are on the sa>M<e side.",
       "and the น's loops are >N<ot on the same side!"
     ],
-    "en_mem": "ม has its loops on the sa>m<e side."
+    "en_mem": "ม has its loops on the sa>m<e side.",
+    "fr_mem": ""
   },
   "6": {
     "th": "เ-",
@@ -159,7 +162,8 @@
       "prompt": "เท",
       "distractors": ["ทเ", "ทแ", "แท", "วท", "ทว"]
     },
-    "en_mem": "เ looks like a leg (léég)."
+    "en_mem": "เ looks like a leg (léég).",
+    "fr_mem": ""
   },
   "7": {
     "th": "อ",
@@ -207,7 +211,8 @@
     "class": "LOW",
     "frequency_index": "14",
     "audio": "ลอ",
-    "en_mem": ""
+    "en_mem": "",
+    "fr_mem": ""
   },
   "9": {
     "th": "-ี",
@@ -229,7 +234,8 @@
       "prompt": "ดี",
       "distractors": ["ด", "ดิ่", "ดี่", "ดิ", "ดื"]
     },
-    "en_mem": "-ี looks like a roof with a chimn>ey<."
+    "en_mem": "-ี looks like a roof with a chimn>ey<.",
+    "fr_mem": ""
   },
   "10": {
     "th": "ง",
@@ -241,7 +247,8 @@
     "class": "LOW",
     "frequency_index": "7",
     "audio": "งอ",
-    "en_mem": "ง looks like the arm of somebody flexing their muscle and saying \"ng\" because of the effort."
+    "en_mem": "ง looks like the arm of somebody flexing their muscle and saying \"ng\" because of the effort.",
+    "fr_mem": ""
   },
   "11": {
     "th": "ท",
@@ -265,7 +272,8 @@
       "prompt": "บาท",
       "distractors": ["ทาบ", "ทาม", "ทาน", "ทาท"]
     },
-    "en_mem": "ท looks like a snake (head on the left) with a long tail (>t'h<ail)."
+    "en_mem": "ท looks like a snake (head on the left) with a long tail (>t'h<ail).",
+    "fr_mem": ""
   },
   "12": {
     "th": "ว",
@@ -277,7 +285,8 @@
     "class": "LOW",
     "frequency_index": "15",
     "audio": "วอ",
-    "en_mem": "ว looks like a question mark. วhat?"
+    "en_mem": "ว looks like a question mark. วhat?",
+    "fr_mem": ""
   },
   "13": {
     "th": "ย",
@@ -299,7 +308,8 @@
       "prompt": "ยา",
       "distractors": ["ปา", "บา"]
     },
-    "en_mem": "ย looks like the y, but without the lower part."
+    "en_mem": "ย looks like the y, but without the lower part.",
+    "fr_mem": ""
   },
   "14": {
     "th": "-ิ",
@@ -316,7 +326,8 @@
       "I'm -ิ, the shorter brother of -ี, and the vowel for the short \"i\" sound. [sound]",
       "Do you see the difference between my long brother ee -ี and me?"
     ],
-    "en_mem": "-ิ looks like l>i<ps."
+    "en_mem": "-ิ looks like l>i<ps.",
+    "fr_mem": ""
   },
   "15": {
     "th": "ส",
@@ -328,7 +339,8 @@
     "class": "HIGH",
     "frequency_index": "19",
     "audio": "สอ",
-    "en_mem": "ส looks like a ล with an extra >s<trike through it."
+    "en_mem": "ส looks like a ล with an extra >s<trike through it.",
+    "fr_mem": ""
   },
   "16": {
     "th": "ต",
@@ -401,7 +413,8 @@
       "I look like my brother ป (bp), and we're both pronounced \"p\" at the end of a syllable.",
       "I look like a >b<ucket, right?"
     ],
-    "en_mem": "บ looks like a >b<ucket."
+    "en_mem": "บ looks like a >b<ucket.",
+    "fr_mem": ""
   },
   "19": {
     "th": "ป",
@@ -424,7 +437,8 @@
       "prompt": "ไป",
       "distractors": ["ปไ", "บไ", "ไบ", "ไบ่", "บ่ไ"]
     },
-    "en_mem": "ป looks like a much >b<igger >p<ail than the บ."
+    "en_mem": "ป looks like a much >b<igger >p<ail than the บ.",
+    "fr_mem": ""
   },
   "20": {
     "th": "ะ",
@@ -478,7 +492,8 @@
       "prompt": "คน",
       "distractors": ["กน", "คค", "นค"]
     },
-    "en_mem": "ค looks like a peacock (pea>k'h<ock) facing towards you."
+    "en_mem": "ค looks like a peacock (pea>k'h<ock) facing towards you.",
+    "fr_mem": ""
   },
   "22": {
     "th": "จ",
@@ -490,7 +505,8 @@
     "class": "MID",
     "frequency_index": "28",
     "audio": "จอ",
-    "en_mem": "จ looks like a dolphin plunging (plun>j<ing) into the water."
+    "en_mem": "จ looks like a dolphin plunging (plun>j<ing) into the water.",
+    "fr_mem": ""
   },
   "23": {
     "th": "-ื",
@@ -502,7 +518,8 @@
     "class": "VOWEL",
     "frequency_index": "34",
     "audio": "อื",
-    "en_mem": ""
+    "en_mem": "",
+    "fr_mem": ""
   },
   "24": {
     "th": "พ",
@@ -514,7 +531,8 @@
     "class": "LOW",
     "frequency_index": "27",
     "audio": "พอ",
-    "en_mem": "พ looks like the beak of a bird (the eye is on the left) pecking (>p'h<ecking) on the floor."
+    "en_mem": "พ looks like the beak of a bird (the eye is on the left) pecking (>p'h<ecking) on the floor.",
+    "fr_mem": ""
   },
   "25": {
     "th": "แ-",
@@ -526,7 +544,8 @@
     "class": "VOWEL",
     "frequency_index": "26",
     "audio": "แอ",
-    "en_mem": ""
+    "en_mem": "",
+    "fr_mem": ""
   },
   "26": {
     "th": "ห",
@@ -538,7 +557,8 @@
     "class": "HIGH",
     "frequency_index": "25",
     "audio": "หอ",
-    "en_mem": "ห is the only letter that has two loops that are placed >h<igh."
+    "en_mem": "ห is the only letter that has two loops that are placed >h<igh.",
+    "fr_mem": ""
   },
   "27": {
     "th": "ใ-",
@@ -563,7 +583,8 @@
       "prompt": "ใน",
       "distractors": ["นไ", "ไน", "นใ"]
     },
-    "en_mem": "ใ looks like the staff of a high-ranking (h>ai<) bishop."
+    "en_mem": "ใ looks like the staff of a high-ranking (h>ai<) bishop.",
+    "fr_mem": ""
   },
   "28": {
     "th": "ไ-",
@@ -610,7 +631,8 @@
     "class": "VOWEL",
     "frequency_index": "36",
     "audio": "โอ",
-    "en_mem": "โ looks like a ร that is tall (t>oh<l)."
+    "en_mem": "โ looks like a ร that is tall (t>oh<l).",
+    "fr_mem": ""
   },
   "30": {
     "th": "ช",
@@ -634,7 +656,8 @@
       "prompt": "ชอบ",
       "distractors": ["ฉอบ", "ซอบ", "บอบ", "ขอบ"]
     },
-    "en_mem": "ช looks like the body of a >ch<ick (head on the left, tail on the right)."
+    "en_mem": "ช looks like the body of a >ch<ick (head on the left, tail on the right).",
+    "fr_mem": ""
   },
   "31": {
     "th": "ข",
@@ -646,7 +669,8 @@
     "class": "HIGH",
     "frequency_index": "31",
     "audio": "ขอ",
-    "en_mem": "ข looks like a curly บ (>k'h<urly)."
+    "en_mem": "ข looks like a curly บ (>k'h<urly).",
+    "fr_mem": ""
   },
   "32": {
     "th": "-ู",
@@ -658,7 +682,8 @@
     "class": "VOWEL",
     "frequency_index": "38",
     "audio": "อู",
-    "en_mem": "-ู is placed under the consonant (>oo<nder), and is longer than the short u sound -ุ."
+    "en_mem": "-ู is placed under the consonant (>oo<nder), and is longer than the short u sound -ุ.",
+    "fr_mem": ""
   },
   "33": {
     "th": "-ุ",
@@ -680,7 +705,8 @@
       "prompt": "คุณ",
       "distractors": ["คูณ", "คเณ"]
     },
-    "en_mem": "-ุ is placed under the consonant (>u<nder), and is shorter than the long u sound -ู."
+    "en_mem": "-ุ is placed under the consonant (>u<nder), and is shorter than the long u sound -ู.",
+    "fr_mem": ""
   },
   "34": {
     "th": "ฟ",
@@ -692,7 +718,8 @@
     "class": "LOW",
     "frequency_index": "50",
     "audio": "ฟอ",
-    "en_mem": "The tail of ฟ goes >f<arther than the one of พ."
+    "en_mem": "The tail of ฟ goes >f<arther than the one of พ.",
+    "fr_mem": ""
   },
   "35": {
     "th": "∅",
@@ -720,7 +747,8 @@
       "prompt": "คน",
       "distractors": ["คโน", "โคน", "คอน", "ค็อน"]
     },
-    "en_mem": "Nothingness, or zero, is also pronounced \"oh\" in English, when spelling a number."
+    "en_mem": "Nothingness, or zero, is also pronounced \"oh\" in English, when spelling a number.",
+    "fr_mem": ""
   },
   "36": {
     "th": "-็",
@@ -744,7 +772,8 @@
       "prompt": "เล็ก",
       "distractors": ["เลก", "ลเ็ก", "เล๊ก", "เ๊ลก"]
     },
-    "en_mem": "-็ looks like a >small< fetus."
+    "en_mem": "-็ looks like a >small< fetus.",
+    "fr_mem": ""
   },
   "37": {
     "th": "ผ",
@@ -766,7 +795,8 @@
       "prompt": "ผม",
       "distractors": ["พม", "ฝม", "ฟม"]
     },
-    "en_mem": "ผ looks like the head of a bird pecking (>p'h<ecking) at the ground."
+    "en_mem": "ผ looks like the head of a bird pecking (>p'h<ecking) at the ground.",
+    "fr_mem": ""
   },
   "38": {
     "th": "ฉ",
@@ -790,7 +820,8 @@
       "prompt": "ฉัน",
       "distractors": ["พฉ", "ฉัฉ", "ชัน"]
     },
-    "en_mem": "ฉ looks like wheel>ch<air: the bottom-right loop is the wheel, and the top part is the chairback."
+    "en_mem": "ฉ looks like wheel>ch<air: the bottom-right loop is the wheel, and the top part is the chairback.",
+    "fr_mem": ""
   },
   "39": {
     "th": "ณ",
@@ -814,7 +845,8 @@
       "prompt": "คุณ",
       "distractors": ["คุญ", "คุฌ"]
     },
-    "en_mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
+    "en_mem": "ณ looks like a weird capital \"N\", and the right part is like the น.",
+    "fr_mem": ""
   },
   "40": {
     "th": "-่",
@@ -840,7 +872,8 @@
       "prompt": "ไม่",
       "distractors": ["ไม้", "ไม", "ไม์", "ไม้", "ไม็", "ไม๊", "ไม๋"]
     },
-    "en_mem": "The shape of the first tone mark -่ comes from the number 1. It marks the low tone, except for low-class based syllables where it marks the falling tones."
+    "en_mem": "The shape of the first tone mark -่ comes from the number 1. It marks the low tone, except for low-class based syllables where it marks the falling tones.",
+    "fr_mem": ""
   },
   "41": {
     "th": "-้",
@@ -896,10 +929,11 @@
       "We are 4 tone marks, and our shape come from the numbers: 1 (-่), 2 (-้), 3 (-๊) and 4 (-๋)."
     ],
     "test": {
-      "prompt": "ไม้",
-      "distractors": ["ไม่", "ไม", "ไม์", "ไม้", "ไม็", "ไม๊", "ไม๋"]
+      "prompt": "ไม๊",
+      "distractors": ["ไม่", "ไม", "ไม์", "ไม้", "ไม็", "ไม้", "ไม๋"]
     },
-    "en_mem": "ณ looks like a weird capital \"N\", and the right part is like the น."
+    "en_mem": "-๊ looks like the number 3 (3 is ๓ in Thai), and indicates the high tone. Think: Drei-high (\"drei\", pronounced \"dry\", means \"three\" in German)!",
+    "fr_mem": "-๊ ressemblee à un 3 (le 3 est ๓ en thaï), et indique le ton haut. Pense: haut comme un troiseau! (trois-oiseau)"
   },
   "43": {
     "th": "-๋",
@@ -921,7 +955,8 @@
       "prompt": "ไม้",
       "distractors": ["ไม่", "ไม", "ไม์", "ไม้", "ไม็", "ไม๊", "ไม๋"]
     },
-    "en_mem": "It looks like a plus, which makes number rise: -๋ indicates the rising tone."
+    "en_mem": "It looks like a plus, which makes number rise: -๋ indicates the rising tone.",
+    "fr_mem": ""
   },
   "44": {
     "th": "-ำ",
