@@ -385,6 +385,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 			"Events",
 			"SoundPlayer",
 			"DistractorsHelper",
+			"Save",
 			"Quests"
 		]:
 			child.queue_free()

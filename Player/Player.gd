@@ -111,6 +111,9 @@ func _input(_event) -> void:
 #		Game.add_random_letter_to_letters_to_look_for()
 	if Input.is_action_just_pressed("print_known_sentences"):
 		Game.print_known_sentences()
+	if Input.is_action_just_pressed("save"):
+		print('will save game')
+		Save.save_game()
 	if Input.is_action_just_pressed("hub"):
 		_on_press_f()
 
