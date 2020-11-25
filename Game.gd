@@ -167,10 +167,6 @@ func lose_focus(target):
 		if space_bar_to_interact:
 			space_bar_to_interact.queue_free()
 			space_bar_to_interact = null
-		else:
-			print('weird')
-			print('we called loses_focus while space_bar_to_interact was already deleted.')
-#	current_focus = null
 
 func learn_letter(letter):
 	Game.known_letters.append(letter["id"])

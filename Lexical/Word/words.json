@@ -134,6 +134,7 @@
   "15": {
     "split": "ล่ะ",
     "en": "(question particle showing a change of state)",
+    "fr": "(particule interrogative montrant un changement d'état)",
     "tones": "F",
     "pos": "PART",
     "th": "ล่ะ",
@@ -299,6 +300,7 @@
   "34": {
     "split": "ตัว-เอง",
     "en": "self, own",
+    "fr": "soi-même",
     "tones": "MM",
     "pos": "PRON",
     "th": "ตัวเอง",
@@ -1569,7 +1571,7 @@
   "187": {
     "split": "แฟน",
     "en": "lover",
-    "fr": "amoureux.se",
+    "fr": "un·e amoureux·se",
     "tones": "M",
     "pos": "NOUN",
     "th": "แฟน",
@@ -2775,7 +2777,7 @@
   "335": {
     "split": "ภา-ษา-อัง-กฤษ",
     "en": "English language",
-    "fr": "l'anglais'",
+    "fr": "l'anglais",
     "tones": "MRML",
     "pos": "NOUN",
     "th": "ภาษาอังกฤษ",
@@ -3293,6 +3295,7 @@
   "398": {
     "split": "งง",
     "en": "to be confused",
+    "fr": "être confus",
     "tones": "M",
     "pos": "ADJ",
     "th": "งง",
@@ -3302,6 +3305,7 @@
   "399": {
     "split": "คอ",
     "en": "neck",
+    "fr": "le cou",
     "tones": "M",
     "pos": "NOUN",
     "th": "คอ",
@@ -3311,6 +3315,7 @@
   "400": {
     "split": "หิน",
     "en": "rock, stone, boulder",
+    "fr": "rocher, pierre",
     "tones": "R",
     "pos": "NOUN",
     "th": "หิน",
@@ -3320,6 +3325,7 @@
   "401": {
     "split": "ตัด",
     "en": "to cut",
+    "fr": "couper",
     "tones": "L",
     "pos": "VERB",
     "th": "ตัด",
@@ -3329,6 +3335,7 @@
   "402": {
     "split": "แบบ-ไหน",
     "en": "what kind",
+    "fr": "quel genre",
     "tones": "LR",
     "pos": "",
     "th": "แบบไหน",

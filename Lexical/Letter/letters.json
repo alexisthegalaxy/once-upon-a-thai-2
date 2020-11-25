@@ -151,19 +151,27 @@
     "audio": "เอ",
     "en_introduction": [
       "Hééé [Name]!",
-      "I'm the vowel เ- pronounced with a long é sound, [sound]",
+      "I'm the vowel เ- pronounced with a long \"é\" sound, [sound]",
       "Like in \"café\" or \"Pokémon\".",
       "See how I've got a dash next to me?",
       "That's because I come before the consonant.",
       "For example เน is pronounced \"néé\", or \"nay\".",
       "I look like a leg, so that's how you can remember me: I'm a léég!"
     ],
+    "fr_introduction": [
+      "Hé [Name]!",
+      "Je suis la voyelle เ- prononcée avec un son \"é\" long. [sound]",
+      "Tu vois le tiret à coté de moi ?",
+      "C'est parce que je viens avec la consonne.",
+      "Par exemple, เน se prononce \"néé\".",
+      "Je ressemble à un pied au bout d'une jambe, alors tu peux te souvenir de moi comme ça : je suis un piééd !"
+    ],
     "test": {
       "prompt": "เท",
       "distractors": ["ทเ", "ทแ", "แท", "วท", "ทว"]
     },
     "en_mem": "เ looks like a leg (léég).",
-    "fr_mem": ""
+    "fr_mem": "เ ressemble à un pied au bout d'une jambe (piééd)."
   },
   "7": {
     "th": "อ",
@@ -218,7 +226,7 @@
     "th": "-ี",
     "pron": "",
     "en": "ee (long i)",
-    "fr": "i (long)",
+    "fr": "ii",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
@@ -227,15 +235,22 @@
     "en_introduction": [
       "Greetings, [Name].",
       "I'm -ี, the long \"ee\" sound like in \"knee\". [sound]",
-      "I'm a vowel floating gracefully over the consonant,",
-      "For example, นี is pronounced \"nee\"."
+      "I'm a vowel floating over the consonant,",
+      "For example, นี is pronounced \"nee\".",
+      "To remember me, notice how I look like a roof with a chimn>ey<."
+    ],
+    "fr_introduction": [
+      "Salut, [Name].",
+      "Je suis -ี, la longue voyelle \"ii\". [sound]",
+      "Je flotte au-dessus de la consonne - par exemple, นี se prononce \"nii\".",
+      "Pour te rappeler de moi, remarque comme je ressemble à un toit avec une chem>ii<née."
     ],
     "test": {
       "prompt": "ดี",
       "distractors": ["ด", "ดิ่", "ดี่", "ดิ", "ดื"]
     },
     "en_mem": "-ี looks like a roof with a chimn>ey<.",
-    "fr_mem": ""
+    "fr_mem": "-ี ressemble à un toit avec une chem>ii<née."
   },
   "10": {
     "th": "ง",
@@ -248,7 +263,7 @@
     "frequency_index": "7",
     "audio": "งอ",
     "en_mem": "ง looks like the arm of somebody flexing their muscle and saying \"ng\" because of the effort.",
-    "fr_mem": ""
+    "fr_mem": "ง ressemble au bras de quelqu'un qui contracte son biceps et qui dirait \"ng\" à cause de l'effort."
   },
   "11": {
     "th": "ท",
@@ -268,12 +283,20 @@
       "I look like a snake with a long tail (t'h ail).",
       "Alright, get ready to be tested!"
     ],
+    "fr_introduction": [
+      "Je suis ท. On me prononce t'h, comme un t, mais aspiré. [sound]",
+      "so you can write me t'h.",
+      "Je suis le son \"t'h\" dans le mot \"Thaï\" (ไทย), c'est pour ça qu'on écrit Thaï avec un \"h\" !",
+      "Voilà comment tu peux te souvenir de moi :",
+      "Je ressemble à une t'hortue (tortue) : la tête à gauche et la bosse de ma carapace à droite.",
+      "C'est parti pour le test !"
+    ],
     "test": {
       "prompt": "บาท",
       "distractors": ["ทาบ", "ทาม", "ทาน", "ทาท"]
     },
     "en_mem": "ท looks like a snake (head on the left) with a long tail (>t'h<ail).",
-    "fr_mem": ""
+    "fr_mem": "ท ressemble à une tortue (t'hortue) : la tête à gauche, la bosse de la carapace à droite."
   },
   "12": {
     "th": "ว",
@@ -428,17 +451,24 @@
     "audio": "ปอ",
     "en_introduction": [
       "[Name]!",
-      "I'm ป, the bp sound. [sound]",
-      "Don't get me confused with the บ (b): I've got a longer tail.",
-      "I'm pronounced bp at the beginning of a syllable, p at the end.",
+      "I'm ป, the \"bp\" sound. [sound]",
+      "Don't get me confused with the บ (b): I've got a >b<igger right >p<art.",
+      "I'm pronounced \"bp\" at the beginning of a syllable, \"p\" at the end.",
       "That's because you don't release the air at the end of syllables."
+    ],
+    "fr_introduction": [
+      "[Name]!",
+      "Je suis ป, le son \"bp\". [sound]",
+      "Ne me confonds pas avec le บ (b) qui ressemble à un petit bassin/baquet : ma queue est >b<ien >p<lus longue.",
+      "On me prononce \"bp\" au début d'une syllabe, et \"p\" à la fin.",
+      "C'est parce qu'on ne libère pas l'air à la fin des syllabes en thaï, contrairement au français."
     ],
     "test": {
       "prompt": "ไป",
       "distractors": ["ปไ", "บไ", "ไบ", "ไบ่", "บ่ไ"]
     },
-    "en_mem": "ป looks like a much >b<igger >p<ail than the บ.",
-    "fr_mem": ""
+    "en_mem": "ป looks like a much >b<igger right >p<art than the \"b\" (บ).",
+    "fr_mem": "ป ressemble au \"b\" (บ), mais >b<ien >p<lus grand!"
   },
   "20": {
     "th": "ะ",
@@ -481,19 +511,28 @@
     "audio": "คอ",
     "en_introduction": [
       "Hey, I'm ค.",
-      "I'm pronounced k'h, just like a k, but aspirated. [sound]",
-      "Don't get me confused with the ด, the d. Do you see the difference?",
+      "I'm pronounced \"k'h\", just like a \"k\", but aspirated. [sound]",
+      "Don't get me confused with the ด, the \"d\". Do you see the difference?",
       "I look like a peacock (pea>K'H<ock) looking at you, while ด spirals in like a >D<igital finger print.",
-      "Also! I'm not the only letter in Thai that's pronounced k'h.",
+      "Also! I'm not the only letter in Thai that's pronounced \"k'h\".",
       "The other ones are ข, which is quite popular, and ฆ, which is rarer. There's also the obsolete ฃ.",
       "Alright, test time!"
+    ],
+    "fr_introduction": [
+      "Coucou, moi c'est ค !",
+      "On me prononce \"k'h\", c'est comme \"k\", mais aspiré, comme avec un \"h\" en anglais. [sound]",
+      "Ne me confonds pas avec le ด, le \"d\". Tu vois la différence ?",
+      "Je ressemble à un paon qui fait la >C<our avec sa >Q<ueue, tandis que ด spirale comme une empreinte >D<igitale.",
+      "Et aussi, je suis pas la seule lettre en thaï qu'on prononce \"k'h\".",
+      "Les autres sont ข, qui est assez fréquent, et ฆ, qui est plus rare. Et il y a aussi ฃ qui est devenu obsolète !",
+      "Allez, je vais te tester maintenant !"
     ],
     "test": {
       "prompt": "คน",
       "distractors": ["กน", "คค", "นค"]
     },
     "en_mem": "ค looks like a peacock (pea>k'h<ock) facing towards you.",
-    "fr_mem": ""
+    "fr_mem": "ค ressemble à un paon qui fait la >C<our avec sa >Q<ueue."
   },
   "22": {
     "th": "จ",
@@ -768,12 +807,20 @@
       "Don't get me confused with the -๊, which is used to indicate the high tone.",
       "Some say I look like a short fetus. That will be your mnemonic device."
     ],
+    "fr_introduction": [
+      "Hé.",
+      "Je raccourcis la syllabe.",
+      "Par exemple, เปน est long (bpéén) et เป็น est court (bpén).",
+      "Je me place au-dessus de la consonne principale de la syllabe.",
+      "Ne me confonds pas avec -๊, l'accent qui indique le ton haut.",
+      "On dit que je ressemble à un petit fœtus. Ce sera ton dispositif mnémotechnique."
+    ],
     "test": {
       "prompt": "เล็ก",
       "distractors": ["เลก", "ลเ็ก", "เล๊ก", "เ๊ลก"]
     },
     "en_mem": "-็ looks like a >small< fetus.",
-    "fr_mem": ""
+    "fr_mem": "-็ ressemble à un >petit< fœtus."
   },
   "37": {
     "th": "ผ",
@@ -933,7 +980,7 @@
       "distractors": ["ไม่", "ไม", "ไม์", "ไม้", "ไม็", "ไม้", "ไม๋"]
     },
     "en_mem": "-๊ looks like the number 3 (3 is ๓ in Thai), and indicates the high tone. Think: Drei-high (\"drei\", pronounced \"dry\", means \"three\" in German)!",
-    "fr_mem": "-๊ ressemblee à un 3 (le 3 est ๓ en thaï), et indique le ton haut. Pense: haut comme un troiseau! (trois-oiseau)"
+    "fr_mem": "-๊ ressemble à un 3 (le 3 est ๓ en thaï), et indique le ton haut. Pense: haut comme un troiseau! (trois-oiseau)"
   },
   "43": {
     "th": "-๋",

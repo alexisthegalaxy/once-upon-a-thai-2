@@ -88,6 +88,7 @@ __meta__ = {
 }
 
 [node name="PreviousPage" type="Button" parent="Control"]
+visible = false
 margin_left = 1.17009
 margin_top = 147.944
 margin_right = 57.1701

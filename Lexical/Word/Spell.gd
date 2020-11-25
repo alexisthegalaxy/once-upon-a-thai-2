@@ -114,7 +114,6 @@ func _process(delta):
 				velocity = Vector2(0, 0)
 
 func starts_disappearing():
-	print('starts_disappearing')
 	is_disappearing = true
 
 # interact functions such as this one are lauched by the space_bar_to_interact in player.gd

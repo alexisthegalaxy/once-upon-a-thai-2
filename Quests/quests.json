@@ -64,8 +64,56 @@
     "fr_description": "Implante le Mot อะไร dans la source de la pierre sacréee derrière le temple du Chaiyaphum.",
     "en_end_description": "Go back to Anchalee in Chaiyaphum's temple.",
     "fr_end_description": "Retourne voir Anchalee au temple de Chaiyaphum.",
-    "type": "implant_source",
-    "parameters": [[203], []]
+    "fr_finish_dialog": [
+      "Excellent, maintenant tu sais implanter un mot dans une source.",
+      "C'est très utile, ça te permet de garder au près de toi les mots que tu veux,",
+      "ça t'aide à te rappeler des mots si tu sais où les trouver,",
+      "et ça nous permet de restaurer l'équilibre, car de plus en plus de mots disparaissent."
+    ],
+    "en_finish_dialog": [
+      "Excellent, [Name], now you know how to implant a Spell in a source.",
+      "That's very useful, it allows you to keep with you the words you need,",
+      "and knowing where a Spell lives helps you remember it.",
+      "Besides its our role to restore balance, as more and more Spells are going missing lately."
+    ],
+    "type": "implant_source_with_this_word_i_gave_you",
+    "parameters": [56, "EmptySourceBehindWat"]
+  },
+  "implant_source_in_chaiyaphum_field": {
+    "blockers": ["implant_source_behind_the_temple"],
+    "en_name": "Looking for water",
+    "fr_name": "Chercher de l'eau",
+    "counter_max": 1,
+    "en_start_dialog": [
+      "Excuse me, but I noticed you are a shaman apprentice - would you help me?",
+      "In my field, there used to be a source for the Spell of water: น้ำ.",
+      "But for some reason it got dried up this morning, and all the Spells are gone.",
+      "They were doing all the watering for my crops, so I'd be super grateful if you could implant water in it again!",
+      "I hear there's a well south from here where you could find water Spells, would you like to fetch one and implant it into my well?"
+    ],
+    "fr_start_dialog": [
+      "Excusez-moi, mais j'ai remarqué que vous faisiez un apprentissage de chaman - pourriez-vous m'aider ?",
+      "Dans mon champs, avant il y avait une source pour le mot de l'eau: น้ำ.",
+      "Je ne sais pas pourquoi mais récemment depuis ce matin il n'y en a plus : tous les mots ont disparu.",
+      "Ces mots s'occupent d'arroser mes plantations,",
+      "alors je serais vraiment reconnaissante si vous pouviez réimplanter l'eau dans mon champs !",
+      "Je sais qu'il y a un puits au sud d'ici ou on peut trouver des mots d'eau,",
+      "pourriez-vous en ramener et l'implanter dans mon puits ?"
+    ],
+    "en_description": "Find the Spell น้ำ in the forest south of Chaiyaphum, and implant in in the well of the field of Chaiyaphum.",
+    "fr_description": "Trouve le mot น้ำ dans la forêt au sud de Chaiyaphum, et implante-le dans le puits du champs de Chaiyaphum.",
+    "en_end_description": "Go back to the farmer in Chaiyaphum's temple.",
+    "fr_end_description": "Retourne voir la fermière au temple de Chaiyaphum.",
+    "fr_finish_dialog": [
+      "Merci mille fois ! Pour ta récompense, prends-ceci :",
+      "[ShowNoName] Elle dépose un gecko tokay sur la tête de [Name]."
+    ],
+    "en_finish_dialog": [
+      "Thank you so much! As a reward, take this:",
+      "[ShowNoName] She puts a tokay gecko on the head of [Name]."
+    ],
+    "type": "implant_source_with_this_word",
+    "parameters": [156, "EmptySourceField"]
   },
   "implant_word_cut": {
     "blockers": [],

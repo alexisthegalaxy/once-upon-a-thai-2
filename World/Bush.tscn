@@ -1,12 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://World/assets/Bush.png" type="Texture" id=1]
+[ext_resource path="res://World/Bush.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7.13805, 14.9192 )
 
+[sub_resource type="CircleShape2D" id=2]
+radius = 25.8599
+
 [node name="Bush" type="StaticBody2D"]
 collision_mask = 0
+script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0.384229, -4.6876 )
@@ -17,3 +22,10 @@ position = Vector2( -0.463653, 2.09074 )
 rotation = 1.57079
 scale = Vector2( -0.961132, 0.913371 )
 shape = SubResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 2 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

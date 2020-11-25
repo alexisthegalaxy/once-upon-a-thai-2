@@ -91,6 +91,7 @@ func dialog_option(parameters):
 			elif len(Game.following_spells) == 1:
 				word_ids.append(Game.following_spells[0].id)
 				update_source(false)
+				Quests.update_implant_source_with_this_word_quests(name)
 				Game.following_spells[0].over_word.starts_disappearing()
 				Game.following_spells = []
 			else:
