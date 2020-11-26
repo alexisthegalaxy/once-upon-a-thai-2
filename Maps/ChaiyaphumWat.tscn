@@ -45,7 +45,7 @@ post_dialog_event = [ "say_sentence", 210 ]
 
 [node name="FarmerWoman" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( -20.232, 68.5908 )
-dialog = [ "I came here to get some help from the shaman." ]
+dialog = [ "_i_came_here_to_get_help_from_the_shamans" ]
 sprite_path = "res://Npcs/sprites/farmer_woman.png"
 direction = "up"
 display_name = "Farmer"

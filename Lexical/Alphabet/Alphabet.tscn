@@ -62,8 +62,7 @@ margin_right = 43.0
 margin_bottom = 47.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Numbers
-"
+text = "_numbers"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -76,7 +75,7 @@ margin_right = 40.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Accents"
+text = "_accents"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -89,7 +88,7 @@ margin_right = 109.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "High Class Consonants"
+text = "_high_class_consonants"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -102,7 +101,7 @@ margin_right = 40.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Vowels"
+text = "_vowels"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -115,7 +114,7 @@ margin_right = 106.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Mid Class Consonants"
+text = "_mid_class_consonants"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -128,7 +127,7 @@ margin_right = 109.0
 margin_bottom = 22.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Low Class Consonants"
+text = "_low_class_consonants"
 __meta__ = {
 "_edit_use_anchors_": false
 }

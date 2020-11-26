@@ -130,18 +130,16 @@
     "frequency_index": "9",
     "audio": "มอ",
     "en_introduction": [
-      "Hello [Name],",
-      "I am ม, the letter m. [sound]",
+      "Hello [Name], I am ม, the consonant \"m\". [sound]",
       "I look a lot like my sister น, the n,",
       "but my loops are on the sa>M<e side.",
       "and the น's loops are >N<ot on the same side!"
     ],
     "fr_introduction": [
-      "Hello [Name],",
-      "I am ม, the letter m. [sound]",
-      "I look a lot like my sister น, the n,",
-      "but my loops are on the sa>M<e side.",
-      "and the น's loops are >N<ot on the same side!"
+      "Je suis ม, la consonne \"m\". [sound]",
+      "Je ressemble beaucoup à ma sœur น, le \"n\",",
+      "mais mes boucles sont du >M<ême coté.",
+      "et celles du น, >N<on!"
     ],
     "en_mem": "ม has its loops on the sa>m<e side.",
     "fr_mem": "ม a ses boucles du >m<ême coté."
@@ -207,14 +205,14 @@
       "Alors je remplace la consonne: \"an\" s'écrit อัน.",
       "Du coup, นอ se dit \"no\", ไอ se dit \"aï\", et ออ se dit \"o\".",
       "Pour te rappeler que je marque l'absence de consonne, dis-toi que je ressemble à un zéro 0!",
-      "Et je fais le son o parce que je ressemble à une bouche ouverte qui dit \"o\"!"
+      "Et je fais le son \"o\" parce que je ressemble à un \"O\"!"
     ],
     "test": {
       "prompt": "ชอบ",
       "distractors": ["ชบ", "อชบ", "ออบ"]
     },
     "en_mem": "อ makes the \"or\" sound because it looks like an open mouth saying \"o\", and replace syllables with no consonants because it looks like a zero 0.",
-    "fr_mem": "อ fait le son \"o\" car il ressemble à une bouche ouverte qui dit \"o\", et remplace l'absence de consonne car il ressemble au zéro 0."
+    "fr_mem": "อ fait le son \"o\" car il ressemble à un \"O\", et remplace l'absence de consonne car il ressemble au zéro 0."
   },
   "8": {
     "th": "ล",
@@ -292,7 +290,6 @@
     ],
     "fr_introduction": [
       "Je suis ท. On me prononce t'h, comme un t, mais aspiré. [sound]",
-      "so you can write me t'h.",
       "Je suis le son \"t'h\" dans le mot \"Thaï\" (ไทย), c'est pour ça qu'on écrit Thaï avec un \"h\" !",
       "Voilà comment tu peux te souvenir de moi :",
       "Je ressemble à une t'hortue (tortue) : la tête à gauche et la bosse de ma carapace à droite.",
@@ -330,9 +327,13 @@
     "audio": "ยอ",
     "en_introduction": [
       "Yo [Name]!",
-      "I'm the consonant ย and I'm pronounced y, [sound]",
-      "I look like the top part of the lowercase \"y\", don't you think?",
-      "Alright, let's get you tested!"
+      "I'm the consonant ย and I'm pronounced \"y\", [sound]",
+      "I look like the top part of the lowercase \"y\", so it's easy to remember me!"
+    ],
+    "fr_introduction": [
+      "Yo [Name]!",
+      "Je suis la consonne ย et on me prononce \"y\", [sound]",
+      "Je ressemble à la partie supérieure du \"y\" minuscule, alors c'est facile de se rappeler de moi !"
     ],
     "test": {
       "prompt": "ยา",
@@ -419,7 +420,7 @@
       "Je spirale comme une empreinte >D<igitale, alors que ค ressemble à un paon qui fait la >C<our avec sa >Q<ueue.",
       "Ne me confonds pas non plus avec ต, mon frère le \"dt\": il a plus de DéTails sur sa tête.",
       "On me prononce \"t\" à la fin des syllabes, car les Thaïs ne voisent pas la dernière consonne dans une syllabe.",
-      "C'est pourquoi ils ont parfois du mal avec des mots comme ride et rite !"
+      "C'est pourquoi ils ont parfois du mal avec des mots comme \"ride\" et \"rite\" !"
     ],
     "test": {
       "prompt": "ได",
@@ -439,12 +440,17 @@
     "frequency_index": "22",
     "audio": "บอ",
     "en_introduction": [
-      "Bonjour, I'm the b! [sound]",
+      "Bonjour, I'm the \"b\"! [sound]",
       "I look like my brother ป (bp), and we're both pronounced \"p\" at the end of a syllable.",
       "I look like a >b<ucket, right?"
     ],
+    "fr_introduction": [
+      "Bonjour, je suis le \"b\" ! [sound]",
+      "Tout comme mon bro ป (bp), je suis prononcé \"p\" à la fin de la syllabe.",
+      "Je ressemble à un bassin, ou un baquet, n'est-ce pas ?"
+    ],
     "en_mem": "บ looks like a >b<ucket.",
-    "fr_mem": ""
+    "fr_mem": "บ ressemble à un bassin, ou un baquet."
   },
   "19": {
     "th": "ป",
@@ -528,9 +534,10 @@
     "fr_introduction": [
       "Coucou, moi c'est ค !",
       "On me prononce \"k'h\", c'est comme \"k\", mais aspiré, comme avec un \"h\" en anglais. [sound]",
-      "Ne me confonds pas avec le ด, le \"d\". Tu vois la différence ?",
-      "Je ressemble à un paon qui fait la >C<our avec sa >Q<ueue, tandis que ด spirale comme une empreinte >D<igitale.",
-      "Et aussi, je suis pas la seule lettre en thaï qu'on prononce \"k'h\".",
+      "Ne me confonds pas avec ด, le \"d\". Tu vois la différence ?",
+      "Je ressemble à un paon qui fait la >C<our avec sa >Q<ueue,",
+      "tandis que ด spirale comme une empreinte >D<igitale.",
+      "Et aussi, je ne suis pas la seule lettre en thaï qu'on prononce \"k'h\".",
       "Les autres sont ข, qui est assez fréquent, et ฆ, qui est plus rare. Et il y a aussi ฃ qui est devenu obsolète !",
       "Allez, je vais te tester maintenant !"
     ],
@@ -692,18 +699,25 @@
     "audio": "ชอ",
     "en_introduction": [
       "Hey, I'm the charming \"ch\" sound! [sound]",
-      "I'm not the only one - ฉ and ฌ also make the sound \"ch\", but they're rare.",
-      "But the \"ch\" sound becomes \"t\" at the end of a syllable.",
+      "I'm not the only one - ฉ and ฌ also make the sound \"ch\", but they're rarer.",
+      "The \"ch\" sound becomes \"t\" at the end of a syllable.",
       "To remember me, notice how I look like the body of a >ch<ick (head on the left, tail on the right).",
-      "And also: don't get me confused with the ซ (s), the บ (b) or the ข (k'h)!",
-      "Anyway - test time!"
+      "And also: don't get me confused with the ซ (s), the บ (b) or the ข (k'h)!"
+    ],
+    "fr_introduction": [
+      "Je suis le son \"tch\", comme dans \"match\"! [sound]",
+      "Je ne suis pas le seul, ฉ et ฌ font aussi le sont \"tch\", mais ils sont plus rares.",
+      "Je deviens \"t\" à la fin de la syllabe.",
+      "Pour te rappeler de moi, imagine une choppe de bière, de la mousse à gauche,",
+      "et une éclaboussure à droite : >tch<ine-tchine !",
+      "Ah, et aussi : ne me confonds pas avec ซ (s), บ (b) ou ข (k'h) !"
     ],
     "test": {
       "prompt": "ชอบ",
       "distractors": ["ฉอบ", "ซอบ", "บอบ", "ขอบ"]
     },
     "en_mem": "ช looks like the body of a >ch<ick (head on the left, tail on the right).",
-    "fr_mem": ""
+    "fr_mem": "ช à une choppe de bière, mousse à gauche, éclaboussure à droite : >tch<ine-tchine !"
   },
   "31": {
     "th": "ข",

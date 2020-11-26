@@ -25,7 +25,7 @@ func update_label_text():
 			letters_we_look_for_that_we_know.append(letter["id"])
 		else:
 			letters_we_look_for_that_we_dont_know.append(letter["id"])
-	var text = "Looking for letters: "
+	var text = tr("_looking_for_letters")
 	for letter in letters_we_look_for:
 		if letter["id"] in letters_we_look_for_that_we_know:
 			text += TRANSPARENT_BLACK + letter["th"] + "[/color]" + ", "
@@ -33,7 +33,7 @@ func update_label_text():
 			all_letters_are_known = false
 			text += OPAQUE_BLACK + letter["th"] +"[/color]" +  ", "
 	if all_letters_are_known:
-		$Node2D/Label.bbcode_text = "Found all required letters"
+		$Node2D/Label.bbcode_text = tr("_found_required_letters")
 	else:
 		text = text.trim_suffix(", ")
 		$Node2D/Label.bbcode_text = text

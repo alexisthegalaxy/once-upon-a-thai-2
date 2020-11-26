@@ -21,7 +21,8 @@ func _ready():
 	init_with_initial_state()
 
 func init_with_initial_state():
-	quests['find_sentences_in_chaiyaphum'].status = FINISHED
+	pass
+#	quests['find_sentences_in_chaiyaphum'].status = FINISHED
 
 func start_quest(quest_id):
 	print('we start the quest ', quest_id)

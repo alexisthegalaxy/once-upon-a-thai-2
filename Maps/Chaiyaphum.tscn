@@ -6274,7 +6274,7 @@ display_name = "_dad"
 
 [node name="PetsMom" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 603.748, 683.811 )
-dialog = [ "Are you looking for Pet? He's just left, he’s doing his shamanic initiation with his dad.", "Come again later, you could be training together!" ]
+dialog = [ "_are_you_looking_for_pet", "_come_again_later_and_train_together" ]
 sprite_path = "res://Npcs/sprites/pets_mom.png"
 display_name = "Pet's mom"
 
@@ -6299,7 +6299,7 @@ sprite_path = "res://Npcs/sprites/beach_boy.png"
 
 [node name="Npc5" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 1143.6, 348.519 )
-dialog = [ "Sorry, the shop is closed today." ]
+dialog = [ "_sorry_shop_closed_today" ]
 sprite_path = "res://Npcs/sprites/old_man.png"
 
 [node name="Ploy" parent="YSort/NPCs" instance=ExtResource( 11 )]

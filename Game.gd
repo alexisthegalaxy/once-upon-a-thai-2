@@ -203,10 +203,10 @@ func learn_letter(letter):
 		Events.events["has_finished_the_letter_world_the_first_time"] = true
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 		var dialog = [
-			"[Name]!",
-			"[Name], do you hear me?",
-			"You have found all the letters you needed for now - you can come back amongst us now.",
-			"To leave this world, press the F key.",
+			tr("_name_exclamation_mark"),
+			tr("_name_do_you_hear_me"),
+			tr("_you_have_found_all_the_needed_letters_for_now"),
+			tr("_to_leave_this_world_press_f_key"),
 		]
 		Game.current_dialog.init_dialog(dialog, null, null, false, "Yaai")
 		player.stop_walking()

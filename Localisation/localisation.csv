@@ -87,7 +87,7 @@ _look_exclamation_mark,Look!,Regarde !
 _oh_hey_name,"Oh, hey [Name].","Tiens, salut [Name]."
 _what_you_finished_your_initiation,"What, you finished your initiation?","Quoi, tu viens de finir ton initiation ?"
 _tch_took_you_long_mine_finished_thirty_minutes_ago,Tch. It took you long enough. I finished mine thirty minutes ago already.,"Pff, ça t'en a pris, du temps. Moi j'ai finis il y a trente minutes déjà."
-_id_like_to_have_you_as_training_but_cant_match_intellect,I’d like to have you as a training partner but I doubt you’ll be able to match my intellect.,"J'aurais bien aimé qu'on s'entraîne ensemble, mais je doute que tu sois assez doué pour moi."
+_id_like_to_have_you_as_training_but_cant_match_intellect,I’d like to have you as a training partner but I doubt you’ll be able to match my intellect.,"J'aurais bien aimé qu'on s'entraîne ensemble, mais je doute que tu sois à mon niveau, ce serait trop facile pour moi."
 _you_cant_even_write_bpai,"I’m guessing you don’t even know how to write a basic word such as ""bpai"". @Q ไท/ ปไ/ ไป/ ทไ","Je parie que tu ne sais même pas comment on écrit un mot basique comme ""bpai"" en thaï. @Q ไท/ ปไ/ ไป/ ทไ"
 _see_bpai_is_written_i_go_to_chaiyaphum_loser,"See? ""bpai"" is written ไป. In any case, I’ve got important stuff to do in Chaiyaphum. Smell ya later, loser!","Tu vois ? ""bpai"" s'écrit ไป. Bon, j'ai des trucs à faire à Chaiyaphum, alors à plus, loser !"
 _hmph_yeah_anyway_i_to_to_chaiyaphum_loser,"Hmph, yeah. In any case, I’ve got important stuff to do in Chaiyaphum. Smell ya later, loser!","Mouais. Bon, j'ai des trucs à faire à Chaiyaphum, alors à plus, loser !"
@@ -102,5 +102,41 @@ _once_you_drink_this,"Once you drink this potion, you will gain power over spiri
 _but_theres_a_cost,But there is a cost:,Mais il faudra payer le prix :
 _youll_forget_thai,you will forget everything you know of the Thai language and you’ll have to learn Thai again from scratch.,"Tu oublieras tout ce que tu sais du thaï, et il te faudras réapprendre le thaï depuis le début."
 _you_trade_thai_for_power,You trade your fluency in your mother tongue for power over the spirit world.,Tu échanges ta langue maternelle contre le pouvoir de commander le monde spirituel.
-_if_you_ready_drink_this,"If you're ready, drink this.","Si ton cœur est prêt, bois."
+_if_you_ready_drink_this,"If you're ready, drink this.","Si ton cœur est prêt, alors bois."
 _name_drink_potion,[ShowNoName][Name] drinks Yaai's potion.,[ShowNoName][Name] boit la potion de Yaai.
+_name_you_see_this_sentence,"[Name], you see the sentence written here?","[Name], tu vois cette phrase écrite ici ?"
+_this_is_your_first_since_forgotten_thai,This will be your first sentence since you've forgotten Thai!,C'est ta première phrase depuis que tu réapprends le thaï !
+_this_means_thai_people_are_good,"This sentence means \""Thai people are good people\"" - don't ask me why.","Cette phrase signifie ""Les Thaïs sont de bonnes personnes"" - ne me demande pas pourquoi."
+_sentences_like_this_help_you_understand_the_meaning_of_words,"Sentences like this will help you understand the meaning of words, you should write it in your notebook.","Ce genre de phrases t'aide à comprendre le sens des mots, alors tu devrais la noter dans ton carnet."
+_im_so_happy_for_pet_initiation_went_well,"I’m so happy for Pet, his shamanic initiation went well.","Je suis tellement contente pour Pet, son initiation chamanique s'est bien passée."
+_hes_in_chaiyaphum_tell_him_to_drop_by,"He’s in Chaiyaphum now, tell him to drop by if you meet him!","Il devrait être à Chaiyaphum maintenant, dis-lui de passer à la maison si tu le vois !"
+_thats_good_name_very_good,"That's good, [Name], very good!","C'est bien, [Name], c'est très bien !"
+_now_go_to_chaiyaphum_see_anchalee,"Now, go to Chaiyaphum, I asked the grandmother of your friend Ploy to train you.","Maintenant, va à Chaiyaphum, j'ai demandé à la grand-mère de ton amie Ploy de t'entraîner."
+_i_have_important_issues_to_solve_in_the_spirit_world,I have very important issues to solve in the spirit world.,J'ai un problème important à régler dans le monde spirituel.
+_if_everything_goes_well_ill_see_you_soon,"If everything goes well, I'll be seeing you soon, [Name].","Si tout se passe bien, on se reverra bientôt, [Name]."
+_are_you_looking_for_pet,"Are you looking for Pet? He's just left, he’s doing his shamanic initiation with his dad.","Tu viens voir Pet ? Désolée, il vient de partir, il est en train de passer son initiation chamanique avec son père."
+_come_again_later_and_train_together,"Come again later, you could be training together!","Reviens tout-à-l'heure, vous pourriez vous entraîner ensemble quand tu auras finis la tienne !"
+_sorry_shop_closed_today,"Sorry, the shop is closed today, come again tomorrow!","Désolé, le magasin est fermé aujourd'hui, repasse demain !"
+_you_made_first_step_in_lexical_world,"[Name], you made your first step into the Lexical World, this shall be your Memory Palace.","[Name], tu viens de faire ton premier pas dans le Monde Lexical, il sera ton palais de la mémoire."
+_this_places_will_make_it_easier_for_you_to_learn_the_letters,This place will make it easier for you to learn the letters.,Cet endroit te facilitera l'apprentissage de l'alphabet thaï.
+_your_first_task_will_be_to_find_these_five_letters,"First, go find the following letters:              น, ท, ย, ค, ไ-.","Pour commencer, va trouver les lettres suivantes :                  น, ท, ย, ค, ไ-."
+_looking_for_letters,Looking for letters:,Trouve les lettres :
+_found_required_letters,Found all required letters,Toutes les lettres requises sont trouvées
+_names_takes_door_to,[Name] takes the door to the ,[Name] prend la porte menant au 
+_vowels,Vowels,Voyelles
+_name_exclamation_mark,[Name]!,[Name] !
+_name_do_you_hear_me,"[Name], do you hear me?","[Name], tu m'entends ?"
+_you_have_found_all_the_needed_letters_for_now,You have found all the letters you needed for now - you can come back amongst us now.,"Tu as trouvé toutes les letters qu'il te fallais, tu peux rentrer maintenant."
+_to_leave_this_world_press_f_key,"To leave the Lexical World, press the F key.","Pour quitter le Monde Lexical, appuie sur F."
+_tones,Tones,Tons
+_numbers,Numbers,Chiffres
+_accents,Accents,Accents
+_high_class_consonants,High Class Consonants,Consonnes de haute classe
+_mid_class_consonants,Mid Class Consonants,Consonnes de moyenne classe
+_low_class_consonants,Low Class Consonants,Consonnes de basse classe
+_you_found_letter_s_you_put_it_in_bag_come_in_handy_later,"You've found the letter %s. You keep it with you, it might come in handy later!","Tu as trouvé la lettre %s. Tu la gardes avec toi, ça pourrait être utile plus tard !"
+_i_came_here_to_get_help_from_the_shamans,I came here to get some help from the shamans,Je suis venue ici pour chercher l'aide des chamans.
+_hey_name_long_time_no_see_heres_a_sentence_for_you,"Hey [Name], long time no see! Here's a sentence for you to learn:","Salut [Name], ça faisait longtemps ! Tiens, voilà une phrase pour toi :"
+_you_want_to_learn_a_sentence_how_about,"So, you want to learn a Sentence? How about :","Alors, tu veux apprendre une phrase ? Qu'est-ce que tu dis de celle-là :"
+_hey_my_name_is_som,"Hey, my name is Som, I just moved here recently.","Salut, je m'appelle Som, on vient d'emménager ici."
+_heres_a_sentence_for_you,"Oh, you're learning Thai? Here's a Thai sentence for you:","Oh, tu apprends le thaï ? Je peux t'enseigner une phrase si tu veux :"

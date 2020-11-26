@@ -990,13 +990,13 @@
   "197": {
     "th": "ผม_ชอบ_คน_ไทย",
     "en": "I (male) like Thai people.",
-    "fr": "J'aime bien les Thaïlandais.",
+    "fr": "J'aime bien les Thaïlandais. [dit par un homme]",
     "word_ids": [23, 238, 343, 345]
   },
   "198": {
     "th": "คน_ดี_ชอบ_ฉัน",
     "en": "Good people like me (female).",
-    "fr": "Les gens biens m'aiment bien.",
+    "fr": "Les gens biens m'aiment bien. [dit par une femme]",
     "word_ids": [343, 82, 238, 24]
   },
   "199": {

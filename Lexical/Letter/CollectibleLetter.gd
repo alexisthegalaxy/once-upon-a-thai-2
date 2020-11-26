@@ -30,7 +30,9 @@ func _process(delta):
 
 func interact():
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-	Game.current_dialog.init_dialog(["You've found the letter " + letter["th"] + ". You put it in your bag. It might come in handy later!"], self, null, null, null)
+	Game.current_dialog.init_dialog([
+		tr("_you_found_letter_s_you_put_it_in_bag_come_in_handy_later") % letter["th"]
+	], self, null, null, null)
 	Game.player.stop_walking()
 	Game.current_scene.add_child(Game.current_dialog)
 	is_disappearing = true

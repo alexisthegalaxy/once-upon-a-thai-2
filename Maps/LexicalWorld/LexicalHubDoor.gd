@@ -59,7 +59,7 @@ func interact():
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var dialog = [
 #		leads_to + " \nDo you want to take it? @QYes/No"
-		"[Name] takes the door to the " + leads_to + "."
+		tr("_names_takes_door_to") + leads_to + "."
 	]
 	Game.current_dialog.init_dialog(dialog, self, "post_dialog", false, null)
 	Game.player.stop_walking()

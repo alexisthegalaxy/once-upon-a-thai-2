@@ -547,6 +547,7 @@
   "63": {
     "split": "หรือ-ไง",
     "en": "or what?",
+    "fr": "ou quoi ??",
     "tones": "RM",
     "pos": "None",
     "th": "หรือไง",
@@ -1746,6 +1747,7 @@
   "208": {
     "split": "ทำ",
     "en": "to make, to do",
+    "fr": "faire",
     "tones": "M",
     "pos": "VERB",
     "th": "ทำ",
@@ -3163,6 +3165,7 @@
   "382": {
     "split": "เร็ว-ๆ-นี้",
     "en": "soon, recently",
+    "fr": "bientôt, récemment",
     "tones": "MMF",
     "pos": "None",
     "th": "เร็วๆนี้",

@@ -120,10 +120,10 @@ func _on_Area2D3_body_entered(body):
 		if Events.events["has_gone_to_rock"] and not Events.events["yaai_explains_rock"]:
 			Events.events["yaai_explains_rock"] = true
 			$YSort/NPCs/Yaai.dialog = [
-				"[Name], you see the sentence written here?",
-				"This will be your first sentence since you've forgotten Thai!",
-				"This sentence means \"Thai people are good people\" - don't ask me why.",
-				"Sentences like this will help you understand the meaning of words, you should write it in your notebook.",
+				tr("_name_you_see_this_sentence"),
+				tr("_this_is_your_first_since_forgotten_thai"),
+				tr("_this_means_thai_people_are_good"),
+				tr("_sentences_like_this_help_you_understand_the_meaning_of_words"),
 			]
 			$YSort/NPCs/Yaai.post_dialog_event = ["learns_first_sentence", $YSort/NPCs/Yaai]
 			$YSort/NPCs/Yaai.is_walking_towards = []  # to make sure NPC can interact
@@ -138,10 +138,10 @@ func _on_Area2D6_body_entered(body):
 	if not Events.events.yaai_has_given_last_warning_before_forest and Events.events.yaai_explains_rock:
 		Events.events.yaai_has_given_last_warning_before_forest = true
 		$YSort/NPCs/Yaai.dialog = [
-			"Well done [Name]!",
-			"Now, your test will be to guess the meaning of all words you will find deeper in the forest.",
-			"I believe four types of Spells live there.",
-			"Good luck, I'll watch you from here.",
+			tr("_well_done_name"),
+			tr("_now_your_test_will_be_to"),
+			tr("_i_believe_four_types_of_spells_live_there"),
+			tr("_good_luck_ill_watch_you_from_here"),
 			]
 		$YSort/NPCs/Yaai.post_dialog_event = []
 		$YSort/NPCs/Yaai.interact()
@@ -154,15 +154,15 @@ func _on_Area2D6_body_entered(body):
 
 func set_events_when_has_learnt_four_first_words():
 	$YSort/NPCs/PetsMom.dialog = [
-		"I’m so happy for Pet, his shamanic initiation went well.",
-		"He’s in Chaiyaphum now, tell him to drop by if you meet him!"
+		tr("_im_so_happy_for_pet_initiation_went_well"),
+		tr("_hes_in_chaiyaphum_tell_him_to_drop_by")
 	]
 	$YSort/NPCs/Yaai.dialog = [
-		"That's good, [Name], very good!",
-		"Now, go to Chaiyaphum, and ask the grandmother of your friend Ploy to carry on with your training.",
-		"I have very important issues to solve in the spirit world.",
-		"If everything goes well, I'll be seeing you soon, [Name].",
-		]
+		tr("_thats_good_name_very_good"),
+		tr("_now_go_to_chaiyaphum_see_anchalee"),
+		tr("_i_have_important_issues_to_solve_in_the_spirit_world"),
+		tr("_if_everything_goes_well_ill_see_you_soon"),
+	]
 	$YSort/NPCs/Yaai.post_dialog_event = ["npc_disappears_in_white_orb", [$YSort/NPCs/Yaai]]
 	$YSort/NPCs/Pet.position = Vector2(557.0, 432.6)
 

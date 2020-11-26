@@ -38,14 +38,14 @@ position = Vector2( -15.2692, 35.0802 )
 
 [node name="PloysMother" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( 62.469, 37.672 )
-dialog = [ "You want to learn a Sentence? How about", "คุณชอบอะไร" ]
+dialog = [ "_you_want_to_learn_a_sentence_how_about" ]
 sprite_path = "res://Npcs/sprites/mom.png"
 display_name = "Ploy's mother"
 post_dialog_event = [ "teach_sentence", 201 ]
 
 [node name="PloysFather" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( -14.2017, -28.5934 )
-dialog = [ "Hey [Name]. I'll teach you this sentence:", "ผมไม่ชอบคนไม่ดี" ]
+dialog = [ "_hey_name_long_time_no_see_heres_a_sentence_for_you" ]
 sprite_path = "res://Npcs/sprites/dad.png"
 direction = "right"
 display_name = "Ploy's dad"
