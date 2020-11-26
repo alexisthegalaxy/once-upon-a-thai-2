@@ -5,7 +5,7 @@
 [ext_resource path="res://Npcs/Npc.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/RoomBackground.png" type="Texture" id=4]
 [ext_resource path="res://Maps/ChaiyaphumWat.gd" type="Script" id=5]
-[ext_resource path="res://World/IndoorBuddhaShrine.tscn" type="PackedScene" id=6]
+[ext_resource path="res://World/Source.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
 [ext_resource path="res://Lexical/Word/Spell.tscn" type="PackedScene" id=16]
@@ -33,23 +33,31 @@ position = Vector2( 336, 624 )
 position = Vector2( 55.5573, -231.463 )
 direction = "up"
 
-[node name="House" parent="YSort" instance=ExtResource( 6 )]
-position = Vector2( -15.2692, 35.0802 )
+[node name="NPCs" type="YSort" parent="YSort"]
 
-[node name="PloysMother" parent="YSort" instance=ExtResource( 3 )]
+[node name="PloysMother" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( 62.469, 37.672 )
 dialog = [ "_you_want_to_learn_a_sentence_how_about" ]
 sprite_path = "res://Npcs/sprites/mom.png"
 display_name = "Ploy's mother"
 post_dialog_event = [ "teach_sentence", 201 ]
 
-[node name="PloysFather" parent="YSort" instance=ExtResource( 3 )]
+[node name="PloysFather" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( -14.2017, -28.5934 )
 dialog = [ "_hey_name_long_time_no_see_heres_a_sentence_for_you" ]
 sprite_path = "res://Npcs/sprites/dad.png"
 direction = "right"
 display_name = "Ploy's dad"
 post_dialog_event = [ "teach_sentence", 200 ]
+
+[node name="Sources" type="YSort" parent="YSort"]
+
+[node name="PloyHouseShrine" parent="YSort/Sources" instance=ExtResource( 6 )]
+position = Vector2( -17.0797, 28.5594 )
+type = "IndoorBuddhaShrine"
+word_ids = [  ]
+max_number_of_words = 1
+wait_time = 5
 
 [node name="Lights" type="Node" parent="."]
 

@@ -24,7 +24,7 @@ func sentence_discovery_init(sentence_id, is_translated):
 #		$Label.text = "You've discovered a sentence!"
 #		$LabelSmall.text = "It might help you later to guess the meaning of its words"
 	$Sentence.init_interactive_sentence(sentence, null, true)
-	
+
 func _on_Button_pressed():
 	queue_free()
 	if has_learnt_the_sentence or has_seen_the_sentence:

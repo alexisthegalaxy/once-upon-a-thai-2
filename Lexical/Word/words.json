@@ -556,6 +556,7 @@
   "64": {
     "split": "วัน-นี้",
     "en": "today",
+    "fr": "aujourd'hui",
     "tones": "MH",
     "pos": "None",
     "th": "วันนี้",
@@ -839,6 +840,7 @@
   "97": {
     "split": "ว่าง",
     "en": "free",
+    "fr": "libre",
     "tones": "F",
     "pos": "ADJ",
     "th": "ว่าง",
@@ -1269,6 +1271,7 @@
   "150": {
     "split": "ครู",
     "en": "teacher",
+    "fr": "professeur",
     "tones": "M",
     "pos": "NOUN",
     "th": "ครู",
@@ -1672,6 +1675,7 @@
   "199": {
     "split": "ต้อง",
     "en": "to have to, must",
+    "devoir": "devoir (faire quelque chose)",
     "tones": "F",
     "pos": "VERB",
     "th": "ต้อง",
@@ -1974,6 +1978,7 @@
   "236": {
     "split": "มี",
     "en": "to have",
+    "fr": "avoir",
     "tones": "M",
     "pos": "VERB",
     "th": "มี",
@@ -2026,6 +2031,7 @@
   "242": {
     "split": "ควร",
     "en": "should",
+    "fr": "devrait",
     "tones": "M",
     "pos": "VERB",
     "th": "ควร",
@@ -2130,6 +2136,7 @@
   "255": {
     "split": "อัง-กฤษ",
     "en": "England, Britain",
+    "fr": "Royaume-Uni",
     "tones": "ML",
     "pos": "PLAC",
     "th": "อังกฤษ",
@@ -2194,6 +2201,7 @@
   "263": {
     "split": "อา-ยุ",
     "en": "age",
+    "fr": "âge",
     "tones": "MH",
     "pos": "NOUN",
     "th": "อายุ",
@@ -2437,6 +2445,7 @@
   "293": {
     "split": "ได้-ยิน",
     "en": "to hear",
+    "fr": "devenir",
     "tones": "FM",
     "pos": "VERB",
     "th": "ได้ยิน",
@@ -2454,7 +2463,7 @@
   "295": {
     "split": "ต้อง-การ",
     "en": "to want (followed by nouns)",
-    "en": "vouloir (suivi d'un nom)",
+    "fr": "vouloir (suivi d'un nom)",
     "tones": "FM",
     "pos": "VERB",
     "th": "ต้องการ",
@@ -2471,6 +2480,7 @@
   "297": {
     "split": "ขับ-รถ",
     "en": "to drive",
+    "fr": "conduire",
     "tones": "LH",
     "pos": "VERB",
     "th": "ขับรถ",
@@ -2479,6 +2489,7 @@
   "298": {
     "split": "บัน-ทึก",
     "en": "to save",
+    "fr": "enregistrer",
     "tones": "MH",
     "pos": "VERB",
     "th": "บันทึก",
@@ -2674,6 +2685,7 @@
   "322": {
     "split": "ทำ-อา-หาร",
     "en": "to cook",
+    "fr": "cuisiner",
     "tones": "MMR",
     "pos": "VERB",
     "th": "ทำอาหาร",
@@ -2949,6 +2961,7 @@
   "355": {
     "split": "ทำ-นา",
     "en": "to farm",
+    "fr": "s'occuper des champs",
     "tones": "MM",
     "pos": "VERB",
     "th": "ทำนา",
@@ -3045,6 +3058,7 @@
   "367": {
     "split": "กลัว",
     "en": "to fear",
+    "fr": "avoir peur de",
     "tones": "M",
     "pos": "None",
     "th": "กลัว",
@@ -3053,6 +3067,7 @@
   "368": {
     "split": "ดู",
     "en": "to watch, look",
+    "fr": "regarder",
     "tones": "M",
     "pos": "None",
     "th": "ดู",
@@ -3085,6 +3100,7 @@
   "372": {
     "split": "ลา-ก่อน",
     "en": "to say goodbye, leave",
+    "fr": "dire au revoir, partir",
     "tones": "ML",
     "pos": "None",
     "th": "ลาก่อน",
@@ -3101,6 +3117,7 @@
   "374": {
     "split": "ขึ้น",
     "en": "to enter",
+    "fr": "entrer",
     "tones": "F",
     "pos": "None",
     "th": "ขึ้น",
@@ -3133,6 +3150,7 @@
   "378": {
     "split": "กลาย-เป็น",
     "en": "to become",
+    "fr": "devenir",
     "tones": "MM",
     "pos": "None",
     "th": "กลายเป็น",

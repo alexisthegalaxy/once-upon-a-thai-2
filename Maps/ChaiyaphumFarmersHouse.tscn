@@ -5,7 +5,7 @@
 [ext_resource path="res://Npcs/Npc.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/RoomBackground.png" type="Texture" id=4]
 [ext_resource path="res://Maps/ChaiyaphumWat.gd" type="Script" id=5]
-[ext_resource path="res://World/IndoorBuddhaShrine.tscn" type="PackedScene" id=6]
+[ext_resource path="res://World/Source.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
 [ext_resource path="res://Lexical/Word/Spell.tscn" type="PackedScene" id=16]
@@ -33,21 +33,29 @@ position = Vector2( 336, 624 )
 position = Vector2( 33.6885, 74.7005 )
 direction = "up"
 
-[node name="House" parent="YSort" instance=ExtResource( 6 )]
-position = Vector2( -79.7083, 40.4501 )
+[node name="NPCs" type="YSort" parent="YSort"]
 
-[node name="OldMan" parent="YSort" instance=ExtResource( 3 )]
+[node name="OldMan" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( 31.9819, 48.2174 )
 dialog = [ "คุณเป็นใคร" ]
 sprite_path = "res://Npcs/sprites/old_man.png"
 post_dialog_event = [ "say_sentence", 202 ]
 
-[node name="OldWoman" parent="YSort" instance=ExtResource( 3 )]
+[node name="OldWoman" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( -79.259, 62.6003 )
 dialog = [ "คุณเป็นคนแบบไหน" ]
 sprite_path = "res://Npcs/sprites/old_farmer_woman.png"
 direction = "up"
 post_dialog_event = [ "say_sentence", 209 ]
+
+[node name="Sources" type="YSort" parent="YSort"]
+
+[node name="Source" parent="YSort/Sources" instance=ExtResource( 6 )]
+position = Vector2( -77.1074, 28.7225 )
+type = "IndoorBuddhaShrine"
+word_ids = [  ]
+max_number_of_words = 1
+wait_time = 5
 
 [node name="Lights" type="Node" parent="."]
 

@@ -30,25 +30,27 @@ tile_data = PoolIntArray( -589839, 0, 0, -589838, 0, 0, -589837, 0, 0, -589836, 
 position = Vector2( 336, 624 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 76.5032, 80.5199 )
+position = Vector2( 22.1837, 28.3268 )
 direction = "up"
 
 [node name="House" parent="YSort" instance=ExtResource( 6 )]
 position = Vector2( 24.1102, -47.8553 )
 
 [node name="Spell" parent="YSort" instance=ExtResource( 16 )]
-position = Vector2( 39.6281, 43.3009 )
+position = Vector2( 87.955, 34.9887 )
 scale = Vector2( 1.65646, 1.73626 )
 id = 403
 
-[node name="Monk" parent="YSort" instance=ExtResource( 3 )]
+[node name="NPCs" type="YSort" parent="YSort"]
+
+[node name="Monk" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( 84.7222, -5.92984 )
 dialog = [ "ผมเป็นพระครับ" ]
 sprite_path = "res://Npcs/sprites/monk.png"
 direction = "left"
 post_dialog_event = [ "say_sentence", 210 ]
 
-[node name="FarmerWoman" parent="YSort" instance=ExtResource( 3 )]
+[node name="FarmerWoman" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( -20.232, 68.5908 )
 dialog = [ "_i_came_here_to_get_help_from_the_shamans" ]
 sprite_path = "res://Npcs/sprites/farmer_woman.png"
@@ -57,14 +59,14 @@ display_name = "Farmer"
 start_quests = [ "implant_source_in_chaiyaphum_field" ]
 finish_quests = [ "implant_source_in_chaiyaphum_field" ]
 
-[node name="Ploy" parent="YSort" instance=ExtResource( 3 )]
+[node name="Ploy" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( -21.9801, -25.4127 )
 dialog = [ "_my_grandmother_is_super_cool_right" ]
 sprite_path = "res://Npcs/sprites/ploy.png"
 direction = "right"
 display_name = "Ploy"
 
-[node name="PloysGrandmother" parent="YSort" instance=ExtResource( 3 )]
+[node name="PloysGrandmother" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( 25.4361, -25.1674 )
 dialog = [ "_how_s_progress_with_training_name" ]
 sprite_path = "res://Npcs/sprites/ploysgrandmother.png"
@@ -75,6 +77,7 @@ finish_quests = [ "find_sentences_in_chaiyaphum", "implant_source_behind_the_tem
 [node name="Lights" type="Node" parent="."]
 
 [node name="Light2D4" type="Light2D" parent="Lights"]
+visible = false
 position = Vector2( -102.146, 7.9118 )
 scale = Vector2( 2.44416, 2.31672 )
 texture = ExtResource( 2 )
@@ -86,6 +89,7 @@ __meta__ = {
 }
 
 [node name="Light2D7" type="Light2D" parent="Lights"]
+visible = false
 position = Vector2( 191.511, 12.9008 )
 scale = Vector2( 3.00906, 2.33127 )
 texture = ExtResource( 2 )
@@ -98,7 +102,7 @@ __meta__ = {
 
 [node name="CanvasModulate" type="CanvasModulate" parent="Lights"]
 position = Vector2( -95.2873, -89.348 )
-color = Color( 0.854902, 0.827451, 0.827451, 1 )
+color = Color( 0.988235, 0.862745, 0.737255, 1 )
 script = ExtResource( 14 )
 
 [node name="Go outside" parent="." instance=ExtResource( 18 )]

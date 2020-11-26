@@ -1,18 +1,17 @@
 extends Node2D
 
-var can_listen_to_words
 var words = []
 var children = []
 
-func init_interactive_sentence(sentence, main_word_id, _can_listen_to_words):
-	can_listen_to_words = _can_listen_to_words
+func init_interactive_sentence(sentence, main_word_id, hears_sentence_immediately):
 	var current_x = 0
 	for child in children:
 		child.queue_free()
 	children = []
-	
+
 	var playable_sentence = sentence["th"].replace("_", "")
-	SoundPlayer.play_thai(playable_sentence)
+	if hears_sentence_immediately:
+		SoundPlayer.play_thai(playable_sentence)
 	$Node2D/TestSoundPlayer.init_sound_player(playable_sentence)
 	if sentence.id in Game.known_sentences:
 		$Node2D/Translation.text = sentence[TranslationServer.get_locale()]
@@ -25,7 +24,7 @@ func init_interactive_sentence(sentence, main_word_id, _can_listen_to_words):
 		var word_instance = load("res://Test/WordInSentenceCarousel.tscn").instance()
 		
 		word_instance.position.x = current_x
-		word_instance.init_word_in_sentence(word_id, is_main_word, can_listen_to_words)
+		word_instance.init_word_in_sentence(word_id, is_main_word)
 		current_x += word_instance.width
 		add_child(word_instance)
 		children.append(word_instance)

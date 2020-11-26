@@ -22,6 +22,23 @@ export(Array) var post_dialog_event = []
 var white_orb_growing = false
 var white_orb_fading = false
 var alpha = 1
+var time = 0
+var over_head_label_y
+
+func update_npc_with_quests():
+	if finish_quests:
+		for finish_quest_id in finish_quests:
+			if Quests.quests[finish_quest_id].status == Quests.FINISHED:
+				$OverheadNode2D.visible = true
+				$OverheadNode2D/OverheadLabel.text = "!"
+				return
+	if start_quests:
+		for start_quest_id in start_quests:
+			if Quests.quests[start_quest_id].status == Quests.NOT_STARTED and not Quests.is_quest_blocked(start_quest_id):
+				$OverheadNode2D.visible = true
+				$OverheadNode2D/OverheadLabel.text = "?"
+				return
+	$OverheadNode2D.visible = false
 
 func make_animation(animation_name, key_1, key_2, key_3, key_4):
 	var animation = Animation.new()
@@ -97,9 +114,12 @@ func _ready():
 	$Sprite.hframes = 12
 	make_animations()
 	update_animation()
+	over_head_label_y = $OverheadNode2D.position.y
+	update_npc_with_quests()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	time += delta
 	if white_orb_growing:
 		$SpecialEffect/WhiteCircle.scale.x += delta * 4
 		$SpecialEffect/WhiteCircle.scale.y += delta * 4
@@ -108,7 +128,8 @@ func _process(delta):
 		$SpecialEffect/WhiteCircle.modulate = Color(1, 1, 1, alpha)
 		if alpha == 0:
 			free_npc()
-	
+	if $OverheadNode2D.is_visible():
+		$OverheadNode2D.position.y = over_head_label_y + 3 * cos(time * 10)
 	if is_walking_towards and not is_talking:
 		position = position + velocity * delta * speed
 		if position.distance_to(is_walking_towards) < 5:
@@ -236,13 +257,7 @@ func get_starting_quest():
 	var found_not_started_quest_id = null
 	for id_of_quest_started_by_npc in start_quests:
 		if Quests.quests[id_of_quest_started_by_npc].status == Quests.NOT_STARTED:
-#			let's make sure this quest is not blocked
-			var quest_is_blocked = false
-			for blocking_quest_id in Quests.quests[id_of_quest_started_by_npc].blockers:
-				if not Quests.quests[blocking_quest_id].status == Quests.DONE:
-					quest_is_blocked = true
-					break
-			if not quest_is_blocked:
+			if not Quests.is_quest_blocked(id_of_quest_started_by_npc):
 				found_not_started_quest_id = id_of_quest_started_by_npc
 				break
 	return found_not_started_quest_id

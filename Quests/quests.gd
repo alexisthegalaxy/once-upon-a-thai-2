@@ -45,7 +45,10 @@ func start_quest(quest_id):
 	update_quests_display()
 
 func update_quests_display():
+	print('update_quests_display !!')
 	Game.player.update_quest_display()
+	for npc in Game.current_scene.get_node("YSort").get_node("NPCs").get_children():
+		npc.update_npc_with_quests()
 
 func update_find_sentences_quests(sentence_id):
 	for quest_id in quests:
@@ -96,3 +99,10 @@ func save_game():
 	for quest in quests:
 		quests_data[quest] = quests[quest].status
 	return quests_data
+
+func is_quest_blocked(quest_id):
+	var quest_is_blocked = false
+	for blocking_quest_id in Quests.quests[quest_id].blockers:
+		if not Quests.quests[blocking_quest_id].status == Quests.DONE:
+			return true
+	return false

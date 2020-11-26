@@ -794,7 +794,7 @@
     "fr_mem": ""
   },
   "35": {
-    "th": "∅",
+    "th": "-",
     "pron": "",
     "en": "o (short)",
     "fr": "o ouvert (court)",
@@ -806,21 +806,32 @@
     "en_introduction": [
       "Me? I'm nobody.",
       "I'm the absence of vowel in between two consonants.",
-      "I use the symbol \"∅\" so that you can see me, but in reality I'm invisible.",
+      "Here, I use the symbol \"-\" so that you can see me, but in reality I'm invisible.",
       "I'm wherever there is no vowel.",
       "I still have a sound though!",
       "In Thai, the absence of vowel is pronounced with a short \"oh\" sound. [sound]",
       "Don't be so surprised, English does it too! With words like rhythm or sarcasm.",
-      "For example, the word system: ระบบ (R-A-B-P) is pronounced \"rabop\".",
-      "Or, the word six: หก (H-K) is pronounced \"hok\".",
+      "For example, the word \"system\": ระบบ (R-A-B-P) is pronounced \"rabop\".",
+      "Or, the word \"six\": หก (H-K) is pronounced \"hok\".",
       "You got it? You better, because I'm very common!"
+    ],
+    "fr_introduction": [
+      "Moi? Je suis personne.",
+      "Je suis l'absence de voyelle entre deux consonnes.",
+      "Ici, j'utilise le symbole \"-\" pour que tu me voies, mais en réalité je suis invisible.",
+      "Je suis partout là où il y n'y a pas de voyelle.",
+      "Mais on m'entends, quand même !",
+      "En thaï, l'absence de voyelle se prononce avec un court \"o\" ouvert. [sound]",
+      "Par exemple, le mot \"système\" : ระบบ (R-A-B-P) se prononce \"rabop\".",
+      "Ou encore le mot \"six\" หก (H-K) qui se prononce \"hok\".",
+      "T'as pigé ? J'espère, car je suis vraiment commun !"
     ],
     "test": {
       "prompt": "คน",
       "distractors": ["คโน", "โคน", "คอน", "ค็อน"]
     },
     "en_mem": "Nothingness, or zero, is also pronounced \"oh\" in English, when spelling a number.",
-    "fr_mem": ""
+    "fr_mem": "L'absence, ou le zéro, ressemble à la lettre \"o\" !"
   },
   "36": {
     "th": "-็",
