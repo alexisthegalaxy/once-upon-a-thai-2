@@ -596,9 +596,21 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "26",
+    "en_introduction": [
+      "Hey, I'm the vowel แ-, pronounced like the \"a\" in \"cat\". [sound]",
+      "Don't get me confused with my brother เ-: he's é and I'm ae.",
+      "We both come before the consonant, so \"gae\" is written: แก.",
+      "It's easy to remember me: I'm a pair!"
+    ],
+    "fr_introduction": [
+      "Hey, Je suis la voyelle แ-, pronouncée \"è\". [sound]",
+      "Ne me confonds pas avec mon frère เ-: il est \"é\" et je suis \"è\".",
+      "On vient tous deux avant la consonne - ainsi, le son \"dè\" s'écrit : แด.",
+      "C'est facile de se rappeler de moi : je forme une paire, et je fais le son è comme dans \"paire\" !"
+    ],
     "audio": "แอ",
-    "en_mem": "",
-    "fr_mem": ""
+    "en_mem": "แ- is a pair of dashes, and sounds like \"ai\" in \"pair\".",
+    "fr_mem": "แ- fait le son è, comme dans une \"paire\", et ressemble à une paire de lettres!"
   },
   "26": {
     "th": "ห",
@@ -1056,5 +1068,38 @@
     },
     "en_mem": "-ำ looks like an elegant madam wearing a round hat.",
     "fr_mem": "-ำ ressemble à un \"a\" : า, et le cercle ressemble à une âme qui s'envole."
+  },
+  "45": {
+    "th": "ฐ",
+    "pron": "",
+    "en": "t",
+    "fr": "t",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "HIGH",
+    "frequency_index": "51",
+    "audio": "ฐอ"
+  },
+  "46": {
+    "th": "ธ",
+    "pron": "",
+    "en": "t",
+    "fr": "t",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "LOW",
+    "frequency_index": "24",
+    "audio": "ธอ"
+  },
+  "47": {
+    "th": "ญ",
+    "pron": "",
+    "en": "y",
+    "fr": "y",
+    "alphabet_index": "None",
+    "final": "n",
+    "class": "LOW",
+    "frequency_index": "49",
+    "audio": "ญอ"
   }
 }

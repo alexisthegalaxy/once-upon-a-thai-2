@@ -35,10 +35,10 @@ func _ready():
 	elif Events.events["talked_to_yaai_for_the_first_time"]:
 		$YSort/NPCs/Yaai.position = Vector2(490, 260)
 
-func blackens():
-	is_blackening = true
-	$CanvasLayer/BlackFadeOut.modulate = Color(1, 1, 1, 0)
-	$CanvasLayer/BlackFadeOut.show()
+#func blackens():
+#	is_blackening = true
+#	$CanvasLayer/BlackFadeOut.modulate = Color(1, 1, 1, 0)
+#	$CanvasLayer/BlackFadeOut.show()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

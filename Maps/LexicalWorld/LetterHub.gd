@@ -5,9 +5,9 @@ var alpha = 0.0
 
 func show_first_dialog():
 	$YSort/Yaai.dialog = [
-		"[Name], you made your first step in the Letter World, this shall be your Memory Palace.",
-		"",
-		"",
+		tr("_you_made_first_step_in_lexical_world"),
+		tr("_this_places_will_make_it_easier_for_you_to_learn_the_letters"),
+		tr("_your_first_task_will_be_to_find_these_five_letters")
 	]
 	$YSort/Yaai.post_dialog_event = ["show_looking_for_letters", null]
 	$YSort/Yaai.interact()

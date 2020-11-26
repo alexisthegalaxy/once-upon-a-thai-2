@@ -231,6 +231,9 @@ position = Vector2( 941.72, 77.2632 )
 [node name="Bush42" parent="YSort/Bushes" instance=ExtResource( 9 )]
 position = Vector2( 1169.21, -201.072 )
 
+[node name="Bush50" parent="YSort/Bushes" instance=ExtResource( 9 )]
+position = Vector2( 1691.85, 198.176 )
+
 [node name="Bush46" parent="YSort/Bushes" instance=ExtResource( 9 )]
 position = Vector2( 1429.49, -137.973 )
 
@@ -4026,13 +4029,13 @@ position = Vector2( 1765.52, 100.928 )
 position = Vector2( 1734.94, 168.249 )
 
 [node name="Tree1833" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 1734.89, 187.661 )
+position = Vector2( 1722.66, 203.299 )
 
 [node name="Tree1834" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 1703.22, 164.584 )
+position = Vector2( 1744.16, 258.699 )
 
 [node name="Tree1835" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 1685.19, 204.919 )
+position = Vector2( 1663.86, 190.987 )
 
 [node name="Tree1836" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 1564.68, 444.464 )
@@ -4041,10 +4044,10 @@ position = Vector2( 1564.68, 444.464 )
 position = Vector2( 1741.81, 227.955 )
 
 [node name="Tree1838" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 1711.57, 217.584 )
+position = Vector2( 1732.04, 278.147 )
 
 [node name="Tree1839" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 1684.02, 171.913 )
+position = Vector2( 1713.59, 306.972 )
 
 [node name="Tree1840" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 1801.85, 211.578 )
@@ -4101,7 +4104,7 @@ position = Vector2( 2057.42, 343.461 )
 position = Vector2( 1661.15, 171.132 )
 
 [node name="Tree1866" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 1662.2, 190.504 )
+position = Vector2( 1676.7, 292.296 )
 
 [node name="Tree1867" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 1549.59, 437.511 )
@@ -6157,7 +6160,7 @@ type = "Well"
 word_ids = [  ]
 
 [node name="TestCutSource" parent="YSort/Sources" instance=ExtResource( 23 )]
-position = Vector2( 506.007, 21.2353 )
+position = Vector2( 640.239, 403.103 )
 word_ids = [ 401 ]
 max_number_of_words = 1
 wait_time = 1
@@ -6254,7 +6257,7 @@ position = Vector2( 699.744, 467.54 )
 position = Vector2( 1295.12, 160.862 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1273.78, 346.209 )
+position = Vector2( 1630.19, 244.378 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6313,9 +6316,9 @@ position = Vector2( 1356.25, -139.798 )
 dialog = [ "เกิดนั่นล่ะคือตาย" ]
 sprite_path = "res://Npcs/sprites/monk.png"
 
-[node name="QuestGirl" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 1508.29, 50.9584 )
-dialog = [ "เกิดนั่นล่ะคือตาย" ]
+[node name="EndGameGirl" parent="YSort/NPCs" instance=ExtResource( 11 )]
+position = Vector2( 1693.83, 156.024 )
+dialog = [ "_congrats_reached_end_game" ]
 sprite_path = "res://Npcs/sprites/girl.png"
 direction = "left"
 

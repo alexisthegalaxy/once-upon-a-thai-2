@@ -32,8 +32,6 @@ func _process(delta):
 		self.scale.y = ratio
 		if ratio <= 0:
 			queue_free()
-			if len(Game.known_words) == 4:
-				Game.pop_victory_screen()
 
 func get_introduction():
 	var introduction_key = TranslationServer.get_locale() + "_introduction"

@@ -36,6 +36,11 @@ direction = "up"
 [node name="House" parent="YSort" instance=ExtResource( 6 )]
 position = Vector2( 24.1102, -47.8553 )
 
+[node name="Spell" parent="YSort" instance=ExtResource( 16 )]
+position = Vector2( 39.6281, 43.3009 )
+scale = Vector2( 1.65646, 1.73626 )
+id = 403
+
 [node name="Monk" parent="YSort" instance=ExtResource( 3 )]
 position = Vector2( 84.7222, -5.92984 )
 dialog = [ "ผมเป็นพระครับ" ]

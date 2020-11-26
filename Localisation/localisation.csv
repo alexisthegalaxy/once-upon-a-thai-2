@@ -119,8 +119,8 @@ _come_again_later_and_train_together,"Come again later, you could be training to
 _sorry_shop_closed_today,"Sorry, the shop is closed today, come again tomorrow!","Désolé, le magasin est fermé aujourd'hui, repasse demain !"
 _you_made_first_step_in_lexical_world,"[Name], you made your first step into the Lexical World, this shall be your Memory Palace.","[Name], tu viens de faire ton premier pas dans le Monde Lexical, il sera ton palais de la mémoire."
 _this_places_will_make_it_easier_for_you_to_learn_the_letters,This place will make it easier for you to learn the letters.,Cet endroit te facilitera l'apprentissage de l'alphabet thaï.
-_your_first_task_will_be_to_find_these_five_letters,"First, go find the following letters:              น, ท, ย, ค, ไ-.","Pour commencer, va trouver les lettres suivantes :                  น, ท, ย, ค, ไ-."
-_looking_for_letters,Looking for letters:,Trouve les lettres :
+_your_first_task_will_be_to_find_these_five_letters,"First, go find the following letters:              น, ท, ย, ค, ไ-.","Pour commencer, va trouver les lettres suivantes : น, ท, ย, ค, ไ-."
+_looking_for_letters,Looking for letters: ,Trouve les lettres : 
 _found_required_letters,Found all required letters,Toutes les lettres requises sont trouvées
 _names_takes_door_to,[Name] takes the door to the ,[Name] prend la porte menant au 
 _vowels,Vowels,Voyelles
@@ -140,3 +140,4 @@ _hey_name_long_time_no_see_heres_a_sentence_for_you,"Hey [Name], long time no se
 _you_want_to_learn_a_sentence_how_about,"So, you want to learn a Sentence? How about :","Alors, tu veux apprendre une phrase ? Qu'est-ce que tu dis de celle-là :"
 _hey_my_name_is_som,"Hey, my name is Som, I just moved here recently.","Salut, je m'appelle Som, on vient d'emménager ici."
 _heres_a_sentence_for_you,"Oh, you're learning Thai? Here's a Thai sentence for you:","Oh, tu apprends le thaï ? Je peux t'enseigner une phrase si tu veux :"
+_congrats_reached_end_game,"Congratulations, you've reached the end of the game!","Félicitations, tu as atteint la fin du jeu !"

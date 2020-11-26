@@ -71,6 +71,14 @@ var should_start_test_when_back_from_MP = [
 ]
 
 var select_follower_to_implant_screen = null
+var canvas_color_screen = null
+
+func blackens():
+	canvas_color_screen = ColorRect.new()
+	canvas_color_screen.set_position(Vector2(-10000, -10000))
+	canvas_color_screen.set_size(Vector2(100000, 100000))
+	canvas_color_screen.color = Color(0, 0, 0, 0)
+	get_tree().get_root().add_child(canvas_color_screen)
 
 func is_overworld_frozen():
 	return (
@@ -142,9 +150,10 @@ func dialog_press_f_to_see_it(learnt_item):
 	current_scene.add_child(Game.current_dialog)
 
 func a_word_is_learnt():
+	pass
 	# Whenever a word is learnt, we run this function
-	if len(Game.known_words) == 10:
-		Game.pop_victory_screen()
+#	if len(Game.known_words) == 10:
+#		Game.pop_victory_screen()
 #	if not Events.events.has_learnt_four_first_words:
 #		if 343 in Game.known_words and 345 in Game.known_words and 207 in Game.known_words and 82 in Game.known_words:
 #			Events.events.has_learnt_four_first_words = true
@@ -301,6 +310,8 @@ func _process(delta):
 		canvas_modulate.color.r += delta * direction.x
 		canvas_modulate.color.g += delta * direction.y
 		canvas_modulate.color.b += delta * direction.z
+	if canvas_color_screen:
+		canvas_color_screen.color.a = min(1, canvas_color_screen.color.a + delta)
 
 func update_letters_to_look_for_if_necesssary(to_map_name):
 	if not Events.events["can_see_the_looking_for_letter_banner"]:
@@ -348,6 +359,7 @@ func start_test_when_back_from_MP():
 #			child.queue_free()
 
 func _deferred_goto_scene(to_map_name, to_x, to_y):
+	canvas_color_screen.queue_free()
 	save_following_spells_data_before_map_change()
 	is_frozen = false
 	if not "LexicalWorld" in current_map_name:
@@ -388,7 +400,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 	player.position = Vector2(to_x, to_y)
 	player.velocity = player_velocity
 	SoundPlayer.start_music_upon_entering_map(to_map_name)
-	
+
 	# If we add a yield(get_tree().create_timer(1.0), "timeout")
 	# between the next two lines, we get a crash. Why?
 	for child in get_tree().get_root().get_children():

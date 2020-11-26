@@ -3344,5 +3344,15 @@
     "th": "แบบไหน",
     "teaching_order": -1,
     "letters": [25, 18, 28, 26, 0]
+  },
+  "403": {
+    "split": "รัฐ-ธรรม-นูญ",
+    "en": "constitution",
+    "fr": "constitution",
+    "tones": "HLMHM",
+    "pos": "",
+    "th": "รัฐธรรมนูญ",
+    "teaching_order": -1,
+    "letters": [2, 3, 45, 46, 5, 0, 32, 47]
   }
 }

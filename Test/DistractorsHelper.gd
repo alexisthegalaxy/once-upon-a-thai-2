@@ -2,7 +2,7 @@ extends Node
 # Reminder: choices = distractors + answer
 
 var rng = RandomNumberGenerator.new()
-
+var lo = TranslationServer.get_locale()
 # this function returns distractors, not distractors ids
 func get_letter_distractors(letter, number_of_choices):
 	# if the JSON letter contains the field letters:
@@ -12,7 +12,7 @@ func get_letter_distractors(letter, number_of_choices):
 			distractors.append(Game.letters[str(distractor_id)])
 	while len(distractors) < number_of_choices - 1:
 		var random_letter = Game.letters[str(rng.randi() % Game.letters.size())]
-		if random_letter.id != letter.id and not random_letter in distractors:
+		if random_letter[lo] != letter[lo] and random_letter.th != letter.th and not random_letter in distractors:
 			distractors.append(random_letter)
 	return distractors
 
@@ -25,7 +25,7 @@ func get_word_distractors(word, number_of_choices):
 			distractors.append(Game.words[str(distractor_id)])
 	while len(distractors) < number_of_choices - 1:
 		var random_word = Game.words[str(rng.randi() % Game.words.size())]
-		if random_word.id != word.id and not random_word in distractors:
+		if random_word.th != word.th and random_word[lo] != word[lo] and not random_word in distractors:
 			distractors.append(random_word)
 	return distractors
 

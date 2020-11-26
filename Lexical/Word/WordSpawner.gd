@@ -43,4 +43,3 @@ func timeout():
 
 func add_word(new_word):
 	Game.current_scene.get_node("YSort").add_child(new_word)
-#	get_tree().current_scene.get_node("YSort").add_child(new_word)

@@ -99,7 +99,7 @@ func immediately_enters_lexical_world():
 
 func enters_lexical_world(_parameters):
 	# Blackens the screen, and then call immediately_enters_lexical_world
-	Game.current_scene.blackens()
+	Game.blackens()
 	var timer = Timer.new()
 	Game.is_frozen = true
 	timer.connect("timeout", self, "immediately_enters_lexical_world")
