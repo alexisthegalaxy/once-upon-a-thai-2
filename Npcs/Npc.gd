@@ -5,8 +5,10 @@ export var sprite_path = "res://Npcs/sprites/yaai.png"
 export var direction = "down"
 export var state = "stand"  # can be "stand" or "walk"
 export var display_name = ""  # Is shown in dialogs. For example: "Nim".
+export var interact_when_near = false
 export(Array, String) var start_quests = []  # ["find_sentences_in_chaiyaphum", "first_quest"]
 export(Array, String) var finish_quests = []  # ["find_sentences_in_chaiyaphum", "first_quest"]
+var is_talking = false
 
 var speed = 100  # 65
 var velocity = Vector2.ZERO
@@ -47,7 +49,7 @@ func make_animations():
 	make_animation("stand_up", 9, 9, 9, 9)
 
 func update_animation():
-	$AnimationPlayer.play(state  + "_" + direction)
+	$AnimationPlayer.play(state + "_" + direction)
 
 func dialog_option(parameters):
 	var dialog_node = parameters[0]
@@ -82,8 +84,9 @@ func dialog_option(parameters):
 			Vector2(1297.967773, 257.826782),
 			Vector2(1298, 177),
 			"disappears"
-		]]]
+		], self]]
 		dialog_node.post_dialog_event = post_dialog_event
+		dialog_node.caller.interact_when_near = false
 #		Game.player.can_interact = false
 #		Game.is_frozen = true
 #		interact()
@@ -105,7 +108,8 @@ func _process(delta):
 		$SpecialEffect/WhiteCircle.modulate = Color(1, 1, 1, alpha)
 		if alpha == 0:
 			free_npc()
-	if is_walking_towards:
+	
+	if is_walking_towards and not is_talking:
 		position = position + velocity * delta * speed
 		if position.distance_to(is_walking_towards) < 5:
 			is_walking_towards = null
@@ -176,12 +180,15 @@ func npc_turn_towards(target):
 	update_animation()
 
 func interact():
-	if is_walking_towards:
+	is_talking = true
+	state = "stand"
+	if is_walking_towards and not interact_when_near:
 		return
 	get_tree().set_input_as_handled()
 	Game.player.can_interact = false
 	Game.is_frozen = true
 	Game.player.stop_walking()
+	Game.player.turn_towards_entity(position)
 	var dialog_to_use = get_dialog_to_use()
 	npc_turn_towards(Game.player.position)
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
@@ -241,9 +248,12 @@ func get_starting_quest():
 	return found_not_started_quest_id
 
 func _on_InteractBox_body_entered(body):
-	if is_walking_towards:
-		return
 	if not body == Game.player:
+		return
+	if interact_when_near:
+		interact()
+		return
+	if is_walking_towards:
 		return
 	Game.gains_focus(self)
 

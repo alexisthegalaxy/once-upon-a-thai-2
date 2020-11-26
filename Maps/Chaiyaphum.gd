@@ -35,11 +35,6 @@ func _ready():
 	elif Events.events["talked_to_yaai_for_the_first_time"]:
 		$YSort/NPCs/Yaai.position = Vector2(490, 260)
 
-#func blackens():
-#	is_blackening = true
-#	$CanvasLayer/BlackFadeOut.modulate = Color(1, 1, 1, 0)
-#	$CanvasLayer/BlackFadeOut.show()
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if is_blackening:
@@ -173,6 +168,7 @@ func _on_PetWillWalk_body_entered(body):
 		return
 	if Events.events.has_met_pet:
 		return
+	$YSort/NPCs/Pet.interact_when_near = true
 	$YSort/NPCs/Pet.dialog = [
 		tr("_oh_hey_name"),
 		tr("_what_you_finished_your_initiation"),
@@ -193,6 +189,7 @@ func _on_PloyWillCome_body_entered(body):
 		return
 	if not Events.events.has_met_ploy:
 		Events.events.has_met_ploy = true
+		$YSort/NPCs/Ploy.interact_when_near = true
 		$YSort/NPCs/Ploy.dialog = [
 			tr("_name_how_was_your_shamanic_initiation"),
 			tr("_mine_went_well_too_my_grandma_taught_me_cool_stuff"),
@@ -210,6 +207,7 @@ func _on_PloyInFrontOfHouse_body_entered(body):
 		return
 	if Events.events.ploy_has_stopped_in_front_of_house:
 		return
+	
 	Events.events.ploy_has_stopped_in_front_of_house = true
 	$YSort/NPCs/Ploy.is_walking_towards = []
 	$YSort/NPCs/Ploy.interact()

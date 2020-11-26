@@ -1,10 +1,10 @@
 extends Node
 
-var initial_state = false
+var initial_state = true
 var events = {
-	"ploy_has_stopped_in_front_of_house": initial_state,
-	"has_met_ploy": initial_state,
-	"has_met_pet": initial_state,
+	"ploy_has_stopped_in_front_of_house": false,
+	"has_met_ploy": false,
+	"has_met_pet": false,
 	"has_learnt_four_first_words": initial_state,
 	"yaai_has_given_last_warning_before_forest": initial_state,
 	"yaai_explains_rock": initial_state,
@@ -59,14 +59,16 @@ func yaai_walks_to(parameters):
 
 func npc_walks_to(parameters):
 	var target_positions = parameters[0]
+	var npc = null
 	if Game.current_focus:
-		Game.current_focus[0].will_go_to = target_positions
-		if target_positions:
-			Game.current_focus[0].starts_going_toward(target_positions[0])
-		else:
-			print('nowhere to go!')
+		npc = Game.current_focus[0]
 	else:
-		print('Error: Game.current_focus shouldnt be empty')
+		npc = parameters[1]
+	npc.will_go_to = target_positions
+	if target_positions:
+		npc.starts_going_toward(target_positions[0])
+	else:
+		print('nowhere to go!')
 
 func npc_disappears_in_white_orb(parameters):
 	var npc = parameters[0]
@@ -98,7 +100,6 @@ func immediately_enters_lexical_world():
 	Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75)
 
 func enters_lexical_world(_parameters):
-	# Blackens the screen, and then call immediately_enters_lexical_world
 	Game.blackens()
 	var timer = Timer.new()
 	Game.is_frozen = true
@@ -149,6 +150,7 @@ func ploy_goes_towards_her_house(ploy):
 
 func ploy_cuts_bush(parameters):
 	var ploy = parameters[0]
+	ploy.interact_when_near = false
 	var_1 = parameters[1]
 	var_2 = ploy
 	ploy.will_go_to = [

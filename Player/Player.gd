@@ -185,3 +185,17 @@ func load_game(player_data):
 	position.y = player_data.y
 	Game.player_sprite_path = player_data.sprite
 	direction = player_data.direction
+
+func turn_towards_entity(target):
+	# Turns toward the Vector2 target (can be a place to go, the player...)
+	var direction_vector = (target - position).normalized()
+	var angle = (atan2(direction_vector.y, direction_vector.x) * 4 / PI + 3) / 2
+	if angle < 0 or angle >= 3:
+		direction = "left"
+	elif angle < 1:
+		direction = "up"
+	elif angle < 2:
+		direction = "right"
+	else:
+		direction = "down"
+	update_animation()

@@ -359,7 +359,9 @@ func start_test_when_back_from_MP():
 #			child.queue_free()
 
 func _deferred_goto_scene(to_map_name, to_x, to_y):
-	canvas_color_screen.queue_free()
+	if canvas_color_screen:
+		canvas_color_screen.queue_free()
+		canvas_color_screen = null
 	save_following_spells_data_before_map_change()
 	is_frozen = false
 	if not "LexicalWorld" in current_map_name:

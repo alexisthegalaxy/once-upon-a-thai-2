@@ -89,6 +89,8 @@ func init_dialog(_dialog, _caller, _post_dialog_event, _post_dialog_signal, spea
 func dialog_ends():
 	queue_free()
 	Game.player.end_dialog()
+	if caller and "is_talking" in caller:
+		caller.is_talking = false
 	if post_dialog_event:
 		if typeof(post_dialog_event) == TYPE_STRING and post_dialog_event == "post_dialog":
 			caller.post_dialog()
