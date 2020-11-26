@@ -55,12 +55,12 @@ func dialog_option(parameters):
 	
 	if sprite_path == "res://Npcs/sprites/pet.png":
 		if chosen_option == 3:
-			dialog = ["Pet: Hmph, yeah. In any case, I’ve got important stuff to do in Chaiyaphum. Smell ya later, loser!"]
+			dialog = [tr("_hmph_yeah_anyway_i_to_to_chaiyaphum_loser")]
 			dialog_node.dialog = dialog
 			dialog_node.page = -1
 			SoundPlayer.play_sound("res://Sounds/ding.wav")
 		else:
-			dialog = ["Pet: See? \"bpai\" is written ไป. In any case, I’ve got important stuff to do in Chaiyaphum. Smell ya later, loser!"]
+			dialog = [tr("_see_bpai_is_written_i_go_to_chaiyaphum_loser")]
 			dialog_node.dialog = dialog
 			dialog_node.page = -1
 			SoundPlayer.play_sound("res://Sounds/incorrect.wav")

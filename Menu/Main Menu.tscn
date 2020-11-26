@@ -6,13 +6,13 @@
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 10
 extra_spacing_top = -12
 extra_spacing_bottom = -12
 font_data = ExtResource( 1 )
 
-[sub_resource type="ButtonGroup" id=2]
+[sub_resource type="ButtonGroup" id=3]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource( 2 )
@@ -66,8 +66,8 @@ margin_left = 262.0
 margin_top = 8.0
 margin_right = 312.0
 margin_bottom = 26.0
-custom_fonts/font = SubResource( 3 )
-group = SubResource( 2 )
+custom_fonts/font = SubResource( 2 )
+group = SubResource( 3 )
 text = "English"
 __meta__ = {
 "_edit_use_anchors_": false

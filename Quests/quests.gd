@@ -84,3 +84,14 @@ func mark_quest_as_done(quest_id):
 	quests[quest_id].status = DONE
 	print('quests[quest_id].status', quests[quest_id].status)
 	update_quests_display()
+
+func load_game(quests_data):
+	for quest in quests:
+		quests[quest].status = quests_data[quest]
+	update_quests_display()
+
+func save_game():
+	var quests_data = {}
+	for quest in quests:
+		quests_data[quest] = quests[quest].status
+	return quests_data

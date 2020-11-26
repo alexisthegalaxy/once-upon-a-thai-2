@@ -19,9 +19,9 @@ func _ready():
 		Game.is_frozen = true
 		$YSort/NPCs/Yaai.position = Vector2(207.81, 513.20)
 		$YSort/NPCs/Yaai.dialog = [
-			"Welcome back, [Name].",
-			"You can always go back to your Memory Palace using the F key.",
-			"For now, follow me into the forest.",
+			tr("_welcome_back_name"),
+			tr("_you_can_always_go_back_to_your_memory_palace"),
+			tr("_for_now_follow_me_into_the_forest"),
 		]
 		$YSort/NPCs/Yaai.post_dialog_event = ["yaai_walks_to", [[
 			Vector2(285.5, 561.6),
@@ -52,7 +52,7 @@ func _on_Area2D5_body_entered(body):
 		if not Events.events["talked_to_yaai_for_the_first_time"]:
 			Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 			var dialog = [
-				"I should talk to my grandmother first..."
+				tr("_i_should_talk_to_my_grandmother_first")
 			]
 			Game.current_dialog.init_dialog(dialog, self, null, false, null)
 			Game.player.stop_walking()
@@ -65,7 +65,7 @@ func _on_Area2D_body_entered(body):
 		if not Events.events["yaai_explains_rock"]:
 			Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 			var dialog = [
-				"I shouldn't go there now..."
+				tr("_i_shouldnt_go_there_now")
 			]
 			Game.current_dialog.init_dialog(dialog, self, null, false, null)
 			Game.player.stop_walking()
@@ -97,14 +97,14 @@ func _on_Area2D4_body_entered(body):
 		if not Events.events["ceremony_started"]:
 			Events.events["ceremony_started"] = true
 			$YSort/NPCs/Yaai.dialog = [
-				"Here's the place, and now is the time.",
-				"Let's start your shamanic initiation.",
-				"Once you drink this potion, you will gain power over spirits and spells,",
-				"But there is a cost:",
-				"you will forget everything you know of the Thai language and you’ll have to learn Thai again from scratch.",
-				"You trade your fluency in your mother tongue for power over the spirit world.",
-				"Are you ready?",
-				"[ShowNoName][Name] drinks Yaai's potion.",
+				tr("_heres_the_place_and_time"),
+				tr("_lets_start_your_shaman_initiation"),
+				tr("_once_you_drink_this"),
+				tr("_but_theres_a_cost"),
+				tr("_youll_forget_thai"),
+				tr("_you_trade_thai_for_power"),
+				tr("_if_you_ready_drink_this"),
+				tr("_name_drink_potion"),
 			]
 			$YSort/NPCs/Yaai.post_dialog_event = ["enters_lexical_world", null]
 			$YSort/NPCs/Yaai.is_walking_towards = []  # to make sure NPC can interact
@@ -174,11 +174,11 @@ func _on_PetWillWalk_body_entered(body):
 	if Events.events.has_met_pet:
 		return
 	$YSort/NPCs/Pet.dialog = [
-		"Oh, hey [Name].",
-		"What, you finished your initiation?",
-		"Tch. It took you long enough. I finished mine thirty minutes ago already.",
-		"I’d like to have you as a training partner but I doubt you’ll be able to match my intellect.",
-		"I’m guessing you don’t even know how to write a basic word such as \"bpai\". @Q ไท/ ปไ/ ไป/ ทไ",
+		tr("_oh_hey_name"),
+		tr("_what_you_finished_your_initiation"),
+		tr("_tch_took_you_long_mine_finished_thirty_minutes_ago"),
+		tr("_id_like_to_have_you_as_training_but_cant_match_intellect"),
+		tr("_you_cant_even_write_bpai"),
 	]
 	$YSort/NPCs/Pet.position = Vector2(557.0, 532.6)
 	$YSort/NPCs/Pet.will_go_to = [
@@ -194,9 +194,9 @@ func _on_PloyWillCome_body_entered(body):
 	if not Events.events.has_met_ploy:
 		Events.events.has_met_ploy = true
 		$YSort/NPCs/Ploy.dialog = [
-			"[Name]! How was your shamanic initiation?",
-			"Mine went well too! My grandmother has been teaching me super cool stuff!",
-			"Look!"
+			tr("_name_how_was_your_shamanic_initiation"),
+			tr("_mine_went_well_too_my_grandma_taught_me_cool_stuff"),
+			tr("_look_exclamation_mark")
 		]
 		$YSort/NPCs/Ploy.will_go_to = [
 			Vector2(992, 117.146461),

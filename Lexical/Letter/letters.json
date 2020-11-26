@@ -136,8 +136,15 @@
       "but my loops are on the sa>M<e side.",
       "and the น's loops are >N<ot on the same side!"
     ],
+    "fr_introduction": [
+      "Hello [Name],",
+      "I am ม, the letter m. [sound]",
+      "I look a lot like my sister น, the n,",
+      "but my loops are on the sa>M<e side.",
+      "and the น's loops are >N<ot on the same side!"
+    ],
     "en_mem": "ม has its loops on the sa>m<e side.",
-    "fr_mem": ""
+    "fr_mem": "ม a ses boucles du >m<ême coté."
   },
   "6": {
     "th": "เ-",

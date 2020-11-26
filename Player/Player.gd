@@ -112,8 +112,9 @@ func _input(_event) -> void:
 	if Input.is_action_just_pressed("print_known_sentences"):
 		Game.print_known_sentences()
 	if Input.is_action_just_pressed("save"):
-		print('will save game')
 		Save.save_game()
+	if Input.is_action_just_pressed("load"):
+		Save.load_game("Alexis")
 	if Input.is_action_just_pressed("hub"):
 		_on_press_f()
 
@@ -170,3 +171,17 @@ func forced_toward(target_position):
 	
 func update_quest_display():
 	$QuestDisplay.update()
+
+func save_game():
+	var player_data = {}
+	player_data.x = position.x
+	player_data.y = position.y
+	player_data.sprite = Game.player_sprite_path
+	player_data.direction = direction
+	return player_data
+	
+func load_game(player_data):
+	position.x = player_data.x
+	position.y = player_data.y
+	Game.player_sprite_path = player_data.sprite
+	direction = player_data.direction

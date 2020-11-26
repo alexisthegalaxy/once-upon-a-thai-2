@@ -16,6 +16,8 @@ func _ready():
 	$CanvasLayer/Quit.text = THAI_QUIT
 	$CanvasLayer/LanguageSelector.add_item("English")
 	$CanvasLayer/LanguageSelector.add_item("Français")
+	
+	Save.load_game("Alexis")
 
 func retranslate_main_menu_strings():
 	ENG_START_STORY = tr("_start_story")

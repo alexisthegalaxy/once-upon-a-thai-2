@@ -29,13 +29,19 @@ var following_spells = []
 #	}
 #]
 
+# This indicates only the modifications, not the default state.
+# The source of truth is the scene
+var sources = {
+	"res://Maps/Chaiyaphum.tscn|EmptySourceBehindWat": [0],
+}
+
 var exit_screen = false
 var current_dialog = null
 
 var this_letter_world_has_letters = []  # a list of letter ids
 var letters_we_look_for = []  # a list of letters
 var looking_for_letter__node = null
-var player_position_on_overworld = null  # used when coming back from Letter World
+var player_position_on_overworld = Vector2(1183, 167)  # used when coming back from Letter World
 var player_last_overworld_map_visited = "res://Maps/Chaiyaphum.tscn"
 var current_map_name = "res://Maps/Chaiyaphum.tscn"
 
@@ -82,8 +88,19 @@ func is_overworld_frozen():
 		))
 	)
 
+func set_sources_after_map_change():
+	for source in sources:
+		var split_name = source.split("|")
+		var source_map_name = split_name[0]
+		var source_name = split_name[1]
+		if source_map_name == current_map_name:
+			var source_node = Game.current_scene.get_node("YSort").get_node("Sources").get_node(source_name)
+			source_node.word_ids = sources[source]
+			source_node.update_source(true)
+
 func generate_following_spells_after_map_change():
 	for following_spell in following_spells:
+		print('following_spell', following_spell)
 		var new_spell = load("res://Lexical/Word/Spell.tscn").instance()
 		new_spell.id = following_spell.id
 		new_spell.word = Game.words[str(following_spell.id)]
@@ -105,7 +122,12 @@ func add_following_spell(word_id, over_word):
 	following_spells.append({
 		"id": word_id,
 		"over_word": over_word,
+		"time_to_live": over_word.time_to_live,
 	})
+
+func update_following_spells_ime_to_live():
+	for following_spell in following_spells:
+		following_spell.time_to_live = following_spell.over_word.time_to_live
 
 func dialog_press_f_to_see_it(learnt_item):
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
@@ -362,20 +384,10 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 	# inside current_scene.get_node("YSort")!
 #	var c = current_scene.get_node("YSort").get_node("Player")
 	
-#	SoundPlayer.play_thai("ไทย")
-#	yield(get_tree().create_timer(1.0), "timeout")
-#	SoundPlayer.play_thai("เป็น")
-#	yield(get_tree().create_timer(1.0), "timeout")
-
 	player = current_scene.get_node("YSort").get_node("Player")
 	player.position = Vector2(to_x, to_y)
 	player.velocity = player_velocity
 	SoundPlayer.start_music_upon_entering_map(to_map_name)
-	
-#	SoundPlayer.play_thai("ไทย")
-#	yield(get_tree().create_timer(1.0), "timeout")
-#	SoundPlayer.play_thai("เป็น")
-#	yield(get_tree().create_timer(1.0), "timeout")
 	
 	# If we add a yield(get_tree().create_timer(1.0), "timeout")
 	# between the next two lines, we get a crash. Why?
@@ -389,9 +401,6 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 			"Quests"
 		]:
 			child.queue_free()
-#	for child in get_tree().get_root().get_children():
-#		print('--- child name ', child.get_name())
-#	print('get_tree().get_root().get_children()', get_tree().get_root().get_children())  # ViewPort
 	get_tree().get_root().add_child(current_scene)
 	
 #	for child in get_tree().get_root().get_children():
@@ -402,9 +411,8 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 #	print('get_tree().get_root().get_children()', get_tree().get_root().get_children())  # ViewPort
 #	get_tree().set_current_scene(current_scene)
 
-#	SoundPlayer.play_thai("เป็น")
-#	yield(get_tree().create_timer(1.0), "timeout")
 	generate_following_spells_after_map_change()
+	set_sources_after_map_change()
 	update_letters_to_look_for_if_necesssary(to_map_name)
 
 	if "LexicalWorld" in previous_map_name and not "LexicalWorld" in current_map_name:
@@ -448,3 +456,45 @@ func start_test(test_scene, entity_id, over_entity) -> void:
 	test.init(entity_id, over_entity)
 	if looking_for_letter__node:
 		looking_for_letter__node.get_node("Node2D").hide()
+
+func save_game():
+	var game_data = {}
+	game_data.change_color = change_color
+	game_data.last_goal_color = last_goal_color
+	game_data.goal_color = goal_color
+	game_data.known_words = known_words
+	game_data.known_sentences = known_sentences
+	game_data.seen_sentences = seen_sentences
+	game_data.known_letters = known_letters
+	game_data.collected_letters = collected_letters
+	game_data.following_spells = following_spells
+	print('game_data.following_spells', game_data.following_spells)
+	game_data.this_letter_world_has_letters = this_letter_world_has_letters
+	game_data.letters_we_look_for = letters_we_look_for
+	game_data.this_letter_world_has_letters = this_letter_world_has_letters
+	game_data.player_position_on_overworld = player_position_on_overworld
+	game_data.player_last_overworld_map_visited = player_last_overworld_map_visited
+	game_data.can_read_thai = can_read_thai
+	game_data.should_start_test_when_back_from_MP = should_start_test_when_back_from_MP
+	game_data.sources = sources
+	return game_data
+
+func load_game(game_data):
+	change_color = game_data.change_color
+	last_goal_color = game_data.last_goal_color
+	goal_color = game_data.goal_color
+	known_words = game_data.known_words
+	known_sentences = game_data.known_sentences
+	seen_sentences = game_data.seen_sentences
+	known_letters = game_data.known_letters
+	collected_letters = game_data.collected_letters
+	update_following_spells_ime_to_live()
+	following_spells = game_data.following_spells
+	this_letter_world_has_letters = game_data.this_letter_world_has_letters
+	letters_we_look_for = game_data.letters_we_look_for
+	this_letter_world_has_letters = game_data.this_letter_world_has_letters
+	player_position_on_overworld = game_data.player_position_on_overworld
+	player_last_overworld_map_visited = game_data.player_last_overworld_map_visited
+	can_read_thai = game_data.can_read_thai
+	should_start_test_when_back_from_MP = game_data.should_start_test_when_back_from_MP
+	sources = game_data.sources

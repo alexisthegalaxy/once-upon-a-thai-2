@@ -22,7 +22,7 @@ var is_frozen = false
 # variables linked to following
 export var is_following_player = false
 var following_speed = 1000
-var MAX_FOLLOWING_SPEED = 90
+var MAX_FOLLOWING_SPEED = 100
 var time_to_live
 var closeness_to_player = 15
 

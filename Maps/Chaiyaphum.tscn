@@ -6162,32 +6162,32 @@ word_ids = [ 401 ]
 max_number_of_words = 1
 wait_time = 1
 
-[node name="Source คน" parent="YSort/Sources" instance=ExtResource( 23 )]
+[node name="Sourceคน" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( -894.605, 1190.09 )
 word_ids = [ 343 ]
 
-[node name="Source ดี" parent="YSort/Sources" instance=ExtResource( 23 )]
+[node name="Sourceดี" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( -647.877, 1088.42 )
 word_ids = [ 82 ]
 
-[node name="Source ไทย" parent="YSort/Sources" instance=ExtResource( 23 )]
+[node name="Sourceไทย" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( -800.749, 992.597 )
 word_ids = [ 345 ]
 
-[node name="Source บ้าน" parent="YSort/Sources" instance=ExtResource( 23 )]
+[node name="Sourceบ้าน" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( -135.551, 546.599 )
 word_ids = [ 147 ]
 
-[node name="Source คุณ" parent="YSort/Sources" instance=ExtResource( 23 )]
+[node name="Sourceคุณ" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( 96.8046, 736.228 )
 word_ids = [ 28 ]
 
-[node name="Source น้ำ" parent="YSort/Sources" instance=ExtResource( 23 )]
+[node name="Sourceน้ำ" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( 254.541, 956.986 )
 type = "Well"
 word_ids = [ 156 ]
 
-[node name="Source ไม่" parent="YSort/Sources" instance=ExtResource( 23 )]
+[node name="Sourceไม่" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( 280.53, 486.001 )
 word_ids = [ 39 ]
 
@@ -6203,25 +6203,25 @@ word_ids = [  ]
 position = Vector2( -189.055, 154.248 )
 word_ids = [  ]
 
-[node name="Source เป็น" parent="YSort/Sources" instance=ExtResource( 23 )]
+[node name="Sourceเป็น" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( -816.816, 1292.74 )
 word_ids = [ 207 ]
 
-[node name="Source อยาก" parent="YSort/Sources" instance=ExtResource( 23 )]
+[node name="Sourceอยาก" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( -453.245, 400.368 )
 word_ids = [ 241 ]
 
-[node name="Source ผม" parent="YSort/Sources" instance=ExtResource( 23 )]
+[node name="Sourceผม" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( -758.777, 50.7894 )
 word_ids = [ 23 ]
 max_number_of_words = 4
 wait_time = 1
 
-[node name="Source ชอบ" parent="YSort/Sources" instance=ExtResource( 23 )]
+[node name="Sourceชอบ" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( -798.528, 197.287 )
 word_ids = [ 238 ]
 
-[node name="Source ฉัน" parent="YSort/Sources" instance=ExtResource( 23 )]
+[node name="Sourceฉัน" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( -701.511, 98.3163 )
 word_ids = [ 24 ]
 
@@ -6254,7 +6254,7 @@ position = Vector2( 699.744, 467.54 )
 position = Vector2( 1295.12, 160.862 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1151.22, 112.014 )
+position = Vector2( 1273.78, 346.209 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 

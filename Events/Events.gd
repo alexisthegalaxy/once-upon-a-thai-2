@@ -76,10 +76,10 @@ func learns_first_sentence(calling_npc):
 	Game.lose_focus(Game.current_focus)
 	Game.discovers_sentence(196, true)
 	calling_npc.dialog = [
-		"Well done [Name]!",
-		"Now, your test will be to guess the meaning of all words you will find deeper in the forest.",
-		"I believe four types of Spells live there.",
-		"Good luck, I'll watch you from here.",
+		tr("_well_done_name"),
+		tr("_now_your_test_will_be_to"),
+		tr("_i_believe_four_types_of_spells_live_there"),
+		tr("_good_luck_ill_watch_you_from_here"),
 		]
 	calling_npc.post_dialog_event = ["set_yaai_has_given_last_warning_before_forest_as_true", []]
 
@@ -142,8 +142,8 @@ func ploy_goes_towards_her_house(ploy):
 	]
 	ploy.starts_going_toward(ploy.will_go_to[0])
 	ploy.dialog = [
-		"My mom and dad are at home, they’ll teach you sentences if you go see them!",
-		"But later, follow me to the temple first!",
+		tr("_my_mom_and_dad_are_at_home"),
+		tr("_but_later_follow_me_to_temple_first"),
 	]
 	ploy.post_dialog_event = ["ploy_goes_towards_the_temple", ploy]
 
@@ -157,10 +157,10 @@ func ploy_cuts_bush(parameters):
 	]
 	ploy.starts_going_toward(ploy.will_go_to[0])
 	ploy.dialog = [
-		"Cool, right?",
-		"My grandmother taught me this Spell during my initiation.",
-		"Oh by the way I just saw Pet! This guy is always such a jerk!",
-		"Anyways. Follow me!",
+		tr("_cool_right"),
+		tr("_my_grandmother_taught_me_this_spell"),
+		tr("_by_the_way_i_saw_pet"),
+		tr("_anyways_follow_me"),
 	]
 	ploy.post_dialog_event = ["ploy_goes_towards_her_house", ploy]
 	

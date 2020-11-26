@@ -78,6 +78,9 @@ func _on_Area2D_body_exited(body):
 		return
 	Game.lose_focus(self)
 
+func update_game_sources():
+	Game.sources[Game.current_map_name + "|" + name] = word_ids
+
 func dialog_option(parameters):
 	var dialog_node = parameters[0]
 	var chosen_option = parameters[1]
@@ -90,6 +93,7 @@ func dialog_option(parameters):
 				Game.current_scene.add_child(Game.select_follower_to_implant_screen)
 			elif len(Game.following_spells) == 1:
 				word_ids.append(Game.following_spells[0].id)
+				update_game_sources()
 				update_source(false)
 				Quests.update_implant_source_with_this_word_quests(name)
 				Game.following_spells[0].over_word.starts_disappearing()
@@ -113,4 +117,4 @@ func dialog_option(parameters):
 #			})
 			word_ids = []
 			update_source(false)
-			
+			update_game_sources()

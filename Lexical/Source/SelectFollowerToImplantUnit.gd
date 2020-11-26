@@ -36,3 +36,4 @@ func _on_Button_pressed():
 	over_source.word_ids.append(word_id)
 	over_source.update_source(false)
 	remove_following_spell()
+	over_source.update_game_sources()

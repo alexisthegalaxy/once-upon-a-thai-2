@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Light/light.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://World/RoomBackground.png" type="Texture" id=4]
 [ext_resource path="res://Maps/PlayerHouse.gd" type="Script" id=5]
 [ext_resource path="res://World/IndoorBuddhaShrine.tscn" type="PackedScene" id=6]
+[ext_resource path="res://World/Source.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
 [ext_resource path="res://World/Teleport.tscn" type="PackedScene" id=18]
@@ -49,7 +50,16 @@ display_name = "Nim"
 post_dialog_event = [ "nim_walks_to", [ [ Vector2( 70, -139 ), Vector2( 72, -137 ) ] ] ]
 
 [node name="House" parent="YSort" instance=ExtResource( 6 )]
-position = Vector2( 31.4182, 44.4915 )
+position = Vector2( 354.456, 33.4836 )
+
+[node name="Sources" type="YSort" parent="YSort"]
+
+[node name="Source" parent="YSort/Sources" instance=ExtResource( 7 )]
+position = Vector2( 31.6644, 53.4543 )
+type = "IndoorBuddhaShrine"
+word_ids = [  ]
+max_number_of_words = 1
+wait_time = 5
 
 [node name="Lights" type="Node" parent="."]
 

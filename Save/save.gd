@@ -6,13 +6,26 @@ func save_game():
 	# Can be reused on next log-in.
 	# This is used when starting or ending a session, and whenever we want to save progress.
 	var save_data = {
-		"current_map": Game.current_map_name
+		"current_map": Game.current_map_name,
+		"player_data": Game.player.save_game(),
+		"game_data": Game.save_game(),
+		"quests_data": Quests.save_game(),
 	}
 	var save_file = File.new()
 	save_file.open("user://%s.save" % Game.player_name, File.WRITE)
 	save_file.store_line(to_json(save_data))
 	save_file.close()
-	print('has saved game')
+
+func apply_change_from_save_data(save_data):
+	# 1 - map change
+	Game._deferred_goto_scene(save_data.current_map, 0, 0)
+	# 2 - player changes
+	Game.player.load_game(save_data.player_data)
+	# 3 - game, vocabulary, sources
+	Game.load_game(save_data.game_data)
+	Game.generate_following_spells_after_map_change()
+	# 4 - quests
+	Quests.load_game(save_data.quests_data)
 
 func load_game(player_name):
 	var save_file = File.new()
@@ -22,8 +35,10 @@ func load_game(player_name):
 		return
 	save_file.open(save_file_path, File.READ)
 	var save_data = parse_json(save_file.get_line())
+	print("loading:")
 	print(save_data)
 	save_file.close()
+	apply_change_from_save_data(save_data)
 	
 func provisory_save():
 	# Some data (for example, what word is in what source) is saved here.
