@@ -5,7 +5,7 @@ var events = {
 	"ploy_has_stopped_in_front_of_house": false,
 	"has_met_ploy": false,
 	"has_met_pet": false,
-	"has_learnt_four_first_words": initial_state,
+	"has_learnt_four_first_words": false,
 	"yaai_has_given_last_warning_before_forest": initial_state,
 	"yaai_explains_rock": initial_state,
 	"has_gone_to_rock": initial_state,

@@ -1070,5 +1070,11 @@
     "en": "I'm a monk.",
     "fr": "Je suis un moine.",
     "word_ids": [23, 207, 185, 9]
+  },
+  "211": {
+    "th": "วัน-นี้_ฉัน_มี_สอบ",
+    "en": "I've got a test today (said by a woman).",
+    "fr": "J'ai un test aujourd'hui (dit par une femme).",
+    "word_ids": [64, 24, 236, 142]
   }
 }

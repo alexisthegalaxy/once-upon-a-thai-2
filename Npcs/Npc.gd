@@ -200,9 +200,21 @@ func npc_turn_towards(target):
 		stop_walking()
 	update_animation()
 
+func handle_talk_with_this_npc_quest():
+	print('npc display_name', display_name)
+	for quest_id in Quests.quests:
+		if (
+			Quests.quests[quest_id].status == Quests.IN_PROGRESS
+			and Quests.quests[quest_id].type == "talk_to_npc"
+			and Quests.quests[quest_id].parameters[0] == display_name
+		):
+			Quests.quests[quest_id].status = Quests.DONE
+			Quests.update_quests_display()
+			
 func interact():
 	is_talking = true
 	state = "stand"
+	handle_talk_with_this_npc_quest()
 	if is_walking_towards and not interact_when_near:
 		return
 	get_tree().set_input_as_handled()
@@ -238,12 +250,13 @@ func get_dialog_to_use():
 	if start_quests:
 		var starting_quest_id = get_starting_quest()
 		if starting_quest_id:
-			var quest_starting_dialog = Quests.quests[starting_quest_id][lo + "_start_dialog"]
-			# if we have a finishing dialog, we append the starting dialog to it.
-			if found_finished_quest_id:
-				new_dialog += quest_starting_dialog
-			else:
-				new_dialog = quest_starting_dialog
+			if (lo + "_start_dialog") in Quests.quests[starting_quest_id]:
+				var quest_starting_dialog = Quests.quests[starting_quest_id][lo + "_start_dialog"]
+				# if we have a finishing dialog, we append the starting dialog to it.
+				if found_finished_quest_id:
+					new_dialog += quest_starting_dialog
+				else:
+					new_dialog = quest_starting_dialog
 	return new_dialog
 
 # This is called by dialog_ends in dialog.gd

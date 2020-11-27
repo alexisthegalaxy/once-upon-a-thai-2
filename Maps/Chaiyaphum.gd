@@ -10,7 +10,17 @@ func _ready():
 		$YSort/Bushes/BushThatWillGetCut.queue_free()
 	if Events.events.has_learnt_four_first_words:
 		set_events_when_has_learnt_four_first_words()
-	if Events.events.has_gone_to_rock:
+	elif Events.events.yaai_has_given_last_warning_before_forest:
+		$YSort/NPCs/Yaai.position = Vector2(196, 652)
+		$YSort/NPCs/Yaai.direction = "down"
+		$YSort/NPCs/Yaai.update_animation()
+		$YSort/NPCs/Yaai.dialog = [
+			tr("_now_your_test_will_be_to"),
+			tr("_i_believe_four_types_of_spells_live_there"),
+			tr("_good_luck_ill_watch_you_from_here"),
+		]
+		$YSort/NPCs/Yaai.post_dialog_event = []
+	elif Events.events.has_gone_to_rock:
 		$YSort/NPCs/Yaai.position = Vector2(202.29, 654.29)
 		$YSort/NPCs/Yaai.direction = "right"
 	elif Events.events["has_finished_the_letter_world_the_first_time"]:
@@ -158,6 +168,7 @@ func set_events_when_has_learnt_four_first_words():
 		tr("_i_have_important_issues_to_solve_in_the_spirit_world"),
 		tr("_if_everything_goes_well_ill_see_you_soon"),
 	]
+	$YSort/NPCs/Yaai.start_quests = ["talk_to_anchalee_in_chaiyaphum"]
 	$YSort/NPCs/Yaai.post_dialog_event = ["npc_disappears_in_white_orb", [$YSort/NPCs/Yaai]]
 	$YSort/NPCs/Pet.position = Vector2(557.0, 432.6)
 

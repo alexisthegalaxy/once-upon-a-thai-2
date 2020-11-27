@@ -115,6 +115,16 @@
     "type": "implant_source_with_this_word",
     "parameters": [156, "EmptySourceField"]
   },
+  "talk_to_anchalee_in_chaiyaphum": {
+    "blockers": [],
+    "en_name": "Going to Chaiyaphum",
+    "fr_name": "Aller à Chaiyaphum",
+    "counter_max": 1,
+    "en_description": "Follow the path north from your house to get to Chaiyaphum, and find Anchalee, the grandmother of Ploy.",
+    "fr_description": "Suis le chemin au nord de ta maison pour aller à Chaiyaphum, et parle à Anchalee, la grand-mère de Ploy.",
+    "type": "talk_to_npc",
+    "parameters": ["Anchalee"]
+  },
   "implant_word_cut": {
     "blockers": [],
     "en_name": "Repopulate ตัด",

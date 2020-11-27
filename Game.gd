@@ -32,7 +32,7 @@ var following_spells = []
 # This indicates only the modifications, not the default state.
 # The source of truth is the scene
 var sources = {
-	"res://Maps/Chaiyaphum.tscn|EmptySourceBehindWat": [0],
+#	"res://Maps/Chaiyaphum.tscn|EmptySourceBehindWat": [0],
 }
 
 var exit_screen = false

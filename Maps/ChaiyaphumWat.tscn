@@ -36,11 +36,6 @@ direction = "up"
 [node name="House" parent="YSort" instance=ExtResource( 6 )]
 position = Vector2( 24.1102, -47.8553 )
 
-[node name="Spell" parent="YSort" instance=ExtResource( 16 )]
-position = Vector2( 87.955, 34.9887 )
-scale = Vector2( 1.65646, 1.73626 )
-id = 403
-
 [node name="NPCs" type="YSort" parent="YSort"]
 
 [node name="Monk" parent="YSort/NPCs" instance=ExtResource( 3 )]
@@ -70,7 +65,7 @@ display_name = "Ploy"
 position = Vector2( 25.4361, -25.1674 )
 dialog = [ "_how_s_progress_with_training_name" ]
 sprite_path = "res://Npcs/sprites/ploysgrandmother.png"
-display_name = "Ploy’s grandmother"
+display_name = "Anchalee"
 start_quests = [ "find_sentences_in_chaiyaphum", "implant_source_behind_the_temple" ]
 finish_quests = [ "find_sentences_in_chaiyaphum", "implant_source_behind_the_temple" ]
 

@@ -573,6 +573,7 @@
   "66": {
     "split": "เมื่อ-วาน-นี้",
     "en": "yesterday",
+    "fr": "hier",
     "tones": "FMH",
     "pos": "None",
     "th": "เมื่อวานนี้",
@@ -581,6 +582,7 @@
   "67": {
     "split": "ตอน-นี้",
     "en": "now",
+    "fr": "maintenant",
     "tones": "MH",
     "pos": "None",
     "th": "ตอนนี้",
@@ -589,6 +591,7 @@
   "68": {
     "split": "คืน-นี้",
     "en": "tonight",
+    "fr": "ce soir",
     "tones": "MH",
     "pos": "None",
     "th": "คืนนี้",
@@ -597,6 +600,7 @@
   "69": {
     "split": "เมื่อ-คืน-นี้",
     "en": "last night",
+    "fr": "hier soir",
     "tones": "FMH",
     "pos": "None",
     "th": "เมื่อคืนนี้",
@@ -605,6 +609,7 @@
   "70": {
     "split": "อา-ทิตย์ห-น้า",
     "en": "next week",
+    "fr": "la semaine prochaine",
     "tones": "MHF",
     "pos": "None",
     "th": "อาทิตย์หน้า",
@@ -613,6 +618,7 @@
   "71": {
     "split": "ทุก-วัน",
     "en": "every day",
+    "fr": "tous les jours",
     "tones": "HM",
     "pos": "None",
     "th": "ทุกวัน",
@@ -684,6 +690,7 @@
   "79": {
     "split": "ก่อน",
     "en": "first, before",
+    "fr": "d'abord, avant",
     "tones": "L",
     "pos": "None",
     "th": "ก่อน",
@@ -692,6 +699,7 @@
   "80": {
     "split": "นาน",
     "en": "for a long time",
+    "fr": "pendant longtemps",
     "tones": "M",
     "pos": "None",
     "th": "นาน",
@@ -792,6 +800,7 @@
   "91": {
     "split": "ง่วง",
     "en": "sleepy",
+    "fr": "endormi",
     "tones": "F",
     "pos": "ADJ",
     "th": "ง่วง",
@@ -800,6 +809,7 @@
   "92": {
     "split": "ดึก",
     "en": "late",
+    "fr": "tard",
     "tones": "L",
     "pos": "ADJ",
     "th": "ดึก",
@@ -808,6 +818,7 @@
   "93": {
     "split": "ใกล้",
     "en": "near",
+    "fr": "proche",
     "tones": "F",
     "pos": "ADJ",
     "th": "ใกล้",
@@ -816,6 +827,7 @@
   "94": {
     "split": "โปรด",
     "en": "favorite",
+    "fr": "préféré",
     "tones": "L",
     "pos": "ADJ",
     "th": "โปรด",
@@ -824,6 +836,7 @@
   "95": {
     "split": "พอ",
     "en": "enough",
+    "fr": "assez, suffisant",
     "tones": "M",
     "pos": "ADJ",
     "th": "พอ",
@@ -832,6 +845,7 @@
   "96": {
     "split": "ไกล",
     "en": "far",
+    "fr": "loin",
     "tones": "M",
     "pos": "ADJ",
     "th": "ไกล",
@@ -849,6 +863,7 @@
   "98": {
     "split": "หล่อ",
     "en": "handsome",
+    "fr": "être beau gosse",
     "tones": "L",
     "pos": "ADJ",
     "th": "หล่อ",
@@ -857,6 +872,7 @@
   "99": {
     "split": "อ้วน",
     "en": "fat, overweight",
+    "fr": "gros, en surpoids",
     "tones": "F",
     "pos": "ADJ",
     "th": "อ้วน",
@@ -864,7 +880,8 @@
   },
   "100": {
     "split": "เหนื่อย",
-    "en": "tired",
+    "en": "to be tired",
+    "fr": "être fatigué",
     "tones": "L",
     "pos": "ADJ",
     "th": "เหนื่อย",
@@ -872,7 +889,8 @@
   },
   "101": {
     "split": "สี-เงิน",
-    "en": "silver",
+    "en": "silver color",
+    "fr": "argenté",
     "tones": "RM",
     "pos": "ADJ",
     "th": "สีเงิน",
@@ -881,6 +899,7 @@
   "102": {
     "split": "สี-ส้ม",
     "en": "orange",
+    "fr": "orange",
     "tones": "RF",
     "pos": "ADJ",
     "th": "สีส้ม",
@@ -889,6 +908,7 @@
   "103": {
     "split": "สี-เหลือง",
     "en": "yellow",
+    "fr": "jaune",
     "tones": "RR",
     "pos": "ADJ",
     "th": "สีเหลือง",
@@ -897,6 +917,7 @@
   "104": {
     "split": "สี-แดง",
     "en": "red",
+    "fr": "rouge",
     "tones": "RM",
     "pos": "ADJ",
     "th": "สีแดง",
@@ -905,6 +926,7 @@
   "105": {
     "split": "สี-ม่วง",
     "en": "purple",
+    "fr": "violet",
     "tones": "RF",
     "pos": "ADJ",
     "th": "สีม่วง",
@@ -913,6 +935,7 @@
   "106": {
     "split": "ที่-แล้ว",
     "en": "previous",
+    "fr": "précédent",
     "tones": "FH",
     "pos": "ADJ",
     "th": "ที่แล้ว",
@@ -921,6 +944,7 @@
   "107": {
     "split": "สี-ฟ้า",
     "en": "blue",
+    "fr": "bleu",
     "tones": "RH",
     "pos": "ADJ",
     "th": "สีฟ้า",
@@ -929,6 +953,7 @@
   "108": {
     "split": "สี-เขียว",
     "en": "green",
+    "fr": "vert",
     "tones": "RR",
     "pos": "ADJ",
     "th": "สีเขียว",
@@ -937,6 +962,7 @@
   "109": {
     "split": "สี-ดำ",
     "en": "black",
+    "fr": "noir",
     "tones": "RM",
     "pos": "ADJ",
     "th": "สีดำ",
@@ -954,6 +980,7 @@
   "111": {
     "split": "สี-เทา",
     "en": "grey",
+    "fr": "gris",
     "tones": "RM",
     "pos": "ADJ",
     "th": "สีเทา",
@@ -962,6 +989,7 @@
   "112": {
     "split": "คน-เดียว",
     "en": "alone",
+    "fr": "tout seul",
     "tones": "MM",
     "pos": "ADJ",
     "th": "คนเดียว",
@@ -970,6 +998,7 @@
   "113": {
     "split": "วิ-เศษ",
     "en": "magical",
+    "fr": "magique",
     "tones": "HL",
     "pos": "ADJ",
     "th": "วิเศษ",
@@ -978,6 +1007,7 @@
   "114": {
     "split": "สุด-ท้าย",
     "en": "last",
+    "fr": "dernier",
     "tones": "LH",
     "pos": "ADJ",
     "th": "สุดท้าย",
@@ -986,6 +1016,7 @@
   "115": {
     "split": "ใจ-เย็น",
     "en": "calm, cool-headed",
+    "fr": "calme, imperturbable",
     "tones": "MM",
     "pos": "ADJ",
     "th": "ใจเย็น",
@@ -994,6 +1025,7 @@
   "116": {
     "split": "ใจ-ร้อน",
     "en": "hot-tempered",
+    "fr": "colérique",
     "tones": "MH",
     "pos": "ADJ",
     "th": "ใจร้อน",
@@ -1002,6 +1034,7 @@
   "117": {
     "split": "สี-น้ำ-ตาล",
     "en": "brown",
+    "fr": "marron",
     "tones": "RHM",
     "pos": "ADJ",
     "th": "สีน้ำตาล",
@@ -1010,6 +1043,7 @@
   "118": {
     "split": "มี-ความ-สุข",
     "en": "to be happy",
+    "fr": "être content",
     "tones": "MML",
     "pos": "VERB",
     "th": "มีความสุข",
@@ -1018,6 +1052,7 @@
   "119": {
     "split": "สี-ชม-พู",
     "en": "pink",
+    "fr": "rose",
     "tones": "RMM",
     "pos": "ADJ",
     "th": "สีชมพู",
@@ -1026,6 +1061,7 @@
   "120": {
     "split": "กำ-ลัง-ดี",
     "en": "just right",
+    "fr": "juste comme il faut",
     "tones": "MMM",
     "pos": "ADJ",
     "th": "กำลังดี",
@@ -1034,6 +1070,7 @@
   "121": {
     "split": "สี-น้ำ-เงิน",
     "en": "dark blue",
+    "fr": "bleu fonçé",
     "tones": "RHM",
     "pos": "ADJ",
     "th": "สีน้ำเงิน",
@@ -1042,6 +1079,7 @@
   "122": {
     "split": "สี",
     "en": "color",
+    "fr": "couleur",
     "tones": "R",
     "pos": "ADJ",
     "th": "สี",
@@ -1050,6 +1088,7 @@
   "123": {
     "split": "เหลือง",
     "en": "(yellow)",
+    "fr": "(jaune)",
     "tones": "R",
     "pos": "None",
     "th": "เหลือง",
@@ -1058,6 +1097,7 @@
   "124": {
     "split": "ส้ม",
     "en": "(orange)",
+    "fr": "(orange)",
     "tones": "F",
     "pos": "None",
     "th": "ส้ม",
@@ -1066,6 +1106,7 @@
   "125": {
     "split": "แดง",
     "en": "(red)",
+    "fr": "(rouge)",
     "tones": "M",
     "pos": "None",
     "th": "แดง",
@@ -1074,6 +1115,7 @@
   "126": {
     "split": "ม่วง",
     "en": "(purple)",
+    "fr": "(violet)",
     "tones": "F",
     "pos": "None",
     "th": "ม่วง",
@@ -1082,6 +1124,7 @@
   "127": {
     "split": "ฟ้า",
     "en": "sky",
+    "fr": "ciel",
     "tones": "H",
     "pos": "NOUN",
     "th": "ฟ้า",
@@ -1090,6 +1133,7 @@
   "128": {
     "split": "เงิน",
     "en": "money",
+    "fr": "argent",
     "tones": "M",
     "pos": "NOUN",
     "th": "เงิน",
@@ -1098,6 +1142,7 @@
   "129": {
     "split": "เขียว",
     "en": "green",
+    "fr": "vert",
     "tones": "R",
     "pos": "ADJ",
     "th": "เขียว",
@@ -1106,6 +1151,7 @@
   "130": {
     "split": "ตาล",
     "en": "sugar palm",
+    "fr": "sucre de palme",
     "tones": "M",
     "pos": "NOUN",
     "th": "ตาล",
@@ -1114,6 +1160,7 @@
   "131": {
     "split": "ขาว",
     "en": "(white)",
+    "fr": "(blanc)",
     "tones": "R",
     "pos": "None",
     "th": "ขาว",
@@ -1122,6 +1169,7 @@
   "132": {
     "split": "ดำ",
     "en": "dark, black",
+    "fr": "sombre, noir",
     "tones": "M",
     "pos": "ADJ",
     "th": "ดำ",
@@ -1130,6 +1178,7 @@
   "133": {
     "split": "เทา",
     "en": "(grey)",
+    "fr": "(gris)",
     "tones": "M",
     "pos": "",
     "th": "เทา",
@@ -1138,6 +1187,7 @@
   "134": {
     "split": "หมา",
     "en": "dog",
+    "fr": "chien",
     "tones": "R",
     "pos": "NOUN",
     "th": "หมา",
@@ -1146,6 +1196,7 @@
   "135": {
     "split": "หนู",
     "en": "mouse",
+    "fr": "souris",
     "tones": "R",
     "pos": "NOUN",
     "th": "หนู",
@@ -1154,6 +1205,7 @@
   "136": {
     "split": "ช้าง",
     "en": "elephant",
+    "fr": "éléphant",
     "tones": "H",
     "pos": "NOUN",
     "th": "ช้าง",
@@ -1162,6 +1214,7 @@
   "137": {
     "split": "ลิง",
     "en": "monkey",
+    "fr": "singe",
     "tones": "M",
     "pos": "NOUN",
     "th": "ลิง",
@@ -1170,6 +1223,7 @@
   "138": {
     "split": "ปลา",
     "en": "fish",
+    "fr": "poisson",
     "tones": "M",
     "pos": "NOUN",
     "th": "ปลา",
@@ -1178,6 +1232,7 @@
   "139": {
     "split": "นก",
     "en": "bird",
+    "fr": "oiseau",
     "tones": "H",
     "pos": "NOUN",
     "th": "นก",
@@ -1186,6 +1241,7 @@
   "140": {
     "split": "เสือ",
     "en": "tiger",
+    "fr": "tigre",
     "tones": "R",
     "pos": "NOUN",
     "th": "เสือ",
@@ -1194,6 +1250,7 @@
   "141": {
     "split": "ผี-เสื้อ",
     "en": "butterfly",
+    "fr": "papillon",
     "tones": "RF",
     "pos": "NOUN",
     "th": "ผีเสื้อ",
@@ -1201,7 +1258,8 @@
   },
   "142": {
     "split": "สอบ",
-    "en": "exam",
+    "en": "exam / to test",
+    "fr": "examen, interrogation / vérifier",
     "tones": "L",
     "pos": "NOUN",
     "th": "สอบ",
@@ -1210,6 +1268,7 @@
   "143": {
     "split": "ดิน",
     "en": "ground",
+    "fr": "sol",
     "tones": "M",
     "pos": "NOUN",
     "th": "ดิน",
@@ -1218,6 +1277,7 @@
   "144": {
     "split": "รถ",
     "en": "car",
+    "fr": "voiture",
     "tones": "H",
     "pos": "NOUN",
     "th": "รถ",
@@ -1235,6 +1295,7 @@
   "146": {
     "split": "ลม",
     "en": "wind, air",
+    "fr": "le vent, l'air",
     "tones": "M",
     "pos": "NOUN",
     "th": "ลม",
@@ -1304,6 +1365,7 @@
   "154": {
     "split": "เค้ก",
     "en": "cake",
+    "fr": "cake, gâteau",
     "tones": "H",
     "pos": "NOUN",
     "th": "เค้ก",
@@ -2445,7 +2507,7 @@
   "293": {
     "split": "ได้-ยิน",
     "en": "to hear",
-    "fr": "devenir",
+    "fr": "entendre",
     "tones": "FM",
     "pos": "VERB",
     "th": "ได้ยิน",

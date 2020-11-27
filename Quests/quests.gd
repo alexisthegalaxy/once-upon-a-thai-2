@@ -21,8 +21,8 @@ func _ready():
 	init_with_initial_state()
 
 func init_with_initial_state():
+	quests['talk_to_anchalee_in_chaiyaphum'].status = IN_PROGRESS
 	pass
-#	quests['find_sentences_in_chaiyaphum'].status = FINISHED
 
 func start_quest(quest_id):
 	print('we start the quest ', quest_id)
