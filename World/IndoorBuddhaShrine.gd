@@ -1,10 +1,10 @@
 extends StaticBody2D
 
-export(Array, String) var dialog = ["_this_is_a_shrine"]
+export(Array, String) var dialog = ["_this_is_temple_bookshelf"]
 export var sprite_path = "res://World/assets/IndoorBuddhaShrine.png"
 
 func _ready():
-	$Sprite.texture = load(sprite_path)
+	pass
 
 func interact():
 	get_tree().set_input_as_handled()

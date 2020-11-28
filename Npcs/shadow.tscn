@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/WhiteCircle.png" type="Texture" id=1]
+
+[node name="Shadow" type="Sprite"]
+modulate = Color( 0, 0, 0, 0.384314 )
+position = Vector2( 0.449373, 1.46318 )
+scale = Vector2( 0.035609, 0.0168383 )
+texture = ExtResource( 1 )

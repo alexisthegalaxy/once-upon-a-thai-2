@@ -402,6 +402,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	
 	player.get_node("Sprite").position.y -= level_y_height_change
 	player.get_node("Camera2D").position.y -= level_y_height_change
+	player.get_node("Shadow").position.y -= level_y_height_change
 	player.get_node("CollisionShape2D").position.y -= level_y_height_change
 	player.position.y += level_y_height_change
 	

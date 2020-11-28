@@ -1,10 +1,11 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Player/Player.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
 [ext_resource path="res://UI/Arrow.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Quests/QuestsDisplay.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Light/leaf_light.png" type="Texture" id=5]
+[ext_resource path="res://Npcs/shadow.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 0.0688174, 0.139715 )
@@ -334,11 +335,15 @@ position = Vector2( 162.712, 97.7062 )
 collision_layer = 2
 script = ExtResource( 2 )
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_lock_": true
 }
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+
+[node name="Shadow" parent="." instance=ExtResource( 6 )]
+position = Vector2( -1.28027, 2.06738 )
 
 [node name="leaf_light" type="Sprite" parent="."]
 visible = false

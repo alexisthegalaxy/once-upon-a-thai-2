@@ -59,7 +59,7 @@ position = Vector2( 23.7675, 44.5008 )
 position = Vector2( 336, 624 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 24.7374, 69.077 )
+position = Vector2( 25.7819, 76.3882 )
 direction = "up"
 
 [node name="NPCs" type="YSort" parent="YSort"]
@@ -67,11 +67,18 @@ direction = "up"
 [node name="Npc" parent="YSort/NPCs" instance=ExtResource( 9 )]
 position = Vector2( 199.182, 27.9597 )
 dialog = [ "I've earned a lot of money today by translating sentences.", "You want to do a translation battle?" ]
+sprite_path = "res://Npcs/sprites/old_man.png"
 direction = "up"
 
 [node name="Npc2" parent="YSort/NPCs" instance=ExtResource( 9 )]
-position = Vector2( 23.834, 28.9777 )
+position = Vector2( 23.9409, 26.8405 )
 dialog = [ "Welcome to Cool Translate.", "Here, you can translate words and Thai to get money.", "Feel free to pick a free computer and start translating.", "You'll be paid 2 Bahts per correctly translated word or sentence." ]
+sprite_path = "res://Npcs/sprites/cool_salaryman.png"
+
+[node name="Npc3" parent="YSort/NPCs" instance=ExtResource( 9 )]
+position = Vector2( -87.4011, 71.2784 )
+dialog = [ "Some people think the translations from Cool Translate are machine-generated.", "That's not true - it's all hand-made!" ]
+sprite_path = "res://Npcs/sprites/woman.png"
 direction = "up"
 state = "down"
 
