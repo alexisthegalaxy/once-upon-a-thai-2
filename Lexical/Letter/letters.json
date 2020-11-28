@@ -487,7 +487,7 @@
     "th": "ะ",
     "pron": "",
     "en": "a (short, final)",
-    "fr": "a (short, final)",
+    "fr": "a (court, final)",
     "alphabet_index": "None",
     "final": "",
     "class": "VOWEL",
@@ -505,7 +505,7 @@
       "Hola!",
       "Tu te rappelles du  -ั ?",
       "Il indique le son \"a\" court. Hé ben moi je suis la forme qu'il prend quand c'est la dernière lettre dans une syllabe.",
-      "Par exemple, \"an\" s'écrit อัน mais si on enlève le \"n\", \"a\" s'écrit อะ.",
+      "Par exemple, le son \"an\" s'écrit อัน mais si on enlève le \"n\", alors le son \"a\" s'écrit อะ.",
       "Tu piges ?",
       "Vu qu'il n'y a pas d'espaces en thaï, je permets de trouver facilement la fin d'une syllabe !"
     ],
@@ -987,19 +987,17 @@
       "We are 4 tone marks, and our shape come from the Indian numbers: 1 (-่), 2 (-้), 3 (-๊) and 4 (-๋)."
     ],
     "fr_introduction": [
-      "Salut, je suis Maï Tho, le deuxième signe tonal. On me place au-dessus de la consonne principale dans une voyelle. [sound]",
+      "Salut, je suis Maï Tho, le deuxième signe tonal.",
+      "On me place au-dessus de la consonne principale dans une voyelle. [sound]",
       "J'indique qu'une syllabe a un ton descendant.",
-      "Par exemple, ได se prononce avec le ton neutre normalement, mais ได้ se prononce avec un ton descendant.",
+      "Par exemple, ได se a un ton neutre normalement, mais ได้ a un ton descendant.",
       "Par contre,",
       "si la consonne principale est une syllabe de basse classe, alros j'indique le ton haut.",
       "Par exemple, ไม se prononce avec un ton neutre normalement, mais ไม้ a un ton haut.",
-      "Alors rappelle-toi : j'indique le ton descendant, sauf pour les syllabes basées sur des consonnes de basses classe, où j'indique le ton haut.",
+      "Alors rappelle-toi : j'indique le ton descendant,",
+      "sauf pour les syllabes basées sur des consonnes de basses classe, où j'indique le ton haut.",
       "Il y a qutre signes tonaux, et nos formes proviennent des nombres indiens: 1 (-่), 2 (-้), 3 (-๊) et 4 (-๋)."
     ],
-    "test": {
-      "prompt": "ไม้",
-      "distractors": ["ไม่", "ไม", "ไม์", "ไม้", "ไม็", "ไม๊", "ไม๋"]
-    },
     "en_mem": "The shape of the second tone mark -้ comes from the number 2. It marks the falling tone, except for low-class based syllables where it marks the high tones.",
     "fr_mem": "La forme du deuxième signe tonal -้ vient du chiffre 2. Il indique le ton descendant, sauf pour les syllabes basées sur des consonnes, où il indique le ton haut."
   },
@@ -1074,10 +1072,6 @@
       "J'indique toujours la fin d'une syllabe.",
       "Pour te rappeler de moi, imagine que je suis une dame qui a une canne et un élégant chapeau rond."
     ],
-    "test": {
-      "prompt": "ไม้",
-      "distractors": ["ไม่", "ไม", "ไม์", "ไม้", "ไม็", "ไม๊", "ไม๋"]
-    },
     "en_mem": "-ำ looks like an elegant madam wearing a round hat.",
     "fr_mem": "-ำ ressemble à un \"a\" : า, et le cercle ressemble à une âme qui s'envole."
   },

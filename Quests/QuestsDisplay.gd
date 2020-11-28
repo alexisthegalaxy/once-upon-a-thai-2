@@ -7,7 +7,8 @@ var is_showing_quests = false
 func _ready():
 	$Button.hide()
 	$Quests.hide()
-	update()
+	if not "LexicalWorld" in Game.current_map_name:
+		update()
 
 func update():
 	var number_of_active_quests = 0

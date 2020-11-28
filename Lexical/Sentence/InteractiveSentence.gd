@@ -9,7 +9,7 @@ func init_interactive_sentence(sentence, main_word_id, hears_sentence_immediatel
 		child.queue_free()
 	children = []
 
-	var playable_sentence = sentence["th"].replace("_", "")
+	var playable_sentence = sentence["th"].replace("_", "").replace("-", "")
 	if hears_sentence_immediately:
 		SoundPlayer.play_thai(playable_sentence)
 	$Node2D/TestSoundPlayer.init_sound_player(playable_sentence)

@@ -1,9 +1,9 @@
 extends Node
 
-var initial_state = false
+var initial_state = true
 var events = {
-	"ploy_has_stopped_in_front_of_house": initial_state,
-	"has_met_ploy": initial_state,
+	"ploy_has_stopped_in_front_of_house": false,
+	"has_met_ploy": false,
 	"has_met_pet": initial_state,
 	"has_learnt_four_first_words": initial_state,
 	"yaai_has_given_last_warning_before_forest": initial_state,
@@ -72,7 +72,8 @@ func npc_walks_to(parameters):
 
 func npc_disappears_in_white_orb(parameters):
 	var npc = parameters[0]
-	npc.disappear_in_white_orb()
+	if npc:
+		npc.disappear_in_white_orb()
 
 func learns_first_sentence(calling_npc):
 	Game.lose_focus(Game.current_focus)

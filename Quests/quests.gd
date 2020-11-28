@@ -62,17 +62,19 @@ func update_find_sentences_quests(sentence_id):
 						quest.status = FINISHED
 					update_quests_display()
 
-func update_implant_source_with_this_word_quests(source_name, word_id):
+func update_implant_source_with_this_word_quests(source_name: String, word_id: int):
 	for quest_id in quests:
 		var quest = quests[quest_id]
-		if quest.status == IN_PROGRESS and quest.parameters[0] == int(word_id):
+		if quest.status == IN_PROGRESS:
 			if quest.type in ["implant_source_with_this_word", "implant_source_with_this_word_i_gave_you"]:
-				if source_name == quest.parameters[1]:
+				if quest.parameters[0] == word_id:
+					if source_name == quest.parameters[1]:
+						quest.status = FINISHED
+						update_quests_display()
+			elif quest.type == "implant_any_source_with_this_word_i_gave_you":
+				if quest.parameters[0] == word_id:
 					quest.status = FINISHED
 					update_quests_display()
-			elif quest.type == "implant_any_source_with_this_word_i_gave_you":
-				quest.status = FINISHED
-				update_quests_display()
 
 func get_finished_quest_ids():
 	var finished_quest_ids = []

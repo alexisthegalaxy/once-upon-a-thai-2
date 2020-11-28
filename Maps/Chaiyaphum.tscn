@@ -4395,7 +4395,7 @@ position = Vector2( 1466.78, 682.595 )
 position = Vector2( 1339.17, 684.479 )
 
 [node name="Tree1994" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 1423.8, 772.694 )
+position = Vector2( 1360.3, 737.123 )
 
 [node name="Tree1995" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 1148.04, 713.436 )
@@ -6182,7 +6182,7 @@ position = Vector2( 699.744, 467.54 )
 position = Vector2( 1295.12, 160.862 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1675.61, 237.745 )
+position = Vector2( 654.345, -22.6399 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
