@@ -356,7 +356,7 @@ func start_test_when_back_from_MP():
 #		if not child.get_name() in ["Game", "Events", "SoundPlayer"]:
 #			child.queue_free()
 
-func _deferred_goto_scene(to_map_name, to_x, to_y):
+func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	if canvas_color_screen:
 		canvas_color_screen.queue_free()
 		canvas_color_screen = null
@@ -399,6 +399,13 @@ func _deferred_goto_scene(to_map_name, to_x, to_y):
 	player = current_scene.get_node("YSort").get_node("Player")
 	player.position = Vector2(to_x, to_y)
 	player.velocity = player_velocity
+	
+	player.get_node("Sprite").position.y -= level_y_height_change
+	player.get_node("Camera2D").position.y -= level_y_height_change
+	player.get_node("CollisionShape2D").position.y -= level_y_height_change
+	player.position.y += level_y_height_change
+	
+	
 	SoundPlayer.start_music_upon_entering_map(to_map_name)
 
 	# If we add a yield(get_tree().create_timer(1.0), "timeout")

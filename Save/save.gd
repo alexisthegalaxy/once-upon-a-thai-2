@@ -18,7 +18,7 @@ func save_game():
 
 func apply_change_from_save_data(save_data):
 	# 1 - map change
-	Game._deferred_goto_scene(save_data.current_map, 0, 0)
+	Game._deferred_goto_scene(save_data.current_map, 0, 0, 0)
 	# 2 - player changes
 	Game.player.load_game(save_data.player_data)
 	# 3 - game, vocabulary, sources

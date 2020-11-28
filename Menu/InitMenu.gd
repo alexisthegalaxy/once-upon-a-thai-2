@@ -27,11 +27,7 @@ func on_selected_character():
 	$Character_E.set_selected(false)
 
 func _on_Button_pressed():
-	Game.call_deferred("_deferred_goto_scene", "res://Maps/PlayerHouse.tscn", 24, -143)
-#	Game.call_deferred("_deferred_goto_scene", "res://Maps/Chaiyaphum.tscn", 1298, 212)
-#	Game.call_deferred("_deferred_goto_scene", "res://Maps/PlayerHouseTest.tscn", 24, -143)
-#	Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LCWorld.tscn", 0, 0)
-#	Game.call_deferred("_deferred_goto_scene", "res://Maps/TestScene.tscn", 24, -143)
+	Game.call_deferred("_deferred_goto_scene", "res://Maps/PlayerHouse.tscn", 24, -143, 0)
 
 #func _on_TextEdit_text_changed():
 #	var text = $TextEdit.text

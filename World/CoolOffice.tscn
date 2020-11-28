@@ -18,11 +18,11 @@ extents = Vector2( 56.115, 2.88004 )
 extents = Vector2( 2.53406, 21.5845 )
 
 [node name="CoolOffice" type="StaticBody2D"]
-collision_mask = 0
 
 [node name="cool_translate" type="Sprite" parent="."]
 position = Vector2( 2.57721, -58.663 )
 texture = ExtResource( 1 )
+region_filter_clip = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -55.2349, -58.2551 )

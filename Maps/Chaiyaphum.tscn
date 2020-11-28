@@ -2184,7 +2184,7 @@ position = Vector2( 1166.35, -249.768 )
 position = Vector2( 1339.92, -30.2683 )
 
 [node name="Tree1696" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 1423.89, 99.1337 )
+position = Vector2( 1415.22, 95.4399 )
 
 [node name="Tree1115" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 1070, 376.857 )
@@ -6188,7 +6188,7 @@ position = Vector2( 1276.86, 108.238 )
 position = Vector2( 1532.99, 90.5151 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1273.25, -217.436 )
+position = Vector2( 1282.82, 130.377 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6394,6 +6394,23 @@ position = Vector2( 1533.1, 83.8962 )
 to_position = Vector2( 24, 90 )
 to_map_name = "res://Maps/ChaiyaphumWat.tscn"
 
+[node name="ToHouse5" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1268.75, 94.6563 )
+to_position = Vector2( 26, 87 )
+to_map_name = "res://Maps/ChaiyaphumCoolOffice.tscn"
+
+[node name="ToHouse7" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1253.02, 48.8857 )
+to_position = Vector2( 104, -221 )
+to_map_name = "res://Maps/ChaiyaphumCoolOffice.tscn"
+sound_name = "door"
+level_y_height_change = -100
+
+[node name="ToHouse6" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1300.23, 94.1745 )
+to_position = Vector2( 26, 87 )
+to_map_name = "res://Maps/ChaiyaphumCoolOffice.tscn"
+
 [node name="ToHouse3" parent="." instance=ExtResource( 18 )]
 position = Vector2( 992.397, 57.8698 )
 to_position = Vector2( 24, 90 )
@@ -6401,7 +6418,7 @@ to_map_name = "res://Maps/PloyHouse.tscn"
 sound_name = "door"
 
 [node name="ToFarmerHouse" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1244.2, -72.2586 )
+position = Vector2( 1244.2, -71.9169 )
 to_position = Vector2( 24, 90 )
 to_map_name = "res://Maps/ChaiyaphumFarmersHouse.tscn"
 sound_name = "door"

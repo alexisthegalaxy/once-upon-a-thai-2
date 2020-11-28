@@ -37,10 +37,11 @@ func _on_LetterWorld_pressed():
 			"_deferred_goto_scene",
 			Game.player_last_overworld_map_visited,
 			Game.player_position_on_overworld.x,
-			Game.player_position_on_overworld.y
+			Game.player_position_on_overworld.y,
+			0
 		)
 	else:  # Going to the letter world
-		Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75)
+		Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75, 0)
 
 func _on_Sentences_pressed():
 	var notebook = load("res://Lexical/Notebook/Notebook.tscn").instance()

@@ -45,14 +45,14 @@ func _on_InteractArea_body_exited(body):
 
 func post_dialog():
 	Game.this_letter_world_has_letters = leads_to_letters
-	Game.call_deferred("_deferred_goto_scene", to_map_name, to_x, to_y)
+	Game.call_deferred("_deferred_goto_scene", to_map_name, to_x, to_y, 0)
 	SoundPlayer.play_sound("res://Sounds/door.wav")
 
 func dialog_option(parameters):
 	var value = parameters[1]
 	if value == 1:
 		Game.this_letter_world_has_letters = leads_to_letters
-		Game.call_deferred("_deferred_goto_scene", to_map_name, to_x, to_y)
+		Game.call_deferred("_deferred_goto_scene", to_map_name, to_x, to_y, 0)
 		SoundPlayer.play_sound("res://Sounds/door.wav")
 
 func interact():
