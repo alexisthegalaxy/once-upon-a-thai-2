@@ -3212,6 +3212,7 @@
   "371": {
     "split": "ตาย",
     "en": "to die",
+    "fr": "mourir",
     "tones": "M",
     "pos": "None",
     "th": "ตาย",
@@ -3492,5 +3493,23 @@
     "th": "รัฐธรรมนูญ",
     "teaching_order": -1,
     "letters": [2, 3, 45, 46, 5, 0, 32, 47]
+  },
+  "404": {
+    "split": "เกิด",
+    "en": "to be born, to happen",
+    "fr": "naître, se produire",
+    "tones": "L",
+    "pos": "",
+    "th": "เกิด",
+    "teaching_order": -1
+  },
+  "405": {
+    "split": "นั้น-แหละ",
+    "en": "that very one (in particular)",
+    "fr": "précisemment celui-là",
+    "tones": "hL",
+    "pos": "",
+    "th": "นั้นแหละ",
+    "teaching_order": -1
   }
 }

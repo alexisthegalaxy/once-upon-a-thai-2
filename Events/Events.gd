@@ -2,8 +2,8 @@ extends Node
 
 var initial_state = true
 var events = {
-	"ploy_has_stopped_in_front_of_house": false,
-	"has_met_ploy": false,
+	"ploy_has_stopped_in_front_of_house": initial_state,
+	"has_met_ploy": initial_state,
 	"has_met_pet": initial_state,
 	"has_learnt_four_first_words": initial_state,
 	"yaai_has_given_last_warning_before_forest": initial_state,

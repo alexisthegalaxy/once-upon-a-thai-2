@@ -1076,5 +1076,11 @@
     "en": "I've got a test today (said by a woman).",
     "fr": "J'ai un test aujourd'hui (dit par une femme).",
     "word_ids": [64, 24, 236, 142]
+  },
+  "212": {
+    "th": "เกิด_นั้นแ-หละ_คือ_ตาย",
+    "en": "Birth, that is precisely death.",
+    "fr": "La naissance, c'est précisemment la mort.",
+    "word_ids": [404, 405, 206, 371]
   }
 }
