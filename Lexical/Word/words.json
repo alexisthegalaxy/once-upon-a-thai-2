@@ -1458,6 +1458,7 @@
   "165": {
     "split": "เดือน",
     "en": "month",
+    "fr": "mois",
     "tones": "M",
     "pos": "NOUN",
     "th": "เดือน",
@@ -1466,6 +1467,7 @@
   "166": {
     "split": "เสื้อ",
     "en": "shirt",
+    "fr": "t-shirt / pull",
     "tones": "F",
     "pos": "NOUN",
     "th": "เสื้อ",
@@ -1474,6 +1476,7 @@
   "167": {
     "split": "ผี",
     "en": "ghost, spirit",
+    "fr": "fantôme, esprit",
     "tones": "R",
     "pos": "NOUN",
     "th": "ผี",
@@ -1482,6 +1485,7 @@
   "168": {
     "split": "ปี",
     "en": "year",
+    "fr": "année",
     "tones": "M",
     "pos": "NOUN",
     "th": "ปี",
@@ -1490,6 +1494,7 @@
   "169": {
     "split": "ค่า",
     "en": "cost",
+    "fr": "coût",
     "tones": "F",
     "pos": "NOUN",
     "th": "ค่า",
@@ -1498,6 +1503,7 @@
   "170": {
     "split": "เพื่อน",
     "en": "friend",
+    "fr": "ami",
     "tones": "F",
     "pos": "NOUN",
     "th": "เพื่อน",
@@ -1506,6 +1512,7 @@
   "171": {
     "split": "ยิ้ม",
     "en": "smile, to smile",
+    "fr": "sourire",
     "tones": "H",
     "pos": "VERB",
     "th": "ยิ้ม",
@@ -1514,6 +1521,7 @@
   "172": {
     "split": "แล้ว",
     "en": "already",
+    "fr": "déjà",
     "tones": "H",
     "pos": "None",
     "th": "แล้ว",
@@ -1530,6 +1538,7 @@
   "174": {
     "split": "ทุก",
     "en": "each",
+    "fr": "chaque",
     "tones": "H",
     "pos": "None",
     "th": "ทุก",
@@ -1547,6 +1556,7 @@
   "176": {
     "split": "เอง",
     "en": "oneself",
+    "fr": "soi-même",
     "tones": "M",
     "pos": "None",
     "th": "เอง",
@@ -1555,6 +1565,7 @@
   "177": {
     "split": "เคย",
     "en": "ever",
+    "fr": "ne jamais (avoir fait quelque chose)",
     "tones": "M",
     "pos": "None",
     "th": "เคย",
@@ -1563,6 +1574,7 @@
   "178": {
     "split": "เพราะ",
     "en": "because",
+    "fr": "car",
     "tones": "H",
     "pos": "None",
     "th": "เพราะ",
@@ -1589,6 +1601,7 @@
   "181": {
     "split": "การ",
     "en": "(prefix converting verbs into nouns)",
+    "fr": "(préfixe pour changer un verbe en nom)",
     "tones": "M",
     "pos": "None",
     "th": "การ",
@@ -1597,6 +1610,7 @@
   "182": {
     "split": "กว่า",
     "en": "more",
+    "fr": "plus que",
     "tones": "L",
     "pos": "None",
     "th": "กว่า",
@@ -1605,6 +1619,7 @@
   "183": {
     "split": "บ้าง",
     "en": "some",
+    "fr": "quelque",
     "tones": "F",
     "pos": "None",
     "th": "บ้าง",
@@ -1612,7 +1627,8 @@
   },
   "184": {
     "split": "ว่า",
-    "en": "(think, say, etc.) that",
+    "en": "that (think that, say that, etc.)",
+    "fr": "que (penser que, dire que, etc.)",
     "tones": "F",
     "pos": "None",
     "th": "ว่า",
@@ -1621,6 +1637,7 @@
   "185": {
     "split": "พระ",
     "en": "Buddha image, monk",
+    "fr": "moine, image de Bouddha",
     "tones": "H",
     "pos": "NOUN, CLAS",
     "th": "พระ",
@@ -1629,6 +1646,7 @@
   "186": {
     "split": "ตัว",
     "en": "body",
+    "fr": "le corps",
     "tones": "M",
     "pos": "None",
     "th": "ตัว",
@@ -1646,6 +1664,7 @@
   "188": {
     "split": "ใจ",
     "en": "heart, mind, spirit",
+    "fr": "le cœur, l'esprit",
     "tones": "M",
     "pos": "NONU",
     "th": "ใจ",
@@ -1654,6 +1673,7 @@
   "189": {
     "split": "หัว",
     "en": "head",
+    "fr": "la tête",
     "tones": "R",
     "pos": "NOUN",
     "th": "หัว",
@@ -1662,6 +1682,7 @@
   "190": {
     "split": "ผม",
     "en": "hair",
+    "fr": "les cheveux",
     "tones": "R",
     "pos": "NOUN",
     "th": "ผม",
@@ -1670,6 +1691,7 @@
   "191": {
     "split": "ขา",
     "en": "leg",
+    "fr": "la jambe",
     "tones": "R",
     "pos": "NOUN",
     "th": "ขา",
@@ -1678,6 +1700,7 @@
   "192": {
     "split": "เท้า",
     "en": "foot",
+    "fr": "le pied",
     "tones": "H",
     "pos": "NOUN",
     "th": "เท้า",
@@ -1695,6 +1718,7 @@
   "194": {
     "split": "เห็น",
     "en": "to see",
+    "fr": "voir",
     "tones": "R",
     "pos": "VERB",
     "th": "เห็น",
@@ -1703,6 +1727,7 @@
   "195": {
     "split": "ดื่ม",
     "en": "to drink",
+    "fr": "boire",
     "tones": "L",
     "pos": "VERB",
     "th": "ดื่ม",
@@ -1720,6 +1745,7 @@
   "197": {
     "split": "คิด",
     "en": "to think",
+    "fr": "penser",
     "tones": "H",
     "pos": "VERB",
     "th": "คิด",
@@ -1746,6 +1772,7 @@
   "200": {
     "split": "บอก",
     "en": "to tell",
+    "fr": "dire, révéler",
     "tones": "L",
     "pos": "VERB",
     "th": "บอก",
@@ -1754,6 +1781,7 @@
   "201": {
     "split": "ไป",
     "en": "to go",
+    "fr": "aller",
     "tones": "M",
     "pos": "VERB",
     "th": "ไป",
@@ -1762,6 +1790,7 @@
   "202": {
     "split": "มา",
     "en": "to come",
+    "fr": "venir",
     "tones": "M",
     "pos": "VERB",
     "th": "มา",
@@ -1770,6 +1799,7 @@
   "203": {
     "split": "อ่าน",
     "en": "to read",
+    "fr": "lire",
     "tones": "L",
     "pos": "VERB",
     "th": "อ่าน",
@@ -1778,6 +1808,7 @@
   "204": {
     "split": "ชื่อ",
     "en": "name, to be named",
+    "fr": "le nom, s'appeler",
     "tones": "F",
     "pos": "VERB",
     "th": "ชื่อ",
@@ -1786,6 +1817,7 @@
   "205": {
     "split": "เล่น",
     "en": "to play",
+    "fr": "jouer",
     "tones": "F",
     "pos": "VERB",
     "th": "เล่น",
@@ -1794,6 +1826,7 @@
   "206": {
     "split": "คือ",
     "en": "to be exactly",
+    "fr": "être exactement",
     "tones": "M",
     "pos": "VERB",
     "th": "คือ",
@@ -1831,6 +1864,7 @@
   "210": {
     "split": "นอน",
     "en": "to sleep",
+    "fr": "dormir",
     "tones": "M",
     "pos": "VERB",
     "th": "นอน",
@@ -1839,6 +1873,7 @@
   "211": {
     "split": "บิน",
     "en": "to fly",
+    "fr": "voler",
     "tones": "M",
     "pos": "VERB",
     "th": "บิน",
@@ -1847,6 +1882,7 @@
   "212": {
     "split": "ซื้อ",
     "en": "to buy",
+    "fr": "acheter",
     "tones": "H",
     "pos": "VERB",
     "th": "ซื้อ",
@@ -1855,6 +1891,7 @@
   "213": {
     "split": "จำ",
     "en": "to remember",
+    "fr": "se rappeler",
     "tones": "M",
     "pos": "VERB",
     "th": "จำ",
@@ -1863,6 +1900,7 @@
   "214": {
     "split": "ฝัน",
     "en": "to dream",
+    "fr": "rêver",
     "tones": "R",
     "pos": "VERB",
     "th": "ฝัน",
@@ -1871,6 +1909,7 @@
   "215": {
     "split": "เปิด",
     "en": "to open, switch on",
+    "fr": "ouvrir, allumer",
     "tones": "L",
     "pos": "VERB",
     "th": "เปิด",
@@ -1879,6 +1918,7 @@
   "216": {
     "split": "ปิด",
     "en": "to close, switch off",
+    "fr": "fermer, éteindre",
     "tones": "L",
     "pos": "VERB",
     "th": "ปิด",
@@ -1887,6 +1927,7 @@
   "217": {
     "split": "ถาม",
     "en": "to ask",
+    "fr": "demander",
     "tones": "R",
     "pos": "VERB",
     "th": "ถาม",
@@ -1895,6 +1936,7 @@
   "218": {
     "split": "เชื่อ",
     "en": "to believe",
+    "fr": "croire",
     "tones": "F",
     "pos": "VERB",
     "th": "เชื่อ",
@@ -1903,6 +1945,7 @@
   "219": {
     "split": "เกลียด",
     "en": "to hate",
+    "fr": "détester",
     "tones": "L",
     "pos": "VERB",
     "th": "เกลียด",
@@ -1911,6 +1954,7 @@
   "220": {
     "split": "กลับ",
     "en": "to return",
+    "fr": "rentrer",
     "tones": "L",
     "pos": "VERB",
     "th": "กลับ",
@@ -1919,6 +1963,7 @@
   "221": {
     "split": "รับ",
     "en": "to receive",
+    "fr": "recevoir",
     "tones": "H",
     "pos": "VERB",
     "th": "รับ",
@@ -1927,6 +1972,7 @@
   "222": {
     "split": "ใช้",
     "en": "to use",
+    "fr": "utiliser",
     "tones": "H",
     "pos": "VERB",
     "th": "ใช้",
@@ -1935,6 +1981,7 @@
   "223": {
     "split": "ศูนย์",
     "en": "0",
+    "fr": "0",
     "tones": "R",
     "pos": "NUMB",
     "th": "ศูนย์",
@@ -1943,6 +1990,7 @@
   "224": {
     "split": "หนึ่ง",
     "en": "1",
+    "fr": "1",
     "tones": "L",
     "pos": "NUMB",
     "th": "หนึ่ง",
@@ -1951,6 +1999,7 @@
   "225": {
     "split": "สอง",
     "en": "2",
+    "fr": "2",
     "tones": "R",
     "pos": "NUMB",
     "th": "สอง",
@@ -1959,6 +2008,7 @@
   "226": {
     "split": "สาม",
     "en": "3",
+    "fr": "3",
     "tones": "R",
     "pos": "NUMB",
     "th": "สาม",
@@ -1967,6 +2017,7 @@
   "227": {
     "split": "สี่",
     "en": "4",
+    "fr": "4",
     "tones": "L",
     "pos": "NUMB",
     "th": "สี่",
@@ -1975,6 +2026,7 @@
   "228": {
     "split": "ห้า",
     "en": "5",
+    "fr": "5",
     "tones": "F",
     "pos": "NUMB",
     "th": "ห้า",
@@ -1983,6 +2035,7 @@
   "229": {
     "split": "หก",
     "en": "6",
+    "fr": "6",
     "tones": "L",
     "pos": "NUMB",
     "th": "หก",
@@ -1991,6 +2044,7 @@
   "230": {
     "split": "เจ็ด",
     "en": "7",
+    "fr": "7",
     "tones": "L",
     "pos": "NUMB",
     "th": "เจ็ด",
@@ -1999,6 +2053,7 @@
   "231": {
     "split": "แปด",
     "en": "8",
+    "fr": "8",
     "tones": "L",
     "pos": "NUMB",
     "th": "แปด",
@@ -2007,6 +2062,7 @@
   "232": {
     "split": "เก้า",
     "en": "9",
+    "fr": "9",
     "tones": "F",
     "pos": "NUMB",
     "th": "เก้า",
@@ -2015,6 +2071,7 @@
   "233": {
     "split": "สิบ",
     "en": "10",
+    "fr": "10",
     "tones": "L",
     "pos": "NUMB",
     "th": "สิบ",
@@ -2032,6 +2089,7 @@
   "235": {
     "split": "นั่ง",
     "en": "to sit",
+    "fr": "s'asseoir",
     "tones": "F",
     "pos": "VERB",
     "th": "นั่ง",

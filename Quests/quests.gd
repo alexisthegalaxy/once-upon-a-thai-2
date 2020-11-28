@@ -21,11 +21,12 @@ func _ready():
 	init_with_initial_state()
 
 func init_with_initial_state():
-	quests['talk_to_anchalee_in_chaiyaphum'].status = IN_PROGRESS
+#	quests['talk_to_anchalee_in_chaiyaphum'].status = DONE
+#	quests['implant_source_behind_the_temple'].status = DONE
+#	quests['find_sentences_in_chaiyaphum'].status = DONE
 	pass
 
 func start_quest(quest_id):
-	print('we start the quest ', quest_id)
 	quests[quest_id].status = IN_PROGRESS
 	if quests[quest_id].type == "find_sentences":
 		# We count the sentences that were already found
@@ -33,7 +34,7 @@ func start_quest(quest_id):
 			if id_of_sentence_to_find in Game.seen_sentences or id_of_sentence_to_find in Game.known_sentences:
 				quests[quest_id].parameters[1].append(id_of_sentence_to_find)
 				quests[quest_id].counter += 1
-	elif quests[quest_id].type == "implant_source_with_this_word_i_gave_you":
+	elif quests[quest_id].type in ["implant_source_with_this_word_i_gave_you", "implant_any_source_with_this_word_i_gave_you"]:
 		# We create the word next to the player
 		var word_id = quests[quest_id].parameters[0]
 		var new_word = load("res://Lexical/Word/Spell.tscn").instance()
@@ -41,11 +42,10 @@ func start_quest(quest_id):
 		new_word.word = Game.words[str(word_id)]
 		new_word.can_move = true
 		new_word.position = Game.player.position
-		Game.current_scene.get_node("YSort").add_child(new_word)		
+		Game.current_scene.get_node("YSort").add_child(new_word)
 	update_quests_display()
 
 func update_quests_display():
-	print('update_quests_display !!')
 	Game.player.update_quest_display()
 	for npc in Game.current_scene.get_node("YSort").get_node("NPCs").get_children():
 		npc.update_npc_with_quests()
@@ -62,11 +62,15 @@ func update_find_sentences_quests(sentence_id):
 						quest.status = FINISHED
 					update_quests_display()
 
-func update_implant_source_with_this_word_quests(source_name):
+func update_implant_source_with_this_word_quests(source_name, word_id):
 	for quest_id in quests:
 		var quest = quests[quest_id]
-		if quest.status == IN_PROGRESS and quest.type in ["implant_source_with_this_word", "implant_source_with_this_word_i_gave_you"]:
-			if source_name == quest.parameters[1]:
+		if quest.status == IN_PROGRESS and quest.parameters[0] == int(word_id):
+			if quest.type in ["implant_source_with_this_word", "implant_source_with_this_word_i_gave_you"]:
+				if source_name == quest.parameters[1]:
+					quest.status = FINISHED
+					update_quests_display()
+			elif quest.type == "implant_any_source_with_this_word_i_gave_you":
 				quest.status = FINISHED
 				update_quests_display()
 
@@ -86,7 +90,6 @@ func get_not_started_quest_ids():
 
 func mark_quest_as_done(quest_id):
 	quests[quest_id].status = DONE
-	print('quests[quest_id].status', quests[quest_id].status)
 	update_quests_display()
 
 func load_game(quests_data):

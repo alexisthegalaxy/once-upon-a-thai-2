@@ -84,7 +84,7 @@
     "en_introduction": [
       "Yo!",
       "I'm the letter -ั and I'm pronounced like a short \"ah\" sound. [sound]",
-      "Unlike า qhich is the long \"ah\" sound, I'm short - in Thai all vowels are either short or long.",
+      "Unlike า which is the long \"ah\" sound, I'm short - in Thai all vowels are either short or long.",
       "I'm a vowel and I float over a consonant like an accent:",
       "For example, นั is pronounced \"na\"."
     ],
@@ -842,7 +842,7 @@
     "final": "",
     "class": "ACCENT",
     "frequency_index": "37",
-    "audio": "None",
+    "audio": "กะ",
     "en_introduction": [
       "Hi.",
       "I make long sounds short.",
@@ -948,7 +948,7 @@
     "final": "",
     "class": "ACCENT",
     "frequency_index": "8",
-    "audio": "ไม้เอก",
+    "audio": "ก่า",
     "en_introduction": [
       "Hey, I'm Mai Ek, the first tone mark. I go over the main consonant.[sound]",
       "I indicate that the syllable is a low tone.",
@@ -975,7 +975,7 @@
     "final": "",
     "class": "ACCENT",
     "frequency_index": "13",
-    "audio": "ไม้โท",
+    "audio": "ก้า",
     "en_introduction": [
       "Hey, I'm Mai Tho, the second tone mark. I go over the main consonant.[sound]",
       "I indicate that the syllable is a falling tone.",
@@ -1012,7 +1012,7 @@
     "final": "",
     "class": "ACCENT",
     "frequency_index": "60",
-    "audio": "ไม้ตรี",
+    "audio": "ก๊า",
     "en_introduction": [
       "Hey, I'm Mai Dtri, the third tone mark. I go over the main consonant.[sound]",
       "I indicate that the syllable is a high tone.",
@@ -1035,7 +1035,7 @@
     "final": "",
     "class": "ACCENT",
     "frequency_index": "65",
-    "audio": "ไม้ตรี",
+    "audio": "ก๋า",
     "en_introduction": [
       "Hey, I'm Mai Chattawa, the fourth tone mark. I go over the main consonant.[sound]",
       "I indicate that the syllable is a rising tone.",
@@ -1058,7 +1058,7 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "40",
-    "audio": "-ำ",
+    "audio": "อำ",
     "en_introduction": [
       "Bam! I know I look like two separate letters, but I'm actually one! On a keyboard, I'm also one!",
       "Unlike the I'm pronounced \"am\", like in jam, and unlike the long า \"ah\" sound, I'm short. [sound]",
@@ -1067,7 +1067,8 @@
       "To remember me, think how I look like a madam with a stylish round hat and a cane."
     ],
     "fr_introduction": [
-      "Bam! Je sais que je ressemble à deux lettres séparées, mais je ne suis qu'un ! Même sur un clavier, je n'ai qu'une touche !",
+      "Bam! Je sais que je ressemble à deux lettres séparées, mais je ne suis qu'une lettre !",
+      "Même sur un clavier, je n'ai qu'une touche !",
       "On me prononce \"am\", comme dans dame, et contrairement au า qui est le long son \"a\", je suis court. [sound]",
       "Par exemple, ตำ se dit \"dtam\".",
       "J'indique toujours la fin d'une syllabe.",

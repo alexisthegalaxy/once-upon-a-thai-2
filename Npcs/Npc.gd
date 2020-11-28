@@ -201,7 +201,6 @@ func npc_turn_towards(target):
 	update_animation()
 
 func handle_talk_with_this_npc_quest():
-	print('npc display_name', display_name)
 	for quest_id in Quests.quests:
 		if (
 			Quests.quests[quest_id].status == Quests.IN_PROGRESS

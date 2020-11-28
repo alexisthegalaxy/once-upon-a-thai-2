@@ -92,10 +92,11 @@ func dialog_option(parameters):
 				Game.select_follower_to_implant_screen.init_select_follower_to_implant_screen(self)
 				Game.current_scene.add_child(Game.select_follower_to_implant_screen)
 			elif len(Game.following_spells) == 1:
-				word_ids.append(Game.following_spells[0].id)
+				var word_id = Game.following_spells[0].id
+				word_ids.append(word_id)
 				update_game_sources()
 				update_source(false)
-				Quests.update_implant_source_with_this_word_quests(name)
+				Quests.update_implant_source_with_this_word_quests(name, word_id)
 				Game.following_spells[0].over_word.starts_disappearing()
 				Game.following_spells = []
 			else:

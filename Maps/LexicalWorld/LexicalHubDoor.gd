@@ -5,7 +5,7 @@ export(int) var to_x
 export(int) var to_y
 export(Texture) var sprite = preload("res://World/LexicalWorld/mc_door.png")
 export var leads_to = "Lexical Nexus"
-export var leads_to_letters = []  # a list of ids
+export(Array, int) var leads_to_letters = []  # a list of ids
 var time = 0
 var door_text = ""
 

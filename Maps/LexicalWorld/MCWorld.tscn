@@ -51,6 +51,11 @@ position = Vector2( 57.8227, 40.995 )
 id = 17
 display_name = "ด"
 
+[node name="Letter ต" parent="YSort/Letters" instance=ExtResource( 11 )]
+position = Vector2( 144.834, 35.514 )
+id = 16
+display_name = "ต"
+
 [node name="Lights" type="Node" parent="."]
 
 [node name="Light2D" type="Light2D" parent="Lights"]

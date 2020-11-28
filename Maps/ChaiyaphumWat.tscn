@@ -66,8 +66,8 @@ position = Vector2( 25.4361, -25.1674 )
 dialog = [ "_how_s_progress_with_training_name" ]
 sprite_path = "res://Npcs/sprites/ploysgrandmother.png"
 display_name = "Anchalee"
-start_quests = [ "find_sentences_in_chaiyaphum", "implant_source_behind_the_temple" ]
-finish_quests = [ "find_sentences_in_chaiyaphum", "implant_source_behind_the_temple" ]
+start_quests = [ "find_sentences_in_chaiyaphum", "implant_source_behind_the_temple", "implant_any_source_with_dtat", "talk_to_ajahn_jagaro_in_chaiyaphum" ]
+finish_quests = [ "find_sentences_in_chaiyaphum", "implant_source_behind_the_temple", "implant_any_source_with_dtat" ]
 
 [node name="Lights" type="Node" parent="."]
 

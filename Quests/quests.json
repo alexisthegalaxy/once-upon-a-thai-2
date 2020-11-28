@@ -89,7 +89,8 @@
       "In my field, there used to be a source for the Spell of water: น้ำ.",
       "But for some reason it got dried up this morning, and all the Spells are gone.",
       "They were doing all the watering for my crops, so I'd be super grateful if you could implant water in it again!",
-      "I hear there's a well south from here where you could find water Spells, would you like to fetch one and implant it into my well?"
+      "I hear there's a well south from here where you could find water Spells,",
+      "would you like to fetch one and implant it into my well?"
     ],
     "fr_start_dialog": [
       "Excusez-moi, mais j'ai remarqué que vous faisiez un apprentissage de chaman - pourriez-vous m'aider ?",
@@ -115,6 +116,38 @@
     "type": "implant_source_with_this_word",
     "parameters": [156, "EmptySourceField"]
   },
+  "implant_any_source_with_dtat": {
+    "blockers": ["implant_source_behind_the_temple"],
+    "en_name": "Finding a home for ตัด",
+    "fr_name": "Trouver un foyer pour ตัด",
+    "counter_max": 1,
+    "en_start_dialog": [
+      "Hmm, [Name], I can say you have a way with words.",
+      "I'll entrust you this useful one: ตัด.",
+      "Find it a home, a source. Wherever you decide.",
+      "Then, once this Spell has a home, you'll be able to harness its power forever.",
+      "ตัด means \"to cut\", and if it follows you, it'll let you get rid of bushes that are in the way."
+    ],
+    "fr_start_dialog": [
+      "C'est bien, [Name], je vois que tu débrouilles bien avec les Mots.",
+      "Je vais te confier celui-là : ตัด.",
+      "Trouve-lui un foyer, une source. Choisis la source que tu veux.",
+      "Ensuite, une fois que ce Mot aura une source, tu pourras employer sa force pour toujours.",
+      "ตัด signifie \"couper\", et s'il te suit, il te permettra de couper les buissons qui te bloquent la route.",
+    ],
+    "en_description": "Implant the Spell ตัด in any source.",
+    "fr_description": "Implante le Mot ตัด dans la source que tu veux.",
+    "en_end_description": "Go back to Anchalee in Chaiyaphum's temple.",
+    "fr_end_description": "Retourne voir Anchalee au temple de Chaiyaphum.",
+    "fr_finish_dialog": [
+      "Très bien, je suis content que tu aies trouvé une Source pour ตัด !"
+    ],
+    "en_finish_dialog": [
+      "Very good, I'm glad to hear you could find a Source for ตัด!"
+    ],
+    "type": "implant_any_source_with_this_word_i_gave_you",
+    "parameters": [401]
+  },
   "talk_to_anchalee_in_chaiyaphum": {
     "blockers": [],
     "en_name": "Going to Chaiyaphum",
@@ -124,6 +157,30 @@
     "fr_description": "Suis le chemin au nord de ta maison pour aller à Chaiyaphum, et parle à Anchalee, la grand-mère de Ploy.",
     "type": "talk_to_npc",
     "parameters": ["Anchalee"]
+  },
+  "talk_to_ajahn_jagaro_in_chaiyaphum": {
+    "blockers": ["implant_any_source_with_dtat"],
+    "en_name": "Going to Khon Kaen",
+    "fr_name": "Aller à Khon Kaen",
+    "en_start_dialog": [
+      "Very good, now you will always be able to cut bushes in your way.",
+      "If you want to continue with your training, you can go to Khon Kaen next.",
+      "There's a monk over there that will be able to train you: Ajahn Jagaro.",
+      "Find him, and he'll teach you great things! His specialty is teleportation through time and space.",
+      "To go to Khon Kaen, go west from here, and use ตัด to cut the bush in your way."
+    ],
+    "fr_start_dialog": [
+      "Très bien, maintenant tu pourras toujours couper ces buissons qui te bloquent !",
+      "Si tu veux continuer avec ton éducation, tu devrais aller à Khon Kaen.",
+      "Il y a un moine très doué là-bas qui pourra se charger de t'entraîner : Ajahn Jagaro.",
+      "Trouve-le, et il t'enseigner des choses fantastiques ! Il sait se téléporter dans l'espace et le temps.",
+      "Pour aller à Khon Kaen, dirige toi vers l'ouest, puis utilise ตัด pour couper les buissons qui te bloquent."
+    ],
+    "counter_max": 1,
+    "en_description": "Follow the path west from Chaiyaphum, cut the bush in the way with ตัด, go to Khon Kaen and talk to Ajahn Jagaro in Khon Kaen's temple.",
+    "fr_description": "Suis le chemin à l'ouest de Chaiyaphum, coupe le buisson sur le passage avec ตัด, va à Khon Kaen et parle à Ajahn Jagaro dans le temple de Khon Kaen.",
+    "type": "talk_to_npc",
+    "parameters": ["Ajahn Jagaro"]
   },
   "implant_word_cut": {
     "blockers": [],

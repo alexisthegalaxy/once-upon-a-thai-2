@@ -79,7 +79,7 @@ to_x = -1
 to_y = 5
 sprite = ExtResource( 16 )
 leads_to = "High Consonant World"
-leads_to_letters = [ 15, 26, 31, 38, 37 ]
+leads_to_letters = [ 15, 26, 31, 38, 37, 45 ]
 
 [node name="Door LC" parent="YSort" instance=ExtResource( 15 )]
 position = Vector2( 107.068, 112.967 )
@@ -88,7 +88,7 @@ to_x = 4
 to_y = 15
 sprite = ExtResource( 17 )
 leads_to = "Low Consonant World"
-leads_to_letters = [ 0, 2, 5, 8, 10, 11, 12, 13, 21, 24, 30, 34, 39 ]
+leads_to_letters = [ 0, 2, 5, 8, 10, 11, 12, 13, 21, 24, 30, 34, 39, 46, 47 ]
 
 [node name="Door Accents" parent="YSort" instance=ExtResource( 15 )]
 position = Vector2( 38.3238, -11.9885 )
@@ -97,7 +97,7 @@ to_x = 1
 to_y = 16
 sprite = ExtResource( 13 )
 leads_to = "Accent World"
-leads_to_letters = [ 36 ]
+leads_to_letters = [ 36, 40, 41, 42, 43 ]
 
 [node name="Player" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( -139.465, 74.9269 )

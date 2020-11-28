@@ -4,7 +4,7 @@ extends StaticBody2D
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var dialog = [tr("_do_you_want_to_use_your_spell_dtat_to_cut_this_bush_q_yes_no")]
+
 const DTAT_WORD_ID = 401
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -36,8 +36,21 @@ func dialog_option(parameters):
 	remove_following_spell()
 	queue_free()
 
+func there_is_a_cut_spell():
+	var there_is_an_available_cut_spell = false
+	for following_spell in Game.following_spells:
+		if following_spell.id == DTAT_WORD_ID:
+			return true
+	return false
+
 func interact():
 	get_tree().set_input_as_handled()
+	var dialog
+	if there_is_a_cut_spell():
+		dialog = [tr("_do_you_want_to_use_your_spell_dtat_to_cut_this_bush_q_yes_no")]
+	else:
+		dialog = [tr("_this_bush_can_be_cut_down_with_dtat")]
+		
 	Game.player.can_interact = false
 	Game.is_frozen = true
 	Game.player.stop_walking()
@@ -47,12 +60,6 @@ func interact():
 
 func _on_Area2D_body_entered(body):
 	if not body == Game.player:
-		return
-	var there_is_an_available_cut_spell = false
-	for following_spell in Game.following_spells:
-		if following_spell.id == DTAT_WORD_ID:
-			there_is_an_available_cut_spell = true
-	if not there_is_an_available_cut_spell:
 		return
 	Game.gains_focus(self)
 

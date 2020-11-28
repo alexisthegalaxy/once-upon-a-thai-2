@@ -21,6 +21,8 @@ func init_word_spawner(_word_ids, _max_number_of_words, _wait_time, spawn_immedi
 	word_ids = _word_ids
 	$Timer.start()
 	if spawn_immediately:
+		# We wait a bit so make sure the word has been updated after a scene change
+		yield(get_tree().create_timer(0.1), "timeout")
 		timeout()
 
 func timeout():

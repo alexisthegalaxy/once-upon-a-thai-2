@@ -23,7 +23,8 @@ __meta__ = {
 }
 
 [node name="path" type="Sprite" parent="."]
-position = Vector2( -920.088, -1546.16 )
+position = Vector2( -624.492, -1077.2 )
+scale = Vector2( 0.669787, 0.688325 )
 texture = ExtResource( 1 )
 centered = false
 
@@ -41,43 +42,51 @@ position = Vector2( -382.44, -280.18 )
 [node name="Letters" type="YSort" parent="YSort"]
 
 [node name="Letter -ี" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( 49.395, -269.089 )
+position = Vector2( 22.2405, -183.746 )
 id = 9
 
 [node name="Letter -ิ" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( -101.189, -534.929 )
+position = Vector2( -86.448, -384.416 )
 id = 14
 
 [node name="Letter no_letter" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( 398.773, -522.164 )
+position = Vector2( 86.5009, -353.839 )
 id = 35
 
 [node name="Letter u" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( 137.764, -679.067 )
+position = Vector2( 81.1485, -482.445 )
 id = 33
 
-[node name="Letter u2" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( 19.848, -697.612 )
+[node name="Letter a short mid" parent="YSort/Letters" instance=ExtResource( 11 )]
+position = Vector2( 99.1927, -292.513 )
 id = 3
 
+[node name="Letter a short final" parent="YSort/Letters" instance=ExtResource( 11 )]
+position = Vector2( 22.1672, -284.943 )
+id = 20
+
+[node name="Letter am" parent="YSort/Letters" instance=ExtResource( 11 )]
+position = Vector2( 87.9887, -253.75 )
+id = 44
+
 [node name="Letter uu" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( 302.494, -804.051 )
+position = Vector2( 195.544, -566.769 )
 id = 32
 
 [node name="Letter เ-" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( 263.515, -159.433 )
+position = Vector2( 166.535, -120.641 )
 id = 6
 
 [node name="Letter แ-" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( 438.971, -213.227 )
+position = Vector2( 294.664, -156.59 )
 id = 25
 
 [node name="Letter ai maimalai" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( -175.376, -237.019 )
+position = Vector2( -126.498, -168.745 )
 id = 28
 
 [node name="Letter ai maimuan" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( -399.962, -222.634 )
+position = Vector2( -282.034, -157.463 )
 id = 27
 
 [node name="Lights" type="Node" parent="."]

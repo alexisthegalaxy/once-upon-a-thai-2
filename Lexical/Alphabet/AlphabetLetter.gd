@@ -13,10 +13,13 @@ func init_alphabet_letter(letter_id):
 func _on_Button_pressed():
 #	if not Game.knows_letter(letter):  # should not be commented
 #		return
-	SoundPlayer.play_thai(letter["pron"])
 	var letter_page = load("res://Lexical/Letter/LetterPage.tscn").instance()
 	Game.player.letter_page = letter_page
 	Game.current_scene.add_child(letter_page)
 	letter_page.init_letter_page(letter["id"])
 	Game.player.alphabet.queue_free()
 	Game.player.alphabet = null
+
+
+func _on_Button_mouse_entered():
+	SoundPlayer.play_thai(letter.audio)

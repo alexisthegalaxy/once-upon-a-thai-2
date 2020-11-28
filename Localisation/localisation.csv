@@ -70,7 +70,8 @@ _which_letter_corresponds_to_this_sound,Which letter corresponds to this sound?,
 _how_do_you_write_this_sound,How do you write this sound?,Comment écrit-on ce son ?
 _how_do_you_pronounce_this_letter,How do you pronounce this letter?,Comment prononce-t-on cette lettre ?
 _which_word_corresponds_to_this_sound,Which word corresponds to this sound?,Quel mot correspond à ce son ?
-_do_you_want_to_use_your_spell_dtat_to_cut_this_bush_q_yes_no,Do you want to use your Spell ตัด to cut this bush? @QYes/No,Veux-tu utiliser le mot ตัด pour couper ce buisson ?  @QOui/Non
+_do_you_want_to_use_your_spell_dtat_to_cut_this_bush_q_yes_no,Do you want to use your Spell ตัด to cut this bush? @QYes/No,Veux-tu utiliser le Mot ตัด pour couper ce buisson ?  @QOui/Non
+_this_bush_can_be_cut_down_with_dtat,This bush could be cut down if you had the Spell ตัด with you.,Ce buisson pourrait être coupé si tu avais le Mot ตัด avec toi.
 _well_done_name,Well done [Name]!,"Bien joué, [Name] !"
 _now_your_test_will_be_to,"Now, your test will be to guess the meaning of all words you will find deeper in the forest.","À présent, ton test sera de deviner le sens des mots que tu trouveras dans la forêt."
 _i_believe_four_types_of_spells_live_there,I believe four types of Spells live there.,Je crois qu'il y a quatre mots différents qui vivent là.
@@ -141,3 +142,8 @@ _you_want_to_learn_a_sentence_how_about,"So, you want to learn a Sentence? How a
 _hey_my_name_is_som,"Hey, my name is Som, I just moved here recently.","Salut, je m'appelle Som, on vient d'emménager ici."
 _heres_a_sentence_for_you,"Oh, you're learning Thai? Here's a Thai sentence for you:","Oh, tu apprends le thaï ? Je peux t'enseigner une phrase si tu veux :"
 _congrats_reached_end_game,"Congratulations, you've reached the end of the game!","Félicitations, tu as atteint la fin du jeu !"
+_pronunciation,Pronunciation,Prononciation
+_standard_font,Standard font,Police standard
+_modern_font,Moderne font,Police moderne
+_consonant_class,Consonant class,Classe de la consonne
+_how_to_remember_it,How to remember it:,Astuce pour s'en souvenir :
