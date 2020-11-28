@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://World/assets/small_table.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 21.363, 9.32552 )
+
+[node name="Table" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.461021, -7.8802 )
+shape = SubResource( 1 )
+
+[node name="small_table" type="Sprite" parent="."]
+position = Vector2( 1.17853, -8.59732 )
+texture = ExtResource( 1 )

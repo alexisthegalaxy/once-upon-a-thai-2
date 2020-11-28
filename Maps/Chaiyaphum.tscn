@@ -125,8 +125,8 @@ texture = ExtResource( 33 )
 
 [node name="YSort" type="YSort" parent="."]
 
-[node name="House" parent="YSort" instance=ExtResource( 37 )]
-position = Vector2( 1101.65, 74.9891 )
+[node name="Konbini" parent="YSort" instance=ExtResource( 37 )]
+position = Vector2( 1101.82, 74.9891 )
 
 [node name="Door" parent="YSort" instance=ExtResource( 19 )]
 position = Vector2( 1035.92, 648.022 )
@@ -6127,7 +6127,7 @@ position = Vector2( 365.148, 161.214 )
 word_ids = [  ]
 
 [node name="EmptySourceChaiyaphum" parent="YSort/Sources" instance=ExtResource( 23 )]
-position = Vector2( 81.2559, 389.47 )
+position = Vector2( 80.8568, 405.431 )
 word_ids = [  ]
 
 [node name="EmptySourceChaiyaphum2" parent="YSort/Sources" instance=ExtResource( 23 )]
@@ -6188,7 +6188,7 @@ position = Vector2( 1276.86, 108.238 )
 position = Vector2( 1532.99, 90.5151 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1282.82, 130.377 )
+position = Vector2( 1099.27, 110.426 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6232,7 +6232,7 @@ dialog = [ "You've finished the game so far!", "Congratulations!" ]
 sprite_path = "res://Npcs/sprites/beach_boy.png"
 
 [node name="ShopOwner" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 1092.5, 78.9028 )
+position = Vector2( 1507.58, -137.594 )
 dialog = [ "_sorry_shop_closed_today" ]
 sprite_path = "res://Npcs/sprites/old_man.png"
 
@@ -6410,6 +6410,11 @@ level_y_height_change = -100
 position = Vector2( 1300.23, 94.1745 )
 to_position = Vector2( 26, 87 )
 to_map_name = "res://Maps/ChaiyaphumCoolOffice.tscn"
+
+[node name="ToHouse8" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1095.21, 60.9581 )
+to_position = Vector2( 26, 88 )
+to_map_name = "res://Maps/ChaiyaphumShop.tscn"
 
 [node name="ToHouse3" parent="." instance=ExtResource( 18 )]
 position = Vector2( 992.397, 57.8698 )

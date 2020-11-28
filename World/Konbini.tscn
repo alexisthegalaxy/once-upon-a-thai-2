@@ -8,10 +8,10 @@ extents = Vector2( 44.5257, 37.8957 )
 [node name="Konbini" type="StaticBody2D"]
 collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 1.00991, -37.0441 )
-shape = SubResource( 1 )
-
 [node name="konbini" type="Sprite" parent="."]
 position = Vector2( 1.50342, -40.7676 )
 texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1.00991, -37.0441 )
+shape = SubResource( 1 )
