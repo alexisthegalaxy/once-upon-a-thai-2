@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-export(Array, String) var dialog = ["_this_is_a_shrine"]
+var dialog
 export var sprite_path = "res://World/assets/IndoorBuddhaShrine.png"
 export var is_on = false
 
@@ -8,9 +8,11 @@ func _ready():
 	if is_on:
 		$computer_on.show()
 		$computer_off.hide()
+		dialog = [tr("_it_looks_like_somebody_else_uses_this_computer")]
 	else:
 		$computer_off.show()
 		$computer_on.hide()
+		dialog = [tr("_name_turns_the_computer_on")]
 
 func interact():
 	get_tree().set_input_as_handled()

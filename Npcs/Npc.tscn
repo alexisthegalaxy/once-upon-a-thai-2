@@ -31,6 +31,7 @@ collision_layer = 17
 script = ExtResource( 3 )
 
 [node name="Shadow" parent="." instance=ExtResource( 5 )]
+position = Vector2( 0.341963, 2.53728 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0.475456, -8.71101 )

@@ -3,7 +3,7 @@ extends Node2D
 var words = []
 var children = []
 
-func init_interactive_sentence(sentence, main_word_id, hears_sentence_immediately):
+func init_interactive_sentence(sentence, main_word_id, hears_sentence_immediately, see_audio_player, see_translation):
 	var current_x = 0
 	for child in children:
 		child.queue_free()
@@ -12,6 +12,14 @@ func init_interactive_sentence(sentence, main_word_id, hears_sentence_immediatel
 	var playable_sentence = sentence["th"].replace("_", "").replace("-", "")
 	if hears_sentence_immediately:
 		SoundPlayer.play_thai(playable_sentence)
+	if see_audio_player:
+		$Node2D/TestSoundPlayer.show()
+	else:
+		$Node2D/TestSoundPlayer.hide()
+	if see_translation:
+		$Node2D/Translation.show()
+	else:
+		$Node2D/Translation.hide()
 	$Node2D/TestSoundPlayer.init_sound_player(playable_sentence)
 	if sentence.id in Game.known_sentences:
 		$Node2D/Translation.text = sentence[TranslationServer.get_locale()]

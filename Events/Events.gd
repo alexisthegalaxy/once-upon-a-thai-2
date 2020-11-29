@@ -87,12 +87,13 @@ func learns_first_sentence(calling_npc):
 	calling_npc.post_dialog_event = ["set_yaai_has_given_last_warning_before_forest_as_true", []]
 
 func say_sentence(sentence_id):
-	Game.lose_focus(Game.current_focus)
 	Game.discovers_sentence(sentence_id, false)
 	
 func teach_sentence(sentence_id):
-	Game.lose_focus(Game.current_focus)
 	Game.discovers_sentence(sentence_id, true)
+
+func starts_deducing_coop(_no_arguments_needed):
+	Game.starts_deducing_coop()
 
 func set_yaai_has_given_last_warning_before_forest_as_true(_parameters):
 	events.yaai_has_given_last_warning_before_forest = true

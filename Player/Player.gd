@@ -91,6 +91,10 @@ func _on_press_f():
 	elif Game.select_follower_to_implant_screen:
 		Game.select_follower_to_implant_screen.queue_free()
 		Game.select_follower_to_implant_screen = null
+	elif Game.deducing_coop_select_sentence_screen:
+		Game.deducing_coop_select_sentence_screen.queue_free()
+		Game.deducing_coop_select_sentence_screen = null
+		Game.is_frozen = false
 	else:
 		hub = load("res://UI/UIHub.tscn").instance()
 		Game.current_scene.add_child(hub)

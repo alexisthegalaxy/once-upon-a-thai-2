@@ -17,7 +17,7 @@ func init_sentence_carousel(_word_id):
 #			print('word_id ', word_id, ' is seen!')
 			sentences.append(sentence)
 	if sentences:
-		$InteractiveSentence.init_interactive_sentence(sentences[current_sentence_index], word_id, false)
+		$InteractiveSentence.init_interactive_sentence(sentences[current_sentence_index], word_id, false, true, true)
 	update_sentence_counter()
 
 func update_sentence_counter():
@@ -74,7 +74,7 @@ func _on_LeftArea_input_event(_viewport, event, _shape_idx):
 		current_sentence_index -= 1
 		if current_sentence_index < 0:
 			current_sentence_index += len(sentences)
-		$InteractiveSentence.init_interactive_sentence(sentences[current_sentence_index], word_id, false)
+		$InteractiveSentence.init_interactive_sentence(sentences[current_sentence_index], word_id, false, true, true)
 		update_sentence_counter()
 
 func _on_RightArea_input_event(_viewport, event, _shape_idx):
@@ -84,5 +84,5 @@ func _on_RightArea_input_event(_viewport, event, _shape_idx):
 		current_sentence_index += 1
 		if current_sentence_index == len(sentences):
 			current_sentence_index = 0
-		$InteractiveSentence.init_interactive_sentence(sentences[current_sentence_index], word_id, false)
+		$InteractiveSentence.init_interactive_sentence(sentences[current_sentence_index], word_id, false, true, true)
 		update_sentence_counter()

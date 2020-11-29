@@ -136,7 +136,7 @@ _high_class_consonants,High Class Consonants,Consonnes de haute classe
 _mid_class_consonants,Mid Class Consonants,Consonnes de moyenne classe
 _low_class_consonants,Low Class Consonants,Consonnes de basse classe
 _you_found_letter_s_you_put_it_in_bag_come_in_handy_later,"You've found the letter %s. You keep it with you, it might come in handy later!","Tu as trouvé la lettre %s. Tu la gardes avec toi, ça pourrait être utile plus tard !"
-_i_came_here_to_get_help_from_the_shamans,I came here to get some help from the shamans,Je suis venue ici pour chercher l'aide des chamans.
+_i_came_here_to_get_help_from_the_shamans,I came here to get some help from the shamans.,Je suis venue ici pour chercher l'aide des chamans.
 _hey_name_long_time_no_see_heres_a_sentence_for_you,"Hey [Name], long time no see! Here's a sentence for you to learn:","Salut [Name], ça faisait longtemps ! Tiens, voilà une phrase pour toi :"
 _you_want_to_learn_a_sentence_how_about,"So, you want to learn a Sentence? How about :","Alors, tu veux apprendre une phrase ? Qu'est-ce que tu dis de celle-là :"
 _hey_my_name_is_som,"Hey, my name is Som, I just moved here recently.","Salut, je m'appelle Som, on vient d'emménager ici."
@@ -148,3 +148,7 @@ _modern_font,Moderne font,Police moderne
 _consonant_class,Consonant class,Classe de la consonne
 _how_to_remember_it,How to remember it:,Astuce pour s'en souvenir :
 _this_is_temple_bookshelf,"This is full of books about Spells, Spirits, Sources and Buddhism.","C'est plein de livres sur les Mots, les Esprits, les Sources et le Bouddhisme."
+_it_looks_like_somebody_else_uses_this_computer,It looks like somebody else is using this computer.,On dirait que quelqu'un d'autre utilise cet ordinateur.
+_name_turns_the_computer_on,[Name] turns the computer on.,[Name] allume l'ordinateur.
+_select_sentence_to_analyse,Select the sentence you want to analyze,Sélectionne la phrase que tu veux analyser.
+_i_translate_sentences_you_want_to_help,"Hey [Name], I'm trying to translate some sentences into English, you want to help?","Salut [Name], je suis en train d'essayer de traduire des phrases en français, tu veux m'aider ?"
