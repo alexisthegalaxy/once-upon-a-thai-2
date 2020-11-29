@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Test/JobTest/JobMenu.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 320.0
+margin_bottom = 180.0
+color = Color( 0.0196078, 0.129412, 0.121569, 0.615686 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SentenceMatching" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -70.8634
+margin_top = 8.0
+margin_right = 69.1366
+margin_bottom = 36.0
+custom_fonts/font = SubResource( 1 )
+text = "_sentence_matching"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SentenceTranslation" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -72.0
+margin_top = 48.0
+margin_right = 68.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 1 )
+text = "_sentence_translation"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpeechRecognition" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -72.0
+margin_top = 88.0
+margin_right = 68.0
+margin_bottom = 116.0
+custom_fonts/font = SubResource( 1 )
+text = "_speech_recognition"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -70.8634
+margin_top = 128.0
+margin_right = 69.1366
+margin_bottom = 156.0
+custom_fonts/font = SubResource( 1 )
+text = "_quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="SentenceMatching" to="." method="_on_SentenceMatching_pressed"]
+[connection signal="pressed" from="SentenceTranslation" to="." method="_on_SentenceTranslation_pressed"]
+[connection signal="pressed" from="SpeechRecognition" to="." method="_on_SpeechRecognition_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

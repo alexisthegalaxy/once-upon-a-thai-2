@@ -95,6 +95,9 @@ func teach_sentence(sentence_id):
 func starts_deducing_coop(_no_arguments_needed):
 	Game.starts_deducing_coop()
 
+func starts_job_menu_screen(_no_arguments_needed):
+	Game.starts_job_menu_screen()
+
 func set_yaai_has_given_last_warning_before_forest_as_true(_parameters):
 	events.yaai_has_given_last_warning_before_forest = true
 

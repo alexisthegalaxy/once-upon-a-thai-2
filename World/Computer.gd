@@ -20,7 +20,8 @@ func interact():
 	Game.is_frozen = true
 	Game.player.stop_walking()
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-	Game.current_dialog.init_dialog(dialog, self, null, false, null)
+	Game.current_dialog.init_dialog(dialog, self, ["starts_job_menu_screen", null], false, null)
+#	Game.current_dialog.post_dialog = "starts_deducing_coop"
 	Game.current_scene.add_child(Game.current_dialog)
 
 func _on_InterractZone_body_entered(body):

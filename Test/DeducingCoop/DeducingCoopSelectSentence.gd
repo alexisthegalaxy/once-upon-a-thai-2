@@ -3,7 +3,6 @@ extends CanvasLayer
 var sentence_y = 75
 var sentence_x = 50
 
-
 func _ready():
 	Game.deducing_coop_select_sentence_screen = self
 	for sentence_id in Game.seen_sentences:

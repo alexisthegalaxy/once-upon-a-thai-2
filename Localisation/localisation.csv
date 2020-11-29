@@ -155,3 +155,6 @@ _i_translate_sentences_you_want_to_help,"Hey [Name], I'm trying to translate som
 _submit,Submit,Valider
 _hmm_no_i_think_its_a_different_sentence,"Hmm, no, this doesn't fit with what I know, I think it's a bit different.","Hmm, non, certains mots ne vont pas, cette phrase n'a pas l'air d'aller."
 _hmm_yeah_i_thnk_this_is_the_sentence,"Hmm, yes [Name], I believe this is it! It's also corroleted by my research!","Oui [Name], je crois que c'est ça ! C'est aussi en accord avec mes recherches."
+_sentence_matching,Sentence matching,Pairer les phrases
+_sentence_translation,Sentence translation,Traduction
+_speech_recognition,Speech recognition,Reconnaissance vocale

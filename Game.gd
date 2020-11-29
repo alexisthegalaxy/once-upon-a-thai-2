@@ -175,6 +175,12 @@ func starts_deducing_coop():
 	var deducing_coop_selection_screen = load("res://Test/DeducingCoop/DeducingCoopSelectSentence.tscn").instance()
 	current_scene.add_child(deducing_coop_selection_screen)
 
+func starts_job_menu_screen():
+	Game.is_frozen = true
+	Game.lose_focus(null)
+	var job_menu_screen = load("res://Test/JobTest/JobMenu.tscn").instance()
+	current_scene.add_child(job_menu_screen)
+
 func clear_deleted_focuses():
 	for object in current_focus:
 		if not is_instance_valid(object):
