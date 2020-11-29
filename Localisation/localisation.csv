@@ -152,3 +152,6 @@ _it_looks_like_somebody_else_uses_this_computer,It looks like somebody else is u
 _name_turns_the_computer_on,[Name] turns the computer on.,[Name] allume l'ordinateur.
 _select_sentence_to_analyse,Select the sentence you want to analyze,Sélectionne la phrase que tu veux analyser.
 _i_translate_sentences_you_want_to_help,"Hey [Name], I'm trying to translate some sentences into English, you want to help?","Salut [Name], je suis en train d'essayer de traduire des phrases en français, tu veux m'aider ?"
+_submit,Submit,Valider
+_hmm_no_i_think_its_a_different_sentence,"Hmm, no, this doesn't fit with what I know, I think it's a bit different.","Hmm, non, certains mots ne vont pas, cette phrase n'a pas l'air d'aller."
+_hmm_yeah_i_thnk_this_is_the_sentence,"Hmm, yes [Name], I believe this is it! It's also corroleted by my research!","Oui [Name], je crois que c'est ça ! C'est aussi en accord avec mes recherches."

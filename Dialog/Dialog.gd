@@ -93,6 +93,7 @@ func dialog_ends():
 		caller.is_talking = false
 	if post_dialog_event:
 		if typeof(post_dialog_event) == TYPE_STRING and post_dialog_event == "post_dialog":
+			
 			caller.post_dialog()
 		else:
 			Events.execute(post_dialog_event[0], post_dialog_event[1])

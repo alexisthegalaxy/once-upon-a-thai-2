@@ -1,6 +1,9 @@
 extends Node
 # Reminder: choices = distractors + answer
 
+func _ready():
+	randomize()
+
 var rng = RandomNumberGenerator.new()
 var lo = TranslationServer.get_locale()
 # this function returns distractors, not distractors ids
@@ -34,5 +37,50 @@ func get_choices(distractors, answer):
 	for distractor in distractors:
 		choices.append(distractor)
 	choices.append(answer)
+	choices.shuffle()
+	return choices
+
+func fragment_sentence_into_three(sentence):
+	var words_in_sentence = sentence[lo].to_upper().replace(".", "").replace("?", "").split(" ")
+	var number_of_words_in_sentence = len(words_in_sentence)
+	var number_of_words_per_fragment = ceil(number_of_words_in_sentence / 3.0)
+	var correct_fragment_0 = ""
+	var correct_fragment_1 = ""
+	var correct_fragment_2 = ""
+	var word_index_per_fragment = 0
+	var correct_fragment_index = 0
+	for word_in_sentence in words_in_sentence:
+		if word_index_per_fragment == number_of_words_per_fragment:
+			word_index_per_fragment = 0
+			correct_fragment_index += 1
+
+		if correct_fragment_index == 0:
+			correct_fragment_0 += word_in_sentence + " "
+		if correct_fragment_index == 1:
+			correct_fragment_1 += word_in_sentence + " "
+		if correct_fragment_index == 2:
+			correct_fragment_2 += word_in_sentence + " "
+		word_index_per_fragment += 1
+	return [correct_fragment_0, correct_fragment_1, correct_fragment_2]
+
+func get_random_from_dict(dict):
+   var dict_keys = dict.keys()
+   return dict_keys[randi() % dict_keys.size()]
+
+func get_random(array):
+	return array[randi() % array.size()]
+
+func get_sentences_fragments(sentence, number_of_options):
+	assert (len(Game.seen_sentences) + len(Game.known_sentences) > 5)
+	var choices = fragment_sentence_into_three(sentence)
+	var number_of_distractors = number_of_options - 3
+	var number_of_sentences_to_fragment = ceil(number_of_distractors / 3.0)
+	while len(choices) < number_of_options:
+		var incorrect_sentence_id = get_random(Game.seen_sentences + Game.known_sentences)
+		var incorrect_sentence = Game.sentences[str(incorrect_sentence_id)]
+		var incorrect_fragments = fragment_sentence_into_three(incorrect_sentence)
+		for incorrect_fragment in incorrect_fragments:
+			if incorrect_fragment and len(choices) < number_of_options and not incorrect_fragment in choices:
+				choices.append(incorrect_fragment)
 	choices.shuffle()
 	return choices

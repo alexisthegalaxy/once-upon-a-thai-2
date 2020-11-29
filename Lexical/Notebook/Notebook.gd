@@ -29,6 +29,8 @@ func get_sentences_for_page(page_index):
 	return new_all_sentences
 
 func init(page_index):
+	print('Game.known_sentences', Game.known_sentences)
+	print('Game.seen_sentences', Game.seen_sentences)
 	all_sentences = get_sentences_for_page(page_index)
 	var InteractiveSentence = load("res://Lexical/Sentence/InteractiveSentence.tscn")
 	for interactive_sentence in interactive_sentences:
