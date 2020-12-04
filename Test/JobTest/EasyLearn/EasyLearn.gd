@@ -103,8 +103,21 @@ func press_button(word_id, category):
 		if pressed_tl_word_id == pressed_sl_word_id:
 			remove_buttons()
 			add_buttons()
+			add_floaty("up", "+10", Color(0, 1, 0, 1))
+			SoundPlayer.play_sound("res://Sounds/money.wav")
 		else:
+			add_floaty("down", "-10", Color(1, 0, 0, 1))
+			SoundPlayer.play_sound("res://Sounds/incorrect.wav")
 			unpress_all_buttons()
+
+func add_floaty(direction, _text, color):
+	var floaty = load("res://UI/Floaty.tscn").instance()
+	floaty.text = _text
+	floaty.set_direction(direction)
+	floaty.set_color(color.r, color.g, color.b)
+	floaty.position.x = 5
+	floaty.position.y = 5
+	self.add_child(floaty)
 
 func unpress_button(word_id, category):
 	var buttons_to_consider = null
@@ -137,6 +150,9 @@ func remove_buttons():
 			tl_buttons.erase(button)
 			pressed_tl_word_id = null
 			button.queue_free()
+	if not tl_buttons:
+		$AllDone.show()
+		
 
 func select_new_tl_word_to_add():
 	var potential_new_tl_words_to_add = []
@@ -151,7 +167,6 @@ func select_new_sl_word_to_add():
 func connect_button_signals(button):
 	var _e = button.connect("button_pressed", self, "press_button")
 	_e = button.connect("button_unpressed", self, "unpress_button")
-	
 
 func add_buttons():
 	if not remaining_tl_words:
@@ -176,3 +191,7 @@ func add_buttons():
 	free_index_tl = null
 	connect_button_signals(tl_button)
 	self.add_child(tl_button)
+
+func _on_Button12_pressed():
+	queue_free()
+	Game.is_frozen = false
