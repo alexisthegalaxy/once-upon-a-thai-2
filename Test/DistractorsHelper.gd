@@ -84,3 +84,14 @@ func get_sentences_fragments(sentence, number_of_options):
 				choices.append(incorrect_fragment)
 	choices.shuffle()
 	return choices
+
+func get_words_to_review(number_of_words_to_review):
+	var words_to_return = []
+	if number_of_words_to_review > len(Game.known_words):
+		print("error: we know ", len(Game.known_words), " but we want ", number_of_words_to_review, " words in get_words_to_review.")
+		return []
+	while len(words_to_return) < number_of_words_to_review:
+		var random_word = Game.known_words[randi() % len(Game.known_words)]
+		if not random_word in words_to_return:
+			words_to_return.append(random_word)
+	return words_to_return
