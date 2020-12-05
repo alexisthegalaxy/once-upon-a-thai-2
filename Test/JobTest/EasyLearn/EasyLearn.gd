@@ -1,5 +1,6 @@
 extends CanvasLayer
-
+const MONEY_AMOUNT_WIN = 10
+const MONEY_AMOUNT_LOSS = -10
 const NUMBER_OF_WORDS_PER_SIDE = 5
 var NUMBER_OF_WORDS_TO_REVIEW = 15
 var EasyLearnButton = load("res://Test/JobTest/EasyLearn/EasyLearnButton.tscn")
@@ -22,6 +23,8 @@ const INITIAL_X_SL = 21
 const INITIAL_X_TL = 184
 const INITIAL_Y = 13
 const DELTA_Y = 32
+
+var money_made_since_beginning_of_game = 0
 
 func set_number_of_words_to_review():
 	if NUMBER_OF_WORDS_TO_REVIEW > len(Game.known_words):
@@ -103,20 +106,32 @@ func press_button(word_id, category):
 		if pressed_tl_word_id == pressed_sl_word_id:
 			remove_buttons()
 			add_buttons()
-			add_floaty("up", "+10", Color(0, 1, 0, 1))
+			Game.money += MONEY_AMOUNT_WIN
+			money_made_since_beginning_of_game += MONEY_AMOUNT_WIN
+			update_money_label()
+			add_floaty("up", "+" + str(MONEY_AMOUNT_WIN), Color(0, 1, 0, 1))
 			SoundPlayer.play_sound("res://Sounds/money.wav")
 		else:
-			add_floaty("down", "-10", Color(1, 0, 0, 1))
+			Game.money += MONEY_AMOUNT_LOSS
+			money_made_since_beginning_of_game += MONEY_AMOUNT_LOSS
+			update_money_label()
+			add_floaty("down", str(MONEY_AMOUNT_LOSS), Color(1, 0, 0, 1))
 			SoundPlayer.play_sound("res://Sounds/incorrect.wav")
 			unpress_all_buttons()
+
+func update_money_label():
+	if money_made_since_beginning_of_game > 0:
+		$MoneyLabel.text = "+" + str(money_made_since_beginning_of_game)
+	else:
+		$MoneyLabel.text = str(money_made_since_beginning_of_game)
 
 func add_floaty(direction, _text, color):
 	var floaty = load("res://UI/Floaty.tscn").instance()
 	floaty.text = _text
 	floaty.set_direction(direction)
 	floaty.set_color(color.r, color.g, color.b)
-	floaty.position.x = 5
-	floaty.position.y = 5
+	floaty.position.x = 320 / 2
+	floaty.position.y = 40
 	self.add_child(floaty)
 
 func unpress_button(word_id, category):

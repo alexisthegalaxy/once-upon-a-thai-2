@@ -57,6 +57,7 @@ var current_scene = null
 var active_test = null
 var player = null
 var player_name = "Alexis"
+var money = 0
 var player_sprite_path = "res://Npcs/sprites/main_E.png"
 var can_read_thai = false
 

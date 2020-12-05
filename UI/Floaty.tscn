@@ -4,15 +4,16 @@
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=1]
-size = 8
 font_data = ExtResource( 2 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = -29.2783
+margin_top = -10.3694
+margin_right = 29.7217
+margin_bottom = 11.6306
 custom_fonts/font = SubResource( 1 )
 align = 1
 valign = 1
