@@ -43,7 +43,7 @@ direction = "up"
 position = Vector2( -37.1359, 78.8836 )
 dialog = [ "_hey_name_wanna_buy_something" ]
 direction = "right"
-sold_entities = [ "letter-0", "letter-12", "item-0" ]
+sold_entities = [ "letter-0-13", "letter-12-15" ]
 
 [node name="Lights" type="Node" parent="."]
 
@@ -73,7 +73,6 @@ __meta__ = {
 
 [node name="CanvasModulate" type="CanvasModulate" parent="Lights"]
 position = Vector2( -95.2873, -89.348 )
-color = Color( 0.988235, 0.862745, 0.737255, 1 )
 script = ExtResource( 14 )
 
 [node name="Go outside" parent="." instance=ExtResource( 18 )]

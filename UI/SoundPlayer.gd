@@ -70,5 +70,4 @@ func play_thai(thai):
 func play_sound(audio_file_name, db_level):
 	$GeneralAudioStreamPlayer.stream = load(audio_file_name)
 	$GeneralAudioStreamPlayer.set_volume_db(db_level)
-	print('volume_db', $GeneralAudioStreamPlayer.volume_db)
 	$GeneralAudioStreamPlayer.play()

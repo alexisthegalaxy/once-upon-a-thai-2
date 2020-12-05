@@ -95,6 +95,9 @@ func teach_sentence(sentence_id):
 func starts_deducing_coop(_no_arguments_needed):
 	Game.starts_deducing_coop()
 
+func starts_vending(sold_entities):
+	Game.starts_vending(sold_entities)
+
 func starts_job_menu_screen(_no_arguments_needed):
 	Game.starts_job_menu_screen()
 

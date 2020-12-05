@@ -118,6 +118,8 @@ func _ready():
 	update_animation()
 	over_head_label_y = $OverheadNode2D.position.y
 	update_npc_with_quests()
+	if sold_entities:
+		post_dialog_event= ["starts_vending", sold_entities]
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

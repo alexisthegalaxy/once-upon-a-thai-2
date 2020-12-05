@@ -95,6 +95,10 @@ func _on_press_f():
 		Game.deducing_coop_select_sentence_screen.queue_free()
 		Game.deducing_coop_select_sentence_screen = null
 		Game.is_frozen = false
+	elif Game.vending_screen:
+		Game.vending_screen.queue_free()
+		Game.vending_screen = null
+		Game.is_frozen = false
 	else:
 		hub = load("res://UI/UIHub.tscn").instance()
 		Game.current_scene.add_child(hub)

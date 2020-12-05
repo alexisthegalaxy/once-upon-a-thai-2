@@ -34,7 +34,8 @@ func interact():
 	Game.player.stop_walking()
 	Game.current_scene.add_child(Game.current_dialog)
 	is_disappearing = true
-	Game.collected_letters.append(letter["id"])
+#	Game.collected_letters.append(letter["id"])
+	Game.letters[str(id)]["in_bag"] += 1
 #	if pre_dialog_event:
 #		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
 

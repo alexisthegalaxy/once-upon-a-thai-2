@@ -140,8 +140,8 @@ leads_to = "This door leads to the Lexical Nexus."
 position = Vector2( 1026.99, -6.49933 )
 id = 2
 
-[node name="CollectibleLetter6" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 1432.15, -121.78 )
+[node name="CollectibleLetter7" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 1276.67, -221.463 )
 id = 39
 
 [node name="CollectibleLetter4" parent="YSort" instance=ExtResource( 10 )]
@@ -196,10 +196,10 @@ position = Vector2( 1169.21, -201.072 )
 position = Vector2( 1691.85, 198.176 )
 
 [node name="Bush51" parent="YSort/Bushes" instance=ExtResource( 9 )]
-position = Vector2( 1366.84, 329 )
+position = Vector2( 1370.55, 326.054 )
 
 [node name="Bush52" parent="YSort/Bushes" instance=ExtResource( 9 )]
-position = Vector2( 1357.39, 306.118 )
+position = Vector2( 1359.18, 303.364 )
 
 [node name="Bush37" parent="YSort/Bushes" instance=ExtResource( 9 )]
 position = Vector2( 955.756, 259.222 )

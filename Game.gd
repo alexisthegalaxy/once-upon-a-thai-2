@@ -20,7 +20,6 @@ var seen_sentences = [196, 197, 198, 199]  # we don't know the translation
 #var known_letters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]  # list of IDs
 var known_letters = []  # list of IDs
 #var known_letters = [0, 11, 13, 21, 28]  # five letters
-var collected_letters = []
 var following_spells = []
 #var following_spells = [
 #	{
@@ -73,6 +72,7 @@ var should_start_test_when_back_from_MP = [
 ]
 
 var deducing_coop_select_sentence_screen = null
+var vending_screen = null
 var select_follower_to_implant_screen = null
 var canvas_color_screen = null
 
@@ -176,6 +176,13 @@ func starts_deducing_coop():
 	Game.lose_focus(null)
 	var deducing_coop_selection_screen = load("res://Test/DeducingCoop/DeducingCoopSelectSentence.tscn").instance()
 	current_scene.add_child(deducing_coop_selection_screen)
+
+func starts_vending(sold_entities):
+	Game.is_frozen = true
+	Game.lose_focus(null)
+	vending_screen = load("res://UI/Vending/MainVendingScreen.tscn").instance()
+	vending_screen.init_vending_screen(sold_entities)
+	current_scene.add_child(vending_screen)
 
 func starts_job_menu_screen():
 	Game.is_frozen = true
@@ -305,6 +312,7 @@ func _ready():
 	for letter_id in letters:
 		letters[letter_id]["id"] = int(letter_id)
 		letters[letter_id]["fluency"] = 0.0
+		letters[letter_id]["in_bag"] = 0
 		if not "fr" in letters[letter_id]:
 			letters[letter_id].fr = letters[letter_id].en
 
@@ -510,7 +518,6 @@ func save_game():
 	game_data.known_sentences = known_sentences
 	game_data.seen_sentences = seen_sentences
 	game_data.known_letters = known_letters
-	game_data.collected_letters = collected_letters
 	game_data.following_spells = following_spells
 	print('game_data.following_spells', game_data.following_spells)
 	game_data.this_letter_world_has_letters = this_letter_world_has_letters
@@ -531,7 +538,6 @@ func load_game(game_data):
 	known_sentences = game_data.known_sentences
 	seen_sentences = game_data.seen_sentences
 	known_letters = game_data.known_letters
-	collected_letters = game_data.collected_letters
 	update_following_spells_ime_to_live()
 	following_spells = game_data.following_spells
 	this_letter_world_has_letters = game_data.this_letter_world_has_letters
