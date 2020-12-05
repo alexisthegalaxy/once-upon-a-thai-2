@@ -43,9 +43,9 @@ func _process(delta):
 
 func _on_Button_pressed():
 	if is_correct:
-		SoundPlayer.play_sound("res://Sounds/ding.wav")
+		SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
 		emit_signal("test_answered_correctly")
 	else:
-		SoundPlayer.play_sound("res://Sounds/incorrect.wav")
+		SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
 		has_been_answered_and_is_wrong = true
 		$Button.disabled = true

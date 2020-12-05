@@ -10,6 +10,7 @@ var letters = []
 
 # The following are a list of IDs
 #var known_words = [343, 345, 207, 82] 
+#var known_words = [82, 343, 345, 207, 204, 222, 223, 232, 233, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 123, 14, 15]
 var known_words = [82, 343, 345, 207, 204, 222, 223, 232, 233, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 123, 14, 15]
 #var known_sentences = [196, 197, 198, 199]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [196, 197, 198]  # we know the translation. Does not contain seen_sentences.
@@ -293,14 +294,17 @@ func _ready():
 	letters = retrieve_from_json_file("res://Lexical/Letter/letters.json")
 	for word_id in words:
 		words[word_id]["id"] = int(word_id)
+		words[word_id]["fluency"] = 0.0
 		if not "fr" in words[word_id]:
 			words[word_id].fr = words[word_id].en
 	for sentence_id in sentences:
 		sentences[sentence_id]["id"] = int(sentence_id)
+		sentences[sentence_id]["fluency"] = 0.0
 		if not "fr" in sentences[sentence_id]:
 			sentences[sentence_id].fr = sentences[sentence_id].en
 	for letter_id in letters:
 		letters[letter_id]["id"] = int(letter_id)
+		letters[letter_id]["fluency"] = 0.0
 		if not "fr" in letters[letter_id]:
 			letters[letter_id].fr = letters[letter_id].en
 

@@ -104,20 +104,29 @@ func press_button(word_id, category):
 			button.unpress()
 	if pressed_tl_word_id and pressed_sl_word_id:
 		if pressed_tl_word_id == pressed_sl_word_id:
-			remove_buttons()
-			add_buttons()
-			Game.money += MONEY_AMOUNT_WIN
-			money_made_since_beginning_of_game += MONEY_AMOUNT_WIN
-			update_money_label()
-			add_floaty("up", "+" + str(MONEY_AMOUNT_WIN), Color(0, 1, 0, 1))
-			SoundPlayer.play_sound("res://Sounds/money.wav")
+			correct_answer()
 		else:
-			Game.money += MONEY_AMOUNT_LOSS
-			money_made_since_beginning_of_game += MONEY_AMOUNT_LOSS
-			update_money_label()
-			add_floaty("down", str(MONEY_AMOUNT_LOSS), Color(1, 0, 0, 1))
-			SoundPlayer.play_sound("res://Sounds/incorrect.wav")
-			unpress_all_buttons()
+			incorrect_answer()
+
+func correct_answer():
+	SoundPlayer.play_thai(Game.words[str(pressed_tl_word_id)].th)
+	Game.words[str(pressed_tl_word_id)].fluency += 0.5
+	remove_buttons()
+	add_buttons()
+	Game.money += MONEY_AMOUNT_WIN
+	money_made_since_beginning_of_game += MONEY_AMOUNT_WIN
+	update_money_label()
+	add_floaty("up", "+" + str(MONEY_AMOUNT_WIN), Color(0, 1, 0, 1))
+	SoundPlayer.play_sound("res://Sounds/money.wav", -20)
+
+func incorrect_answer():
+	Game.words[str(pressed_tl_word_id)].fluency -= 0.9
+	Game.money += MONEY_AMOUNT_LOSS
+	money_made_since_beginning_of_game += MONEY_AMOUNT_LOSS
+	update_money_label()
+	add_floaty("down", str(MONEY_AMOUNT_LOSS), Color(1, 0, 0, 1))
+	SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
+	unpress_all_buttons()
 
 func update_money_label():
 	if money_made_since_beginning_of_game > 0:

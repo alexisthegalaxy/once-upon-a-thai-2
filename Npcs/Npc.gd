@@ -18,6 +18,8 @@ var will_go_to = []  # array of vector2 positions
 export(Array) var pre_dialog_event = []
 export(Array) var post_dialog_event = []
 
+export(Array, String) var sold_entities = []
+
 # white orb disappearance
 var white_orb_growing = false
 var white_orb_fading = false
@@ -77,12 +79,12 @@ func dialog_option(parameters):
 			dialog = [tr("_hmph_yeah_anyway_i_to_to_chaiyaphum_loser")]
 			dialog_node.dialog = dialog
 			dialog_node.page = -1
-			SoundPlayer.play_sound("res://Sounds/ding.wav")
+			SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
 		else:
 			dialog = [tr("_see_bpai_is_written_i_go_to_chaiyaphum_loser")]
 			dialog_node.dialog = dialog
 			dialog_node.page = -1
-			SoundPlayer.play_sound("res://Sounds/incorrect.wav")
+			SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
 		post_dialog_event = ["npc_walks_to", [[
 			Vector2(543.984375, 244.238388),
 			Vector2(543.984375, 100.238388),

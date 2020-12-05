@@ -1450,6 +1450,7 @@
   "164": {
     "split": "วัน",
     "en": "day",
+    "fr": "jour",
     "tones": "M",
     "pos": "NOUN",
     "th": "วัน",
@@ -2338,6 +2339,7 @@
   "265": {
     "split": "กา-แฟ",
     "en": "coffee",
+    "fr": "café",
     "tones": "MM",
     "pos": "NOUN",
     "th": "กาแฟ",
@@ -2460,6 +2462,7 @@
   "280": {
     "split": "วัน-จันทร์",
     "en": "Monday",
+    "fr": "lundi",
     "tones": "MM",
     "pos": "WDAY",
     "th": "วันจันทร์",
@@ -2749,6 +2752,7 @@
   "315": {
     "split": "ลง-น-รก",
     "en": "to go to hell",
+    "fr": "va en enfer!",
     "tones": "MHH",
     "pos": "None",
     "th": "ลงนรก",
@@ -2847,6 +2851,7 @@
   "327": {
     "split": "วัน-อา-ทิตย์",
     "en": "Sunday",
+    "fr": "dimanche",
     "tones": "MMH",
     "pos": "WDAY",
     "th": "วันอาทิตย์",

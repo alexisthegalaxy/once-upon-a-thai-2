@@ -60,7 +60,7 @@ func _on_Submit_pressed():
 	print("___", correct_answer, "___")
 	print("___", $Input.text, "___")
 	if $Input.text == correct_answer:
-		SoundPlayer.play_sound("res://Sounds/ding.wav")
+		SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
 		Game.known_sentences.append(int(sentence_id))
 		Game.seen_sentences.erase(int(sentence_id))
 		Game.active_test = null
@@ -75,7 +75,7 @@ func _on_Submit_pressed():
 #		Game.deducing_coop_select_sentence_screen.queue_free()
 #		Game.deducing_coop_select_sentence_screen = null
 	else:
-		SoundPlayer.play_sound("res://Sounds/incorrect.wav")
+		SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
 		$Input.text = ""
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 		var dialog = [tr("_hmm_no_i_think_its_a_different_sentence")]
