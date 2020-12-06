@@ -10,6 +10,7 @@ var ShardRotatingLetter = load("res://World/ShardRotatingLetter.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$Flower.hide()
 	for word_id in word_ids:
 		words.append(Game.words[str(word_id)])
 	var i = 0

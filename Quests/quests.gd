@@ -76,6 +76,15 @@ func update_implant_source_with_this_word_quests(source_name: String, word_id: i
 					quest.status = FINISHED
 					update_quests_display()
 
+func purify_shard(shard_name):
+	for quest_id in quests:
+		var quest = quests[quest_id]
+		if quest.status == IN_PROGRESS:
+			if quest.type in ["purifying"]:
+				if quest.parameters[0] == shard_name:
+						quest.status = FINISHED
+						update_quests_display()
+
 func get_finished_quest_ids():
 	var finished_quest_ids = []
 	for quest_id in quests:

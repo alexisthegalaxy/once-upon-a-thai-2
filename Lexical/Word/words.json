@@ -3113,6 +3113,7 @@
   "358": {
     "split": "พร้อม",
     "en": "ready",
+    "fr": "prêt",
     "tones": "R",
     "pos": "None",
     "th": "พร้อม",
@@ -3121,6 +3122,7 @@
   "359": {
     "split": "ยุง",
     "en": "mosquito",
+    "fr": "moustique",
     "tones": "M",
     "pos": "",
     "th": "ยุง",
@@ -3129,6 +3131,7 @@
   "360": {
     "split": "สัตว์-เลื้อย-คลาน",
     "en": "reptile",
+    "fr": "reptile",
     "tones": "LHM",
     "pos": "None",
     "th": "สัตว์เลื้อยคลาน",
@@ -3137,6 +3140,7 @@
   "361": {
     "split": "สก-ปรก",
     "en": "dirty",
+    "fr": "sale",
     "tones": "LLL",
     "pos": "None",
     "th": "สกปรก",
@@ -3145,6 +3149,7 @@
   "362": {
     "split": "ตะ-เกียบ",
     "en": "chopsticks",
+    "fr": "baguettes (pour manger)",
     "tones": "LL",
     "pos": "None",
     "th": "ตะเกียบ",
@@ -3153,6 +3158,7 @@
   "363": {
     "split": "ครอบ-ครัว",
     "en": "family",
+    "fr": "famille",
     "tones": "FM",
     "pos": "None",
     "th": "ครอบครัว",
@@ -3161,6 +3167,7 @@
   "364": {
     "split": "ห้อง-ครัว",
     "en": "kitchen",
+    "fr": "cuisine",
     "tones": "FM",
     "pos": "None",
     "th": "ห้องครัว",
@@ -3168,7 +3175,8 @@
   },
   "365": {
     "split": "ส-กุล",
-    "en": "family, ancestor, lineage",
+    "en": "family, ancestor, lineage, clan",
+    "fr": "famille, ancêtre, clan",
     "tones": "LM",
     "pos": "None",
     "th": "สกุล",
@@ -3177,6 +3185,7 @@
   "366": {
     "split": "มาก",
     "en": "very",
+    "fr": "très",
     "tones": "F",
     "pos": "None",
     "th": "มาก",
@@ -3202,7 +3211,8 @@
   },
   "369": {
     "split": "รอ",
-    "en": "to watch, look",
+    "en": "to wait",
+    "fr": "attendre",
     "tones": "M",
     "pos": "None",
     "th": "รอ",
@@ -3211,6 +3221,7 @@
   "370": {
     "split": "รู้",
     "en": "to know",
+    "fr": "savoir",
     "tones": "H",
     "pos": "None",
     "th": "รู้",
@@ -3237,6 +3248,7 @@
   "373": {
     "split": "พบ",
     "en": "to find, meet, discover",
+    "fr": "trouver, rencontrer, découvrir",
     "tones": "H",
     "pos": "None",
     "th": "พบ",
@@ -3254,6 +3266,7 @@
   "375": {
     "split": "เที่ยว",
     "en": "to travel",
+    "fr": "voyager",
     "tones": "F",
     "pos": "None",
     "th": "เที่ยว",
@@ -3262,6 +3275,7 @@
   "376": {
     "split": "ความ-หวาน",
     "en": "sweetness",
+    "fr": "douceur",
     "tones": "MR",
     "pos": "None",
     "th": "ความหวาน",
@@ -3270,6 +3284,7 @@
   "377": {
     "split": "ครั้ง-แรก",
     "en": "the first time",
+    "fr": "la première fois",
     "tones": "HF",
     "pos": "None",
     "th": "ครั้งแรก",
@@ -3287,6 +3302,7 @@
   "379": {
     "split": "เด็ก-ๆ",
     "en": "children",
+    "fr": "enfants",
     "tones": "LL",
     "pos": "None",
     "th": "เด็กๆ",
@@ -3295,6 +3311,7 @@
   "380": {
     "split": "เมื่อ",
     "en": "when, as, at",
+    "fr": "quand, au moment où",
     "tones": "F",
     "pos": "None",
     "th": "เมื่อ",
@@ -3303,6 +3320,7 @@
   "381": {
     "split": "เกิน-ไป",
     "en": "too much",
+    "fr": "trop",
     "tones": "MM",
     "pos": "None",
     "th": "เกินไป",
@@ -3320,6 +3338,7 @@
   "383": {
     "split": "เวียด-นาม",
     "en": "Vietnam",
+    "fr": "Vietnam",
     "tones": "FM",
     "pos": "None",
     "th": "เวียดนาม",
@@ -3328,6 +3347,7 @@
   "384": {
     "split": "และ",
     "en": "and",
+    "fr": "et",
     "tones": "H",
     "pos": "None",
     "th": "และ",
@@ -3336,6 +3356,7 @@
   "385": {
     "split": "ช่วง",
     "en": "period",
+    "fr": "période",
     "tones": "F",
     "pos": "None",
     "th": "ช่วง",
@@ -3344,6 +3365,7 @@
   "386": {
     "split": "ฤ-ดู-หนาว",
     "en": "winter",
+    "fr": "hiver",
     "tones": "HMR",
     "pos": "None",
     "th": "ฤดูหนาว",

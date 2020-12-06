@@ -28,6 +28,7 @@ texture = ExtResource( 1 )
 region_rect = Rect2( 0, 0, 555, 555 )
 
 [sub_resource type="DynamicFont" id=7]
+size = 13
 font_data = ExtResource( 2 )
 
 [node name="PurifyingTestLetter" type="KinematicBody2D"]

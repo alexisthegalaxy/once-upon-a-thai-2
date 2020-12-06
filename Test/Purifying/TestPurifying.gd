@@ -38,7 +38,6 @@ func selects_dock(dock_index):
 			dock.unselect_dock()
 
 func selects_letter(_selected_purifying_test_letter):
-	print("selects_letter", selected_dock_index)
 	selected_purifying_test_letter = _selected_purifying_test_letter
 	if selected_dock_index == null:
 		return
@@ -53,7 +52,6 @@ func init(_word_ids, _over_word):
 	word_ids = _word_ids
 	rng.randomize()
 	init_docks()
-#	SoundPlayer.play_thai(word.th)
 	if len(word_ids) == 4:
 		$PurifyingWordDock5.hide()
 	init_letters()
@@ -75,6 +73,7 @@ func end_test():
 	Game.active_test = null
 	Game.player.can_interact = true
 	Game.is_frozen = false
+	Quests.purify_shard(over_word.name)
 	over_word.queue_free()
 	queue_free()
 

@@ -195,5 +195,37 @@
     "en_description": "Talk to yaai at home.",
     "counter_max": 1,
     "type": "talk_to"
+  },
+  "purify_mohinkhao": {
+    "blockers": [],
+    "en_name": "Investigate Mo Hin Khao",
+    "fr_name": "Investigation à Mo Hin Khao",
+    "counter_max": 1,
+    "en_start_dialog": [
+      "Are you a shaman?",
+      "I've heard reports that something is wrong in Mo Hin Khao, would you like to investigate?",
+      "I've been told the Spells over there are aggressive even towards those who can't see Spirits unlike us,",
+      "And that the land is tainted by an evil energy.",
+      "To find Mo Hin Khao, follow take the path north next to the temple."
+    ],
+    "fr_start_dialog": [
+      "Étudies-tu le chamanisme ? Alors tu veux peut-être te rendre utilie.",
+      "On m'a dit qu'il y a des problèmes à Mo Hin Khao, voudrais-tu mener l'enquête ?",
+      "Il paraît que les Mots là-bas sont devenus agressifs, même envers ceux qui ne voient pas les esprits comme nous.",
+      "et que les environs sont teintés d'une énergie malfaisante.",
+      "Pour trouver Mo Hin Khao, suis le chemin qui va au nord, près du temple."
+    ],
+    "en_description": "Investigate what is wrong in Mo Hin Khao. To get to Mo Hin Khao, follow the path going north by Chaiyaphum's temple",
+    "fr_description": "Trouve ce qui ne va pas à Mo Hin Khao. Pour atteindre Mo Hin Khao, suis le chemin qui va vers le nord à coté du temple de Chaiyaphum.",
+    "en_end_description": "Go back to the old monk in Chaiyaphum's temple.",
+    "fr_end_description": "Retourne voir le vieux moine au temple de Chaiyaphum.",
+    "fr_finish_dialog": [
+      "On m'a dit que Mo Hin Khao a retrouvé sa paix ! Merci, [Name] !",
+    ],
+    "en_finish_dialog": [
+      "I've been told Mo Hin Khao is back to its former peace! Thank you very much, [Name].",
+    ],
+    "type": "purifying",
+    "parameters": ["MoHinKhao"]
   }
 }

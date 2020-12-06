@@ -27,6 +27,7 @@ scale = Vector2( 0.225949, 0.226321 )
 texture = ExtResource( 4 )
 
 [node name="Light2D" type="Light2D" parent="Visible"]
+visible = false
 position = Vector2( -9.9476e-13, -9.53673e-07 )
 scale = Vector2( 0.559936, 0.582469 )
 texture = ExtResource( 1 )
