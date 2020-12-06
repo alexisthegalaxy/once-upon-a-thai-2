@@ -16,7 +16,16 @@ func init_docks():
 		docks[i].init_purifying_dock(word_id, i)
 		docks[i].connect("dock_is_selected", self, "selects_dock")
 		docks[i].connect("erase_letters", self, "dock_erase_letters")
+		docks[i].connect("lock_dock", self, "dock_locked")
 		i += 1
+
+func dock_locked():
+	var all_docks_are_locked = true
+	for dock in docks:
+		if not dock.is_locked:
+			all_docks_are_locked = false
+	if all_docks_are_locked:
+		end_test()
 
 func dock_erase_letters(dock_index, erased_letter_ids):
 	for letter_id in erased_letter_ids:
@@ -62,13 +71,10 @@ func add_letter(letter_id):
 	purifying_test_letter.connect("purifying_letter_is_selected", self, "selects_letter")
 	self.add_child(purifying_test_letter)
 
-func answered_correctly():
+func end_test():
 	Game.active_test = null
-	
 	Game.player.can_interact = true
 	Game.is_frozen = false
-#	if not word.id in Game.known_words:
-#		Game.known_words.append(word.id)
 	over_word.queue_free()
 	queue_free()
 

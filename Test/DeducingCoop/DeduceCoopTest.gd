@@ -57,8 +57,6 @@ func _on_Submit_pressed():
 	if $Input.text == "":
 		return
 	var correct_answer = sentence[lo].to_upper().replace(".", "").replace("?", "") + " "
-	print("___", correct_answer, "___")
-	print("___", $Input.text, "___")
 	if $Input.text == correct_answer:
 		SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
 		Game.known_sentences.append(int(sentence_id))
