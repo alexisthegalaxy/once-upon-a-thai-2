@@ -4,7 +4,6 @@ var word
 var alpha = 0
 var number_of_choices = 5
 var distractors = []  # a list of words 
-var rng = RandomNumberGenerator.new()
 var choices
 var over_word
 
@@ -47,7 +46,6 @@ func init(word_id, _over_word):
 	Game.is_frozen = true
 	Game.active_test = self
 	over_word = _over_word
-	rng.randomize()
 	word = Game.words[str(word_id)]
 	SoundPlayer.play_thai(word["th"])
 	init_learn_letter_button()

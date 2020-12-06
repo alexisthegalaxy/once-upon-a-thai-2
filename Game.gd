@@ -63,7 +63,6 @@ var can_read_thai = false
 
 var hp = 5.0
 var max_hp = 5.0
-var rng = RandomNumberGenerator.new()
 var is_frozen = false
 
 var should_start_test_when_back_from_MP = [
@@ -244,7 +243,7 @@ func learn_letter(letter):
 		Game.current_scene.add_child(Game.current_dialog)
 
 func add_random_letter_to_letters_to_look_for():
-	var random_letter = Game.letters[str(rng.randi() % Game.letters.size())]
+	var random_letter = Game.letters[str(randi() % Game.letters.size())]
 	if not random_letter in letters_we_look_for:
 		letters_we_look_for.append(random_letter)
 		if looking_for_letter__node:

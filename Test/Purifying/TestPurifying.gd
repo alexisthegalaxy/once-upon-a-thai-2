@@ -1,6 +1,5 @@
 extends CanvasLayer
 
-var rng = RandomNumberGenerator.new()
 var word_ids
 var over_word
 var docks = []
@@ -50,7 +49,6 @@ func init(_word_ids, _over_word):
 	Game.active_test = self
 	over_word = _over_word
 	word_ids = _word_ids
-	rng.randomize()
 	init_docks()
 	if len(word_ids) == 4:
 		$PurifyingWordDock5.hide()

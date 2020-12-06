@@ -1,7 +1,6 @@
 extends KinematicBody2D
 
 var velocity
-#var rng = RandomNumberGenerator.new()
 const CENTER = Vector2(320/2, 180/2)
 var letter_id
 var letter

@@ -4,12 +4,10 @@
 #export var is_corrupted = false
 #export var type = "SacredRock"
 #var time = 0
-#var rng = RandomNumberGenerator.new()
 #
 ## Called when the node enters the scene tree for the first time.
 #func _ready():
 ##	$Sprite.texture = load(Game.player_sprite_path)
-#	rng.randomize()
 #	if not is_pulsating:
 #		$PulsatingSprite.hide()
 #		$Light.hide()
@@ -25,9 +23,9 @@
 #	var new_orb = load("res://World/CorruptionOrb.tscn").instance()
 #	new_orb.position = Vector2(0, -25.595)
 ##	new_orb.position = position
-#	var scale = rng.randf_range(0.2, 0.5)
+#	var scale = randf_range(0.2, 0.5)
 #	new_orb.max_scale = Vector2(scale, scale)
-#	new_orb.velocity = Vector2(rng.randf_range(-2, 2), -8)
+#	new_orb.velocity = Vector2(randf_range(-2, 2), -8)
 #	self.add_child(new_orb)
 #
 #func _process(delta):

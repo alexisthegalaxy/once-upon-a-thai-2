@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://World/assets/Mohinkhao1.png" type="Texture" id=1]
+[ext_resource path="res://World/Doodad.gd" type="Script" id=2]
+[ext_resource path="res://UI/WhiteCircle.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12.365, 8.74843 )
+
+[node name="Doodad" type="StaticBody2D"]
+collision_mask = 0
+script = ExtResource( 2 )
+
+[node name="Shadow" type="Sprite" parent="."]
+modulate = Color( 0, 0, 0, 0.376471 )
+position = Vector2( 0.520672, -0.62999 )
+scale = Vector2( 0.0535435, 0.0307527 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.19561, -7.22273 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -0.272102, -30.4306 )
+texture = ExtResource( 1 )

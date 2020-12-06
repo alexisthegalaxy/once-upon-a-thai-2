@@ -61,13 +61,13 @@ is_on = true
 [node name="Monk" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( 127.286, 32.0547 )
 dialog = [ "ผมเป็นพระครับ" ]
-sprite_path = "res://Npcs/sprites/monk.png"
+sprite_path = "res://Npcs/sprites/meditating_monk.png"
 post_dialog_event = [ "say_sentence", 210 ]
 
 [node name="QuestGiverMonk" parent="YSort/NPCs" instance=ExtResource( 3 )]
-position = Vector2( 68.9481, -25.8174 )
+position = Vector2( 68.3659, -20.6939 )
 dialog = [ "ผมเป็นพระครับ" ]
-sprite_path = "res://Npcs/sprites/monk.png"
+sprite_path = "res://Npcs/sprites/old_monk.png"
 start_quests = [ "purify_mohinkhao" ]
 finish_quests = [ "purify_mohinkhao" ]
 
@@ -81,7 +81,7 @@ start_quests = [ "implant_source_in_chaiyaphum_field" ]
 finish_quests = [ "implant_source_in_chaiyaphum_field" ]
 
 [node name="Ploy" parent="YSort/NPCs" instance=ExtResource( 3 )]
-position = Vector2( -14.6306, -26.1928 )
+position = Vector2( -17.6581, -33.6451 )
 dialog = [ "_my_grandmother_is_super_cool_right" ]
 sprite_path = "res://Npcs/sprites/ploy.png"
 direction = "right"
@@ -96,7 +96,7 @@ display_name = "Ploy"
 post_dialog_event = [ "starts_deducing_coop", null ]
 
 [node name="PloysGrandmother" parent="YSort/NPCs" instance=ExtResource( 3 )]
-position = Vector2( 25.4361, -25.1674 )
+position = Vector2( 24.1552, -34.0171 )
 dialog = [ "_how_s_progress_with_training_name" ]
 sprite_path = "res://Npcs/sprites/ploysgrandmother.png"
 display_name = "Anchalee"
@@ -136,5 +136,5 @@ script = ExtResource( 14 )
 
 [node name="Go outside" parent="." instance=ExtResource( 18 )]
 position = Vector2( 24, 112 )
-to_position = Vector2( 1535, 124 )
+to_position = Vector2( 1343, 95 )
 to_map_name = "res://Maps/Chaiyaphum.tscn"

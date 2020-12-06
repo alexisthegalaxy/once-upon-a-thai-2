@@ -6,9 +6,6 @@ export(Array, int) var word_ids = [1]
 export(int) var max_number_of_words = 3
 export(int) var wait_time = 12
 var time = 0
-var rng = RandomNumberGenerator.new()
-
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -21,8 +18,6 @@ func _ready():
 	$Sprite.texture = load(main_sprite)
 	$PulsatingSprite.texture = load(pulsating_sprite)
 	$Light.texture = load(light_sprite)
-	
-	rng.randomize()
 	update_source(true)
 
 func update_source(spawn_immediately):

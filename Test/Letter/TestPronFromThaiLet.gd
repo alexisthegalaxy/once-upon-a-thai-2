@@ -5,7 +5,6 @@ var letter_id
 var alpha = 0
 var number_of_choices = 5
 var distractors = []  # a list of words 
-var rng = RandomNumberGenerator.new()
 var choices
 var over_letter
 
@@ -27,7 +26,6 @@ func init(_letter_id, _over_letter):
 	letter_id = _letter_id
 	Game.is_frozen = true
 	over_letter = _over_letter
-	rng.randomize()
 	letter = Game.letters[str(letter_id)]
 	$Thai.text = letter["th"]
 	distractors = DistractorsHelper.get_letter_distractors(letter, number_of_choices)

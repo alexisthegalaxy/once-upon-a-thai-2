@@ -4,7 +4,6 @@ var letter
 var alpha = 0
 var number_of_choices = 5
 var distractors = []  # a list of words 
-var rng = RandomNumberGenerator.new()
 var choices
 var over_letter
 var letter_id
@@ -27,7 +26,6 @@ func init(_letter_id, _over_letter):
 	letter_id = _letter_id
 	over_letter = _over_letter
 	Game.is_frozen = true
-	rng.randomize()
 	letter = Game.letters[str(letter_id)]
 	SoundPlayer.play_thai(letter["audio"])
 	$TestSoundPlayer.init_sound_player(letter["audio"])
