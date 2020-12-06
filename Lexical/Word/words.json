@@ -86,7 +86,8 @@
     "tones": "H",
     "pos": "PART",
     "th": "ครับ",
-    "teaching_order": 19
+    "teaching_order": 19,
+    "letters": [21, 2, 3, 18]
   },
   "10": {
     "split": "ไหม",
@@ -104,7 +105,8 @@
     "tones": "F",
     "pos": "PART",
     "th": "ค่ะ",
-    "teaching_order": 18
+    "teaching_order": 18,
+    "letters": [21, 40, 20]
   },
   "12": {
     "split": "คะ",

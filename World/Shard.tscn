@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://UI/WhiteCircle.png" type="Texture" id=1]
+[ext_resource path="res://World/Shard.gd" type="Script" id=4]
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 16.8524
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 45.4061
+
+[node name="Shard" type="StaticBody2D"]
+collision_mask = 0
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.0148523, -0.046093 )
+shape = SubResource( 3 )
+
+[node name="Light" type="Light2D" parent="."]
+light_mask = 2
+position = Vector2( -0.146929, 0.186798 )
+texture = ExtResource( 1 )
+color = Color( 1, 0, 0, 1 )
+mode = 1
+range_item_cull_mask = 2
+shadow_item_cull_mask = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -0.0687563, 0.0849209 )
+shape = SubResource( 2 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

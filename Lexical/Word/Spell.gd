@@ -9,7 +9,6 @@ const MAX_SPEED = 60  # 100
 export var can_move = false
 var velocity = Vector2.ZERO
 var will_move_in = 0
-var rng = RandomNumberGenerator.new()
 var word
 var is_disappearing = false
 var ratio = 0.001
@@ -36,7 +35,6 @@ func _ready():
 	y = self.position.y
 	word = Game.words[str(id)]
 	$Visible/thai.text = word["th"]
-	rng.randomize()
 	if is_following_player:
 		set_as_following()
 	
@@ -108,9 +106,9 @@ func _process(delta):
 		else:
 	#		var next_position = self.position + velocity * delta
 			velocity = self.move_and_slide(velocity)
-			if rng.randi() % 50 == 1:
-				velocity = 4 * Vector2(rng.randi() % MAX_SPEED - MAX_SPEED / 2.0, rng.randi() % MAX_SPEED - MAX_SPEED / 2.0)
-			elif rng.randi() % 50 == 1:
+			if randi() % 50 == 1:
+				velocity = 4 * Vector2(randi() % MAX_SPEED - MAX_SPEED / 2.0, randi() % MAX_SPEED - MAX_SPEED / 2.0)
+			elif randi() % 50 == 1:
 				velocity = Vector2(0, 0)
 
 func starts_disappearing():
@@ -126,7 +124,7 @@ func start_test():
 	var test_start_animation = load("res://Test/TestStartAnimation.tscn").instance()
 	test_start_animation.init_start_animation(word["th"], "Spell")
 	self.add_child(test_start_animation)
-	test_start_animation.connect("test_can_start", self, "start_test_after_animation" )
+	test_start_animation.connect("test_can_start", self, "start_test_after_animation")
 
 func start_test_after_animation():
 	var first_test = "res://Test/TestGuessMeaning.tscn"

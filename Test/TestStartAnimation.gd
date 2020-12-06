@@ -27,7 +27,9 @@ func _ready():
 
 func init_start_animation(enemy_name, enemy_type):
 	if enemy_type == "Spell":
-		$TextNode/Text.text = tr("_a_wil_spell_attacks")
+		$TextNode/Text.text = tr("_a_wild_spell_attacks")
+	elif enemy_type == "Shard":
+		$TextNode/Text.text = tr("_the_shard_attacks")
 	else:
 		$TextNode/Text.text = "Something attacks!"
 	$SpellNode/Spell.text = enemy_name
