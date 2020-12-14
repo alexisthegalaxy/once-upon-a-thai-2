@@ -51,16 +51,10 @@ func crossfade_to(music_file):
 		$Music_A.set_volume_db(min_db)
 		$Music_A.play()
 
-func start_music_upon_entering_map(map):
-	if map in music_from_map:
-#		if not music_playing:
-#			music_playing = music_from_map[map]
-#			$Music.stream = load(music_playing)
-#			$Music.play()
-#			$Music.set_volume_db(-10.0)
-#		elif not music_playing == music_from_map[map]:
-		crossfade_to(music_from_map[map])
-#		music_playing = music_from_map[map]
+func start_music_upon_entering_map(map_name):
+	print('map_name', map_name)
+	if map_name in music_from_map:
+		crossfade_to(music_from_map[map_name])
 
 func play_thai(thai):
 	var audio_file_name = "res://Sounds/Thai/" + thai + ".wav"

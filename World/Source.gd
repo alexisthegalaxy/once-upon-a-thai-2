@@ -77,7 +77,6 @@ func update_game_sources():
 	Game.sources[Game.current_map_name + "|" + name] = word_ids
 
 func dialog_option(parameters):
-	var dialog_node = parameters[0]
 	var chosen_option = parameters[1]
 	if len(word_ids) == 0:
 		if chosen_option == 1:

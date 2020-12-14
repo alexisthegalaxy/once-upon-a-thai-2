@@ -222,3 +222,20 @@ func _on_PloyInFrontOfHouse_body_entered(body):
 	Events.events.ploy_has_stopped_in_front_of_house = true
 	$YSort/NPCs/Ploy.is_walking_towards = []
 	$YSort/NPCs/Ploy.interact()
+
+
+func _on_EnterSomber_body_entered(body):
+	if not body == Game.player:
+		return
+	if Game.is_somber:  # somber already, then nothing to do
+		return
+	if not $YSort/Shards/MoHinKhao:
+		return
+	Game.starts_somber_mood()
+
+func _on_ExitSomber_body_entered(body):
+	if not body == Game.player:
+		return
+	if not Game.is_somber:  # not somber already, then nothing to do
+		return
+	Game.exits_somber_mood()

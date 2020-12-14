@@ -29,7 +29,6 @@ func remove_following_spell():
 	Game.following_spells = new_following_spells
 
 func dialog_option(parameters):
-	var dialog_node = parameters[0]
 	var chosen_option = parameters[1]
 	if chosen_option == 2:
 		return
@@ -37,7 +36,6 @@ func dialog_option(parameters):
 	queue_free()
 
 func there_is_a_cut_spell():
-	var there_is_an_available_cut_spell = false
 	for following_spell in Game.following_spells:
 		if following_spell.id == DTAT_WORD_ID:
 			return true

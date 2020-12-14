@@ -3536,9 +3536,18 @@
     "split": "นั้น-แหละ",
     "en": "that very one (in particular)",
     "fr": "précisemment celui-là",
-    "tones": "hL",
+    "tones": "HL",
     "pos": "",
     "th": "นั้นแหละ",
+    "teaching_order": -1
+  },
+  "406": {
+    "split": "ไข่",
+    "en": "egg",
+    "fr": "œuf",
+    "tones": "L",
+    "pos": "",
+    "th": "ไข่",
     "teaching_order": -1
   }
 }

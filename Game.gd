@@ -61,6 +61,9 @@ var money = 0
 var player_sprite_path = "res://Npcs/sprites/main_E.png"
 var can_read_thai = false
 
+var is_somber = false
+var rain = null
+
 var hp = 5.0
 var max_hp = 5.0
 var is_frozen = false
@@ -338,7 +341,7 @@ func _process(delta):
 	if canvas_color_screen:
 		canvas_color_screen.color.a = min(1, canvas_color_screen.color.a + delta)
 
-func update_letters_to_look_for_if_necesssary(to_map_name):
+func update_letters_to_look_for_if_necesssary(_to_map_name):
 	if not Events.events["can_see_the_looking_for_letter_banner"]:
 		return
 	if not Events.events["has_been_in_the_letter_world"]:
@@ -430,7 +433,6 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	player.get_node("Shadow").position.y -= level_y_height_change
 	player.get_node("CollisionShape2D").position.y -= level_y_height_change
 	player.position.y += level_y_height_change
-	
 	
 	SoundPlayer.start_music_upon_entering_map(to_map_name)
 
@@ -547,3 +549,20 @@ func load_game(game_data):
 	can_read_thai = game_data.can_read_thai
 	should_start_test_when_back_from_MP = game_data.should_start_test_when_back_from_MP
 	sources = game_data.sources
+
+func starts_somber_mood():
+	print('enters_somber_mood')
+	change_color = true
+	goal_color = Color(0.3, 0.4, 0.4, 0.5)
+	is_somber = true
+	SoundPlayer.crossfade_to("res://Sounds/FLOATLANDS_ORIGINAL_SOUNDTRACK/heavy.wav")
+	rain = load("res://Effects/Rain.tscn").instance()
+	Game.current_scene.add_child(rain)
+
+func exits_somber_mood():
+	change_color = true
+	goal_color = Color(1, 1, 1, 1)
+	print('exits_somber_mood')
+	is_somber = false
+	SoundPlayer.start_music_upon_entering_map(current_map_name)
+	rain.queue_free()

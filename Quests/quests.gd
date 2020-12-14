@@ -115,7 +115,6 @@ func save_game():
 	return quests_data
 
 func is_quest_blocked(quest_id):
-	var quest_is_blocked = false
 	for blocking_quest_id in Quests.quests[quest_id].blockers:
 		if not Quests.quests[blocking_quest_id].status == Quests.DONE:
 			return true
