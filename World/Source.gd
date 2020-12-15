@@ -76,10 +76,9 @@ func _on_Area2D_body_exited(body):
 func update_game_sources():
 	Game.sources[Game.current_map_name + "|" + name] = word_ids
 
-func dialog_option(parameters):
-	var chosen_option = parameters[1]
+func dialog_option(_dialog, answer_index):
 	if len(word_ids) == 0:
-		if chosen_option == 1:
+		if answer_index == 1:
 			Game.lose_focus(null)
 			if len(Game.following_spells) > 1:
 				Game.select_follower_to_implant_screen = load("res://Lexical/Source/SelectFollowerToImplant.tscn").instance()
@@ -99,7 +98,7 @@ func dialog_option(parameters):
 				Game.current_dialog.init_dialog(dialog, null, null, null, null)
 				Game.current_scene.add_child(Game.current_dialog)
 	elif len(word_ids) == 1:
-		if chosen_option == 1:
+		if answer_index == 1:
 			var new_word = load("res://Lexical/Word/Spell.tscn").instance()
 			new_word.id = word_ids[0]
 			new_word.word = Game.words[str(word_ids[0])]

@@ -16,5 +16,5 @@ func set_selected(value):
 		$Button.release_focus()
 
 func _on_Button_pressed():
-	caller.dialog_option([dialog, answer_index])
+	caller.dialog_option(dialog, answer_index)
 	dialog.next_line()

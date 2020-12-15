@@ -28,9 +28,8 @@ func remove_following_spell():
 			new_following_spells.append(following_spell)
 	Game.following_spells = new_following_spells
 
-func dialog_option(parameters):
-	var chosen_option = parameters[1]
-	if chosen_option == 2:
+func dialog_option(dialog, answer_index):
+	if answer_index == 2:
 		return
 	remove_following_spell()
 	queue_free()

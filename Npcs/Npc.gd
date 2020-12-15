@@ -70,45 +70,8 @@ func make_animations():
 func update_animation():
 	$AnimationPlayer.play(state + "_" + direction)
 
-func dialog_option(parameters):
-	var dialog_node = parameters[0]
-	var chosen_option = parameters[1]
-	
-	if sprite_path == "res://Npcs/sprites/pet.png":
-		if chosen_option == 3:
-			dialog = [tr("_hmph_yeah_anyway_i_to_to_chaiyaphum_loser")]
-			dialog_node.dialog = dialog
-			dialog_node.page = -1
-			SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
-		else:
-			dialog = [tr("_see_bpai_is_written_i_go_to_chaiyaphum_loser")]
-			dialog_node.dialog = dialog
-			dialog_node.page = -1
-			SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
-		post_dialog_event = ["npc_walks_to", [[
-			Vector2(543.984375, 244.238388),
-			Vector2(543.984375, 100.238388),
-			Vector2(359.984375, 100.238388),
-			Vector2(359.984375, 54.238388),
-			Vector2(438.039154, -15.019601),
-			Vector2(534.457153, -30.081276),
-			Vector2(596.457153, -30.081276),
-			Vector2(657.126892, -52.954685),
-			Vector2(657.126892, 11.045315),
-			Vector2(782.301086, 115.493446),
-			Vector2(1187.967773, 115.493446),
-			Vector2(1187.967773, 260.826782),
-			Vector2(1297.967773, 260.826782),
-			Vector2(1297.967773, 291.826782),
-			Vector2(1297.967773, 257.826782),
-			Vector2(1298, 177),
-			"disappears"
-		], self]]
-		dialog_node.post_dialog_event = post_dialog_event
-		dialog_node.caller.interact_when_near = false
-#		Game.player.can_interact = false
-#		Game.is_frozen = true
-#		interact()
+func dialog_option(dialog, answer_index):
+	Game.current_scene.handle_dialog_option(dialog, answer_index, self)
 
 func _ready():
 	$Sprite.texture = load(sprite_path)

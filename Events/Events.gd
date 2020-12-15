@@ -4,7 +4,7 @@ var initial_state = true
 var events = {
 	"ploy_has_stopped_in_front_of_house": initial_state,
 	"has_met_ploy": initial_state,
-	"has_met_pet": initial_state,
+	"has_met_pet": false,
 	"has_learnt_four_first_words": initial_state,
 	"yaai_has_given_last_warning_before_forest": initial_state,
 	"yaai_explains_rock": initial_state,
@@ -57,6 +57,10 @@ func yaai_walks_to(parameters):
 #	else:
 #		print('nowhere to go!')
 
+func npc_walks_to_and_get_new_dialog(parameters):
+	var npc = npc_walks_to(parameters) # the npc starts moving
+	npc.dialog = parameters[2]
+
 func npc_walks_to(parameters):
 	var target_positions = parameters[0]
 	var npc = null
@@ -69,6 +73,7 @@ func npc_walks_to(parameters):
 		npc.starts_going_toward(target_positions[0])
 	else:
 		print('nowhere to go!')
+	return npc
 
 func npc_disappears_in_white_orb(parameters):
 	var npc = parameters[0]

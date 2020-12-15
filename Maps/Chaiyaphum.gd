@@ -45,6 +45,10 @@ func _ready():
 	elif Events.events["talked_to_yaai_for_the_first_time"]:
 		$YSort/NPCs/Yaai.position = Vector2(490, 260)
 
+	if Events.events.has_met_pet:
+		$YSort/NPCs/Pet.position = Vector2(1074.783936, 94.056053)
+		$YSort/NPCs/Pet.dialog = pet_begging_dialog()
+
 	# we remove the shard
 	if Quests.quests["purify_mohinkhao"].status in [Quests.FINISHED, Quests.DONE]:
 		$YSort/Shards/MoHinKhao.queue_free()
@@ -243,3 +247,50 @@ func _on_ExitSomber_body_entered(body):
 	if not Game.is_somber:  # not somber already, then nothing to do
 		return
 	Game.exits_somber_mood()
+
+func pet_begging_dialog():
+	return [
+		tr("_pet_money_dialog_1"),
+		tr("_pet_money_dialog_2"),
+	]
+
+func handle_dialog_option(dialog_node, answer_index, npc):
+	if npc.name == "Pet":
+		if not Events.events.has_met_pet:
+			Events.events.has_met_pet = true
+			if answer_index == 3:
+				npc.dialog = [tr("_hmph_yeah_anyway_i_to_to_chaiyaphum_loser")]
+				dialog_node.dialog = npc.dialog
+				dialog_node.page = -1
+				SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
+			else:
+				npc.dialog = [tr("_see_bpai_is_written_i_go_to_chaiyaphum_loser")]
+				dialog_node.dialog = npc.dialog
+				dialog_node.page = -1
+				SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
+			npc.post_dialog_event = ["npc_walks_to_and_get_new_dialog", [[
+				Vector2(543.984375, 244.238388),
+				Vector2(543.984375, 100.238388),
+				Vector2(359.984375, 100.238388),
+				Vector2(359.984375, 54.238388),
+				Vector2(438.039154, -15.019601),
+				Vector2(534.457153, -30.081276),
+				Vector2(596.457153, -30.081276),
+				Vector2(657.126892, 11.045315),
+				Vector2(782.301086, 115.493446),
+				Vector2(1074.358643, 120.03302),
+				Vector2(1074.358643, 90.03302),
+			], npc, pet_begging_dialog()]]
+			dialog_node.post_dialog_event = npc.post_dialog_event
+			dialog_node.caller.interact_when_near = false
+		else:
+			if answer_index == 1 and Game.money >= 15:  # YES
+				npc.dialog = [tr("_pet_money_dialog_ok_1"), tr("_pet_money_dialog_ok_2")]
+				dialog_node.dialog = npc.dialog
+				dialog_node.page = -1
+				Game.money -= 15
+			else:  # NO or not enough
+				npc.dialog = [tr("_pet_money_dialog_not_enough")]
+				dialog_node.dialog = npc.dialog
+				dialog_node.page = -1
+

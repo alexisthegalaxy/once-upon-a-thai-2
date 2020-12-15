@@ -172,3 +172,8 @@ _the_shard_attacks,Oh no! It attacks!,Oh non ! Ça attaque !
 _this_road_leads_to_mohinkhao,This path leads to the rock formations of มอหินขาว (Mo Hin Khao). [sound:มอหินขาว],Ce chemin mène aux formations rocheuses de มอหินขาว (Mo Hin Khao). [sound:มอหินขาว]
 _hey_name_long_time_no_see_in_internet_cafe,"Hey [Name], how are you doing? It's been a while since I last saw you in my internet café.","Salut [Name], la forme ? Ça fait longtemps que je t'ai pas vu dans mon café internet !"
 _computer_cost_10_bahts,"As always, you can use the computer for only 10 Bahts.","Comme d'hab, tu peux utiliser les ordis pour juste 10 Bahts."
+_pet_money_dialog_1,I'd like to buy some letters to make a Spell but I don't have enough money...,J'aimerais bien acheter des lettres pour invoquer un Mot mais j'ai pas assez d'argent...
+_pet_money_dialog_2,"Be nice [Name], give me 15 bahts. @QOK/No","Allez sois sympa [Name], passe-moi 15 bahts. @QOK/Non"
+_pet_money_dialog_not_enough,You don't even have 15 bahts? What a loser.,T'as même pas 15 bahts ? Quel loser !
+_pet_money_dialog_ok_1,[ShowNoName][Name] gives 15 bahts to Pet.,[ShowNoName][Name] donne 15 bahts à Pet.
+_pet_money_dialog_ok_1,"Ha! You actually gave me the money! You know you won't get it back, right?","Ha, j'y crois même pas que tu le fasses. J'te les rendrai pas, tu le sais ?"
