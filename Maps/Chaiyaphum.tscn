@@ -6592,7 +6592,7 @@ position = Vector2( 424.184, -28.2114 )
 id = 24
 
 [node name="rao" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 1367.42, -488.275 )
+position = Vector2( 1388.49, 109.492 )
 id = 29
 
 [node name="chawp" parent="YSort/Words" instance=ExtResource( 16 )]
@@ -6615,7 +6615,7 @@ position = Vector2( 2218.55, -159.948 )
 position = Vector2( 1343.42, 70.5728 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1146.32, -478.966 )
+position = Vector2( 1345.52, 123.181 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 

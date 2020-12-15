@@ -8,11 +8,10 @@ func _ready():
 	$Button.hide()
 	$Quests.hide()
 	if not "LexicalWorld" in Game.current_map_name:
-		update()
+		update_quests_display()
 
-func update():
+func update_quests_display():
 	var number_of_active_quests = 0
-	
 	for quest_id in Quests.quests:
 		var quest = Quests.quests[quest_id]
 		if quest.status in [Quests.IN_PROGRESS, Quests.FINISHED]:

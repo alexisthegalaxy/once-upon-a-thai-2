@@ -25,7 +25,7 @@ func make_animations():
 	make_animation("walk_down", 1, 0, 2, 0)
 	make_animation("stand_down", 0, 0, 0, 0)
 
-func update():
+func update_animation():
 	$AnimationPlayer.play(state  + "_down")
 	if is_selected:
 		$Background.modulate = Color(1, 1, 1, 1)
@@ -34,7 +34,7 @@ func update():
 
 func set_selected(value):
 	is_selected = value
-	update()
+	update_animation()
 
 func init(init_menu):
 	sprite_path = "res://Npcs/sprites/main_" + index + ".png"
@@ -43,19 +43,19 @@ func init(init_menu):
 	$Sprite.vframes = 1
 	$Sprite.hframes = 12
 	make_animations()
-	update()
+	update_animation()
 
 func _on_Area2D_mouse_entered():
 	state = "walk"
-	update()
+	update_animation()
 
 func _on_Area2D_mouse_exited():
 	state = "stand"
-	update()
+	update_animation()
 
 func _on_Area2D_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		emit_signal("selected_character")
 		is_selected = true
 		Game.player_sprite_path = sprite_path
-		update()
+		update_animation()

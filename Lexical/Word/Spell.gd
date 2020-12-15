@@ -104,12 +104,28 @@ func _process(delta):
 #				self.move_and_slide(velocity)
 #						position = position + velocity * delta * speed
 		else:
-	#		var next_position = self.position + velocity * delta
-			velocity = self.move_and_slide(velocity)
-			if randi() % 50 == 1:
-				velocity = 4 * Vector2(randi() % MAX_SPEED - MAX_SPEED / 2.0, randi() % MAX_SPEED - MAX_SPEED / 2.0)
-			elif randi() % 50 == 1:
-				velocity = Vector2(0, 0)
+			wild_spell_movement()
+			if Game.is_somber:
+				$Visible/Sprite.modulate = Color(0, 0, 0, 1)
+			else:
+				$Visible/Sprite.modulate = Color(1, 1, 1, 1)
+
+func wild_spell_movement():
+	var change_direction_chance = 50
+	var stops_moving_chance = 50
+	var speed_multiplier = 1
+	if Game.is_somber:
+		change_direction_chance = 10
+		stops_moving_chance = 100
+		speed_multiplier = 2
+	velocity = self.move_and_slide(velocity)
+	if randi() % change_direction_chance == 1:
+		var max_speed = MAX_SPEED * speed_multiplier
+		var x_speed = rand_range(-max_speed, max_speed)
+		var y_speed = rand_range(-max_speed, max_speed)
+		velocity = Vector2(x_speed, y_speed)
+	elif randi() % stops_moving_chance == 1:
+		velocity = Vector2(0, 0)
 
 func starts_disappearing():
 	is_disappearing = true

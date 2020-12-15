@@ -46,7 +46,7 @@ func start_quest(quest_id):
 	update_quests_display()
 
 func update_quests_display():
-	Game.player.update_quest_display()
+	Game.quests_display.update_quests_display()
 	for npc in Game.current_scene.get_node("YSort").get_node("NPCs").get_children():
 		npc.update_npc_with_quests()
 

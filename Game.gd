@@ -75,6 +75,7 @@ var should_start_test_when_back_from_MP = [
 
 var deducing_coop_select_sentence_screen = null
 var vending_screen = null
+var quests_display = null
 var select_follower_to_implant_screen = null
 var canvas_color_screen = null
 
@@ -317,6 +318,8 @@ func _ready():
 		letters[letter_id]["in_bag"] = 0
 		if not "fr" in letters[letter_id]:
 			letters[letter_id].fr = letters[letter_id].en
+	quests_display = load("res://Quests/QuestsDisplay.tscn").instance()
+	self.add_child(quests_display)
 
 func _input(_event):
 	if _event.is_action_pressed("ui_cancel"):
@@ -557,7 +560,7 @@ func starts_somber_mood():
 	is_somber = true
 	SoundPlayer.crossfade_to("res://Sounds/FLOATLANDS_ORIGINAL_SOUNDTRACK/heavy.wav")
 	rain = load("res://Effects/Rain.tscn").instance()
-	Game.current_scene.add_child(rain)
+	self.add_child(rain)
 
 func exits_somber_mood():
 	change_color = true

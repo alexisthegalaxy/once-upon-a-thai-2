@@ -72,7 +72,6 @@ func get_random(array):
 func get_sentences_fragments(sentence, number_of_options):
 	assert (len(Game.seen_sentences) + len(Game.known_sentences) > 5)
 	var choices = fragment_sentence_into_three(sentence)
-	var number_of_distractors = number_of_options - 3
 	while len(choices) < number_of_options:
 		var incorrect_sentence_id = get_random(Game.seen_sentences + Game.known_sentences)
 		var incorrect_sentence = Game.sentences[str(incorrect_sentence_id)]

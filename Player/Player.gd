@@ -72,11 +72,10 @@ func _physics_process(delta) -> void:
 		move_state(delta)
 
 func _process(delta) -> void:
-	print('$Camera2D.position', $Camera2D.position)
 	if Game.is_somber:
 		time += delta
-		if int(time) % 19 > 15 or int(time) % 5 >= 4:
-			$Camera2D.position.x = 2.5 * cos(time * 80)
+		if int(time) % 19 > 16 or int(time) % 5 >= 4:
+			$Camera2D.position.x = 2.5 * cos(time * 20)
 		else:
 			$Camera2D.position.x = 0
 	else:
@@ -190,9 +189,6 @@ func forced_toward(target_position):
 	is_forced_towards = target_position
 	velocity = (target_position - position).normalized()
 	Game.is_frozen = true
-	
-func update_quest_display():
-	$QuestDisplay.update()
 
 func save_game():
 	var player_data = {}
