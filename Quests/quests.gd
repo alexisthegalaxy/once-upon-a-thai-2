@@ -77,6 +77,8 @@ func update_implant_source_with_this_word_quests(source_name: String, word_id: i
 					update_quests_display()
 
 func purify_shard(shard_name):
+	if Game.is_somber:
+		Game.exits_somber_mood()
 	for quest_id in quests:
 		var quest = quests[quest_id]
 		if quest.status == IN_PROGRESS:

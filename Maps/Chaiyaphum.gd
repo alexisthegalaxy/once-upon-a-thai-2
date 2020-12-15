@@ -45,6 +45,10 @@ func _ready():
 	elif Events.events["talked_to_yaai_for_the_first_time"]:
 		$YSort/NPCs/Yaai.position = Vector2(490, 260)
 
+	# we remove the shard
+	if Quests.quests["purify_mohinkhao"].status in [Quests.FINISHED, Quests.DONE]:
+		$YSort/Shards/MoHinKhao.queue_free()
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if is_blackening:

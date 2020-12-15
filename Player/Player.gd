@@ -13,6 +13,8 @@ export var direction = "down"
 var speed_when_forced = 75
 var can_interact = true  # meaning the player is near a npc. false during a dialog.
 
+var time = 0
+
 var arrow = null  # the arrow that is sometimes shown to indicate direction to follow
 # UI
 var hub = null  # The screen that appears when pressing f and gives access to sentences, etc.
@@ -68,6 +70,18 @@ func _physics_process(delta) -> void:
 			is_forced_towards = null
 	else:
 		move_state(delta)
+
+func _process(delta) -> void:
+	print('$Camera2D.position', $Camera2D.position)
+	if Game.is_somber:
+		time += delta
+		if int(time) % 19 > 15 or int(time) % 5 >= 4:
+			$Camera2D.position.x = 2.5 * cos(time * 80)
+		else:
+			$Camera2D.position.x = 0
+	else:
+		if not $Camera2D.position.x == 0:
+			$Camera2D.position.x = 0
 	
 func _on_press_f():
 	if hub:
