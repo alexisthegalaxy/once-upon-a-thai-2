@@ -1,0 +1,70 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://UI/uipanel.png" type="Texture" id=1]
+[ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://UI/MainUI.gd" type="Script" id=3]
+[ext_resource path="res://UI/MainUIButton.tscn" type="PackedScene" id=4]
+
+[sub_resource type="DynamicFont" id=7]
+size = 13
+font_data = ExtResource( 2 )
+
+[node name="MainUI" type="CanvasLayer"]
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+margin_right = 320.0
+margin_bottom = 180.0
+color = Color( 0, 0, 0, 0.294118 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Letters" parent="." instance=ExtResource( 4 )]
+position = Vector2( 295, 24 )
+
+[node name="Words" parent="." instance=ExtResource( 4 )]
+position = Vector2( 295, 40 )
+
+[node name="Sentences" parent="." instance=ExtResource( 4 )]
+position = Vector2( 295, 56 )
+
+[node name="GoLetterWorld" parent="." instance=ExtResource( 4 )]
+position = Vector2( 295, 72 )
+
+[node name="Quests" parent="." instance=ExtResource( 4 )]
+position = Vector2( 295, 88 )
+
+[node name="UseSpell" parent="." instance=ExtResource( 4 )]
+position = Vector2( 295, 104 )
+
+[node name="MakeSpell" parent="." instance=ExtResource( 4 )]
+position = Vector2( 296, 120 )
+
+[node name="Money" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Money"]
+position = Vector2( 295.028, 8.00899 )
+scale = Vector2( 0.0322926, 0.0382404 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="Money"]
+margin_left = 273.29
+margin_top = 0.357126
+margin_right = 320.29
+margin_bottom = 17.3571
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0 Baht"
+align = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}

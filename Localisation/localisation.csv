@@ -177,3 +177,10 @@ _pet_money_dialog_2,"Be nice [Name], give me 15 bahts. @QOK/No","Allez sois symp
 _pet_money_dialog_not_enough,You don't even have 15 bahts? What a loser.,T'as même pas 15 bahts ? Quel loser !
 _pet_money_dialog_ok_1,[ShowNoName][Name] gives 15 bahts to Pet.,[ShowNoName][Name] donne 15 bahts à Pet.
 _pet_money_dialog_ok_1,"Ha! You actually gave me the money! You know you won't get it back, right?","Ha, j'y crois même pas que tu le fasses. J'te les rendrai pas, tu le sais ?"
+_see_letters,Letters,Lettres
+_see_words,Words,Mots
+_see_sentences,Sentences,Phrases
+_go_to_letter_world,Go the the letter world,Aller dans le monde des lettres
+_quests,Quests,Quêtes
+_use_spell,Use a Spell,Utilise un Mot
+_make_spell,Make a Spell,Fabrique un Mot

@@ -2,6 +2,9 @@ extends Node
 
 var initial_state = true
 var events = {
+	"has_had_a_quest": false,
+	"money_is_visible": false,
+	"has_possessed_a_letter": false,
 	"ploy_has_stopped_in_front_of_house": initial_state,
 	"has_met_ploy": initial_state,
 	"has_met_pet": false,

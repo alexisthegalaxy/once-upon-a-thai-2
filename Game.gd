@@ -10,15 +10,16 @@ var letters = []
 
 # The following are a list of IDs
 #var known_words = [343, 345, 207, 82] 
-#var known_words = [82, 343, 345, 207, 204, 222, 223, 232, 233, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 123, 14, 15]
 var known_words = [82, 343, 345, 207, 204, 222, 223, 232, 233, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 123, 14, 15]
-#var known_sentences = [196, 197, 198, 199]  # we know the translation. Does not contain seen_sentences.
+#var known_words = []
+var known_sentences = [196, 197, 198, 199]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [196, 197, 198]  # we know the translation. Does not contain seen_sentences.
-var known_sentences = [200, 201]  # we know the translation. Does not contain seen_sentences.
+#var known_sentences = [200, 201]  # we know the translation. Does not contain seen_sentences.
+#var known_sentences = []  # we know the translation. Does not contain seen_sentences.
 var seen_sentences = [196, 197, 198, 199]  # we don't know the translation
 #var known_letters = [0, 11, 13, 21]  # list of IDs
-#var known_letters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]  # list of IDs
-var known_letters = []  # list of IDs
+var known_letters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]  # list of IDs
+#var known_letters = []  # list of IDs
 #var known_letters = [0, 11, 13, 21, 28]  # five letters
 var following_spells = []
 #var following_spells = [
@@ -76,6 +77,7 @@ var should_start_test_when_back_from_MP = [
 var deducing_coop_select_sentence_screen = null
 var vending_screen = null
 var quests_display = null
+var main_ui = null
 var select_follower_to_implant_screen = null
 var canvas_color_screen = null
 
@@ -257,6 +259,9 @@ func add_random_letter_to_letters_to_look_for():
 			looking_for_letter__node.init(letters_we_look_for)
 			Game.current_scene.add_child(looking_for_letter__node)
 
+func is_in_letter_world():
+	return "LexicalWorld" in current_map_name
+
 func set_hp(_hp) -> void:
 	player.set_hp(_hp)
 
@@ -318,8 +323,10 @@ func _ready():
 		letters[letter_id]["in_bag"] = 0
 		if not "fr" in letters[letter_id]:
 			letters[letter_id].fr = letters[letter_id].en
-	quests_display = load("res://Quests/QuestsDisplay.tscn").instance()
-	self.add_child(quests_display)
+#	quests_display = load("res://Quests/QuestsDisplay.tscn").instance()
+#	self.add_child(quests_display)
+	main_ui = load("res://UI/MainUI.tscn").instance()
+	main_ui.update_main_ui()
 
 func _input(_event):
 	if _event.is_action_pressed("ui_cancel"):
@@ -393,7 +400,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 		canvas_color_screen = null
 	save_following_spells_data_before_map_change()
 	is_frozen = false
-	if not "LexicalWorld" in current_map_name:
+	if not is_in_letter_world():
 		if player:
 			player_position_on_overworld = player.position
 			player_last_overworld_map_visited = current_map_name
@@ -448,7 +455,8 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 			"SoundPlayer",
 			"DistractorsHelper",
 			"Save",
-			"Quests"
+			"Quests",
+#			"MainUI",
 		]:
 			child.queue_free()
 	get_tree().get_root().add_child(current_scene)
@@ -463,6 +471,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 
 	generate_following_spells_after_map_change()
 	set_sources_after_map_change()
+	self.add_child(main_ui)
 	if "LexicalWorld" in to_map_name:
 		update_letters_to_look_for_if_necesssary(to_map_name)
 		for following_spell in following_spells:
