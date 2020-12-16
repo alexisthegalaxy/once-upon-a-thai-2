@@ -556,7 +556,8 @@ func load_game(game_data):
 	this_letter_world_has_letters = game_data.this_letter_world_has_letters
 	letters_we_look_for = game_data.letters_we_look_for
 	this_letter_world_has_letters = game_data.this_letter_world_has_letters
-	player_position_on_overworld = game_data.player_position_on_overworld
+	player_position_on_overworld = Vector2(game_data.player_position_on_overworld[0], game_data.player_position_on_overworld[1])
+	print('player_position_on_overworld', player_position_on_overworld)
 	player_last_overworld_map_visited = game_data.player_last_overworld_map_visited
 	can_read_thai = game_data.can_read_thai
 	should_start_test_when_back_from_MP = game_data.should_start_test_when_back_from_MP

@@ -28,7 +28,7 @@ func get_sentences_for_page(page_index):
 		i += 1
 	return new_all_sentences
 
-func init(page_index):
+func init_notebook(page_index):
 	print('Game.known_sentences', Game.known_sentences)
 	print('Game.seen_sentences', Game.seen_sentences)
 	all_sentences = get_sentences_for_page(page_index)
@@ -61,7 +61,7 @@ func init(page_index):
 func next_page():
 	$Control/PreviousPage.show()
 	current_page_index += 1
-	init(current_page_index)
+	init_notebook(current_page_index)
 	print('len(all_sentences)', len(all_sentences), active_page)
 #	if len(all_sentences) == 2 * NUMBER_OF_SENTENCES_PER_PAGE and active_page == "right":
 	if len(get_sentences_for_page(current_page_index + 1)) == 0:
@@ -72,7 +72,7 @@ func previous_page():
 	print('len(all_sentences)', len(all_sentences))
 	if current_page_index > 0:
 		current_page_index -= 1
-		init(current_page_index)
+		init_notebook(current_page_index)
 		if current_page_index == 0:
 			$Control/PreviousPage.hide()
 

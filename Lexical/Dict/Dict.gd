@@ -34,7 +34,7 @@ func _input(event) -> void:
 #	if Input.is_action_just_pressed("ui_page_up"):
 #		print('ui_page_up')
 
-func init():
+func init_dict():
 	var DictWord = load("res://Lexical/Dict/DictWord.tscn")
 	var x = 0
 	var y = 0

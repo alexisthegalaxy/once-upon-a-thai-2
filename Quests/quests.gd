@@ -21,7 +21,7 @@ func _ready():
 	init_with_initial_state()
 
 func init_with_initial_state():
-#	quests['talk_to_anchalee_in_chaiyaphum'].status = DONE
+	quests['talk_to_anchalee_in_chaiyaphum'].status = IN_PROGRESS
 #	quests['implant_source_behind_the_temple'].status = DONE
 #	quests['find_sentences_in_chaiyaphum'].status = DONE
 	pass
@@ -46,9 +46,10 @@ func start_quest(quest_id):
 	update_quests_display()
 
 func update_quests_display():
-	Game.main_ui.update_quests_display() 
-	for npc in Game.current_scene.get_node("YSort").get_node("NPCs").get_children():
-		npc.update_npc_with_quests()
+	Game.main_ui.update_quests_display()
+	if Game.current_scene.get_node("YSort") and Game.current_scene.get_node("YSort").get_node("NPCs"):
+		for npc in Game.current_scene.get_node("YSort").get_node("NPCs").get_children():
+			npc.update_npc_with_quests()
 
 func update_find_sentences_quests(sentence_id):
 	for quest_id in quests:

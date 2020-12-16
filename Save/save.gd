@@ -3,8 +3,9 @@ extends Node
 
 func save_game():
 	# When called, this function saves the data into a file, with the player's name
-	# Can be reused on next log-in.
-	# This is used when starting or ending a session, and whenever we want to save progress.
+	# to be reused on next log-in.
+	# This is to be used when starting or ending a session,
+	# and whenever we click the save button to save progress.
 	var save_data = {
 		"current_map": Game.current_map_name,
 		"player_data": Game.player.save_game(),
@@ -39,6 +40,7 @@ func load_game(player_name):
 	print(save_data)
 	save_file.close()
 	apply_change_from_save_data(save_data)
+	Game.main_ui.update_main_ui()
 	
 func provisory_save():
 	# Some data (for example, what word is in what source) is saved here.

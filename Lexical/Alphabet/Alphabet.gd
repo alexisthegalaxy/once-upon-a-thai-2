@@ -55,7 +55,7 @@ func get_letters(letter_class):
 			letters.append(letter)
 	return letters
 	
-func init():
+func init_alphabet():
 	init_words()
 	var label_y = 0
 	$Control/VowelsLabel.position = Vector2(s_x(0), label_y)

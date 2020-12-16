@@ -126,16 +126,14 @@ func _input(_event) -> void:
 			Game.space_bar_to_interact.queue_free()
 			Game.space_bar_to_interact = null
 	if Input.is_action_just_pressed("print_position"):
-		print("current position: (" + str(position.x) + ", " + str(position.y) + ")")
+		print("current position: (" + str(position.x) + ", " + str(position.y) + ")    " + Game.current_map_name)
 #		set_hp(Game.hp - 0.5)
 		Game.letters_we_look_for.append(Game.letters["1"])
 #		Game.add_random_letter_to_letters_to_look_for()
 	if Input.is_action_just_pressed("print_known_sentences"):
 		Game.print_known_sentences()
-	if Input.is_action_just_pressed("save"):
-		Save.save_game()
 	if Input.is_action_just_pressed("load"):
-		Save.load_game("Alexis")
+		Save.load_game(Game.player_name)
 	if Input.is_action_just_pressed("hub"):
 		_on_press_f()
 

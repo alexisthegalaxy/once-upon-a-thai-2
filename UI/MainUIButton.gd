@@ -5,6 +5,7 @@ var final_x
 var moves_left = false
 var moves_right = false
 var type = ""
+signal is_pressed
 
 func _ready():
 	initial_x = position.x
@@ -18,6 +19,8 @@ func _init_main_ui_button(_type):
 		modulate = Color(0.75, 0.2, 0.1, 1)
 	elif type == "_see_sentences":
 		modulate = Color(0.15, 0.82, 0.21, 1)
+	elif type == "_save_the_game":
+		modulate = Color(0.8, 0.8, 0.8, 1)
 	$Button.text = "   " + tr(_type)
 
 func _process(delta):
@@ -39,18 +42,5 @@ func _on_Button_mouse_exited():
 	moves_left = false
 
 func _on_Button_pressed():
-	if type == "_go_to_letter_world":
-		go_to_letter_world()
-
-func go_to_letter_world():
-	if "LexicalWorld" in Game.current_map_name:
-		Game.letters_we_look_for = []
-		Game.call_deferred(
-			"_deferred_goto_scene",
-			Game.player_last_overworld_map_visited,
-			Game.player_position_on_overworld.x,
-			Game.player_position_on_overworld.y,
-			0
-		)
-	else:  # Going to the letter world
-		Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75, 0)
+	$Button.release_focus()
+	emit_signal("is_pressed", type)
