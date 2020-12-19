@@ -86,6 +86,7 @@ var notebook = null                                              #
 var word_page = null                                             #
 var letter_page = null                                           #
 var exit_screen = null                                           #
+var spell_crafting_screen = null                                 #
 ##################################################################
 
 func blackens():
@@ -107,6 +108,7 @@ func is_overworld_frozen():
 		word_page or
 		letter_page or
 		vending_screen or 
+		spell_crafting_screen or 
 		select_follower_to_implant_screen
 	)
 
@@ -358,21 +360,24 @@ func _input(_event):
 		elif letter_page:
 			letter_page.queue_free()
 			letter_page = null
-		elif Game.select_follower_to_implant_screen:
-			Game.select_follower_to_implant_screen.queue_free()
-			Game.select_follower_to_implant_screen = null
-		elif Game.deducing_coop_select_sentence_screen:
-			Game.deducing_coop_select_sentence_screen.queue_free()
-			Game.deducing_coop_select_sentence_screen = null
-			Game.is_frozen = false
-		elif Game.vending_screen:
-			Game.vending_screen.queue_free()
-			Game.vending_screen = null
-			Game.is_frozen = false
+		elif spell_crafting_screen:
+			spell_crafting_screen.queue_free()
+			spell_crafting_screen = null
+		elif select_follower_to_implant_screen:
+			select_follower_to_implant_screen.queue_free()
+			select_follower_to_implant_screen = null
+		elif deducing_coop_select_sentence_screen:
+			deducing_coop_select_sentence_screen.queue_free()
+			deducing_coop_select_sentence_screen = null
+			is_frozen = false
+		elif vending_screen:
+			vending_screen.queue_free()
+			vending_screen = null
+			is_frozen = false
 		else:
 			exit_screen = load("res://UI/ExitAreYouSure.tscn").instance()
-			Game.is_frozen = true
-			Game.current_scene.add_child(exit_screen)
+			is_frozen = true
+			current_scene.add_child(exit_screen)
 
 func _process(delta):
 	OS.set_window_title("Once upon a Thai | fps: " + str(Engine.get_frames_per_second()))

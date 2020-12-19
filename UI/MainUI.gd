@@ -94,7 +94,7 @@ func on_button_pressed(type):
 	elif type == "_use_spell":
 		pass
 	elif type == "_make_spell":
-		pass
+		display_spell_crafting()
 	elif type == "_save_the_game":
 		Save.save_game()
 
@@ -109,6 +109,11 @@ func display_alphabet():
 	Game.alphabet = alphabet
 	alphabet.init_alphabet()
 	Game.current_scene.add_child(alphabet)
+
+func display_spell_crafting():
+	var spell_crafting_scene = load("res://Lexical/SpellCrafting/SpellCrafting.tscn").instance()
+	Game.spell_crafting_screen = spell_crafting_scene
+	Game.current_scene.add_child(spell_crafting_scene)
 
 func display_notebook():
 	var notebook = load("res://Lexical/Notebook/Notebook.tscn").instance()
