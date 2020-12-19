@@ -17,8 +17,8 @@ func _on_Button_pressed():
 	Game.player.letter_page = letter_page
 	Game.current_scene.add_child(letter_page)
 	letter_page.init_letter_page(letter["id"])
-	Game.player.alphabet.queue_free()
-	Game.player.alphabet = null
+	Game.alphabet.queue_free()
+	Game.alphabet = null
 
 
 func _on_Button_mouse_entered():

@@ -288,7 +288,7 @@ func handle_dialog_option(dialog_node, answer_index, npc):
 				npc.dialog = [tr("_pet_money_dialog_ok_1"), tr("_pet_money_dialog_ok_2")]
 				dialog_node.dialog = npc.dialog
 				dialog_node.page = -1
-				Game.money -= 15
+				Money.spends_money(15)
 			else:  # NO or not enough
 				npc.dialog = [tr("_pet_money_dialog_not_enough")]
 				dialog_node.dialog = npc.dialog

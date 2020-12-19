@@ -36,7 +36,6 @@ var sources = {
 #	"res://Maps/Chaiyaphum.tscn|EmptySourceBehindWat": [0],
 }
 
-var exit_screen = false
 var current_dialog = null
 
 var this_letter_world_has_letters = []  # a list of letter ids
@@ -74,12 +73,20 @@ var should_start_test_when_back_from_MP = [
 	null,  # word_id
 ]
 
-var deducing_coop_select_sentence_screen = null
-var vending_screen = null
-var quests_display = null
-var main_ui = null
-var select_follower_to_implant_screen = null
-var canvas_color_screen = null
+# SCREENS ########################################################
+var deducing_coop_select_sentence_screen = null                  #
+var vending_screen = null                                        #
+var quests_display = null                                        #
+var main_ui = null                                               #
+var select_follower_to_implant_screen = null                     #
+var canvas_color_screen = null                                   #
+var dict = null                                                  #
+var alphabet = null                                              #
+var notebook = null                                              #
+var word_page = null                                             #
+var letter_page = null                                           #
+var exit_screen = null                                           #
+##################################################################
 
 func blackens():
 	canvas_color_screen = ColorRect.new()
@@ -94,14 +101,13 @@ func is_overworld_frozen():
 		current_dialog or
 		is_frozen or
 		select_follower_to_implant_screen or
-		(player and (
-			player.hub or
-			player.dict or
-			player.alphabet or
-			player.notebook or
-			player.word_page or
-			player.letter_page
-		))
+		dict or
+		alphabet or
+		notebook or
+		word_page or
+		letter_page or
+		vending_screen or 
+		select_follower_to_implant_screen
 	)
 
 func set_sources_after_map_change():
@@ -134,6 +140,7 @@ func save_following_spells_data_before_map_change():
 	
 
 func add_following_spell(word_id, over_word):
+	Events.events.has_possessed_a_letter = true
 	over_word.set_as_following()
 	following_spells.append({
 		"id": word_id,
@@ -323,20 +330,49 @@ func _ready():
 		letters[letter_id]["in_bag"] = 0
 		if not "fr" in letters[letter_id]:
 			letters[letter_id].fr = letters[letter_id].en
-#	quests_display = load("res://Quests/QuestsDisplay.tscn").instance()
-#	self.add_child(quests_display)
-	main_ui = load("res://UI/MainUI.tscn").instance()
-	main_ui.update_main_ui()
+	# The following code is only used when the main scene is not the main menu,
+	# because in the main menu.ready() code we queue_free the main_ui.
+	if current_map_name == "res://Maps/Chaiyaphum.tscn":
+		main_ui = load("res://UI/MainUI.tscn").instance()
+		main_ui.update_main_ui()
+		self.add_child(main_ui)
 
 func _input(_event):
 	if _event.is_action_pressed("ui_cancel"):
-		if not exit_screen:
-			exit_screen = load("res://UI/ExitAreYouSure.tscn").instance()
-#			get_tree().current_scene.add_child(exit_screen)
-			Game.current_scene.add_child(exit_screen)
+		if exit_screen:
+			exit_screen.queue_free()
+			exit_screen = null
+			Game.is_frozen = false
+		elif dict:
+			dict.queue_free()
+			dict = null
+		elif alphabet:
+			alphabet.queue_free()
+			alphabet = null
+		elif notebook:
+			notebook.queue_free()
+			notebook = null
+		elif word_page:
+			word_page.queue_free()
+			word_page = null
+		elif letter_page:
+			letter_page.queue_free()
+			letter_page = null
+		elif Game.select_follower_to_implant_screen:
+			Game.select_follower_to_implant_screen.queue_free()
+			Game.select_follower_to_implant_screen = null
+		elif Game.deducing_coop_select_sentence_screen:
+			Game.deducing_coop_select_sentence_screen.queue_free()
+			Game.deducing_coop_select_sentence_screen = null
+			Game.is_frozen = false
+		elif Game.vending_screen:
+			Game.vending_screen.queue_free()
+			Game.vending_screen = null
+			Game.is_frozen = false
 		else:
-			if is_instance_valid(exit_screen):
-				exit_screen.stay()
+			exit_screen = load("res://UI/ExitAreYouSure.tscn").instance()
+			Game.is_frozen = true
+			Game.current_scene.add_child(exit_screen)
 
 func _process(delta):
 	OS.set_window_title("Once upon a Thai | fps: " + str(Engine.get_frames_per_second()))
@@ -456,7 +492,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 			"DistractorsHelper",
 			"Save",
 			"Quests",
-#			"MainUI",
+			"Money"
 		]:
 			child.queue_free()
 	get_tree().get_root().add_child(current_scene)
@@ -471,6 +507,9 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 
 	generate_following_spells_after_map_change()
 	set_sources_after_map_change()
+	if not main_ui:
+		main_ui = load("res://UI/MainUI.tscn").instance()
+		main_ui.update_main_ui()
 	self.add_child(main_ui)
 	if "LexicalWorld" in to_map_name:
 		update_letters_to_look_for_if_necesssary(to_map_name)

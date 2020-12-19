@@ -1,6 +1,6 @@
 extends CanvasLayer
 const MONEY_AMOUNT_WIN = 10
-const MONEY_AMOUNT_LOSS = -10
+const MONEY_AMOUNT_LOSS = 10
 const NUMBER_OF_WORDS_PER_SIDE = 5
 var NUMBER_OF_WORDS_TO_REVIEW = 15
 var EasyLearnButton = load("res://Test/JobTest/EasyLearn/EasyLearnButton.tscn")
@@ -113,7 +113,7 @@ func correct_answer():
 	Game.words[str(pressed_tl_word_id)].fluency += 0.5
 	remove_buttons()
 	add_buttons()
-	Game.money += MONEY_AMOUNT_WIN
+	Money.earn_money(MONEY_AMOUNT_WIN)
 	money_made_since_beginning_of_game += MONEY_AMOUNT_WIN
 	update_money_label()
 	add_floaty("up", "+" + str(MONEY_AMOUNT_WIN), Color(0, 1, 0, 1))
@@ -121,7 +121,7 @@ func correct_answer():
 
 func incorrect_answer():
 	Game.words[str(pressed_tl_word_id)].fluency -= 0.9
-	Game.money += MONEY_AMOUNT_LOSS
+	Money.spends_money(MONEY_AMOUNT_LOSS)
 	money_made_since_beginning_of_game += MONEY_AMOUNT_LOSS
 	update_money_label()
 	add_floaty("down", str(MONEY_AMOUNT_LOSS), Color(1, 0, 0, 1))

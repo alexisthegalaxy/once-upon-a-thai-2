@@ -17,7 +17,7 @@ _space_to_interact,Press Space to interact,Appuie sur Espace pour interagir
 _active_quests,Active quests,Quêtes en cours
 _granny_is_waiting_outside,Granny is waiting for you outside.,Mamie t'attends dehord.
 _be_brave_okay,"Be brave, okay?","Tu seras brave, hein ?"
-_press_f_to_exit,Press F to exit,Appuie sur F pour fermer
+_press_f_to_exit,Press the escape key to exit,Appuie sur échap pour fermer
 _see_my_words,See my words,Voir mes mots
 _go_to_the_letter_world,Go to the Letter World,Entrer dans le monde des letters
 _see_my_sentences,See my sentences,Voir mes phrases
@@ -35,7 +35,7 @@ _you_ve_discovered_a_sentence,You've discovered a sentence!,Tu as découvert une
 _it_will_help_you_to_guess_meaning_words,It will help you later to guess the meaning of its words,Elle t'aidera à deviner le sens de ses mots plus tard.
 _got_it,Got it!,Compris!
 _names_writes_sentence_in_notebook,[Name] writes the sentence in the notebook.,[Name] note la phrase dans le carnet.
-_press_f_to_see_all_sentences,Press F to see all your sentences.,Appuie sur F pour voir toutes tes phrases.
+_press_f_to_see_all_sentences,Click on the sentence button on the side of your screen to see all your sentences.,Appuie sur F pour voir toutes tes phrases.
 _som_s_father,Som's father,Père de Som
 _som_s_mother,Som's Mother,Mère de Som
 _go_back_to_the_material_world,Go back to the Material World,Retourner dans le monde matériel
@@ -46,13 +46,13 @@ _som_s_grandmother,Som's Grandmother,Grand-mère de Som
 _you_ve_learned_a_sentence,You've learned a sentence!,Tu as appris une phrase !
 _guess_the_words_meaning,Find the word's meaning,Trouve la traduction de ce mot
 _show_sentences_with_that_word,Show sentences with that word,Montrer les phrases qui ont ce mot
-_press_f_to_open_your_dictionary_and_see_that_word,Press F to open your dictionary and see your words.,Appuie sur F pour ouvrir ton dictionaire et voir tes mots.
+_press_f_to_open_your_dictionary_and_see_that_word,Click on the word button on the side of your screen to open your dictionary and see your words.,Clique sur le bouton sur la droite de l'écran si tu veux voir les mots que tu connais.
 _a_wild_spell_attacks,A wild Spell attacks!,Un mot sauvage attaque !
 _you_dont_know_letters_go_to_letter_world,You don't know all the letters in that word. Go to the Letter World to learn them.,Tu ne connais pas toutes les lettres de ce mot. Va dans le monde des lettres pour les apprendre.
 _you_dont_know_any_sentence_containing_that_word,You don't know any sentence containing that word,Tu ne connais aucune phrase contenant ce mot.
 _ok,OK,OK
-_press_f_to_open_your_alphabet_and_see_your_letters,Press F to open your alphabet and see your letters.,Appuie sur F pour ouvrir ton alphabet et voir tes lettres.
-_press_f_to_open_your_notebook_and_see_your_sentences,Press F to open your notebook and see your sentences.,Appuie sur F pour ouvrir ton carnet et voir tes phrases.
+_press_f_to_open_your_alphabet_and_see_your_letters,Click on the letter button on the side of your screen to open your alphabet and see your letters.,Clique sur le bouton sur la droite de l'écran si tu veux voir toutes les lettres que tu connais.
+_press_f_to_open_your_notebook_and_see_your_sentences,Click on the sentence button on the side of your screen to open your notebook and see your sentences.,Clique sur le bouton sur la droite de l'écran si tu veux voir les phrases que tu as vues.
 _go_to_the_letter_world_to_learn,Go to the letter world to learn:,Va dans le monde des lettres pour apprendre :
 _this_is_a_shrine,This is a shrine to Buddha. It is very clean!,C'est un autel à Buddha. Il est très propre !
 _this_road_leads_to_chaiyaphum,This road leads to Chaiyaphum City. [sound:ชัยภูมิ],Cette route mène à la ville de Chaiyaphum. [sound:ชัยภูมิ]
@@ -93,7 +93,7 @@ _you_cant_even_write_bpai,"I’m guessing you don’t even know how to write a b
 _see_bpai_is_written_i_go_to_chaiyaphum_loser,"See? ""bpai"" is written ไป. In any case, I’ve got important stuff to do in Chaiyaphum. Smell ya later, loser!","Tu vois ? ""bpai"" s'écrit ไป. Bon, j'ai des trucs à faire à Chaiyaphum, alors à plus, loser !"
 _hmph_yeah_anyway_i_to_to_chaiyaphum_loser,"Hmph, yeah. In any case, I’ve got important stuff to do in Chaiyaphum. Smell ya later, loser!","Mouais. Bon, j'ai des trucs à faire à Chaiyaphum, alors à plus, loser !"
 _welcome_back_name,"Welcome back, [Name].","Bon retour, [Name]."
-_you_can_always_go_back_to_your_memory_palace,You can always go back to your Memory Palace using the F key.,Tu pourras toujours retourner dans le monde lexical en appuyant sur F.
+_you_can_always_go_back_to_your_memory_palace,You can always go back to your Memory Palace using the button on the right-side of your screen.,Tu pourras toujours retourner dans le monde lexical en cliquant sur le bouton sur ton écran.
 _for_now_follow_me_into_the_forest,"For now, follow me into the forest.","Pour l'instant, suis-moi dans la forêt."
 _i_should_talk_to_my_grandmother_first,I should talk to my grandmother first...,Je devrais d'abord parler à ma grand-mère...
 _i_shouldnt_go_there_now,I shouldn't go there now...,Je ne devrais pas aller ici maintenant...
@@ -128,7 +128,7 @@ _vowels,Vowels,Voyelles
 _name_exclamation_mark,[Name]!,[Name] !
 _name_do_you_hear_me,"[Name], do you hear me?","[Name], tu m'entends ?"
 _you_have_found_all_the_needed_letters_for_now,You have found all the letters you needed for now - you can come back amongst us now.,"Tu as trouvé toutes les letters qu'il te fallais, tu peux rentrer maintenant."
-_to_leave_this_world_press_f_key,"To leave the Lexical World, press the F key.","Pour quitter le Monde Lexical, appuie sur F."
+_to_leave_this_world_press_f_key,"To leave the Lexical World, press the button on the right side of your screen.","Pour quitter le Monde Lexical, appuie sur le bouton qui s'affiche sur la droite de ton écran."
 _tones,Tones,Tons
 _numbers,Numbers,Chiffres
 _accents,Accents,Accents

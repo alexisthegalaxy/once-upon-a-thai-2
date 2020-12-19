@@ -16,13 +16,6 @@ var can_interact = true  # meaning the player is near a npc. false during a dial
 var time = 0
 
 var arrow = null  # the arrow that is sometimes shown to indicate direction to follow
-# UI
-var hub = null  # The screen that appears when pressing f and gives access to sentences, etc.
-var dict = null
-var alphabet = null
-var notebook = null
-var word_page = null
-var letter_page = null
 
 var is_forced_towards = null
 func make_animation(animation_name, key_1, key_2, key_3, key_4):
@@ -81,40 +74,6 @@ func _process(delta) -> void:
 	else:
 		if not $Camera2D.position.x == 0:
 			$Camera2D.position.x = 0
-	
-func _on_press_f():
-	if hub:
-		hub.queue_free()
-		hub = null
-	elif dict:
-		dict.queue_free()
-		dict = null
-	elif alphabet:
-		alphabet.queue_free()
-		alphabet = null
-	elif notebook:
-		notebook.queue_free()
-		notebook = null
-	elif word_page:
-		word_page.queue_free()
-		word_page = null
-	elif letter_page:
-		letter_page.queue_free()
-		letter_page = null
-	elif Game.select_follower_to_implant_screen:
-		Game.select_follower_to_implant_screen.queue_free()
-		Game.select_follower_to_implant_screen = null
-	elif Game.deducing_coop_select_sentence_screen:
-		Game.deducing_coop_select_sentence_screen.queue_free()
-		Game.deducing_coop_select_sentence_screen = null
-		Game.is_frozen = false
-	elif Game.vending_screen:
-		Game.vending_screen.queue_free()
-		Game.vending_screen = null
-		Game.is_frozen = false
-	else:
-		hub = load("res://UI/UIHub.tscn").instance()
-		Game.current_scene.add_child(hub)
 
 func _input(_event) -> void:
 	if Input.is_action_just_pressed("interact") and not Game.is_overworld_frozen() and can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]):
@@ -134,8 +93,6 @@ func _input(_event) -> void:
 		Game.print_known_sentences()
 	if Input.is_action_just_pressed("load"):
 		Save.load_game(Game.player_name)
-	if Input.is_action_just_pressed("hub"):
-		_on_press_f()
 
 func stop_walking():
 	update_state("stand")

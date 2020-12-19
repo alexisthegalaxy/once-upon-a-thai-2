@@ -23,7 +23,7 @@ func init_letter_page(_letter_id):
 
 func _on_OkButton_pressed():
 	var alphabet = load("res://Lexical/Alphabet/Alphabet.tscn").instance()
-	Game.player.alphabet = alphabet
+	Game.alphabet = alphabet
 	alphabet.init_alphabet()
 	Game.current_scene.add_child(alphabet)
 	Game.player.letter_page = null

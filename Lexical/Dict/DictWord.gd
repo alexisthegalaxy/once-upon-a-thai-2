@@ -18,5 +18,5 @@ func _on_Button_pressed():
 		Game.player.word_page = word_page
 		Game.current_scene.add_child(word_page)
 		word_page.init_word_page(word["id"])
-		Game.player.dict.queue_free()
-		Game.player.dict = null
+		Game.ict.queue_free()
+		Game.dict = null

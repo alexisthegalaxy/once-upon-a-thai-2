@@ -17,6 +17,9 @@ func _ready():
 	$CanvasLayer/LanguageSelector.add_item("English")
 	$CanvasLayer/LanguageSelector.add_item("Français")
 #	Save.load_game("Alexis")
+	if Game.main_ui:
+		Game.main_ui.queue_free()
+		Game.main_ui = null
 
 func retranslate_main_menu_strings():
 	ENG_START_STORY = tr("_start_story")

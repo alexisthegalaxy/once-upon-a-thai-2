@@ -47,7 +47,6 @@ func _on_Button_pressed():
 	queue_free()
 
 func _on_Buy_pressed():
-	SoundPlayer.play_sound("res://Sounds/money.wav", -10)
-	Game.money -= price
+	Money.spends_money(price)
 	increase_amount_in_bag()
 	update_money()

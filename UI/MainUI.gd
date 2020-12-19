@@ -1,12 +1,6 @@
 extends CanvasLayer
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	$Letters._init_main_ui_button("_see_letters")
 	$Words._init_main_ui_button("_see_words")
@@ -27,6 +21,7 @@ func _ready():
 	$Save.connect("is_pressed", self, "on_button_pressed")
 
 func update_main_ui():
+	update_main_ui_money_display()
 	if Game.known_letters:
 		$Letters.show()
 	else:
@@ -39,27 +34,42 @@ func update_main_ui():
 		$Sentences.show()
 	else:
 		$Sentences.hide()
+	update_main_ui_go_letter_world_display()
+	update_main_ui_use_spell_display()
+	update_main_ui_make_spell_display()
+	update_main_ui_quests_display()
+
+func update_main_ui_money_display():
 	if Events.events.money_is_visible:
 		$Money.show()
+		$Money/Label.text = "฿" + str(Game.money)
 	else:
 		$Money.hide()
+
+func update_main_ui_go_letter_world_display():
 	if Events.events.has_finished_the_letter_world_the_first_time:
 		$GoLetterWorld.show()
 		if Game.is_in_letter_world():
-			$GoLetterWorld/Button.text = "   " + tr("_go_back_to_the_material_world")
+			$GoLetterWorld/Label.text = tr("_go_back_to_the_material_world")
 		else:
-			$GoLetterWorld/Button.text = "   " + tr("_go_to_letter_world")
+			$GoLetterWorld/Label.text = tr("_go_to_letter_world")
 	else:
 		$GoLetterWorld.hide()
+
+func update_main_ui_use_spell_display():
 	if Game.following_spells:
 		$UseSpell.show()
 	else:
 		$UseSpell.hide()
+
+func update_main_ui_make_spell_display():
 	if Events.events.has_possessed_a_letter:
 		$MakeSpell.show()
 	else:
 		$MakeSpell.hide()
-	if Events.events.has_had_a_quest:
+
+func update_main_ui_quests_display():
+	if Events.events.has_had_a_quest or Quests.has_quests_in_progress_or_finished():
 		$Quests.show()
 		update_quests_display()
 	else:
@@ -68,7 +78,7 @@ func update_main_ui():
 func update_quests_display():
 	var quest_button_text = $QuestsDisplay.update_quests_display()
 	if quest_button_text:
-		$Quests/Button.text = quest_button_text
+		$Quests/Label.text = quest_button_text
 
 func on_button_pressed(type):
 	if type == "_go_to_letter_world":
@@ -90,19 +100,19 @@ func on_button_pressed(type):
 
 func display_words():
 	var dict = load("res://Lexical/Dict/Dict.tscn").instance()
-	Game.player.dict = dict
+	Game.dict = dict
 	dict.init_dict()
 	Game.current_scene.add_child(dict)
 
 func display_alphabet():
 	var alphabet = load("res://Lexical/Alphabet/Alphabet.tscn").instance()
-	Game.player.alphabet = alphabet
+	Game.alphabet = alphabet
 	alphabet.init_alphabet()
 	Game.current_scene.add_child(alphabet)
 
 func display_notebook():
 	var notebook = load("res://Lexical/Notebook/Notebook.tscn").instance()
-	Game.player.notebook = notebook
+	Game.notebook = notebook
 	Game.current_scene.add_child(notebook)
 	notebook.init_notebook(0)
 
@@ -116,5 +126,5 @@ func go_to_letter_world():
 			Game.player_position_on_overworld.y,
 			0
 		)
-	else:  # Going to the letter world
+	else:
 		Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75, 0)

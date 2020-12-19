@@ -58,12 +58,12 @@ func _on_Area2D_input_event(_viewport, event, _shape_idx):
 	# - Looking at the sentences containing a word
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		SoundPlayer.play_thai(word["th"])
-		if Game.player.notebook:
+		if Game.notebook:
 			var word_page = load("res://Lexical/WordPage/WordPage.tscn").instance()
 			Game.player.word_page = word_page
 			Game.current_scene.add_child(word_page)
 			word_page.init_word_page(word["id"])
-			Game.player.notebook.queue_free()
-			Game.player.notebook = null
+			Game.notebook.queue_free()
+			Game.notebook = null
 			
 

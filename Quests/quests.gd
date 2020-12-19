@@ -26,7 +26,14 @@ func init_with_initial_state():
 #	quests['find_sentences_in_chaiyaphum'].status = DONE
 	pass
 
+func has_quests_in_progress_or_finished():
+	for quest_id in quests:
+		if quests[quest_id].status in [IN_PROGRESS, FINISHED]:
+			return true
+	return false
+
 func start_quest(quest_id):
+	Events.events.has_had_a_quest = true
 	quests[quest_id].status = IN_PROGRESS
 	if quests[quest_id].type == "find_sentences":
 		# We count the sentences that were already found
