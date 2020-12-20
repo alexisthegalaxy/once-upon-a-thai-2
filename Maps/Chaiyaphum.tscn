@@ -6894,7 +6894,7 @@ position = Vector2( 2218.55, -159.948 )
 position = Vector2( 1421.76, 31.3513 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1152.41, -60.3766 )
+position = Vector2( 1068.97, -6.78251 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 

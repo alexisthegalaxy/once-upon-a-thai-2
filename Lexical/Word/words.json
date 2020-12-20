@@ -379,6 +379,7 @@
   "43": {
     "split": "จาก",
     "en": "from",
+    "fr": "de, depuis",
     "tones": "L",
     "pos": "PREP",
     "th": "จาก",
@@ -387,6 +388,7 @@
   "44": {
     "split": "ใน",
     "en": "in",
+    "fr": "dans",
     "tones": "M",
     "pos": "PREP",
     "th": "ใน",
@@ -395,6 +397,7 @@
   "45": {
     "split": "ที่",
     "en": "to, at, that",
+    "fr": "à",
     "tones": "F",
     "pos": "PREP",
     "th": "ที่",
@@ -403,6 +406,7 @@
   "46": {
     "split": "กับ",
     "en": "with",
+    "fr": "avec",
     "tones": "L",
     "pos": "PREP",
     "th": "กับ",
@@ -411,6 +415,7 @@
   "47": {
     "split": "ใต้",
     "en": "under, south",
+    "fr": "sous, sud",
     "tones": "F",
     "pos": "PREP, NOUN",
     "th": "ใต้",
@@ -419,6 +424,7 @@
   "48": {
     "split": "เหนือ",
     "en": "over, north",
+    "fr": "dessus, nord",
     "tones": "R",
     "pos": "PREP, NOUN",
     "th": "เหนือ",
@@ -436,6 +442,7 @@
   "50": {
     "split": "เหมือน",
     "en": "like, as",
+    "fr": "comme",
     "tones": "R",
     "pos": "PREP",
     "th": "เหมือน",
@@ -444,6 +451,7 @@
   "51": {
     "split": "ให้",
     "en": "to, for (somebody), so that",
+    "fr": "pour",
     "tones": "F",
     "pos": "PREP",
     "th": "ให้",
@@ -452,6 +460,7 @@
   "52": {
     "split": "ด้วย",
     "en": "as well, with",
+    "fr": "aussi",
     "tones": "F",
     "pos": "PREP",
     "th": "ด้วย",
@@ -460,6 +469,7 @@
   "53": {
     "split": "หน้า",
     "en": "in front of",
+    "fr": "devant",
     "tones": "F",
     "pos": "PREP",
     "th": "หน้า",
@@ -468,6 +478,7 @@
   "54": {
     "split": "เกี่ยว-กับ",
     "en": "about",
+    "fr": "à propos de",
     "tones": "LL",
     "pos": "OF",
     "th": "เกี่ยวกับ",
@@ -2766,6 +2777,7 @@
   "316": {
     "split": "รถ-ไฟ-ฟ้า",
     "en": "skytrain",
+    "fr": "métro aérien",
     "tones": "HMH",
     "pos": "None",
     "th": "รถไฟฟ้า",
@@ -2774,6 +2786,7 @@
   "317": {
     "split": "ด็ก-ผู้-ชาย",
     "en": "boy",
+    "fr": "garcçon",
     "tones": "LFM",
     "pos": "None",
     "th": "ด็กผู้ชาย",
@@ -2782,6 +2795,7 @@
   "318": {
     "split": "มา-เล-เซีย",
     "en": "Malaysia",
+    "fr": "Malaysie",
     "tones": "MMM",
     "pos": "PLAC",
     "th": "มาเลเซีย",
@@ -2790,6 +2804,7 @@
   "319": {
     "split": "แค-นา-ดา",
     "en": "Canada",
+    "fr": "Canada",
     "tones": "MMM",
     "pos": "PLAC",
     "th": "แคนาดา",
@@ -2798,6 +2813,7 @@
   "320": {
     "split": "กัม-พู-ชา",
     "en": "Cambodia",
+    "fr": "Cambodge",
     "tones": "MMM",
     "pos": "PLAC",
     "th": "กัมพูชา",
@@ -2806,6 +2822,7 @@
   "321": {
     "split": "ฝ-รั่งเ-ศส",
     "en": "France",
+    "fr": "France",
     "tones": "LLL",
     "pos": "PLAC",
     "th": "ฝรั่งเศส",

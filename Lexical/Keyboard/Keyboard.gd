@@ -4,6 +4,7 @@ extends Node2D
 #    a string that tracks what is being written
 var s = ""
 var shift
+signal text_change
 
 func _ready():
 	# First row
@@ -237,4 +238,4 @@ func receive_key_value(key_value):
 		s.erase(s.length() - 1, 1)
 	else:
 		s += key_value.replace('-', '')
-	print(s)
+	emit_signal("text_change", s)
