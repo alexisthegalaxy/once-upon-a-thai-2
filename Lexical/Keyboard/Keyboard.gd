@@ -19,9 +19,9 @@ func init_keyboard(_restrict_to_collected_letters):
 	$"-ึ".init_keyboard_key("-ึ", "฿", self)
 	$"ค".init_keyboard_key("ค", "๕", self)
 	$"ต".init_keyboard_key("ต", "๖", self)
-	$"จ".init_keyboard_key("ต", "๗", self)
-	$"ข".init_keyboard_key("จ", "๘", self)
-	$"ช".init_keyboard_key("ข", "๙", self)
+	$"จ".init_keyboard_key("จ", "๗", self)
+	$"ข".init_keyboard_key("ข", "๘", self)
+	$"ช".init_keyboard_key("ช", "๙", self)
 	# Second row
 	$"ๆ".init_keyboard_key("ๆ", "๐", self)
 	$"ไ".init_keyboard_key("ไ", "\"", self)
@@ -233,11 +233,22 @@ func update_all_keys_upon_shift():
 	$"ใ".update_upon_shift()
 	$"ฝ".update_upon_shift()
 
+func on_backspace():
+	print('s s.length() ', s.length())
+	if s.length() == 0:
+		return
+	var last_char = s[s.length() - 1]
+	print('last_char', last_char)
+	s.erase(s.length() - 1, 1)
+	var keys = get_tree().get_nodes_in_group("keyboard_keys")
+	for key in keys:
+		key.update_after_char_is_backspaced(last_char)
+
 func receive_key_value(key_value):
 	if key_value == "shift":
 		return
 	if key_value == "back":
-		s.erase(s.length() - 1, 1)
+		on_backspace()
 	else:
 		s += key_value.replace('-', '')
 	emit_signal("text_change", s)

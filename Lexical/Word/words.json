@@ -160,7 +160,8 @@
   },
   "18": {
     "split": "แก้ว",
-    "en": "glass, classifier for glasses",
+    "en": "glass (or water, etc.)",
+    "fr": "verre (d'eau, etc.)",
     "tones": "F",
     "pos": "NOUN, CLAS",
     "th": "แก้ว",
@@ -169,6 +170,7 @@
   "19": {
     "split": "เครื่อง",
     "en": "machine, classifier for machines",
+    "fr": "machine, classificateur des machines",
     "tones": "F",
     "pos": "NOUN, CLAS",
     "th": "เครื่อง",
@@ -177,6 +179,7 @@
   "20": {
     "split": "รูป",
     "en": "classifier for pictures and monks",
+    "fr": "classificateur des images et moines",
     "tones": "F",
     "pos": "CLAS",
     "th": "รูป",
@@ -185,6 +188,7 @@
   "21": {
     "split": "หลัง",
     "en": "next / classifier for house",
+    "fr": "suivant / classificateur des maisons",
     "tones": "R",
     "pos": "ADJ, CLAS",
     "th": "หลัง",
@@ -193,6 +197,7 @@
   "22": {
     "split": "สาย",
     "en": "to be late / line, classifier for roads, rivers",
+    "fr": "être en retard / ligne, classificateur des routes et rivières",
     "tones": "R",
     "pos": "ADJ, CLAS",
     "th": "สาย",

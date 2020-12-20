@@ -13,6 +13,9 @@ func _ready():
 	pass # Replace with function body.
 
 func init_vending_screen(_sold_entities):
+	if not Events.events.money_is_visible:
+		Events.events.money_is_visible = true
+		Game.main_ui.update_main_ui_money_display()
 	print("_sold_entities ", _sold_entities)
 	sold_entities = _sold_entities
 	var index = 0

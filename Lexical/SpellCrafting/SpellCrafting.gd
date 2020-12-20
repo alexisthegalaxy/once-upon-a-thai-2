@@ -29,6 +29,16 @@ func _on_Button_pressed():
 	new_word.can_move = false
 	new_word.position = Game.player.position
 	call_deferred("add_word", new_word)
+	remove_letters_from_bag(Game.words[word_id].th)
 
 func add_word(new_word):
 	Game.current_scene.get_node("YSort").add_child(new_word)
+
+func remove_letters_from_bag(thai_word):
+	for letter in thai_word:
+		Game.letters[get_letter_id_from_thai(letter)].in_bag -= 1
+
+func get_letter_id_from_thai(thai):
+	for letter_id in Game.letters:
+		if Game.letters[letter_id].th in [thai, '-' + thai]:
+			return letter_id

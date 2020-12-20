@@ -152,16 +152,28 @@ sprite = ExtResource( 20 )
 leads_to = "This door leads to the Lexical Nexus."
 
 [node name="CollectibleLetter" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 1026.99, -6.49933 )
-id = 2
+position = Vector2( 894.571, 313.22 )
+id = 3
+
+[node name="CollectibleLetter6" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 1491.55, -204.288 )
+id = 16
+
+[node name="CollectibleLetter14" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 1129.23, -12.0302 )
+id = 16
+
+[node name="CollectibleLetter15" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 912.793, -154.916 )
+id = 17
 
 [node name="CollectibleLetter7" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( 932.705, -246.588 )
-id = 39
+id = 3
 
 [node name="CollectibleLetter9" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( 1242.01, -304.065 )
-id = 39
+id = 17
 
 [node name="CollectibleLetter10" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( 944.395, -465.293 )
@@ -184,7 +196,7 @@ position = Vector2( 526.469, -499.389 )
 id = 39
 
 [node name="CollectibleLetter4" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 891.698, 315.706 )
+position = Vector2( 1501.93, 96.6854 )
 id = 6
 
 [node name="CollectibleLetter3" parent="YSort" instance=ExtResource( 10 )]
