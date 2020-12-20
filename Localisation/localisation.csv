@@ -191,3 +191,4 @@ _plural_dialog_1,"So, you're learning Thai? Isn't it interesting how there's no 
 _plural_dialog_2,"By default, we don't say whether there's one or more things.","Par défaut, on ne précise pas s'il y a une seule chose, ou plus."
 _plural_dialog_3,"For me, it's English that's weird as you always have to specify if there's one or more things.","Pour moi, c'est le français qui est bizarre, vu qu'il faut toujours préciser !"
 _create_spell,Create Spell,Créer le Mot
+_select_spell_to_cast,Select the Spell you want to cast,Choisis le Mot magique que tu veux utiliser

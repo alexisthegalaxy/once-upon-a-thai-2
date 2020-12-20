@@ -101,12 +101,17 @@ func on_button_pressed(type):
 	elif type == "_quests":
 		$QuestsDisplay._press_quests_button()
 	elif type == "_use_spell":
-		pass
+		display_use_spell()
 	elif type == "_make_spell":
 		display_spell_crafting()
 	elif type == "_save_the_game":
 		Save.save_game()
 
+func display_use_spell():
+	Game.select_follower_to_implant_screen = load("res://Lexical/Source/SelectFollowerToImplant.tscn").instance()
+	Game.select_follower_to_implant_screen.init_select_follower_to_implant_screen(null)
+	Game.current_scene.add_child(Game.select_follower_to_implant_screen)
+	
 func display_words():
 	var dict = load("res://Lexical/Dict/Dict.tscn").instance()
 	Game.dict = dict

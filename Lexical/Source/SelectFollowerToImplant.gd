@@ -11,6 +11,10 @@ func s_y(y):
 	return y * 32 + 16
 
 func init_select_follower_to_implant_screen(over_source):
+	if over_source:
+		$Label.text = tr("_select_spell_to_implant")
+	else:
+		$Label.text = tr("_select_spell_to_cast")
 	var Unit = load("res://Lexical/Source/SelectFollowerToImplantUnit.tscn")
 	var x = 0
 	var y = 0

@@ -30,10 +30,17 @@ func remove_following_spell():
 	Game.following_spells = new_following_spells
 
 func _on_Button_pressed():
-	Quests.update_implant_source_with_this_word_quests(over_source.name, word_id)
-	Game.select_follower_to_implant_screen.queue_free()
-	Game.select_follower_to_implant_screen = null
-	over_source.word_ids.append(word_id)
-	over_source.update_source(false)
-	remove_following_spell()
-	over_source.update_game_sources()
+	if not over_source:
+		# Then we cast the spell
+		# TODO
+		Game.select_follower_to_implant_screen.queue_free()
+		Game.select_follower_to_implant_screen = null
+		remove_following_spell()
+	if over_source:
+		Quests.update_implant_source_with_this_word_quests(over_source.name, word_id)
+		Game.select_follower_to_implant_screen.queue_free()
+		Game.select_follower_to_implant_screen = null
+		over_source.word_ids.append(word_id)
+		over_source.update_source(false)
+		remove_following_spell()
+		over_source.update_game_sources()
