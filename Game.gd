@@ -142,13 +142,13 @@ func save_following_spells_data_before_map_change():
 	
 
 func add_following_spell(word_id, over_word):
-	Events.events.has_possessed_a_letter = true
 	over_word.set_as_following()
 	following_spells.append({
 		"id": word_id,
 		"over_word": over_word,
 		"time_to_live": over_word.time_to_live,
 	})
+	main_ui.update_main_ui_use_spell_display()
 
 func update_following_spells_ime_to_live():
 	for following_spell in following_spells:

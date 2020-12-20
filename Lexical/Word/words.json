@@ -2505,6 +2505,7 @@
   "285": {
     "split": "ถุง-เท้า",
     "en": "socks",
+    "fr": "chaussettes",
     "tones": "RH",
     "pos": "NOUN",
     "th": "ถุงเท้า",
@@ -2649,6 +2650,7 @@
   "302": {
     "split": "คง-จะ",
     "en": "may",
+    "fr": "peut-être",
     "tones": "ML",
     "pos": "VERB",
     "th": "คงจะ",
@@ -2688,7 +2690,8 @@
   },
   "307": {
     "split": "น่า-จะ",
-    "en": "should",
+    "en": "should, had better",
+    "fr": "devrait, ferait mieux de",
     "tones": "FL",
     "pos": "None",
     "th": "น่าจะ",
@@ -3062,11 +3065,12 @@
     "teaching_order": -1
   },
   "352": {
-    "split": "นน",
-    "en": "[sound for 'non']",
-    "tones": "M",
+    "split": "แปลก",
+    "en": "strange, odd",
+    "fr": "bizarre",
+    "tones": "L",
     "pos": "None",
-    "th": "นน",
+    "th": "แปลก",
     "teaching_order": -1
   },
   "353": {
@@ -3103,11 +3107,12 @@
     "teaching_order": -1
   },
   "357": {
-    "split": "รัน",
-    "en": "[sound for 'ran']",
-    "tones": "M",
+    "split": "ฝุ่น",
+    "en": "dust",
+    "fr": "poussière",
+    "tones": "L",
     "pos": "",
-    "th": "รัน",
+    "th": "ฝุ่น",
     "teaching_order": -1
   },
   "358": {

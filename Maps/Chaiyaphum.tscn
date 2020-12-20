@@ -6894,7 +6894,7 @@ position = Vector2( 2218.55, -159.948 )
 position = Vector2( 1421.76, 31.3513 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1429.88, 63.7717 )
+position = Vector2( 1152.41, -60.3766 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6936,6 +6936,12 @@ post_dialog_event = [ "yaai_walks_to", [ [ Vector2( 615, 505 ), Vector2( 552, 43
 position = Vector2( 893.543, 72.91 )
 dialog = [ "You've finished the game so far!", "Congratulations!" ]
 sprite_path = "res://Npcs/sprites/beach_boy.png"
+
+[node name="PluralGirl" parent="YSort/NPCs" instance=ExtResource( 11 )]
+position = Vector2( 1126.91, -109.581 )
+dialog = [ "_plural_dialog_1", "_plural_dialog_2", "_plural_dialog_3" ]
+sprite_path = "res://Npcs/sprites/girl.png"
+wanders = 100
 
 [node name="ShopOwner" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 1284.07, 260.955 )

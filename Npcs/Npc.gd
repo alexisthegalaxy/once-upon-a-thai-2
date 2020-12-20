@@ -3,13 +3,14 @@ extends StaticBody2D
 export(Array, String) var dialog = []
 export var sprite_path = "res://Npcs/sprites/yaai.png"
 export var direction = "down"
+export var wanders = 0  # the range of wandering from the initial direction
 export var state = "stand"  # can be "stand" or "walk"
 export var display_name = ""  # Is shown in dialogs. For example: "Nim".
 export var interact_when_near = false
 export(Array, String) var start_quests = []  # ["find_sentences_in_chaiyaphum", "first_quest"]
 export(Array, String) var finish_quests = []  # ["find_sentences_in_chaiyaphum", "first_quest"]
 var is_talking = false
-
+var initial_position  # used for wandering npcs
 var speed = 100  # 65
 var velocity = Vector2.ZERO
 var is_walking_towards = null
@@ -81,10 +82,10 @@ func _ready():
 	update_animation()
 	over_head_label_y = $OverheadNode2D.position.y
 	update_npc_with_quests()
+	initial_position = position
 	if sold_entities:
 		post_dialog_event= ["starts_vending", sold_entities]
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	time += delta
 	if white_orb_growing:
@@ -97,18 +98,24 @@ func _process(delta):
 			free_npc()
 	if $OverheadNode2D.is_visible():
 		$OverheadNode2D.position.y = over_head_label_y + 3 * cos(time * 10)
-	if is_walking_towards and not is_talking:
-		position = position + velocity * delta * speed
-		if position.distance_to(is_walking_towards) < 5:
-			is_walking_towards = null
-			if will_go_to:
-				is_walking_towards = will_go_to.pop_front()
-			if not is_walking_towards:
-				stop_walking()
-			elif str(is_walking_towards) == "disappears":
-				queue_free()
-			else:
-				starts_going_toward(is_walking_towards)
+	if not is_talking:
+		if is_walking_towards:
+			position = position + velocity * delta * speed
+			if position.distance_to(is_walking_towards) < 5:
+				is_walking_towards = null
+				if will_go_to:
+					is_walking_towards = will_go_to.pop_front()
+				if not is_walking_towards:
+					stop_walking()
+				elif str(is_walking_towards) == "disappears":
+					queue_free()
+				else:
+					starts_going_toward(is_walking_towards)
+		elif wanders:
+			if randi() % 100 == 1:
+				var next_x = initial_position.x + randi() % wanders - wanders / 2
+				var next_y = initial_position.y + randi() % wanders - wanders / 2
+				starts_going_toward(Vector2(next_x, next_y))
 
 func stop_walking():
 	is_walking_towards = null

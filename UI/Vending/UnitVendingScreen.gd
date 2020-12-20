@@ -41,6 +41,7 @@ func update_amount_in_bag():
 func increase_amount_in_bag():
 	if entity_type == "letter":
 		Game.letters[str(entity_id)]["in_bag"] += 1
+		Events.events.has_possessed_a_letter = true
 	update_amount_in_bag()
 
 func _on_Button_pressed():
