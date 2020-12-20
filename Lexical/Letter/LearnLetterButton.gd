@@ -24,17 +24,16 @@ func _process(delta):
 		teal_tint = 0.5 + 0.5 * cos(time * 15)
 		$Sprite.modulate = Color(teal_tint, 1, 1, 1)
 
-func _on_Area2D_mouse_entered():
-	mouse_in = true
+func _on_Button_pressed():
+	for letter_id in letter_ids:
+		Game.letters_we_look_for.append(Game.letters[str(letter_id)])
+	Events.enters_lexical_world(null)
+	emit_signal("leaves_test_to_go_to_MP")
+	Game.active_test.queue_free()
+	Game.active_test = null
 
-func _on_Area2D_mouse_exited():
+func _on_Button_mouse_exited():
 	mouse_in = false
 
-func _on_Area2D_input_event(_viewport, event, _shape_idx):
-	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
-		for letter_id in letter_ids:
-			Game.letters_we_look_for.append(Game.letters[str(letter_id)])
-		Events.enters_lexical_world(null)
-		emit_signal("leaves_test_to_go_to_MP")
-		Game.active_test.queue_free()
-		Game.active_test = null
+func _on_Button_mouse_entered():
+	mouse_in = true

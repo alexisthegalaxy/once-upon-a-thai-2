@@ -39,49 +39,49 @@ margin_bottom = -23.0
 text = "p'h"
 
 [node name="answer_1" parent="." instance=ExtResource( 2 )]
-position = Vector2( 78.2628, 122.14 )
+position = Vector2( 97.9699, 124.674 )
 
 [node name="answer_2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 216, 97.6873 )
+position = Vector2( 235.707, 100.221 )
 
 [node name="answer_3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 108.367, 100.977 )
+position = Vector2( 128.074, 103.511 )
 
 [node name="answer_4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 136.911, 128.4 )
+position = Vector2( 156.618, 130.934 )
 
 [node name="answer_5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 35.3733, 100.977 )
+position = Vector2( 55.0804, 103.511 )
 
 [node name="answer_6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 222.798, 128.4 )
+position = Vector2( 242.505, 130.934 )
 
 [node name="answer_7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 173.752, 114.401 )
+position = Vector2( 193.459, 116.935 )
 
 [node name="answer_8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 152, 88 )
+position = Vector2( 171.707, 90.5338 )
 
 [node name="answer_9" parent="." instance=ExtResource( 2 )]
-position = Vector2( 67.3733, 80 )
+position = Vector2( 87.0804, 82.5338 )
 
 [node name="answer_10" parent="." instance=ExtResource( 2 )]
-position = Vector2( 108.367, 72 )
+position = Vector2( 128.074, 74.5338 )
 
 [node name="answer_11" parent="." instance=ExtResource( 2 )]
-position = Vector2( 173.752, 64 )
+position = Vector2( 193.459, 66.5338 )
 
 [node name="answer_12" parent="." instance=ExtResource( 2 )]
-position = Vector2( 216, 73 )
+position = Vector2( 235.707, 75.5338 )
 
 [node name="answer_13" parent="." instance=ExtResource( 2 )]
-position = Vector2( 256, 57 )
+position = Vector2( 275.707, 59.5338 )
 
 [node name="answer_14" parent="." instance=ExtResource( 2 )]
-position = Vector2( 35.3733, 57 )
+position = Vector2( 55.0804, 59.5338 )
 
 [node name="answer_15" parent="." instance=ExtResource( 2 )]
-position = Vector2( 32, 131.401 )
+position = Vector2( 51.7071, 133.935 )
 
 [node name="answer_16" parent="." instance=ExtResource( 2 )]
-position = Vector2( 264, 90 )
+position = Vector2( 283.707, 92.5338 )

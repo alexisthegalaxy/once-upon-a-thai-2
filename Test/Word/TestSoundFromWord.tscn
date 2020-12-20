@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Test/Word/TestSoundFromWord.gd" type="Script" id=2]
 [ext_resource path="res://Test/TestSoundPlayer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Test/test_bg.png" type="Texture" id=4]
+[ext_resource path="res://Lexical/Letter/LearnLetterButton.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
@@ -22,19 +23,19 @@ __meta__ = {
 }
 
 [node name="AudioAnswer1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 55.0559, 100.063 )
+position = Vector2( 66.9289, 123.611 )
 scale = Vector2( 0.25, 0.25 )
 
 [node name="AudioAnswer2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 120.159, 101.251 )
+position = Vector2( 119.565, 96.6997 )
 scale = Vector2( 0.25, 0.25 )
 
 [node name="AudioAnswer3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 190.408, 102.834 )
+position = Vector2( 197.73, 93.9293 )
 scale = Vector2( 0.25, 0.25 )
 
 [node name="AudioAnswer4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 256.303, 99.4696 )
+position = Vector2( 251.158, 127.173 )
 scale = Vector2( 0.25, 0.25 )
 
 [node name="Explanation" type="Label" parent="."]
@@ -74,4 +75,7 @@ text = "_ok"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="LearnLetterButton" parent="." instance=ExtResource( 5 )]
+position = Vector2( 24.7353, 58.7712 )
 [connection signal="pressed" from="OK" to="." method="_on_OK_pressed"]

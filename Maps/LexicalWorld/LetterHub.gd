@@ -18,18 +18,16 @@ func _ready():
 		Events.events["has_been_in_the_letter_world"] = true
 		fading_in = true
 		$CanvasLayer/BlackFadeIn.show()
-#		call_deferred("show_first_dialog")
 #	Game.letters_we_look_for.append(Game.letters[str(11)])
 	
 func _process(delta):
 	if fading_in:
 		alpha += delta / 4
+		if alpha >= 0.2:
+			call_deferred("show_first_dialog")
 		if alpha >= 1:
 			alpha = 1
 			fading_in = false
-#			print("call_deferred(show_first_dialog)")
-			call_deferred("show_first_dialog")
-#			print("after call_deferred(show_first_dialog)")
 		$CanvasLayer/BlackFadeIn.modulate = Color(1, 1, 1, 1 - alpha)
 		
 	

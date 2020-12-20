@@ -1,13 +1,13 @@
 extends Node
 
-var initial_state = true
+var initial_state = false
 var events = {
-	"has_had_a_quest": true,
-	"money_is_visible": true,
-	"has_possessed_a_letter": true,
+	"has_had_a_quest": initial_state,
+	"money_is_visible": initial_state,
+	"has_possessed_a_letter": initial_state,
 	"ploy_has_stopped_in_front_of_house": initial_state,
 	"has_met_ploy": initial_state,
-	"has_met_pet": false,
+	"has_met_pet": initial_state,
 	"has_learnt_four_first_words": initial_state,
 	"yaai_has_given_last_warning_before_forest": initial_state,
 	"yaai_explains_rock": initial_state,

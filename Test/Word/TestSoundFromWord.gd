@@ -27,6 +27,7 @@ func init(_word_id, _over_word):
 	Game.is_frozen = true
 	over_word = _over_word
 	word = Game.words[str(word_id)]
+	init_learn_letter_button()
 	$Word.text = word.th
 	distractors = DistractorsHelper.get_words_with_audio_and_about_that_many_characters(len(word.th), number_of_choices - 1)
 	choices = [word] + distractors
@@ -51,6 +52,17 @@ func init(_word_id, _over_word):
 		$AudioAnswer4.show()
 		$AudioAnswer4.connect("pressed", self, "on_audio_pressed")
 
+func init_learn_letter_button():
+	var unknown_letter_ids = []
+	if "letters" in word:
+		for letter_id in word["letters"]:
+			if not letter_id in Game.known_letters:
+				unknown_letter_ids.append(letter_id)
+	if unknown_letter_ids:
+		$LearnLetterButton.init(unknown_letter_ids, self)
+	else:
+		$LearnLetterButton.queue_free()
+
 func on_audio_pressed(thai):
 	selected_answer_thai = thai
 	for audio_answer in [$AudioAnswer1, $AudioAnswer2, $AudioAnswer3, $AudioAnswer4]:
@@ -73,7 +85,7 @@ func _process(delta):
 func leaves_test_to_go_to_MP():
 	# We need to reopen the test when we're back.
 	Game.should_start_test_when_back_from_MP = [
-		"res://Test/Letter/TestSoundFromWord.tscn",
+		"res://Test/Word/TestSoundFromWord.tscn",
 		word["id"],
 		over_word,
 	]

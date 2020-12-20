@@ -34,6 +34,10 @@ tile_data = PoolIntArray( 65528, 0, 0, 65529, 0, 0, 65530, 0, 0, 65531, 0, 0, 65
 position = Vector2( 32.2816, 23.5438 )
 id = 133
 
+[node name="Spell2" parent="YSort" instance=ExtResource( 16 )]
+position = Vector2( 80.8253, 28.6409 )
+id = 134
+
 [node name="Word2" parent="YSort" instance=ExtResource( 16 )]
 position = Vector2( 336, 624 )
 

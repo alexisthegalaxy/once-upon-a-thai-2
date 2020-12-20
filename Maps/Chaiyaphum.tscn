@@ -7146,7 +7146,7 @@ sound_name = "door"
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="Blocker" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 542.163, 219.452 )
+position = Vector2( 546.093, 216.606 )
 shape = SubResource( 1 )
 
 [node name="Area2D5" type="Area2D" parent="."]

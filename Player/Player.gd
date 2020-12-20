@@ -78,12 +78,13 @@ func _process(delta) -> void:
 func _input(_event) -> void:
 	if Input.is_action_just_pressed("interact") and not Game.is_overworld_frozen() and can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]):
 		get_tree().set_input_as_handled()
-		Game.player.can_interact = false
-		Game.is_frozen = true
-		Game.current_focus[0].interact()
-		if Game.space_bar_to_interact:
-			Game.space_bar_to_interact.queue_free()
-			Game.space_bar_to_interact = null
+		var error = Game.current_focus[0].interact()
+		if not error:
+			Game.player.can_interact = false
+			Game.is_frozen = true
+			if Game.space_bar_to_interact:
+				Game.space_bar_to_interact.queue_free()
+				Game.space_bar_to_interact = null
 	if Input.is_action_just_pressed("print_position"):
 		print("current position: (" + str(position.x) + ", " + str(position.y) + ")    " + Game.current_map_name)
 #		set_hp(Game.hp - 0.5)

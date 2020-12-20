@@ -185,11 +185,11 @@ func handle_talk_with_this_npc_quest():
 			Quests.update_quests_display()
 			
 func interact():
+	if is_walking_towards and not interact_when_near:
+		return "error"
 	is_talking = true
 	state = "stand"
 	handle_talk_with_this_npc_quest()
-	if is_walking_towards and not interact_when_near:
-		return
 	get_tree().set_input_as_handled()
 	Game.player.can_interact = false
 	Game.is_frozen = true

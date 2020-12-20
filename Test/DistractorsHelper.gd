@@ -104,17 +104,17 @@ func get_words_with_audio_and_about_that_many_characters(size, distractors_numbe
 	var remaining_number_of_words_to_select = distractors_number
 	var selected_words = []
 	for closeness in [0, -1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6, -7, 7, -8, 8]:
-		print('closeness', closeness)
 		selected_words += select_words_with_that_amount_of_letters(words_with_audio, size - closeness, remaining_number_of_words_to_select)
 		remaining_number_of_words_to_select = distractors_number - len(selected_words)
+		print('closeness', closeness, 'remaining_number_of_words_to_select', remaining_number_of_words_to_select)
 
-	print('selected_words')
+	print('selected_words (there should only be ', distractors_number, ')')
 	for selected_word in selected_words:
 		print('    ', selected_word.th)
 	return selected_words
 
 func select_words_with_that_amount_of_letters(words, size, number_of_words_to_select):
-	if number_of_words_to_select == 0:
+	if number_of_words_to_select <= 0:
 		return []
 	var words_with_right_amount_of_letters = []
 	for word in words:

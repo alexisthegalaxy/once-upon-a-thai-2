@@ -1,25 +1,22 @@
 extends Node
 
-var change_color = false
-var last_goal_color = Color(1, 1, 1, 1)
-var goal_color = null
-
 var words = []
 var sentences = []
 var letters = []
 
 # The following are a list of IDs
 #var known_words = [343, 345, 207, 82] 
-var known_words = [82, 343, 345, 207, 204, 222, 223, 232, 233, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 123, 14, 15]
-#var known_words = []
-var known_sentences = [196, 197, 198, 199]  # we know the translation. Does not contain seen_sentences.
+#var known_words = [82, 343, 345, 207, 204, 222, 223, 232, 233, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 123, 14, 15]
+var known_words = []
+#var known_sentences = [196, 197, 198, 199]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [196, 197, 198]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [200, 201]  # we know the translation. Does not contain seen_sentences.
-#var known_sentences = []  # we know the translation. Does not contain seen_sentences.
-var seen_sentences = [196, 197, 198, 199]  # we don't know the translation
+var known_sentences = []  # we know the translation. Does not contain seen_sentences.
+#var seen_sentences = [196, 197, 198, 199]  # we don't know the translation
+var seen_sentences = []  # we don't know the translation
 #var known_letters = [0, 11, 13, 21]  # list of IDs
-var known_letters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]  # list of IDs
-#var known_letters = []  # list of IDs
+#var known_letters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]  # list of IDs
+var known_letters = []  # list of IDs
 #var known_letters = [0, 11, 13, 21, 28]  # five letters
 var following_spells = []
 #var following_spells = [
@@ -38,6 +35,10 @@ var sources = {
 
 var current_dialog = null
 
+var change_color = false
+var last_goal_color = Color(1, 1, 1, 1)
+var goal_color = null
+
 var this_letter_world_has_letters = []  # a list of letter ids
 var letters_we_look_for = []  # a list of letters
 var looking_for_letter__node = null
@@ -47,7 +48,8 @@ var current_map_name = "res://Maps/Chaiyaphum.tscn"
 
 # This is the letters yaai asks us to fetch the first time we come in the Memory Palace
 #var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]  # outdated
-var initial_letters = [11, 13, 28, 0, 21]
+#var initial_letters = [11, 13, 28, 0, 21]
+var initial_letters = [0]
 
 # when players comes near a npc/word/letter/sentence,
 # it get appended to current_focus, and gets removed when leaving
@@ -73,21 +75,21 @@ var should_start_test_when_back_from_MP = [
 	null,  # word_id
 ]
 
-# SCREENS ########################################################
-var deducing_coop_select_sentence_screen = null                  #
-var vending_screen = null                                        #
-var quests_display = null                                        #
-var main_ui = null                                               #
-var select_follower_to_implant_screen = null                     #
-var canvas_color_screen = null                                   #
-var dict = null                                                  #
-var alphabet = null                                              #
-var notebook = null                                              #
-var word_page = null                                             #
-var letter_page = null                                           #
-var exit_screen = null                                           #
-var spell_crafting_screen = null                                 #
-##################################################################
+# SCREENS ######################################################## SCREEN
+var deducing_coop_select_sentence_screen = null                  # SCREEN
+var vending_screen = null                                        # SCREEN
+var quests_display = null                                        # SCREEN
+var main_ui = null                                               # SCREEN
+var select_follower_to_implant_screen = null                     # SCREEN
+var canvas_color_screen = null                                   # SCREEN
+var dict = null                                                  # SCREEN
+var alphabet = null                                              # SCREEN
+var notebook = null                                              # SCREEN
+var word_page = null                                             # SCREEN
+var letter_page = null                                           # SCREEN
+var exit_screen = null                                           # SCREEN
+var spell_crafting_screen = null                                 # SCREEN
+################################################################## SCREEN
 
 func blackens():
 	canvas_color_screen = ColorRect.new()
@@ -245,6 +247,7 @@ func learn_letter(letter):
 			knows_the_letters_from_the_beginning = false
 	if not Events.events["has_finished_the_letter_world_the_first_time"] and knows_the_letters_from_the_beginning:
 		Events.events["has_finished_the_letter_world_the_first_time"] = true
+		Game.main_ui.update_main_ui_go_letter_world_display()
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 		var dialog = [
 			tr("_name_exclamation_mark"),

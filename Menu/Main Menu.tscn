@@ -24,11 +24,25 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 margin_left = 96.0
-margin_top = -66.0
+margin_top = -74.0
 margin_right = -96.0
-margin_bottom = -34.0
+margin_bottom = -42.0
 custom_fonts/font = SubResource( 1 )
 text = "_start_story"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LoadGame" type="Button" parent="CanvasLayer"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 96.0
+margin_top = -34.0
+margin_right = -96.0
+margin_bottom = -2.0
+custom_fonts/font = SubResource( 1 )
+text = "_load_saved_game"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -38,9 +52,9 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 margin_left = 96.0
-margin_top = -10.0
+margin_top = 6.0
 margin_right = -96.0
-margin_bottom = 22.0
+margin_bottom = 38.0
 custom_fonts/font = SubResource( 1 )
 text = "_language_challenges"
 __meta__ = {
@@ -77,6 +91,9 @@ __meta__ = {
 [connection signal="mouse_entered" from="CanvasLayer/StartStory" to="." method="_on_Start_Story_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/StartStory" to="." method="_on_Start_Story_mouse_exited"]
 [connection signal="pressed" from="CanvasLayer/StartStory" to="." method="_on_Start_Story_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/LoadGame" to="." method="_on_LoadGame_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/LoadGame" to="." method="_on_LoadGame_mouse_exited"]
+[connection signal="pressed" from="CanvasLayer/LoadGame" to="." method="_on_LoadGame_pressed"]
 [connection signal="mouse_entered" from="CanvasLayer/LanguageChallenges" to="." method="_on_Language_Challenges_mouse_entered"]
 [connection signal="mouse_exited" from="CanvasLayer/LanguageChallenges" to="." method="_on_Language_Challenges_mouse_exited"]
 [connection signal="mouse_entered" from="CanvasLayer/Quit" to="." method="_on_Quit_mouse_entered"]

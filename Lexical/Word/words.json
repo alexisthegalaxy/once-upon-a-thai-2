@@ -1200,7 +1200,7 @@
     "tones": "M",
     "pos": "",
     "th": "เทา",
-    "teaching_order": -1
+    "teaching_order": -1,
   },
   "134": {
     "split": "หมา",
@@ -1209,7 +1209,8 @@
     "tones": "R",
     "pos": "NOUN",
     "th": "หมา",
-    "teaching_order": -1
+    "teaching_order": -1,
+    "letters": [26, 5, 1]
   },
   "135": {
     "split": "หนู",
