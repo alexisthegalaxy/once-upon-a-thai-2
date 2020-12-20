@@ -37,7 +37,7 @@ _got_it,Got it!,Compris!
 _names_writes_sentence_in_notebook,[Name] writes the sentence in the notebook.,[Name] note la phrase dans le carnet.
 _press_f_to_see_all_sentences,Click on the sentence button on the side of your screen to see all your sentences.,Appuie sur F pour voir toutes tes phrases.
 _som_s_father,Som's father,Père de Som
-_som_s_mother,Som's Mother,Mère de Som
+_som_s_mother,Som's mother,Mère de Som
 _go_back_to_the_material_world,Go back to your world,Retourner dans ton monde
 _unknown_meaning,Unknown meaning,Traduction inconnue
 _how_s_progress_with_training_name,"How's progress with your training, [Name]? Learning many words?","Comment se passe ton éducation de chaman, [Name] ? Tu apprends beaucoup de nouveaux mots ?"
@@ -154,7 +154,7 @@ _select_sentence_to_analyse,Select the sentence you want to analyze,Sélectionne
 _i_translate_sentences_you_want_to_help,"Hey [Name], I'm trying to translate some sentences into English, you want to help?","Salut [Name], je suis en train d'essayer de traduire des phrases en français, tu veux m'aider ?"
 _submit,Submit,Valider
 _hmm_no_i_think_its_a_different_sentence,"Hmm, no, this doesn't fit with what I know, I think it's a bit different.","Hmm, non, certains mots ne vont pas, cette phrase n'a pas l'air d'aller."
-_hmm_yeah_i_thnk_this_is_the_sentence,"Hmm, yes [Name], I believe this is it! It's also corroleted by my research!","Oui [Name], je crois que c'est ça ! C'est aussi en accord avec mes recherches."
+_hmm_yeah_i_thnk_this_is_the_sentence,"Hmm, yes [Name], I believe this is it! It's also corrolated by my research!","Oui [Name], je crois que c'est ça ! C'est aussi en accord avec mes recherches."
 _word_matching,Words matching,Pairer les mots
 _sentence_translation,Sentence translation,Traduction
 _speech_recognition,Speech recognition,Reconnaissance vocale

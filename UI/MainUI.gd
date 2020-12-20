@@ -90,6 +90,9 @@ func update_quests_display():
 	if quest_button_text:
 		$Quests/Label.text = quest_button_text
 
+func open_quest_display():
+	$QuestsDisplay.open_quest_display()
+
 func on_button_pressed(type):
 	if type == "_go_to_letter_world":
 		go_to_letter_world()

@@ -31,7 +31,12 @@ func update_quests_display():
 func _press_quests_button():
 	is_showing_quests = not is_showing_quests
 	if is_showing_quests:
-		update_quests_display()
-		$Quests.show()
+		open_quest_display()
 	else:
 		$Quests.hide()
+
+func open_quest_display():
+	is_showing_quests = true
+	update_quests_display()
+	$Quests.show()
+	

@@ -53,7 +53,8 @@ func start_quest(quest_id):
 	update_quests_display()
 
 func update_quests_display():
-	Game.main_ui.update_quests_display()
+	Game.main_ui.update_main_ui_quests_display()
+	Game.main_ui.open_quest_display()
 	if Game.current_scene.get_node("YSort") and Game.current_scene.get_node("YSort").get_node("NPCs"):
 		for npc in Game.current_scene.get_node("YSort").get_node("NPCs").get_children():
 			npc.update_npc_with_quests()
