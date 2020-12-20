@@ -1,17 +1,17 @@
 extends Node
 
-var initial_state = false
+var initial_state = true
 var events = {
-	"has_had_a_quest": initial_state,
-	"money_is_visible": initial_state,
-	"has_possessed_a_letter": initial_state,
-	"ploy_has_stopped_in_front_of_house": initial_state,
-	"has_met_ploy": initial_state,
-	"has_met_pet": initial_state,
-	"has_learnt_four_first_words": initial_state,
-	"yaai_has_given_last_warning_before_forest": initial_state,
-	"yaai_explains_rock": initial_state,
-	"has_gone_to_rock": initial_state,
+	"has_had_a_quest": false,
+	"money_is_visible": false,
+	"has_possessed_a_letter": false,
+	"ploy_has_stopped_in_front_of_house": false,
+	"has_met_ploy": false,
+	"has_met_pet": false,
+	"has_learnt_four_first_words": false,
+	"yaai_has_given_last_warning_before_forest": false,
+	"yaai_explains_first_sentence": false,
+	"has_gone_to_first_sentence": initial_state,
 	"has_finished_the_letter_world_the_first_time": initial_state,
 	"can_see_the_looking_for_letter_banner": initial_state,
 	"has_been_in_the_letter_world": initial_state,

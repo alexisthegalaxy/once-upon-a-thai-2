@@ -8,6 +8,16 @@ func _ready():
 	if Events.events.ploy_has_stopped_in_front_of_house:
 		$YSort/NPCs/Ploy.queue_free()
 		$YSort/Bushes/BushThatWillGetCut.queue_free()
+	yaai_arc()
+	if Events.events.has_met_pet:
+		$YSort/NPCs/Pet.position = Vector2(1074.783936, 94.056053)
+		$YSort/NPCs/Pet.dialog = pet_begging_dialog()
+
+	# we remove the shard
+	if Quests.quests["purify_mohinkhao"].status in [Quests.FINISHED, Quests.DONE]:
+		$YSort/Shards/MoHinKhao.queue_free()
+
+func yaai_arc():
 	if Events.events.has_learnt_four_first_words:
 		set_events_when_has_learnt_four_first_words()
 	elif Events.events.yaai_has_given_last_warning_before_forest:
@@ -20,11 +30,12 @@ func _ready():
 			tr("_good_luck_ill_watch_you_from_here"),
 		]
 		$YSort/NPCs/Yaai.post_dialog_event = []
-	elif Events.events.has_gone_to_rock:
+	elif Events.events.has_gone_to_first_sentence:
 		$YSort/NPCs/Yaai.position = Vector2(202.29, 654.29)
 		$YSort/NPCs/Yaai.direction = "right"
+		# when we'll try to get close to her, she'll explain the sentence
 	elif Events.events["has_finished_the_letter_world_the_first_time"]:
-		Events.events["has_gone_to_rock"] = true
+		Events.events["has_gone_to_first_sentence"] = true
 		Game.player.can_interact = false
 		Game.is_frozen = true
 		$YSort/NPCs/Yaai.position = Vector2(207.81, 513.20)
@@ -45,15 +56,6 @@ func _ready():
 	elif Events.events["talked_to_yaai_for_the_first_time"]:
 		$YSort/NPCs/Yaai.position = Vector2(490, 260)
 
-	if Events.events.has_met_pet:
-		$YSort/NPCs/Pet.position = Vector2(1074.783936, 94.056053)
-		$YSort/NPCs/Pet.dialog = pet_begging_dialog()
-
-	# we remove the shard
-	if Quests.quests["purify_mohinkhao"].status in [Quests.FINISHED, Quests.DONE]:
-		$YSort/Shards/MoHinKhao.queue_free()
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if is_blackening:
 		alpha += delta
@@ -62,7 +64,7 @@ func _process(delta):
 func _on_Area2D5_body_entered(body):
 	# Blocker 1
 	if body == Game.player:
-		if not Events.events["talked_to_yaai_for_the_first_time"]:
+		if not Events.events.talked_to_yaai_for_the_first_time:
 			Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 			var dialog = [
 				tr("_i_should_talk_to_my_grandmother_first")
@@ -75,7 +77,7 @@ func _on_Area2D5_body_entered(body):
 func _on_Area2D_body_entered(body):
 	# Blocker 2
 	if body == Game.player:
-		if not Events.events["yaai_explains_rock"]:
+		if not Events.events.has_learnt_four_first_words:
 			Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 			var dialog = [
 				tr("_i_shouldnt_go_there_now")
@@ -127,11 +129,10 @@ func _on_Area2D4_body_entered(body):
 				Game.letters_we_look_for.append(Game.letters[str(letter_id)])
 
 func _on_Area2D3_body_entered(body):
-	# Player enters near the rock
+	# Player enters near the first sentence
 	if body == Game.player:
-#		print('has_gone_to_rock', Events.events["has_gone_to_rock"])
-		if Events.events["has_gone_to_rock"] and not Events.events["yaai_explains_rock"]:
-			Events.events["yaai_explains_rock"] = true
+		if Events.events["has_gone_to_first_sentence"] and not Events.events["yaai_explains_first_sentence"]:
+			Events.events["yaai_explains_first_sentence"] = true
 			$YSort/NPCs/Yaai.dialog = [
 				tr("_name_you_see_this_sentence"),
 				tr("_this_is_your_first_since_forgotten_thai"),
@@ -148,7 +149,7 @@ func _on_Area2D6_body_entered(body):
 	# This is the are athat leads into the first forest.
 	# It can be used the first time for Yaai warning,
 	# and the second time for Yaai's instruction to go to Chaiyaphum
-	if not Events.events.yaai_has_given_last_warning_before_forest and Events.events.yaai_explains_rock:
+	if not Events.events.yaai_has_given_last_warning_before_forest and Events.events.yaai_explains_first_sentence:
 		Events.events.yaai_has_given_last_warning_before_forest = true
 		$YSort/NPCs/Yaai.dialog = [
 			tr("_well_done_name"),

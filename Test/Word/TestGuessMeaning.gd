@@ -94,6 +94,7 @@ func answered_correctly():
 #	over_word.starts_disappearing()
 	Game.dialog_press_f_to_see_it('word')
 	queue_free()
+	Game.should_start_test_when_back_from_MP = [null, null]
 	
 func _on_Button_pressed():
 	$SentenceCarousel.show()

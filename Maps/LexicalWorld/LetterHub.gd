@@ -2,6 +2,7 @@ extends Node
 
 var fading_in = false
 var alpha = 0.0
+var has_shown_first_dialog = false
 
 func show_first_dialog():
 	$YSort/Yaai.dialog = [
@@ -23,7 +24,8 @@ func _ready():
 func _process(delta):
 	if fading_in:
 		alpha += delta / 4
-		if alpha >= 0.2:
+		if alpha >= 0.2 and not has_shown_first_dialog:
+			has_shown_first_dialog = true
 			call_deferred("show_first_dialog")
 		if alpha >= 1:
 			alpha = 1

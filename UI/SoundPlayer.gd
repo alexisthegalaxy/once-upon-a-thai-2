@@ -52,7 +52,6 @@ func crossfade_to(music_file):
 		$Music_A.play()
 
 func start_music_upon_entering_map(map_name):
-	print('map_name', map_name)
 	if map_name in music_from_map:
 		crossfade_to(music_from_map[map_name])
 

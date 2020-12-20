@@ -113,7 +113,7 @@ func _process(delta):
 func wild_spell_movement():
 	var change_direction_chance = 50
 	var stops_moving_chance = 50
-	var speed_multiplier = 1
+	var speed_multiplier = 1.7
 	if Game.is_somber:
 		change_direction_chance = 10
 		stops_moving_chance = 100

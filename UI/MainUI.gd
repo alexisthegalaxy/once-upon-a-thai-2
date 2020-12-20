@@ -62,6 +62,7 @@ func update_main_ui_go_letter_world_display():
 			$GoLetterWorld/Label.text = tr("_go_back_to_the_material_world")
 		else:
 			$GoLetterWorld/Label.text = tr("_go_to_letter_world")
+		$GoLetterWorld.update_final_x()
 	else:
 		$GoLetterWorld.hide()
 
@@ -72,7 +73,7 @@ func update_main_ui_use_spell_display():
 		$UseSpell.hide()
 
 func update_main_ui_make_spell_display():
-	if Events.events.has_possessed_a_letter:
+	if Events.events.has_possessed_a_letter and Quests.quests.find_sentences_in_chaiyaphum.status == Quests.DONE:
 		$MakeSpell.show()
 	else:
 		$MakeSpell.hide()

@@ -29,7 +29,7 @@ func init(_word_id, _over_word):
 	word = Game.words[str(word_id)]
 	init_learn_letter_button()
 	$Word.text = word.th
-	distractors = DistractorsHelper.get_words_with_audio_and_about_that_many_characters(len(word.th), number_of_choices - 1)
+	distractors = DistractorsHelper.get_words_with_audio_and_about_that_many_characters(len(word.th), number_of_choices - 1, word.th)
 	choices = [word] + distractors
 	choices.shuffle()
 	
@@ -97,7 +97,13 @@ func answered_correctly():
 	SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
 	Game.start_test("res://Test/Word/TestGuessMeaning.tscn", word_id, over_word)
 	queue_free()
+	Game.should_start_test_when_back_from_MP = [null, null]
+
+func answered_wrongly():
+	SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
 
 func _on_OK_pressed():
 	if selected_answer_thai == word.th:
 		answered_correctly()
+	else:
+		answered_wrongly()

@@ -338,8 +338,8 @@ func _ready():
 	# because in the main menu.ready() code we queue_free the main_ui.
 	if current_map_name == "res://Maps/Chaiyaphum.tscn":
 		main_ui = load("res://UI/MainUI.tscn").instance()
-		main_ui.update_main_ui()
 		self.add_child(main_ui)
+		main_ui.update_main_ui()
 
 func _input(_event):
 	if _event.is_action_pressed("ui_cancel"):
@@ -459,24 +459,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	
 	assert(to_map_name != "")
 	current_scene = ResourceLoader.load(to_map_name).instance()
-#	print('current_scene', current_scene.get_children())
-#	if len(current_scene.get_children()) == 3:
-#		SoundPlayer.play_thai("ตุ๊กแก")
-#		yield(get_tree().create_timer(1.0), "timeout")
-	
-#	var b = current_scene.get_node("YSort")
-#	SoundPlayer.play_thai("คน")
-#	yield(get_tree().create_timer(1.0), "timeout")
-#	var children = b.get_children()  # crash only on production!
-	
-#	SoundPlayer.play_thai("คน")
-#	yield(get_tree().create_timer(1.0), "timeout")
-	
-	# Problem here!!!!
-	# It looks like it fails to find .get_node("Player")
-	# inside current_scene.get_node("YSort")!
-#	var c = current_scene.get_node("YSort").get_node("Player")
-	
+
 	player = current_scene.get_node("YSort").get_node("Player")
 	player.position = Vector2(to_x, to_y)
 	player.velocity = player_velocity
@@ -489,8 +472,6 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	
 	SoundPlayer.start_music_upon_entering_map(to_map_name)
 
-	# If we add a yield(get_tree().create_timer(1.0), "timeout")
-	# between the next two lines, we get a crash. Why?
 	for child in get_tree().get_root().get_children():
 		if not child.get_name() in [
 			"Game",
@@ -504,19 +485,11 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 			child.queue_free()
 	get_tree().get_root().add_child(current_scene)
 	
-#	for child in get_tree().get_root().get_children():
-#		print('--- child name ', child.get_name())
-#		if child.get_name() == "PlayerHouse":
-#			SoundPlayer.play_thai("เป็น")
-#			yield(get_tree().create_timer(1.0), "timeout")
-#	print('get_tree().get_root().get_children()', get_tree().get_root().get_children())  # ViewPort
-#	get_tree().set_current_scene(current_scene)
-
 	generate_following_spells_after_map_change()
 	set_sources_after_map_change()
 	if not main_ui:
 		main_ui = load("res://UI/MainUI.tscn").instance()
-		main_ui.update_main_ui()
+	main_ui.update_main_ui()
 	self.add_child(main_ui)
 	if "LexicalWorld" in to_map_name:
 		update_letters_to_look_for_if_necesssary(to_map_name)
@@ -561,7 +534,6 @@ func start_test(test_scene, entity_id, over_entity) -> void:
 	entity either refers to a letter or to a word
 	(maybe to a phrase too, later on?)
 	"""
-	print("test_scene", test_scene)
 	var test = load(test_scene).instance()
 	self.add_child(test)
 	active_test = test

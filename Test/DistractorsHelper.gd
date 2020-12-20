@@ -93,18 +93,20 @@ func get_words_to_review(number_of_words_to_review):
 			words_to_return.append(random_word)
 	return words_to_return
 
-func get_words_with_audio_and_about_that_many_characters(size, distractors_number):
+func get_words_with_audio_and_about_that_many_characters(size, distractors_number, original_to_avoid):
 	var words_with_audio = []
-	var file = File.new()
 	for word_id in Game.words:
 		var word = Game.words[word_id]
-		var has_audio = file.file_exists(SoundPlayer.get_audio_file_path_from_thai(word.th))
-		words_with_audio.append(word)
+		var has_audio = Directory.new().file_exists(SoundPlayer.get_audio_file_path_from_thai(word.th))
+		if has_audio:
+			words_with_audio.append(word)
 
 	var remaining_number_of_words_to_select = distractors_number
 	var selected_words = []
 	for closeness in [0, -1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6, -7, 7, -8, 8]:
-		selected_words += select_words_with_that_amount_of_letters(words_with_audio, size - closeness, remaining_number_of_words_to_select)
+		for new_distractor in select_words_with_that_amount_of_letters(words_with_audio, size - closeness, remaining_number_of_words_to_select):
+			if len(selected_words) < distractors_number and new_distractor.th != original_to_avoid:
+				selected_words.append(new_distractor)
 		remaining_number_of_words_to_select = distractors_number - len(selected_words)
 		print('closeness', closeness, 'remaining_number_of_words_to_select', remaining_number_of_words_to_select)
 

@@ -153,6 +153,7 @@ func disappear_in_white_orb():
 func hide_npc_and_white_orb_fades():
 	white_orb_fading = true
 	$Sprite.hide()
+	$Shadow.hide()
 	
 func free_npc():
 	queue_free()
