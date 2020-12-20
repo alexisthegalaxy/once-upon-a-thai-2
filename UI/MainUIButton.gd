@@ -12,7 +12,6 @@ func _ready():
 	final_x = position.x - 45
 
 func _init_main_ui_button(_type):
-	print('_init_main_ui_button!!')
 	type = _type
 	if type == "_see_letters":
 		modulate = Color(0.45, 0.1, 0.88, 1)
@@ -23,7 +22,6 @@ func _init_main_ui_button(_type):
 	elif type == "_save_the_game":
 		modulate = Color(0.8, 0.8, 0.8, 1)
 	$Label.text = tr(_type)
-	print(tr(_type), final_x)
 	final_x = initial_x - max($Label.get_combined_minimum_size().x - 15, 25)
 
 func _process(delta):

@@ -22,7 +22,7 @@ func _ready():
 	# Second row
 	$"ๆ".init_keyboard_key("ๆ", "๐", self)
 	$"ไ".init_keyboard_key("ไ", "\"", self)
-	$"-ำ".init_keyboard_key("_ำ", "ฎ", self)
+	$"-ำ".init_keyboard_key("-ำ", "ฎ", self)
 	$"พ".init_keyboard_key("พ", "ฑ", self)
 	$"ะ".init_keyboard_key("ะ", "ธ", self)
 	$"-ั".init_keyboard_key("-ั", "-ํ", self)
@@ -59,11 +59,122 @@ func _ready():
 	# Special keys
 	$Lshift.init_keyboard_key("shift", "none", self)
 	$Rshift.init_keyboard_key("shift", "none", self)
+	$BackSpace.init_keyboard_key("back", "none", self)
+
+func _input(_event):
+	# First row
+	if _event.is_action_pressed("kb_1"):
+		$"ๅ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_2"):
+		$"2"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_3"):
+		$"3"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_4"):
+		$"ภ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_5"):
+		$"ถ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_6"):
+		$"-ุ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_7"):
+		$"-ึ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_8"):
+		$"ค"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_9"):
+		$"ต"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_0"):
+		$"จ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_-"):
+		$"ข"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_equal"):
+		$"ช"._on_Button_pressed()
+
+	# Second row
+	elif _event.is_action_pressed("kb_q"):
+		$"ๆ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_w"):
+		$"ไ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_e"):
+		$"-ำ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_r"):
+		$"พ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_t"):
+		$"ะ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_y"):
+		$"-ั"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_u"):
+		$"-ี"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_i"):
+		$"ร"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_o"):
+		$"น"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_p"):
+		$"ย"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_["):
+		$"บ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_]"):
+		$"ล"._on_Button_pressed()
+
+	# Third row
+	elif _event.is_action_pressed("kb_a"):
+		$"ฟ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_s"):
+		$"ห"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_d"):
+		$"ก"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_f"):
+		$"ด"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_g"):
+		$"เ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_h"):
+		$"-้"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_j"):
+		$"-่"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_k"):
+		$"า"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_l"):
+		$"ส"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_semicolon"):
+		$"ว"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_apostrophe"):
+		$"ง"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_backslash"):
+		$"ฃ"._on_Button_pressed()
+
+	# Fourth row
+	elif _event.is_action_pressed("kb_z"):
+		$"ผ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_x"):
+		$"ป"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_c"):
+		$"แ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_v"):
+		$"อ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_b"):
+		$"-ิ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_n"):
+		$"-ื"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_m"):
+		$"ท"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_,"):
+		$"ม"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_."):
+		$"ใ"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_slash"):
+		$"ฝ"._on_Button_pressed()
+	# Special keys
+	elif _event.is_action_pressed("kb_backspace"):
+		$"BackSpace"._on_Button_pressed()
+	elif _event.is_action_pressed("kb_shift"):
+		shift_down()
+		print('shift down')
+	elif _event.is_action_released("kb_shift"):
+		shift_up()
+		print('shift up')
 
 func shift_down():
 	shift = true
 	update_all_keys_upon_shift()
-	
+
 func shift_up():
 	shift = false
 	update_all_keys_upon_shift()
@@ -124,5 +235,6 @@ func receive_key_value(key_value):
 		return
 	if key_value == "back":
 		s.erase(s.length() - 1, 1)
-		return
-	s += key_value.replace('-', '')
+	else:
+		s += key_value.replace('-', '')
+	print(s)

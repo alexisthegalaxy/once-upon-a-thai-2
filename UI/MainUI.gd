@@ -22,22 +22,31 @@ func _ready():
 
 func update_main_ui():
 	update_main_ui_money_display()
-	if Game.known_letters:
-		$Letters.show()
-	else:
-		$Letters.hide()
-	if Game.known_words:
-		$Words.show()
-	else:
-		$Words.hide()
-	if Game.known_sentences:
-		$Sentences.show()
-	else:
-		$Sentences.hide()
+	update_main_ui_letters_display()
+	update_main_ui_words_display()
+	update_main_ui_sentences_display()
 	update_main_ui_go_letter_world_display()
 	update_main_ui_use_spell_display()
 	update_main_ui_make_spell_display()
 	update_main_ui_quests_display()
+
+func update_main_ui_letters_display():
+	if Game.known_letters:
+		$Letters.show()
+	else:
+		$Letters.hide()
+
+func update_main_ui_words_display():
+	if Game.known_words:
+		$Words.show()
+	else:
+		$Words.hide()
+
+func update_main_ui_sentences_display():
+	if Game.known_sentences:
+		$Sentences.show()
+	else:
+		$Sentences.hide()
 
 func update_main_ui_money_display():
 	if Events.events.money_is_visible:
