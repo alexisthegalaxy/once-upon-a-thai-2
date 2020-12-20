@@ -92,3 +92,38 @@ func get_words_to_review(number_of_words_to_review):
 		if not random_word in words_to_return:
 			words_to_return.append(random_word)
 	return words_to_return
+
+func get_words_with_audio_and_about_that_many_characters(size, distractors_number):
+	var words_with_audio = []
+	var file = File.new()
+	for word_id in Game.words:
+		var word = Game.words[word_id]
+		var has_audio = file.file_exists(SoundPlayer.get_audio_file_path_from_thai(word.th))
+		words_with_audio.append(word)
+
+	var remaining_number_of_words_to_select = distractors_number
+	var selected_words = []
+	for closeness in [0, -1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6, -7, 7, -8, 8]:
+		print('closeness', closeness)
+		selected_words += select_words_with_that_amount_of_letters(words_with_audio, size - closeness, remaining_number_of_words_to_select)
+		remaining_number_of_words_to_select = distractors_number - len(selected_words)
+
+	print('selected_words')
+	for selected_word in selected_words:
+		print('    ', selected_word.th)
+	return selected_words
+
+func select_words_with_that_amount_of_letters(words, size, number_of_words_to_select):
+	if number_of_words_to_select == 0:
+		return []
+	var words_with_right_amount_of_letters = []
+	for word in words:
+		if len(word.th) == size:
+			words_with_right_amount_of_letters.append(word)
+
+	var selected_words = []
+	while len(selected_words) < min(len(words_with_right_amount_of_letters), size):
+		var random_word = words_with_right_amount_of_letters[randi() % len(words_with_right_amount_of_letters)]
+		if not random_word in selected_words:
+			selected_words.append(random_word)
+	return selected_words

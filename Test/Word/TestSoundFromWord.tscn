@@ -1,0 +1,77 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Test/Word/TestSoundFromWord.gd" type="Script" id=2]
+[ext_resource path="res://Test/TestSoundPlayer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Test/test_bg.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[node name="TestSoundFromWord" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 4 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AudioAnswer1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 55.0559, 100.063 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="AudioAnswer2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 120.159, 101.251 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="AudioAnswer3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 190.408, 102.834 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="AudioAnswer4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 256.303, 99.4696 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Explanation" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 0.0444444
+margin_top = 18.2215
+margin_bottom = 32.2215
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.309804, 0.309804, 0.309804, 1 )
+text = "_how_do_you_read_this"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Word" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 0.0444444
+margin_left = 0.395752
+margin_top = 39.395
+margin_right = 0.395752
+margin_bottom = 53.395
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "_how_do_you_read_this"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OK" type="Button" parent="."]
+margin_left = 134.0
+margin_top = 129.0
+margin_right = 188.0
+margin_bottom = 149.0
+text = "_ok"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="OK" to="." method="_on_OK_pressed"]

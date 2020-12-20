@@ -34,9 +34,8 @@ func init_learn_letter_button():
 
 func leaves_test_to_go_to_MP():
 	# We need to reopen the test when we're back.
-	# where do we save it?
 	Game.should_start_test_when_back_from_MP = [
-		"res://Test/TestGuessMeaning.tscn",
+		"res://Test/Word/TestGuessMeaning.tscn",
 		word["id"],
 		over_word,
 	]

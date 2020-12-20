@@ -1,12 +1,13 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Test/TestGuessMeaning.gd" type="Script" id=2]
+[ext_resource path="res://Test/Word/TestGuessMeaning.gd" type="Script" id=2]
 [ext_resource path="res://Test/test_bg.png" type="Texture" id=3]
 [ext_resource path="res://Test/TestAnswer.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Test/SentenceCarousel.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Test/MainWordThaiLabel.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Lexical/Letter/LearnLetterButton.tscn" type="PackedScene" id=7]
+
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )

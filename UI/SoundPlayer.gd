@@ -56,8 +56,11 @@ func start_music_upon_entering_map(map_name):
 	if map_name in music_from_map:
 		crossfade_to(music_from_map[map_name])
 
+func get_audio_file_path_from_thai(thai):
+	return "res://Sounds/Thai/" + thai + ".wav"
+
 func play_thai(thai):
-	var audio_file_name = "res://Sounds/Thai/" + thai + ".wav"
+	var audio_file_name = get_audio_file_path_from_thai(thai)
 	$ThaiAudioStreamPlayer.stream = load(audio_file_name)
 	$ThaiAudioStreamPlayer.play()
 

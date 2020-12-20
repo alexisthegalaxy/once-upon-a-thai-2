@@ -69,7 +69,7 @@ var max_hp = 5.0
 var is_frozen = false
 
 var should_start_test_when_back_from_MP = [
-	null,  # "res://Test/TestGuessMeaning.tscn"
+	null,  # "res://Test/Word/TestGuessMeaning.tscn"
 	null,  # word_id
 ]
 
@@ -558,6 +558,7 @@ func start_test(test_scene, entity_id, over_entity) -> void:
 	entity either refers to a letter or to a word
 	(maybe to a phrase too, later on?)
 	"""
+	print("test_scene", test_scene)
 	var test = load(test_scene).instance()
 	self.add_child(test)
 	active_test = test
