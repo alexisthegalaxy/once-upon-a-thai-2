@@ -5,6 +5,7 @@ var word_id
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Button.hide()
+	$Keyboard.init_keyboard(true)
 	$Keyboard.connect("text_change", self, "on_text_change")
 
 func on_text_change(text):

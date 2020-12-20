@@ -139,7 +139,6 @@ func save_following_spells_data_before_map_change():
 	for following_spell in following_spells:
 		print('following_spell ', following_spell)
 		following_spell.time_to_live = following_spell.over_word.time_to_live
-	
 
 func add_following_spell(word_id, over_word):
 	over_word.set_as_following()

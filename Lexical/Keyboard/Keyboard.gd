@@ -5,8 +5,10 @@ extends Node2D
 var s = ""
 var shift
 signal text_change
+var restrict_to_collected_letters
 
-func _ready():
+func init_keyboard(_restrict_to_collected_letters):
+	restrict_to_collected_letters = _restrict_to_collected_letters
 	# First row
 	$"ๅ".init_keyboard_key("ๅ", "+", self)
 	$"2".init_keyboard_key("/", "๑", self)
