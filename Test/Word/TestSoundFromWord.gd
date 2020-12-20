@@ -53,6 +53,11 @@ func init(_word_id, _over_word):
 
 func on_audio_pressed(thai):
 	selected_answer_thai = thai
+	for audio_answer in [$AudioAnswer1, $AudioAnswer2, $AudioAnswer3, $AudioAnswer4]:
+		if audio_answer.thai == thai:
+			audio_answer.modulate = Color(0.5, 1, 0.5, 1)
+		else:
+			audio_answer.modulate = Color(1, 1, 1, 1)
 
 func _ready():
 	set_alpha()
