@@ -36,7 +36,7 @@ func set_selected(value):
 	is_selected = value
 	update_animation()
 
-func init(init_menu):
+func init_menu_character(init_menu):
 	sprite_path = "res://Npcs/sprites/main_" + index + ".png"
 	var _e = self.connect("selected_character", init_menu, "on_selected_character", [])
 	$Sprite.texture = load(sprite_path)

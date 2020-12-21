@@ -5,11 +5,11 @@ var selected_character = false
 func _ready():
 	Game.player_name = ""
 	update_button_showing()
-	$Character_A.init(self)
-	$Character_B.init(self)
-	$Character_C.init(self)
-	$Character_D.init(self)
-	$Character_E.init(self)
+	$Character_A.init_menu_character(self)
+	$Character_B.init_menu_character(self)
+	$Character_C.init_menu_character(self)
+	$Character_D.init_menu_character(self)
+	$Character_E.init_menu_character(self)
 
 func update_button_showing():
 	if Game.player_name and selected_character:

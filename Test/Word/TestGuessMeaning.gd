@@ -88,10 +88,8 @@ func answered_correctly():
 	SoundPlayer.play_thai(word.th)
 	Game.player.can_interact = true
 	Game.is_frozen = false
-	if not word.id in Game.known_words:
-		Game.known_words.append(word.id)
+	Game.learn_word(word.id)
 	Game.add_following_spell(word.id, over_word)
-#	over_word.starts_disappearing()
 	Game.dialog_press_f_to_see_it('word')
 	queue_free()
 	Game.should_start_test_when_back_from_MP = [null, null]

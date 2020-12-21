@@ -9,8 +9,8 @@ var events = {
 	"has_met_ploy": false,
 	"has_met_pet": false,
 	"has_learnt_four_first_words": false,
-	"yaai_has_given_last_warning_before_forest": false,
-	"yaai_explains_first_sentence": false,
+	"yaai_has_given_last_warning_before_forest": initial_state,
+	"yaai_explains_first_sentence": initial_state,
 	"has_gone_to_first_sentence": initial_state,
 	"has_finished_the_letter_world_the_first_time": initial_state,
 	"can_see_the_looking_for_letter_banner": initial_state,
@@ -31,7 +31,10 @@ var var_2 = null  # let's find a cleaner way
 func show_looking_for_letters(_parameters):
 	events["can_see_the_looking_for_letter_banner"] = true
 	Game.looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
-	Game.looking_for_letter__node.init(Game.letters_we_look_for)
+	print('Game.letters_we_look_for')
+	for l in Game.letters_we_look_for:
+		print('    ', l)
+	Game.looking_for_letter__node.init_letters_we_look_for(Game.letters_we_look_for)
 	Game.current_scene.add_child(Game.looking_for_letter__node)
 	Game.current_scene.get_node("YSort").get_node("Door Vowels").init_letters()
 	Game.current_scene.get_node("YSort").get_node("Door Accents").init_letters()

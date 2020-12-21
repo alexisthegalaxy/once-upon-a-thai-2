@@ -11,7 +11,7 @@ extra_spacing_top = -8
 extra_spacing_bottom = -7
 font_data = ExtResource( 4 )
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="Notebook" type="CanvasLayer"]
 script = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]

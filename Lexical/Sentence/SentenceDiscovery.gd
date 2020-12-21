@@ -37,6 +37,7 @@ func _on_Button_pressed():
 		Game.player.stop_walking()
 		Game.current_scene.add_child(Game.current_dialog)
 		Quests.update_find_sentences_quests(sentence.id)
+		Game.main_ui.update_main_ui_sentences_display()
 	else:
 		Game.is_frozen = false
 		Game.player.can_interact = true

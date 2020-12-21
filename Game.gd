@@ -48,8 +48,8 @@ var current_map_name = "res://Maps/Chaiyaphum.tscn"
 
 # This is the letters yaai asks us to fetch the first time we come in the Memory Palace
 #var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]  # outdated
-#var initial_letters = [11, 13, 28, 0, 21]
-var initial_letters = [0]
+var initial_letters = [11, 13, 28, 0, 21]  # correct
+#var initial_letters = [0]
 
 # when players comes near a npc/word/letter/sentence,
 # it get appended to current_focus, and gets removed when leaving
@@ -236,16 +236,24 @@ func lose_focus(target):
 			space_bar_to_interact.queue_free()
 			space_bar_to_interact = null
 
+func knows_the_initial_letters():
+	for initial_letter_id in initial_letters:
+		if not initial_letter_id in known_letters:
+			return false
+	return true
+
+func learn_word(word_id):
+	if not word_id in Game.known_words:
+		Game.known_words.append(word_id)
+		Game.main_ui.update_main_ui_words_display()
+
 func learn_letter(letter):
 	Game.known_letters.append(letter["id"])
+	Game.main_ui.update_main_ui_letters_display()
 	if looking_for_letter__node:
 		looking_for_letter__node.update_label_text()
 	Game.player.arrow.arrow_letter_update()
-	var knows_the_letters_from_the_beginning = true
-	for letter_id_from_the_beginning in initial_letters:
-		if not letter_id_from_the_beginning in known_letters:
-			knows_the_letters_from_the_beginning = false
-	if not Events.events["has_finished_the_letter_world_the_first_time"] and knows_the_letters_from_the_beginning:
+	if not Events.events["has_finished_the_letter_world_the_first_time"] and knows_the_initial_letters():
 		Events.events["has_finished_the_letter_world_the_first_time"] = true
 		Game.main_ui.update_main_ui_go_letter_world_display()
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
@@ -264,10 +272,10 @@ func add_random_letter_to_letters_to_look_for():
 	if not random_letter in letters_we_look_for:
 		letters_we_look_for.append(random_letter)
 		if looking_for_letter__node:
-			looking_for_letter__node.init(letters_we_look_for)
+			looking_for_letter__node.init_letters_we_look_for(letters_we_look_for)
 		else:
 			looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
-			looking_for_letter__node.init(letters_we_look_for)
+			looking_for_letter__node.init_letters_we_look_for(letters_we_look_for)
 			Game.current_scene.add_child(looking_for_letter__node)
 
 func is_in_letter_world():
@@ -410,7 +418,7 @@ func update_letters_to_look_for_if_necesssary(_to_map_name):
 				letters_we_look_for_here.append(letter)
 	else:
 		letters_we_look_for_here = letters_we_look_for
-	looking_for_letter__node.init(letters_we_look_for_here)
+	looking_for_letter__node.init_letters_we_look_for(letters_we_look_for_here)
 	current_scene.add_child(looking_for_letter__node)
 
 func start_test_when_back_from_MP():

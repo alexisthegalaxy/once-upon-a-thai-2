@@ -15,7 +15,7 @@ func _on_Button_pressed():
 	if Game.knows_word(word):
 		SoundPlayer.play_thai(word["th"])
 		var word_page = load("res://Lexical/WordPage/WordPage.tscn").instance()
-		Game.player.word_page = word_page
+		Game.word_page = word_page
 		Game.current_scene.add_child(word_page)
 		word_page.init_word_page(word["id"])
 		Game.ict.queue_free()

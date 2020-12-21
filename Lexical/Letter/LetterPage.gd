@@ -26,5 +26,5 @@ func _on_OkButton_pressed():
 	Game.alphabet = alphabet
 	alphabet.init_alphabet()
 	Game.current_scene.add_child(alphabet)
-	Game.player.letter_page = null
+	Game.letter_page = null
 	self.queue_free()

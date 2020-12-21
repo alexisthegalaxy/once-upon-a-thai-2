@@ -24,5 +24,5 @@ func _on_OkButton_pressed():
 	Game.dict = dict
 	dict.init_dict()
 	Game.current_scene.add_child(dict)
-	Game.player.word_page = null
+	Game.word_page = null
 	self.queue_free()

@@ -103,7 +103,7 @@ leads_to_letters = [ 36, 40, 41, 42, 43 ]
 position = Vector2( -139.465, 74.9269 )
 
 [node name="Yaai" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( 331.719, -96.1424 )
+position = Vector2( -120.252, 609.779 )
 sprite_path = "res://Npcs/sprites/monk.png"
 direction = "left"
 display_name = "Yaai"

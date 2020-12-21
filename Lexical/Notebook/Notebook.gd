@@ -57,6 +57,8 @@ func init_notebook(page_index):
 				active_page = "right"
 			else:
 				break
+	if len(get_sentences_for_page(current_page_index + 1)) == 0:
+		$Control/NextPage.hide()
 
 func next_page():
 	$Control/PreviousPage.show()
