@@ -19,7 +19,6 @@ func _ready():
 		Events.events["has_been_in_the_letter_world"] = true
 		fading_in = true
 		$CanvasLayer/BlackFadeIn.show()
-#	Game.letters_we_look_for.append(Game.letters[str(11)])
 	
 func _process(delta):
 	if fading_in:

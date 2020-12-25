@@ -13,13 +13,13 @@ extra_spacing_top = -4
 extra_spacing_bottom = -4
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 8
 extra_spacing_top = -4
 extra_spacing_bottom = -4
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=3]
 size = 10
 font_data = ExtResource( 4 )
 
@@ -56,7 +56,7 @@ margin_top = 11.0
 margin_right = 26.0
 margin_bottom = 38.0
 theme = ExtResource( 2 )
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "Talk to everybody in Chaiyaphum and learn the sentences they have to teach."
 valign = 1
 autowrap = true
@@ -70,7 +70,7 @@ margin_top = 36.5874
 margin_right = 27.2836
 margin_bottom = 50.5874
 theme = ExtResource( 2 )
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "Sentences found: 3/10"
 align = 2
 autowrap = true

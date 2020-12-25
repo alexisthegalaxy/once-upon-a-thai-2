@@ -151,7 +151,7 @@ func add_following_spell(word_id, over_word):
 	})
 	main_ui.update_main_ui_use_spell_display()
 
-func update_following_spells_ime_to_live():
+func update_following_spells_time_to_live():
 	for following_spell in following_spells:
 		following_spell.time_to_live = following_spell.over_word.time_to_live
 
@@ -409,7 +409,6 @@ func update_letters_to_look_for_if_necesssary(_to_map_name):
 		return
 	Game.player.arrow.arrow_letter_update()
 	looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
-	
 	var letters_we_look_for_here = []
 	if this_letter_world_has_letters:
 		for letter_id in this_letter_world_has_letters:
@@ -562,7 +561,6 @@ func save_game():
 	print('game_data.following_spells', game_data.following_spells)
 	game_data.this_letter_world_has_letters = this_letter_world_has_letters
 	game_data.letters_we_look_for = letters_we_look_for
-	game_data.this_letter_world_has_letters = this_letter_world_has_letters
 	game_data.player_position_on_overworld = player_position_on_overworld
 	game_data.player_last_overworld_map_visited = player_last_overworld_map_visited
 	game_data.can_read_thai = can_read_thai
@@ -578,9 +576,8 @@ func load_game(game_data):
 	known_sentences = game_data.known_sentences
 	seen_sentences = game_data.seen_sentences
 	known_letters = game_data.known_letters
-	update_following_spells_ime_to_live()
+	update_following_spells_time_to_live()
 	following_spells = game_data.following_spells
-	this_letter_world_has_letters = game_data.this_letter_world_has_letters
 	letters_we_look_for = game_data.letters_we_look_for
 	this_letter_world_has_letters = game_data.this_letter_world_has_letters
 	player_position_on_overworld = Vector2(game_data.player_position_on_overworld[0], game_data.player_position_on_overworld[1])

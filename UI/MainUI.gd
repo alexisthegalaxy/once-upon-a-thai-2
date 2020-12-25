@@ -73,7 +73,7 @@ func update_main_ui_use_spell_display():
 		$UseSpell.hide()
 
 func update_main_ui_make_spell_display():
-	if Events.events.has_possessed_a_letter and Quests.quests.find_sentences_in_chaiyaphum.status == Quests.DONE:
+	if Events.events.has_possessed_a_letter and "find_sentences_in_chaiyaphum" in Quests.quests and Quests.quests.find_sentences_in_chaiyaphum.status == Quests.DONE:
 		$MakeSpell.show()
 	else:
 		$MakeSpell.hide()

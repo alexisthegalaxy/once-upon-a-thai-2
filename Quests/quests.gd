@@ -69,7 +69,7 @@ func update_find_sentences_quests(sentence_id):
 					quest.counter += 1
 					if quest.counter >= quest.counter_max:
 						quest.status = FINISHED
-					update_quests_display()
+						update_quests_display()
 
 func update_implant_source_with_this_word_quests(source_name: String, word_id: int):
 	for quest_id in quests:

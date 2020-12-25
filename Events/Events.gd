@@ -1,14 +1,15 @@
 extends Node
 
 var initial_state = true
+var state_2 = initial_state
 var events = {
-	"has_had_a_quest": false,
-	"money_is_visible": false,
-	"has_possessed_a_letter": false,
-	"ploy_has_stopped_in_front_of_house": false,
-	"has_met_ploy": false,
-	"has_met_pet": false,
-	"has_learnt_four_first_words": false,
+	"has_had_a_quest": state_2,
+	"money_is_visible": state_2,
+	"has_possessed_a_letter": state_2,
+	"ploy_has_stopped_in_front_of_house": state_2,
+	"has_met_ploy": state_2,
+	"has_met_pet": initial_state,
+	"has_learnt_four_first_words": initial_state,
 	"yaai_has_given_last_warning_before_forest": initial_state,
 	"yaai_explains_first_sentence": initial_state,
 	"has_gone_to_first_sentence": initial_state,
@@ -23,6 +24,16 @@ var events = {
 
 var var_1 = null  # let's find a cleaner way
 var var_2 = null  # let's find a cleaner way
+
+func save_game():
+	return events
+
+func load_game(events_data):
+	if not events_data:
+		return
+	for event_name in events:
+		if event_name in events_data:
+			events[event_name] = events_data[event_name]
 
 #func lose_focus(_parameters):
 #	for focus in Game.current_focus:
@@ -141,11 +152,12 @@ func enters_lexical_world(_parameters):
 func ploy_goes_towards_the_temple(ploy):
 	events.ploy_has_stopped_in_front_of_house = true
 	ploy.will_go_to = [
-		Vector2(995, 116),
-		Vector2(1191, 116),
-		Vector2(1191, 256),
-		Vector2(1294, 260),
-		Vector2(1298, 177),
+		Vector2(1201.905029, 112.158806),
+		Vector2(1232.525391, 177.277954),
+		Vector2(1330.525391, 177.277954),
+		Vector2(1330.525391, 116.944611),
+		Vector2(1420.169678, 91.944672),
+		Vector2(1422.503052, 47.944672),
 		"disappears"
 	]
 	ploy.starts_going_toward(ploy.will_go_to[0])

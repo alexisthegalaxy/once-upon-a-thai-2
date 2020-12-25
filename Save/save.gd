@@ -11,6 +11,7 @@ func save_game():
 		"player_data": Game.player.save_game(),
 		"game_data": Game.save_game(),
 		"quests_data": Quests.save_game(),
+		"events_data": Events.save_game(),
 	}
 	var save_file = File.new()
 	save_file.open("user://%s.save" % Game.player_name, File.WRITE)
@@ -27,6 +28,8 @@ func apply_change_from_save_data(save_data):
 	Game.generate_following_spells_after_map_change()
 	# 4 - quests
 	Quests.load_game(save_data.quests_data)
+	# 5 - Events
+	Events.load_game(save_data.events_data)
 
 func load_game(player_name):
 	var save_file = File.new()

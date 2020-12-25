@@ -31,7 +31,7 @@ func _init_main_ui_button(_type):
 	update_final_x()
 
 func update_final_x():
-	final_x = initial_x - max($Label.get_combined_minimum_size().x - 15, 25)
+	final_x = initial_x - max($Label.get_combined_minimum_size().x - 15, 35)
 
 func _process(delta):
 	if moves_left:

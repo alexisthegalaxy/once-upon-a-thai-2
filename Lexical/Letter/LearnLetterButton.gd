@@ -25,6 +25,7 @@ func _process(delta):
 		$Sprite.modulate = Color(teal_tint, 1, 1, 1)
 
 func _on_Button_pressed():
+	Game.this_letter_world_has_letters = []
 	for letter_id in letter_ids:
 		Game.letters_we_look_for.append(Game.letters[str(letter_id)])
 	Events.enters_lexical_world(null)

@@ -9,6 +9,7 @@ const OPAQUE_BLACK = "[color=#FF000000]"
 
 func init_letters_we_look_for(_letters_we_look_for):
 	letters_we_look_for = _letters_we_look_for
+	
 	if len(Game.letters_we_look_for):
 		update_label_text()
 	else:

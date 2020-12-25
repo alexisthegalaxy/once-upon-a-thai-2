@@ -21,6 +21,9 @@ func update_quests_display():
 			if number_of_active_quests == 2:
 				$Quests/QuestDisplay2.init_quest_display(quest_id)
 				$Quests/QuestDisplay2.show()
+			if number_of_active_quests == 3:
+				$Quests/QuestDisplay3.init_quest_display(quest_id)
+				$Quests/QuestDisplay3.show()
 			shown_quest_ids.append(quest.id)
 	if number_of_active_quests == 0:
 		$Quests.hide()
