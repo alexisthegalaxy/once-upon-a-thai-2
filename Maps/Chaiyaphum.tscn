@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://ImageScreen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/CoolOffice.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Light/ChangeLight.tscn" type="PackedScene" id=12]
 [ext_resource path="res://World/Tree2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
+[ext_resource path="res://World/Locations.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Lexical/Word/Spell.tscn" type="PackedScene" id=16]
 [ext_resource path="res://World/House.tscn" type="PackedScene" id=17]
 [ext_resource path="res://World/Teleport.tscn" type="PackedScene" id=18]
@@ -6906,7 +6907,7 @@ position = Vector2( 2218.55, -159.948 )
 position = Vector2( 1421.76, 31.3513 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 668.732, -14.7876 )
+position = Vector2( 1420.6, 79.8687 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6943,11 +6944,6 @@ dialog = [ "_alright_name_lets_go" ]
 direction = "right"
 display_name = "Yaai"
 post_dialog_event = [ "yaai_walks_to", [ [ Vector2( 615, 505 ), Vector2( 552, 434 ), Vector2( 514, 354 ), Vector2( 514, 262.6 ), Vector2( 461, 257 ), Vector2( 481, 257 ) ] ] ]
-
-[node name="RandomBeachDude" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 893.543, 72.91 )
-dialog = [ "You've finished the game so far!", "Congratulations!" ]
-sprite_path = "res://Npcs/sprites/beach_boy.png"
 
 [node name="PluralGirl" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 1126.91, -109.581 )
@@ -7245,6 +7241,14 @@ shape = SubResource( 6 )
 [node name="ExitSomber" type="CollisionShape2D" parent="ExitSomber"]
 position = Vector2( 1113.97, -472.365 )
 shape = SubResource( 6 )
+
+[node name="Locations" type="Node" parent="."]
+
+[node name="purify_mohinkhao_finished" parent="Locations" instance=ExtResource( 15 )]
+position = Vector2( 1421.49, 15.2608 )
+
+[node name="implant_word_cut" parent="Locations" instance=ExtResource( 15 )]
+position = Vector2( 1169.02, 168.567 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D5" to="." method="_on_Area2D5_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

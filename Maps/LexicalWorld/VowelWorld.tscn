@@ -58,16 +58,20 @@ position = Vector2( 81.1485, -482.445 )
 id = 33
 
 [node name="Letter a short mid" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( 99.1927, -292.513 )
+position = Vector2( -71.6266, -37.2657 )
 id = 3
 
 [node name="Letter a short final" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( 22.1672, -284.943 )
+position = Vector2( -67.6602, 13.5 )
 id = 20
 
 [node name="Letter am" parent="YSort/Letters" instance=ExtResource( 11 )]
-position = Vector2( 87.9887, -253.75 )
+position = Vector2( -25.4, 41.7478 )
 id = 44
+
+[node name="Letter aa" parent="YSort/Letters" instance=ExtResource( 11 )]
+position = Vector2( 27.1221, 34.8758 )
+id = 1
 
 [node name="Letter uu" parent="YSort/Letters" instance=ExtResource( 11 )]
 position = Vector2( 195.544, -566.769 )

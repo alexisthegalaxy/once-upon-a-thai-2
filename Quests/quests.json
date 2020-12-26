@@ -74,7 +74,7 @@
       "Excellent, [Name], now you know how to implant a Spell in a source.",
       "That's very useful, it allows you to keep with you the words you need,",
       "and knowing where a Spell lives helps you remember it.",
-      "Besides its our role to restore balance, as more and more Spells are going missing lately."
+      "Besides, it's our role to restore balance, as more and more Spells are going missing lately."
     ],
     "type": "implant_source_with_this_word_i_gave_you",
     "parameters": [56, "EmptySourceBehindWat"]

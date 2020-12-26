@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Quests/compass.png" type="Texture" id=1]
+[ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Quests/compass_arrow.png" type="Texture" id=3]
+[ext_resource path="res://Quests/QuestCompass.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 6
+font_data = ExtResource( 2 )
+
+[node name="QuestCompass" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0.132813, -0.0234375 )
+scale = Vector2( 0.02, 0.02 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arrow" type="Sprite" parent="."]
+scale = Vector2( 0.0898003, 0.1086 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -23.879
+margin_top = -16.7004
+margin_right = 24.121
+margin_bottom = 5.29956
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "N"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}

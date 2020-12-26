@@ -11,6 +11,9 @@ func _ready():
 
 func update_quests_display():
 	var number_of_active_quests = 0
+	$Quests/QuestDisplay1.hide()
+	$Quests/QuestDisplay2.hide()
+	$Quests/QuestDisplay3.hide()
 	for quest_id in Quests.quests:
 		var quest = Quests.quests[quest_id]
 		if quest.status in [Quests.IN_PROGRESS, Quests.FINISHED]:

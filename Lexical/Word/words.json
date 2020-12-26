@@ -258,7 +258,7 @@
     "pos": "PRON",
     "th": "คุณ",
     "teaching_order": -1,
-    "letters": [31, 33, 39]
+    "letters": [21, 33, 39]
   },
   "29": {
     "split": "เรา",
@@ -2846,6 +2846,7 @@
   "323": {
     "split": "พระ-อา-ทิตย์",
     "en": "sun",
+    "fr": "soleil",
     "tones": "HMH",
     "pos": "NOUN",
     "th": "พระอาทิตย์",
@@ -2854,6 +2855,7 @@
   "324": {
     "split": "ส-นาม-บิน",
     "en": "airport",
+    "fr": "aéroport",
     "tones": "LRM",
     "pos": "NOUN",
     "th": "สนามบิน",
@@ -2871,6 +2873,7 @@
   "326": {
     "split": "สับ-ปะ-รด",
     "en": "pineapple",
+    "fr": "ananas",
     "tones": "LLH",
     "pos": "NOUN",
     "th": "สับปะรด",
@@ -2888,6 +2891,7 @@
   "328": {
     "split": "ภาพ-ยน-ตร์",
     "en": "movie (formal)",
+    "fr": "film (formel)",
     "tones": "FHM",
     "pos": "None",
     "th": "ภาพยนตร์",
@@ -2896,22 +2900,25 @@
   "329": {
     "split": "มาก-เกิน-ไป",
     "en": "excessively",
+    "fr": "trop",
     "tones": "FMM",
     "pos": "None",
     "th": "มากเกินไป",
     "teaching_order": -1
   },
   "330": {
-    "split": "อ-เล็ก-ซี่",
-    "en": "Alexis",
-    "tones": "MRF",
-    "pos": "PNAM",
-    "th": "อเล็กซี่",
+    "split": "เขียน",
+    "en": "to write",
+    "fr": "écrire",
+    "tones": "R",
+    "pos": "None",
+    "th": "เขียน",
     "teaching_order": -1
   },
   "331": {
     "split": "วิศวกร",
     "en": "engineer",
+    "fr": "ingénieur",
     "tones": "HLHM",
     "pos": "NOUN",
     "th": "วิศวกร",
@@ -2920,6 +2927,7 @@
   "332": {
     "split": "ส-นาม-เด็ก-เล่น",
     "en": "playground",
+    "fr": "terrain de jeux",
     "tones": "LRLF",
     "pos": "NOUN",
     "th": "สนามเด็กเล่น",
@@ -2928,6 +2936,7 @@
   "333": {
     "split": "รถ-ไฟ-ใต้-ดิน",
     "en": "subway, underground train",
+    "fr": "métro, train souterrain",
     "tones": "HMFM",
     "pos": "NOUN",
     "th": "รถไฟใต้ดิน",
@@ -2936,6 +2945,7 @@
   "334": {
     "split": "กาง-เกง-ขา-สั้น",
     "en": "shorts",
+    "fr": "shorts, pantalons courts",
     "tones": "MMRF",
     "pos": "NOUN",
     "th": "กางเกงขาสั้น",
@@ -2953,6 +2963,7 @@
   "336": {
     "split": "เยอ-ร-ม-นี",
     "en": "Germany",
+    "fr": "Allemagne",
     "tones": "MHHM",
     "pos": "PLAC",
     "th": "เยอรมนี",
@@ -2961,6 +2972,7 @@
   "337": {
     "split": "อเ-ม-ริ-กัน",
     "en": "American",
+    "fr": "Américain",
     "tones": "LMHM",
     "pos": "PLAC",
     "th": "อเมริกัน",

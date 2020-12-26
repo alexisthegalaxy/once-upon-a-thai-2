@@ -72,7 +72,7 @@ func _process(delta):
 		if can_move:
 			time_to_live -= delta
 			if time_to_live < 0:
-				if not (id == 401 and Quests.quests.implant_any_source_with_dtat.status == Quests.IN_PROGRESS):
+				if not ((id == 401 and Quests.quests.implant_any_source_with_dtat.status == Quests.IN_PROGRESS) or (id == 56 and Quests.quests.implant_source_behind_the_temple.status == Quests.IN_PROGRESS)):
 					remove_following_spell()
 	if is_birthing:
 		if ratio < 1:

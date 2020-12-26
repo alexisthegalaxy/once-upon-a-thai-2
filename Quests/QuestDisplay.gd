@@ -1,22 +1,54 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var quest
+var quest_id
+var goal_location
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func find_npc_with_that_quest():
+	var ysort = Game.current_scene.get_node("YSort")
+	if not ysort:
+		return
+	var npcs = ysort.get_node("NPCs")
+	if not npcs:
+		return
+	for npc in npcs.get_children():
+		if quest_id in npc.finish_quests:
+			return npc
 
+func find_quest_location():
+	if quest.status == Quests.FINISHED:
+		var npc = find_npc_with_that_quest()
+		if npc:
+			return npc.position
+		else:
+			var map_locations = Game.current_scene.get_node("Locations")
+			if not map_locations:
+				return
+			var goal = map_locations.get_node(quest_id+'_finished')
+			if not goal:
+				return
+			print('goal.position finished', goal.position)
+			return goal.position
+		# NPC
+		# if not NPC: location
+		pass
+	elif quest.status == Quests.IN_PROGRESS:
+		var map_locations = Game.current_scene.get_node("Locations")
+		if not map_locations:
+			return
+		var goal = map_locations.get_node(quest_id)
+		if not goal:
+			return
+		print('goal.position', goal.position)
+		return goal.position
+#	return Vector2(1168.16272, 180.642242)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-func init_quest_display(quest_id):
+func init_quest_display(_quest_id):
+	quest_id = _quest_id
 	quest = Quests.quests[quest_id]
 	update_display()
+	goal_location = find_quest_location()
+	$QuestCompass.init_quest_compass(goal_location)
 	
 func update_display():
 	var lo = TranslationServer.get_locale()
@@ -32,3 +64,6 @@ func update_display():
 	else:
 		$Description.text = quest[lo + "_description"]
 		$green_check_mark.hide()
+
+func _on_CloseButton_pressed():
+	hide()
