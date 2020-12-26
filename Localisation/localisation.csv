@@ -14,7 +14,7 @@ _continue_playing,Continue playing,Continuer à jouer
 _start_playing,Start playing,Commencer le jeu
 _move_with_arrow_keys,Move with arrow keys or WASD,Déplace-toi avec les flèches ou WASD
 _space_to_interact,Press Space to interact,Appuie sur Espace pour interagir
-_active_quests,Active quests,Quêtes en cours
+_active_quests,Objectives,Objectifs
 _granny_is_waiting_outside,Granny is waiting for you outside.,Mamie t'attends dehord.
 _be_brave_okay,"Be brave, okay?","Tu seras brave, hein ?"
 _press_f_to_exit,Press the escape key to exit,Appuie sur échap pour fermer
@@ -176,12 +176,12 @@ _pet_money_dialog_1,I'd like to buy some letters to make a Spell but I don't hav
 _pet_money_dialog_2,"Be nice [Name], give me 15 bahts. @QOK/No","Allez sois sympa [Name], passe-moi 15 bahts. @QOK/Non"
 _pet_money_dialog_not_enough,You don't even have 15 bahts? What a loser.,T'as même pas 15 bahts ? Quel loser !
 _pet_money_dialog_ok_1,[ShowNoName][Name] gives 15 bahts to Pet.,[ShowNoName][Name] donne 15 bahts à Pet.
-_pet_money_dialog_ok_1,"Ha! You actually gave me the money! You know you won't get it back, right?","Ha, j'y crois même pas que tu le fasses. J'te les rendrai pas, tu le sais ?"
+_pet_money_dialog_ok_2,"Ha! You actually gave me the money! You know you won't get it back, right?","Ha, j'y crois même pas que tu le fasses. J'te les rendrai pas, tu le sais ?"
 _see_letters,Letters,Lettres
 _see_words,Words,Mots
 _see_sentences,Sentences,Phrases
 _go_to_letter_world,Go the the letter world,Aller dans le monde des lettres
-_quests,Quests,Quêtes
+_quests,Objectives,Objectifs
 _use_spell,Use a Spell,Utilise un Mot
 _make_spell,Make a Spell,Fabrique un Mot
 _save_the_game,Save the game,Sauvegarder la partie
