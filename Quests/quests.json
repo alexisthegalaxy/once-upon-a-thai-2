@@ -133,7 +133,7 @@
       "Je vais te confier celui-là : ตัด.",
       "Trouve-lui un foyer, une source. Choisis la source que tu veux.",
       "Ensuite, une fois que ce Mot aura une source, tu pourras employer sa force pour toujours.",
-      "ตัด signifie \"couper\", et s'il te suit, il te permettra de couper les buissons qui te bloquent la route.",
+      "ตัด signifie \"couper\", et s'il te suit, il te permettra de couper les buissons qui te bloquent la route."
     ],
     "en_description": "Implant the Spell ตัด in any source.",
     "fr_description": "Implante le Mot ตัด dans la source que tu veux.",
@@ -182,13 +182,6 @@
     "type": "talk_to_npc",
     "parameters": ["Ajahn Jagaro"]
   },
-  "implant_word_cut": {
-    "blockers": [],
-    "en_name": "Repopulate ตัด",
-    "en_description": "We get the Spell for cut: ตัด. We have to implant it into a source. When we have done so, the quest is complete. Until we do so, we can get the Spell again and again at the shaman.",
-    "counter_max": 1,
-    "type": "implant"
-  },
   "go_back_home_and_talk_to_yaai": {
     "blockers": [],
     "en_name": "Back home",
@@ -220,10 +213,10 @@
     "en_end_description": "Go back to the old monk in Chaiyaphum's temple.",
     "fr_end_description": "Retourne voir le vieux moine au temple de Chaiyaphum.",
     "fr_finish_dialog": [
-      "On m'a dit que Mo Hin Khao a retrouvé sa paix ! Merci, [Name] !",
+      "On m'a dit que Mo Hin Khao a retrouvé sa paix ! Merci, [Name] !"
     ],
     "en_finish_dialog": [
-      "I've been told Mo Hin Khao is back to its former peace! Thank you very much, [Name].",
+      "I've been told Mo Hin Khao is back to its former peace! Thank you very much, [Name]."
     ],
     "type": "purifying",
     "parameters": ["MoHinKhao"]

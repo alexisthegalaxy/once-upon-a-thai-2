@@ -142,7 +142,7 @@ func display_notebook():
 func go_to_letter_world():
 	if Game.is_in_letter_world():
 		Game.letters_we_look_for = []
-		Game.call_deferred(
+		ChangeMap.call_deferred(
 			"_deferred_goto_scene",
 			Game.player_last_overworld_map_visited,
 			Game.player_position_on_overworld.x,
@@ -150,4 +150,4 @@ func go_to_letter_world():
 			0
 		)
 	else:
-		Game.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75, 0)
+		ChangeMap.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75, 0)

@@ -7247,8 +7247,29 @@ shape = SubResource( 6 )
 [node name="purify_mohinkhao_finished" parent="Locations" instance=ExtResource( 15 )]
 position = Vector2( 1421.49, 15.2608 )
 
-[node name="implant_word_cut" parent="Locations" instance=ExtResource( 15 )]
+[node name="find_sentences_in_chaiyaphum_finished" parent="Locations" instance=ExtResource( 15 )]
+position = Vector2( 1421.49, 15.2608 )
+
+[node name="talk_to_anchalee_in_chaiyaphum" parent="Locations" instance=ExtResource( 15 )]
+position = Vector2( 1421.49, 15.2608 )
+
+[node name="talk_to_ajahn_jagaro_in_chaiyaphum" parent="Locations" instance=ExtResource( 15 )]
+position = Vector2( 1690.68, 159.3 )
+
+[node name="implant_any_source_with_dtat" parent="Locations" instance=ExtResource( 15 )]
 position = Vector2( 1169.02, 168.567 )
+
+[node name="implant_source_behind_the_temple" parent="Locations" instance=ExtResource( 15 )]
+position = Vector2( 1540.91, -258.228 )
+
+[node name="implant_source_in_chaiyaphum_field_finished" parent="Locations" instance=ExtResource( 15 )]
+position = Vector2( 1071.7, -172.065 )
+
+[node name="implant_source_in_chaiyaphum_field" parent="Locations" instance=ExtResource( 15 )]
+position = Vector2( 1323.3, 783.696 )
+
+[node name="purify_mohinkhao" parent="Locations" instance=ExtResource( 15 )]
+position = Vector2( 572.915, -632.155 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D5" to="." method="_on_Area2D5_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

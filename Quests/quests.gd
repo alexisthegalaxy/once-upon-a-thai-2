@@ -21,11 +21,11 @@ func _ready():
 	init_with_initial_state()
 
 func init_with_initial_state():
-#	quests['talk_to_anchalee_in_chaiyaphum'].status = IN_PROGRESS
+	quests['talk_to_anchalee_in_chaiyaphum'].status = IN_PROGRESS
 #	quests['implant_source_behind_the_temple'].status = DONE
 #	quests['find_sentences_in_chaiyaphum'].status = DONE
 	quests['purify_mohinkhao'].status = FINISHED
-	quests['implant_word_cut'].status = IN_PROGRESS
+	quests['implant_any_source_with_dtat'].status = IN_PROGRESS
 	
 	
 	pass

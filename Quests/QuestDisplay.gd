@@ -27,11 +27,7 @@ func find_quest_location():
 			var goal = map_locations.get_node(quest_id+'_finished')
 			if not goal:
 				return
-			print('goal.position finished', goal.position)
 			return goal.position
-		# NPC
-		# if not NPC: location
-		pass
 	elif quest.status == Quests.IN_PROGRESS:
 		var map_locations = Game.current_scene.get_node("Locations")
 		if not map_locations:
@@ -39,9 +35,7 @@ func find_quest_location():
 		var goal = map_locations.get_node(quest_id)
 		if not goal:
 			return
-		print('goal.position', goal.position)
 		return goal.position
-#	return Vector2(1168.16272, 180.642242)
 
 func init_quest_display(_quest_id):
 	quest_id = _quest_id

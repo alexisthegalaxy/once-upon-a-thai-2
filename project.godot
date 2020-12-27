@@ -28,6 +28,7 @@ DistractorsHelper="*res://Test/DistractorsHelper.gd"
 Quests="*res://Quests/quests.gd"
 Save="*res://Save/save.gd"
 Money="*res://Money/Money.gd"
+ChangeMap="*res://Service/ChangeMap.gd"
 
 [display]
 

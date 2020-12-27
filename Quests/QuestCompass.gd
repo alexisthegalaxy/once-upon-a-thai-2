@@ -13,4 +13,6 @@ func _process(delta):
 func init_quest_compass(_goal_location):
 	if not _goal_location:
 		hide()
+	else:
+		show()
 	goal_location = _goal_location
