@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+const NUMBER_OF_CHARACTERS_TO_WRITE_EACH_DELTA = 2
+const MAX_NUMBER_OF_CHARACTERS_PER_LINE = 51  # we cut using this number when we have more than 2 lines being shown
 export var dialog = []
 var page = 0
 var caller
@@ -28,10 +30,10 @@ func process(_dialog_line: String) -> String:
 		
 	if this_line_doesnt_show_the_name:
 		$Control/NameLabel.hide()
-		$Control/NameTexture.hide()	
+		$Control/NameTexture.hide()
 	elif display_name:
 		$Control/NameLabel.show()
-		$Control/NameTexture.show()	
+		$Control/NameTexture.show()
 	
 	var processed_dialog = dialog_line.replace("[Name]", Game.player_name)
 	if processed_dialog[0] == "-":
@@ -112,39 +114,50 @@ func next_line():
 		reset_line()
 
 func _process(delta):
+	if Input.is_action_just_pressed("click"):
+		handle_interaction()
 	if Input.is_action_just_pressed("interact"):
-		get_tree().set_input_as_handled()
-		if $Control/RichTextLabel.get_visible_characters() > $Control/RichTextLabel.get_total_character_count():
-			if not current_line_has_question:
-				next_line()
-		elif can_skip:
-			$Control/RichTextLabel.set_visible_characters($Control/RichTextLabel.get_total_character_count())
-			line_has_finished_writing = true
-			if current_line_has_question:
-				reveal_answers()
+		handle_interaction()
 	if line_has_finished_writing:
 		time += delta
 		$Control/NextPage.modulate = Color(1, 1, 1, cos(time * 10) / 2 + 0.5)
 
-func handle_click():
-	if not current_line_has_question:
-		get_tree().set_input_as_handled()
-		next_line()
-
-func _input(_event) -> void:
-	if Input.is_action_just_pressed("click"):
-		handle_click()
+func handle_interaction():
+	get_tree().set_input_as_handled()
+	if $Control/RichTextLabel.get_visible_characters() > $Control/RichTextLabel.get_total_character_count():
+		if not current_line_has_question:
+			next_line()
+	elif can_skip:
+		$Control/RichTextLabel.set_visible_characters($Control/RichTextLabel.get_total_character_count())
+		line_has_finished_writing = true
+		if current_line_has_question:
+			reveal_answers()
 
 func _on_Timer_timeout():
 	var number_of_characters_before = $Control/RichTextLabel.get_visible_characters()
 	can_skip = number_of_characters_before > 3
-	$Control/RichTextLabel.set_visible_characters(number_of_characters_before + 2)
-	if number_of_characters_before + 2 >= len(dialog[page]):
+	
+	var number_of_characters_after = number_of_characters_before + NUMBER_OF_CHARACTERS_TO_WRITE_EACH_DELTA
+	$Control/RichTextLabel.set_visible_characters(number_of_characters_after)
+	if number_of_characters_after >= len(dialog[page]):
 		line_has_finished_writing = true
 		if current_line_has_question:
 			reveal_answers()
 		else:
 			$Control/NextPage.show()
+	# we must do it here because the content height is only updated here
+	handle_too_long_lines()
+
+func handle_too_long_lines():
+	if $Control/RichTextLabel.get_content_height() <= 43:
+		return
+	var beginning = dialog[page].left(MAX_NUMBER_OF_CHARACTERS_PER_LINE)
+	var rest = dialog[page].right(MAX_NUMBER_OF_CHARACTERS_PER_LINE)
+	if not beginning or not rest:
+		return
+	dialog[page] = beginning
+	dialog.insert(page + 1, rest)
+	reset_line()
 
 func will_reveal_answers_in_one_half_second():
 	var timer = Timer.new()
