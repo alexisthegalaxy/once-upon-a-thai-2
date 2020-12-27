@@ -97,10 +97,9 @@ func get_words_with_audio_and_about_that_many_characters(size, distractors_numbe
 	var words_with_audio = []
 	for word_id in Game.words:
 		var word = Game.words[word_id]
-		var has_audio = Directory.new().file_exists(SoundPlayer.get_audio_file_path_from_thai(word.th))
+		var has_audio = SoundPlayer.has_audio(word.th)
 		if has_audio:
 			words_with_audio.append(word)
-
 	var remaining_number_of_words_to_select = distractors_number
 	var selected_words = []
 	for closeness in [0, -1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6, -7, 7, -8, 8]:
@@ -108,11 +107,7 @@ func get_words_with_audio_and_about_that_many_characters(size, distractors_numbe
 			if len(selected_words) < distractors_number and new_distractor.th != original_to_avoid:
 				selected_words.append(new_distractor)
 		remaining_number_of_words_to_select = distractors_number - len(selected_words)
-		print('closeness', closeness, 'remaining_number_of_words_to_select', remaining_number_of_words_to_select)
 
-	print('selected_words (there should only be ', distractors_number, ')')
-	for selected_word in selected_words:
-		print('    ', selected_word.th)
 	return selected_words
 
 func select_words_with_that_amount_of_letters(words, size, number_of_words_to_select):

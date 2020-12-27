@@ -123,7 +123,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	set_sources_after_map_change()
 	update_main_ui_upon_map_change()
 	if "LexicalWorld" in to_map_name:
-		update_letters_to_look_for_if_necesssary(Game.to_map_name)
+		update_letters_to_look_for_if_necesssary(to_map_name)
 		for following_spell in Game.following_spells:
 			following_spell.over_word.hide()
 

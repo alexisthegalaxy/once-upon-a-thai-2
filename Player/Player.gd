@@ -4,15 +4,15 @@ const ACCELERATION = 1200
 const SPEED = 40
 const FRICTION = 1200
 const MAX_SPEED = 120
-const ROLL_SPEED = 180
+const MOUSE_SPEED = 100
 
 var velocity = Vector2.ZERO
 var roll_vector = Vector2.DOWN
 export var state = "stand"  # can be "stand" or "walk"
 export var direction = "down"
-var speed_when_forced = 75
+var speed_when_forced = 100
 var can_interact = true  # meaning the player is near a npc. false during a dialog.
-
+var goal_position  # when we use the mouse to control the player
 var time = 0
 
 var arrow = null  # the arrow that is sometimes shown to indicate direction to follow
@@ -61,8 +61,28 @@ func _physics_process(delta) -> void:
 		position = position + velocity * delta * speed_when_forced
 		if position.distance_to(is_forced_towards) < 3:
 			is_forced_towards = null
+			update_state('stand')
+	elif goal_position:
+		walks_towards(delta)
 	else:
 		move_state(delta)
+
+func stops_walking_towards():
+	goal_position = null
+	update_state('stand')
+
+func walks_towards(delta):
+	# This is used when we walk towards a place using the mouse
+#	position = position + velocity * delta * speed_when_forced
+	if position.distance_to(goal_position) < 1:
+		stops_walking_towards()
+		return
+	var position_before = position
+	velocity = self.move_and_slide(velocity)
+	if position_before.x == position.x or position_before.y == position.y:
+		velocity = (goal_position - position).normalized() * MOUSE_SPEED
+	if position_before == position:
+		stops_walking_towards()
 
 func _process(delta) -> void:
 	if Game.is_somber:
@@ -75,16 +95,43 @@ func _process(delta) -> void:
 		if not $Camera2D.position.x == 0:
 			$Camera2D.position.x = 0
 
+func handle_click(_event):
+	if Game.main_ui:
+		if Game.main_ui.main_ui_process_click(_event):
+			return
+	print('player handle input')
+	var click_position = get_global_mouse_position()
+	get_tree().set_input_as_handled()
+	if (
+		can_interact and
+		Game.current_focus and
+		is_instance_valid(Game.current_focus[0])
+		and click_position.distance_squared_to(Game.current_focus[0].position) < 200
+	):
+		player_interact()
+	else:
+		# we go there
+		goal_position = click_position
+		velocity = (goal_position - position).normalized() * MOUSE_SPEED
+		turn_towards_entity(goal_position)
+		update_state('walk')
+
+func player_interact():
+	var error = Game.current_focus[0].interact()
+	if not error:
+		Game.player.can_interact = false
+		Game.is_frozen = true
+		if Game.space_bar_to_interact:
+			Game.space_bar_to_interact.queue_free()
+			Game.space_bar_to_interact = null
+
 func _input(_event) -> void:
-	if Input.is_action_just_pressed("interact") and not Game.is_overworld_frozen() and can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]):
-		get_tree().set_input_as_handled()
-		var error = Game.current_focus[0].interact()
-		if not error:
-			Game.player.can_interact = false
-			Game.is_frozen = true
-			if Game.space_bar_to_interact:
-				Game.space_bar_to_interact.queue_free()
-				Game.space_bar_to_interact = null
+	if not Game.is_overworld_frozen():
+		if Input.is_action_just_pressed("click"):
+			handle_click(_event)
+		if Input.is_action_just_pressed("interact") and can_interact and Game.current_focus and is_instance_valid(Game.current_focus[0]):
+			get_tree().set_input_as_handled()
+			player_interact()
 	if Input.is_action_just_pressed("print_position"):
 		print("current position: (" + str(position.x) + ", " + str(position.y) + ")    " + Game.current_map_name)
 #		set_hp(Game.hp - 0.5)
@@ -144,6 +191,8 @@ func set_hp(hp) -> void:
 func forced_toward(target_position):
 	is_forced_towards = target_position
 	velocity = (target_position - position).normalized()
+	turn_towards_entity(target_position)
+	update_state('walk')
 	Game.is_frozen = true
 
 func save_game():

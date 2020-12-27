@@ -1,5 +1,6 @@
 extends CanvasLayer
 
+var hovered_buttons = []
 
 func _ready():
 	$Letters._init_main_ui_button("_see_letters")
@@ -10,15 +11,10 @@ func _ready():
 	$UseSpell._init_main_ui_button("_use_spell")
 	$MakeSpell._init_main_ui_button("_make_spell")
 	$Save._init_main_ui_button("_save_the_game")
-	
-	$Letters.connect("is_pressed", self, "on_button_pressed")
-	$Words.connect("is_pressed", self, "on_button_pressed")
-	$Sentences.connect("is_pressed", self, "on_button_pressed")
-	$GoLetterWorld.connect("is_pressed", self, "on_button_pressed")
-	$Quests.connect("is_pressed", self, "on_button_pressed")
-	$UseSpell.connect("is_pressed", self, "on_button_pressed")
-	$MakeSpell.connect("is_pressed", self, "on_button_pressed")
-	$Save.connect("is_pressed", self, "on_button_pressed")
+	for button in [$Letters, $Words, $Sentences, $GoLetterWorld, $Quests, $UseSpell, $MakeSpell, $Save]:
+		button.connect("is_pressed", self, "on_button_pressed")
+		button.connect("is_hovered", self, "on_button_hovered")
+		button.connect("is_not_hovered", self, "on_button_not_hovered")
 
 func update_main_ui():
 	update_main_ui_money_display()
@@ -85,6 +81,14 @@ func update_main_ui_quests_display():
 	else:
 		$Quests.hide()
 
+func main_ui_process_click(_event) -> bool:
+	var event_is_processed = false
+	if Input.is_action_just_pressed("click"):
+		print('ui handle input')
+		if hovered_buttons:
+			event_is_processed = true
+	return event_is_processed
+
 func update_quests_display():
 	var quest_button_text = $QuestsDisplay.update_quests_display()
 	if quest_button_text:
@@ -110,6 +114,14 @@ func on_button_pressed(type):
 		display_spell_crafting()
 	elif type == "_save_the_game":
 		Save.save_game()
+
+func on_button_hovered(type):
+	hovered_buttons.append(type)
+	print('hovered_buttons', hovered_buttons)
+
+func on_button_not_hovered(type):
+	hovered_buttons.erase(type)
+	print('hovered_buttons after not', hovered_buttons)
 
 func display_use_spell():
 	Game.select_follower_to_implant_screen = load("res://Lexical/Source/SelectFollowerToImplant.tscn").instance()

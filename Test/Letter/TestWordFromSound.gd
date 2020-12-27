@@ -50,7 +50,6 @@ func init(_letter_id, _over_letter):
 	number_of_choices = len(distractors) + 1
 	choices = DistractorsHelper.get_choices(distractors, letter.test.prompt)
 	hide_answers()
-#	print('choices', choices)
 	if number_of_choices >= 1:
 		$answer_1.show()
 		$answer_1.init(self, choices[0], choices[0] == letter.test.prompt)

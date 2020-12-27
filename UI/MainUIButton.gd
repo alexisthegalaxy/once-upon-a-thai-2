@@ -6,6 +6,8 @@ var moves_left = false
 var moves_right = false
 var type = ""
 signal is_pressed
+signal is_hovered
+signal is_not_hovered
 
 func _ready():
 	initial_x = position.x
@@ -44,10 +46,12 @@ func _process(delta):
 			moves_right = false
 
 func _on_Button_mouse_entered():
+	emit_signal("is_hovered", type)
 	moves_left = true
 	moves_right = false
 
 func _on_Button_mouse_exited():
+	emit_signal("is_not_hovered", type)
 	moves_right = true
 	moves_left = false
 

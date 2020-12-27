@@ -34,7 +34,6 @@ func init(_word_id, _over_word):
 	choices.shuffle()
 	
 	hide_answers()
-	print('choices', choices)
 	if number_of_choices >= 1:
 		$AudioAnswer1.init_sound_player(choices[0].th)
 		$AudioAnswer1.show()

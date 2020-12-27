@@ -126,6 +126,15 @@ func _process(delta):
 		time += delta
 		$Control/NextPage.modulate = Color(1, 1, 1, cos(time * 10) / 2 + 0.5)
 
+func handle_click():
+	if not current_line_has_question:
+		get_tree().set_input_as_handled()
+		next_line()
+
+func _input(_event) -> void:
+	if Input.is_action_just_pressed("click"):
+		handle_click()
+
 func _on_Timer_timeout():
 	var number_of_characters_before = $Control/RichTextLabel.get_visible_characters()
 	can_skip = number_of_characters_before > 3

@@ -55,6 +55,10 @@ func start_music_upon_entering_map(map_name):
 	if map_name in music_from_map:
 		crossfade_to(music_from_map[map_name])
 
+func has_audio(thai):
+	var file_path = get_audio_file_path_from_thai(thai) + ".import"
+	return Directory.new().file_exists(file_path)
+
 func get_audio_file_path_from_thai(thai):
 	return "res://Sounds/Thai/" + thai + ".wav"
 

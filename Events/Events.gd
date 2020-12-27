@@ -1,6 +1,6 @@
 extends Node
 
-var initial_state = true
+var initial_state = false
 var state_2 = initial_state
 var events = {
 	"has_had_a_quest": state_2,
