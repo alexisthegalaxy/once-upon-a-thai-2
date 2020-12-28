@@ -5,12 +5,12 @@
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://UI/pressFtoExit.tscn" type="PackedScene" id=4]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 19
 extra_spacing_top = -3
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 font_data = ExtResource( 3 )
 
 [node name="SpellCrafting" type="CanvasLayer"]
@@ -37,14 +37,14 @@ margin_left = -160.0
 margin_right = 159.0
 
 [node name="Keyboard" parent="." instance=ExtResource( 2 )]
-position = Vector2( -15.8162, 14.3835 )
+position = Vector2( 2.2796, 28.9076 )
 
 [node name="TextEdit" type="TextEdit" parent="."]
 margin_left = 7.0
 margin_top = 136.0
 margin_right = 211.0
 margin_bottom = 170.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 readonly = true
 selecting_enabled = false
 __meta__ = {
@@ -56,7 +56,7 @@ margin_left = 217.804
 margin_top = 137.626
 margin_right = 312.804
 margin_bottom = 168.626
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 text = "_create_spell"
 __meta__ = {
 "_edit_use_anchors_": false

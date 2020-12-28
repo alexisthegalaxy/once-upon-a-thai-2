@@ -84,13 +84,10 @@ func _process(delta):
 		set_alpha()
 
 func answered_correctly():
-#	Game.active_test = null
-	SoundPlayer.play_thai(word.th)
-	Game.player.can_interact = true
-	Game.is_frozen = false
-	Game.learn_word(word.id)
-	Game.add_following_spell(word.id, over_word)
-	Game.dialog_press_f_to_see_it('word')
+	# This is the first test of the encounter
+	# When it ends, we got to the second test: "res://Test/TestGuessMeaning.tscn"
+	SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
+	Game.start_test("res://Test/Word/TestWordCopyTyping.tscn", word.id, over_word)
 	queue_free()
 	Game.should_start_test_when_back_from_MP = [null, null]
 	

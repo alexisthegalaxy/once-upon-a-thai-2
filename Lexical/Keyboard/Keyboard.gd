@@ -169,10 +169,8 @@ func _input(_event):
 		$"BackSpace"._on_Button_pressed()
 	elif _event.is_action_pressed("kb_shift"):
 		shift_down()
-		print('shift down')
 	elif _event.is_action_released("kb_shift"):
 		shift_up()
-		print('shift up')
 
 func shift_down():
 	shift = true

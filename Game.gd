@@ -127,18 +127,6 @@ func update_following_spells_time_to_live():
 	for following_spell in following_spells:
 		following_spell.time_to_live = following_spell.over_word.time_to_live
 
-func dialog_press_f_to_see_it(learnt_item):
-	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-	var lines = []
-	if learnt_item == "sentence":
-		lines = [tr("_press_f_to_open_your_notebook_and_see_your_sentences")]
-	if learnt_item == "letter":
-		lines = [tr("_press_f_to_open_your_alphabet_and_see_your_letters")]
-	if learnt_item == "word":
-		lines = [tr("_press_f_to_open_your_dictionary_and_see_that_word")]
-	Game.current_dialog.init_dialog(lines, null, null, null, null)
-	current_scene.add_child(Game.current_dialog)
-
 func a_word_is_learnt():
 	pass
 	# Whenever a word is learnt, we run this function
@@ -315,7 +303,7 @@ func _ready():
 		if not "fr" in letters[letter_id]:
 			letters[letter_id].fr = letters[letter_id].en
 	# The following code is only used when the main scene is not the main menu,
-	# because in the main menu.ready() code we queue_free the main_ui.
+	# because in the MainMenu.ready() code we queue_free the main_ui.
 	if current_map_name == "res://Maps/Chaiyaphum.tscn":
 		main_ui = load("res://UI/MainUI.tscn").instance()
 		self.add_child(main_ui)

@@ -51,8 +51,8 @@ _a_wild_spell_attacks,A wild Spell attacks!,Un mot sauvage attaque !
 _you_dont_know_letters_go_to_letter_world,You don't know all the letters in that word. Go to the Letter World to learn them.,Tu ne connais pas toutes les lettres de ce mot. Va dans le monde des lettres pour les apprendre.
 _you_dont_know_any_sentence_containing_that_word,You don't know any sentence containing that word,Tu ne connais aucune phrase contenant ce mot.
 _ok,OK,OK
-_press_f_to_open_your_alphabet_and_see_your_letters,Click on the letter button on the side of your screen to open your alphabet and see your letters.,Clique sur le bouton sur la droite de l'écran si tu veux voir toutes les lettres que tu connais.
-_press_f_to_open_your_notebook_and_see_your_sentences,Click on the sentence button on the side of your screen to open your notebook and see your sentences.,Clique sur le bouton sur la droite de l'écran si tu veux voir les phrases que tu as vues.
+_you_know_the_letter_now,You know the letter %s now!,Tu connais la letter %s maintenant !
+_hint,Hint,Indice
 _go_to_the_letter_world_to_learn,Go to the letter world to learn:,Va dans le monde des lettres pour apprendre :
 _this_is_a_shrine,This is a shrine to Buddha. It is very clean!,C'est un autel à Buddha. Il est très propre !
 _this_road_leads_to_chaiyaphum,This road leads to Chaiyaphum City. [sound:ชัยภูมิ],Cette route mène à la ville de Chaiyaphum. [sound:ชัยภูมิ]
@@ -135,7 +135,7 @@ _accents,Accents,Accents
 _high_class_consonants,High Class Consonants,Consonnes de haute classe
 _mid_class_consonants,Mid Class Consonants,Consonnes de moyenne classe
 _low_class_consonants,Low Class Consonants,Consonnes de basse classe
-_you_found_letter_s_you_put_it_in_bag_come_in_handy_later,"You've found the letter %s. You keep it with you, it might come in handy later!","Tu as trouvé la lettre %s. Tu la gardes avec toi, ça pourrait être utile plus tard !"
+_you_found_letter_s_you_put_it_in_bag_come_in_handy_later,You've found the letter %s! You keep it with you. It can be used to create Spells!,Tu as trouvé la lettre %s. Tu la gardes avec toi. On peut s'en servir pour invoquer des Mots !
 _i_came_here_to_get_help_from_the_shamans,I came here to get some help from the shamans.,Je suis venue ici pour chercher l'aide des chamans.
 _hey_name_long_time_no_see_heres_a_sentence_for_you,"Hey [Name], long time no see! Here's a sentence for you to learn:","Salut [Name], ça faisait longtemps ! Tiens, voilà une phrase pour toi :"
 _you_want_to_learn_a_sentence_how_about,"So, you want to learn a Sentence? How about :","Alors, tu veux apprendre une phrase ? Qu'est-ce que tu dis de celle-là :"
@@ -194,3 +194,7 @@ _create_spell,Create Spell,Créer le Mot
 _select_spell_to_cast,Select the Spell you want to cast,Choisis le Mot magique que tu veux utiliser
 _how_do_you_read_this,How do you read this?,Comment lit-on ce mot ?
 _load_saved_game,Load saved game,Continuer depuis la sauvegarde
+_back,Back,Retour
+_how_do_you_write_this_in_thai,How do you write this in Thai:,Comment écris-tu ce mot en Thaï :
+_you_have_befriended_that_spell,You have befriended the Spell %s. It follows you now!,Le mot %s est devenu ton ami. Il te suit maintenant !
+_click_on_the_right_side_to_see_all_your_letters,Click on the button on the right side to see all the letters you know.,Clique sur le bouton sur la droite de l'écran pour voir les lettres que tu connais.

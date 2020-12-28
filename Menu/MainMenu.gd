@@ -23,6 +23,8 @@ func _ready():
 	if Game.main_ui:
 		Game.main_ui.queue_free()
 		Game.main_ui = null
+	if OS.get_name() == "HTML5":
+		$CanvasLayer/LoadGame.hide()
 
 func retranslate_main_menu_strings():
 	ENG_START_STORY = tr("_start_story")

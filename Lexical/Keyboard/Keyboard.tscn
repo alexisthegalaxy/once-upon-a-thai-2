@@ -9,148 +9,147 @@
 script = ExtResource( 2 )
 
 [node name="ๅ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 16, 16 )
 
 [node name="2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 40, 16 )
+position = Vector2( 24, 0 )
 
 [node name="3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 64, 16 )
+position = Vector2( 48, 0 )
 
 [node name="ภ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 88, 16 )
+position = Vector2( 72, 0 )
 
 [node name="ถ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 112, 16 )
+position = Vector2( 96, 0 )
 
 [node name="-ุ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 136, 16 )
+position = Vector2( 120, 0 )
 
 [node name="-ึ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 160, 16 )
+position = Vector2( 144, 0 )
 
 [node name="ค" parent="." instance=ExtResource( 1 )]
-position = Vector2( 184, 16 )
+position = Vector2( 168, 0 )
 
 [node name="ต" parent="." instance=ExtResource( 1 )]
-position = Vector2( 208, 16 )
+position = Vector2( 192, 0 )
 
 [node name="จ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 232, 16 )
+position = Vector2( 216, 0 )
 
 [node name="ข" parent="." instance=ExtResource( 1 )]
-position = Vector2( 256, 16 )
+position = Vector2( 240, 0 )
 
 [node name="ช" parent="." instance=ExtResource( 1 )]
-position = Vector2( 280, 16 )
+position = Vector2( 264, 0 )
 
 [node name="ๆ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 32, 40 )
+position = Vector2( 16, 24 )
 
 [node name="ไ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 56, 40 )
+position = Vector2( 40, 24 )
 
 [node name="-ำ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 80, 40 )
+position = Vector2( 64, 24 )
 
 [node name="พ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 104, 40 )
+position = Vector2( 88, 24 )
 
 [node name="ะ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 128, 40 )
+position = Vector2( 112, 24 )
 
 [node name="-ั" parent="." instance=ExtResource( 1 )]
-position = Vector2( 152, 40 )
+position = Vector2( 136, 24 )
 
 [node name="-ี" parent="." instance=ExtResource( 1 )]
-position = Vector2( 176, 40 )
+position = Vector2( 160, 24 )
 
 [node name="ร" parent="." instance=ExtResource( 1 )]
-position = Vector2( 200, 40 )
+position = Vector2( 184, 24 )
 
 [node name="น" parent="." instance=ExtResource( 1 )]
-position = Vector2( 224, 40 )
+position = Vector2( 208, 24 )
 
 [node name="ย" parent="." instance=ExtResource( 1 )]
-position = Vector2( 248, 40 )
+position = Vector2( 232, 24 )
 
 [node name="บ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 272, 40 )
+position = Vector2( 256, 24 )
 
 [node name="ล" parent="." instance=ExtResource( 1 )]
-position = Vector2( 296, 40 )
+position = Vector2( 280, 24 )
 
 [node name="ฟ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 40.1818, 64 )
+position = Vector2( 24.1818, 48 )
 
 [node name="ห" parent="." instance=ExtResource( 1 )]
-position = Vector2( 64, 64 )
+position = Vector2( 48, 48 )
 
 [node name="ก" parent="." instance=ExtResource( 1 )]
-position = Vector2( 88, 64 )
+position = Vector2( 72, 48 )
 
 [node name="ด" parent="." instance=ExtResource( 1 )]
-position = Vector2( 112, 64 )
+position = Vector2( 96, 48 )
 
 [node name="เ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 136, 64 )
+position = Vector2( 120, 48 )
 
 [node name="-้" parent="." instance=ExtResource( 1 )]
-position = Vector2( 160, 64 )
+position = Vector2( 144, 48 )
 
 [node name="-่" parent="." instance=ExtResource( 1 )]
-position = Vector2( 184, 64 )
+position = Vector2( 168, 48 )
 
 [node name="า" parent="." instance=ExtResource( 1 )]
-position = Vector2( 208, 64 )
+position = Vector2( 192, 48 )
 
 [node name="ส" parent="." instance=ExtResource( 1 )]
-position = Vector2( 232, 64 )
+position = Vector2( 216, 48 )
 
 [node name="ว" parent="." instance=ExtResource( 1 )]
-position = Vector2( 256, 64 )
+position = Vector2( 240, 48 )
 
 [node name="ง" parent="." instance=ExtResource( 1 )]
-position = Vector2( 280, 64 )
+position = Vector2( 264, 48 )
 
 [node name="ฃ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 304, 64 )
+position = Vector2( 288, 48 )
 
 [node name="ผ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 56, 88 )
+position = Vector2( 40, 72 )
 
 [node name="ป" parent="." instance=ExtResource( 1 )]
-position = Vector2( 80, 88 )
+position = Vector2( 64, 72 )
 
 [node name="แ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 104, 88 )
+position = Vector2( 88, 72 )
 
 [node name="อ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 128, 88 )
+position = Vector2( 112, 72 )
 
 [node name="-ิ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 152, 88 )
+position = Vector2( 136, 72 )
 
 [node name="-ื" parent="." instance=ExtResource( 1 )]
-position = Vector2( 176, 88 )
+position = Vector2( 160, 72 )
 
 [node name="ท" parent="." instance=ExtResource( 1 )]
-position = Vector2( 200, 88 )
+position = Vector2( 184, 72 )
 
 [node name="ม" parent="." instance=ExtResource( 1 )]
-position = Vector2( 224, 88 )
+position = Vector2( 208, 72 )
 
 [node name="ใ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 248, 88 )
+position = Vector2( 232, 72 )
 
 [node name="ฝ" parent="." instance=ExtResource( 1 )]
-position = Vector2( 272, 88 )
+position = Vector2( 256, 72 )
 
 [node name="Lshift" parent="." instance=ExtResource( 3 )]
-position = Vector2( 21.4547, 88 )
+position = Vector2( 5.4547, 72 )
 
 [node name="Rshift" parent="." instance=ExtResource( 3 )]
-position = Vector2( 296, 88 )
+position = Vector2( 280, 72 )
 
 [node name="BackSpace" parent="." instance=ExtResource( 4 )]
-position = Vector2( 304, 16 )
+position = Vector2( 288, 0 )

@@ -29,9 +29,10 @@ func _on_Button_pressed():
 	queue_free()
 	if has_learnt_the_sentence or has_seen_the_sentence:
 		var dialog_text = [
-			"_names_writes_sentence_in_notebook", 
-			"_press_f_to_see_all_sentences"
+			"_names_writes_sentence_in_notebook",
 		]
+		if len(Game.seen_sentences) + len(Game.known_sentences) <= 1:
+			dialog_text.append("_press_f_to_see_all_sentences")
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 		Game.current_dialog.init_dialog(dialog_text, self, null, false, null)
 		Game.player.stop_walking()

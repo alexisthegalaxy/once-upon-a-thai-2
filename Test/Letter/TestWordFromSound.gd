@@ -90,8 +90,14 @@ func answered_correctly():
 #	Game.player.can_interact = true
 	Game.learn_letter(letter)
 	over_letter.starts_disappearing()
-	Game.dialog_press_f_to_see_it('letter')
+	
+	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+	var lines = [tr("_you_know_the_letter_now") % letter.th]
+	if len(Game.known_letters) == 1:
+		lines.append(tr("_click_on_the_right_side_to_see_all_your_letters"))
+	Game.current_dialog.init_dialog(lines, null, null, null, null)
+	Game.current_scene.add_child(Game.current_dialog)
+	
 	if Game.looking_for_letter__node:
 		Game.looking_for_letter__node.get_node("Node2D").show()
 	queue_free()
-
