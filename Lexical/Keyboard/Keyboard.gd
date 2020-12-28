@@ -5,6 +5,7 @@ extends Node2D
 var s = ""
 var shift
 signal text_change
+signal enter_pressed
 var restrict_to_collected_letters
 
 func init_keyboard(_restrict_to_collected_letters):
@@ -171,6 +172,8 @@ func _input(_event):
 		shift_down()
 	elif _event.is_action_released("kb_shift"):
 		shift_up()
+	elif _event.is_action_released("kb_enter"):
+		emit_signal("enter_pressed")
 
 func shift_down():
 	shift = true

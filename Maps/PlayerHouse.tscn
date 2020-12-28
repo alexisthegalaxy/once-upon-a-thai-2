@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Light/light.png" type="Texture" id=2]
 [ext_resource path="res://Npcs/Npc.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/RoomBackground.png" type="Texture" id=4]
 [ext_resource path="res://Maps/PlayerHouse.gd" type="Script" id=5]
-[ext_resource path="res://World/IndoorBuddhaShrine.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Source.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
@@ -40,17 +39,7 @@ shape = SubResource( 1 )
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 24, -138.129 )
-
-[node name="Nim" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( 87.8695, -117.418 )
-dialog = [ "_oh_name_you_woke_up", "_today_is_your_big_day", "_granny_is_waiting_outside", "_be_brave_okay" ]
-sprite_path = "res://Npcs/sprites/nim.png"
-display_name = "Nim"
-post_dialog_event = [ "nim_walks_to", [ [ Vector2( 70, -139 ), Vector2( 72, -137 ) ] ] ]
-
-[node name="House" parent="YSort" instance=ExtResource( 6 )]
-position = Vector2( 354.456, 33.4836 )
+position = Vector2( 97.677, 56.861 )
 
 [node name="Sources" type="YSort" parent="YSort"]
 
@@ -60,6 +49,27 @@ type = "IndoorBuddhaShrine"
 word_ids = [  ]
 max_number_of_words = 1
 wait_time = 5
+
+[node name="NPCs" type="YSort" parent="YSort"]
+
+[node name="Nim" parent="YSort/NPCs" instance=ExtResource( 3 )]
+position = Vector2( 87.8695, -117.418 )
+dialog = [ "_oh_name_you_woke_up", "_today_is_your_big_day", "_granny_is_waiting_outside", "_be_brave_okay" ]
+sprite_path = "res://Npcs/sprites/nim.png"
+display_name = "Nim"
+post_dialog_event = [ "nim_walks_to", [ [ Vector2( 70, -139 ), Vector2( 72, -137 ) ] ] ]
+
+[node name="Dad" parent="YSort/NPCs" instance=ExtResource( 3 )]
+position = Vector2( -23.5987, 57.5648 )
+dialog = [ "_be_strong_name" ]
+sprite_path = "res://Npcs/sprites/dad.png"
+display_name = "_dad"
+
+[node name="Mom" parent="YSort/NPCs" instance=ExtResource( 3 )]
+position = Vector2( 31.659, 69.3151 )
+dialog = [ "_you_ll_be_brave_alright", "_granny_is_best_nothing_to_fear", "_dont_forget_i_love_you" ]
+sprite_path = "res://Npcs/sprites/mom.png"
+display_name = "_mom"
 
 [node name="Lights" type="Node" parent="."]
 

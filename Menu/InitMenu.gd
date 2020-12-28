@@ -27,6 +27,9 @@ func on_selected_character():
 	$Character_E.set_selected(false)
 
 func _on_Button_pressed():
+	if Game.can_read_thai:
+		for letter_id in Game.letters:
+			Game.known_letters.append(int(letter_id))
 	ChangeMap.call_deferred("_deferred_goto_scene", "res://Maps/PlayerHouse.tscn", 24, -143, 0)
 
 #func _on_TextEdit_text_changed():

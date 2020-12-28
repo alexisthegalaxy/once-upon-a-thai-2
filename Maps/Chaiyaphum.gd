@@ -60,19 +60,21 @@ func _process(delta):
 	if is_blackening:
 		alpha += delta
 		$CanvasLayer/BlackFadeOut.modulate = Color(1, 1, 1, alpha)
-
+#
 func _on_Area2D5_body_entered(body):
 	# Blocker 1
-	if body == Game.player:
-		if not Events.events.talked_to_yaai_for_the_first_time:
-			Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-			var dialog = [
-				tr("_i_should_talk_to_my_grandmother_first")
-			]
-			Game.current_dialog.init_dialog(dialog, self, null, false, null)
-			Game.player.stop_walking()
-			Game.current_scene.add_child(Game.current_dialog)
-			Game.player.forced_toward(Vector2(553, 442))
+	if not body == Game.player:
+		return
+#	if not Events.events.talked_to_yaai_for_the_first_time:
+	if not Events.events.has_learnt_four_first_words:
+		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+		var dialog = [
+			tr("_i_shouldnt_go_there_now")
+		]
+		Game.current_dialog.init_dialog(dialog, self, null, false, null)
+		Game.player.stop_walking()
+		Game.current_scene.add_child(Game.current_dialog)
+		Game.player.forced_toward(Vector2(553, 442))
 
 func _on_Area2D_body_entered(body):
 	# Blocker 2
@@ -88,26 +90,19 @@ func _on_Area2D_body_entered(body):
 			Game.player.forced_toward(Vector2(541, 240))
 
 func _on_Area2D2_body_entered(body):
+	# Yaai is waiting for us at the forest entrance
 	# Yaai goes to center of forest when we get in
 	if body == Game.player:
 		if not Events.events["yaai_went_to_forest_entrance"]:
 			Events.events["yaai_went_to_forest_entrance"] = true
 			$YSort/NPCs/Yaai.will_go_to = [
-				Vector2(424.345886, 258.342377),
-				Vector2(386.262726, 289.715057),
-				Vector2(329.735779, 262.521484),
-				Vector2(276.05658, 267.983002),
-				Vector2(230.951202, 318.291962),
-				Vector2(151.844299, 356.405609),
-				Vector2(82.644707, 418.610535),
-				Vector2(96.330925, 486.941467),
-				Vector2(162.271317, 516.195312),
-				Vector2(275.153534, 523.72229)
+				Vector2(235.153534, 523.72229),
+				Vector2(245.153534, 523.72229),
 			]
 			$YSort/NPCs/Yaai.starts_going_toward($YSort/NPCs/Yaai.will_go_to[0])
 
 func _on_Area2D4_body_entered(body):
-	# Yaai goes to center of forest when we get in
+	# When we enter by the tree, Yaai starts the ceremony
 	if body == Game.player:
 		if not Events.events["ceremony_started"]:
 			Events.events["ceremony_started"] = true
