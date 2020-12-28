@@ -1,7 +1,7 @@
 extends Area2D
 
-export(Color) var color
+export(String) var location_name
 
 func _on_Teleport_body_entered(_body):
 	if _body.get_name() == "Player":
-		Game._on_changelight_entered(color)
+		Game.changename(location_name)

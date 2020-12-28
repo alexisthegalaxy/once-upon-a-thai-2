@@ -25,7 +25,8 @@ func free_all_non_necessary_nodes():
 			"Save",
 			"Quests",
 			"Money",
-			"ChangeMap"
+			"ChangeMap",
+			"ShowLocationName"
 		]:
 			child.queue_free()
 

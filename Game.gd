@@ -34,6 +34,7 @@ var sources = {
 }
 
 var current_dialog = null
+var current_location_name = ""
 
 var change_color = false
 var last_goal_color = Color(1, 1, 1, 1)
@@ -452,3 +453,11 @@ func exits_somber_mood():
 	is_somber = false
 	SoundPlayer.start_music_upon_entering_map(current_map_name)
 	rain.queue_free()
+
+func changename(location_name):
+	if location_name and Game.current_location_name != location_name:
+		current_location_name = location_name
+		show_location_name()
+
+func show_location_name():
+	self.add_child(load("res://UI/ShowLocationName.tscn").instance())

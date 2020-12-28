@@ -70,5 +70,7 @@ script = ExtResource( 14 )
 
 [node name="Go outside" parent="." instance=ExtResource( 18 )]
 position = Vector2( 24, 112 )
-to_position = Vector2( 992, 80 )
+to_position = Vector2( 1089, 75 )
 to_map_name = "res://Maps/Chaiyaphum.tscn"
+name_for_location = "_chaiyaphum_city"
+sound_name = "door"
