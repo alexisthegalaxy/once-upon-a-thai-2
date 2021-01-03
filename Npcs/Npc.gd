@@ -7,9 +7,11 @@ export var wanders = 0  # the range of wandering from the initial direction
 export var state = "stand"  # can be "stand" or "walk"
 export var display_name = ""  # Is shown in dialogs. For example: "Nim".
 export var interact_when_near = false
+var temporarily_interact_when_near = false  # used when pokewalking
 export(Array, String) var start_quests = []  # ["find_sentences_in_chaiyaphum", "first_quest"]
 export(Array, String) var finish_quests = []  # ["find_sentences_in_chaiyaphum", "first_quest"]
 export(String) var interaction_sentence_id = ""
+var want_to_check_if_can_move_towards_position = false
 
 var is_talking = false
 var initial_position  # used for wandering npcs
@@ -17,6 +19,9 @@ var speed = 100  # 65
 var velocity = Vector2.ZERO
 var is_walking_towards = null
 var will_go_to = []  # array of vector2 positions
+
+var will_pokecome = false
+
 # events are an array that contains first the event name, then the array of parameters
 export(Array) var pre_dialog_event = []
 export(Array) var post_dialog_event = []
@@ -53,7 +58,11 @@ func update_npc_overhead():
 			has_done_this_interaction = int(interaction_sentence_id.replace("S", "")) in Game.known_sentences
 		elif "I" in interaction_sentence_id:
 			return  # TODO: we don't store done interactions yet!
-		if not has_done_this_interaction:
+		if has_done_this_interaction:
+			will_pokecome = false
+			temporarily_interact_when_near = false
+		else:
+			will_pokecome = true
 			$OverheadNode2D.visible = true
 			$OverheadNode2D/OverheadLabel.hide()
 			$OverheadNode2D/blue_smile.visible = true
@@ -205,7 +214,7 @@ func handle_talk_with_this_npc_quest():
 			Quests.update_quests_display()
 			
 func interact():
-	if is_walking_towards and not interact_when_near:
+	if is_walking_towards and not (interact_when_near or temporarily_interact_when_near):
 		return "error"
 	is_talking = true
 	state = "stand"
@@ -274,6 +283,11 @@ func _on_InteractBox_body_entered(body):
 	if interact_when_near:
 		interact()
 		return
+	if temporarily_interact_when_near:
+		interact()
+		temporarily_interact_when_near = false
+		stop_walking()
+		return
 	if is_walking_towards:
 		return
 	Game.gains_focus(self)
@@ -281,3 +295,58 @@ func _on_InteractBox_body_entered(body):
 func _on_InteractBox_body_exited(body):
 	if body == Game.player:
 		Game.lose_focus(self)
+
+func _on_Down_body_entered(body):
+	if not body == Game.player:
+		return
+	if not will_pokecome:
+		return
+	if not direction == "down":
+		return
+	raycast_to_player()
+
+func _on_Up_body_entered(body):
+	if not body == Game.player:
+		return
+	if not will_pokecome:
+		return
+	if not direction == "up":
+		return
+	raycast_to_player()
+
+func _on_Right_body_entered(body):
+	if not body == Game.player:
+		return
+	if not will_pokecome:
+		return
+	if not direction == "right":
+		return
+	raycast_to_player()
+
+func _on_Left_body_exited(body):
+	if not body == Game.player:
+		return
+	if not will_pokecome:
+		return
+	if not direction == "left":
+		return
+	raycast_to_player()
+
+func _physics_process(delta):
+	if want_to_check_if_can_move_towards_position:
+		var space_state = get_world_2d().direct_space_state
+		var result = space_state.intersect_ray(global_position, want_to_check_if_can_move_towards_position, [self], collision_mask)
+		want_to_check_if_can_move_towards_position = null
+		if result:
+			print("I can't walk to player. Hit at point: ", result.position)
+		else:
+			if will_pokecome:
+				pokecome()
+
+func pokecome():
+	Game.is_frozen = true
+	temporarily_interact_when_near = true
+	starts_going_toward(Game.player.global_position)
+
+func raycast_to_player():
+	want_to_check_if_can_move_towards_position = Game.player.global_position
