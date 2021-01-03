@@ -50,6 +50,8 @@ func process(_dialog_line: String) -> String:
 	return processed_dialog
 
 func reset_line():
+	if not dialog:
+		return
 	current_line_has_question = "@Q" in dialog[page]
 	if current_line_has_question:
 		options = dialog[page].split("@Q")[1].split("/")
@@ -134,6 +136,9 @@ func handle_interaction():
 			reveal_answers()
 
 func _on_Timer_timeout():
+	if not dialog:
+		dialog_ends()
+		return
 	var number_of_characters_before = $Control/RichTextLabel.get_visible_characters()
 	can_skip = number_of_characters_before > 3
 	

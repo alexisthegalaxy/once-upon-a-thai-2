@@ -205,8 +205,8 @@
   },
   "23": {
     "split": "ผม",
-    "en": "I (male)",
-    "fr": "je (masculin)",
+    "en": "I (male) / hair",
+    "fr": "je (masculin) / cheveu",
     "tones": "R",
     "pos": "PRON",
     "th": "ผม",
@@ -643,7 +643,7 @@
     "teaching_order": -1
   },
   "72": {
-    "split": "เส-มอ",
+    "split": "เสมอ",
     "en": "always",
     "fr": "toujours",
     "tones": "LR",
@@ -960,7 +960,7 @@
     "teaching_order": -1
   },
   "107": {
-    "split": "สี-ฟ้า",
+    "split": "สี_ฟ้า",
     "en": "blue",
     "fr": "bleu",
     "tones": "RH",
@@ -1032,7 +1032,7 @@
     "teaching_order": -1
   },
   "115": {
-    "split": "ใจ-เย็น",
+    "split": "ใจ_เย็น",
     "en": "calm, cool-headed",
     "fr": "calme, imperturbable",
     "tones": "MM",
@@ -1041,7 +1041,7 @@
     "teaching_order": -1
   },
   "116": {
-    "split": "ใจ-ร้อน",
+    "split": "ใจ_ร้อน",
     "en": "hot-tempered",
     "fr": "colérique",
     "tones": "MH",
@@ -1200,7 +1200,7 @@
     "tones": "M",
     "pos": "",
     "th": "เทา",
-    "teaching_order": -1,
+    "teaching_order": -1
   },
   "134": {
     "split": "หมา",
@@ -1460,7 +1460,8 @@
   },
   "163": {
     "split": "ไม้",
-    "en": "tree",
+    "en": "tree / wooden",
+    "fr": "arbre / en bois",
     "tones": "H",
     "pos": "NOUN",
     "th": "ไม้",
@@ -1700,12 +1701,12 @@
     "teaching_order": -1
   },
   "190": {
-    "split": "ผม",
-    "en": "hair",
-    "fr": "les cheveux",
-    "tones": "R",
+    "split": "ปลา_โล-มา",
+    "en": "dolphin",
+    "fr": "dauphin",
+    "tones": "MMM",
     "pos": "NOUN",
-    "th": "ผม",
+    "th": "ปลาโลมา",
     "teaching_order": -1
   },
   "191": {
@@ -2218,8 +2219,9 @@
     "teaching_order": -1
   },
   "248": {
-    "split": "ใต้-ดิน",
+    "split": "ใต้_ดิน",
     "en": "underground",
+    "fr": "souterrain",
     "tones": "FM",
     "pos": "NOUN",
     "th": "ใต้ดิน",
@@ -2307,7 +2309,7 @@
     "teaching_order": -1
   },
   "259": {
-    "split": "ไฟ-ฟ้า",
+    "split": "ไฟ_ฟ้า",
     "en": "electricity",
     "tones": "MH",
     "pos": "NOUN",
@@ -2315,7 +2317,7 @@
     "teaching_order": -1
   },
   "260": {
-    "split": "ใจ-ดี",
+    "split": "ใจ_ดี",
     "en": "kind",
     "tones": "MM",
     "pos": "ADJ",
@@ -2365,15 +2367,16 @@
     "teaching_order": -1
   },
   "266": {
-    "split": "ต้น-ไม้",
+    "split": "ต้น_ไม้",
     "en": "tree",
+    "fr": "arbre",
     "tones": "FH",
     "pos": "NOUN",
     "th": "ต้นไม้",
     "teaching_order": -1
   },
   "267": {
-    "split": "ดอก-ไม้",
+    "split": "ดอก_ไม้",
     "en": "flower",
     "tones": "LH",
     "pos": "NOUN",
@@ -2381,7 +2384,7 @@
     "teaching_order": -1
   },
   "268": {
-    "split": "ผล-ไม้",
+    "split": "ผล_ไม้",
     "en": "fruit",
     "tones": "RHH",
     "pos": "NOUN",
@@ -2529,7 +2532,7 @@
     "teaching_order": -1
   },
   "286": {
-    "split": "คิด-ถึง",
+    "split": "คิด_ถึง",
     "en": "to miss, think about",
     "tones": "HR",
     "pos": "VERB",
@@ -2537,7 +2540,7 @@
     "teaching_order": -1
   },
   "287": {
-    "split": "คิด-มาก",
+    "split": "คิด_มาก",
     "en": "to think too much, worry",
     "tones": "HF",
     "pos": "VERB",
@@ -2781,7 +2784,7 @@
     "teaching_order": -1
   },
   "316": {
-    "split": "รถ-ไฟ-ฟ้า",
+    "split": "รถ_ไฟ_ฟ้า",
     "en": "skytrain",
     "fr": "métro aérien",
     "tones": "HMH",
@@ -2934,7 +2937,7 @@
     "teaching_order": -1
   },
   "333": {
-    "split": "รถ-ไฟ-ใต้-ดิน",
+    "split": "รถ_ไฟ_ใต้_ดิน",
     "en": "subway, underground train",
     "fr": "métro, train souterrain",
     "tones": "HMFM",
@@ -3076,7 +3079,7 @@
     "teaching_order": 66
   },
   "349": {
-    "split": "ดี-ใจ",
+    "split": "ดี_ใจ",
     "en": "glad",
     "tones": "MM",
     "pos": "ADJ",
@@ -3588,6 +3591,267 @@
     "tones": "L",
     "pos": "",
     "th": "ไข่",
+    "teaching_order": -1
+  },
+  "407": {
+    "split": "กระ-สือ",
+    "en": "filth-eating spirit",
+    "fr": "fantôme mangeur de saleté",
+    "tones": "LR",
+    "pos": "",
+    "th": "กระสือ",
+    "teaching_order": -1
+  },
+  "408": {
+    "split": "สัน-ส-กฤต",
+    "en": "Sanskrit",
+    "fr": "Sanscrit",
+    "tones": "RLL",
+    "pos": "",
+    "th": "สันสกฤต",
+    "teaching_order": -1
+  },
+  "409": {
+    "split": "ต่าง",
+    "en": "to be different",
+    "fr": "être différent",
+    "tones": "L",
+    "pos": "",
+    "th": "ต่าง",
+    "teaching_order": -1
+  },
+  "410": {
+    "split": "ต่าง",
+    "en": "to be different",
+    "fr": "être différent",
+    "tones": "L",
+    "pos": "",
+    "th": "ต่าง",
+    "teaching_order": -1
+  },
+  "411": {
+    "split": "ชาว",
+    "en": "a person who",
+    "fr": "une personne qui",
+    "tones": "M",
+    "pos": "",
+    "th": "ชาว",
+    "teaching_order": -1
+  },
+  "412": {
+    "split": "ประ-มง",
+    "en": "fishery, fishing",
+    "fr": "la pêche",
+    "tones": "LM",
+    "pos": "",
+    "th": "ประมง",
+    "teaching_order": -1
+  },
+  "413": {
+    "split": "ต้ม",
+    "en": "to be boiled / to trick someone",
+    "fr": "être bouilli / tromper quelqu'un",
+    "tones": "F",
+    "pos": "",
+    "th": "ต้ม",
+    "teaching_order": -1
+  },
+  "414": {
+    "split": "วาง",
+    "en": "to put down, set down, place",
+    "fr": "déposer, laisser",
+    "tones": "M",
+    "pos": "",
+    "th": "วาง",
+    "teaching_order": -1
+  },
+  "415": {
+    "split": "คอ",
+    "en": "neck",
+    "fr": "le cou",
+    "tones": "M",
+    "pos": "",
+    "th": "คอ",
+    "teaching_order": -1
+  },
+  "416": {
+    "split": "ข้อ_มือ",
+    "en": "wrist",
+    "fr": "poignet",
+    "tones": "FM",
+    "pos": "",
+    "th": "ข้อมือ",
+    "teaching_order": -1
+  },
+  "417": {
+    "split": "เข้า_ใจ",
+    "en": "to understand",
+    "fr": "comprendre",
+    "tones": "FM",
+    "pos": "",
+    "th": "เข้าใจ",
+    "teaching_order": -1
+  },
+  "418": {
+    "split": "เข้า",
+    "en": "to enter",
+    "fr": "entrer",
+    "tones": "F",
+    "pos": "",
+    "th": "เข้า",
+    "teaching_order": -1
+  },
+  "419": {
+    "split": "เข้า_ใจ_คิด",
+    "en": "to be inventive",
+    "fr": "être inventif",
+    "tones": "FMH",
+    "pos": "",
+    "th": "เข้าใจคิด",
+    "teaching_order": -1
+  },
+  "420": {
+    "split": "แนว_คิด",
+    "en": "idea, concept, thought",
+    "fr": "idée, concept, pensée",
+    "tones": "MH",
+    "pos": "",
+    "th": "แนวคิด",
+    "teaching_order": -1
+  },
+  "421": {
+    "split": "แนว",
+    "en": "style, trend, fashion",
+    "fr": "style, tendance, mode",
+    "tones": "M",
+    "pos": "",
+    "th": "แนว",
+    "teaching_order": -1
+  },
+  "422": {
+    "split": "ขอบ_ฟ้า",
+    "en": "horizon, skyline",
+    "fr": "horizon, ",
+    "tones": "LH",
+    "pos": "",
+    "th": "ขอบฟ้า",
+    "teaching_order": -1
+  },
+  "423": {
+    "split": "ขอบ_ฟ้า",
+    "en": "horizon, skyline",
+    "fr": "horizon",
+    "tones": "LH",
+    "pos": "",
+    "th": "ขอบฟ้า",
+    "teaching_order": -1
+  },
+  "424": {
+    "split": "ยก",
+    "en": "to lift, to raise",
+    "fr": "soulever",
+    "tones": "H",
+    "pos": "",
+    "th": "ยก",
+    "teaching_order": -1
+  },
+  "425": {
+    "split": "หน้า_ต่าง",
+    "en": "window",
+    "fr": "fenêtre",
+    "tones": "FL",
+    "pos": "",
+    "th": "หน้าต่าง",
+    "teaching_order": -1
+  },
+  "426": {
+    "split": "ต้น",
+    "en": "royal / start / trunk",
+    "fr": "royal / début / tronc",
+    "tones": "F",
+    "pos": "",
+    "th": "ต้น",
+    "teaching_order": -1
+  },
+  "427": {
+    "split": "ม้า",
+    "en": "horse / bench",
+    "fr": "cheval / banc, tabouret",
+    "tones": "H",
+    "pos": "",
+    "th": "ม้า",
+    "teaching_order": -1
+  },
+  "428": {
+    "split": "คอก_ม้า",
+    "en": "stable for horses",
+    "fr": "étable",
+    "tones": "FH",
+    "pos": "",
+    "th": "คอกม้า",
+    "teaching_order": -1
+  },
+  "429": {
+    "split": "เศรษ-ฐ-กิจ",
+    "en": "economy, economic affairs",
+    "fr": "l'économie",
+    "tones": "LLL",
+    "pos": "",
+    "th": "เศรษฐกิจ",
+    "teaching_order": -1
+  },
+  "430": {
+    "split": "วง_การ",
+    "en": "circle, field, quarter",
+    "fr": "domaine, cercle",
+    "tones": "MM",
+    "pos": "",
+    "th": "วงการ",
+    "teaching_order": -1
+  },
+  "431": {
+    "split": "เถ-ระ",
+    "en": "elder",
+    "fr": "aîné",
+    "tones": "RH",
+    "pos": "",
+    "th": "เถระ",
+    "teaching_order": -1
+  },
+  "432": {
+    "split": "เกรง_ใจ",
+    "en": "to be afraid of offending (someone)",
+    "fr": "avoir peur d'offenser",
+    "tones": "MM",
+    "pos": "",
+    "th": "เกรงใจ",
+    "teaching_order": -1
+  },
+  "433": {
+    "split": "เกรง",
+    "en": "to be afraid",
+    "fr": "avoir peur",
+    "tones": "M",
+    "pos": "",
+    "th": "เกรง",
+    "teaching_order": -1
+  },
+  "434": {
+    "split": "เหล็ก",
+    "en": "iron, steel",
+    "fr": "fer, acier",
+    "tones": "L",
+    "pos": "",
+    "th": "เหล็ก",
+    "teaching_order": -1
+  },
+  "435": {
+    "split": "แม่_เหล็ก",
+    "en": "magnet",
+    "fr": "aimant",
+    "tones": "FL",
+    "pos": "",
+    "th": "แม่เหล็ก",
     "teaching_order": -1
   }
 }

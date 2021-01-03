@@ -1,19 +1,28 @@
 extends Node
 
+# TODO: Some words are composed of other words, such as เข้า_ใจ.
+# What do we do with those ?
+# They can also have their spell and be learnt individually,
+# But just like in Duolingo, when they're in a sentence side by side, be would both show
+# เข้า_ใจ
+# enter heart
+# understand
+# Take a look at the function get_naive_compounds to recycle this data.
+
 var words = []
 var sentences = []
 var letters = []
 
 # The following are a list of IDs
-#var known_words = [343, 345, 207, 82] 
+var known_words = [343, 345, 207, 82] 
 #var known_words = [82, 343, 345, 207, 204, 222, 223, 232, 233, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 123, 14, 15]
-var known_words = []
+#var known_words = []
 #var known_sentences = [196, 197, 198, 199]  # we know the translation. Does not contain seen_sentences.
-#var known_sentences = [196, 197, 198]  # we know the translation. Does not contain seen_sentences.
+var known_sentences = [196, 197, 198]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [200, 201]  # we know the translation. Does not contain seen_sentences.
-var known_sentences = []  # we know the translation. Does not contain seen_sentences.
-#var seen_sentences = [196, 197, 198, 199]  # we don't know the translation
-var seen_sentences = []  # we don't know the translation
+#var known_sentences = []  # we know the translation. Does not contain seen_sentences.
+var seen_sentences = [196, 197, 198, 199]  # we don't know the translation
+#var seen_sentences = []  # we don't know the translation
 #var known_letters = [0, 11, 13, 21]  # list of IDs
 #var known_letters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]  # list of IDs
 var known_letters = []  # list of IDs
@@ -152,6 +161,13 @@ func starts_deducing_coop():
 	Game.lose_focus(null)
 	var deducing_coop_selection_screen = load("res://Test/DeducingCoop/DeducingCoopSelectSentence.tscn").instance()
 	current_scene.add_child(deducing_coop_selection_screen)
+
+func starts_interaction_test(interaction_sentence_id, npc):
+	Game.is_frozen = true
+	Game.lose_focus(null)
+	var interaction_test = load("res://Test/InteractionTest/InteractionTest.tscn").instance()
+	interaction_test.init_interaction_test(interaction_sentence_id, npc)
+	current_scene.add_child(interaction_test)
 
 func starts_vending(sold_entities):
 	Game.is_frozen = true

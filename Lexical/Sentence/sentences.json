@@ -1082,5 +1082,17 @@
     "en": "Birth, that is precisely death.",
     "fr": "La naissance, c'est précisemment la mort.",
     "word_ids": [404, 405, 206, 371]
+  },
+  "213": {
+    "th": "ผม_ไม่_มี_บ้าน_ครับ",
+    "en": "I don't have a house.",
+    "fr": "Je n'ai pas de maison",
+    "word_ids": [23, 39, 236, 147, 9]
+  },
+  "214": {
+    "th": "ผม_ชอบ_ไม่_มี_บ้าน_ครับ",
+    "en": "I like not having a house.",
+    "fr": "J'aime bien ne pas avoir de maison",
+    "word_ids": [23, 238, 39, 236, 147, 9]
   }
 }

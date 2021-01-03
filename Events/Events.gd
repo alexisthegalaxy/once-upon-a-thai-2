@@ -120,6 +120,11 @@ func starts_deducing_coop(_no_arguments_needed):
 func starts_vending(sold_entities):
 	Game.starts_vending(sold_entities)
 
+func starts_interaction_test(interaction_sentence_id_and_npc):
+	var interaction_sentence_id = interaction_sentence_id_and_npc[0]
+	var npc = interaction_sentence_id_and_npc[1]
+	Game.starts_interaction_test(interaction_sentence_id, npc)
+
 func starts_job_menu_screen(_no_arguments_needed):
 	Game.starts_job_menu_screen()
 

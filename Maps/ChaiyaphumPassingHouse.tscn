@@ -28,7 +28,7 @@ direction = "up"
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
-[node name="OldMan" parent="YSort/NPCs" instance=ExtResource( 3 )]
+[node name="Girl" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( -27.0034, 67.6676 )
 dialog = [ "คุณเป็นใคร" ]
 sprite_path = "res://Npcs/sprites/girl.png"
@@ -74,11 +74,13 @@ script = ExtResource( 14 )
 [node name="ToNationalPark" parent="." instance=ExtResource( 18 )]
 position = Vector2( 112.292, 48.6166 )
 to_position = Vector2( 1804, 238 )
-to_map_name = "res://Maps/ChaiyaphumNationalPark.tscn"
-name_for_location = "_chaiyaphum_national_park"
+to_map_name = "res://Maps/NamPhongNationalPark.tscn"
+name_for_location = "_cnam_phong_national_park"
+sound_name = "door"
 
 [node name="ToChaiyaphum" parent="." instance=ExtResource( 18 )]
 position = Vector2( -144.133, 48.2119 )
 to_position = Vector2( 1697, 237 )
 to_map_name = "res://Maps/Chaiyaphum.tscn"
 name_for_location = "_chaiyaphum"
+sound_name = "door"

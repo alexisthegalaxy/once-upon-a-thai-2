@@ -9,6 +9,8 @@ export var display_name = ""  # Is shown in dialogs. For example: "Nim".
 export var interact_when_near = false
 export(Array, String) var start_quests = []  # ["find_sentences_in_chaiyaphum", "first_quest"]
 export(Array, String) var finish_quests = []  # ["find_sentences_in_chaiyaphum", "first_quest"]
+export(String) var interaction_sentence_id = ""
+
 var is_talking = false
 var initial_position  # used for wandering npcs
 var speed = 100  # 65
@@ -21,26 +23,41 @@ export(Array) var post_dialog_event = []
 
 export(Array, String) var sold_entities = []
 
-# white orb disappearance
-var white_orb_growing = false
-var white_orb_fading = false
-var alpha = 1
 var time = 0
 var over_head_label_y
 
-func update_npc_with_quests():
+# white orb disappearance - should be in its own node
+var white_orb_growing = false
+var white_orb_fading = false
+var alpha = 1
+
+
+func update_npc_overhead():
 	if finish_quests:
 		for finish_quest_id in finish_quests:
 			if Quests.quests[finish_quest_id].status == Quests.FINISHED:
 				$OverheadNode2D.visible = true
+				$OverheadNode2D/blue_smile.visible = false
 				$OverheadNode2D/OverheadLabel.text = "!"
 				return
 	if start_quests:
 		for start_quest_id in start_quests:
 			if Quests.quests[start_quest_id].status == Quests.NOT_STARTED and not Quests.is_quest_blocked(start_quest_id):
 				$OverheadNode2D.visible = true
+				$OverheadNode2D/blue_smile.visible = false
 				$OverheadNode2D/OverheadLabel.text = "?"
 				return
+	if interaction_sentence_id:
+		var has_done_this_interaction = true
+		if "S" in interaction_sentence_id:
+			has_done_this_interaction = int(interaction_sentence_id.replace("S", "")) in Game.known_sentences
+		elif "I" in interaction_sentence_id:
+			return  # TODO: we don't store done interactions yet!
+		if not has_done_this_interaction:
+			$OverheadNode2D.visible = true
+			$OverheadNode2D/OverheadLabel.hide()
+			$OverheadNode2D/blue_smile.visible = true
+			return
 	$OverheadNode2D.visible = false
 
 func make_animation(animation_name, key_1, key_2, key_3, key_4):
@@ -81,10 +98,12 @@ func _ready():
 	make_animations()
 	update_animation()
 	over_head_label_y = $OverheadNode2D.position.y
-	update_npc_with_quests()
+	update_npc_overhead()
 	initial_position = position
 	if sold_entities:
 		post_dialog_event= ["starts_vending", sold_entities]
+	if interaction_sentence_id:
+		post_dialog_event= ["starts_interaction_test", [interaction_sentence_id, self]]
 
 func _process(delta):
 	time += delta
@@ -196,8 +215,8 @@ func interact():
 	Game.is_frozen = true
 	Game.player.stop_walking()
 	Game.player.turn_towards_entity(position)
-	var dialog_to_use = get_dialog_to_use()
 	npc_turn_towards(Game.player.position)
+	var dialog_to_use = get_dialog_to_use()
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	Game.current_dialog.init_dialog(dialog_to_use, self, post_dialog_event, false, null)
 	Game.current_scene.add_child(Game.current_dialog)

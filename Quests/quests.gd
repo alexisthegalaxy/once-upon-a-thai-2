@@ -59,7 +59,7 @@ func update_quests_display():
 	Game.main_ui.open_quest_display()
 	if Game.current_scene.get_node("YSort") and Game.current_scene.get_node("YSort").get_node("NPCs"):
 		for npc in Game.current_scene.get_node("YSort").get_node("NPCs").get_children():
-			npc.update_npc_with_quests()
+			npc.update_npc_overhead()
 
 func update_find_sentences_quests(sentence_id):
 	for quest_id in quests:

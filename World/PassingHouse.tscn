@@ -6,6 +6,7 @@
 extents = Vector2( 43.6266, 30.3118 )
 
 [node name="House" type="StaticBody2D"]
+position = Vector2( -0.747345, 35.4955 )
 collision_mask = 0
 
 [node name="passing_house" type="Sprite" parent="."]

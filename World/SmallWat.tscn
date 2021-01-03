@@ -9,7 +9,7 @@ extents = Vector2( 17.9915, 45.9002 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 46.5795, 37.1701 )
 
-[node name="House" type="StaticBody2D"]
+[node name="VillageWat" type="StaticBody2D"]
 collision_mask = 0
 
 [node name="VillageWat" type="Sprite" parent="."]
