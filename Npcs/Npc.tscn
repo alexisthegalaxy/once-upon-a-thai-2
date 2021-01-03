@@ -26,19 +26,19 @@ outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 4 )
 
 [sub_resource type="SegmentShape2D" id=5]
-a = Vector2( 0.518387, -101.462 )
-b = Vector2( -0.262512, 78.1465 )
+a = Vector2( 0, 200 )
+b = Vector2( 0, 0 )
 
 [sub_resource type="SegmentShape2D" id=6]
-a = Vector2( 0.981644, -113.265 )
-b = Vector2( -0.371933, 97.2155 )
+a = Vector2( 0, -200 )
+b = Vector2( 0, 0 )
 
 [sub_resource type="SegmentShape2D" id=7]
-b = Vector2( 215.02, 0.844498 )
+b = Vector2( 200, 0 )
 
 [sub_resource type="SegmentShape2D" id=8]
-a = Vector2( -129.902, 0.217857 )
-b = Vector2( 101.247, 0.478165 )
+a = Vector2( -200, 0 )
+b = Vector2( 0, 0 )
 
 [node name="Npc" type="StaticBody2D" groups=[
 "npcs",
@@ -121,25 +121,21 @@ visible = false
 [node name="Down" type="Area2D" parent="LineOfSight"]
 
 [node name="Down" type="CollisionShape2D" parent="LineOfSight/Down"]
-position = Vector2( 0, 101.68 )
 shape = SubResource( 5 )
 
 [node name="Up" type="Area2D" parent="LineOfSight"]
 
 [node name="Up" type="CollisionShape2D" parent="LineOfSight/Up"]
-position = Vector2( -0.619308, -97.6224 )
 shape = SubResource( 6 )
 
 [node name="Right" type="Area2D" parent="LineOfSight"]
 
 [node name="Right" type="CollisionShape2D" parent="LineOfSight/Right"]
-position = Vector2( -0.324768, -0.210205 )
 shape = SubResource( 7 )
 
 [node name="Left" type="Area2D" parent="LineOfSight"]
 
 [node name="Left" type="CollisionShape2D" parent="LineOfSight/Left"]
-position = Vector2( -101.353, -0.260307 )
 shape = SubResource( 8 )
 [connection signal="body_entered" from="InteractBox" to="." method="_on_InteractBox_body_entered"]
 [connection signal="body_exited" from="InteractBox" to="." method="_on_InteractBox_body_exited"]
