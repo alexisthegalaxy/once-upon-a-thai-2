@@ -3853,5 +3853,14 @@
     "pos": "",
     "th": "แม่เหล็ก",
     "teaching_order": -1
+  },
+  "436": {
+    "split": "หรือ",
+    "en": "or",
+    "fr": "ou (ou bien)",
+    "tones": "R",
+    "pos": "",
+    "th": "หรือ",
+    "teaching_order": -1
   }
 }

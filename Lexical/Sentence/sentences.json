@@ -1092,7 +1092,145 @@
   "214": {
     "th": "ผม_ชอบ_ไม่_มี_บ้าน_ครับ",
     "en": "I like not having a house.",
-    "fr": "J'aime bien ne pas avoir de maison",
+    "fr": "J'aime bien ne pas avoir de maison.",
     "word_ids": [23, 238, 39, 236, 147, 9]
+  },
+  "215": {
+    "th": "น้ำ_สวย_ค่ะ",
+    "en": "Water is beautiful.",
+    "fr": "L'eau est belle.",
+    "word_ids": [156, 340, 11]
+  },
+  "216": {
+    "th": "คน_ดี_มี_น้ำ",
+    "en": "Good people have water.",
+    "fr": "Les bonnes personnes ont de l'eau.",
+    "word_ids": [343, 82, 236, 156]
+  },
+  "217": {
+    "th": "ฉัน_มี_น้ำ",
+    "en": "I have water",
+    "fr": "J'ai de l'eau",
+    "word_ids": [24, 236, 156]
+  },
+  "218": {
+    "th": "คุณ_อยาก_ดื่ม_น้ำ_หรือ_ไม่",
+    "en": "Do you want to drink water?",
+    "fr": "Tu veux boire de l'eau?",
+    "word_ids": [28, 241, 195, 156, 436, 39]
+  },
+  "219": {
+    "th": "คุณ_มี_น้ำ_หรือ_ไม่",
+    "en": "You have water or not?",
+    "fr": "Tu as de l'eau ou pas?",
+    "word_ids": [28, 236, 156, 436, 39]
+  },
+  "220": {
+    "th": "คุณ_มี_น้ำ_หรือ_ไม่",
+    "en": "You have water or not?",
+    "fr": "Tu as de l'eau ou pas ?",
+    "word_ids": [28, 236, 156, 436, 39]
+  },
+  "221": {
+    "th": "คน_อะ-ไร_เป็น_สวย_คน",
+    "en": "What people are beautiful people?",
+    "fr": "Quelles personnes sont belles personnes ?",
+    "word_ids": [343, 56, 207, 340, 343]
+  },
+  "222": {
+    "th": "คน_ไทย_เป็น_สวย_คน",
+    "en": "Thai people are beautiful people.",
+    "fr": "Les Thaïs sont de belles personnes.",
+    "word_ids": [343, 345, 207, 340, 343]
+  },
+  "223": {
+    "th": "ผม_อยู่_ที่-ไหน",
+    "en": "Where am I?",
+    "fr": "Où suis-je ?",
+    "word_ids": [23, 237, 57]
+  },
+  "224": {
+    "th": "ผม_อยาก_อยู่_บ้าน",
+    "en": "I want to be at home.",
+    "fr": "Je veux être à la maison.",
+    "word_ids": [23, 241, 237, 147]
+  },
+  "225": {
+    "th": "คุณ_สวย_ครับ",
+    "en": "You are beautiful.",
+    "fr": "Tu es [m:beau|f:belle].",
+    "word_ids": [28, 340, 9]
+  },
+  "226": {
+    "th": "คุณ_เป็น_คน_ไทย_หรือ_ไม่",
+    "en": "Are you Thai or not?",
+    "fr": "Tu es thaï(e) ou pas ?",
+    "word_ids": [28, 207, 343, 345, 436, 39]
+  },
+  "227": {
+    "th": "คุณ_คิด_ว่า_เขา_เป็น_คน_ดี_หรือ_ไม่",
+    "en": "You think he is a good person or not?",
+    "fr": "Tu penses qu'il est une bonne personne ou pas ?",
+    "word_ids": [28, 197, 184, 26, 207, 343, 82, 436, 39]
+  },
+  "228": {
+    "th": "เขา_เป็น_คน_ดี",
+    "en": "She is a good person.",
+    "fr": "C'est une personne bien.",
+    "word_ids": [26, 207, 343, 82]
+  },
+  "229": {
+    "th": "เขา_สวย",
+    "en": "He is beautiful.",
+    "fr": "Il est beau.",
+    "word_ids": [26, 340]
+  },
+  "230": {
+    "th": "บ้าน_นี้_ไม่_ใช่_ของ_ฉัน",
+    "en": "This house is not mine.",
+    "fr": "Cette maison est à moi.",
+    "word_ids": [147, 31, 39, 179, 40, 24]
+  },
+  "231": {
+    "th": "บ้าน_นี้_เป็น_ของ_ฉัน",
+    "en": "This house is mine.",
+    "fr": "Cette maison est à moi.",
+    "word_ids": [147, 31, 207, 40, 24]
+  },
+  "232": {
+    "th": "บ้าน_ฉัน_สวย",
+    "en": "My house is beautiful",
+    "fr": "Ma maison est belle.",
+    "word_ids": [147, 24, 340]
+  },
+  "233": {
+    "th": "คุณ_ชอบ_บ้าน_ฉัน_หรือ_ไม่",
+    "en": "Do you like my house or not?",
+    "fr": "Tu aimes ma maison ou pas ?",
+    "word_ids": [28, 238, 147, 24, 436, 39]
+  },
+  "234": {
+    "th": "ฉัน_อยาก_เป็น_คน_สวย",
+    "en": "I want to be a beautiful person.",
+    "fr": "Je veux être une belle personne.",
+    "word_ids": [28, 241, 207, 343, 340]
+  },
+  "235": {
+    "th": "ผม_ชอบ_ตัด_ผม_ครับ",
+    "en": "I like to cut hair.",
+    "fr": "J'aime bien couper les cheveux.",
+    "word_ids": [23, 238, 401, 23, 340, 9]
+  },
+  "236": {
+    "th": "ฉัน_สวย_หรือ_ไม่?",
+    "en": "Am I beautiful or not?",
+    "fr": "Je suis belle ou pas ?",
+    "word_ids": [24, 340, 436, 39]
+  },
+  "237": {
+    "th": "ผม_อยาก_ดื่ม_น้ำ_ครับ",
+    "en": "I want to drink water.",
+    "fr": "Je veux boire de l'eau.",
+    "word_ids": [23, 241, 195, 156, 9]
   }
 }
