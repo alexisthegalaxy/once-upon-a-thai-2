@@ -1102,52 +1102,52 @@
     "word_ids": [156, 340, 11]
   },
   "216": {
-    "th": "คน_ดี_มี_น้ำ",
+    "th": "คน_ดี_มี_น้ำ_ค่ะ",
     "en": "Good people have water.",
-    "fr": "Les bonnes personnes ont de l'eau.",
-    "word_ids": [343, 82, 236, 156]
+    "fr": "Les gens biens ont de l'eau.",
+    "word_ids": [343, 82, 236, 156, 11]
   },
   "217": {
-    "th": "ฉัน_มี_น้ำ",
-    "en": "I have water",
-    "fr": "J'ai de l'eau",
-    "word_ids": [24, 236, 156]
+    "th": "ฉัน_มี_น้ำ_ค่ะ",
+    "en": "I have water.",
+    "fr": "J'ai de l'eau.",
+    "word_ids": [24, 236, 156, 11]
   },
   "218": {
-    "th": "คุณ_อยาก_ดื่ม_น้ำ_หรือ_ไม่",
+    "th": "คุณ_อยาก_ดื่ม_น้ำ_หรือ_ไม่_ค่ะ",
     "en": "Do you want to drink water?",
     "fr": "Tu veux boire de l'eau?",
-    "word_ids": [28, 241, 195, 156, 436, 39]
+    "word_ids": [28, 241, 195, 156, 436, 39, 11]
   },
   "219": {
-    "th": "คุณ_มี_น้ำ_หรือ_ไม่",
+    "th": "คุณ_มี_น้ำ_หรือ_ไม่_ครับ",
     "en": "You have water or not?",
     "fr": "Tu as de l'eau ou pas?",
-    "word_ids": [28, 236, 156, 436, 39]
+    "word_ids": [28, 236, 156, 436, 39, 9]
   },
   "220": {
-    "th": "คุณ_มี_น้ำ_หรือ_ไม่",
-    "en": "You have water or not?",
-    "fr": "Tu as de l'eau ou pas ?",
-    "word_ids": [28, 236, 156, 436, 39]
+    "th": "ผม_ไม่_มี_น้ำ_ครับ",
+    "en": "I don't have water.",
+    "fr": "Je n'ai pas d'eau.",
+    "word_ids": [23, 39, 236, 156, 9]
   },
   "221": {
-    "th": "คน_อะ-ไร_เป็น_สวย_คน",
+    "th": "คน_อะ-ไร_เป็น_สวย_คน_ครับ",
     "en": "What people are beautiful people?",
     "fr": "Quelles personnes sont belles personnes ?",
-    "word_ids": [343, 56, 207, 340, 343]
+    "word_ids": [343, 56, 207, 340, 343, 9]
   },
   "222": {
-    "th": "คน_ไทย_เป็น_สวย_คน",
+    "th": "คน_ไทย_เป็น_คน_สวย_ครับ",
     "en": "Thai people are beautiful people.",
-    "fr": "Les Thaïs sont de belles personnes.",
-    "word_ids": [343, 345, 207, 340, 343]
+    "fr": "Les Thaïlandais sont des belles personnes.",
+    "word_ids": [343, 345, 207, 343, 340, 9]
   },
   "223": {
-    "th": "ผม_อยู่_ที่-ไหน",
+    "th": "ผม_อยู่_ที่-ไหน_ครับ",
     "en": "Where am I?",
     "fr": "Où suis-je ?",
-    "word_ids": [23, 237, 57]
+    "word_ids": [23, 237, 57, 9]
   },
   "224": {
     "th": "ผม_อยาก_อยู่_บ้าน",
@@ -1156,22 +1156,22 @@
     "word_ids": [23, 241, 237, 147]
   },
   "225": {
-    "th": "คุณ_สวย_ครับ",
+    "th": "คุณ_สวย_ค่ะ",
     "en": "You are beautiful.",
     "fr": "Tu es [m:beau|f:belle].",
-    "word_ids": [28, 340, 9]
+    "word_ids": [28, 340, 11]
   },
   "226": {
-    "th": "คุณ_เป็น_คน_ไทย_หรือ_ไม่",
+    "th": "คุณ_เป็น_คน_ไทย_หรือ_ไม่_ครับ",
     "en": "Are you Thai or not?",
     "fr": "Tu es thaï(e) ou pas ?",
-    "word_ids": [28, 207, 343, 345, 436, 39]
+    "word_ids": [28, 207, 343, 345, 436, 39, 9]
   },
   "227": {
-    "th": "คุณ_คิด_ว่า_เขา_เป็น_คน_ดี_หรือ_ไม่",
-    "en": "You think he is a good person or not?",
-    "fr": "Tu penses qu'il est une bonne personne ou pas ?",
-    "word_ids": [28, 197, 184, 26, 207, 343, 82, 436, 39]
+    "th": "ฉัน_คิด_ว่า_เขา_เป็น_คน_ดี_ค่ะ",
+    "en": "I think he is a good person.",
+    "fr": "Je penses qu'il est une bonne personne.",
+    "word_ids": [24, 197, 184, 26, 207, 343, 82, 11]
   },
   "228": {
     "th": "เขา_เป็น_คน_ดี",
@@ -1204,10 +1204,10 @@
     "word_ids": [147, 24, 340]
   },
   "233": {
-    "th": "คุณ_ชอบ_บ้าน_ฉัน_หรือ_ไม่",
+    "th": "คุณ_ชอบ_บ้าน_ผม_หรือ_ไม่_ครับ",
     "en": "Do you like my house or not?",
     "fr": "Tu aimes ma maison ou pas ?",
-    "word_ids": [28, 238, 147, 24, 436, 39]
+    "word_ids": [28, 238, 147, 23, 436, 39, 9]
   },
   "234": {
     "th": "ฉัน_อยาก_เป็น_คน_สวย",
@@ -1222,15 +1222,45 @@
     "word_ids": [23, 238, 401, 23, 340, 9]
   },
   "236": {
-    "th": "ฉัน_สวย_หรือ_ไม่?",
+    "th": "ฉัน_สวย_หรือ_ไม่_ค่ะ?",
     "en": "Am I beautiful or not?",
     "fr": "Je suis belle ou pas ?",
-    "word_ids": [24, 340, 436, 39]
+    "word_ids": [24, 340, 436, 39, 11]
   },
   "237": {
     "th": "ผม_อยาก_ดื่ม_น้ำ_ครับ",
     "en": "I want to drink water.",
     "fr": "Je veux boire de l'eau.",
     "word_ids": [23, 241, 195, 156, 9]
+  },
+  "238": {
+    "th": "ผม_ชอบ_ไม่_อยู่_บ้าน_ครับ",
+    "en": "I like to not stay at home.",
+    "fr": "J'aime bien ne pas rester à la maison.",
+    "word_ids": [23, 238, 39, 237, 291, 9]
+  },
+  "239": {
+    "th": "ผม_ไม่_ชอบ_อยู่_บ้าน_ครับ",
+    "en": "I don't like staying at home.",
+    "fr": "Je n'aime pas rester à la maison.",
+    "word_ids": [23, 39, 238, 237, 147, 9]
+  },
+  "240": {
+    "th": "ผม_ไม่_ชอบ_อยู่_บ้าน_ครับ",
+    "en": "I don't like staying at home.",
+    "fr": "Je n'aime pas rester à la maison.",
+    "word_ids": [23, 39, 238, 237, 291, 9]
+  },
+  "241": {
+    "th": "คุณ_มี_เพื่อน_หรือ_ไม่_ครับ",
+    "en": "Do you have friends or not?",
+    "fr": "Tu as des amis ou pas ?",
+    "word_ids": [28, 236, 170, 436, 39, 9]
+  },
+  "242": {
+    "th": "ผม_ชอบ_อยู่_ที่-นี่_ครับ",
+    "en": "I like being here.",
+    "fr": "J'aime bien être ici.",
+    "word_ids": [23, 238, 237, 37, 9]
   }
 }
