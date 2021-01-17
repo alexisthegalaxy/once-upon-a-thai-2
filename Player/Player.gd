@@ -222,3 +222,11 @@ func turn_towards_entity(target):
 	else:
 		direction = "down"
 	update_animation()
+
+func sleep():
+	# Reset spawn point
+	Game.spawn_point = [Game.current_map_name, position.x, position.y]
+	# Reset health
+	Game.hp = Game.max_hp
+	# Make a sound (êek-ii-êek-êek? Also, fade to no sound, then restart the music)
+	# Fade to black

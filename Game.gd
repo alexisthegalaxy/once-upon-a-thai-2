@@ -69,6 +69,7 @@ var current_scene = null
 var active_test = null
 var player = null
 var player_name = "Alexis"
+var player_gender = "m"  # can also be "f" or "n"
 var money = 0
 var player_sprite_path = "res://Npcs/sprites/main_E.png"
 var can_read_thai = false
@@ -78,6 +79,8 @@ var rain = null
 
 var hp = 5.0
 var max_hp = 5.0
+var spawn_point = ["res://Maps/Chaiyaphum.tscn", 0, 0]
+
 var is_frozen = false
 
 var should_start_test_when_back_from_MP = [

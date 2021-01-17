@@ -4,6 +4,7 @@ var selected_character = false
 
 func _ready():
 	Game.player_name = ""
+	Game.player_gender = "n"
 	update_button_showing()
 	$Character_A.init_menu_character(self)
 	$Character_B.init_menu_character(self)
@@ -67,3 +68,15 @@ func _on_LineEdit_text_changed(_new_text):
 #		$TextEdit.text = text
 	Game.player_name = $LineEdit.text
 	update_button_showing()
+
+func _on_Female_pressed():
+	if Game.player_gender == "f":
+		Game.player_gender = "n"
+	else:
+		Game.player_gender = "n"
+
+func _on_Male_pressed():
+	if Game.player_gender == "m":
+		Game.player_gender = "n"
+	else:
+		Game.player_gender = "m"

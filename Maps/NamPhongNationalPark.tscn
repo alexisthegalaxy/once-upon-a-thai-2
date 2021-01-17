@@ -3096,7 +3096,7 @@ position = Vector2( 2672.02, -954.096 )
 position = Vector2( 2767.29, -1011.65 )
 
 [node name="Tree2706" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 2672.02, -742.532 )
+position = Vector2( 2672.86, -755.213 )
 
 [node name="Tree2707" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 2639.87, -812.789 )
@@ -3706,7 +3706,7 @@ position = Vector2( 1987.64, -1742.45 )
 position = Vector2( 2459.83, -1605.36 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 2796.04, -1194.17 )
+position = Vector2( 2865.99, -1170.26 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -3754,6 +3754,11 @@ sprite_path = "res://Npcs/sprites/man.png"
 direction = "left"
 interaction_sentence_id = "S222"
 
+[node name="thai_people_beautiful2" parent="YSort/NPCs" instance=ExtResource( 11 )]
+position = Vector2( 2677.52, -730.035 )
+sprite_path = "res://Npcs/sprites/man.png"
+interaction_sentence_id = "S165"
+
 [node name="I_dont_like_to_be_home" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 2037.73, -340.297 )
 sprite_path = "res://Npcs/sprites/man.png"
@@ -3799,7 +3804,6 @@ interaction_sentence_id = "S217"
 
 [node name="where_am_I" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 2596.78, -916.932 )
-dialog = [ "_congrats_reached_end_game" ]
 sprite_path = "res://Npcs/sprites/boy.png"
 direction = "up"
 wanders = 50
@@ -3878,7 +3882,7 @@ to_map_name = "res://Maps/ChaiyaphumShop.tscn"
 [node name="ToWat1" parent="Teleports" instance=ExtResource( 18 )]
 position = Vector2( -320.903, 969.897 )
 to_position = Vector2( 26, 88 )
-to_map_name = "res://Maps/ChaiyaphumShop.tscn"
+to_map_name = "res://Maps/NamPhongWat1.tscn"
 
 [node name="ToPassingHouse" parent="Teleports" instance=ExtResource( 18 )]
 position = Vector2( -668.437, 1946.06 )

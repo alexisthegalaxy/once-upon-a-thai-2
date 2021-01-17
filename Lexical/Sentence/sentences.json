@@ -827,6 +827,7 @@
   "165": {
     "th": "ขอบ-คุณ_มาก_ครับ",
     "en": "Thank you very much (said by a male)!",
+    "fr": "Merci beaucoup (dit par un homme)!",
     "word_ids": [4, 366, 9]
   },
   "166": {
@@ -842,6 +843,7 @@
   "168": {
     "th": "ฉัน_เห็น_หิ-มะ_เป็น_ครั้ง-แรก_ใน_แค-นา-ดา",
     "en": "I (female) saw snow for the first time in Canada.",
+    "fr": "J'ai vu de la neige pour la première fois au Canada (dit par une femme).",
     "word_ids": [24, 194, 247, 207, 377, 44, 319]
   },
   "169": {
@@ -990,13 +992,13 @@
   "197": {
     "th": "ผม_ชอบ_คน_ไทย",
     "en": "I (male) like Thai people.",
-    "fr": "J'aime bien les Thaïlandais. [dit par un homme]",
+    "fr": "J'aime bien les Thaïlandais. (dit par un homme)",
     "word_ids": [23, 238, 343, 345]
   },
   "198": {
     "th": "คน_ดี_ชอบ_ฉัน",
     "en": "Good people like me (female).",
-    "fr": "Les gens biens m'aiment bien. [dit par une femme]",
+    "fr": "Les gens biens m'aiment bien. (dit par une femme)",
     "word_ids": [343, 82, 238, 24]
   },
   "199": {
@@ -1134,13 +1136,13 @@
   "221": {
     "th": "คน_อะ-ไร_เป็น_สวย_คน_ครับ",
     "en": "What people are beautiful people?",
-    "fr": "Quelles personnes sont belles personnes ?",
+    "fr": "Quelles personnes sont de belles personnes ?|Quelles personnes sont belles ?|",
     "word_ids": [343, 56, 207, 340, 343, 9]
   },
   "222": {
     "th": "คน_ไทย_เป็น_คน_สวย_ครับ",
     "en": "Thai people are beautiful people.",
-    "fr": "Les Thaïlandais sont des belles personnes.",
+    "fr": "Les Thaïlandais sont de belles personnes.|Les Thaïlandais sont beaux|Les Thaïlandais sont des personnes belles.|Les Thaïlandais sont des belles personnes.",
     "word_ids": [343, 345, 207, 343, 340, 9]
   },
   "223": {
@@ -1158,13 +1160,13 @@
   "225": {
     "th": "คุณ_สวย_ค่ะ",
     "en": "You are beautiful.",
-    "fr": "Tu es [m:beau|f:belle].",
+    "fr": "Tu es [m:beau; f:belle; n:belleau].",
     "word_ids": [28, 340, 11]
   },
   "226": {
     "th": "คุณ_เป็น_คน_ไทย_หรือ_ไม่_ครับ",
     "en": "Are you Thai or not?",
-    "fr": "Tu es thaï(e) ou pas ?",
+    "fr": "Tu es [m:thaï; f:thaïe; n:tahï·e] ou pas ?",
     "word_ids": [28, 207, 343, 345, 436, 39, 9]
   },
   "227": {

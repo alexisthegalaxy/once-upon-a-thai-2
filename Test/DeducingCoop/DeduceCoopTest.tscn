@@ -6,16 +6,16 @@
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://UI/pressFtoExit.tscn" type="PackedScene" id=5]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 13
 extra_spacing_top = -7
 extra_spacing_bottom = -8
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=3]
 size = 14
 extra_spacing_top = -6
 extra_spacing_bottom = -9
@@ -44,7 +44,7 @@ margin_left = 236.846
 margin_top = 144.012
 margin_right = 299.846
 margin_bottom = 172.012
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = "_submit"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -55,7 +55,7 @@ margin_left = 36.6015
 margin_top = 69.9519
 margin_right = 91.6015
 margin_bottom = 79.9519
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -65,7 +65,7 @@ margin_left = 122.947
 margin_top = 70.1917
 margin_right = 177.947
 margin_bottom = 80.1917
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -75,7 +75,7 @@ margin_left = 207.134
 margin_top = 69.712
 margin_right = 262.134
 margin_bottom = 79.712
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -85,7 +85,7 @@ margin_left = 36.6015
 margin_top = 98.0143
 margin_right = 91.6015
 margin_bottom = 108.014
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -95,7 +95,7 @@ margin_left = 122.947
 margin_top = 98.2541
 margin_right = 177.947
 margin_bottom = 108.254
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -105,7 +105,7 @@ margin_left = 207.134
 margin_top = 97.7744
 margin_right = 262.134
 margin_bottom = 107.774
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -115,7 +115,7 @@ margin_left = 37.3211
 margin_top = 123.438
 margin_right = 92.3211
 margin_bottom = 133.438
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -125,7 +125,7 @@ margin_left = 123.667
 margin_top = 123.678
 margin_right = 178.667
 margin_bottom = 133.678
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -135,7 +135,7 @@ margin_left = 207.854
 margin_top = 123.198
 margin_right = 262.854
 margin_bottom = 133.198
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -155,7 +155,7 @@ margin_left = 52.3135
 margin_top = 150.598
 margin_right = 223.314
 margin_bottom = 164.598
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
 editable = false
 __meta__ = {
 "_edit_use_anchors_": false

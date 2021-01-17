@@ -1,6 +1,8 @@
 extends Node
 # Reminder: choices = distractors + answer
 
+const PLACEHOLDER = "___PLACEHOLDER___"
+
 func _ready():
 	randomize()
 
@@ -40,7 +42,7 @@ func get_choices(distractors, answer):
 	return choices
 
 func fragment_sentence_into_three(sentence):
-	var words_in_sentence = sentence[lo].to_upper().replace(".", "").replace("?", "").split(" ")
+	var words_in_sentence = clean_sentence(sentence[lo].to_upper()).split(" ")
 	var number_of_words_in_sentence = len(words_in_sentence)
 	var number_of_words_per_fragment = ceil(number_of_words_in_sentence / 3.0)
 	var correct_fragment_0 = ""
@@ -124,3 +126,65 @@ func select_words_with_that_amount_of_letters(words, size, number_of_words_to_se
 		if not random_word in selected_words:
 			selected_words.append(random_word)
 	return selected_words
+
+func process_bracket_content(bracket_content):
+	print('bracket_content: ', bracket_content)
+	if len(bracket_content) < 2:
+		return ""
+	for section in bracket_content.split("; "):
+		if section[0].to_upper() == Game.player_gender.to_upper():
+			return section.split(":")[1]
+	return ""
+
+func process_player_gender_in_sentence(sentence):
+	var result = ""
+	var bracket_content = ""
+	var in_bracket = false
+	for letter in sentence:
+		if letter == "[":
+			in_bracket = true
+			bracket_content = ""
+			result += PLACEHOLDER
+		elif letter == "]":
+			in_bracket = false
+			print('genre processed: ', process_bracket_content(bracket_content))
+			print('result: ', result)
+			result = result.replace(PLACEHOLDER, process_bracket_content(bracket_content))
+		else:
+			if in_bracket:
+				bracket_content += letter
+			else:
+				result += letter
+	return result
+
+func clean_sentence(_sentence):
+	var inside_parentheses = false
+	var sentence = _sentence.replace(".", "").replace("-", " ")
+	sentence = sentence.replace("!", "")
+	sentence = sentence.replace("?", "")
+	var result = ""
+	for letter in sentence:
+		if letter == "(":
+			inside_parentheses = true
+		elif letter == ")":
+			inside_parentheses = false
+		elif not inside_parentheses:
+			result += letter
+	return process_player_gender_in_sentence(result.strip_edges(true, true))
+
+func fragment_sentence_into_words(sentence):
+	var words_in_sentence = clean_sentence(sentence[lo].split("|")[0].to_upper()).split(" ")
+	return words_in_sentence
+
+func get_distractors_for_words_in_sentence(sentence, number_of_options):
+	assert (len(Game.seen_sentences) + len(Game.known_sentences) > 5)
+	var choices = Array(fragment_sentence_into_words(sentence))
+	while len(choices) < number_of_options:
+		var incorrect_sentence_id = get_random(Game.seen_sentences + Game.known_sentences)
+		var incorrect_sentence = Game.sentences[str(incorrect_sentence_id)]
+		var incorrect_fragments = fragment_sentence_into_words(incorrect_sentence)
+		for incorrect_fragment in incorrect_fragments:
+			if incorrect_fragment and len(choices) < number_of_options and not incorrect_fragment in choices:
+				choices.append(incorrect_fragment)
+	choices.shuffle()
+	return choices

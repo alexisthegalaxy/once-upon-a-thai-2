@@ -75,7 +75,7 @@ script = ExtResource( 14 )
 position = Vector2( 112.292, 48.6166 )
 to_position = Vector2( 1804, 238 )
 to_map_name = "res://Maps/NamPhongNationalPark.tscn"
-name_for_location = "_cnam_phong_national_park"
+name_for_location = "_nam_phong_national_park"
 sound_name = "door"
 
 [node name="ToChaiyaphum" parent="." instance=ExtResource( 18 )]

@@ -24,12 +24,29 @@ anchor_left = 0.000662613
 anchor_top = -0.00117804
 anchor_right = 0.000662613
 anchor_bottom = -0.00117804
-margin_left = -0.212051
-margin_top = 0.212048
-margin_right = 319.788
+margin_left = -0.212036
+margin_top = 0.212047
+margin_right = 167.788
 margin_bottom = 22.212
 custom_fonts/font = SubResource( 1 )
 text = "_type_your_name"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+anchor_left = 0.000662613
+anchor_top = -0.00117804
+anchor_right = 0.000662613
+anchor_bottom = -0.00117804
+margin_left = 172.542
+margin_top = 1.84819
+margin_right = 318.542
+margin_bottom = 23.8482
+custom_fonts/font = SubResource( 1 )
+text = "_the_pronoun_you_use"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -93,6 +110,28 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Female" type="CheckBox" parent="."]
+margin_left = 244.701
+margin_top = 27.0
+margin_right = 319.701
+margin_bottom = 57.0
+custom_fonts/font = SubResource( 3 )
+text = "_feminine"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Male" type="CheckBox" parent="."]
+margin_left = 164.123
+margin_top = 26.7879
+margin_right = 247.123
+margin_bottom = 56.7879
+custom_fonts/font = SubResource( 3 )
+text = "_masculine"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Character_A" parent="." instance=ExtResource( 2 )]
 position = Vector2( 32, 95.5697 )
 
@@ -113,11 +152,12 @@ position = Vector2( 288, 96 )
 index = "E"
 
 [node name="LineEdit" type="LineEdit" parent="."]
-margin_left = 40.4771
-margin_top = 18.7879
-margin_right = 284.477
-margin_bottom = 50.7879
+margin_left = 6.48434
+margin_top = 20.4241
+margin_right = 162.484
+margin_bottom = 52.4241
 custom_fonts/font = SubResource( 4 )
+align = 1
 max_length = 15
 __meta__ = {
 "_edit_use_anchors_": false
@@ -125,4 +165,6 @@ __meta__ = {
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="No" to="." method="_on_No_pressed"]
 [connection signal="pressed" from="Yes" to="." method="_on_Yes_pressed"]
+[connection signal="pressed" from="Female" to="." method="_on_Female_pressed"]
+[connection signal="pressed" from="Male" to="." method="_on_Male_pressed"]
 [connection signal="text_changed" from="LineEdit" to="." method="_on_LineEdit_text_changed"]
