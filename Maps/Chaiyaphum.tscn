@@ -5879,6 +5879,7 @@ position = Vector2( 461.383, 55.4346 )
 dialog = [ "_inter_2_1", "_inter_2_2" ]
 sprite_path = "res://Npcs/sprites/man.png"
 interaction_sentence_id = "S197"
+pre_dialog_event = [ "npc_teaches_discreetly_words", [ 23, 238 ] ]
 
 [node name="GoodPeopleLikeMe" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 497.721, 125.044 )
@@ -5886,6 +5887,7 @@ dialog = [ "_inter_1_1", "_inter_1_2", "_inter_1_3", "_inter_1_4" ]
 sprite_path = "res://Npcs/sprites/girl.png"
 direction = "right"
 interaction_sentence_id = "S198"
+pre_dialog_event = [ "npc_teaches_discreetly_words", [ 24, 238 ] ]
 
 [node name="ShopOwner" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 2030.5, -38.4417 )

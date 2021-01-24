@@ -92,6 +92,10 @@ func npc_walks_to(parameters):
 		print('nowhere to go!')
 	return npc
 
+func npc_teaches_discreetly_words(word_ids):
+	for word_id in word_ids:
+		Game.known_words.append(word_id)
+
 func npc_disappears_in_white_orb(parameters):
 	var npc = parameters[0]
 	if npc:
