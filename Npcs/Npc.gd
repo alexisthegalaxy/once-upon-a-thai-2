@@ -20,7 +20,7 @@ var velocity = Vector2.ZERO
 var is_walking_towards = null
 var will_go_to = []  # array of vector2 positions
 
-var will_pokecome = false
+var will_pokecome = false  # true if this NPC wants to come (even before meeting its gaze)
 
 # events are an array that contains first the event name, then the array of parameters
 export(Array) var pre_dialog_event = []
@@ -344,6 +344,9 @@ func _physics_process(delta):
 				pokecome()
 
 func pokecome():
+	if self in Game.current_focus:
+		interact()
+		return
 	Game.is_frozen = true
 	temporarily_interact_when_near = true
 	starts_going_toward(Game.player.global_position)

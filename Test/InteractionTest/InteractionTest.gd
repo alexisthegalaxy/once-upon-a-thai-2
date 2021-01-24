@@ -92,14 +92,21 @@ func _on_Submit_pressed():
 	if $Input.text == "":
 		return
 	var is_correct = false
-	print('correct:')
-	print(DistractorsHelper.clean_sentence($Input.text))
 	for accepted_answer in sentence[lo].to_upper().split("|"):
-		print('accepted_answer:')
-		print(DistractorsHelper.clean_sentence(accepted_answer))
+		print('expected answer: ', accepted_answer)
 		if DistractorsHelper.clean_sentence(accepted_answer) == DistractorsHelper.clean_sentence($Input.text):
 			is_correct = true
 	if is_correct:
 		on_correct()
 	else:
 		on_incorrect()
+
+
+func _on_GiveUp_pressed():
+	SoundPlayer.play_sound("res://Sounds/incrorrect.wav", 0)
+#	Game.known_sentences.append(int(sentence_id))
+#	Game.seen_sentences.erase(int(sentence_id))
+	Game.active_test = null
+	Game.is_frozen = false
+	queue_free()
+#	npc.update_npc_overhead()

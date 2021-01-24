@@ -177,10 +177,13 @@ func fragment_sentence_into_words(sentence):
 	return words_in_sentence
 
 func get_distractors_for_words_in_sentence(sentence, number_of_options):
-	assert (len(Game.seen_sentences) + len(Game.known_sentences) > 5)
 	var choices = Array(fragment_sentence_into_words(sentence))
 	while len(choices) < number_of_options:
-		var incorrect_sentence_id = get_random(Game.seen_sentences + Game.known_sentences)
+		var incorrect_sentence_id
+		if len(Game.seen_sentences) + len(Game.known_sentences) > 5:
+			incorrect_sentence_id = get_random(Game.seen_sentences + Game.known_sentences)
+		else:
+			incorrect_sentence_id = str(randi() % Game.sentences.size())
 		var incorrect_sentence = Game.sentences[str(incorrect_sentence_id)]
 		var incorrect_fragments = fragment_sentence_into_words(incorrect_sentence)
 		for incorrect_fragment in incorrect_fragments:
@@ -188,3 +191,4 @@ func get_distractors_for_words_in_sentence(sentence, number_of_options):
 				choices.append(incorrect_fragment)
 	choices.shuffle()
 	return choices
+	

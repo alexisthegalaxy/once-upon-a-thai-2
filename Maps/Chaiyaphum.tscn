@@ -5831,7 +5831,7 @@ position = Vector2( 2218.55, -159.948 )
 position = Vector2( 1235.62, 221.922 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1169.67, 86.2621 )
+position = Vector2( 548.645, 103.87 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -5874,6 +5874,19 @@ dialog = [ "_plural_dialog_1", "_plural_dialog_2", "_plural_dialog_3" ]
 sprite_path = "res://Npcs/sprites/girl.png"
 wanders = 100
 
+[node name="ILikeThaiPeople" parent="YSort/NPCs" instance=ExtResource( 11 )]
+position = Vector2( 461.383, 55.4346 )
+dialog = [ "_inter_2_1", "_inter_2_2" ]
+sprite_path = "res://Npcs/sprites/man.png"
+interaction_sentence_id = "S197"
+
+[node name="GoodPeopleLikeMe" parent="YSort/NPCs" instance=ExtResource( 11 )]
+position = Vector2( 497.721, 125.044 )
+dialog = [ "_inter_1_1", "_inter_1_2", "_inter_1_3", "_inter_1_4" ]
+sprite_path = "res://Npcs/sprites/girl.png"
+direction = "right"
+interaction_sentence_id = "S198"
+
 [node name="ShopOwner" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 2030.5, -38.4417 )
 dialog = [ "_sorry_shop_closed_today" ]
@@ -5897,19 +5910,6 @@ position = Vector2( 1865.29, 200.267 )
 dialog = [ "_congrats_reached_end_game" ]
 sprite_path = "res://Npcs/sprites/monk.png"
 display_name = "Ajahn Jagaro"
-
-[node name="Sentence - I like Thai people" parent="YSort" instance=ExtResource( 38 )]
-position = Vector2( 434.448, 78.3344 )
-sentence_id = 197
-is_translated = true
-style = "stone"
-size = "small"
-
-[node name="Sentence - Goog people like me" parent="YSort" instance=ExtResource( 38 )]
-position = Vector2( 497.154, 41.4636 )
-sentence_id = 198
-is_translated = true
-size = "small"
 
 [node name="Sentence - Thai people are good people" parent="YSort" instance=ExtResource( 38 )]
 position = Vector2( 198.555, 621.507 )

@@ -682,6 +682,7 @@
   "136": {
     "th": "คน-ไทย_ชอบ_ผม",
     "en": "Thai people like me (male).",
+    "fr": "Les Thaïs m'aiment bien (dit par un homme) | Les gens thaïs m'aiment bien (dit par un homme)|Les personnes Thaïes m'aiment bien (dit par un homme).",
     "word_ids": [244, 238, 23]
   },
   "137": {
@@ -998,7 +999,7 @@
   "198": {
     "th": "คน_ดี_ชอบ_ฉัน",
     "en": "Good people like me (female).",
-    "fr": "Les gens biens m'aiment bien. (dit par une femme)",
+    "fr": "Les gens biens m'aiment bien (dit par une femme).",
     "word_ids": [343, 82, 238, 24]
   },
   "199": {
@@ -1264,5 +1265,35 @@
     "en": "I like being here.",
     "fr": "J'aime bien être ici.",
     "word_ids": [23, 238, 237, 37, 9]
+  },
+  "243": {
+    "th": "ผม_คือ_คุณ_และ_คุณ_คือ_ผม_ครับ",
+    "en": "I am you and you are me.",
+    "fr": "Je suis toi et tu es moi.",
+    "word_ids": [23, 206, 28, 384, 28, 206, 23, 9]
+  },
+  "244": {
+    "th": "ฉัน_มี_แมว_สอง_ตัว_ค่ะ",
+    "en": "I have two cats.",
+    "fr": "J'ai deux chats'.",
+    "word_ids": [24, 236, 1, 225, 186, 11]
+  },
+  "245": {
+    "th": "คุณ_ชอบ_แมว_หรือ_ไม่_ครับ?",
+    "en": "Do you like cats or not?",
+    "fr": "Tu aimes bien les chats ou pas?",
+    "word_ids": [28, 238, 1, 436, 39, 9]
+  },
+  "246": {
+    "th": "คุณ_มา_จาก_ประ-เทศ_อะ-ไร_ครับ?",
+    "en": "What country are you from?",
+    "fr": "Tu viens de quel pays?",
+    "word_ids": [28, 202, 43, 264, 56, 9]
+  },
+  "247": {
+    "th": "บ้าน_นี้_ไม่_ใช่_ของ_เขา_ค่ะ",
+    "en": "This house isn't his.",
+    "fr": "Cette maison n'est pas à lui.",
+    "word_ids": [147, 31, 39, 179, 40, 26, 11]
   }
 }
