@@ -178,8 +178,8 @@
   },
   "20": {
     "split": "รูป",
-    "en": "classifier for pictures and monks",
-    "fr": "classificateur des images et moines",
+    "en": "photos, classifier for pictures and monks",
+    "fr": "photos, classificateur des images et moines",
     "tones": "F",
     "pos": "CLAS",
     "th": "รูป",
@@ -2295,6 +2295,7 @@
   "257": {
     "split": "พ-ม่า",
     "en": "Myanmar",
+    "fr": "Myanmar",
     "tones": "HF",
     "pos": "PLAC",
     "th": "พม่า",
@@ -2303,6 +2304,7 @@
   "258": {
     "split": "รถ-ไฟ",
     "en": "train",
+    "fr": "train",
     "tones": "HM",
     "pos": "NOUN",
     "th": "รถไฟ",
@@ -2311,6 +2313,7 @@
   "259": {
     "split": "ไฟ_ฟ้า",
     "en": "electricity",
+    "fr": "électricité",
     "tones": "MH",
     "pos": "NOUN",
     "th": "ไฟฟ้า",
@@ -2318,7 +2321,8 @@
   },
   "260": {
     "split": "ใจ_ดี",
-    "en": "kind",
+    "en": "to be kind, have a good heart",
+    "fr": "être gentil, avoir bon cœur",
     "tones": "MM",
     "pos": "ADJ",
     "th": "ใจดี",
@@ -2327,6 +2331,7 @@
   "261": {
     "split": "หนัง-สือ",
     "en": "book",
+    "fr": "livre",
     "tones": "RR",
     "pos": "NOUN",
     "th": "หนังสือ",
@@ -2335,6 +2340,7 @@
   "262": {
     "split": "มะ-ม่วง",
     "en": "mango",
+    "fr": "mangue",
     "tones": "HF",
     "pos": "NOUN",
     "th": "มะม่วง",
@@ -2352,6 +2358,7 @@
   "264": {
     "split": "ประ-เทศ",
     "en": "country",
+    "fr": "pays",
     "tones": "HF",
     "pos": "NOUN",
     "th": "ประเทศ",
@@ -2378,6 +2385,7 @@
   "267": {
     "split": "ดอก_ไม้",
     "en": "flower",
+    "fr": "fleur",
     "tones": "LH",
     "pos": "NOUN",
     "th": "ดอกไม้",
@@ -2386,6 +2394,7 @@
   "268": {
     "split": "ผล_ไม้",
     "en": "fruit",
+    "fr": "fruit",
     "tones": "RHH",
     "pos": "NOUN",
     "th": "ผลไม้",
@@ -2394,6 +2403,7 @@
   "269": {
     "split": "มะ-ขาม",
     "en": "tamarind",
+    "fr": "tamarin",
     "tones": "HR",
     "pos": "NOUN",
     "th": "มะขาม",
@@ -2410,6 +2420,7 @@
   "271": {
     "split": "นัก-ร้อง",
     "en": "singer",
+    "fr": "chanteur, chanteuse",
     "tones": "HH",
     "pos": "NOUN",
     "th": "นักร้อง",
@@ -2418,6 +2429,7 @@
   "272": {
     "split": "เว-ลา",
     "en": "time",
+    "fr": "temps",
     "tones": "MM",
     "pos": "NOUN",
     "th": "เวลา",
@@ -2435,6 +2447,7 @@
   "274": {
     "split": "รา-คา",
     "en": "price",
+    "fr": "prix",
     "tones": "MM",
     "pos": "NOUN",
     "th": "ราคา",
@@ -2452,6 +2465,7 @@
   "276": {
     "split": "ต-ลาด",
     "en": "market",
+    "fr": "marché",
     "tones": "LL",
     "pos": "NOUN",
     "th": "ตลาด",
@@ -2460,6 +2474,7 @@
   "277": {
     "split": "ส-นาม",
     "en": "field",
+    "fr": "champ",
     "tones": "LR",
     "pos": "NOUN",
     "th": "สนาม",
@@ -2468,6 +2483,7 @@
   "278": {
     "split": "กระ-เป๋า",
     "en": "bag",
+    "fr": "sac",
     "tones": "LR",
     "pos": "NOUN",
     "th": "กระเป๋า",
@@ -2476,6 +2492,7 @@
   "279": {
     "split": "หุ่น-ยนต์",
     "en": "robot",
+    "fr": "robot",
     "tones": "LM",
     "pos": "NOUN",
     "th": "หุ่นยนต์",
@@ -2493,6 +2510,7 @@
   "281": {
     "split": "พระ-จันทร์",
     "en": "moon",
+    "fr": "lune",
     "tones": "HM",
     "pos": "NOUN",
     "th": "พระจันทร์",
@@ -2501,6 +2519,7 @@
   "282": {
     "split": "อา-ศัย",
     "en": "to reside",
+    "fr": "habiter",
     "tones": "MR",
     "pos": "VERB",
     "th": "อาศัย",
@@ -2509,6 +2528,7 @@
   "283": {
     "split": "กาง-เกง",
     "en": "trousers",
+    "fr": "pantalons",
     "tones": "MM",
     "pos": "NOUN",
     "th": "กางเกง",
@@ -2517,6 +2537,7 @@
   "284": {
     "split": "รอง-เท้า",
     "en": "shoes",
+    "fr": "chaussures",
     "tones": "MH",
     "pos": "NOUN",
     "th": "รองเท้า",
@@ -2534,6 +2555,7 @@
   "286": {
     "split": "คิด_ถึง",
     "en": "to miss, think about",
+    "fr": "penser à, avoir quelque chose qui nouus manque",
     "tones": "HR",
     "pos": "VERB",
     "th": "คิดถึง",
@@ -3861,6 +3883,114 @@
     "tones": "R",
     "pos": "",
     "th": "หรือ",
+    "teaching_order": -1
+  },
+  "437": {
+    "split": "นิ_ยาย",
+    "en": "novel",
+    "fr": "roman",
+    "tones": "HM",
+    "pos": "",
+    "th": "นิยาย",
+    "teaching_order": -1
+  },
+  "438": {
+    "split": "ถ่าย",
+    "en": "take (a picture)",
+    "fr": "prendre (une photo)",
+    "tones": "L",
+    "pos": "",
+    "th": "ถ่าย",
+    "teaching_order": -1
+  },
+  "439": {
+    "split": "จริง",
+    "en": "true",
+    "fr": "vrai",
+    "tones": "M",
+    "pos": "",
+    "th": "จริง",
+    "teaching_order": -1
+  },
+  "440": {
+    "split": "ชั่ว_โมง",
+    "en": "hour",
+    "fr": "heure",
+    "tones": "FM",
+    "pos": "",
+    "th": "ชั่วโมง",
+    "teaching_order": -1
+  },
+  "441": {
+    "split": "ความ",
+    "en": "[turns a verb into a noun] / meaning",
+    "fr": "[transforme un verbe en nom] / signification",
+    "tones": "M",
+    "pos": "",
+    "th": "ความ",
+    "teaching_order": -1
+  },
+  "442": {
+    "split": "รู้_สึก",
+    "en": "to feel",
+    "fr": "ressentir",
+    "tones": "HL",
+    "pos": "",
+    "th": "รู้สึก",
+    "teaching_order": -1
+  },
+  "443": {
+    "split": "ตัด_สิน_ใจ",
+    "en": "to decide",
+    "fr": "décider",
+    "tones": "LRM",
+    "pos": "",
+    "th": "ตัดสินใจ",
+    "teaching_order": -1
+  },
+  "444": {
+    "split": "ทั้ง_หมด",
+    "en": "all, total",
+    "fr": "tout, en entier",
+    "tones": "HL",
+    "pos": "",
+    "th": "ทั้งหมด",
+    "teaching_order": -1
+  },
+  "445": {
+    "split": "ผิด",
+    "en": "wrong, incorrect",
+    "fr": "faux, incorrect",
+    "tones": "L",
+    "pos": "",
+    "th": "ผิด",
+    "teaching_order": -1
+  },
+  "446": {
+    "split": "เพลง",
+    "en": "song",
+    "fr": "chanson",
+    "tones": "M",
+    "pos": "",
+    "th": "เพลง",
+    "teaching_order": -1
+  },
+  "447": {
+    "split": "ร้อง",
+    "en": "to sing",
+    "fr": "chanter",
+    "tones": "H",
+    "pos": "",
+    "th": "ร้อง",
+    "teaching_order": -1
+  },
+  "448": {
+    "split": "ก็",
+    "en": "then, so",
+    "fr": "alors",
+    "tones": "F",
+    "pos": "",
+    "th": "ก็",
     "teaching_order": -1
   }
 }
