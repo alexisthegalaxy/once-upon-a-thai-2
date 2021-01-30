@@ -55,7 +55,7 @@ dialog = [ "ผมไม่ชอบคุณ" ]
 sprite_path = "res://Npcs/sprites/boy.png"
 direction = "left"
 display_name = "Som's brother"
-post_dialog_event = [ "say_sentence", 205 ]
+post_dialog_event = [ "say_sentence", 12 ]
 
 [node name="Sister" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( 38.8696, -271.009 )

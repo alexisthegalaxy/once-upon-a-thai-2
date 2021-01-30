@@ -185,6 +185,7 @@ func get_distractors_for_words_in_sentence(sentence, number_of_options):
 		else:
 			incorrect_sentence_id = str(randi() % Game.sentences.size())
 		var incorrect_sentence = Game.sentences[str(incorrect_sentence_id)]
+		# TODO 2838: Add "if sentence is translated in our source language"
 		var incorrect_fragments = fragment_sentence_into_words(incorrect_sentence)
 		for incorrect_fragment in incorrect_fragments:
 			if incorrect_fragment and len(choices) < number_of_options and not incorrect_fragment in choices:

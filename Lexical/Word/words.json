@@ -3992,5 +3992,185 @@
     "pos": "",
     "th": "ก็",
     "teaching_order": -1
+  },
+  "449": {
+    "split": "ส่ง",
+    "en": "to send",
+    "fr": "envoyer",
+    "tones": "L",
+    "pos": "",
+    "th": "ส่ง",
+    "teaching_order": -1
+  },
+  "450": {
+    "split": "จด-หมาย",
+    "en": "letter, correspondance, mail",
+    "fr": "une lettre, un courrier",
+    "tones": "LR",
+    "pos": "",
+    "th": "จดหมาย",
+    "teaching_order": -1
+  },
+  "451": {
+    "split": "อาบ",
+    "en": "to bathe, immerse, take (a shower)",
+    "fr": "se baigner, prendre (une douche)",
+    "tones": "L",
+    "pos": "",
+    "th": "อาบ",
+    "teaching_order": -1
+  },
+  "452": {
+    "split": "เย็น",
+    "en": "cold, cool / dusk",
+    "fr": "froid, frais / crépuscule",
+    "tones": "M",
+    "pos": "",
+    "th": "เย็น",
+    "teaching_order": -1
+  },
+  "453": {
+    "split": "เจ๋ง",
+    "en": "awesome, great, cool, smart",
+    "fr": "génial, cool, intelligent",
+    "tones": "R",
+    "pos": "",
+    "th": "เจ๋ง",
+    "teaching_order": -1
+  },
+  "454": {
+    "split": "ถ้า",
+    "en": "if",
+    "fr": "si, quand",
+    "tones": "F",
+    "pos": "",
+    "th": "ถ้า",
+    "teaching_order": -1
+  },
+  "455": {
+    "split": "นก_แก้ว",
+    "en": "parrot",
+    "fr": "perroquet",
+    "tones": "HF",
+    "pos": "",
+    "th": "นกแก้ว",
+    "teaching_order": -1
+  },
+  "456": {
+    "split": "ชี-วิต",
+    "en": "life",
+    "fr": "la vie",
+    "tones": "MH",
+    "pos": "",
+    "th": "ชีวิต",
+    "teaching_order": -1
+  },
+  "457": {
+    "split": "ดวง",
+    "en": "disc, fate",
+    "fr": "disque, destin",
+    "tones": "M",
+    "pos": "",
+    "th": "ดวง",
+    "teaching_order": -1
+  },
+  "458": {
+    "split": "ฉ-ลาด",
+    "en": "clever, intelligent",
+    "fr": "intelligent",
+    "tones": "LL",
+    "pos": "",
+    "th": "ฉลาด",
+    "teaching_order": -1
+  },
+  "459": {
+    "split": "แม่",
+    "en": "mother",
+    "fr": "mère",
+    "tones": "F",
+    "pos": "",
+    "th": "แม่",
+    "teaching_order": -1
+  },
+  "460": {
+    "split": "ดาว",
+    "en": "star",
+    "fr": "étoile",
+    "tones": "M",
+    "pos": "",
+    "th": "ดาว",
+    "teaching_order": -1
+  },
+  "461": {
+    "split": "ๆ",
+    "en": "[repeats the previous word, to indicate plural or emphasis]",
+    "fr": "[répète le mot précédent, pour indiquer le pluriel ou l'intensifier]",
+    "tones": "",
+    "pos": "",
+    "th": "ๆ",
+    "teaching_order": -1
+  },
+  "462": {
+    "split": "พี่",
+    "en": "[to talk about someone older]",
+    "fr": "[pour parler de quelqu'un de plus âgé]",
+    "tones": "F",
+    "pos": "",
+    "th": "พี่",
+    "teaching_order": -1
+  },
+  "463": {
+    "split": "น้อง",
+    "en": "[to talk about someone younger]",
+    "fr": "[pour parler de quelqu'un de plus jeune]",
+    "tones": "H",
+    "pos": "",
+    "th": "น้อง",
+    "teaching_order": -1
+  },
+  "464": {
+    "split": "ตั้ง-แต่",
+    "en": "since, from",
+    "fr": "depuis",
+    "tones": "FL",
+    "pos": "",
+    "th": "ตั้งแต่",
+    "teaching_order": -1
+  },
+  "465": {
+    "split": "สาว",
+    "en": "sister, girl, young woman",
+    "fr": "sœur, jeune femme",
+    "tones": "R",
+    "pos": "",
+    "th": "สาว",
+    "teaching_order": -1
+  },
+  "466": {
+    "split": "หา",
+    "en": "search, look for",
+    "fr": "chercher",
+    "tones": "R",
+    "pos": "",
+    "th": "หา",
+    "teaching_order": -1
+  },
+  "467": {
+    "split": "ลูก-ชาย",
+    "en": "son",
+    "fr": "fils, garçon",
+    "tones": "FM",
+    "pos": "",
+    "th": "ลูกชาย",
+    "teaching_order": -1
+  },
+  "468": {
+    "split": "เจอ",
+    "en": "meet, find",
+    "fr": "rencontrer, trouver",
+    "tones": "M",
+    "pos": "",
+    "th": "เจอ",
+    "teaching_order": -1
   }
 }
