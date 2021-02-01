@@ -2709,6 +2709,7 @@
   "304": {
     "split": "นิด-หน่อย",
     "en": "a little bit",
+    "fr": "un petit peu",
     "tones": "HL",
     "pos": "None",
     "th": "นิดหน่อย",
@@ -2815,12 +2816,12 @@
     "teaching_order": -1
   },
   "317": {
-    "split": "ด็ก-ผู้-ชาย",
+    "split": "เด็ก-ผู้-ชาย",
     "en": "boy",
     "fr": "garcçon",
     "tones": "LFM",
     "pos": "None",
-    "th": "ด็กผู้ชาย",
+    "th": "เด็กผู้ชาย",
     "teaching_order": -1
   },
   "318": {
@@ -4171,6 +4172,213 @@
     "tones": "M",
     "pos": "",
     "th": "เจอ",
+    "teaching_order": -1
+  },
+  "469": {
+    "split": "พา-ยุ",
+    "en": "storm",
+    "fr": "tempête",
+    "tones": "MH",
+    "pos": "",
+    "th": "พายุ",
+    "teaching_order": -1
+  },
+  "470": {
+    "split": "ตก",
+    "en": "to fall",
+    "fr": "tomber",
+    "tones": "L",
+    "pos": "",
+    "th": "ตก",
+    "teaching_order": -1
+  },
+  "471": {
+    "split": "ลูก-เห็บ",
+    "en": "hail, hailstone",
+    "fr": "grêle, grelon",
+    "tones": "FL",
+    "pos": "",
+    "th": "ลูกเห็บ",
+    "teaching_order": -1
+  },
+  "472": {
+    "split": "หยุด",
+    "en": "to stop",
+    "fr": "arrêter",
+    "tones": "L",
+    "pos": "",
+    "th": "หยุด",
+    "teaching_order": -1
+  },
+  "473": {
+    "split": "ปลา-โล-มา",
+    "en": "dolphin",
+    "fr": "dauphin",
+    "tones": "MMM",
+    "pos": "",
+    "th": "ปลาโลมา",
+    "teaching_order": -1
+  },
+  "474": {
+    "split": "สวน",
+    "en": "garden, park",
+    "fr": "jardin, parc",
+    "tones": "R",
+    "pos": "",
+    "th": "สวน",
+    "teaching_order": -1
+  },
+  "475": {
+    "split": "เมือง",
+    "en": "city, town, state",
+    "fr": "ville, état",
+    "tones": "M",
+    "pos": "",
+    "th": "เมือง",
+    "teaching_order": -1
+  },
+  "476": {
+    "split": "เสียง",
+    "en": "sound, voice, opinion",
+    "fr": "son, bruit, voix, opinion",
+    "tones": "R",
+    "pos": "",
+    "th": "เสียง",
+    "teaching_order": -1
+  },
+  "477": {
+    "split": "ฝน",
+    "en": "rain",
+    "fr": "pluie",
+    "tones": "R",
+    "pos": "",
+    "th": "ฝน",
+    "teaching_order": -1
+  },
+  "478": {
+    "split": "วัด",
+    "en": "temple / measure",
+    "fr": "temple / mesurer",
+    "tones": "H",
+    "pos": "",
+    "th": "วัด",
+    "teaching_order": -1
+  },
+  "479": {
+    "split": "ทำ-บุญ",
+    "en": "make merit (improve karma by doing good deeds, praying, offering to monks)",
+    "fr": "faire une bonne action (améliorer son karma en priant, en faisant des offrandes)",
+    "tones": "MM",
+    "pos": "",
+    "th": "ทำ-บุญ",
+    "teaching_order": -1
+  },
+  "480": {
+    "split": "เมื่อ-ก่อน",
+    "en": "in the past, previously",
+    "fr": "dans le passé, avant",
+    "tones": "FL",
+    "pos": "",
+    "th": "เมื่อ-ก่อน",
+    "teaching_order": -1
+  },
+  "481": {
+    "split": "สัตว์",
+    "en": "animal",
+    "fr": "animal",
+    "tones": "L",
+    "pos": "",
+    "th": "สัตว์",
+    "teaching_order": -1
+  },
+  "482": {
+    "split": "มาก-กว่า",
+    "en": "more than",
+    "fr": "plus que",
+    "tones": "FL",
+    "pos": "",
+    "th": "มากกว่า",
+    "teaching_order": -1
+  },
+  "483": {
+    "split": "ขอ",
+    "en": "ask for, beg",
+    "fr": "demander, quémander",
+    "tones": "R",
+    "pos": "",
+    "th": "ขอ",
+    "teaching_order": -1
+  },
+  "484": {
+    "split": "หน่อย",
+    "en": "a bit",
+    "fr": "un peu",
+    "tones": "L",
+    "pos": "",
+    "th": "หน่อย",
+    "teaching_order": -1
+  },
+  "485": {
+    "split": "มอง",
+    "en": "to look",
+    "fr": "regarder",
+    "tones": "M",
+    "pos": "",
+    "th": "มอง",
+    "teaching_order": -1
+  },
+  "486": {
+    "split": "พ่อ",
+    "en": "father, dad",
+    "fr": "père, papa",
+    "tones": "F",
+    "pos": "",
+    "th": "พ่อ",
+    "teaching_order": -1
+  },
+  "487": {
+    "split": "ซัก",
+    "en": "just / ask / wash",
+    "fr": "juste / demander / laver",
+    "tones": "H",
+    "pos": "",
+    "th": "ซัก",
+    "teaching_order": -1
+  },
+  "488": {
+    "split": "ผ้า",
+    "en": "cloth, textile",
+    "fr": "linge",
+    "tones": "F",
+    "pos": "",
+    "th": "ผ้า",
+    "teaching_order": -1
+  },
+  "489": {
+    "split": "อีก",
+    "en": "again, more, other",
+    "fr": "encore, plus, autre",
+    "tones": "L",
+    "pos": "",
+    "th": "อีก",
+    "teaching_order": -1
+  },
+  "490": {
+    "split": "ฟาก",
+    "en": "side, bank, shore",
+    "fr": "coté, côte",
+    "tones": "F",
+    "pos": "",
+    "th": "ฟาก",
+    "teaching_order": -1
+  },
+  "491": {
+    "split": "เพื่อ",
+    "en": "for, in order to",
+    "fr": "pour, afin de",
+    "tones": "F",
+    "pos": "",
+    "th": "เพื่อ",
     "teaching_order": -1
   }
 }

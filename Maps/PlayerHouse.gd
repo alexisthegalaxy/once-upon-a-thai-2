@@ -4,11 +4,11 @@ func _ready():
 #	SoundPlayer.play_thai("ตุ๊กแก")
 #	yield(get_tree().create_timer(1.0), "timeout")
 	if Events.events["talked_to_nim_at_the_beginning"]:
-		$YSort/Nim.dialog = [
+		$YSort/NPCs/Nim.dialog = [
 			"_granny_is_waiting_outside",
 			"_be_brave_okay"
 		]
-		$YSort/Nim.position = Vector2(72, -137)
+		$YSort/NPCs/Nim.position = Vector2(72, -137)
 
 func _on_Area2D_body_entered(body):
 	if body == Game.player:

@@ -70,10 +70,30 @@ func validate():
 	else:
 		answered_wrongly()
 
+func determine_next_letter_to_write(correct, current):
+	if len(current) > len(correct):
+		return "backspace"
+	var counter = 0
+	for letter in correct:
+		if len(current) <= counter:
+			return letter
+		if current[counter] == letter:
+			counter += 1
+		else:
+			return "backspace"
+	return "enter"
+
 func _on_Hint_mouse_entered():
 	SoundPlayer.play_thai(word.th)
 	$Hint.text = word.th
+	var letter_to_highlight = determine_next_letter_to_write(word.th, $Answer.text)
+	if letter_to_highlight == "enter":
+		$OK.modulate = Color(0, 1, 1, 1)
+	else:
+		$Keyboard.highlight_letter(letter_to_highlight)
 
 func _on_Hint_mouse_exited():
 	SoundPlayer.play_thai(word.th)
 	$Hint.text = tr("_hint")
+	$OK.modulate = Color(1, 1, 1, 1)
+	$Keyboard.highlight_letter("None")

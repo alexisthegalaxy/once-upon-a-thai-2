@@ -159,13 +159,15 @@
   },
   "25": {
     "th": "ส-วัส-ดี_ค่ะ",
-    "en": "Hello (said by female)!",
-    "word_ids": [3, 11]
+    "en": "Hello!|Hi!",
+    "word_ids": [3, 11],
+    "speaker_gender": "F"
   },
   "26": {
     "th": "ส-วัส-ดี_ครับ",
-    "en": "Hello (said by male)!",
-    "word_ids": [3, 9]
+    "en": "(Hello/Hi)!",
+    "word_ids": [3, 9],
+    "speaker_gender": "M"
   },
   "27": {
     "th": "ฉัน_รัก_เขา",
@@ -878,9 +880,9 @@
     "word_ids": [25, 39, 241, 234]
   },
   "157": {
-    "th": "ฉัน_ดี-ใจ_ที่_คุณ_ชอบ_มัน",
-    "en": "I'm glad you like it.",
-    "word_ids": [24, 349, 45, 28, 238, 27]
+    "th": "ฉัน_ดี_ใจ_ที่_คุณ_ชอบ_มัน",
+    "en": "I'm glad (that) you like it.",
+    "word_ids": [24, 82, 188, 45, 28, 238, 27]
   },
   "158": {
     "th": "พวก-เขา_อา-ศัย_อยู่_ใน_ป่า",
@@ -919,9 +921,10 @@
   },
   "165": {
     "th": "ขอบ-คุณ_มาก_ครับ",
-    "en": "Thank you very much (said by a male)!",
-    "fr": "Merci beaucoup (dit par un homme)!",
-    "word_ids": [4, 366, 9]
+    "en": "Thank you very much!",
+    "fr": "Merci beaucoup!",
+    "word_ids": [4, 366, 9],
+    "speaker_gender": "M"
   },
   "166": {
     "th": "คุณ_รู้_ไหม_ว่า_พระ-เจ้า_คือ_อะ-ไร",
@@ -1032,14 +1035,17 @@
     "word_ids": [23, 42, 374, 333, 71, 380, 23, 282, 237, 44, 308]
   },
   "186": {
-    "th": "ผม_ดี-ใจ_ที่_คุณ_ชอบ",
-    "en": "I'm glad you like it (said by a male).",
-    "word_ids": [23, 349, 45, 28, 238]
+    "th": "ผม_ดี_ใจ_ที่_คุณ_ชอบ_ครับ",
+    "en": "I'm glad you like( it).",
+    "fr": "Je suis content que tu (l'){aimes/apprécies} (bien).",
+    "word_ids": [23, 82, 188, 45, 28, 238, 9],
+    "speaker_gender": "M"
   },
   "187": {
     "th": "ฉัน_ดี-ใจ_ที่_ได้_พบ_คุณ",
-    "en": "I'm glad I met you (said by a female).",
-    "word_ids": [24, 349, 45, 209, 373, 28]
+    "en": "I'm glad I met you.",
+    "word_ids": [24, 349, 45, 209, 373, 28],
+    "speaker_gender": "F"
   },
   "188": {
     "th": "บ้าน_ของ_ผม_อยู่_ใกล้_บ้าน_ของ_คุณ",
@@ -1065,7 +1071,7 @@
   },
   "192": {
     "th": "คุณ_ง่วง_รึ-ป่าว",
-    "en": "Are you sleepy (or not?)",
+    "en": "Are you sleepy( or not)?",
     "word_ids": [28, 91, 391]
   },
   "193": {
@@ -1183,9 +1189,10 @@
   },
   "211": {
     "th": "วัน-นี้_ฉัน_มี_สอบ",
-    "en": "I've got a test today (said by a woman).",
-    "fr": "J'ai un test aujourd'hui (dit par une femme).",
-    "word_ids": [64, 24, 236, 142]
+    "en": "I've got a test today.",
+    "fr": "J'ai un test aujourd'hui.",
+    "word_ids": [64, 24, 236, 142],
+    "speaker_gender": "F"
   },
   "212": {
     "th": "เกิด_นั้นแ-หละ_คือ_ตาย",
@@ -1231,26 +1238,26 @@
   },
   "219": {
     "th": "คุณ_มี_น้ำ_หรือ_ไม่_ครับ",
-    "en": "You have water or not?",
-    "fr": "Tu as de l'eau ou pas?",
+    "en": "You have water( or not)?",
+    "fr": "Tu as de l'eau( ou pas) ?",
     "word_ids": [28, 236, 156, 436, 39, 9]
   },
   "220": {
     "th": "ผม_ไม่_มี_น้ำ_ครับ",
-    "en": "I don't have water.",
+    "en": "I don't have (any) water.",
     "fr": "Je n'ai pas d'eau.",
     "word_ids": [23, 39, 236, 156, 9]
   },
   "221": {
     "th": "คน_อะ-ไร_เป็น_สวย_คน_ครับ",
     "en": "What people are beautiful people?",
-    "fr": "Quelles personnes sont de belles personnes ?|Quelles personnes sont belles ?|",
+    "fr": "{Quelles personnes/Les personnes de quel pays} sont {de belles personnes/belles}",
     "word_ids": [343, 56, 207, 340, 343, 9]
   },
   "222": {
     "th": "คน_ไทย_เป็น_คน_สวย_ครับ",
     "en": "Thai people are beautiful people.",
-    "fr": "Les Thaïlandais sont de belles personnes.|Les Thaïlandais sont beaux|Les Thaïlandais sont des personnes belles.|Les Thaïlandais sont des belles personnes.",
+    "fr": "Les Thaïlandais sont beaux|Les Thaïlandais sont {de/des} {personnes belles/belles personnes}.",
     "word_ids": [343, 345, 207, 343, 340, 9]
   },
   "223": {
@@ -1261,20 +1268,20 @@
   },
   "224": {
     "th": "ผม_อยาก_อยู่_บ้าน",
-    "en": "I want to be at home.",
-    "fr": "Je veux être à la maison.",
+    "en": "I want to be {home/at home/at my place}.",
+    "fr": "Je veux être {à/dans} {la/ma} maison.",
     "word_ids": [23, 241, 237, 147]
   },
   "225": {
     "th": "คุณ_สวย_ค่ะ",
-    "en": "You are beautiful.",
+    "en": "You are {beautiful/pretty}.",
     "fr": "Tu es [m:beau; f:belle; n:belleau].",
     "word_ids": [28, 340, 11]
   },
   "226": {
     "th": "คุณ_เป็น_คน_ไทย_หรือ_ไม่_ครับ",
     "en": "Are you Thai or not?",
-    "fr": "Tu es [m:thaï; f:thaïe; n:tahï·e] ou pas ?",
+    "fr": "Tu es [m:thaï; f:thaïe; n:thaï·e] ou pas ?",
     "word_ids": [28, 207, 343, 345, 436, 39, 9]
   },
   "227": {
@@ -1638,5 +1645,109 @@
     "en": "Since yesterday I can't find my dog.",
     "fr": "Depuis hier, je ne trouve pas mon chien.",
     "word_ids": [464, 66, 23, 466, 134, 39, 468, 9]
+  },
+  "286": {
+    "th": "คน_ดี",
+    "en": "People are good.|Good people.",
+    "fr": "Les gens sont bons.|Bonnes personnes.|Gens bons.",
+    "word_ids": [343, 82]
+  },
+  "287": {
+    "th": "ฉัน_อยาก_หยุด_ทำ-งาน_และ_เป็น_ปลา-โล-มา_ค่ะ",
+    "en": "I want to stop working and be a dolphin.",
+    "fr": "Je veux arrêter de travailler et être un dauphin.",
+    "word_ids": [24, 241, 472, 288, 384, 207, 473, 11]
+  },
+  "288": {
+    "th": "ตอน-นี้_ฉัน_ควร_เริ่ม_ทำ-งาน_ค่ะ",
+    "en": "Now I should start working.",
+    "fr": "Maintenant je devrais commencer à travailler.",
+    "word_ids": [67, 24, 242, 390, 288, 11],
+    "speaker_gender": "F"
+  },
+  "289": {
+    "th": "ประ-เทศ_ไทย_ไม่_มี_หิ-มะ_ตก_แต่_บาง-ครั้ง_มี_ลูก-เห็บ_ตก",
+    "en": "In Thailand there's no snowfall, but sometimes there's hail.",
+    "fr": "En Thaïlande il n'y a pas de neige qui tombe, mais parfois il y a de la grêle.",
+    "word_ids": [264, 345, 39, 236, 247, 470, 41, 74, 236, 471, 470]
+  },
+  "290": {
+    "th": "มี_พา-ยุ_ใหญ่_เมื่อ-วาน-นี้",
+    "en": "There was a big storm yesterday.",
+    "fr": "Il y avait une grosse tempête hier.",
+    "word_ids": [236, 469, 83, 66]
+  },
+  "291": {
+    "th": "ฉัน_ชอบ_อยู่_บ้าน_และ_ได้-ยิน_เสียง_ฝน",
+    "en": "I like to be home and hear the sound of the rain.",
+    "fr": "J'aime bien être à la maison et entendre le bruit de la pluie.",
+    "word_ids": [24, 238, 237, 147, 384, 293, 476, 477]
+  },
+  "292": {
+    "th": "แม่_จะ_ไป_วัด_ทำ-บุญ",
+    "en": "My mother will go to the temple to make merit.",
+    "fr": "Ma mère va aller au temple pour faire une bonne action.",
+    "word_ids": [459, 42, 201, 478, 479]
+  },
+  "293": {
+    "th": "ใน_เมือง_นี้_มี_พระ_สอง_รูป",
+    "en": "There are two monks in this city.",
+    "fr": "Il y a deux moines dans cette ville.",
+    "word_ids": [44, 475, 31, 236, 185, 225, 20]
+  },
+  "294": {
+    "th": "ผม_เป็น_เด็ก-ผู้-ชาย_คน-เดียว_ใน_ครอบ-ครัว",
+    "en": "I am the only boy in the family.",
+    "fr": "Je suis le seul garçon dans la famille.",
+    "word_ids": [23, 207, 317, 112, 44, 363]
+  },
+  "295": {
+    "th": "มี_ต้น_มะ-ม่วง_อยู่_ใน_สวน_ของ_เรา",
+    "en": "There's a mango tree in our garden.",
+    "fr": "Il y a un manguier dans notre jardin.",
+    "word_ids": [236, 426, 262, 237, 44, 474, 40, 29]
+  },
+  "296": {
+    "th": "เมื่อ-ก่อน_มี_สัตว์_มาก-กว่า_นี้",
+    "en": "There were more animals here in the past.",
+    "fr": "Il y avait plus d'animaux ici dans le passé.",
+    "word_ids": [480, 236, 481, 482, 31]
+  },
+  "297": {
+    "th": "ขอ_น้ำ_หน่อย",
+    "en": "Please, may I have water.|May I have water please.|Water, please.|Give me water please.|Please, water.|",
+    "fr": "De l'eau, s'il {te/vous} plaît.|S'il {te/vous} plaît, de l'eau.|Donne(z)-moi de l'eau s'il {te/vous} plaít.|",
+    "word_ids": [483, 156, 484]
+  },
+  "298": {
+    "th": "เพื่อน_ของ_ผม_กำ-ลัง_ซื้อ_น้ำ",
+    "en": "My friend is buying water.",
+    "fr": "Mon ami(e) est en train d'acheter de l'eau.",
+    "word_ids": [170, 40, 23, 306, 212, 156]
+  },
+  "299": {
+    "th": "สับ-ปะ-รด_มี_น้ำ_เยอะ_มาก",
+    "en": "There{'s/ is} a lot of water in {pineapples/a pineapple}.",
+    "fr": "Il y a beaucoup d'eau dans {les ananas/un ananas}.",
+    "word_ids": [326, 236, 156, 173, 366]
+  },
+  "300": {
+    "th": "คุณ_มอง_ฉัน_ทำ-ไม",
+    "en": "Why are you looking at me?",
+    "fr": "Pourquoi tu me regardes?",
+    "word_ids": [28, 485, 24, 59],
+    "speaker_gender": "F"
+  },
+  "301": {
+    "th": "แม่_ของ_ฉัน_ทำ_อา-หาร_และ_พ่อ_ของ_ฉัน_ซัก_ผ้า",
+    "en": "My mother cooks and my father does the laundry.",
+    "fr": "Ma mère {cuisine/fait la cuisine/fait à manger} et mon père (fait) la lessive.",
+    "word_ids": [459, 40, 24, 208, 251, 384, 486, 40, 24, 487, 488]
+  },
+  "302": {
+    "th": "ผม_มา_จาก_อีก_ฟาก_ของ_ประ-เทศ_ไทย_เพื่อ_ดู_แฟน_ของ_ผม_ครับ",
+    "en": "I('ve) come from the other side of Thailand to see my girlfriend.",
+    "fr": "Je viens de l'autre bout de la Thaïlande pour voir ma petite amie.",
+    "word_ids": [23, 202, 43, 489, 490, 40, 264, 345, 491, 368, 187, 40, 23, 9]
   }
 }

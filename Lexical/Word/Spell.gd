@@ -144,7 +144,8 @@ func start_test():
 	test_start_animation.connect("test_can_start", self, "start_test_after_animation")
 
 func start_test_after_animation():
-	var first_test = "res://Test/Word/TestSoundFromWord.tscn"
+#	var first_test = "res://Test/Word/TestSoundFromWord.tscn"
+	var first_test = "res://Test/Word/TestWordCopyTyping.tscn"
 	Game.start_test(first_test, id, self)
 
 func _on_Area2D_body_entered(body):

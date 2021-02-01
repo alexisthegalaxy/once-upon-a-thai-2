@@ -35,6 +35,7 @@ func _on_Button_mouse_entered():
 	$Popup/Label.show()
 	$Popup.position = Vector2(0, 20)
 	$ColorRect.color = Color(1, 0.5, 1, 1)
+	SoundPlayer.play_thai(word["th"])
 
 func _on_Button_mouse_exited():
 	$Popup/Label.hide()

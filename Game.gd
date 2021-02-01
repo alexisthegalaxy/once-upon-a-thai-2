@@ -14,9 +14,9 @@ var sentences = []
 var letters = []
 
 # The following are a list of IDs
-var known_words = [343, 345, 207, 82] 
+#var known_words = [343, 345, 207, 82] 
 #var known_words = [82, 343, 345, 207, 204, 222, 223, 232, 233, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 123, 14, 15]
-#var known_words = []
+var known_words = []
 #var known_sentences = [196, 197, 198, 199]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [196, 197, 198]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [200, 201]  # we know the translation. Does not contain seen_sentences.

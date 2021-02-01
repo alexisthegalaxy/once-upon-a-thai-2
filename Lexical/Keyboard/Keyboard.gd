@@ -7,6 +7,8 @@ var shift
 signal text_change
 signal enter_pressed
 var restrict_to_collected_letters
+const HIGHLIGHT_COLOR = Color(0, 1, 1, 1)
+var all_keys = []
 
 func init_keyboard(_restrict_to_collected_letters):
 	restrict_to_collected_letters = _restrict_to_collected_letters
@@ -64,6 +66,8 @@ func init_keyboard(_restrict_to_collected_letters):
 	$Lshift.init_keyboard_key("shift", "none", self)
 	$Rshift.init_keyboard_key("shift", "none", self)
 	$BackSpace.init_keyboard_key("back", "none", self)
+	
+	all_keys = [$"ๅ", $"2", $"3", $"ภ", $"ถ", $"-ุ", $"-ึ", $"ค", $"ต", $"จ", $"ข", $"ช", $"ๆ", $"ไ", $"พ", $"ะ", $"-ั", $"-ี", $"ร", $"น", $"ย", $"บ", $"ล", $"ฟ", $"ห", $"ก", $"ด", $"เ", $"-้", $"-่", $"า", $"ส", $"ว", $"ง", $"ฃ", $"ผ", $"ป", $"แ", $"อ", $"-ิ", $"-ื", $"ท", $"ม", $"ใ", $"ฝ", $"-ำ", $Lshift, $Rshift, $BackSpace]
 
 func _input(_event):
 	# First row
@@ -253,3 +257,303 @@ func receive_key_value(key_value):
 	else:
 		s += key_value.replace('-', '')
 	emit_signal("text_change", s)
+
+func reset_key_highlights():
+	for key in all_keys:
+		key.modulate = Color(1, 1, 1, 1)
+
+func highlight_shift_keys():
+	$Lshift.modulate = HIGHLIGHT_COLOR
+	$Rshift.modulate = HIGHLIGHT_COLOR
+
+func highlight_letter(letter):
+	reset_key_highlights()
+	if letter == "ๅ":
+		$"ๅ".modulate = HIGHLIGHT_COLOR
+	elif letter == "+":
+		$"ๅ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "/":
+		$"2".modulate = HIGHLIGHT_COLOR
+	elif letter == "๑":
+		$"2".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "_":
+		$"3".modulate = HIGHLIGHT_COLOR
+	elif letter == "๒":
+		$"3".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ภ":
+		$"ภ".modulate = HIGHLIGHT_COLOR
+	elif letter == "๓":
+		$"ภ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ถ":
+		$"ถ".modulate = HIGHLIGHT_COLOR
+	elif letter == "๔":
+		$"ถ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ุ":
+		$"-ุ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ู":
+		$"-ุ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ึ":
+		$"-ึ".modulate = HIGHLIGHT_COLOR
+	elif letter == "฿":
+		$"-ึ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ค":
+		$"ค".modulate = HIGHLIGHT_COLOR
+	elif letter == "๕":
+		$"ค".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ต":
+		$"ต".modulate = HIGHLIGHT_COLOR
+	elif letter == "๖":
+		$"ต".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "จ":
+		$"จ".modulate = HIGHLIGHT_COLOR
+	elif letter == "๗":
+		$"จ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ข":
+		$"ข".modulate = HIGHLIGHT_COLOR
+	elif letter == "๘":
+		$"ข".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ช":
+		$"ช".modulate = HIGHLIGHT_COLOR
+	elif letter == "๙":
+		$"ช".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+	
+	# Second row
+	elif letter == "ๆ":
+		$"ๆ".modulate = HIGHLIGHT_COLOR
+	elif letter == "๐":
+		$"ๆ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ไ":
+		$"ไ".modulate = HIGHLIGHT_COLOR
+	elif letter == "\"":
+		$"ไ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ำ":
+		$"-ำ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฎ":
+		$"-ำ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "พ":
+		$"พ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฑ":
+		$"พ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ะ":
+		$"ะ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ธ":
+		$"ะ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ะ":
+		$"ะ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ธ":
+		$"ะ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ั":
+		$"-ั".modulate = HIGHLIGHT_COLOR
+	elif letter == "ํ":
+		$"-ั".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ี":
+		$"-ี".modulate = HIGHLIGHT_COLOR
+	elif letter == "๊":
+		$"-ี".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ร":
+		$"ร".modulate = HIGHLIGHT_COLOR
+	elif letter == "ณ":
+		$"ร".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "น":
+		$"น".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฯ":
+		$"น".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ย":
+		$"ย".modulate = HIGHLIGHT_COLOR
+	elif letter == "ญ":
+		$"ย".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "บ":
+		$"บ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฐ":
+		$"บ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ล":
+		$"ล".modulate = HIGHLIGHT_COLOR
+	elif letter == ",":
+		$"ล".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	# Third row
+	elif letter == "ฟ":
+		$"ฟ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฤ":
+		$"ฟ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ห":
+		$"ห".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฆ":
+		$"ห".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ก":
+		$"ก".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฏ":
+		$"ก".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ด":
+		$"ด".modulate = HIGHLIGHT_COLOR
+	elif letter == "โ":
+		$"ด".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "เ":
+		$"เ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฌ":
+		$"เ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "้":
+		$"-้".modulate = HIGHLIGHT_COLOR
+	elif letter == "็":
+		$"-้".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "่":
+		$"-่".modulate = HIGHLIGHT_COLOR
+	elif letter == "๋":
+		$"-่".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "า":
+		$"า".modulate = HIGHLIGHT_COLOR
+	elif letter == "ษ":
+		$"า".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ส":
+		$"ส".modulate = HIGHLIGHT_COLOR
+	elif letter == "ศ":
+		$"ส".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ว":
+		$"ว".modulate = HIGHLIGHT_COLOR
+	elif letter == "ซ":
+		$"ว".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ง":
+		$"ง".modulate = HIGHLIGHT_COLOR
+	elif letter == ".":
+		$"ง".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	elif letter == "ฃ":
+		$"ฃ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฅ":
+		$"ฃ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+
+	# Fourth row
+	elif letter == "ผ":
+		$"ผ".modulate = HIGHLIGHT_COLOR
+	elif letter == "(":
+		$"ผ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+		
+	elif letter == "ป":
+		$"ป".modulate = HIGHLIGHT_COLOR
+	elif letter == ")":
+		$"ป".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+		
+	elif letter == "แ":
+		$"แ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฉ":
+		$"แ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+		
+	elif letter == "อ":
+		$"อ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฮ":
+		$"อ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+		
+	elif letter == "ิ":
+		$"-ิ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฺ":
+		$"-ิ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+		
+	elif letter == "ื":
+		$"-ื".modulate = HIGHLIGHT_COLOR
+	elif letter == "์":
+		$"-ื".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+		
+	elif letter == "ท":
+		$"ท".modulate = HIGHLIGHT_COLOR
+	elif letter == "?":
+		$"ท".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+		
+	elif letter == "ม":
+		$"ม".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฒ":
+		$"ม".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+		
+	elif letter == "ใ":
+		$"ใ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฬ":
+		$"ใ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+		
+	elif letter == "ฝ":
+		$"ฝ".modulate = HIGHLIGHT_COLOR
+	elif letter == "ฦ":
+		$"ฝ".modulate = HIGHLIGHT_COLOR
+		highlight_shift_keys()
+	
+	elif letter == "backspace":
+		$BackSpace.modulate = HIGHLIGHT_COLOR
+	elif letter == "enter":
+		$BackSpace.modulate = HIGHLIGHT_COLOR
