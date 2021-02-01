@@ -239,11 +239,9 @@ func update_all_keys_upon_shift():
 	$"ฝ".update_upon_shift()
 
 func on_backspace():
-	print('s s.length() ', s.length())
 	if s.length() == 0:
 		return
 	var last_char = s[s.length() - 1]
-	print('last_char', last_char)
 	s.erase(s.length() - 1, 1)
 	var keys = get_tree().get_nodes_in_group("keyboard_keys")
 	for key in keys:

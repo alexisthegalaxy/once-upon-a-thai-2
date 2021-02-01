@@ -34,7 +34,8 @@ func _on_Button_pressed():
 		keyboard.update_all_keys_upon_shift()
 		return
 	if primary_value == "back":
-		keyboard.receive_key_value(primary_value)
+		keyboard.receive_key_value("back")
+		return
 	if keyboard.shift:
 		if keyboard.restrict_to_collected_letters:
 			if shift_letter_quantity > 0:
