@@ -92,6 +92,7 @@ func _on_Submit_pressed():
 	if $Input.text == "":
 		return
 	var is_correct = false
+	# TODO_SENTENCE_FORMATTING put that in a neat function in the helper
 	for accepted_answer in sentence[lo].to_upper().split("|"):
 		print('expected answer: ', accepted_answer)
 		if DistractorsHelper.clean_sentence(accepted_answer) == DistractorsHelper.clean_sentence($Input.text):

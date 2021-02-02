@@ -328,6 +328,16 @@ func _ready():
 		main_ui = load("res://UI/MainUI.tscn").instance()
 		self.add_child(main_ui)
 		main_ui.update_main_ui()
+	
+#	for thing in DistractorsHelper.explode_curly_braces("0-{1a/1b}-2-{3a/3b}-4"):
+#		print('    ', thing)
+	for thing in DistractorsHelper.get_sl_sentence_alternatives("Tu {me parles/es en train de me parler} (ou pas )?|C'est à moi que tu {parles/es en train de parler} (ou pas )?|Tu {parles/es en train de parler} à moi (ou pas )?"):
+		print('    ', thing)
+	for thing in DistractorsHelper.get_sl_sentence_alternatives("Tu es [m:beau; f:belle; n:belleau]."):
+		print('    ', thing)
+	for thing in DistractorsHelper.get_sl_sentence_alternatives("{Nous habitons/On habite/Nous vivons/On vit} {proche/à coté} {de la/d'une} rivière {donc/alors/du coup} {nous aurons/on aura} {toujours de l'eau/de l'eau toujours}."):
+		print('    ', thing)
+
 
 func _input(_event):
 	if _event.is_action_pressed("ui_cancel"):

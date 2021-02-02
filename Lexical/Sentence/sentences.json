@@ -1869,5 +1869,11 @@
     "en": "In the forest there's a ghost that killed ten people.",
     "fr": "Dans la forêt il y a un fantôme qui a tué dix personnes.",
     "word_ids": [44, 342, 236, 167, 186, 224, 45, 496, 233, 343]
+  },
+  "323": {
+    "th": "มัน_เป็น_ส-ถาน-ที่_ที่_สวย-งาม_มาก",
+    "en": "{It's/It is} a (very) beautiful {place/site/location}.|{It's/It is} a {place/site/location} which is (very) beautiful.",
+    "fr": "C'est un {très bel endroit/endroit qui est très beau}.",
+    "word_ids": [27, 207, 511, 45, 510, 366]
   }
 }

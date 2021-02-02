@@ -192,4 +192,76 @@ func get_distractors_for_words_in_sentence(sentence, number_of_options):
 				choices.append(incorrect_fragment)
 	choices.shuffle()
 	return choices
+
+func explode_curly_braces(s):
+#	s = "0-{1a/1b}-2-{3a/3b}-4"
+	if not "{" in s:
+		return [s]
 	
+	var alternatives = [""]
+	var members
+	var member_index
+	var member_active = false
+	for character in s:
+		if character == "{":
+			members = [""]
+			member_index = 0
+			member_active = true
+		elif character == "/":
+			members.append("")
+			member_index += 1
+		elif character == "}":
+			member_active = false
+			var new_alternatives = []
+			for alternative in alternatives:
+				for member in members:
+					new_alternatives.append(alternative + member)
+			alternatives = new_alternatives
+		else:
+			if member_active:
+				members[member_index] += character
+			else:
+				for i in len(alternatives):
+					alternatives[i] = alternatives[i] + character
+				
+	return alternatives
+
+func explode_parenthesis(s):
+	if not "(" in s:
+		return [s]
+	var alternatives = [""]
+	var is_inside_par = false
+	var inside_text
+	for character in s:
+		if character == "(":
+			is_inside_par = true
+			inside_text = ""
+		elif character == ")":
+			is_inside_par = false
+			var new_alternatives = []
+			for alternative in alternatives:
+				new_alternatives.append(alternative)
+				new_alternatives.append(alternative + inside_text)
+			alternatives = new_alternatives
+		else:
+			if is_inside_par:
+				inside_text += character
+			else:
+				for i in len(alternatives):
+					alternatives[i] = alternatives[i] + character
+	return alternatives
+
+func get_sl_sentence_alternatives(sl_string):
+	print(sl_string)
+	# Step 1: explode on the |
+	var alternatives_bar = sl_string.split("|")
+	# Step 2: explode the { and }
+	var alternatives_curly = []
+	for alternative_bar in alternatives_bar:
+		alternatives_curly += explode_curly_braces(alternative_bar)
+	# Step 3: explode the ()
+	var alternatives_parenthesis = []
+	for alternative_curly in alternatives_curly:
+		alternatives_parenthesis += explode_parenthesis(alternative_curly)
+	return alternatives_parenthesis
+

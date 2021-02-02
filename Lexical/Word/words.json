@@ -4549,7 +4549,16 @@
     "fr": "beau, charmant",
     "tones": "RM",
     "pos": "ADJ",
-    "th": "สวย-งาม",
+    "th": "สวยงาม",
+    "teaching_order": -1
+  },
+  "511": {
+    "split": "ส-ถาน-ที่",
+    "en": "place, site, location",
+    "fr": "endroit, site",
+    "tones": "LRF",
+    "pos": "NOUN",
+    "th": "สถานที่",
     "teaching_order": -1
   }
 }
