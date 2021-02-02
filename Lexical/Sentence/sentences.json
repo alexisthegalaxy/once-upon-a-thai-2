@@ -1749,5 +1749,125 @@
     "en": "I('ve) come from the other side of Thailand to see my girlfriend.",
     "fr": "Je viens de l'autre bout de la Thaïlande pour voir ma petite amie.",
     "word_ids": [23, 202, 43, 489, 490, 40, 264, 345, 491, 368, 187, 40, 23, 9]
+  },
+  "303": {
+    "th": "หมา_ของ_เรา_เสียง_เหมือน_แมว",
+    "en": "Our dog sounds like a cat.",
+    "fr": "Notre chien {miaule/sonne/aboie/fait des bruits/fait du bruit} comme un chat.",
+    "word_ids": [134, 40, 29, 476, 50, 1]
+  },
+  "304": {
+    "th": "แม่_ทำ-ให้_ฉัน_เรียน_ภา-ษา-อัง-กฤษ_แต่_ฉัน_ไม่_ชอบ",
+    "en": "{My mother/Mum} makes me learn English but I don't like( it).",
+    "fr": "{Ma mère/Maman} me fait apprendre l'anglais mais j'aime pas ça.",
+    "word_ids": [459, 301, 24, 198, 335, 41, 24, 39, 238]
+  },
+  "305": {
+    "th": "ฉัน_เกลียด_ยุง",
+    "en": "I hate mosquitoes.",
+    "fr": "Je déteste les moustiques.",
+    "word_ids": [24, 219, 359]
+  },
+  "306": {
+    "th": "ถ้า_คุณ_มี_ตุ๊ก-แก_คุณ_ก็_จะ_มี_ยุง_น้อย_ลง",
+    "en": "If you have a gecko, then you will have less mosquitoes.",
+    "fr": "Si tu as un gecko, alors tu auras moins de moustiques.",
+    "word_ids": [454, 28, 236, 0, 28, 448, 42, 236, 359, 500, 506]
+  },
+  "307": {
+    "th": "ฉัน_ได้-ยิน_ว่า_คน_ญี่-ปุ่น_กิน_ข้าว_ทุก-วัน",
+    "en": "I heard that Japanese people eat rice everyday.",
+    "fr": "J'ai entendu que les Japonais mangent du riz tous les jours.",
+    "word_ids": [24, 293, 184, 343, 254, 193, 155, 71]
+  },
+  "308": {
+    "th": "ชี-วิต_ก็_เหมือน_กระ-จก",
+    "en": "Life is like a mirror.",
+    "fr": "La vie, c'est comme un miroir.",
+    "word_ids": [456, 448, 50, 502]
+  },
+  "309": {
+    "th": "มัน_เป็น_หมี_เท่า-นั้น",
+    "en": "It's only a bear.",
+    "fr": "C'est seulement un ours.",
+    "word_ids": [27, 207, 503, 504]
+  },
+  "310": {
+    "th": "ฉัน_จะ_กลับ_มา",
+    "en": "I'll be back.",
+    "fr": "Je reviendrai.",
+    "word_ids": [24, 42, 220, 202]
+  },
+  "311": {
+    "th": "คุณ_กำ-ลัง_พูด_กับ_ฉัน_หรือ_ไม่",
+    "en": "Are you talking to me( or not)?",
+    "fr": "Tu {me parles/es en train de me parler} (ou pas )?|C'est à moi que tu {parles/es en train de parler} (ou pas )?|Tu {parles/es en train de parler} à moi (ou pas )?",
+    "word_ids": [28, 306, 234, 46, 24, 436, 39]
+  },
+  "312": {
+    "th": "มัน_มี_ชี-วิต_อยู่",
+    "en": "It's alive",
+    "fr": "{Il /C'}est {vivant/en vie}!|{Il/Ça} vit!",
+    "word_ids": [27, 236, 456, 237]
+  },
+  "313": {
+    "th": "ฉัน_เห็น_คน_ตาย",
+    "en": "I see dead people.",
+    "fr": "Je vois des gens (qui sont) morts.",
+    "word_ids": [24, 194, 343, 371]
+  },
+  "314": {
+    "th": "ฉัน_จะ_ทำ_ให้_เขา_เป็น_ข้อ-เสนอ_ที่_เขา_ป-ฏิ-เสธ_ไม่_ได้",
+    "en": "I'll make an offer he can't refuse.",
+    "fr": "Je vais lui faire une offre qu'il ne pourra (pas) refuser.",
+    "word_ids": [24, 42, 208, 51, 26, 207, 499, 45, 26, 389, 39, 209]
+  },
+  "315": {
+    "th": "คุณ_ฆ่า_พ่อ_ของ_ฉัน_แล้ว_เตรียม-ตัว_ตาย",
+    "en": "You killed my father, prepare to die.",
+    "fr": "tu as tué mon père, prépare-toi à mourir",
+    "word_ids": [28, 496, 486, 40, 24, 172, 497, 371]
+  },
+  "316": {
+    "th": "ทัก-ทาย_กับ_เพื่อน_ตัว_น้อย_ของ_ฉัน",
+    "en": "Say hello to my little friend.",
+    "fr": "Dites bonjour à mon petit ami.",
+    "word_ids": [495, 46, 170, 186, 500, 40, 24]
+  },
+  "317": {
+    "th": "คุณ_ไม่_สา-มารถ_จัด-การ_กับ_ความ_จริง",
+    "en": "You can't handle the truth!",
+    "fr": "Tu n'es pas capable de supporter la vérité",
+    "word_ids": [28, 39, 501, 505, 46, 441, 439]
+  },
+  "318": {
+    "th": "ไม่_ฉัน_เป็น_พ่อ_ของ_คุณ",
+    "en": "No I am your father.",
+    "fr": "Non je suis ton père.",
+    "word_ids": [39, 24, 207, 486, 40, 28]
+  },
+  "319": {
+    "th": "ฉัน_คิด_ว่า_นี่_เป็น_จุด_เริ่ม-ต้น_ของ_มิ-ตร-ภาพ_ที่_สวย-งาม",
+    "en": "I think this is the beginning of a beautiful friendship.",
+    "fr": "Je pense que c'est le début d'une belle amitié.",
+    "word_ids": [24, 197, 184, 509, 207, 494, 493, 40, 492, 45, 510]
+  },
+  "320": {
+    "th": "เรา_อา-ศัย_อยู่_ใกล้_กับ_แม่-น้ำ_ดัง-นั้น_เรา_จะ_มี_น้ำ_เสมอ",
+    "en": "We live {close to/near/by/next to/not far from} {the/a} river {so/therefore/in consequence} we will {always have water/have water always}.",
+    "fr": "{Nous habitons/On habite/Nous vivons/On vit} {proche/à coté} {de la/d'une} rivière {donc/alors/du coup} {nous aurons/on aura} {toujours de l'eau/de l'eau toujours}.",
+    "word_ids": [29, 282, 237, 93, 46, 507, 508, 29, 42, 236, 156, 72]
+  },
+  "321": {
+    "th": "ฉัน_ต้อง_ไป_ทัก-ทาย_เขา",
+    "en": "I must go greet him.",
+    "fr": "Je dois aller le saluer.",
+    "word_ids": [24, 199, 201, 495, 26]
+  },
+  "322": {
+    "th": "ใน_ป่า_มี_ผี_ตัว_หนึ่ง_ที่_ฆ่า_สิบ_คน",
+    "en": "In the forest there's a ghost that killed ten people.",
+    "fr": "Dans la forêt il y a un fantôme qui a tué dix personnes.",
+    "word_ids": [44, 342, 236, 167, 186, 224, 45, 496, 233, 343]
   }
 }

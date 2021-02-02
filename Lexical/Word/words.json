@@ -281,9 +281,9 @@
   "31": {
     "split": "นี้",
     "en": "this",
-    "fr": "ceci",
+    "fr": "ce, cette",
     "tones": "H",
-    "pos": "PRON",
+    "pos": "ADJ",
     "th": "นี้",
     "teaching_order": 68
   },
@@ -4379,6 +4379,177 @@
     "tones": "F",
     "pos": "",
     "th": "เพื่อ",
+    "teaching_order": -1
+  },
+  "492": {
+    "split": "มิ-ตร-ภาพ",
+    "en": "friendship",
+    "fr": "amitié",
+    "tones": "HLF",
+    "pos": "",
+    "th": "มิตรภาพ",
+    "teaching_order": -1
+  },
+  "493": {
+    "split": "เริ่ม-ต้น",
+    "en": "to start, to begin",
+    "fr": "commencer",
+    "tones": "FF",
+    "pos": "",
+    "th": "เริ่มต้น",
+    "teaching_order": -1
+  },
+  "494": {
+    "split": "จุด",
+    "en": "point, mark, spot / to kindle",
+    "fr": "point, marque / allumer",
+    "tones": "L",
+    "pos": "",
+    "th": "จุด",
+    "teaching_order": -1
+  },
+  "495": {
+    "split": "ทัก-ทาย",
+    "en": "Say hello, greet",
+    "fr": "saluer, dire bonjour",
+    "tones": "HM",
+    "pos": "",
+    "th": "ทักทาย",
+    "teaching_order": -1
+  },
+  "496": {
+    "split": "ฆ่า",
+    "en": "to kill, murder",
+    "fr": "tuer",
+    "tones": "F",
+    "pos": "",
+    "th": "ฆ่า",
+    "teaching_order": -1
+  },
+  "497": {
+    "split": "เตรียม-ตัว",
+    "en": "to get ready",
+    "fr": "se préparer",
+    "tones": "MM",
+    "pos": "",
+    "th": "เตรียมตัว",
+    "teaching_order": -1
+  },
+  "498": {
+    "split": "ป-ฏิ-เสธ",
+    "en": "to refuse, deny",
+    "fr": "refuser, nier",
+    "tones": "LLL",
+    "pos": "",
+    "th": "ปฏิเสธ",
+    "teaching_order": -1
+  },
+  "499": {
+    "split": "ข้อ-เสนอ",
+    "en": "proposal, offer, proposition",
+    "fr": "offre, proposition",
+    "tones": "FLR",
+    "pos": "",
+    "th": "ข้อเสนอ",
+    "teaching_order": -1
+  },
+  "500": {
+    "split": "น้อย",
+    "en": "little, few",
+    "fr": "petit, peu",
+    "tones": "H",
+    "pos": "",
+    "th": "น้อย",
+    "teaching_order": -1
+  },
+  "501": {
+    "split": "สา-มารถ",
+    "en": "can, to be able to",
+    "fr": "pouvoir",
+    "tones": "RF",
+    "pos": "",
+    "th": "สามารถ",
+    "teaching_order": -1
+  },
+  "502": {
+    "split": "กระ-จก",
+    "en": "mirror",
+    "fr": "miroir",
+    "tones": "LL",
+    "pos": "N",
+    "th": "กระจก",
+    "teaching_order": -1
+  },
+  "503": {
+    "split": "หมี",
+    "en": "bear (animal)",
+    "fr": "our",
+    "tones": "R",
+    "pos": "N",
+    "th": "หมี",
+    "teaching_order": -1
+  },
+  "504": {
+    "split": "เท่า-นั้น",
+    "en": "only, simply",
+    "fr": "seulement, simplement",
+    "tones": "FH",
+    "pos": "",
+    "th": "เท่านั้น",
+    "teaching_order": -1
+  },
+  "505": {
+    "split": "จัด-การ",
+    "en": "manage, deal, handle",
+    "fr": "s'occuper de, supporter",
+    "tones": "LM",
+    "pos": "",
+    "th": "จัด-การ",
+    "teaching_order": -1
+  },
+  "506": {
+    "split": "ลง",
+    "en": "down / to go down",
+    "fr": "en bas / baisser",
+    "tones": "M",
+    "pos": "",
+    "th": "ลง",
+    "teaching_order": -1
+  },
+  "507": {
+    "split": "แม่-น้ำ",
+    "en": "river",
+    "fr": "rivière",
+    "tones": "FH",
+    "pos": "",
+    "th": "แม่น้ำ",
+    "teaching_order": -1
+  },
+  "508": {
+    "split": "ดัง-นั้น",
+    "en": "therefore, so, in consequence",
+    "fr": "alors, du coup, donc",
+    "tones": "MH",
+    "pos": "",
+    "th": "ดังนั้น",
+    "teaching_order": -1
+  },
+  "509": {
+    "split": "นี่",
+    "en": "this",
+    "fr": "ceci",
+    "tones": "F",
+    "pos": "PRON",
+    "th": "นี่",
+    "teaching_order": -1
+  },
+  "510": {
+    "split": "สวย-งาม",
+    "en": "beautiful, charming",
+    "fr": "beau, charmant",
+    "tones": "RM",
+    "pos": "ADJ",
+    "th": "สวย-งาม",
     "teaching_order": -1
   }
 }

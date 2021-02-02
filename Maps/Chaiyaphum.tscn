@@ -6058,6 +6058,14 @@ direction = "left"
 interaction_sentence_id = "S286"
 pre_dialog_event = [ "npc_teaches_discreetly_words", [ 24, 238 ] ]
 
+[node name="ThisPersonIsAGoodPerson2" parent="YSort/NPCs" instance=ExtResource( 11 )]
+position = Vector2( -15.6595, 627.95 )
+dialog = [ "_inter_0_1" ]
+sprite_path = "res://Npcs/sprites/monk.png"
+direction = "left"
+interaction_sentence_id = "S297"
+pre_dialog_event = [ "npc_teaches_discreetly_words", [ 24, 238 ] ]
+
 [node name="ShopOwner" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 2030.5, -38.4417 )
 dialog = [ "_sorry_shop_closed_today" ]
