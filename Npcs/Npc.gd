@@ -348,6 +348,8 @@ func pokecome():
 		interact()
 		return
 	Game.is_frozen = true
+	# TODO: if player was walking using the mouse, stop it
+	Game.player.goal_position = Game.player.position
 	temporarily_interact_when_near = true
 	starts_going_toward(Game.player.global_position)
 

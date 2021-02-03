@@ -35,7 +35,14 @@ func update_quests_display():
 	return number_of_quests_display + tr("_active_quests")
 
 func _press_quests_button():
-	is_showing_quests = not is_showing_quests
+	if is_showing_quests:
+		# If all quests were closed by the user, then we show them again!
+		if (not $Quests/QuestDisplay1.is_visible() and not $Quests/QuestDisplay2.is_visible() and not $Quests/QuestDisplay3.is_visible()):
+			is_showing_quests = true
+		else:
+			is_showing_quests = false
+	else:
+		is_showing_quests = true
 	if is_showing_quests:
 		open_quest_display()
 	else:
@@ -45,4 +52,10 @@ func open_quest_display():
 	is_showing_quests = true
 	update_quests_display()
 	$Quests.show()
-	
+
+func is_hovering_over_buttons():
+	return (
+		$Quests/QuestDisplay1.hovered_buttons or
+		$Quests/QuestDisplay2.hovered_buttons or 
+		$Quests/QuestDisplay3.hovered_buttons
+	)

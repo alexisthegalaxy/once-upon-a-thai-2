@@ -42,7 +42,7 @@ func get_choices(distractors, answer):
 	return choices
 
 func fragment_sentence_into_three(sentence):
-	var words_in_sentence = clean_sentence(sentence[lo].to_upper()).split(" ")
+	var words_in_sentence = clean_sentence(get_sentence_source_text(sentence).to_upper()).split(" ")
 	var number_of_words_in_sentence = len(words_in_sentence)
 	var number_of_words_per_fragment = ceil(number_of_words_in_sentence / 3.0)
 	var correct_fragment_0 = ""
@@ -158,22 +158,24 @@ func process_player_gender_in_sentence(sentence):
 	return result
 
 func clean_sentence(_sentence):
-	var inside_parentheses = false
+#	var inside_parentheses = false
 	var sentence = _sentence.replace(".", "").replace("-", " ")
-	sentence = sentence.replace("!", "")
-	sentence = sentence.replace("?", "")
-	var result = ""
-	for letter in sentence:
-		if letter == "(":
-			inside_parentheses = true
-		elif letter == ")":
-			inside_parentheses = false
-		elif not inside_parentheses:
-			result += letter
-	return process_player_gender_in_sentence(result.strip_edges(true, true))
+	sentence = sentence.replace("!", "").replace(",", "")
+	sentence = sentence.replace("?", "").replace("ʼ", "'")
+	sentence = sentence.replace("ï", "i").replace("ç", "c")
+	sentence = sentence.replace("è", "e").replace("é", "e").replace("ê", "e")
+#	var result = ""
+#	for letter in sentence:
+#		if letter == "(":
+#			inside_parentheses = true
+#		elif letter == ")":
+#			inside_parentheses = false
+#		elif not inside_parentheses:
+#			result += letter
+	return process_player_gender_in_sentence(sentence.strip_edges(true, true))
 
 func fragment_sentence_into_words(sentence):
-	var words_in_sentence = clean_sentence(sentence[lo].split("|")[0].to_upper()).split(" ")
+	var words_in_sentence = clean_sentence(get_sentence_source_text(sentence).to_upper()).split(" ")
 	return words_in_sentence
 
 func get_distractors_for_words_in_sentence(sentence, number_of_options):
@@ -240,8 +242,8 @@ func explode_parenthesis(s):
 			is_inside_par = false
 			var new_alternatives = []
 			for alternative in alternatives:
-				new_alternatives.append(alternative)
 				new_alternatives.append(alternative + inside_text)
+				new_alternatives.append(alternative)
 			alternatives = new_alternatives
 		else:
 			if is_inside_par:
@@ -250,6 +252,13 @@ func explode_parenthesis(s):
 				for i in len(alternatives):
 					alternatives[i] = alternatives[i] + character
 	return alternatives
+
+func get_sentence_source_text(sentence):
+	# This returns the first alternative found.
+	# This means the first element of the ones separated by |
+	# This means the first element in each {} clause
+	# We take evrything that appears in parenthesis
+	return get_sl_sentence_alternatives(sentence[lo])[0]
 
 func get_sl_sentence_alternatives(sl_string):
 	print(sl_string)

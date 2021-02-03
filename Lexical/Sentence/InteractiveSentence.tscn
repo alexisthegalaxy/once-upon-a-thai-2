@@ -23,7 +23,7 @@ margin_right = 89.2692
 margin_bottom = 48.1506
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "English Translation"
+text = "Source Language Translation"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false

@@ -91,4 +91,6 @@ text = "X"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="mouse_entered" from="CloseButton" to="." method="_on_CloseButton_mouse_entered"]
+[connection signal="mouse_exited" from="CloseButton" to="." method="_on_CloseButton_mouse_exited"]
 [connection signal="pressed" from="CloseButton" to="." method="_on_CloseButton_pressed"]

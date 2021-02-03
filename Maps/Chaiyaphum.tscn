@@ -186,7 +186,7 @@ position = Vector2( 219.563, 321.286 )
 id = 1
 
 [node name="CollectibleLetter7" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( -11.4588, 503.54 )
+position = Vector2( -26.7393, 512.558 )
 id = 1
 
 [node name="CollectibleLetter16" parent="YSort" instance=ExtResource( 10 )]
@@ -886,7 +886,7 @@ position = Vector2( 298.112, 663.158 )
 position = Vector2( -120.695, 476.061 )
 
 [node name="Tree891" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( -34.5355, 485.244 )
+position = Vector2( -68.1026, 411.096 )
 
 [node name="Tree949" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 498.585, -123.313 )
@@ -1288,7 +1288,7 @@ position = Vector2( 558.658, 656.174 )
 position = Vector2( 920.571, 587.109 )
 
 [node name="Tree290" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( -47.5171, 511.876 )
+position = Vector2( -82.3367, 431.966 )
 
 [node name="Tree944" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 508.74, -97.421 )
@@ -2140,7 +2140,7 @@ position = Vector2( -90.0399, 480.925 )
 position = Vector2( -51.5054, 595.718 )
 
 [node name="Tree888" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( -11.899, 476.036 )
+position = Vector2( -11.398, 489.312 )
 
 [node name="Tree887" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( -73.4666, 618.12 )
@@ -2188,10 +2188,10 @@ position = Vector2( 865.493, 692.485 )
 position = Vector2( 849.35, 598.989 )
 
 [node name="Tree334" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( -8.92212, 451.398 )
+position = Vector2( -40.9862, 480.206 )
 
 [node name="Tree333" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( -36.0059, 453.655 )
+position = Vector2( -28.4909, 434.116 )
 
 [node name="Tree332" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 682.268, 643.055 )
@@ -4499,7 +4499,11 @@ position = Vector2( -31.8113, 598.494 )
 
 [node name="Tree1302" parent="YSort/Trees" instance=ExtResource( 13 )]
 modulate = Color( 0.992157, 0.929412, 0.0156863, 1 )
-position = Vector2( -11.7535, 485.91 )
+position = Vector2( -22.024, 466.371 )
+
+[node name="Tree1304" parent="YSort/Trees" instance=ExtResource( 13 )]
+modulate = Color( 0.992157, 0.929412, 0.0156863, 1 )
+position = Vector2( -57.5951, 527.243 )
 
 [node name="Tree1146" parent="YSort/Trees" instance=ExtResource( 13 )]
 modulate = Color( 0.992157, 0.929412, 0.0156863, 1 )
@@ -5969,7 +5973,7 @@ position = Vector2( 424.184, -28.2114 )
 id = 24
 
 [node name="chan2" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( -22.5598, 560.706 )
+position = Vector2( -267.082, 498.693 )
 id = 24
 
 [node name="chawp" parent="YSort/Words" instance=ExtResource( 16 )]
@@ -5992,7 +5996,7 @@ position = Vector2( 2218.55, -159.948 )
 position = Vector2( 1235.62, 221.922 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 2.69481, 583.332 )
+position = Vector2( -320.201, 560.787 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6059,11 +6063,11 @@ interaction_sentence_id = "S286"
 pre_dialog_event = [ "npc_teaches_discreetly_words", [ 24, 238 ] ]
 
 [node name="ThisPersonIsAGoodPerson2" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( -15.6595, 627.95 )
+position = Vector2( -282.443, 595.487 )
 dialog = [ "_inter_0_1" ]
 sprite_path = "res://Npcs/sprites/monk.png"
 direction = "left"
-interaction_sentence_id = "S297"
+interaction_sentence_id = "S311"
 pre_dialog_event = [ "npc_teaches_discreetly_words", [ 24, 238 ] ]
 
 [node name="ShopOwner" parent="YSort/NPCs" instance=ExtResource( 11 )]

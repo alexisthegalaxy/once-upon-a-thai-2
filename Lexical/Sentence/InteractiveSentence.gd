@@ -22,7 +22,7 @@ func init_interactive_sentence(sentence, main_word_id, hears_sentence_immediatel
 		$Node2D/Translation.hide()
 	$Node2D/TestSoundPlayer.init_sound_player(playable_sentence)
 	if sentence.id in Game.known_sentences:
-		$Node2D/Translation.text = sentence[TranslationServer.get_locale()]
+		$Node2D/Translation.text = DistractorsHelper.get_sentence_source_text(sentence)
 	else:
 		$Node2D/Translation.text = tr("_unknown_meaning")
 	for word_id in sentence["word_ids"]:

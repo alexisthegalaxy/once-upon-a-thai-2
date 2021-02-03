@@ -25,18 +25,18 @@ outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 4 )
 
-[sub_resource type="SegmentShape2D" id=8]
+[sub_resource type="SegmentShape2D" id=5]
 a = Vector2( 0, 200 )
 b = Vector2( 0, 0 )
 
-[sub_resource type="SegmentShape2D" id=9]
+[sub_resource type="SegmentShape2D" id=6]
 a = Vector2( 0, -200 )
 b = Vector2( 0, 0 )
 
 [sub_resource type="SegmentShape2D" id=7]
 b = Vector2( 200, 0 )
 
-[sub_resource type="SegmentShape2D" id=10]
+[sub_resource type="SegmentShape2D" id=8]
 a = Vector2( -200, 0 )
 b = Vector2( 0, 0 )
 
@@ -121,12 +121,12 @@ visible = false
 [node name="Down" type="Area2D" parent="LineOfSight"]
 
 [node name="Down" type="CollisionShape2D" parent="LineOfSight/Down"]
-shape = SubResource( 8 )
+shape = SubResource( 5 )
 
 [node name="Up" type="Area2D" parent="LineOfSight"]
 
 [node name="Up" type="CollisionShape2D" parent="LineOfSight/Up"]
-shape = SubResource( 9 )
+shape = SubResource( 6 )
 
 [node name="Right" type="Area2D" parent="LineOfSight"]
 
@@ -136,7 +136,7 @@ shape = SubResource( 7 )
 [node name="Left" type="Area2D" parent="LineOfSight"]
 
 [node name="Left" type="CollisionShape2D" parent="LineOfSight/Left"]
-shape = SubResource( 10 )
+shape = SubResource( 8 )
 [connection signal="body_entered" from="InteractBox" to="." method="_on_InteractBox_body_entered"]
 [connection signal="body_exited" from="InteractBox" to="." method="_on_InteractBox_body_exited"]
 [connection signal="body_entered" from="LineOfSight/Down" to="." method="_on_Down_body_entered"]

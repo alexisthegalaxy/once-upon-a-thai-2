@@ -1095,8 +1095,8 @@
   },
   "196": {
     "th": "คน_ไทย_เป็น_คน_ดี",
-    "en": "Thai people are good people.",
-    "fr": "Les Thaïlandais sont des gens biens.",
+    "en": "{Thai people/The Thais/Thais} are good( people).",
+    "fr": "Les {Thaïlandais/Thaïs/personnes Thaïlandaises/gens Thaïlandais} sont {des gens biens/biens/des bonnes personnes/des personnes bien}.",
     "word_ids": [343, 345, 207, 343, 82]
   },
   "197": {
@@ -1801,7 +1801,7 @@
   "311": {
     "th": "คุณ_กำ-ลัง_พูด_กับ_ฉัน_หรือ_ไม่",
     "en": "Are you talking to me( or not)?",
-    "fr": "Tu {me parles/es en train de me parler} (ou pas )?|C'est à moi que tu {parles/es en train de parler} (ou pas )?|Tu {parles/es en train de parler} à moi (ou pas )?",
+    "fr": "{Tu es en train de me parler/Es-tu en train de me parler/Tu me parles/Me parles-tu/} (ou pas )?|{C'est/Est-ce} à moi que tu {parles/es en train de parler} (ou pas )?|{Tu parles/Parles-tu/Tu es en train de parler/Es-tu en train de parler} {à/avec} moi (ou pas )?",
     "word_ids": [28, 306, 234, 46, 24, 436, 39]
   },
   "312": {
@@ -1880,7 +1880,7 @@
     "th": "เรา_เป็น_ใคร",
     "en": "Who are we?",
     "fr": "Qui sommes-nous ?",
-    "word_ids": []
+    "word_ids": [29, 207, 55]
   },
   "325": {
     "th": "ทำ-ไม_เรา_อยู่_ที่_นี่",
@@ -1905,5 +1905,12 @@
     "en": "What is the meaning of life?",
     "fr": "Quel est {le sens/la signification} de la vie?",
     "word_ids": [513, 40, 456, 206, 56]
+  },
+  "329": {
+    "th": "ผม_คิด-ถึง_ทุก-คน",
+    "en": "I {miss/think about} every{body/one}.",
+    "fr": "Tout le monde me manque.|Je pense à tout le monde.",
+    "word_ids": [23, 286, 35],
+    "speaker_gender": "M"
   }
 }

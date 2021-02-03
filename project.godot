@@ -401,7 +401,7 @@ kb_enter={
 
 [locale]
 
-test="en"
+test="fr"
 translations=PoolStringArray( "res://Localisation/localisation.en.translation", "res://Localisation/localisation.fr.translation" )
 
 [rendering]

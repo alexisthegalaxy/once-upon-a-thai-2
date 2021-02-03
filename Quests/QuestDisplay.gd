@@ -3,6 +3,7 @@ extends Node2D
 var quest
 var quest_id
 var goal_location
+var hovered_buttons = false
 
 func find_npc_with_that_quest():
 	var ysort = Game.current_scene.get_node("YSort")
@@ -60,4 +61,11 @@ func update_display():
 		$green_check_mark.hide()
 
 func _on_CloseButton_pressed():
+	hovered_buttons = false
 	hide()
+
+func _on_CloseButton_mouse_entered():
+	hovered_buttons = true
+
+func _on_CloseButton_mouse_exited():
+	hovered_buttons = false

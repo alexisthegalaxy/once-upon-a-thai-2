@@ -88,7 +88,7 @@ func _process(delta) -> void:
 	if Game.is_somber:
 		time += delta
 		if int(time) % 19 > 16 or int(time) % 5 >= 4:
-			$Camera2D.position.x = 2.5 * cos(time * 20)
+			$Camera2D.position.x = 2.5 * cos(time * 5)
 		else:
 			$Camera2D.position.x = 0
 	else:

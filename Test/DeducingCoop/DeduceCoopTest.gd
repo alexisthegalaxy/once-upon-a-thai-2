@@ -56,8 +56,15 @@ func _on_Cross_pressed():
 func _on_Submit_pressed():
 	if $Input.text == "":
 		return
-	var correct_answer = sentence[lo].to_upper().replace(".", "").replace("?", "") + " "
-	if $Input.text == correct_answer:
+	var is_correct = false
+	var cleaned_input = DistractorsHelper.clean_sentence($Input.text)
+	print(cleaned_input)
+	for accepted_answer in DistractorsHelper.get_sl_sentence_alternatives(sentence[lo].to_upper()):
+		if DistractorsHelper.clean_sentence(accepted_answer) == cleaned_input:
+			is_correct = true
+	if is_correct:
+#	var correct_answer = DistractorsHelper.get_sentence_source_text(sentence).to_upper().replace(".", "").replace("?", "") + " "
+#	if $Input.text == correct_answer:
 		SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
 		Game.known_sentences.append(int(sentence_id))
 		Game.seen_sentences.erase(int(sentence_id))

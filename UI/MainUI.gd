@@ -84,8 +84,7 @@ func update_main_ui_quests_display():
 func main_ui_process_click(_event) -> bool:
 	var event_is_processed = false
 	if Input.is_action_just_pressed("click"):
-		print('ui handle input')
-		if hovered_buttons:
+		if hovered_buttons or $QuestsDisplay.is_hovering_over_buttons():
 			event_is_processed = true
 	return event_is_processed
 
