@@ -4560,5 +4560,23 @@
     "pos": "NOUN",
     "th": "สถานที่",
     "teaching_order": -1
+  },
+  "512": {
+    "split": "ธรร-ม-ชาติ",
+    "en": "nature",
+    "fr": "nature",
+    "tones": "MHF",
+    "pos": "NOUN",
+    "th": "ธรรมชาติ",
+    "teaching_order": -1
+  },
+  "513": {
+    "split": "ความ-หมาย",
+    "en": "meaning, sense",
+    "fr": "signification, sens",
+    "tones": "MR",
+    "pos": "NOUN",
+    "th": "ความหมาย",
+    "teaching_order": -1
   }
 }

@@ -1860,14 +1860,14 @@
   },
   "321": {
     "th": "ฉัน_ต้อง_ไป_ทัก-ทาย_เขา",
-    "en": "I must go greet him.",
-    "fr": "Je dois aller le saluer.",
+    "en": "I {have to/must} (go )greet {her/him/them}.",
+    "fr": "Je dois (aller ){le/la} saluer.",
     "word_ids": [24, 199, 201, 495, 26]
   },
   "322": {
     "th": "ใน_ป่า_มี_ผี_ตัว_หนึ่ง_ที่_ฆ่า_สิบ_คน",
     "en": "In the forest there's a ghost that killed ten people.",
-    "fr": "Dans la forêt il y a un fantôme qui a tué dix personnes.",
+    "fr": "Dans la forêt il y a un fantôme qui a tué (dix/10) (humains/gens/personnes).",
     "word_ids": [44, 342, 236, 167, 186, 224, 45, 496, 233, 343]
   },
   "323": {
@@ -1875,5 +1875,35 @@
     "en": "{It's/It is} a (very) beautiful {place/site/location}.|{It's/It is} a {place/site/location} which is (very) beautiful.",
     "fr": "C'est un {très bel endroit/endroit qui est très beau}.",
     "word_ids": [27, 207, 511, 45, 510, 366]
+  },
+  "324": {
+    "th": "เรา_เป็น_ใคร",
+    "en": "Who are we?",
+    "fr": "Qui sommes-nous ?",
+    "word_ids": []
+  },
+  "325": {
+    "th": "ทำ-ไม_เรา_อยู่_ที่_นี่",
+    "en": "Why are we here?",
+    "fr": "Pourquoi sommes-nous ici ?",
+    "word_ids": [59, 29, 237, 45, 509]
+  },
+  "326": {
+    "th": "ธรร-ม-ชาติ_ของ_ชี-วิต_คือ_อะ-ไร",
+    "en": "What is the nature of life?",
+    "fr": "Quelle est la nature de la vie ?",
+    "word_ids": [512, 40, 456, 206, 56]
+  },
+  "327": {
+    "th": "ชี-วิต_ไม่_มี_ความ-หมาย",
+    "en": "Life has no meaning.",
+    "fr": "La vie n'a pas de {signification/sens}.",
+    "word_ids": [456, 39, 236, 513]
+  },
+  "328": {
+    "th": "ความ-หมาย_ของ_ชี-วิต_คือ_อะ-ไร",
+    "en": "What is the meaning of life?",
+    "fr": "Quel est {le sens/la signification} de la vie?",
+    "word_ids": [513, 40, 456, 206, 56]
   }
 }
