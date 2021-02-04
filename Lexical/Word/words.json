@@ -2852,7 +2852,7 @@
     "teaching_order": -1
   },
   "321": {
-    "split": "ฝ-รั่งเ-ศส",
+    "split": "ฝ-รั่ง-เศส",
     "en": "France",
     "fr": "France",
     "tones": "LLL",
@@ -4577,6 +4577,141 @@
     "tones": "MR",
     "pos": "NOUN",
     "th": "ความหมาย",
+    "teaching_order": -1
+  },
+  "514": {
+    "split": "ข-นม-ปัง",
+    "en": "bread",
+    "fr": "pain",
+    "tones": "LRM",
+    "pos": "NOUN",
+    "th": "ขนมปัง",
+    "teaching_order": -1
+  },
+  "515": {
+    "split": "พูด-คุย",
+    "en": "to chat, converse",
+    "fr": "discuter",
+    "tones": "FM",
+    "pos": "VERB",
+    "th": "พูดคุย",
+    "teaching_order": -1
+  },
+  "516": {
+    "split": "กลาง-คืน",
+    "en": "night, nighttime",
+    "fr": "nuit",
+    "tones": "MM",
+    "pos": "",
+    "th": "กลางคืน",
+    "teaching_order": -1
+  },
+  "517": {
+    "split": "ผู้-ชาย",
+    "en": "man, male",
+    "fr": "homme, masculin",
+    "tones": "FM",
+    "pos": "",
+    "th": "ผู้ชาย",
+    "teaching_order": -1
+  },
+  "518": {
+    "split": "ผู้-หญิง",
+    "en": "woman, female",
+    "fr": "femme, féminin",
+    "tones": "FR",
+    "pos": "",
+    "th": "ผู้หญิง",
+    "teaching_order": -1
+  },
+  "519": {
+    "split": "สิ่ง",
+    "en": "thing",
+    "fr": "chose",
+    "tones": "L",
+    "pos": "",
+    "th": "สิ่ง",
+    "teaching_order": -1
+  },
+  "520": {
+    "split": "นาน-มา-แล้ว",
+    "en": "long time ago",
+    "fr": "il y a longtemps",
+    "tones": "MMH",
+    "pos": "",
+    "th": "นานมาแล้ว",
+    "teaching_order": -1
+  },
+  "521": {
+    "split": "เล่า",
+    "en": "to tell, describe",
+    "fr": "raconter, décrire",
+    "tones": "F",
+    "pos": "",
+    "th": "เล่า",
+    "teaching_order": -1
+  },
+  "522": {
+    "split": "ฟัง",
+    "en": "to listen (to something), to hear (something)",
+    "fr": "écouter (quelque chose), entendre (quelque chose)",
+    "tones": "M",
+    "pos": "",
+    "th": "ฟัง",
+    "teaching_order": -1
+  },
+  "523": {
+    "split": "บ่อย",
+    "en": "often",
+    "fr": "souvent",
+    "tones": "L",
+    "pos": "",
+    "th": "บ่อย",
+    "teaching_order": -1
+  },
+  "524": {
+    "split": "นั่ง-ส-มา-ธิ",
+    "en": "to meditate",
+    "fr": "méditer",
+    "tones": "FLMH",
+    "pos": "",
+    "th": "นั่งสมาธิ",
+    "teaching_order": -1
+  },
+  "525": {
+    "split": "พระ-สงฆ์",
+    "en": "monk",
+    "fr": "moine",
+    "tones": "HR",
+    "pos": "",
+    "th": "พระสงฆ์",
+    "teaching_order": -1
+  },
+  "526": {
+    "split": "ชื่น-ชม",
+    "en": "admire, praise, commend",
+    "fr": "admirer, louer, féliciter",
+    "tones": "FM",
+    "pos": "",
+    "th": "ชื่นชม",
+    "teaching_order": -1
+  },
+  "527": {
+    "split": "วิ-ธี",
+    "en": "means, way, method",
+    "fr": "manière, façon",
+    "tones": "HM",
+    "pos": "",
+    "th": "วิธี",
+    "teaching_order": -1
+  },
+  "528": {
+    "split": "ที่-สุด",
+    "en": "most, -est, maximum",
+    "fr": "le plus, maximum, maximal",
+    "tones": "FL",
+    "pos": "",
+    "th": "ที่สุด",
     "teaching_order": -1
   }
 }

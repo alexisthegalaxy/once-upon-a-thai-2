@@ -1912,5 +1912,131 @@
     "fr": "Tout le monde me manque.|Je pense à tout le monde.",
     "word_ids": [23, 286, 35],
     "speaker_gender": "M"
+  },
+  "330": {
+    "th": "ไม่_มี_ใคร_รู้_ว่า_แมว_ตัว_นี้_มา_จาก-ไหน",
+    "en": "Nobody knows where this cat comes from.",
+    "fr": "Personne ne sait d'où ce chat vient.",
+    "word_ids": [39, 236, 55, 370, 184, 1, 186, 31, 202, 62]
+  },
+  "331": {
+    "th": "เพื่อน_ของ_ผม_ทุก_คน_เป็น_ผี",
+    "en": "All my friends are ghosts.",
+    "fr": "Tous mes amis sont des fantômes.",
+    "word_ids": [170, 40, 23, 174, 343, 207, 167],
+    "speaker_gender": "M"
+  },
+  "332": {
+    "th": "คุณ_เชื่อ_ใน_พระ-เจ้า_ไหม",
+    "en": "Do you believe in God?",
+    "fr": "Tu crois en Dieu ?",
+    "word_ids": [28, 218, 44, 5, 10]
+  },
+  "333": {
+    "th": "ฉัน_ชอบ_ข-นม-ปัง_ฝ-รั่ง-เศส",
+    "en": "I like French bread.",
+    "fr": "J'aime bien le pain français.",
+    "word_ids": [24, 238, 514, 321],
+    "speaker_gender": "F"
+  },
+  "334": {
+    "th": "ฉัน_สา-มารถ_พูด-คุย_กับ_ผี_และ_สัตว์_ได้",
+    "en": "I can converse with ghosts and animals.",
+    "fr": "Je peux discuter avec les fantômes et les animaux.",
+    "word_ids": [24, 501, 515, 46, 167, 384, 481, 209],
+    "speaker_gender": "F"
+  },
+  "335": {
+    "th": "ตุ๊ก-แก_ของ_ผม_ร้อง_เมื่อ_มี_ผี_ใน_บ้าน",
+    "en": "My gecko {sing/call/shout}s when there is a ghost in the house.",
+    "fr": "Mon gecko {crie/appelle/chante} quand il y a un fantôme dans la maison.",
+    "word_ids": [0, 40, 23, 447, 380, 236, 167, 44, 147],
+    "speaker_gender": "M"
+  },
+  "336": {
+    "th": "อย่า_ไป_ใน_ป่า_คน-เดียว_ใน_เว-ลา_กลาง-คืน",
+    "en": "Don't go in the forest alone {at night/by night/during the night/in the night}(time).",
+    "fr": "Ne va pas dans la forêt tout seul {/dans /pendant }la nuit.",
+    "word_ids": [175, 201, 44, 342, 112, 44, 272, 516]
+  },
+  "337": {
+    "th": "ผู้-ชาย_คน_นี้_มอง_เห็น_สิ่ง_ที่_เรา_มอง_ไม่_เห็น",
+    "en": "This man sees things we can't see.",
+    "fr": "Cet homme voit des choses que nous ne pouvons pas voir.",
+    "word_ids": [517, 343, 31, 485, 194, 519, 45, 29, 485, 39, 194]
+  },
+  "338": {
+    "th": "เรื่อง_นี้_เป็น_เรื่อง_ยาว",
+    "en": "This( story) is a long story.",
+    "fr": "{C'est/Cette histoire} une longue histoire.",
+    "word_ids": [49, 31, 207, 49, 84]
+  },
+  "339": {
+    "th": "ยาย_ของ_ฉัน_เล่า_เรื่อง_นี้_ให้_ฉัน_ฟัง_เมื่อ_นาน-มา-แล้ว",
+    "en": "My grandmother told me this story a long time ago.",
+    "fr": "Ma grand-mère m'a raconté cette histoire il y a longtemps.",
+    "word_ids": [396, 40, 24, 521, 49, 31, 51, 24, 522, 380, 520],
+    "speaker_gender": "F"
+  },
+  "340": {
+    "th": "เขา_มา_จาก_ที่-ไหน",
+    "en": "Where does {she/he} come from?",
+    "fr": "D'où vient-{il/elle} ?|{Il/Elle} vient d'où ?",
+    "word_ids": [26, 202, 43, 57]
+  },
+  "341": {
+    "th": "ฉัน_กลัว_หมา",
+    "en": "I'm afraid of dogs.",
+    "fr": "J'ai peur des chiens.",
+    "word_ids": [24, 367, 134],
+    "speaker_gender": "F"
+  },
+  "342": {
+    "th": "อย่า_กิน_มัน",
+    "en": "Don't eat it.",
+    "fr": "(Ne )le mange pas.|(Ne )mange pas ça.",
+    "word_ids": [175, 193, 27]
+  },
+  "343": {
+    "th": "คุณ_กลับ_บ้าน_บ่อย_ไหม",
+    "en": "Do you often go back home?",
+    "fr": "Tu rentres souvent chez toi ?",
+    "word_ids": [28, 220, 147, 523, 10]
+  },
+  "344": {
+    "th": "ฉัน_ได้-ยิน_เสียง_เมื่อ_ฉัน_เข้า_ไป_ใน_ป่า_นี้",
+    "en": "I hear {voices/sounds} when I {go/enter} in(side) this forest.",
+    "fr": "J'entends des {voix/bruits} quand {je vais/j'entre} dans cette forêt.",
+    "word_ids": [24, 293, 476, 380, 24, 418, 201, 44, 342, 31]
+  },
+  "345": {
+    "th": "พระ-สงฆ์_บาง-ครั้ง_มา_ที่_นี่_เพื่อ_นั่ง-ส-มา-ธิ",
+    "en": "Monks sometimes come here to meditate.",
+    "fr": "Les moines viennent parfois méditer ici.",
+    "word_ids": [525, 74, 202, 45, 509, 491, 524]
+  },
+  "346": {
+    "th": "ฉัน_ชื่น-ชม_วิ-ธี_ที่_คุณ_คิด",
+    "en": "I admire the way you think.",
+    "fr": "J'admire {la façon dont tu penses/ta façon de penser}.",
+    "word_ids": [24, 526, 527, 45, 28, 197]
+  },
+  "347": {
+    "th": "วิ-ธี_ที่_ดี_ที่-สุด_คือ_อะ-ไร",
+    "en": "What is the best way?",
+    "fr": "Quelle est la meilleure {manière/façon} ?",
+    "word_ids": [527, 45, 82, 528, 206, 56]
+  },
+  "348": {
+    "th": "สัตว์_ที่_ดี_ที่-สุด_คือ_ตุ๊ก-แก",
+    "en": "The best {animal is/animals are} the gecko{/s}.",
+    "fr": "{Le meilleur animal/Les meilleurs animaux} {est/c'est/sont} {le gecko/les geckos}.",
+    "word_ids": [481, 45, 82, 528, 206, 0]
+  },
+  "349": {
+    "th": "คน_จาก_กรุง-เทพ_พูด_เร็ว_ที่-สุด",
+    "en": "People from Bangkok speak the fastest.",
+    "fr": "Les gens de Bangkok parlent le plus vite.",
+    "word_ids": [343, 43, 308, 234, 90, 528]
   }
 }
