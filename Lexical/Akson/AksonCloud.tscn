@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Lexical/Akson/cloud.png" type="Texture" id=1]
+
+[node name="Cloud" type="Node2D"]
+
+[node name="cloud" type="Sprite" parent="."]
+position = Vector2( 0.288055, 0.957825 )
+scale = Vector2( 0.60006, 0.559117 )
+texture = ExtResource( 1 )
