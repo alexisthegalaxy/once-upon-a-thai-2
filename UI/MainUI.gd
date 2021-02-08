@@ -100,7 +100,8 @@ func on_button_pressed(type):
 	if type == "_go_to_letter_world":
 		go_to_letter_world()
 	elif type == "_see_letters":
-		display_alphabet()
+#		display_alphabet()
+		display_akson()
 	elif type == "_see_words":
 		display_words()
 	elif type == "_see_sentences":
@@ -139,6 +140,12 @@ func display_alphabet():
 	alphabet.init_alphabet()
 	Game.current_scene.add_child(alphabet)
 
+func display_akson():
+	var akson = load("res://Lexical/Akson/Akson.tscn").instance()
+	Game.akson = akson
+	akson.init_akson()
+	Game.current_scene.add_child(akson)
+	
 func display_spell_crafting():
 	var spell_crafting_scene = load("res://Lexical/SpellCrafting/SpellCrafting.tscn").instance()
 	Game.spell_crafting_screen = spell_crafting_scene

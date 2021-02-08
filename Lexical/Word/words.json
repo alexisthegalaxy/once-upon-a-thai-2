@@ -1,6 +1,6 @@
 {
   "0": {
-    "split": "ตุ๊ก-แก",
+    "split": "ตุ๊ก=แก",
     "en": "gecko",
     "fr": "gecko",
     "tones": "HM",
@@ -27,7 +27,7 @@
     "teaching_order": -1
   },
   "3": {
-    "split": "ส-วัส-ดี",
+    "split": "ส=วัส=ดี",
     "en": "hello",
     "fr": "bonjour",
     "tones": "LLM",
@@ -62,7 +62,7 @@
     "teaching_order": -1
   },
   "7": {
-    "split": "สา-ธุ",
+    "split": "สา=ธุ",
     "en": "sadhu",
     "fr": "sadhu",
     "tones": "RH",
@@ -499,7 +499,7 @@
     "teaching_order": 36
   },
   "56": {
-    "split": "อะ-ไร",
+    "split": "อะ=ไร",
     "en": "what",
     "fr": "quoi",
     "tones": "LM",
@@ -536,7 +536,7 @@
     "teaching_order": 38
   },
   "60": {
-    "split": "ยัง-ไง",
+    "split": "ยัง=ไง",
     "en": "how",
     "fr": "comment",
     "tones": "MM",
@@ -2181,6 +2181,7 @@
   "243": {
     "split": "แต่",
     "en": "but",
+    "fr": "mais",
     "tones": "L",
     "pos": "None",
     "th": "แต่",
@@ -2189,6 +2190,7 @@
   "244": {
     "split": "คน-ไทย",
     "en": "Thai people",
+    "fr": "personne thaïe",
     "tones": "MM",
     "pos": "NOUN",
     "th": "คนไทย",
@@ -2197,6 +2199,7 @@
   "245": {
     "split": "ชื่อ-เล่น",
     "en": "nickname",
+    "fr": "surnom",
     "tones": "FF",
     "pos": "NOUN",
     "th": "ชื่อเล่น",
@@ -2205,6 +2208,7 @@
   "246": {
     "split": "ความ-สุข",
     "en": "happiness",
+    "fr": "bonheur",
     "tones": "ML",
     "pos": "NOUN",
     "th": "ความสุข",
@@ -2213,6 +2217,7 @@
   "247": {
     "split": "หิ-มะ",
     "en": "snow",
+    "fr": "neige",
     "tones": "LH",
     "pos": "NOUN",
     "th": "หิมะ",
@@ -2230,6 +2235,7 @@
   "249": {
     "split": "ที-วี",
     "en": "TV",
+    "fr": "télé",
     "tones": "MM",
     "pos": "NOUN",
     "th": "ทีวี",
@@ -2238,6 +2244,7 @@
   "250": {
     "split": "ข-นม",
     "en": "sweets, cake",
+    "fr": "friandises, gateau",
     "tones": "LR",
     "pos": "NOUN",
     "th": "ขนม",
@@ -2246,6 +2253,7 @@
   "251": {
     "split": "อา-หาร",
     "en": "food",
+    "fr": "nourriture",
     "tones": "MR",
     "pos": "NOUN",
     "th": "อาหาร",
@@ -2436,7 +2444,7 @@
     "teaching_order": -1
   },
   "273": {
-    "split": "ภา-ษา",
+    "split": "ภา=ษา",
     "en": "language",
     "fr": "la langue, le language",
     "tones": "MR",
@@ -2517,7 +2525,7 @@
     "teaching_order": -1
   },
   "282": {
-    "split": "อา-ศัย",
+    "split": "อา=ศัย",
     "en": "to reside",
     "fr": "habiter",
     "tones": "MR",
@@ -2888,7 +2896,7 @@
     "teaching_order": -1
   },
   "325": {
-    "split": "ภา-ษา-ไทย",
+    "split": "ภา=ษา-ไทย",
     "en": "Thai language",
     "fr": "la langue thaïe",
     "tones": "MRM",
@@ -3707,7 +3715,7 @@
     "teaching_order": -1
   },
   "417": {
-    "split": "เข้า_ใจ",
+    "split": "เข้า-ใจ",
     "en": "to understand",
     "fr": "comprendre",
     "tones": "FM",
@@ -4712,6 +4720,213 @@
     "tones": "FL",
     "pos": "",
     "th": "ที่สุด",
+    "teaching_order": -1
+  },
+  "529": {
+    "split": "คำ",
+    "en": "word",
+    "fr": "mot",
+    "tones": "M",
+    "pos": "NOUN",
+    "th": "คำ",
+    "teaching_order": -1
+  },
+  "530": {
+    "split": "ขวบ",
+    "en": "years-old (when approximatiely less than 12)",
+    "fr": "ans (pour parler de l'âge d'un anfant de moins de douze ans)",
+    "tones": "L",
+    "pos": "",
+    "th": "ขวบ",
+    "teaching_order": -1
+  },
+  "531": {
+    "split": "หวัง",
+    "en": "hope, wish",
+    "fr": "espérer",
+    "tones": "R",
+    "pos": "",
+    "th": "หวัง",
+    "teaching_order": -1
+  },
+  "532": {
+    "split": "วัน-เกิด",
+    "en": "birthday",
+    "fr": "anniversaire",
+    "tones": "R",
+    "pos": "",
+    "th": "วันเกิด",
+    "teaching_order": -1
+  },
+  "533": {
+    "split": "พี่-ชาย",
+    "en": "older brother",
+    "fr": "grand frère",
+    "tones": "FM",
+    "pos": "",
+    "th": "พี่ชาย",
+    "teaching_order": -1
+  },
+  "534": {
+    "split": "ชาย",
+    "en": "man",
+    "fr": "homme",
+    "tones": "M",
+    "pos": "",
+    "th": "ชาย",
+    "teaching_order": -1
+  },
+  "535": {
+    "split": "ชา",
+    "en": "tea",
+    "fr": "thé",
+    "tones": "M",
+    "pos": "",
+    "th": "ชา",
+    "teaching_order": -1
+  },
+  "536": {
+    "split": "ป่วย",
+    "en": "sick, to get sick",
+    "fr": "être malade, tomber malade",
+    "tones": "L",
+    "pos": "",
+    "th": "ป่วย",
+    "teaching_order": -1
+  },
+  "537": {
+    "split": "ร้อน",
+    "en": "hot, warm",
+    "fr": "chaud",
+    "tones": "H",
+    "pos": "",
+    "th": "ร้อน",
+    "teaching_order": -1
+  },
+  "538": {
+    "split": "ออก",
+    "en": "to leave / out",
+    "fr": "partir, sortir",
+    "tones": "L",
+    "pos": "",
+    "th": "ออก",
+    "teaching_order": -1
+  },
+  "539": {
+    "split": "กี่-โมง",
+    "en": "at what time",
+    "fr": "à quelle heure",
+    "tones": "LM",
+    "pos": "",
+    "th": "กี่โมง",
+    "teaching_order": -1
+  },
+  "540": {
+    "split": "เนื้อ",
+    "en": "meat, beef",
+    "fr": "viande, boeuf",
+    "tones": "H",
+    "pos": "",
+    "th": "เนื้อ",
+    "teaching_order": -1
+  },
+  "541": {
+    "split": "พ่อ-แม่",
+    "en": "parents, father and mother",
+    "fr": "parents, père et mère",
+    "tones": "FF",
+    "pos": "",
+    "th": "พ่อแม่",
+    "teaching_order": -1
+  },
+  "542": {
+    "split": "สู้",
+    "en": "to fight",
+    "fr": "combattre, se battre",
+    "tones": "F",
+    "pos": "",
+    "th": "สู้",
+    "teaching_order": -1
+  },
+  "543": {
+    "split": "จูบ",
+    "en": "to kiss",
+    "fr": "embrasser, faire un bisou",
+    "tones": "L",
+    "pos": "",
+    "th": "จูบ",
+    "teaching_order": -1
+  },
+  "544": {
+    "split": "พ=ยา=ยาม",
+    "en": "to try",
+    "fr": "essayer",
+    "tones": "HMM",
+    "pos": "",
+    "th": "พยายาม",
+    "teaching_order": -1
+  },
+  "545": {
+    "split": "เรียน-รู้",
+    "en": "to learn",
+    "fr": "apprendre",
+    "tones": "MH",
+    "pos": "",
+    "th": "เรียนรู้",
+    "teaching_order": -1
+  },
+  "546": {
+    "split": "อย่าง-น้อย",
+    "en": "at least",
+    "fr": "au moins",
+    "tones": "LH",
+    "pos": "",
+    "th": "อย่างน้อย",
+    "teaching_order": -1
+  },
+  "547": {
+    "split": "น่า-รัก",
+    "en": "cute",
+    "fr": "mignon, adorable",
+    "tones": "FH",
+    "pos": "",
+    "th": "น่ารัก",
+    "teaching_order": -1
+  },
+  "548": {
+    "split": "ไว=ไฟ",
+    "en": "WiFi",
+    "fr": "WiFi",
+    "tones": "MM",
+    "pos": "",
+    "th": "ไวไฟ",
+    "teaching_order": -1
+  },
+  "549": {
+    "split": "แพง",
+    "en": "expensive",
+    "fr": "cher",
+    "tones": "M",
+    "pos": "",
+    "th": "แพง",
+    "teaching_order": -1
+  },
+  "550": {
+    "split": "ฤ=ดู-ร้อน",
+    "en": "summer",
+    "fr": "été",
+    "tones": "HMH",
+    "pos": "",
+    "th": "ฤดูร้อน",
+    "teaching_order": -1
+  },
+  "551": {
+    "split": "พิ=เศษ",
+    "en": "special",
+    "fr": "spécial",
+    "tones": "HL",
+    "pos": "",
+    "th": "พิเศษ",
     "teaching_order": -1
   }
 }

@@ -194,7 +194,7 @@
     "speaker_gender": "M"
   },
   "31": {
-    "th": "คุณ_ชื่อ_อะ-ไร",
+    "th": "คุณ_ชื่อ_อะ=ไร",
     "en": "Whats your name?",
     "word_ids": [28, 204, 56]
   },
@@ -205,7 +205,7 @@
     "speaker_gender": "F"
   },
   "33": {
-    "th": "ผม_อา-ศัย_อยู่_ใน_ลอน-ดอน",
+    "th": "ผม_อา=ศัย_อยู่_ใน_ลอน-ดอน",
     "en": "I live in London.",
     "word_ids": [23, 282, 237, 44, 310],
     "speaker_gender": "M"
@@ -240,12 +240,12 @@
     "speaker_gender": "F"
   },
   "39": {
-    "th": "เรา_อยาก-ให้_คุณ_พูด_ภา-ษา-ไทย_ทุก_วัน",
+    "th": "เรา_อยาก-ให้_คุณ_พูด_ภา=ษา-ไทย_ทุก_วัน",
     "en": "We want you to speak thai every day.",
     "word_ids": [29, 294, 28, 234, 325, 174, 164]
   },
   "40": {
-    "th": "ฉัน_มี_อะ-ไร_จะ_บอก_คุณ",
+    "th": "ฉัน_มี_อะ=ไร_จะ_บอก_คุณ",
     "en": "I have something to tell you.",
     "word_ids": [24, 236, 56, 42, 200, 28],
     "speaker_gender": "F"
@@ -335,17 +335,17 @@
     "word_ids": [134, 186, 83]
   },
   "56": {
-    "th": "คุณ_พูด_ภา-ษา_ญี่-ปุ่น_ได้_ไหม",
+    "th": "คุณ_พูด_ภา=ษา_ญี่-ปุ่น_ได้_ไหม",
     "en": "Can you speak Japanese?",
     "word_ids": [28, 234, 273, 254, 209, 10]
   },
   "57": {
-    "th": "คุณ_พูด_ภา-ษา-ไทย_ได้_ไหม",
+    "th": "คุณ_พูด_ภา=ษา-ไทย_ได้_ไหม",
     "en": "Can you speak Thai?",
     "word_ids": [28, 234, 325, 209, 10]
   },
   "58": {
-    "th": "คุณ_พูด_ภา-ษา-อัง-กฤษ_ได้_ไหม",
+    "th": "คุณ_พูด_ภา=ษา-อัง-กฤษ_ได้_ไหม",
     "en": "Can you speak English?",
     "word_ids": [28, 234, 335, 209, 10]
   },
@@ -457,12 +457,12 @@
     "word_ids": [64, 207, 164, 114, 16, 12]
   },
   "79": {
-    "th": "คุณ_กำ-ลัง_พูด_อะ-ไร",
+    "th": "คุณ_กำ-ลัง_พูด_อะ=ไร",
     "en": "What are you saying?",
     "word_ids": [28, 306, 234, 56]
   },
   "80": {
-    "th": "คุณ_กำ-ลัง_คุย_เรื่อง_อะ-ไร_อยู่",
+    "th": "คุณ_กำ-ลัง_คุย_เรื่อง_อะ=ไร_อยู่",
     "en": "What are you talking about?",
     "word_ids": [28, 306, 196, 49, 56, 237]
   },
@@ -573,7 +573,7 @@
     "speaker_gender": "F"
   },
   "101": {
-    "th": "พวก-เขา_จะ_ทำ_อะ-ไร_ก่อน",
+    "th": "พวก-เขา_จะ_ทำ_อะ=ไร_ก่อน",
     "en": "What will they do first?",
     "word_ids": [36, 42, 208, 56, 79]
   },
@@ -692,18 +692,18 @@
     "word_ids": [28, 222, 272, 97, 57]
   },
   "123": {
-    "th": "คน-ไทย_ชอบ_พูด_ภา-ษา_อัง-กฤษ",
+    "th": "คน-ไทย_ชอบ_พูด_ภา=ษา_อัง-กฤษ",
     "en": "Thai people like to speak English.",
     "word_ids": [244, 238, 234, 273, 255]
   },
   "124": {
-    "th": "ฉัน_ชอบ_เรียน_ภา-ษา-ไทย",
+    "th": "ฉัน_ชอบ_เรียน_ภา=ษา-ไทย",
     "en": "I like to study Thai.",
     "word_ids": [24, 238, 198, 325],
     "speaker_gender": "F"
   },
   "125": {
-    "th": "ฉัน_ไม่_ชอบ_เรียน_ภา-ษา-อัง-กฤษ",
+    "th": "ฉัน_ไม่_ชอบ_เรียน_ภา=ษา-อัง-กฤษ",
     "en": "I don't like to study English.",
     "word_ids": [24, 39, 238, 198, 335],
     "speaker_gender": "M"
@@ -742,7 +742,7 @@
     "word_ids": [244, 238, 1]
   },
   "132": {
-    "th": "ฉัน_อยาก_เรียน_ภา-ษา_แมว",
+    "th": "ฉัน_อยาก_เรียน_ภา=ษา_แมว",
     "en": "I want to learn cat language.",
     "word_ids": [24, 241, 198, 273, 1],
     "speaker_gender": "F"
@@ -837,7 +837,7 @@
     "speaker_gender": "F"
   },
   "149": {
-    "th": "ฉัน_อยาก_กลับ-บ้าน_เรียน_ภา-ษา-ไทย",
+    "th": "ฉัน_อยาก_กลับ-บ้าน_เรียน_ภา=ษา-ไทย",
     "en": "I want to return home and study Thai language.",
     "word_ids": [24, 241, 291, 198, 325],
     "speaker_gender": "M"
@@ -885,7 +885,7 @@
     "word_ids": [24, 82, 188, 45, 28, 238, 27]
   },
   "158": {
-    "th": "พวก-เขา_อา-ศัย_อยู่_ใน_ป่า",
+    "th": "พวก-เขา_อา=ศัย_อยู่_ใน_ป่า",
     "en": "They live in the jungle.",
     "word_ids": [36, 282, 237, 44, 342]
   },
@@ -905,7 +905,7 @@
     "word_ids": [28, 238, 251, 345, 10]
   },
   "162": {
-    "th": "ตุ๊ก-แก_เป็น_ส-กุล_ของ_สัตว์-เลื้อย-คลาน",
+    "th": "ตุ๊ก=แก_เป็น_ส-กุล_ของ_สัตว์-เลื้อย-คลาน",
     "en": "Geckos are a family of reptiles.",
     "word_ids": [0, 207, 365, 40, 360]
   },
@@ -915,7 +915,7 @@
     "word_ids": [2, 207, 365, 40, 360]
   },
   "164": {
-    "th": "ตุ๊ก-แก_มี_ขา_มาก_กว่า_งู",
+    "th": "ตุ๊ก=แก_มี_ขา_มาก_กว่า_งู",
     "en": "Geckos have more legs than snakes.",
     "word_ids": [0, 236, 191, 366, 182, 2]
   },
@@ -927,7 +927,7 @@
     "speaker_gender": "M"
   },
   "166": {
-    "th": "คุณ_รู้_ไหม_ว่า_พระ-เจ้า_คือ_อะ-ไร",
+    "th": "คุณ_รู้_ไหม_ว่า_พระ-เจ้า_คือ_อะ=ไร",
     "en": "Do you know what a god is?",
     "word_ids": [28, 370, 10, 184, 5, 206, 56]
   },
@@ -1030,7 +1030,7 @@
     "word_ids": [379, 39, 238, 193, 346]
   },
   "185": {
-    "th": "ผม_จะ_ขึ้น_รถ-ไฟ-ใต้-ดิน_ทุก-วัน_เมื่อ_ผม_อา-ศัย_อยู่_ใน_กรุง-เทพ",
+    "th": "ผม_จะ_ขึ้น_รถ-ไฟ-ใต้-ดิน_ทุก-วัน_เมื่อ_ผม_อา=ศัย_อยู่_ใน_กรุง-เทพ",
     "en": "I will take the subway everyday when I live in Bangkok.",
     "word_ids": [23, 42, 374, 333, 71, 380, 23, 282, 237, 44, 308]
   },
@@ -1127,7 +1127,7 @@
     "speaker_gender": "M"
   },
   "201": {
-    "th": "คุณ_ชอบ_อะ-ไร",
+    "th": "คุณ_ชอบ_อะ=ไร",
     "en": "What do you like?",
     "fr": "Qu'est-ce que tu aimes ?",
     "word_ids": [28, 238, 56]
@@ -1145,7 +1145,7 @@
     "word_ids": [343, 345, 238, 343, 82]
   },
   "204": {
-    "th": "คน_ไทย_ชอบ_อะ-ไร",
+    "th": "คน_ไทย_ชอบ_อะ=ไร",
     "en": "What do Thai people like?",
     "fr": "Qu'est-ce que les Thaïlandais aiment bien ?",
     "word_ids": [343, 345, 238, 56]
@@ -1249,7 +1249,7 @@
     "word_ids": [23, 39, 236, 156, 9]
   },
   "221": {
-    "th": "คน_อะ-ไร_เป็น_สวย_คน_ครับ",
+    "th": "คน_อะ=ไร_เป็น_สวย_คน_ครับ",
     "en": "What people are beautiful people?",
     "fr": "{Quelles personnes/Les personnes de quel pays} sont {de belles personnes/belles}",
     "word_ids": [343, 56, 207, 340, 343, 9]
@@ -1399,7 +1399,7 @@
     "word_ids": [28, 238, 1, 436, 39, 9]
   },
   "246": {
-    "th": "คุณ_มา_จาก_ประ-เทศ_อะ-ไร_ครับ?",
+    "th": "คุณ_มา_จาก_ประ-เทศ_อะ=ไร_ครับ?",
     "en": "What country are you from?",
     "fr": "Tu viens de quel pays?",
     "word_ids": [28, 202, 43, 264, 56, 9]
@@ -1513,7 +1513,7 @@
     "word_ids": [444, 45, 26, 208, 448, 206, 271, 446]
   },
   "265": {
-    "th": "ใคร_อา-ศัย_อยู่_ใน_บ้าน_นี้",
+    "th": "ใคร_อา=ศัย_อยู่_ใน_บ้าน_นี้",
     "en": "Who lives in this house?",
     "fr": "Qui habite dans cette maison ?",
     "word_ids": [85, 282, 237, 44, 147, 31]
@@ -1609,7 +1609,7 @@
     "word_ids": [457, 81, 207, 145, 436, 39]
   },
   "280": {
-    "th": "คุณ_คิด_ว่า_ชี-วิต_คือ_อะ-ไร",
+    "th": "คุณ_คิด_ว่า_ชี-วิต_คือ_อะ=ไร",
     "en": "What do you think life is?",
     "fr": "Tu penses que la vie c'est quoi ?",
     "word_ids": [28, 197, 184, 456, 206, 56]
@@ -1757,7 +1757,7 @@
     "word_ids": [134, 40, 29, 476, 50, 1]
   },
   "304": {
-    "th": "แม่_ทำ-ให้_ฉัน_เรียน_ภา-ษา-อัง-กฤษ_แต่_ฉัน_ไม่_ชอบ",
+    "th": "แม่_ทำ-ให้_ฉัน_เรียน_ภา=ษา-อัง-กฤษ_แต่_ฉัน_ไม่_ชอบ",
     "en": "{My mother/Mum} makes me learn English but I don't like( it).",
     "fr": "{Ma mère/Maman} me fait apprendre l'anglais mais j'aime pas ça.",
     "word_ids": [459, 301, 24, 198, 335, 41, 24, 39, 238]
@@ -1769,7 +1769,7 @@
     "word_ids": [24, 219, 359]
   },
   "306": {
-    "th": "ถ้า_คุณ_มี_ตุ๊ก-แก_คุณ_ก็_จะ_มี_ยุง_น้อย_ลง",
+    "th": "ถ้า_คุณ_มี_ตุ๊ก=แก_คุณ_ก็_จะ_มี_ยุง_น้อย_ลง",
     "en": "If you have a gecko, then you will have less mosquitoes.",
     "fr": "Si tu as un gecko, alors tu auras moins de moustiques.",
     "word_ids": [454, 28, 236, 0, 28, 448, 42, 236, 359, 500, 506]
@@ -1853,7 +1853,7 @@
     "word_ids": [24, 197, 184, 509, 207, 494, 493, 40, 492, 45, 510]
   },
   "320": {
-    "th": "เรา_อา-ศัย_อยู่_ใกล้_กับ_แม่-น้ำ_ดัง-นั้น_เรา_จะ_มี_น้ำ_เสมอ",
+    "th": "เรา_อา=ศัย_อยู่_ใกล้_กับ_แม่-น้ำ_ดัง-นั้น_เรา_จะ_มี_น้ำ_เสมอ",
     "en": "We live {close to/near/by/next to/not far from} {the/a} river {so/therefore/in consequence} we will {always have water/have water always}.",
     "fr": "{Nous habitons/On habite/Nous vivons/On vit} {proche/à coté} {de la/d'une} rivière {donc/alors/du coup} {nous aurons/on aura} {toujours de l'eau/de l'eau toujours}.",
     "word_ids": [29, 282, 237, 93, 46, 507, 508, 29, 42, 236, 156, 72]
@@ -1889,7 +1889,7 @@
     "word_ids": [59, 29, 237, 45, 509]
   },
   "326": {
-    "th": "ธรร-ม-ชาติ_ของ_ชี-วิต_คือ_อะ-ไร",
+    "th": "ธรร-ม-ชาติ_ของ_ชี-วิต_คือ_อะ=ไร",
     "en": "What is the nature of life?",
     "fr": "Quelle est la nature de la vie ?",
     "word_ids": [512, 40, 456, 206, 56]
@@ -1901,7 +1901,7 @@
     "word_ids": [456, 39, 236, 513]
   },
   "328": {
-    "th": "ความ-หมาย_ของ_ชี-วิต_คือ_อะ-ไร",
+    "th": "ความ-หมาย_ของ_ชี-วิต_คือ_อะ=ไร",
     "en": "What is the meaning of life?",
     "fr": "Quel est {le sens/la signification} de la vie?",
     "word_ids": [513, 40, 456, 206, 56]
@@ -1947,7 +1947,7 @@
     "speaker_gender": "F"
   },
   "335": {
-    "th": "ตุ๊ก-แก_ของ_ผม_ร้อง_เมื่อ_มี_ผี_ใน_บ้าน",
+    "th": "ตุ๊ก=แก_ของ_ผม_ร้อง_เมื่อ_มี_ผี_ใน_บ้าน",
     "en": "My gecko {sing/call/shout}s when there is a ghost in the house.",
     "fr": "Mon gecko {crie/appelle/chante} quand il y a un fantôme dans la maison.",
     "word_ids": [0, 40, 23, 447, 380, 236, 167, 44, 147],
@@ -2022,13 +2022,13 @@
     "word_ids": [24, 526, 527, 45, 28, 197]
   },
   "347": {
-    "th": "วิ-ธี_ที่_ดี_ที่-สุด_คือ_อะ-ไร",
+    "th": "วิ-ธี_ที่_ดี_ที่-สุด_คือ_อะ=ไร",
     "en": "What is the best way?",
     "fr": "Quelle est la meilleure {manière/façon} ?",
     "word_ids": [527, 45, 82, 528, 206, 56]
   },
   "348": {
-    "th": "สัตว์_ที่_ดี_ที่-สุด_คือ_ตุ๊ก-แก",
+    "th": "สัตว์_ที่_ดี_ที่-สุด_คือ_ตุ๊ก=แก",
     "en": "The best {animal is/animals are} the gecko{/s}.",
     "fr": "{Le meilleur animal/Les meilleurs animaux} {est/c'est/sont} {le gecko/les geckos}.",
     "word_ids": [481, 45, 82, 528, 206, 0]
@@ -2038,5 +2038,173 @@
     "en": "People from Bangkok speak the fastest.",
     "fr": "Les gens de Bangkok parlent le plus vite.",
     "word_ids": [343, 43, 308, 234, 90, 528]
+  },
+  "350": {
+    "th": "ฉัน_ไม่_ชอบ_หนัง-สือ_เล่ม_นี้",
+    "en": "I don't like this book.",
+    "fr": "Je n'aime pas ce livre.",
+    "word_ids": [24, 39, 238, 261, 392, 31]
+  },
+  "351": {
+    "th": "คำ_นี้_มา_จาก-ไหน",
+    "en": "Where does this word come from?",
+    "fr": "D'où vient ce mot ?",
+    "word_ids": [529, 31, 202, 62]
+  },
+  "352": {
+    "th": "วัน-นี้_เป็น_วัน-เกิด_ของ_ฉัน",
+    "en": "Today is my birthday",
+    "fr": "Aujourd'hui c'est mon anniversaire.",
+    "word_ids": [64, 207, 532, 40, 24]
+  },
+  "353": {
+    "th": "ฉัน_อา-ยุ_หก_ขวบ_และ_ฉัน_พูด_ภา=ษา-ไทย_ดี_กว่า_คุณ",
+    "en": "I'm six years old and I speak Thai better than you.",
+    "fr": "J'ai six ans et je parle Thaï mieux que toi.",
+    "word_ids": [24, 263, 229, 530, 384, 24, 234, 325, 82, 182, 28]
+  },
+  "354": {
+    "th": "ฉัน_หวัง_ว่า_ฉัน_จะ_มี_พี่-ชาย",
+    "en": "I hope I will have a brother.",
+    "fr": "J'espère que je vais avoir un frère.",
+    "word_ids": [24, 531, 184, 24, 42, 236, 533]
+  },
+  "355": {
+    "th": "ฉัน_ชอบ_พูด_กับ_คุณ",
+    "en": "I like to speak with you.",
+    "fr": "J'aime bien parler avec toi.",
+    "word_ids": [24, 238, 234, 46, 28]
+  },
+  "356": {
+    "th": "เรา_ดื่ม_น้ำ_จาก_แม่-น้ำ_ได้_หรือ_ไม่",
+    "en": "Can we drink the water from the river?",
+    "fr": "Pouvons-nous boire l'eau de la rivière ?",
+    "word_ids": [29, 195, 156, 43, 507, 209, 436, 39]
+  },
+  "357": {
+    "th": "การ_ฟัง_เพลง_ทำ-ให้_ฉัน_ทำ-งาน_ได้_เร็ว_มาก",
+    "en": "Listening to music makes me work very fast.",
+    "fr": "Écouter de la musique me fait travailler plus vite.",
+    "word_ids": [181, 522, 446, 301, 24, 288, 209, 90, 366]
+  },
+  "358": {
+    "th": "ฉัน_เห็น_ชาย_สี-น้ำ-เงิน_ฆ่า_ชาย_สี-แดง",
+    "en": "I saw the blue man kill the red man.",
+    "fr": "J'ai vu l'homme bleu tuer l'homme rouge.",
+    "word_ids": [24, 194, 534, 121, 496, 534, 104]
+  },
+  "359": {
+    "th": "ฉัน_อยาก_ดื่ม_ชา_ร้อน_ที่_บ้าน",
+    "en": "I want to drink hot tea at home.",
+    "fr": "Je veux boire du thé chaud à la maison.",
+    "word_ids": [24, 241, 195, 535, 537, 45, 147]
+  },
+  "360": {
+    "th": "โลก_กำ-ลัง_ป่วย",
+    "en": "The world is sick.",
+    "fr": "Le monde est malade.",
+    "word_ids": [350, 306, 536]
+  },
+  "361": {
+    "th": "พ=ยา=ยาม_เรียน-รู้_อย่าง-น้อย_หนึ่ง_คำ_ทุก-วัน",
+    "en": "Try to learn at least one word everyday.",
+    "fr": "Essaie d'apprendre au moins un mot tous les jours.",
+    "word_ids": [544, 545, 546, 224, 529, 71]
+  },
+  "362": {
+    "th": "ฉัน_ไม่_รู้_สู้_ยัง=ไง_แต่_ฉัน_รู้_จูบ_ยัง=ไง",
+    "en": "I don't know how to fight, but I know how to kiss.",
+    "fr": "Je ne sais pas me battre mais je sais embrasser.",
+    "word_ids": [24, 39, 370, 542, 60, 41, 24, 370, 543, 60]
+  },
+  "363": {
+    "th": "ฉัน_ยิ้ม_เมื่อ_ได้-ยิน_เพลง_นี้",
+    "en": "I smile when I hear this song.",
+    "fr": "Je souris quand j'entends cette chanson.",
+    "word_ids": [24, 171, 380, 293, 446, 31]
+  },
+  "364": {
+    "th": "พ่อ-แม่_ของ_ฉัน_เป็น_คน_จีน_แต่_ฉัน_พูด_ภา=ษา_จีน_ไม่_ได้",
+    "en": "My parents are Chinese but I can't speak Chinese.",
+    "fr": "Mes parents sont chinois mais je ne peux pas parler chinois.",
+    "word_ids": [541, 40, 24, 207, 343, 152, 41, 24, 234, 273, 152, 39, 209]
+  },
+  "365": {
+    "th": "คุณ_พูด_ภา=ษา_อะ=ไร",
+    "en": "What languages do you speak?",
+    "fr": "Tu parles quelles langues ?",
+    "word_ids": [28, 234, 273, 56]
+  },
+  "366": {
+    "th": "ฉัน_ไม่_กิน_เนื้อ_เพราะ_ฉัน_ชอบ_สัตว์",
+    "en": "I don't eat meat because I like animals.",
+    "fr": "Je ne mange pas de viande car j'aime les animaux.",
+    "word_ids": [24, 39, 193, 540, 178, 24, 238, 481]
+  },
+  "367": {
+    "th": "คุณ_ชอบ_สัตว์_หรือ_ไม่",
+    "en": "Do you like animals( or not)?",
+    "fr": "Est-ce que tu aimes les animaux (ou pas )?",
+    "word_ids": [28, 238, 481, 436, 39]
+  },
+  "368": {
+    "th": "ฉัน_ไม่_เข้า-ใจ",
+    "en": "I don't understand.",
+    "fr": "Je ne comprends pas.",
+    "word_ids": [24, 39, 417]
+  },
+  "369": {
+    "th": "ฉัน_จะ_ไป_กรุง-เทพ_พรุ่ง-นี้",
+    "en": "I will go to Bangkok tomorrow.",
+    "fr": "{Je vais aller/J'irai} à Bangkok demain.",
+    "word_ids": [24, 42, 201, 308, 65]
+  },
+  "370": {
+    "th": "คืน-นี้_คุณ_จะ_ออก_กี่-โมง",
+    "en": "At what time will you leave tonight?",
+    "fr": "À quelle tu vas partir ce soir?",
+    "word_ids": [68, 28, 42, 538, 539]
+  },
+  "371": {
+    "th": "ฉัน_ไม่_ชอบ_ดื่ม_น้ำ_ร้อน",
+    "en": "I don't like to drink hot water.",
+    "fr": "Je n'aime pas boire de l'eau chaude.",
+    "word_ids": [24, 39, 238, 195, 156, 537]
+  },
+  "372": {
+    "th": "คุณ_คิด_ว่า_หมา_ของ_ฉัน_น่า-รัก_ไหม",
+    "en": "Do you think my dog is cute?",
+    "fr": "Est-ce que tu penses que mon chien est mignon ?",
+    "word_ids": [28, 197, 184, 134, 40, 24, 547, 10]
+  },
+  "373": {
+    "th": "วัน-นี้_เป็น_วัน_พิ=เศษ",
+    "en": "Today is a special day.",
+    "fr": "Aujourd'hui est un jour spécial.",
+    "word_ids": [64, 207, 164, 551]
+  },
+  "374": {
+    "th": "พวก-เขา_อา=ศัย_อยู่_ใน_บ้าน_ใน_ป่า",
+    "en": "They live in a house in {the/a} {woods/wood/forest}.",
+    "fr": "Ils habitent dans une maison dans {les bois/la forêt}.",
+    "word_ids": [36, 282, 237, 44, 147, 44, 342]
+  },
+  "375": {
+    "th": "ฉัน_รัก_ฤ=ดู-ร้อน",
+    "en": "I love summer.",
+    "fr": "J'aime l'été.|J'adore l'été.",
+    "word_ids": [24, 239, 550]
+  },
+  "376": {
+    "th": "บ้าน_หลัง_นี้_ดี_แต่_แพง",
+    "en": "This house is good, but( it is) expensive.",
+    "fr": "Cette maison est bien, mais( elle est) chère",
+    "word_ids": [147, 21, 31, 82, 41, 549]
+  },
+  "377": {
+    "th": "บ้าน_เรา_ไม่_มี_ไว=ไฟ",
+    "en": "Our house doesn't have Wi-fi.",
+    "fr": "Notre maison n'a pas le wifi.",
+    "word_ids": [147, 29, 39, 236, 548]
   }
 }
