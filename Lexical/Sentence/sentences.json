@@ -273,9 +273,9 @@
     "speaker_gender": "F"
   },
   "45": {
-    "th": "ผม_ทำ_อา-หาร_เอง",
+    "th": "ผม_ทำ-อา=หาร_เอง",
     "en": "I cook myself.",
-    "word_ids": [23, 208, 251, 176],
+    "word_ids": [23, 322, 176],
     "speaker_gender": "M"
   },
   "46": {
@@ -285,13 +285,13 @@
     "speaker_gender": "M"
   },
   "47": {
-    "th": "อา-หาร_โปรด_ของ_ฉัน_คือ_พิซ-ซ่า",
+    "th": "อา=หาร_โปรด_ของ_ฉัน_คือ_พิซ-ซ่า",
     "en": "My favorite food is pizza.",
     "word_ids": [251, 94, 40, 24, 206, 252],
     "speaker_gender": "F"
   },
   "48": {
-    "th": "การ_กิน_อา-หาร_มาก-เกิน-ไป_ไม่_ดี",
+    "th": "การ_กิน_อา=หาร_มาก-เกิน-ไป_ไม่_ดี",
     "en": "Eating too much food is not good.",
     "word_ids": [181, 193, 251, 329, 39, 82]
   },
@@ -391,15 +391,15 @@
     "word_ids": [26, 241, 291, 178, 26, 100]
   },
   "67": {
-    "th": "ฉัน_ชอบ_อ่าน_หนัง-สือ",
+    "th": "ฉัน_ชอบ_อ่าน_หนัง=สือ",
     "en": "I like to read books.",
     "word_ids": [24, 238, 203, 261],
     "speaker_gender": "F"
   },
   "68": {
-    "th": "ผม_ชอบ_อ่าน_หนัง-สือ_เกี่ยว-กับ_การ_ทำ_อา-หาร",
+    "th": "ผม_ชอบ_อ่าน_หนัง=สือ_เกี่ยว-กับ_การ_ทำ-อา=หาร",
     "en": "I like to read books about cooking.",
-    "word_ids": [23, 238, 203, 261, 54, 181, 208, 251],
+    "word_ids": [23, 238, 203, 261, 54, 181, 322],
     "speaker_gender": "M"
   },
   "69": {
@@ -467,12 +467,12 @@
     "word_ids": [28, 306, 196, 49, 56, 237]
   },
   "81": {
-    "th": "มัน_ไม่_เหมือน_ใน_หนัง-สือ",
+    "th": "มัน_ไม่_เหมือน_ใน_หนัง=สือ",
     "en": "It's not like in books.",
     "word_ids": [27, 39, 50, 44, 261]
   },
   "82": {
-    "th": "ทุก-คน_เปิด_หนัง-สือ_ของ_ตัว-เอง_ซะ",
+    "th": "ทุก-คน_เปิด_หนัง=สือ_ของ_ตัว-เอง_ซะ",
     "en": "Everybody, open your book!",
     "word_ids": [35, 215, 261, 40, 34, 14]
   },
@@ -482,7 +482,7 @@
     "word_ids": [315, 201, 14]
   },
   "84": {
-    "th": "คุณ_กำ-ลัง_อ่าน_หนัง-สือ_ไหม",
+    "th": "คุณ_กำ-ลัง_อ่าน_หนัง=สือ_ไหม",
     "en": "Are you reading a book?",
     "word_ids": [28, 306, 203, 261, 10]
   },
@@ -634,7 +634,7 @@
     "speaker_gender": "F"
   },
   "112": {
-    "th": "ผม_ต้อง_กลับ_ประ-เทศ_อังก-ฤษ_อา-ทิตย์_หน้า",
+    "th": "ผม_ต้อง_กลับ_ประ=เทศ_อังก-ฤษ_อา-ทิตย์_หน้า",
     "en": "I have to return to the United Kingdom next week.",
     "word_ids": [23, 199, 220, 264, 255, 81, 53]
   },
@@ -649,7 +649,7 @@
     "word_ids": [28, 39, 199, 212, 265, 225, 18]
   },
   "115": {
-    "th": "วัน-นี้_ผม_ไม่_ต้อง_ทำ-อา-หาร",
+    "th": "วัน-นี้_ผม_ไม่_ต้อง_ทำ-อา=หาร",
     "en": "Today I don't have to cook.",
     "word_ids": [64, 23, 39, 199, 322],
     "speaker_gender": "M"
@@ -900,7 +900,7 @@
     "word_ids": [28, 177, 201, 318, 10]
   },
   "161": {
-    "th": "คุณ_ชอบ_อา-หาร_ไทย_ไหม",
+    "th": "คุณ_ชอบ_อา=หาร_ไทย_ไหม",
     "en": "Do you like Thai food?",
     "word_ids": [28, 238, 251, 345, 10]
   },
@@ -944,7 +944,7 @@
     "speaker_gender": "F"
   },
   "169": {
-    "th": "อา-หาร_ไทย_อ-ร่อย_มาก",
+    "th": "อา=หาร_ไทย_อ-ร่อย_มาก",
     "en": "Thai food is really delicious.",
     "word_ids": [251, 345, 347, 366]
   },
@@ -1054,17 +1054,17 @@
     "speaker_gender": "M"
   },
   "189": {
-    "th": "ประ-เทศ_ฝ-รั่ง-เศส_อยู่_ใกล้_ประ-เทศ_อัง-กฤษ",
+    "th": "ประ=เทศ_ฝ-รั่ง-เศส_อยู่_ใกล้_ประ=เทศ_อัง-กฤษ",
     "en": "France is close to Britain.",
     "word_ids": [264, 321, 237, 93, 264, 255]
   },
   "190": {
-    "th": "ประ-เทศ_ไทย_ไกล_จาก_ประ-เทศ_อัง-กฤษ",
+    "th": "ประ=เทศ_ไทย_ไกล_จาก_ประ=เทศ_อัง-กฤษ",
     "en": "Thailand is far from Britain.",
     "word_ids": [264, 345, 96, 43, 264, 255]
   },
   "191": {
-    "th": "อา-หาร_โปรด_ของ_ผม_คือ_พิซ-ซ่า",
+    "th": "อา=หาร_โปรด_ของ_ผม_คือ_พิซ-ซ่า",
     "en": "My favourite food is pizza.",
     "word_ids": [251, 94, 40, 23, 206, 252],
     "speaker_gender": "M"
@@ -1081,7 +1081,7 @@
     "speaker_gender": "M"
   },
   "194": {
-    "th": "หนัง-สือ_เล่ม_นี้_ทำ-ให้_ฉัน_ง่วง-นอน",
+    "th": "หนัง=สือ_เล่ม_นี้_ทำ-ให้_ฉัน_ง่วง-นอน",
     "en": "This book makes me sleepy.",
     "fr": "Ce livre me rend endormie.",
     "word_ids": [261, 392, 31, 301, 24, 394],
@@ -1399,7 +1399,7 @@
     "word_ids": [28, 238, 1, 436, 39, 9]
   },
   "246": {
-    "th": "คุณ_มา_จาก_ประ-เทศ_อะ=ไร_ครับ?",
+    "th": "คุณ_มา_จาก_ประ=เทศ_อะ=ไร_ครับ?",
     "en": "What country are you from?",
     "fr": "Tu viens de quel pays?",
     "word_ids": [28, 202, 43, 264, 56, 9]
@@ -1429,7 +1429,7 @@
     "word_ids": [23, 203, 437, 71, 9]
   },
   "251": {
-    "th": "ฉัน_มี_หนัง-สือ_ของ_เมื่อ-วาน-นี้_ค่ะ",
+    "th": "ฉัน_มี_หนัง=สือ_ของ_เมื่อ-วาน-นี้_ค่ะ",
     "en": "I have yesterday's book.",
     "fr": "J'ai le livre d'hier.",
     "word_ids": [24, 236, 261, 40, 66, 11]
@@ -1666,7 +1666,7 @@
     "speaker_gender": "F"
   },
   "289": {
-    "th": "ประ-เทศ_ไทย_ไม่_มี_หิ-มะ_ตก_แต่_บาง-ครั้ง_มี_ลูก-เห็บ_ตก",
+    "th": "ประ=เทศ_ไทย_ไม่_มี_หิ-มะ_ตก_แต่_บาง-ครั้ง_มี_ลูก-เห็บ_ตก",
     "en": "In Thailand there's no snowfall, but sometimes there's hail.",
     "fr": "En Thaïlande il n'y a pas de neige qui tombe, mais parfois il y a de la grêle.",
     "word_ids": [264, 345, 39, 236, 247, 470, 41, 74, 236, 471, 470]
@@ -1739,13 +1739,13 @@
     "speaker_gender": "F"
   },
   "301": {
-    "th": "แม่_ของ_ฉัน_ทำ_อา-หาร_และ_พ่อ_ของ_ฉัน_ซัก_ผ้า",
+    "th": "แม่_ของ_ฉัน_ทำ-อา=หาร_และ_พ่อ_ของ_ฉัน_ซัก_ผ้า",
     "en": "My mother cooks and my father does the laundry.",
     "fr": "Ma mère {cuisine/fait la cuisine/fait à manger} et mon père (fait) la lessive.",
-    "word_ids": [459, 40, 24, 208, 251, 384, 486, 40, 24, 487, 488]
+    "word_ids": [459, 40, 24, 322, 384, 486, 40, 24, 487, 488]
   },
   "302": {
-    "th": "ผม_มา_จาก_อีก_ฟาก_ของ_ประ-เทศ_ไทย_เพื่อ_ดู_แฟน_ของ_ผม_ครับ",
+    "th": "ผม_มา_จาก_อีก_ฟาก_ของ_ประ=เทศ_ไทย_เพื่อ_ดู_แฟน_ของ_ผม_ครับ",
     "en": "I('ve) come from the other side of Thailand to see my girlfriend.",
     "fr": "Je viens de l'autre bout de la Thaïlande pour voir ma petite amie.",
     "word_ids": [23, 202, 43, 489, 490, 40, 264, 345, 491, 368, 187, 40, 23, 9]
@@ -2010,7 +2010,7 @@
     "word_ids": [24, 293, 476, 380, 24, 418, 201, 44, 342, 31]
   },
   "345": {
-    "th": "พระ-สงฆ์_บาง-ครั้ง_มา_ที่_นี่_เพื่อ_นั่ง-ส-มา-ธิ",
+    "th": "พระ-สงฆ์_บาง-ครั้ง_มา_ที่_นี่_เพื่อ_นั่ง-ส=มา=ธิ",
     "en": "Monks sometimes come here to meditate.",
     "fr": "Les moines viennent parfois méditer ici.",
     "word_ids": [525, 74, 202, 45, 509, 491, 524]
@@ -2040,7 +2040,7 @@
     "word_ids": [343, 43, 308, 234, 90, 528]
   },
   "350": {
-    "th": "ฉัน_ไม่_ชอบ_หนัง-สือ_เล่ม_นี้",
+    "th": "ฉัน_ไม่_ชอบ_หนัง=สือ_เล่ม_นี้",
     "en": "I don't like this book.",
     "fr": "Je n'aime pas ce livre.",
     "word_ids": [24, 39, 238, 261, 392, 31]
@@ -2206,5 +2206,53 @@
     "en": "Our house doesn't have Wi-fi.",
     "fr": "Notre maison n'a pas le wifi.",
     "word_ids": [147, 29, 39, 236, 548]
+  },
+  "378": {
+    "th": "ทำ-ไม-ถึง_มี_ตุ๊ก=แก_ใน_ตู้-เย็น",
+    "en": "Why is there a gecko in the fridge?",
+    "fr": "Pourquoi est-ce qu'il y a un gecko dans le frigo ?",
+    "word_ids": [558, 236, 0, 44, 559]
+  },
+  "379": {
+    "th": "ฉัน_นั่ง-ส=มา=ธิ_ยี่=สิบ_นา=ที_ทุก-วัน",
+    "en": "I meditate twenty minutes every day.",
+    "fr": "Je médite vingt minutes tous les jours.",
+    "word_ids": [24, 524, 556, 557, 71]
+  },
+  "380": {
+    "th": "ฉัน_เดิน-ทาง_ไป_ประ=เทศ_จีน_ทุก_ฤ=ดู-ร้อน",
+    "en": "I travel to China every summer.",
+    "fr": "Je voyage en Chine tous les étés.",
+    "word_ids": [24, 555, 201, 264, 152, 174, 550]
+  },
+  "381": {
+    "th": "แม่_ชอบ_ให้_อา=หาร_สัตว์",
+    "en": "My mother likes to give food to animals.",
+    "fr": "Ma mère aime bien donner de la nourriture aux animaux.",
+    "word_ids": [459, 238, 51, 251, 481]
+  },
+  "382": {
+    "th": "ฉัน_ชอบ_อ่าน_หนัง=สือ_เก่า",
+    "en": "I like to read old books.",
+    "fr": "J'aime bien lire des vieux livres.",
+    "word_ids": [24, 238, 203, 261, 554]
+  },
+  "383": {
+    "th": "ฉัน_ทำ_กุญ=แจ_หาย",
+    "en": "I lost my keys.",
+    "fr": "J'ai perdu mes clés.",
+    "word_ids": [24, 208, 552, 553]
+  },
+  "384": {
+    "th": "หนัง=สือ_เล่ม_นี้_ยาว_เกิน-ไป",
+    "en": "This book is too long.",
+    "fr": "Ce livre est trop long.",
+    "word_ids": [261, 392, 31, 84, 381]
+  },
+  "385": {
+    "th": "คุณ_รู้-จัก_ชื่อ_ของ_ดวง_ดาว_หรือ_ไม่",
+    "en": "Do you know the name of the stars?",
+    "fr": "Tu connais le nom des étoiles ?",
+    "word_ids": [28, 300, 204, 40, 457, 460, 436, 39]
   }
 }

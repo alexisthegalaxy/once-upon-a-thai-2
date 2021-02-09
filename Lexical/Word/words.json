@@ -2251,7 +2251,7 @@
     "teaching_order": -1
   },
   "251": {
-    "split": "อา-หาร",
+    "split": "อา=หาร",
     "en": "food",
     "fr": "nourriture",
     "tones": "MR",
@@ -2337,7 +2337,7 @@
     "teaching_order": -1
   },
   "261": {
-    "split": "หนัง-สือ",
+    "split": "หนัง=สือ",
     "en": "book",
     "fr": "livre",
     "tones": "RR",
@@ -2364,7 +2364,7 @@
     "teaching_order": -1
   },
   "264": {
-    "split": "ประ-เทศ",
+    "split": "ประ=เทศ",
     "en": "country",
     "fr": "pays",
     "tones": "HF",
@@ -2869,7 +2869,7 @@
     "teaching_order": -1
   },
   "322": {
-    "split": "ทำ-อา-หาร",
+    "split": "ทำ-อา=หาร",
     "en": "to cook",
     "fr": "cuisiner",
     "tones": "MMR",
@@ -4678,7 +4678,7 @@
     "teaching_order": -1
   },
   "524": {
-    "split": "นั่ง-ส-มา-ธิ",
+    "split": "นั่ง-ส=มา=ธิ",
     "en": "to meditate",
     "fr": "méditer",
     "tones": "FLMH",
@@ -4927,6 +4927,78 @@
     "tones": "HL",
     "pos": "",
     "th": "พิเศษ",
+    "teaching_order": -1
+  },
+  "552": {
+    "split": "กุญ=แจ",
+    "en": "key",
+    "fr": "clé",
+    "tones": "MM",
+    "pos": "N",
+    "th": "กุญแจ",
+    "teaching_order": -1
+  },
+  "553": {
+    "split": "หาย",
+    "en": "to disappear, to be lost",
+    "fr": "disparaître, être perdu",
+    "tones": "R",
+    "pos": "",
+    "th": "หาย",
+    "teaching_order": -1
+  },
+  "554": {
+    "split": "เก่า",
+    "en": "old, former, previous",
+    "fr": "vieux, ancien, précédent",
+    "tones": "L",
+    "pos": "",
+    "th": "เก่า",
+    "teaching_order": -1
+  },
+  "555": {
+    "split": "เดิน-ทาง",
+    "en": "to travel",
+    "fr": "voyager",
+    "tones": "MM",
+    "pos": "",
+    "th": "เดินทาง",
+    "teaching_order": -1
+  },
+  "556": {
+    "split": "ยี่=สิบ",
+    "en": "twenty",
+    "fr": "vingt",
+    "tones": "FL",
+    "pos": "",
+    "th": "ยี่สิบ",
+    "teaching_order": -1
+  },
+  "557": {
+    "split": "นา=ที",
+    "en": "a minute",
+    "fr": "une minute",
+    "tones": "MM",
+    "pos": "",
+    "th": "นาที",
+    "teaching_order": -1
+  },
+  "558": {
+    "split": "ทำ-ไม-ถึง",
+    "en": "how come, why",
+    "fr": "comment ça se fait que, pourquoi",
+    "tones": "MMR",
+    "pos": "",
+    "th": "ทำไมถึง",
+    "teaching_order": -1
+  },
+  "559": {
+    "split": "ตู้-เย็น",
+    "en": "fridge, refrigerator, freezer",
+    "fr": "frigo, réfrigirateur",
+    "tones": "FM",
+    "pos": "",
+    "th": "ตู้เย็น",
     "teaching_order": -1
   }
 }
