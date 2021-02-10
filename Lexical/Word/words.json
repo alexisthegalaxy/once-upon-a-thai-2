@@ -2346,7 +2346,7 @@
     "teaching_order": -1
   },
   "262": {
-    "split": "มะ-ม่วง",
+    "split": "มะ=ม่วง",
     "en": "mango",
     "fr": "mangue",
     "tones": "HF",
@@ -4999,6 +4999,33 @@
     "tones": "FM",
     "pos": "",
     "th": "ตู้เย็น",
+    "teaching_order": -1
+  },
+  "560": {
+    "split": "ไอ=ศ=กรีม",
+    "en": "ice-cream",
+    "fr": "une glace, crême glacée",
+    "tones": "MLM",
+    "pos": "",
+    "th": "ไอศกรีม",
+    "teaching_order": -1
+  },
+  "561": {
+    "split": "เลี้ยง",
+    "en": "to take care of, to have (pet)",
+    "fr": "prendre soin de, avoir (animal de compagnie)",
+    "tones": "H",
+    "pos": "",
+    "th": "เลี้ยง",
+    "teaching_order": -1
+  },
+  "562": {
+    "split": "นม",
+    "en": "milk",
+    "fr": "lait",
+    "tones": "M",
+    "pos": "",
+    "th": "นม",
     "teaching_order": -1
   }
 }

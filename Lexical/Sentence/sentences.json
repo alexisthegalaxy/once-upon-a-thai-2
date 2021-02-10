@@ -403,7 +403,7 @@
     "speaker_gender": "M"
   },
   "69": {
-    "th": "มะ-ม่วง_รา-คา_เท่า-ไหร่",
+    "th": "มะ=ม่วง_รา-คา_เท่า-ไหร่",
     "en": "How much does a mango cost?",
     "word_ids": [262, 274, 61]
   },
@@ -949,7 +949,7 @@
     "word_ids": [251, 345, 347, 366]
   },
   "170": {
-    "th": "ฉัน_คิด_ว่า_มะ-ม่วง_มี_ความ-หวาน_มาก_กว่า_สับ-ปะ-รด",
+    "th": "ฉัน_คิด_ว่า_มะ=ม่วง_มี_ความ-หวาน_มาก_กว่า_สับ-ปะ-รด",
     "en": "I think mangoes are sweeter than pineapples.",
     "word_ids": [24, 197, 184, 262, 236, 376, 366, 182, 326]
   },
@@ -1702,7 +1702,7 @@
     "word_ids": [23, 207, 317, 112, 44, 363]
   },
   "295": {
-    "th": "มี_ต้น_มะ-ม่วง_อยู่_ใน_สวน_ของ_เรา",
+    "th": "มี_ต้น_มะ=ม่วง_อยู่_ใน_สวน_ของ_เรา",
     "en": "There's a mango tree in our garden.",
     "fr": "Il y a un manguier dans notre jardin.",
     "word_ids": [236, 426, 262, 237, 44, 474, 40, 29]
@@ -2254,5 +2254,35 @@
     "en": "Do you know the name of the stars?",
     "fr": "Tu connais le nom des étoiles ?",
     "word_ids": [28, 300, 204, 40, 457, 460, 436, 39]
+  },
+  "386": {
+    "th": "ฉัน_ไม่_ดื่ม_นม",
+    "en": "I don't drink milk.",
+    "fr": "Je ne bois pas de lait.",
+    "word_ids": [24, 39, 195, 562]
+  },
+  "387": {
+    "th": "ฉัน_ไม่_อยาก_กิน_เนื้อ",
+    "en": "I don't want to eat meat.",
+    "fr": "Je ne veux pas manger de viande.",
+    "word_ids": [24, 39, 241, 193, 540]
+  },
+  "388": {
+    "th": "แม่_ไม่_อยู่_บ้าน",
+    "en": "Mom is not at home.",
+    "fr": "Maman n'est pas à la maison.",
+    "word_ids": [459, 39, 237, 147]
+  },
+  "389": {
+    "th": "ฉัน_มี_เพื่อน_ที่_เลี้ยง_แมว_สี่_ตัว",
+    "en": "I have a friend who has four cats.",
+    "fr": "J'ai un ami qui a quatre chats.",
+    "word_ids": [24, 236, 170, 45, 561, 1, 227, 186]
+  },
+  "390": {
+    "th": "ฉัน_ชอบ_ไอ=ศ=กรีม_มะ=ม่วง",
+    "en": "I like mango ice-cream.",
+    "fr": "J'aime bien la glace à la mangue.",
+    "word_ids": [24, 238, 560, 262]
   }
 }
