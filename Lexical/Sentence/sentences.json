@@ -325,7 +325,7 @@
     "speaker_gender": "F"
   },
   "54": {
-    "th": "เขา_ไม่_เคย_ไป_กรุง-เทพ",
+    "th": "เขา_ไม่_เคย_ไป_กรุง=เทพ",
     "en": "He has never been to Bangkok.",
     "word_ids": [26, 39, 177, 201, 308]
   },
@@ -350,12 +350,12 @@
     "word_ids": [28, 234, 335, 209, 10]
   },
   "59": {
-    "th": "พรุ่ง-นี้_ฉัน_จะ_ไป_กรุง-เทพ",
+    "th": "พรุ่ง-นี้_ฉัน_จะ_ไป_กรุง=เทพ",
     "en": "I will go to Bangkok tomorrow.",
     "word_ids": [65, 24, 42, 201, 308]
   },
   "60": {
-    "th": "ฉัน_เคย_ไป_กรุง-เทพ",
+    "th": "ฉัน_เคย_ไป_กรุง=เทพ",
     "en": "I have been to Bangkok.",
     "word_ids": [24, 177, 201, 308]
   },
@@ -555,7 +555,7 @@
     "word_ids": [29, 236, 142, 70]
   },
   "98": {
-    "th": "ฉัน_มี_ที-วี_สอง_เครื่อง",
+    "th": "ฉัน_มี_ที=วี_สอง_เครื่อง",
     "en": "I have two TVs.",
     "word_ids": [24, 236, 249, 225, 19],
     "speaker_gender": "F"
@@ -937,7 +937,7 @@
     "word_ids": [338, 45, 301, 28, 199, 369]
   },
   "168": {
-    "th": "ฉัน_เห็น_หิ-มะ_เป็น_ครั้ง-แรก_ใน_แค-นา-ดา",
+    "th": "ฉัน_เห็น_หิ-มะ_เป็น_ครั้ง-แรก_ใน_แค=นา=ดา",
     "en": "I saw snow for the first time in Canada.",
     "fr": "J'ai vu de la neige pour la première fois au Canada.",
     "word_ids": [24, 194, 247, 207, 377, 44, 319],
@@ -959,7 +959,7 @@
     "word_ids": [372, 35]
   },
   "172": {
-    "th": "ฉัน_ไม่_ชอบ_ตะ-เกียบ_ไม้",
+    "th": "ฉัน_ไม่_ชอบ_ตะ=เกียบ_ไม้",
     "en": "I don't like wooden chopsticks.",
     "word_ids": [24, 39, 238, 362, 163],
     "speaker_gender": "F"
@@ -1008,7 +1008,7 @@
     "speaker_gender": "F"
   },
   "181": {
-    "th": "ฉัน_ไป_เที่ยว_เวียด-นาม_และ_กัม-พู-ชา_ใน_ช่วง_ฤดู-หนาว",
+    "th": "ฉัน_ไป_เที่ยว_เวียด-นาม_และ_กัม=พู=ชา_ใน_ช่วง_ฤดู-หนาว",
     "en": "I visited Vietnam and Cambodia during winter.",
     "word_ids": [24, 201, 375, 383, 384, 320, 44, 385, 386],
     "speaker_gender": "F"
@@ -1030,7 +1030,7 @@
     "word_ids": [379, 39, 238, 193, 346]
   },
   "185": {
-    "th": "ผม_จะ_ขึ้น_รถ-ไฟ-ใต้-ดิน_ทุก-วัน_เมื่อ_ผม_อา=ศัย_อยู่_ใน_กรุง-เทพ",
+    "th": "ผม_จะ_ขึ้น_รถ-ไฟ-ใต้-ดิน_ทุก-วัน_เมื่อ_ผม_อา=ศัย_อยู่_ใน_กรุง=เทพ",
     "en": "I will take the subway everyday when I live in Bangkok.",
     "word_ids": [23, 42, 374, 333, 71, 380, 23, 282, 237, 44, 308]
   },
@@ -1653,7 +1653,7 @@
     "word_ids": [343, 82]
   },
   "287": {
-    "th": "ฉัน_อยาก_หยุด_ทำ-งาน_และ_เป็น_ปลา-โล-มา_ค่ะ",
+    "th": "ฉัน_อยาก_หยุด_ทำ-งาน_และ_เป็น_ปลา=โล=มา_ค่ะ",
     "en": "I want to stop working and be a dolphin.",
     "fr": "Je veux arrêter de travailler et être un dauphin.",
     "word_ids": [24, 241, 472, 288, 384, 207, 473, 11]
@@ -1672,7 +1672,7 @@
     "word_ids": [264, 345, 39, 236, 247, 470, 41, 74, 236, 471, 470]
   },
   "290": {
-    "th": "มี_พา-ยุ_ใหญ่_เมื่อ-วาน-นี้",
+    "th": "มี_พา=ยุ_ใหญ่_เมื่อ-วาน-นี้",
     "en": "There was a big storm yesterday.",
     "fr": "Il y avait une grosse tempête hier.",
     "word_ids": [236, 469, 83, 66]
@@ -1853,7 +1853,7 @@
     "word_ids": [24, 197, 184, 509, 207, 494, 493, 40, 492, 45, 510]
   },
   "320": {
-    "th": "เรา_อา=ศัย_อยู่_ใกล้_กับ_แม่-น้ำ_ดัง-นั้น_เรา_จะ_มี_น้ำ_เสมอ",
+    "th": "เรา_อา=ศัย_อยู่_ใกล้_กับ_แม่-น้ำ_ดัง-นั้น_เรา_จะ_มี_น้ำ_เส=มอ",
     "en": "We live {close to/near/by/next to/not far from} {the/a} river {so/therefore/in consequence} we will {always have water/have water always}.",
     "fr": "{Nous habitons/On habite/Nous vivons/On vit} {proche/à coté} {de la/d'une} rivière {donc/alors/du coup} {nous aurons/on aura} {toujours de l'eau/de l'eau toujours}.",
     "word_ids": [29, 282, 237, 93, 46, 507, 508, 29, 42, 236, 156, 72]
@@ -2016,13 +2016,13 @@
     "word_ids": [525, 74, 202, 45, 509, 491, 524]
   },
   "346": {
-    "th": "ฉัน_ชื่น-ชม_วิ-ธี_ที่_คุณ_คิด",
+    "th": "ฉัน_ชื่น-ชม_วิ=ธี_ที่_คุณ_คิด",
     "en": "I admire the way you think.",
     "fr": "J'admire {la façon dont tu penses/ta façon de penser}.",
     "word_ids": [24, 526, 527, 45, 28, 197]
   },
   "347": {
-    "th": "วิ-ธี_ที่_ดี_ที่-สุด_คือ_อะ=ไร",
+    "th": "วิ=ธี_ที่_ดี_ที่-สุด_คือ_อะ=ไร",
     "en": "What is the best way?",
     "fr": "Quelle est la meilleure {manière/façon} ?",
     "word_ids": [527, 45, 82, 528, 206, 56]
@@ -2034,7 +2034,7 @@
     "word_ids": [481, 45, 82, 528, 206, 0]
   },
   "349": {
-    "th": "คน_จาก_กรุง-เทพ_พูด_เร็ว_ที่-สุด",
+    "th": "คน_จาก_กรุง=เทพ_พูด_เร็ว_ที่-สุด",
     "en": "People from Bangkok speak the fastest.",
     "fr": "Les gens de Bangkok parlent le plus vite.",
     "word_ids": [343, 43, 308, 234, 90, 528]
@@ -2154,7 +2154,7 @@
     "word_ids": [24, 39, 417]
   },
   "369": {
-    "th": "ฉัน_จะ_ไป_กรุง-เทพ_พรุ่ง-นี้",
+    "th": "ฉัน_จะ_ไป_กรุง=เทพ_พรุ่ง-นี้",
     "en": "I will go to Bangkok tomorrow.",
     "fr": "{Je vais aller/J'irai} à Bangkok demain.",
     "word_ids": [24, 42, 201, 308, 65]
@@ -2284,5 +2284,216 @@
     "en": "I like mango ice-cream.",
     "fr": "J'aime bien la glace à la mangue.",
     "word_ids": [24, 238, 560, 262]
+  },
+  "391": {
+    "th": "ฉัน_จะ_แส=ดง_วิ=ธี_ทำ-อา=หาร_ไทย",
+    "en": "I will show {/you }how to cook Thai food.",
+    "fr": "Je vais {/te }montrer comment faire de la cuisine thaïe.",
+    "word_ids": [24, 42, 563, 527, 322, 345]
+  },
+  "392": {
+    "th": "ผม_ว่า_อา=หาร_ไทย_ดี_ที่-สุด",
+    "en": "I think Thai food is the best.",
+    "fr": "Je pense que la {nourriture/cuisine} thaïe est la meilleure.",
+    "word_ids": [23, 184, 251, 345, 82, 528]
+  },
+  "393": {
+    "th": "แมว_ของ_ฉัน_ชื่อ_สี-ดำ",
+    "en": "My cat is called Black.",
+    "fr": "Mon chat s'appelle Noir.",
+    "word_ids": [1, 40, 24, 204, 109]
+  },
+  "394": {
+    "th": "ผม_เขียน_หนัง=สือ_เมื่อ_สิบ_ปี_ก่อน",
+    "en": "I wrote a book ten years ago.",
+    "fr": "J'ai écrit un livre il y a dix ans.",
+    "word_ids": [23, 330, 261, 380, 233, 168, 79]
+  },
+  "395": {
+    "th": "ฉัน_วิ่ง_เร็ว_กว่า_คุณ",
+    "en": "I run faster than you.",
+    "fr": "Je cours plus vite que toi.",
+    "word_ids": [24, 240, 90, 182, 28]
+  },
+  "396": {
+    "th": "เขา_บอก_ว่า_แค=นา=ดา_เป็น_ประ=เทศ_ใหญ่",
+    "en": "He says that Canada is a big country.",
+    "fr": "{Il/Elle} dit que le Canada est un grand pays.",
+    "word_ids": [26, 200, 184, 319, 207, 264, 83]
+  },
+  "397": {
+    "th": "มี_ปลา=โล=มา_ทั้ง-หมด_กี่_ตัว",
+    "en": "How many dolphins are there in total?",
+    "fr": "Combien y a-t-il de dauphins en tout?",
+    "word_ids": [236, 473, 444, 564, 186]
+  },
+  "398": {
+    "th": "ฉัน_ดู_ที=วี_เพื่อ_ที่_จะ_เข้า-ใจ_ภา=ษา-ไทย",
+    "en": "I watch TV in order to understand Thai.",
+    "fr": "Je regarde la télé pour comprendre le thaï.",
+    "word_ids": [24, 368, 249, 491, 45, 42, 417, 325]
+  },
+  "399": {
+    "th": "ฉัน_ชอบ_ความ_เงียบ_มาก-กว่า_ดน=ตรี",
+    "en": "I like silence more than music.",
+    "fr": "J'aime le silence plus que la musique.",
+    "word_ids": [24, 238, 441, 565, 482, 566]
+  },
+  "400": {
+    "th": "อา=หาร_ใน_กัม=พู=ชา_ต่าง_ยัง=ไง",
+    "en": "How is food in Cambodia different?",
+    "fr": "Comment est-ce que la nourriture au Cambodge est différente ?",
+    "word_ids": [251, 44, 320, 409, 60]
+  },
+  "401": {
+    "th": "ทุก_เช้า_ฉัน_กิน_มะ=ม่วง",
+    "en": "Every morning I eat {mangoes/a mango}.",
+    "fr": "Chaque matin je mange {de la mangue/une mangue/des mangues}.",
+    "word_ids": [174, 567, 24, 193, 262]
+  },
+  "402": {
+    "th": "คุณ_ไม่_ควร_ใช้_คำ_ว่า_ฝ=รั่ง_ใน_ที่-นี่",
+    "en": "You shouldn't use the word Farang here.",
+    "fr": "Tu ne devrais pas utiliser le mot Farang ici.",
+    "word_ids": [28, 39, 242, 222, 529, 184, 159, 44, 37]
+  },
+  "403": {
+    "th": "กลาง-คืน_เขา_เป็น_คน_ขับ-รถ_แท็ก=ซี่",
+    "en": "By night, he is a taxi driver.",
+    "fr": "La nuit, il est un chauffeur de taxi.",
+    "word_ids": [516, 26, 207, 343, 297, 568]
+  },
+  "404": {
+    "th": "ผี_ตัว_นี้_น่า-รัก_จริง_ๆ",
+    "en": "This ghost is cute, actually.",
+    "fr": "Ce fantôme est mignon en fait.",
+    "word_ids": [167, 186, 31, 547, 439, 461]
+  },
+  "405": {
+    "th": "ขอ-โทษ_หนัง=สือ_เล่ม_นี้_ยาว_เกิน-ไป",
+    "en": "Sorry, this book is too long.",
+    "fr": "Désolé{/e}, ce livre est trop long.",
+    "word_ids": [338, 261, 392, 31, 84, 381]
+  },
+  "406": {
+    "th": "เมื่อ-วาน-นี้_ฉัน_เห็น_จิ้ง=จอก_สอง_ตัว_ใน_สวน",
+    "en": "Yesterday I saw two foxes in the garden.",
+    "fr": "Hier j'ai vu deux renards dans le jardin.",
+    "word_ids": [66, 24, 194, 569, 225, 186, 44, 474]
+  },
+  "407": {
+    "th": "ตะ=เกียบ_อยู่_ที่-ไหน",
+    "en": "Where are the chopsticks?",
+    "fr": "Où sont les baguettes ?",
+    "word_ids": [362, 237, 57]
+  },
+  "408": {
+    "th": "คุณ_รู้-จัก_คน_ที่_สวย-งาม_มาก_กว่า_ฉัน_ไหม",
+    "en": "Do you know someone more charming than me?",
+    "fr": "Tu connais quelqu'un de plus beau que moi?",
+    "word_ids": [28, 300, 343, 45, 510, 366, 182, 24, 10]
+  },
+  "409": {
+    "th": "แม่_ชอบ_เมื่อ_ที่_ฉัน_ใส่_เสื้อ_ผ้า_สี-แดง",
+    "en": "Mother likes when I wear red clothes.",
+    "fr": "Maman aime bien quand je porte des vêtements rouges.",
+    "word_ids": [459, 238, 380, 45, 24, 570, 166, 488, 104]
+  },
+  "410": {
+    "th": "ป่า_นี้_สวย_เหมือน-กัน",
+    "en": "This forest is beautiful too.",
+    "fr": "Cette forêt est belle aussi.",
+    "word_ids": [342, 31, 340, 579]
+  },
+  "411": {
+    "th": "มัน_เป็น_เพลง_โปรด_ของ_ฉัน",
+    "en": "It's my favorite song.",
+    "fr": "C'est ma chanson préférée.",
+    "word_ids": [27, 207, 446, 94, 40, 24]
+  },
+  "412": {
+    "th": "ฉัน_มา_ที่-นี่_เพื่อ_เป็น_นัก-ร้อง",
+    "en": "I've come here to become a singer.",
+    "fr": "Je suis venu(e) ici pour devenir {chanteuse/chanteur}.",
+    "word_ids": [24, 202, 37, 491, 207, 271]
+  },
+  "413": {
+    "th": "ขอ-โทษ_เพลง_ของ_คุณ_ดัง_เกิน-ไป",
+    "en": "Sorry, your music is too loud.",
+    "fr": "Désolé(e), {votre/ta} musique est trop forte.",
+    "word_ids": [338, 446, 40, 28, 578, 381]
+  },
+  "414": {
+    "th": "ที่-นี่_เรา_ไม่_ชอบ_พา=ยุ",
+    "en": "Here, we don't like storms.",
+    "fr": "Ici on n'aime pas {les tempêtes/la tempête}.",
+    "word_ids": [37, 29, 39, 238, 469]
+  },
+  "415": {
+    "th": "ใส่_ชุด_แบบ-นี้_ใน_โรง-เรียน_ได้_ไหม",
+    "en": "Can you wear this kind of clothes in the school?",
+    "fr": "Tu peux porter ce genre de vêtements à l'école ?",
+    "word_ids": [570, 574, 575, 44, 275, 209, 10]
+  },
+  "416": {
+    "th": "ถ=นน_สาย_นี้_กลาย-เป็น_ถ=นน_ที่_ใหญ่_ที่-สุด_ใน_กรุง=เทพ",
+    "en": "This road {has become/becomes} the biggest{/ road} in Bangkok.",
+    "fr": "Cette route {est devenue/devient} la plus grande{/ route} {à/dans/de} Bangkok.",
+    "word_ids": [573, 22, 31, 378, 573, 45, 83, 528, 44, 308]
+  },
+  "417": {
+    "th": "พระ_ที่_มี_ชื่อ-เสียง_ที่-สุด_ใน_ประ=เทศ_ไทย_คือ_ใคร",
+    "en": "Who is the most well-known monk in Thailand?",
+    "fr": "Qui est le moine le plus {connu/célèbre} en Thaïlande ?",
+    "word_ids": [185, 45, 236, 572, 528, 44, 264, 345, 206, 55]
+  },
+  "418": {
+    "th": "ฉัน_ไม่_ชอบ_กิน_กล้วย_ที่_มี_จุด_ดำ",
+    "en": "I don't like to eat bananas that have black spots.",
+    "fr": "Je n'aime pas manger les bananes qui ont des points noirs.",
+    "word_ids": [24, 39, 238, 193, 153, 45, 236, 494, 132]
+  },
+  "419": {
+    "th": "อย่า_ดู_ที=วี_ทั้ง-วัน",
+    "en": "Don't watch TV all day.",
+    "fr": "(Ne )regarde pas la télé{/vision} toute la journée.",
+    "word_ids": [175, 368, 249, 571]
+  },
+  "420": {
+    "th": "การ_ได้_เห็น_ขอบ-ฟ้า_ทำ-ให้_ฉัน_มี-ความ-สุข_เส=มอ",
+    "en": "Seeing the horizon always makes me happy.",
+    "fr": "Voir l'horizon me rend toujours heureuse.",
+    "word_ids": [181, 209, 194, 422, 301, 24, 118, 72],
+    "speaker_gender": "F"
+  },
+  "421": {
+    "th": "รถ_พ่อ_สี-แดง",
+    "en": "My father's car is red.",
+    "fr": "La voiture de mon père est rouge.",
+    "word_ids": [144, 486, 104]
+  },
+  "422": {
+    "th": "ประ=ตู_บ้าน_หลัง_นี้_เปิด_อยู่_เส=มอ",
+    "en": "The door of this house is always open.",
+    "fr": "La porte de cette maison est toujours ouverte.",
+    "word_ids": [581, 147, 21, 31, 215, 237, 72]
+  },
+  "423": {
+    "th": "เธอ_บอก_ลา_จาก_รถ_ไฟ_ใต้_ดิน",
+    "en": "She says goodbye from the subway.",
+    "fr": "Elle dit au revoir depuis le métro.",
+    "word_ids": [25, 200, 351, 43, 144, 145, 47, 143]
+  },
+  "424": {
+    "th": "ฉัน_อยาก_ไป_แต่_หา_รอง-เท้า_สี-น้ำ-ตาล_ไม่_เจอ",
+    "en": "I want to go, but I can't find my brown shoes.",
+    "fr": "Je veux y aller, mais je ne trouve pas mes chaussures marrons.",
+    "word_ids": [24, 241, 201, 41, 466, 284, 117, 39, 468]
+  },
+  "425": {
+    "th": "เพื่อน_บอก_ว่า_ที่-นี่_ลม_แรง_เกิน-ไป",
+    "en": "My friend says there's too much wind here.",
+    "fr": "Mon ami dit que le vent est trop fort ici.",
+    "word_ids": [170, 200, 184, 37, 146, 582, 381]
   }
 }

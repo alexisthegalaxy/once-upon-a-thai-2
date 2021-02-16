@@ -128,6 +128,7 @@
   "14": {
     "split": "ซะ",
     "en": "(particle implying it must be done quickly or completely)",
+    "fr": "(particule impliquant qu'il faut le faire vite ou en entier)",
     "tones": "R",
     "pos": "PART",
     "th": "ซะ",
@@ -643,7 +644,7 @@
     "teaching_order": -1
   },
   "72": {
-    "split": "เสมอ",
+    "split": "เส=มอ",
     "en": "always",
     "fr": "toujours",
     "tones": "LR",
@@ -1427,8 +1428,9 @@
     "teaching_order": -1
   },
   "159": {
-    "split": "ฝรั่ง",
+    "split": "ฝ=รั่ง",
     "en": "guava, Westerner",
+    "fr": "goyave, Occidental",
     "tones": "LL",
     "pos": "NOUN",
     "th": "ฝรั่ง",
@@ -2233,7 +2235,7 @@
     "teaching_order": -1
   },
   "249": {
-    "split": "ที-วี",
+    "split": "ที=วี",
     "en": "TV",
     "fr": "télé",
     "tones": "MM",
@@ -2749,7 +2751,7 @@
     "teaching_order": -1
   },
   "308": {
-    "split": "กรุง-เทพ",
+    "split": "กรุง=เทพ",
     "en": "Bangkok",
     "tones": "MF",
     "pos": "PLAC",
@@ -2842,7 +2844,7 @@
     "teaching_order": -1
   },
   "319": {
-    "split": "แค-นา-ดา",
+    "split": "แค=นา=ดา",
     "en": "Canada",
     "fr": "Canada",
     "tones": "MMM",
@@ -2851,7 +2853,7 @@
     "teaching_order": -1
   },
   "320": {
-    "split": "กัม-พู-ชา",
+    "split": "กัม=พู=ชา",
     "en": "Cambodia",
     "fr": "Cambodge",
     "tones": "MMM",
@@ -3033,6 +3035,7 @@
   "340": {
     "split": "สวย",
     "en": "beautiful",
+    "fr": "beau",
     "tones": "R",
     "pos": "ADJ",
     "th": "สวย",
@@ -3041,6 +3044,7 @@
   "341": {
     "split": "เล็ก",
     "en": "small",
+    "fr": "petit",
     "tones": "H",
     "pos": "ADJ",
     "th": "เล็ก",
@@ -3049,6 +3053,7 @@
   "342": {
     "split": "ป่า",
     "en": "forest",
+    "fr": "forêt",
     "tones": "L",
     "pos": "NOUN",
     "th": "ป่า",
@@ -3128,6 +3133,7 @@
   "351": {
     "split": "ลา",
     "en": "to leave",
+    "fr": "partir",
     "tones": "M",
     "pos": "VERB",
     "th": "ลา",
@@ -3221,7 +3227,7 @@
     "teaching_order": -1
   },
   "362": {
-    "split": "ตะ-เกียบ",
+    "split": "ตะ=เกียบ",
     "en": "chopsticks",
     "fr": "baguettes (pour manger)",
     "tones": "LL",
@@ -3760,7 +3766,7 @@
     "teaching_order": -1
   },
   "422": {
-    "split": "ขอบ_ฟ้า",
+    "split": "ขอบ-ฟ้า",
     "en": "horizon, skyline",
     "fr": "horizon, ",
     "tones": "LH",
@@ -3958,7 +3964,7 @@
     "teaching_order": -1
   },
   "444": {
-    "split": "ทั้ง_หมด",
+    "split": "ทั้ง-หมด",
     "en": "all, total",
     "fr": "tout, en entier",
     "tones": "HL",
@@ -4183,7 +4189,7 @@
     "teaching_order": -1
   },
   "469": {
-    "split": "พา-ยุ",
+    "split": "พา=ยุ",
     "en": "storm",
     "fr": "tempête",
     "tones": "MH",
@@ -4219,7 +4225,7 @@
     "teaching_order": -1
   },
   "473": {
-    "split": "ปลา-โล-มา",
+    "split": "ปลา=โล=มา",
     "en": "dolphin",
     "fr": "dauphin",
     "tones": "MMM",
@@ -4705,7 +4711,7 @@
     "teaching_order": -1
   },
   "527": {
-    "split": "วิ-ธี",
+    "split": "วิ=ธี",
     "en": "means, way, method",
     "fr": "manière, façon",
     "tones": "HM",
@@ -5026,6 +5032,177 @@
     "tones": "M",
     "pos": "",
     "th": "นม",
+    "teaching_order": -1
+  },
+  "563": {
+    "split": "แส=ดง",
+    "en": "to show",
+    "fr": "montrer",
+    "tones": "LM",
+    "pos": "",
+    "th": "แสดง",
+    "teaching_order": -1
+  },
+  "564": {
+    "split": "กี่",
+    "en": "how many?",
+    "fr": "combien ?",
+    "tones": "L",
+    "pos": "",
+    "th": "กี่",
+    "teaching_order": -1
+  },
+  "565": {
+    "split": "เงียบ",
+    "en": "quiet, silent, silently",
+    "fr": "silencieusement, silencieux",
+    "tones": "F",
+    "pos": "",
+    "th": "เงียบ",
+    "teaching_order": -1
+  },
+  "566": {
+    "split": "ดน=ตรี",
+    "en": "music",
+    "fr": "musique",
+    "tones": "MM",
+    "pos": "",
+    "th": "ดนตรี",
+    "teaching_order": -1
+  },
+  "567": {
+    "split": "เช้า",
+    "en": "morning",
+    "fr": "matin",
+    "tones": "H",
+    "pos": "",
+    "th": "เช้า",
+    "teaching_order": -1
+  },
+  "568": {
+    "split": "แท็ก=ซี่",
+    "en": "taxi",
+    "fr": "taxi",
+    "tones": "HF",
+    "pos": "",
+    "th": "แท็กซี่",
+    "teaching_order": -1
+  },
+  "569": {
+    "split": "จิ้ง=จอก",
+    "en": "fox",
+    "fr": "renard",
+    "tones": "FL",
+    "pos": "",
+    "th": "จิ้งจอก",
+    "teaching_order": -1
+  },
+  "570": {
+    "split": "ใส่",
+    "en": "to insert, wear (clothes)",
+    "fr": "insérer, porter (un vêtement)",
+    "tones": "L",
+    "pos": "",
+    "th": "ใส่",
+    "teaching_order": -1
+  },
+  "571": {
+    "split": "ทั้ง-วัน",
+    "en": "all day",
+    "fr": "toute la journée",
+    "tones": "HM",
+    "pos": "",
+    "th": "ทั้งวัน",
+    "teaching_order": -1
+  },
+  "572": {
+    "split": "ชื่อ-เสียง",
+    "en": "reputation, fame",
+    "fr": "réputation",
+    "tones": "FR",
+    "pos": "",
+    "th": "ชื่อเสียง",
+    "teaching_order": -1
+  },
+  "573": {
+    "split": "ถ=นน",
+    "en": "road, street",
+    "fr": "route, rue",
+    "tones": "LR",
+    "pos": "",
+    "th": "ถนน",
+    "teaching_order": -1
+  },
+  "574": {
+    "split": "ชุด",
+    "en": "a set, a group",
+    "fr": "set, ensemble (de quelque chose)",
+    "tones": "H",
+    "pos": "",
+    "th": "ชุด",
+    "teaching_order": -1
+  },
+  "575": {
+    "split": "แบบ-นี้",
+    "en": "like this, this way",
+    "fr": "comme ça, de cette manière",
+    "tones": "LH",
+    "pos": "",
+    "th": "แบบนี้",
+    "teaching_order": -1
+  },
+  "576": {
+    "split": "พัก",
+    "en": "to stay",
+    "fr": "rester",
+    "tones": "H",
+    "pos": "",
+    "th": "พัก",
+    "teaching_order": -1
+  },
+  "577": {
+    "split": "ด้าน-ใน",
+    "en": "inside, interior",
+    "fr": "dedans, à l'intérieur",
+    "tones": "FM",
+    "pos": "",
+    "th": "ด้านใน",
+    "teaching_order": -1
+  },
+  "578": {
+    "split": "ดัง",
+    "en": "according to / loud",
+    "fr": "selon / bruyant",
+    "tones": "M",
+    "pos": "",
+    "th": "ดัง",
+    "teaching_order": -1
+  },
+  "579": {
+    "split": "เหมือน-กัน",
+    "en": "as well",
+    "fr": "aussi",
+    "tones": "RM",
+    "pos": "",
+    "th": "เหมือนกัน",
+    "teaching_order": -1
+  },
+  "581": {
+    "split": "ประ=ตู",
+    "en": "door",
+    "fr": "porte",
+    "tones": "LM",
+    "pos": "",
+    "th": "ประตู",
+    "teaching_order": -1
+  },
+  "582": {
+    "split": "แรง",
+    "en": "power, energy, strength",
+    "fr": "énergie, pouvoir, force",
+    "tones": "M",
+    "pos": "",
+    "th": "แรง",
     "teaching_order": -1
   }
 }
