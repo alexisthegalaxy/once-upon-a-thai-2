@@ -1078,7 +1078,7 @@
     "teaching_order": -1
   },
   "120": {
-    "split": "กำ-ลัง-ดี",
+    "split": "กำ=ลัง-ดี",
     "en": "just right",
     "fr": "juste comme il faut",
     "tones": "MMM",
@@ -2734,8 +2734,9 @@
     "teaching_order": -1
   },
   "306": {
-    "split": "กำ-ลัง",
+    "split": "กำ=ลัง",
     "en": "[present continuous]",
+    "fr": "être en train de",
     "tones": "MM",
     "pos": "None",
     "th": "กำลัง",
@@ -2997,7 +2998,7 @@
     "teaching_order": 28
   },
   "336": {
-    "split": "เยอ-ร-ม-นี",
+    "split": "เยอ=ร=ม=นี",
     "en": "Germany",
     "fr": "Allemagne",
     "tones": "MHHM",
@@ -3157,7 +3158,7 @@
     "teaching_order": -1
   },
   "354": {
-    "split": "นา-นา",
+    "split": "นา=นา",
     "en": "various",
     "tones": "MM",
     "pos": "ADJ",
@@ -4063,7 +4064,7 @@
     "teaching_order": -1
   },
   "455": {
-    "split": "นก_แก้ว",
+    "split": "นก-แก้ว",
     "en": "parrot",
     "fr": "perroquet",
     "tones": "HF",
@@ -5203,6 +5204,33 @@
     "tones": "M",
     "pos": "",
     "th": "แรง",
+    "teaching_order": -1
+  },
+  "583": {
+    "split": "มา-ก่อน",
+    "en": "before",
+    "fr": "avant",
+    "tones": "ML",
+    "pos": "",
+    "th": "มาก่อน",
+    "teaching_order": -1
+  },
+  "584": {
+    "split": "ข้าง",
+    "en": "next to / side",
+    "fr": "à coté de / côté",
+    "tones": "F",
+    "pos": "",
+    "th": "ข้าง",
+    "teaching_order": -1
+  },
+  "585": {
+    "split": "ธ=นา=คาร",
+    "en": "bank",
+    "fr": "banque",
+    "tones": "HMM",
+    "pos": "",
+    "th": "ธนาคาร",
     "teaching_order": -1
   }
 }

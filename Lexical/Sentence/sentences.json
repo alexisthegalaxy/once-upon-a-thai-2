@@ -420,8 +420,9 @@
     "speaker_gender": "F"
   },
   "72": {
-    "th": "ผม_กำ-ลัง_เรียน",
+    "th": "ผม_กำ=ลัง_เรียน",
     "en": "I am studying.",
+    "fr": "Je suis en train d'étudier.",
     "word_ids": [23, 306, 198],
     "speaker_gender": "M"
   },
@@ -457,12 +458,12 @@
     "word_ids": [64, 207, 164, 114, 16, 12]
   },
   "79": {
-    "th": "คุณ_กำ-ลัง_พูด_อะ=ไร",
+    "th": "คุณ_กำ=ลัง_พูด_อะ=ไร",
     "en": "What are you saying?",
     "word_ids": [28, 306, 234, 56]
   },
   "80": {
-    "th": "คุณ_กำ-ลัง_คุย_เรื่อง_อะ=ไร_อยู่",
+    "th": "คุณ_กำ=ลัง_คุย_เรื่อง_อะ=ไร_อยู่",
     "en": "What are you talking about?",
     "word_ids": [28, 306, 196, 49, 56, 237]
   },
@@ -482,7 +483,7 @@
     "word_ids": [315, 201, 14]
   },
   "84": {
-    "th": "คุณ_กำ-ลัง_อ่าน_หนัง=สือ_ไหม",
+    "th": "คุณ_กำ=ลัง_อ่าน_หนัง=สือ_ไหม",
     "en": "Are you reading a book?",
     "word_ids": [28, 306, 203, 261, 10]
   },
@@ -1002,7 +1003,7 @@
     "speaker_gender": "F"
   },
   "180": {
-    "th": "ฉัน_กำ-ลัง_จะ_ตาย_เร็ว-ๆ-นี้_แต่_ไม่-เป็น-ไร",
+    "th": "ฉัน_กำ=ลัง_จะ_ตาย_เร็ว-ๆ-นี้_แต่_ไม่-เป็น-ไร",
     "en": "I'm going to die soon, but it's fine.",
     "word_ids": [24, 306, 42, 371, 382, 41, 8],
     "speaker_gender": "F"
@@ -1720,7 +1721,7 @@
     "word_ids": [483, 156, 484]
   },
   "298": {
-    "th": "เพื่อน_ของ_ผม_กำ-ลัง_ซื้อ_น้ำ",
+    "th": "เพื่อน_ของ_ผม_กำ=ลัง_ซื้อ_น้ำ",
     "en": "My friend is buying water.",
     "fr": "Mon ami(e) est en train d'acheter de l'eau.",
     "word_ids": [170, 40, 23, 306, 212, 156]
@@ -1799,7 +1800,7 @@
     "word_ids": [24, 42, 220, 202]
   },
   "311": {
-    "th": "คุณ_กำ-ลัง_พูด_กับ_ฉัน_หรือ_ไม่",
+    "th": "คุณ_กำ=ลัง_พูด_กับ_ฉัน_หรือ_ไม่",
     "en": "Are you talking to me( or not)?",
     "fr": "{Tu es en train de me parler/Es-tu en train de me parler/Tu me parles/Me parles-tu/} (ou pas )?|{C'est/Est-ce} à moi que tu {parles/es en train de parler} (ou pas )?|{Tu parles/Parles-tu/Tu es en train de parler/Es-tu en train de parler} {à/avec} moi (ou pas )?",
     "word_ids": [28, 306, 234, 46, 24, 436, 39]
@@ -2100,7 +2101,7 @@
     "word_ids": [24, 241, 195, 535, 537, 45, 147]
   },
   "360": {
-    "th": "โลก_กำ-ลัง_ป่วย",
+    "th": "โลก_กำ=ลัง_ป่วย",
     "en": "The world is sick.",
     "fr": "Le monde est malade.",
     "word_ids": [350, 306, 536]
@@ -2495,5 +2496,35 @@
     "en": "My friend says there's too much wind here.",
     "fr": "Mon ami dit que le vent est trop fort ici.",
     "word_ids": [170, 200, 184, 37, 146, 582, 381]
+  },
+  "426": {
+    "th": "ฉัน_ไม่_เคย_เห็น_นก-แก้ว",
+    "en": "I have never seen a parrot.",
+    "fr": "Je n'ai jamais vu de perroquet.",
+    "word_ids": [24, 39, 177, 194, 455]
+  },
+  "427": {
+    "th": "คน_จาก_นา=นา_ประ=เทศ_อยาก_ไป_เยอ=ร=ม=นี",
+    "en": "People from various countries want to go to Germany.",
+    "fr": "Des gens de divers pays veulent aller en Allemagne.",
+    "word_ids": [343, 43, 354, 264, 241, 201, 336]
+  },
+  "428": {
+    "th": "ฉัน_งง_เพราะ_ฉัน_เคย_เห็น_จิ้ง=จอก_ที่_นี่_มา-ก่อน",
+    "en": "I was confused because I saw a fox here before.",
+    "fr": "J'étais confus(e) parce que j'ai vu {un renard/des renards} {ici avant/avant ici}.",
+    "word_ids": [24, 398, 178, 24, 177, 194, 569, 45, 509, 583]
+  },
+  "429": {
+    "th": "ลูก-ชาย_ของ_ฉัน_ควร_จะ_เป็น_หมอ",
+    "en": "My son should become a doctor.",
+    "fr": "{Mon/Mes} fils dedvrai{/en}t {devenir/être/faire/travailler en tant que} {/un /des }{docteur/médecin}{/s}.",
+    "word_ids": [467, 40, 24, 242, 42, 207, 151]
+  },
+  "430": {
+    "th": "ชาย_คน_หนึ่ง_กำ=ลัง_ขอ_อา=หาร_อยู่_ข้าง_ประ=ตู_ธ=นา=คาร",
+    "en": "A man is begging for food next to the door of the bank.",
+    "fr": "Un homme quémande de la nourriture à côté de la porte de la banque.",
+    "word_ids": [534, 343, 224, 306, 483, 251, 237, 584, 581, 585]
   }
 }
