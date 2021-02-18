@@ -2526,5 +2526,35 @@
     "en": "A man is begging for food next to the door of the bank.",
     "fr": "Un homme quémande de la nourriture à côté de la porte de la banque.",
     "word_ids": [534, 343, 224, 306, 483, 251, 237, 584, 581, 585]
+  },
+  "431": {
+    "th": "ใคร_อยาก_เล่น_กับ_ฉัน_บ้าง",
+    "en": "Who want to play with me?",
+    "fr": "Qui veut jouer avec moi ?",
+    "word_ids": [55, 241, 205, 46, 24, 183]
+  },
+  "432": {
+    "th": "ดวง_อา-ทิตย์_เป็น_สี-แดง_ใน_ตอน-เย็น_จริง_หรือ",
+    "en": "Is the sun really red in the evening?",
+    "fr": "{Est-ce que le soleil est/Le soleil est-il} vraiment rouge le soir ?",
+    "word_ids": [457, 81, 207, 104, 44, 78, 439, 436]
+  },
+  "433": {
+    "th": "ฉัน_คิด_ว่า_สี_ของ_ความ-สุข_คือ_สี-ส้ม",
+    "en": "I think the color of happiness is orange.",
+    "fr": "Je pense {que/qu'orange c'est} la couleur du bonheur {/c'}(est) {orange/l'orange/}.",
+    "word_ids": [24, 197, 184, 122, 40, 246, 206, 102]
+  },
+  "434": {
+    "th": "คุณ_น่า-จะ_ให้_แมว_สี_เทา_แก่_ฉัน",
+    "en": "You{ should/'d better} give {/to }me {the/a/} {grey/gray} cat{/s}{/ to me}.",
+    "fr": "Tu devrais me donner {le/un} chat gris.",
+    "word_ids": [28, 307, 51, 1, 122, 133, 586, 24]
+  },
+  "435": {
+    "th": "คุณ_ฉัน_และ_ไวน์_สี่_ขวด",
+    "en": "You, me, and four bottles of wine.",
+    "fr": "Toi, moi, et quatre bouteilles de vin.",
+    "word_ids": [28, 24, 384, 587, 227, 148]
   }
 }

@@ -1334,6 +1334,7 @@
   "148": {
     "split": "ขวด",
     "en": "bottle",
+    "fr": "bouteille",
     "tones": "L",
     "pos": "NOUN",
     "th": "ขวด",
@@ -5231,6 +5232,24 @@
     "tones": "HMM",
     "pos": "",
     "th": "ธนาคาร",
+    "teaching_order": -1
+  },
+  "586": {
+    "split": "แก่",
+    "en": "to, for",
+    "fr": "pour, à",
+    "tones": "L",
+    "pos": "",
+    "th": "แก่",
+    "teaching_order": -1
+  },
+  "587": {
+    "split": "ไวน์",
+    "en": "wine",
+    "fr": "vin",
+    "tones": "M",
+    "pos": "",
+    "th": "ไวน์",
     "teaching_order": -1
   }
 }
