@@ -2556,5 +2556,35 @@
     "en": "You, me, and four bottles of wine.",
     "fr": "Toi, moi, et quatre bouteilles de vin.",
     "word_ids": [28, 24, 384, 587, 227, 148]
+  },
+  "436": {
+    "th": "ขอ-โทษ_หมา_กิน_การ-บ้าน",
+    "en": "Sorry, the dog ate my homework.",
+    "fr": "Désolé(e), le chien a mangé mes devoirs.",
+    "word_ids": [338, 134, 193, 588]
+  },
+  "437": {
+    "th": "ฉัน_เห็น_ไฟ_ผ่าน_กระ-จก",
+    "en": "I see the fire through the mirror.",
+    "fr": "Je vois le feu à travers le miroir.",
+    "word_ids": [24, 194, 145, 589, 502]
+  },
+  "438": {
+    "th": "คุณ_ควร_กล่าว_ขอบ-คุณ_ครอบ-ครัว_ของ_คุณ",
+    "en": "You should {say thank you to/thank} your family.",
+    "fr": "Tu devrais {dire merci à/remercier} ta famille.",
+    "word_ids": [28, 242, 590, 4, 363, 40, 28]
+  },
+  "439": {
+    "th": "ไว=ไฟ_นั้น_ช้า_มาก",
+    "en": "That WiFi is {so/very} slow.",
+    "fr": "Ce WiFi est {très/tellement} lent.",
+    "word_ids": [548, 593, 594, 366]
+  },
+  "440": {
+    "th": "กล้าม-เนื้อ_ของ_เขา_หนัก_กว่า_เหล็ก",
+    "en": "{Her/His} muscles are harder than {iron/steel}.",
+    "fr": "Ses muscles sont plus durs que {le fer/l'acier}.",
+    "word_ids": [591, 40, 26, 592, 182, 434]
   }
 }

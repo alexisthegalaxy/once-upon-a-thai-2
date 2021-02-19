@@ -5251,5 +5251,68 @@
     "pos": "",
     "th": "ไวน์",
     "teaching_order": -1
+  },
+  "588": {
+    "split": "การ-บ้าน",
+    "en": "homework, assignment, schoolwork",
+    "fr": "devoirs, travail à faire pour l'école",
+    "tones": "ML",
+    "pos": "",
+    "th": "การบ้าน",
+    "teaching_order": -1
+  },
+  "589": {
+    "split": "ผ่าน",
+    "en": "to pass through",
+    "fr": "traverser",
+    "tones": "L",
+    "pos": "",
+    "th": "ผ่าน",
+    "teaching_order": -1
+  },
+  "590": {
+    "split": "กล่าว",
+    "en": "to tell, say, speak",
+    "fr": "dire",
+    "tones": "L",
+    "pos": "",
+    "th": "กล่าว",
+    "teaching_order": -1
+  },
+  "591": {
+    "split": "กล้าม-เนื้อ",
+    "en": "muscle",
+    "fr": "muscle",
+    "tones": "FH",
+    "pos": "",
+    "th": "กล้ามเนื้อ",
+    "teaching_order": -1
+  },
+  "592": {
+    "split": "หนัก",
+    "en": "hard, heavy",
+    "fr": "dur, lourd",
+    "tones": "L",
+    "pos": "",
+    "th": "หนัก",
+    "teaching_order": -1
+  },
+  "593": {
+    "split": "นั้น",
+    "en": "that (demonstrative adjective)",
+    "fr": "ce",
+    "tones": "H",
+    "pos": "",
+    "th": "นั้น",
+    "teaching_order": -1
+  },
+  "594": {
+    "split": "ช้า",
+    "en": "slow, late",
+    "fr": "lent, en retard",
+    "tones": "H",
+    "pos": "",
+    "th": "ช้า",
+    "teaching_order": -1
   }
 }
