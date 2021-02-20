@@ -1107,5 +1107,160 @@
     "class": "LOW",
     "frequency_index": "49",
     "audio": "ญอ"
+  },
+  "48": {
+    "th": "-ัว",
+    "pron": "",
+    "en": "uaa",
+    "fr": "ouaa",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "อัว"
+  },
+  "49": {
+    "th": "-ัวะ",
+    "pron": "",
+    "en": "ua (short)",
+    "fr": "oua (court)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "อัวะ"
+  },
+  "50": {
+    "th": "โ-ะ",
+    "pron": "",
+    "en": "oh (short)",
+    "fr": "ô (court)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "โอะ"
+  },
+  "51": {
+    "th": "รร",
+    "pron": "",
+    "en": "a",
+    "fr": "a",
+    "alphabet_index": "None",
+    "final": "an",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "อา"
+  },
+  "52": {
+    "th": "เ-ีย",
+    "pron": "",
+    "en": "ia",
+    "fr": "ia",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "เอีย"
+  },
+  "53": {
+    "th": "เ-ียะ",
+    "pron": "",
+    "en": "ia (short)",
+    "fr": "ia (court)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "เอียะ"
+  },
+  "54": {
+    "th": "เ-ือ",
+    "pron": "",
+    "en": "eua (long)",
+    "fr": "eua (long)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "เอือ"
+  },
+  "55": {
+    "th": "เ-ือะ",
+    "pron": "",
+    "en": "eua (short)",
+    "fr": "eua (court)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "เอือะ"
+  },
+  "56": {
+    "th": "-ึ",
+    "pron": "",
+    "en": "eu (short)",
+    "fr": "eu (court)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "อึ"
+  },
+  "57": {
+    "th": "เ-า",
+    "pron": "",
+    "en": "ao",
+    "fr": "ao",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "เอา"
+  },
+  "58": {
+    "th": "เ-าะ",
+    "pron": "",
+    "en": "or (short)",
+    "fr": "o ouvert (court)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "เอาะ"
+  },
+  "59": {
+    "th": "แ-ะ",
+    "pron": "",
+    "en": "ae (short)",
+    "fr": "è (court)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "แอะ"
+  },
+  "60": {
+    "th": "เ-อ",
+    "pron": "",
+    "en": "oe (short)",
+    "fr": "œ (long)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "เออ"
+  },
+  "61": {
+    "th": "เ-อะ",
+    "pron": "",
+    "en": "oe (short)",
+    "fr": "œ (court)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "",
+    "audio": "เออะ"
   }
 }
+

@@ -9,6 +9,7 @@ var letter_id = 1
 export(Array) var pre_dialog_event = []
 export(Array) var post_dialog_event = []
 var is_known = false
+signal akson_letter_learnt
 
 func _ready():
 	$Label.text = id
@@ -25,6 +26,7 @@ func set_letter():
 			letter = game_letter
 			letter_id = game_letter_id
 			return
+	print('the following letter is missing in letters.json: ', id, "   .")
 	assert(false)
 
 func get_introduction():
@@ -35,13 +37,10 @@ func get_introduction():
 		return ["Hey [Name], I'm the " + letter[TranslationServer.get_locale()] + " sound."]
 
 func dialog_ended():
-#	print("starts test!")
 	# first test
 	Game.start_test("res://Test/Letter/TestPronFromThaiLet.tscn", letter_id, self)
 	# final test - just for debugging - keep commented out
-#	Game.start_test("res://Test/Letter/TestWordFromSound.tscn", id, self)
-#	wobbles = false
-
+	# Game.start_test("res://Test/Letter/TestWordFromSound.tscn", id, self)
 
 func _process(delta):
 	if is_known:
@@ -71,16 +70,18 @@ func starts_disappearing():
 	is_known = true
 	$SameButWithBlueContour.show()
 	$SameButWithBlueContour.modulate = Color(1, 1, 1, 1)
+	emit_signal("akson_letter_learnt", id)
 
 func _on_Button_pressed():
 	if Game.is_frozen or Game.current_dialog or Game.active_test:
 		return
-	is_hovered = false
-	$SameButWithBlueContour.hide()
-	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-	Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true, null)
-#	Game.player.stop_walking()
-	Game.current_scene.add_child(Game.current_dialog)
-#	Game.lose_focus(null)
-	if pre_dialog_event:
-		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
+	starts_disappearing()
+#	is_hovered = false
+#	$SameButWithBlueContour.hide()
+#	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+#	Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true, null)
+##	Game.player.stop_walking()
+#	Game.current_scene.add_child(Game.current_dialog)
+##	Game.lose_focus(null)
+#	if pre_dialog_event:
+#		Events.execute(pre_dialog_event[0], pre_dialog_event[1])

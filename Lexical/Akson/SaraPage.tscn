@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Lexical/Akson/AksonCloud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Lexical/Akson/sara_map.png" type="Texture" id=2]
 [ext_resource path="res://Lexical/Akson/SaraPage.gd" type="Script" id=3]
 [ext_resource path="res://Lexical/Akson/AksonLetter.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Lexical/Akson/sakyant_line_1.png" type="Texture" id=5]
+[ext_resource path="res://Lexical/Akson/sakyant_line_4.png" type="Texture" id=6]
+[ext_resource path="res://Lexical/Akson/sakyant_line_3.png" type="Texture" id=7]
+[ext_resource path="res://Lexical/Akson/middle_lotus.png" type="Texture" id=8]
+[ext_resource path="res://Lexical/Akson/sakyant_line_5.png" type="Texture" id=9]
+[ext_resource path="res://Lexical/Akson/sakyant_line_2.png" type="Texture" id=10]
 
 [node name="CanvasLayer" type="Node2D"]
 script = ExtResource( 3 )
@@ -16,76 +21,353 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="middle_lotus" type="Sprite" parent="."]
+position = Vector2( 145.741, 91.5779 )
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 8 )
+
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2( 145.16, 88.9924 )
 __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="Lines" type="Node2D" parent="."]
+
+[node name="sakyant_line_1_1" type="Sprite" parent="Lines"]
+position = Vector2( 201.473, 50.6814 )
+rotation = 0.911818
+scale = Vector2( 0.256219, 0.217288 )
+texture = ExtResource( 5 )
+
+[node name="sakyant_line_1_3" type="Sprite" parent="Lines"]
+position = Vector2( 11.736, 100.968 )
+rotation = 1.57126
+scale = Vector2( 0.0834709, 0.119984 )
+texture = ExtResource( 5 )
+
+[node name="sakyant_line_1_2" type="Sprite" parent="Lines"]
+position = Vector2( 17.5989, 60.1455 )
+rotation = 2.43263
+scale = Vector2( 0.180133, 0.173415 )
+texture = ExtResource( 5 )
+
+[node name="sakyant_line_1_4" type="Sprite" parent="Lines"]
+position = Vector2( 339.546, 214.701 )
+rotation = 2.45477
+scale = Vector2( 0.135692, 0.138184 )
+texture = ExtResource( 5 )
+
+[node name="sakyant_line_1_5" type="Sprite" parent="Lines"]
+position = Vector2( 151.285, 304.67 )
+rotation = 3.14122
+scale = Vector2( 0.0771361, 0.10473 )
+texture = ExtResource( 5 )
+
+[node name="sakyant_line_1_8" type="Sprite" parent="Lines"]
+position = Vector2( 151.258, 248.567 )
+rotation = 3.14122
+scale = Vector2( 0.0771361, 0.10473 )
+texture = ExtResource( 5 )
+
+[node name="sakyant_line_1_6" type="Sprite" parent="Lines"]
+position = Vector2( 207.603, 252.149 )
+rotation = -0.00628781
+scale = Vector2( 0.062995, 0.0970925 )
+texture = ExtResource( 5 )
+
+[node name="sakyant_line_1_7" type="Sprite" parent="Lines"]
+position = Vector2( 209.759, 301.858 )
+rotation = -0.00628781
+scale = Vector2( 0.062995, 0.0970925 )
+texture = ExtResource( 5 )
+
+[node name="sakyant_line_2_1" type="Sprite" parent="Lines"]
+position = Vector2( 214.804, 81.6836 )
+rotation = 1.4202
+scale = Vector2( 0.256219, 0.217288 )
+texture = ExtResource( 10 )
+
+[node name="sakyant_line_2_4" type="Sprite" parent="Lines"]
+position = Vector2( 341.725, 60.6822 )
+rotation = 1.4202
+scale = Vector2( 0.256219, 0.217288 )
+texture = ExtResource( 10 )
+
+[node name="sakyant_line_2_2" type="Sprite" parent="Lines"]
+position = Vector2( 143.877, 25.6784 )
+rotation = 3.12099
+scale = Vector2( 0.256219, 0.201347 )
+texture = ExtResource( 10 )
+
+[node name="sakyant_line_2_5" type="Sprite" parent="Lines"]
+position = Vector2( 297.682, -2.77981 )
+rotation = 4.37789
+scale = Vector2( 0.141538, 0.142846 )
+texture = ExtResource( 10 )
+
+[node name="sakyant_line_2_3" type="Sprite" parent="Lines"]
+position = Vector2( 54.9043, 122.413 )
+rotation = 3.12099
+scale = Vector2( 0.0966829, 0.0859511 )
+texture = ExtResource( 10 )
+
+[node name="sakyant_line_3_1" type="Sprite" parent="Lines"]
+position = Vector2( 96.5316, 93.6493 )
+rotation = 1.5497
+scale = Vector2( 0.197562, 0.164242 )
+texture = ExtResource( 7 )
+
+[node name="sakyant_line_3_4" type="Sprite" parent="Lines"]
+position = Vector2( 276.846, 143.028 )
+rotation = 1.33576
+scale = Vector2( 0.220705, 0.191967 )
+texture = ExtResource( 7 )
+
+[node name="sakyant_line_3_2" type="Sprite" parent="Lines"]
+position = Vector2( 109.642, -15.795 )
+rotation = 1.26157
+scale = Vector2( 0.130878, 0.130761 )
+texture = ExtResource( 7 )
+
+[node name="sakyant_line_3_5" type="Sprite" parent="Lines"]
+position = Vector2( 258.147, -113.853 )
+rotation = 3.12026
+scale = Vector2( 0.133287, 0.134012 )
+texture = ExtResource( 7 )
+
+[node name="sakyant_line_3_3" type="Sprite" parent="Lines"]
+position = Vector2( -71.3277, 65.8576 )
+rotation = 2.27116
+scale = Vector2( 0.18028, 0.161046 )
+texture = ExtResource( 7 )
+
+[node name="sakyant_line_4_1" type="Sprite" parent="Lines"]
+position = Vector2( 180.074, 125.667 )
+rotation = 2.2627
+scale = Vector2( 0.169996, 0.136574 )
+texture = ExtResource( 6 )
+
+[node name="sakyant_line_4_8" type="Sprite" parent="Lines"]
+position = Vector2( 172.148, 227.33 )
+rotation = 1.5708
+scale = Vector2( 0.316552, 0.41418 )
+texture = ExtResource( 6 )
+
+[node name="sakyant_line_4_7" type="Sprite" parent="Lines"]
+position = Vector2( 299.535, -48.2147 )
+rotation = 2.14917
+scale = Vector2( 0.169996, 0.136574 )
+texture = ExtResource( 6 )
+
+[node name="sakyant_line_4_5" type="Sprite" parent="Lines"]
+position = Vector2( 266.124, 170.373 )
+rotation = 1.8689
+scale = Vector2( 0.196427, 0.152627 )
+texture = ExtResource( 6 )
+
+[node name="sakyant_line_4_2" type="Sprite" parent="Lines"]
+position = Vector2( 26.9779, 9.38428 )
+rotation = 1.23969
+scale = Vector2( 0.172718, 0.14738 )
+texture = ExtResource( 9 )
+
+[node name="sakyant_line_4_4" type="Sprite" parent="Lines"]
+position = Vector2( 245.231, 139.138 )
+rotation = 1.00211
+scale = Vector2( 0.105452, 0.0962678 )
+texture = ExtResource( 9 )
+
+[node name="sakyant_line_4_6" type="Sprite" parent="Lines"]
+position = Vector2( 364.224, 129.958 )
+rotation = 1.56496
+scale = Vector2( 0.105452, 0.0962678 )
+texture = ExtResource( 9 )
+
+[node name="sakyant_line_4_3" type="Sprite" parent="Lines"]
+position = Vector2( 11.304, 97.1958 )
+rotation = 1.5763
+scale = Vector2( 0.0745391, 0.117425 )
+texture = ExtResource( 6 )
+
+[node name="sakyant_line_5_1" type="Sprite" parent="Lines"]
+position = Vector2( 147.642, 167.957 )
+rotation = -0.0165299
+scale = Vector2( 0.310555, 0.258742 )
+texture = ExtResource( 9 )
+
+[node name="sakyant_line_5_6" type="Sprite" parent="Lines"]
+position = Vector2( 147.642, 167.957 )
+rotation = -0.0165299
+scale = Vector2( 0.310555, 0.258742 )
+texture = ExtResource( 9 )
+
+[node name="sakyant_line_5_4" type="Sprite" parent="Lines"]
+position = Vector2( 346.078, 185.407 )
+rotation = 1.59592
+scale = Vector2( 0.140681, 0.110503 )
+texture = ExtResource( 9 )
+
+[node name="sakyant_line_5_2" type="Sprite" parent="Lines"]
+position = Vector2( -24.3094, -29.0877 )
+rotation = -0.157004
+scale = Vector2( 0.172718, 0.14738 )
+texture = ExtResource( 9 )
+
+[node name="sakyant_line_5_5" type="Sprite" parent="Lines"]
+position = Vector2( 257.655, -28.8232 )
+rotation = 0.00903106
+scale = Vector2( 0.13393, 0.126646 )
+texture = ExtResource( 9 )
+
+[node name="sakyant_line_5_3" type="Sprite" parent="Lines"]
+position = Vector2( 27.8438, 167.297 )
+rotation = 0.949644
+scale = Vector2( 0.0995488, 0.10309 )
+texture = ExtResource( 9 )
+
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Letters" type="YSort" parent="YSort"]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ใ-" parent="YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 332.007, -17.8686 )
+position = Vector2( 337.303, -19.9398 )
 id = "ใ-"
 
 [node name="ไ-" parent="YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 231.507, -9.53018 )
+position = Vector2( 256.738, 11.2918 )
 id = "ไ-"
 
 [node name="-ุ" parent="YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 259.011, 93.6083 )
+position = Vector2( 275.131, 70.2696 )
 id = "-ุ"
 
+[node name="-ู" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 404.426, 49.4509 )
+id = "-ู"
+
 [node name="-ั" parent="YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 205.654, 135.414 )
+position = Vector2( 216.287, 152.963 )
 id = "-ั"
 
+[node name="า" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 308.86, 181.912 )
+id = "า"
+
+[node name="รร" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 367.105, 246.23 )
+id = "รร"
+
+[node name="-ะ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 273.458, 117.995 )
+id = "-ะ"
+
+[node name="-ำ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 382.277, 186.329 )
+id = "-ำ"
+
+[node name="-ัวะ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 397.083, 129.163 )
+id = "-ัวะ"
+
+[node name="-ัว" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 330.769, 132.649 )
+id = "-ัว"
+
 [node name="-ี" parent="YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 133.869, 200.872 )
+position = Vector2( 147.393, 226.438 )
 id = "-ี"
 
+[node name="เ-ีย" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 147.973, 276.235 )
+id = "เ-ีย"
+
+[node name="เ-ียะ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 148.427, 332.84 )
+id = "เ-ียะ"
+
+[node name="-ิ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 79.1433, 225.595 )
+id = "-ิ"
+
+[node name="-ื" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 201.863, 227.378 )
+id = "-ื"
+
+[node name="เ-ือ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 205.521, 277.371 )
+id = "เ-ือ"
+
+[node name="เ-ือะ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 204.996, 329.727 )
+id = "เ-ือะ"
+
+[node name="-ึ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 253.665, 228.143 )
+id = "-ึ"
+
 [node name="เ-" parent="YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 64.2852, 90.0328 )
+position = Vector2( 49.0706, 95.4213 )
 id = "เ-"
 
+[node name="เ-า" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 50.985, 147.11 )
+id = "เ-า"
+
+[node name="เ-าะ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( -1.76773, 184.335 )
+id = "เ-าะ"
+
+[node name="แ-" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( -29.7368, 98.1744 )
+id = "แ-"
+
+[node name="แ-ะ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( -104.612, 36.4878 )
+id = "แ-ะ"
+
 [node name="โ-" parent="YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 263.433, -169.138 )
+position = Vector2( 255.398, -71.6189 )
 id = "โ-"
 
+[node name="โ-ะ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 252.611, -153.843 )
+
 [node name="-" parent="YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 166.141, -21.4494 )
+position = Vector2( 146.789, -32.4728 )
 id = "-"
 
+[node name="อ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 70.3605, -6.75154 )
+id = "อ"
+
+[node name="เ-อ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( -12.3555, 21.0358 )
+id = "เ-อ"
+
+[node name="เ-อะ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( -33.1918, -69.5268 )
+id = "เ-อะ"
+
 [node name="Clouds" type="YSort" parent="YSort"]
-
-[node name="Cloud" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 374.065, 134.363 )
-
-[node name="Cloud3" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 328.281, 164.538 )
-
-[node name="Cloud15" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 335.665, 134.455 )
-
-[node name="Cloud2" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 328.194, 98.1974 )
-
-[node name="Cloud16" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 308.777, 78.5066 )
-
-[node name="Cloud17" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 271.31, 51.1584 )
+visible = false
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Cloud18" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 286.898, 22.7162 )
 
 [node name="Cloud19" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 276.506, -16.6653 )
+lift_on_letters = [ "ไ-" ]
 
 [node name="Cloud20" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 262.011, -47.2954 )
+lift_on_letters = [ "ไ-" ]
 
 [node name="Cloud21" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 240.953, -76.2845 )
@@ -137,9 +419,11 @@ position = Vector2( 294.084, -122.11 )
 
 [node name="Cloud66" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 338.504, -47.9785 )
+lift_on_letters = [ "ไ-" ]
 
 [node name="Cloud67" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 313.751, 7.45715 )
+lift_on_letters = [ "ไ-" ]
 
 [node name="Cloud70" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 358.307, -2.16911 )
@@ -150,50 +434,49 @@ position = Vector2( 318.151, 43.2118 )
 [node name="Cloud72" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 351.156, 26.1596 )
 
-[node name="Cloud73" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 343.18, 63.2894 )
-
-[node name="Cloud74" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 369.308, 85.0173 )
-
-[node name="Cloud75" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 365.183, 108.945 )
-
 [node name="Cloud69" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 322.277, -17.5711 )
+lift_on_letters = [ "ไ-" ]
 
 [node name="Cloud68" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 306.145, -35.6233 )
+lift_on_letters = [ "ไ-" ]
 
 [node name="Cloud26" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 190.359, -69.9944 )
+lift_on_letters = [ "-" ]
 
 [node name="Cloud27" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 135.115, -48.1158 )
+position = Vector2( 135.36, -48.1158 )
+lift_on_letters = [ "-" ]
 
 [node name="Cloud28" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 108.588, -19.6737 )
+position = Vector2( 172.033, -34.8614 )
 
 [node name="Cloud29" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 111.596, 12.5973 )
+position = Vector2( 198.558, -39.825 )
 
 [node name="Cloud30" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 57.1729, 55.8075 )
 
 [node name="Cloud31" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 57.1729, 55.8075 )
+position = Vector2( 165.937, -3.71877 )
 
 [node name="Cloud32" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 76.8637, 24.6305 )
+lift_on_letters = [ "-" ]
 
 [node name="Cloud33" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 40.764, -0.803375 )
+lift_on_letters = [ "-" ]
 
 [node name="Cloud34" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 74.6758, -16.9389 )
+position = Vector2( 44.0553, -35.5561 )
+lift_on_letters = [ "-" ]
 
 [node name="Cloud35" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 86.4356, -52.7651 )
+position = Vector2( 86.4356, -54.9697 )
+lift_on_letters = [ "-" ]
 
 [node name="Cloud36" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 115.425, -81.7542 )
@@ -205,7 +488,7 @@ position = Vector2( 2.0068, -55.5145 )
 position = Vector2( -3.34473, -73.468 )
 
 [node name="Cloud37" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 36.6617, -33.0743 )
+position = Vector2( 51.3596, -68.3492 )
 
 [node name="Cloud38" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( -6.54849, 5.48671 )
@@ -214,10 +497,11 @@ position = Vector2( -6.54849, 5.48671 )
 position = Vector2( 32.5595, 32.5615 )
 
 [node name="Cloud40" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 15.3301, 90.2663 )
+position = Vector2( -9.16631, 96.1454 )
+lift_on_letters = [ "เ-" ]
 
 [node name="Cloud41" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 48.9685, 121.17 )
+position = Vector2( 46.7638, 133.173 )
 
 [node name="Cloud42" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 10.9544, 125.272 )
@@ -239,6 +523,7 @@ position = Vector2( -12.3708, 143.818 )
 
 [node name="Cloud48" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( -24.5983, 83.7027 )
+lift_on_letters = [ "เ-" ]
 
 [node name="Cloud49" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 10.9544, 60.1832 )
@@ -253,13 +538,16 @@ position = Vector2( -45.1095, 60.1832 )
 position = Vector2( -68.3555, 28.1857 )
 
 [node name="Cloud4" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 80.721, 198.599 )
+position = Vector2( 80.721, 198.354 )
+lift_on_letters = [ "-ี" ]
 
 [node name="Cloud5" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 108.069, 231.144 )
+position = Vector2( 108.069, 230.899 )
+lift_on_letters = [ "-ี" ]
 
 [node name="Cloud6" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 156.749, 232.785 )
+position = Vector2( 156.504, 232.785 )
+lift_on_letters = [ "-ี" ]
 
 [node name="Cloud76" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 192.779, 226.734 )
@@ -283,16 +571,19 @@ position = Vector2( 36.5585, 190.704 )
 position = Vector2( 235.512, 205.163 )
 
 [node name="Cloud8" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 201.605, 169.094 )
+position = Vector2( 172.454, 170.074 )
+lift_on_letters = [ "-ั", "-ี" ]
 
 [node name="Cloud9" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 243.726, 140.09 )
+position = Vector2( 260.873, 128.087 )
 
 [node name="Cloud10" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 234.692, 175.353 )
+lift_on_letters = [ "-ั" ]
 
 [node name="Cloud11" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 276.535, 156.483 )
+lift_on_letters = [ "-ั" ]
 
 [node name="Cloud12" parent="YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 279.269, 189.848 )
@@ -301,25 +592,27 @@ position = Vector2( 279.269, 189.848 )
 position = Vector2( 290.209, 125.853 )
 
 [node name="Cloud14" parent="YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 182.434, 198.125 )
+position = Vector2( 190.135, 194.825 )
+lift_on_letters = [ "-ี" ]
 
-[node name="Lines" type="Node2D" parent="."]
+[node name="Cloud16" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 308.777, 78.5066 )
 
-[node name="sakyant_line_1" type="Sprite" parent="Lines"]
-position = Vector2( 188.02, 41.8627 )
-rotation = 0.723786
-scale = Vector2( 0.256219, 0.217288 )
-texture = ExtResource( 5 )
+[node name="Cloud73" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 343.18, 63.2894 )
+
+[node name="Cloud17" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 271.31, 51.1584 )
 
 [node name="ExitButton" type="Button" parent="."]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 272.287
-margin_top = 8.5808
-margin_right = 316.287
-margin_bottom = 28.5808
+margin_left = 477.077
+margin_top = -138.153
+margin_right = 521.077
+margin_bottom = -118.153
 text = "Exit"
 __meta__ = {
 "_edit_use_anchors_": false

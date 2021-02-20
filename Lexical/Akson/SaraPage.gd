@@ -7,6 +7,14 @@ var speed = 100
 func _ready():
 	$Camera.current = true
 	get_viewport().warp_mouse(CENTER)
+	for letter in $YSort/Letters.get_children():
+		letter.connect("akson_letter_learnt", self, "akson_letter_learnt")
+
+func akson_letter_learnt(letter):
+	print("letter is learnt ", letter)
+	for cloud in $YSort/Clouds.get_children():
+		if letter in cloud.lift_on_letters:
+			cloud.lift()
 
 func init_sara_page():
 	pass
@@ -28,13 +36,12 @@ func _process(delta):
 		$Camera.position += direction * delta * speed
 		if $Camera.position.x > 300:
 			$Camera.position.x = 300
-		if $Camera.position.x < 50:
-			$Camera.position.x = 50
-		if $Camera.position.y > 250:
-			$Camera.position.y = 250
-		if $Camera.position.y < -250:
-			$Camera.position.y = -250
-		print($Camera.position)
+		if $Camera.position.x < 0:
+			$Camera.position.x = 0
+		if $Camera.position.y > 300:
+			$Camera.position.y = 300
+		if $Camera.position.y < -150:
+			$Camera.position.y = -150
 
 func _on_ExitButton_pressed():
 	exit()
