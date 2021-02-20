@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Lexical/Akson/AksonCloud.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Dialog/PlainDialogBackground.png" type="Texture" id=2]
+[ext_resource path="res://Lexical/Akson/PayanchanaPage.gd" type="Script" id=3]
+[ext_resource path="res://Lexical/Akson/AksonLetter.tscn" type="PackedScene" id=4]
+
+[node name="CanvasLayer" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 151.039, 94.1715 )
+scale = Vector2( 1.04259, 2.94005 )
+texture = ExtResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="OkButton" type="Button" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 111.08
+margin_top = -174.51
+margin_right = 155.08
+margin_bottom = -154.51
+text = "Exit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Clouds" type="Node2D" parent="."]
+
+[node name="Node2D" parent="Clouds" instance=ExtResource( 1 )]
+position = Vector2( 288.191, 251.96 )
+
+[node name="Node2D5" parent="Clouds" instance=ExtResource( 1 )]
+position = Vector2( 347.151, 174.11 )
+
+[node name="Node2D6" parent="Clouds" instance=ExtResource( 1 )]
+position = Vector2( 431.297, 213.607 )
+
+[node name="Node2D2" parent="Clouds" instance=ExtResource( 1 )]
+position = Vector2( -56.9794, 215.897 )
+
+[node name="Node2D3" parent="Clouds" instance=ExtResource( 1 )]
+position = Vector2( 52.3532, 250.242 )
+
+[node name="Node2D4" parent="Clouds" instance=ExtResource( 1 )]
+position = Vector2( 180.003, 216.469 )
+
+[node name="Letters" type="Node2D" parent="."]
+
+[node name="ใ-" parent="Letters" instance=ExtResource( 4 )]
+position = Vector2( 237.246, 86.2253 )
+
+[node name="ไ-" parent="Letters" instance=ExtResource( 4 )]
+position = Vector2( 238.045, 134.307 )
+
+[node name="โ-" parent="Letters" instance=ExtResource( 4 )]
+position = Vector2( 288.651, 113.866 )
+
+[node name="-" parent="Letters" instance=ExtResource( 4 )]
+position = Vector2( 73.5329, 122.592 )
+[connection signal="pressed" from="CanvasLayer/OkButton" to="." method="_on_OkButton_pressed"]

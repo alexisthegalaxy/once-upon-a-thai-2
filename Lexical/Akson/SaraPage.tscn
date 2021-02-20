@@ -1,65 +1,327 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Lexical/Akson/AksonCloud.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Dialog/PlainDialogBackground.png" type="Texture" id=2]
-[ext_resource path="res://Lexical/Letter/LetterPage.gd" type="Script" id=3]
+[ext_resource path="res://Lexical/Akson/sara_map.png" type="Texture" id=2]
+[ext_resource path="res://Lexical/Akson/SaraPage.gd" type="Script" id=3]
 [ext_resource path="res://Lexical/Akson/AksonLetter.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Lexical/Akson/sakyant_line_1.png" type="Texture" id=5]
 
 [node name="CanvasLayer" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="Background" type="Sprite" parent="."]
-position = Vector2( 151.039, 94.1715 )
-scale = Vector2( 1.04259, 2.94005 )
+[node name="sara_map" type="Sprite" parent="."]
+position = Vector2( 165.033, 85.3604 )
 texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2( 145.16, 88.9924 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="OkButton" type="Button" parent="CanvasLayer"]
+[node name="YSort" type="YSort" parent="."]
+
+[node name="Letters" type="YSort" parent="YSort"]
+
+[node name="ใ-" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 332.007, -17.8686 )
+id = "ใ-"
+
+[node name="ไ-" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 231.507, -9.53018 )
+id = "ไ-"
+
+[node name="-ุ" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 259.011, 93.6083 )
+id = "-ุ"
+
+[node name="-ั" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 205.654, 135.414 )
+id = "-ั"
+
+[node name="-ี" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 133.869, 200.872 )
+id = "-ี"
+
+[node name="เ-" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 64.2852, 90.0328 )
+id = "เ-"
+
+[node name="โ-" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 263.433, -169.138 )
+id = "โ-"
+
+[node name="-" parent="YSort/Letters" instance=ExtResource( 4 )]
+position = Vector2( 166.141, -21.4494 )
+id = "-"
+
+[node name="Clouds" type="YSort" parent="YSort"]
+
+[node name="Cloud" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 374.065, 134.363 )
+
+[node name="Cloud3" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 328.281, 164.538 )
+
+[node name="Cloud15" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 335.665, 134.455 )
+
+[node name="Cloud2" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 328.194, 98.1974 )
+
+[node name="Cloud16" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 308.777, 78.5066 )
+
+[node name="Cloud17" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 271.31, 51.1584 )
+
+[node name="Cloud18" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 286.898, 22.7162 )
+
+[node name="Cloud19" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 276.506, -16.6653 )
+
+[node name="Cloud20" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 262.011, -47.2954 )
+
+[node name="Cloud21" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 240.953, -76.2845 )
+
+[node name="Cloud22" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 295.103, -73.5497 )
+
+[node name="Cloud23" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 267.481, -99.2571 )
+
+[node name="Cloud24" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 231.928, -117.033 )
+
+[node name="Cloud25" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 266.934, -145.749 )
+
+[node name="Cloud55" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 203.697, -97.0158 )
+
+[node name="Cloud56" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 150.902, -79.466 )
+
+[node name="Cloud57" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 167.002, -111.52 )
+
+[node name="Cloud58" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 252.017, -176.532 )
+
+[node name="Cloud59" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 305.263, -202.419 )
+
+[node name="Cloud60" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 347.035, -219.775 )
+
+[node name="Cloud61" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 362.038, -195.947 )
+
+[node name="Cloud62" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 395.573, -209.479 )
+
+[node name="Cloud63" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 395.573, -185.063 )
+
+[node name="Cloud64" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 309.969, -172.119 )
+
+[node name="Cloud65" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 294.084, -122.11 )
+
+[node name="Cloud66" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 338.504, -47.9785 )
+
+[node name="Cloud67" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 313.751, 7.45715 )
+
+[node name="Cloud70" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 358.307, -2.16911 )
+
+[node name="Cloud71" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 318.151, 43.2118 )
+
+[node name="Cloud72" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 351.156, 26.1596 )
+
+[node name="Cloud73" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 343.18, 63.2894 )
+
+[node name="Cloud74" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 369.308, 85.0173 )
+
+[node name="Cloud75" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 365.183, 108.945 )
+
+[node name="Cloud69" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 322.277, -17.5711 )
+
+[node name="Cloud68" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 306.145, -35.6233 )
+
+[node name="Cloud26" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 190.359, -69.9944 )
+
+[node name="Cloud27" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 135.115, -48.1158 )
+
+[node name="Cloud28" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 108.588, -19.6737 )
+
+[node name="Cloud29" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 111.596, 12.5973 )
+
+[node name="Cloud30" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 57.1729, 55.8075 )
+
+[node name="Cloud31" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 57.1729, 55.8075 )
+
+[node name="Cloud32" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 76.8637, 24.6305 )
+
+[node name="Cloud33" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 40.764, -0.803375 )
+
+[node name="Cloud34" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 74.6758, -16.9389 )
+
+[node name="Cloud35" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 86.4356, -52.7651 )
+
+[node name="Cloud36" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 115.425, -81.7542 )
+
+[node name="Cloud53" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 2.0068, -55.5145 )
+
+[node name="Cloud54" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( -3.34473, -73.468 )
+
+[node name="Cloud37" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 36.6617, -33.0743 )
+
+[node name="Cloud38" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( -6.54849, 5.48671 )
+
+[node name="Cloud39" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 32.5595, 32.5615 )
+
+[node name="Cloud40" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 15.3301, 90.2663 )
+
+[node name="Cloud41" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 48.9685, 121.17 )
+
+[node name="Cloud42" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 10.9544, 125.272 )
+
+[node name="Cloud43" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 94.9135, 130.195 )
+
+[node name="Cloud44" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 77.6841, 166.021 )
+
+[node name="Cloud45" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 36.3883, 156.449 )
+
+[node name="Cloud46" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 0.60865, 173.444 )
+
+[node name="Cloud47" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( -12.3708, 143.818 )
+
+[node name="Cloud48" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( -24.5983, 83.7027 )
+
+[node name="Cloud49" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 10.9544, 60.1832 )
+
+[node name="Cloud50" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( -7.36894, 32.5614 )
+
+[node name="Cloud51" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( -45.1095, 60.1832 )
+
+[node name="Cloud52" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( -68.3555, 28.1857 )
+
+[node name="Cloud4" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 80.721, 198.599 )
+
+[node name="Cloud5" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 108.069, 231.144 )
+
+[node name="Cloud6" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 156.749, 232.785 )
+
+[node name="Cloud76" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 192.779, 226.734 )
+
+[node name="Cloud77" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 183.153, 251.762 )
+
+[node name="Cloud78" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 126.495, 262.214 )
+
+[node name="Cloud79" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 75.0635, 255.613 )
+
+[node name="Cloud80" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 59.1115, 226.184 )
+
+[node name="Cloud81" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 36.5585, 190.704 )
+
+[node name="Cloud7" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 235.512, 205.163 )
+
+[node name="Cloud8" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 201.605, 169.094 )
+
+[node name="Cloud9" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 243.726, 140.09 )
+
+[node name="Cloud10" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 234.692, 175.353 )
+
+[node name="Cloud11" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 276.535, 156.483 )
+
+[node name="Cloud12" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 279.269, 189.848 )
+
+[node name="Cloud13" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 290.209, 125.853 )
+
+[node name="Cloud14" parent="YSort/Clouds" instance=ExtResource( 1 )]
+position = Vector2( 182.434, 198.125 )
+
+[node name="Lines" type="Node2D" parent="."]
+
+[node name="sakyant_line_1" type="Sprite" parent="Lines"]
+position = Vector2( 188.02, 41.8627 )
+rotation = 0.723786
+scale = Vector2( 0.256219, 0.217288 )
+texture = ExtResource( 5 )
+
+[node name="ExitButton" type="Button" parent="."]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 111.08
-margin_top = -174.51
-margin_right = 155.08
-margin_bottom = -154.51
+margin_left = 272.287
+margin_top = 8.5808
+margin_right = 316.287
+margin_bottom = 28.5808
 text = "Exit"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Clouds" type="Node2D" parent="."]
-
-[node name="Node2D" parent="Clouds" instance=ExtResource( 1 )]
-position = Vector2( 288.191, 251.96 )
-
-[node name="Node2D5" parent="Clouds" instance=ExtResource( 1 )]
-position = Vector2( 347.151, 174.11 )
-
-[node name="Node2D6" parent="Clouds" instance=ExtResource( 1 )]
-position = Vector2( 431.297, 213.607 )
-
-[node name="Node2D2" parent="Clouds" instance=ExtResource( 1 )]
-position = Vector2( -56.9794, 215.897 )
-
-[node name="Node2D3" parent="Clouds" instance=ExtResource( 1 )]
-position = Vector2( 52.3532, 250.242 )
-
-[node name="Node2D4" parent="Clouds" instance=ExtResource( 1 )]
-position = Vector2( 180.003, 216.469 )
-
-[node name="Letters" type="Node2D" parent="."]
-
-[node name="ใ-" parent="Letters" instance=ExtResource( 4 )]
-position = Vector2( 237.246, 86.2253 )
-
-[node name="ไ-" parent="Letters" instance=ExtResource( 4 )]
-position = Vector2( 238.045, 134.307 )
-
-[node name="โ-" parent="Letters" instance=ExtResource( 4 )]
-position = Vector2( 288.651, 113.866 )
-
-[node name="-" parent="Letters" instance=ExtResource( 4 )]
-position = Vector2( 73.5329, 122.592 )
-[connection signal="pressed" from="CanvasLayer/OkButton" to="." method="_on_OkButton_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_ExitButton_pressed"]

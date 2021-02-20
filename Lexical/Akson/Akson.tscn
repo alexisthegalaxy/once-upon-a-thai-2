@@ -1,12 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Lexical/Dict/dict-background.png" type="Texture" id=1]
 [ext_resource path="res://Lexical/Akson/Akson.gd" type="Script" id=2]
-[ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://UI/main_theme.tres" type="Theme" id=3]
 [ext_resource path="res://UI/pressFtoExit.tscn" type="PackedScene" id=4]
-
-[sub_resource type="DynamicFont" id=1]
-font_data = ExtResource( 3 )
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource( 2 )
@@ -21,30 +18,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Control" type="Control" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -140.0
-margin_top = -80.0
-margin_right = 140.0
-margin_bottom = 81.0
-rect_clip_content = true
-mouse_filter = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TextureRect" type="TextureRect" parent="Control"]
+[node name="TextureRect" type="TextureRect" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -139.5
-margin_top = -80.0
+margin_top = -79.5
 margin_right = 139.5
-margin_bottom = 80.0
+margin_bottom = 80.5
 mouse_filter = 2
 texture = ExtResource( 1 )
 expand = true
@@ -54,84 +36,42 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="NumbersLabel" type="Node2D" parent="Control"]
-position = Vector2( -20, -10 )
+[node name="PressFToExit" parent="." instance=ExtResource( 4 )]
+margin_top = -3.69312
+margin_bottom = 18.3069
 
-[node name="Label" type="Label" parent="Control/NumbersLabel"]
-margin_right = 43.0
-margin_bottom = 47.0
-custom_fonts/font = SubResource( 1 )
+[node name="Label" type="Label" parent="."]
+margin_left = 32.0
+margin_top = 24.0
+margin_right = 80.0
+margin_bottom = 40.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "_numbers"
+text = "Akson"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AccentsLabel" type="Node2D" parent="Control"]
-position = Vector2( -20, -10 )
-
-[node name="Label" type="Label" parent="Control/AccentsLabel"]
-margin_right = 40.0
-margin_bottom = 22.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "_accents"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="HCLabel" type="Node2D" parent="Control"]
-position = Vector2( -20, -10 )
-
-[node name="Label" type="Label" parent="Control/HCLabel"]
-margin_right = 109.0
-margin_bottom = 22.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "_high_class_consonants"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="VowelsLabel" type="Node2D" parent="Control"]
-position = Vector2( -20, -10 )
-
-[node name="Label" type="Label" parent="Control/VowelsLabel"]
-margin_right = 40.0
-margin_bottom = 22.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
+[node name="Vowels" type="Button" parent="."]
+margin_left = 56.0
+margin_top = 80.0
+margin_right = 128.0
+margin_bottom = 100.0
+theme = ExtResource( 3 )
 text = "_vowels"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MCLabel" type="Node2D" parent="Control"]
-position = Vector2( -20, -10 )
-
-[node name="Label" type="Label" parent="Control/MCLabel"]
-margin_right = 106.0
-margin_bottom = 22.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "_mid_class_consonants"
+[node name="Consonants" type="Button" parent="."]
+margin_left = 184.0
+margin_top = 80.0
+margin_right = 256.0
+margin_bottom = 100.0
+theme = ExtResource( 3 )
+text = "_consonants"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="LCLabel" type="Node2D" parent="Control"]
-position = Vector2( -20, -10 )
-
-[node name="Label" type="Label" parent="Control/LCLabel"]
-margin_right = 109.0
-margin_bottom = 22.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "_low_class_consonants"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="PressFToExit" parent="." instance=ExtResource( 4 )]
-margin_top = -3.69312
-margin_bottom = 18.3069
+[connection signal="mouse_entered" from="Vowels" to="." method="_on_Vowels_mouse_entered"]
+[connection signal="pressed" from="Vowels" to="." method="_on_Vowels_pressed"]
+[connection signal="pressed" from="Consonants" to="." method="_on_Consonants_pressed"]

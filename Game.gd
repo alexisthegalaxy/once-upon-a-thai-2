@@ -121,6 +121,7 @@ func is_overworld_frozen():
 		select_follower_to_implant_screen or
 		dict or
 		alphabet or
+		akson or
 		notebook or
 		word_page or
 		letter_page or
@@ -365,6 +366,10 @@ func _input(_event):
 		elif vending_screen:
 			vending_screen.queue_free()
 			vending_screen = null
+			is_frozen = false
+		elif akson:
+			akson.exit()  # triggers a queue_free, and recenters the camera on Player
+			akson = null
 			is_frozen = false
 		else:
 			exit_screen = load("res://UI/ExitAreYouSure.tscn").instance()

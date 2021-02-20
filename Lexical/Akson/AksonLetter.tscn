@@ -1,10 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Lexical/Akson/AksonLetter.gd" type="Script" id=2]
 
 [sub_resource type="DynamicFont" id=1]
-size = 67
+size = 50
+outline_color = Color( 0.137255, 1, 0.952941, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
 outline_size = 1
 outline_color = Color( 0.137255, 1, 0.952941, 1 )
 font_data = ExtResource( 1 )
@@ -25,3 +30,31 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="SameButWithBlueContour" type="Label" parent="."]
+margin_left = -20.2524
+margin_top = -44.4345
+margin_right = 19.7476
+margin_bottom = 43.5655
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ไ-"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+modulate = Color( 0.560784, 0.380392, 0.380392, 0.00392157 )
+margin_left = -20.0
+margin_top = -26.0
+margin_right = 18.0
+margin_bottom = 16.0
+mouse_default_cursor_shape = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="mouse_entered" from="Button" to="." method="_on_Button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_Button_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

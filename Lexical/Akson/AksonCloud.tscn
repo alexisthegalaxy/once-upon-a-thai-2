@@ -5,6 +5,6 @@
 [node name="Cloud" type="Node2D"]
 
 [node name="cloud" type="Sprite" parent="."]
-position = Vector2( 0.288055, 0.957825 )
-scale = Vector2( 0.60006, 0.559117 )
+position = Vector2( -0.624668, -0.320011 )
+scale = Vector2( 0.233892, 0.233262 )
 texture = ExtResource( 1 )

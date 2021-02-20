@@ -14,7 +14,7 @@ func init_letters_we_look_for(_letters_we_look_for):
 		update_label_text()
 	else:
 		queue_free()
-		
+
 func update_label_text():
 	var all_letters_are_known = true
 	for letter in letters_we_look_for:
