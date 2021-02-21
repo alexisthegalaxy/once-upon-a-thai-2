@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Lexical/Akson/AksonCloud_1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Lexical/Akson/sara_map.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Lexical/Akson/sakyant_line_2.png" type="Texture" id=10]
 [ext_resource path="res://Lexical/Akson/AksonCloud_2.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Lexical/Akson/AksonCloud_3.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Lexical/Alphabet/LookingForLetters.tscn" type="PackedScene" id=13]
 
 [node name="SaraPage" type="CanvasLayer"]
 script = ExtResource( 3 )
@@ -1247,15 +1248,17 @@ position = Vector2( 28.6568, 14.5664 )
 scale = Vector2( -1, 1 )
 lift_on_letters = [ "อ", "เ-อ" ]
 
+[node name="LettersWeLookFor" parent="." instance=ExtResource( 13 )]
+
 [node name="ExitButton" type="Button" parent="."]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 106.545
-margin_top = -170.276
-margin_right = 150.545
-margin_bottom = -150.276
+margin_left = -159.129
+margin_top = -179.683
+margin_right = -115.129
+margin_bottom = -159.683
 text = "Exit"
 __meta__ = {
 "_edit_use_anchors_": false

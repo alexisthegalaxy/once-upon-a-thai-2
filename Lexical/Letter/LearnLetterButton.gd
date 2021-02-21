@@ -5,8 +5,6 @@ var time = 0
 var mouse_in = false
 var letter_ids = []
 
-#signal leaves_test_to_go_to_MP
-
 func make_label_text():
 	var text = tr("_open_your_akson_and_learn") + "\n\n"
 	for letter_id in letter_ids:
@@ -15,7 +13,6 @@ func make_label_text():
 	return text
 
 func update_known_letters():
-	print('update letters in learn letter button')
 	var new_letter_ids = []
 	for letter_id in letter_ids:
 		if not letter_id in Game.known_letters:
@@ -41,9 +38,7 @@ func _process(delta):
 func open_akson():
 	var akson = load("res://Lexical/Akson/Akson.tscn").instance()
 	Game.akson = akson
-	akson.init_akson()
-#	Game.current_scene.add_child(akson)
-#	Game.add_child(akson)
+	akson.init_akson(letter_ids)
 	get_tree().get_root().add_child(akson)
 
 func _on_Button_pressed():

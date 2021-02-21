@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends Node2D
 
 var letters_we_look_for = []  # list of letters
 var letters_we_look_for_that_we_know = []  # list of letters
@@ -9,7 +9,6 @@ const OPAQUE_BLACK = "[color=#FF000000]"
 
 func init_letters_we_look_for(_letters_we_look_for):
 	letters_we_look_for = _letters_we_look_for
-	
 	if len(Game.letters_we_look_for):
 		update_label_text()
 	else:
@@ -30,11 +29,7 @@ func update_label_text():
 			all_letters_are_known = false
 			text += OPAQUE_BLACK + letter["th"] +"[/color]" +  ", "
 	if all_letters_are_known:
-		$Node2D/Label.bbcode_text = tr("_found_required_letters")
+		$Label.bbcode_text = tr("_found_required_letters")
 	else:
 		text = text.trim_suffix(", ")
-		$Node2D/Label.bbcode_text = text
-	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+		$Label.bbcode_text = text

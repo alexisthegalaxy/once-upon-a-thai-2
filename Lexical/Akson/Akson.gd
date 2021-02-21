@@ -1,7 +1,9 @@
 extends CanvasLayer
 
-func init_akson():
-	pass
+var letters_ids = []
+
+func init_akson(_letters_ids):
+	letters_ids = _letters_ids
 
 #func main_ui_process_click(_event) -> bool:
 #	var event_is_processed = false
@@ -10,15 +12,19 @@ func init_akson():
 #			event_is_processed = true
 #	return event_is_processed
 
+func get_vowels():
+	var vowels = []
+	for letter_id in letters_ids:
+		var letter = Game.letters[str(letter_id)]
+		if letter["class"] == "VOWEL":
+			vowels.append(letter)
+	return vowels
+
 func _on_Vowels_pressed():
-	# Problem: we can't have a non canvas over a canvas.
-	# The test is canvas
-	# SaraPage can't be canvas - otherwise the camera doesn't move around.
-		# We could move around all the items in it instead?
-		# That way, there's no problems with changing the main camera
-	
 	queue_free()
 	var sara_page = load("res://Lexical/Akson/SaraPage.tscn").instance()
+	Game.letters_we_look_for = get_vowels()
+	sara_page.init_sara_page()
 	Game.akson = sara_page
 #	Game.main_ui.add_child(sara_page)
 #	Game.main_ui.add_child(sara_page)

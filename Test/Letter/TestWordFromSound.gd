@@ -93,8 +93,6 @@ func answered_correctly():
 	
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var lines = [tr("_you_know_the_letter_now") % letter.th]
-	if len(Game.known_letters) == 1:
-		lines.append(tr("_click_on_the_right_side_to_see_all_your_letters"))
 	Game.current_dialog.init_dialog(lines, null, null, null, null)
 	Game.current_scene.add_child(Game.current_dialog)
 	

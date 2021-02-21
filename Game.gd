@@ -249,7 +249,6 @@ func learn_letter(letter):
 	Game.main_ui.update_main_ui_letters_display()
 	if looking_for_letter__node:
 		looking_for_letter__node.update_label_text()
-	Game.player.arrow.arrow_letter_update()
 	if not Events.events["has_finished_the_letter_world_the_first_time"] and knows_the_initial_letters():
 		Events.events["has_finished_the_letter_world_the_first_time"] = true
 		Game.main_ui.update_main_ui_go_letter_world_display()

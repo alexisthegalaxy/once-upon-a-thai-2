@@ -62,23 +62,23 @@ func set_sources_after_map_change():
 			source_node.word_ids = Game.sources[source]
 			source_node.update_source(true)
 
-func update_letters_to_look_for_if_necesssary(_to_map_name):
-	if not Events.events["can_see_the_looking_for_letter_banner"]:
-		return
-	if not Events.events["has_been_in_the_letter_world"]:
-		return
-	Game.player.arrow.arrow_letter_update()
-	Game.looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
-	var letters_we_look_for_here = []
-	if Game.this_letter_world_has_letters:
-		for letter_id in Game.this_letter_world_has_letters:
-			var letter = Game.letters[str(letter_id)]
-			if letter in Game.letters_we_look_for:
-				letters_we_look_for_here.append(letter)
-	else:
-		letters_we_look_for_here = Game.letters_we_look_for
-	Game.looking_for_letter__node.init_letters_we_look_for(letters_we_look_for_here)
-	Game.current_scene.add_child(Game.looking_for_letter__node)
+#func update_letters_to_look_for_if_necesssary(_to_map_name):
+#	if not Events.events["can_see_the_looking_for_letter_banner"]:
+#		return
+#	if not Events.events["has_been_in_the_letter_world"]:
+#		return
+#	Game.player.arrow.arrow_letter_update()
+#	Game.looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
+#	var letters_we_look_for_here = []
+#	if Game.this_letter_world_has_letters:
+#		for letter_id in Game.this_letter_world_has_letters:
+#			var letter = Game.letters[str(letter_id)]
+#			if letter in Game.letters_we_look_for:
+#				letters_we_look_for_here.append(letter)
+#	else:
+#		letters_we_look_for_here = Game.letters_we_look_for
+#	Game.looking_for_letter__node.init_letters_we_look_for(letters_we_look_for_here)
+#	Game.current_scene.add_child(Game.looking_for_letter__node)
 
 func start_test_back_from_akson():
 	# Before, we had to recreate the word because we left the world -
@@ -128,14 +128,14 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	generate_following_spells_after_map_change()
 	set_sources_after_map_change()
 	update_main_ui_upon_map_change()
-	if "LexicalWorld" in to_map_name:
-		update_letters_to_look_for_if_necesssary(to_map_name)
-		for following_spell in Game.following_spells:
-			following_spell.over_word.hide()
-
-	if "LexicalWorld" in previous_map_name and not "LexicalWorld" in Game.current_map_name:
-		# Coming back to Material world
-		Game.current_scene.get_node("Lights").get_node("CanvasModulate").color = Game.last_goal_color
-#		start_test_when_back_from_MP()
-		for following_spell in Game.following_spells:
-			following_spell.over_word.show()
+#	if "LexicalWorld" in to_map_name:
+#		update_letters_to_look_for_if_necesssary(to_map_name)
+#		for following_spell in Game.following_spells:
+#			following_spell.over_word.hide()
+#
+#	if "LexicalWorld" in previous_map_name and not "LexicalWorld" in Game.current_map_name:
+#		# Coming back to Material world
+#		Game.current_scene.get_node("Lights").get_node("CanvasModulate").color = Game.last_goal_color
+##		start_test_when_back_from_MP()
+#		for following_spell in Game.following_spells:
+#			following_spell.over_word.show()

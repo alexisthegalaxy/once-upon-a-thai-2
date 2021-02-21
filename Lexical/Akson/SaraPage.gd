@@ -8,6 +8,9 @@ const LIMIT_LEFT = -240
 const LIMIT_UP = -280
 const LIMIT_DOWN = 270
 
+func init_sara_page():
+	$LettersWeLookFor.init_letters_we_look_for(Game.letters_we_look_for)
+
 func _ready():
 	get_viewport().warp_mouse(CENTER)
 	for letter in $Objects/YSort/Letters.get_children():

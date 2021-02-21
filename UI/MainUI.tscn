@@ -31,17 +31,14 @@ position = Vector2( 296, 56 )
 [node name="Sentences" parent="." instance=ExtResource( 4 )]
 position = Vector2( 296, 72 )
 
-[node name="GoLetterWorld" parent="." instance=ExtResource( 4 )]
+[node name="Quests" parent="." instance=ExtResource( 4 )]
 position = Vector2( 296, 88 )
 
-[node name="Quests" parent="." instance=ExtResource( 4 )]
+[node name="UseSpell" parent="." instance=ExtResource( 4 )]
 position = Vector2( 296, 104 )
 
-[node name="UseSpell" parent="." instance=ExtResource( 4 )]
-position = Vector2( 296, 120 )
-
 [node name="MakeSpell" parent="." instance=ExtResource( 4 )]
-position = Vector2( 296, 136 )
+position = Vector2( 296, 120 )
 
 [node name="Save" parent="." instance=ExtResource( 4 )]
 position = Vector2( 296, 24 )

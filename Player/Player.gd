@@ -99,7 +99,6 @@ func handle_click(_event):
 	if Game.main_ui:
 		if Game.main_ui.main_ui_process_click(_event):
 			return
-#	print('player handle input')
 	var click_position = get_global_mouse_position()
 	get_tree().set_input_as_handled()
 	if (
