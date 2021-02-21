@@ -116,7 +116,7 @@ func _on_Area2D4_body_entered(body):
 				tr("_if_you_ready_drink_this"),
 				tr("_name_drink_potion"),
 			]
-			$YSort/NPCs/Yaai.post_dialog_event = ["enters_lexical_world", null]
+#			$YSort/NPCs/Yaai.post_dialog_event = ["enters_lexical_world", null]
 			$YSort/NPCs/Yaai.is_walking_towards = []  # to make sure NPC can interact
 			$YSort/NPCs/Yaai.interact()
 			Game.letters_we_look_for = []

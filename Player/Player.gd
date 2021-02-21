@@ -71,7 +71,7 @@ func stops_walking_towards():
 	goal_position = null
 	update_state('stand')
 
-func walks_towards(delta):
+func walks_towards(_delta):
 	# This is used when we walk towards a place using the mouse
 #	position = position + velocity * delta * speed_when_forced
 	if position.distance_to(goal_position) < 1:
@@ -99,7 +99,7 @@ func handle_click(_event):
 	if Game.main_ui:
 		if Game.main_ui.main_ui_process_click(_event):
 			return
-	print('player handle input')
+#	print('player handle input')
 	var click_position = get_global_mouse_position()
 	get_tree().set_input_as_handled()
 	if (
@@ -133,6 +133,7 @@ func _input(_event) -> void:
 			get_tree().set_input_as_handled()
 			player_interact()
 	if Input.is_action_just_pressed("print_position"):
+		Game.print_entire_tree()
 		print("current position: (" + str(position.x) + ", " + str(position.y) + ")    " + Game.current_map_name)
 #		set_hp(Game.hp - 0.5)
 		Game.letters_we_look_for.append(Game.letters["1"])

@@ -37,19 +37,19 @@ func init(_word_id, _over_word):
 	if number_of_choices >= 1:
 		$AudioAnswer1.init_sound_player(choices[0].th)
 		$AudioAnswer1.show()
-		$AudioAnswer1.connect("pressed", self, "on_audio_pressed")
+		var _e = $AudioAnswer1.connect("pressed", self, "on_audio_pressed")
 	if number_of_choices >= 2:
 		$AudioAnswer2.init_sound_player(choices[1].th)
 		$AudioAnswer2.show()
-		$AudioAnswer2.connect("pressed", self, "on_audio_pressed")
+		var _e = $AudioAnswer2.connect("pressed", self, "on_audio_pressed")
 	if number_of_choices >= 3:
 		$AudioAnswer3.init_sound_player(choices[2].th)
 		$AudioAnswer3.show()
-		$AudioAnswer3.connect("pressed", self, "on_audio_pressed")
+		var _e = $AudioAnswer3.connect("pressed", self, "on_audio_pressed")
 	if number_of_choices >= 4:
 		$AudioAnswer4.init_sound_player(choices[3].th)
 		$AudioAnswer4.show()
-		$AudioAnswer4.connect("pressed", self, "on_audio_pressed")
+		var _e = $AudioAnswer4.connect("pressed", self, "on_audio_pressed")
 
 func init_learn_letter_button():
 	var unknown_letter_ids = []
@@ -58,7 +58,7 @@ func init_learn_letter_button():
 			if not letter_id in Game.known_letters:
 				unknown_letter_ids.append(letter_id)
 	if unknown_letter_ids:
-		$LearnLetterButton.init(unknown_letter_ids, self)
+		$LearnLetterButton.init_learn_letter_button(unknown_letter_ids, self)
 	else:
 		$LearnLetterButton.queue_free()
 

@@ -97,8 +97,8 @@ func make_animations():
 func update_animation():
 	$AnimationPlayer.play(state + "_" + direction)
 
-func dialog_option(dialog, answer_index):
-	Game.current_scene.handle_dialog_option(dialog, answer_index, self)
+func dialog_option(dialog_, answer_index):
+	Game.current_scene.handle_dialog_option(dialog_, answer_index, self)
 
 func _ready():
 	$Sprite.texture = load(sprite_path)
@@ -332,7 +332,7 @@ func _on_Left_body_exited(body):
 		return
 	raycast_to_player()
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if want_to_check_if_can_move_towards_position:
 		var space_state = get_world_2d().direct_space_state
 		var result = space_state.intersect_ray(global_position, want_to_check_if_can_move_towards_position, [self], collision_mask)

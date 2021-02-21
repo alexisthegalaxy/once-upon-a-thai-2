@@ -28,7 +28,7 @@ func remove_following_spell():
 			new_following_spells.append(following_spell)
 	Game.following_spells = new_following_spells
 
-func dialog_option(dialog, answer_index):
+func dialog_option(_dialog, answer_index):
 	if answer_index == 2:
 		return
 	remove_following_spell()

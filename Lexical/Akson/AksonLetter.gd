@@ -38,9 +38,9 @@ func get_introduction():
 
 func dialog_ended():
 	# first test
-	Game.start_test("res://Test/Letter/TestPronFromThaiLet.tscn", letter_id, self)
+#	Game.start_test("res://Test/Letter/TestPronFromThaiLet.tscn", letter_id, self)
 	# final test - just for debugging - keep commented out
-	# Game.start_test("res://Test/Letter/TestWordFromSound.tscn", id, self)
+	Game.start_test("res://Test/Letter/TestWordFromSound.tscn", letter_id, self)
 
 func _process(delta):
 	if is_known:
@@ -51,7 +51,7 @@ func _process(delta):
 		$SameButWithBlueContour.modulate = Color(1, 1, 1, alpha)
 
 func _on_Button_mouse_entered():
-	if Game.is_frozen or Game.current_dialog or Game.active_test:
+	if Game.current_dialog or Game.active_letter_test:
 		return
 	is_hovered = true
 	$SameButWithBlueContour.show()
@@ -59,7 +59,7 @@ func _on_Button_mouse_entered():
 	time = 0
 
 func _on_Button_mouse_exited():
-	if Game.is_frozen or Game.current_dialog or Game.active_test:
+	if Game.current_dialog or Game.active_letter_test:
 		return
 	$SameButWithBlueContour.hide()
 	is_hovered = false
@@ -77,25 +77,26 @@ func show_letter_page():
 	Game.letter_page = letter_page
 	Game.current_scene.add_child(letter_page)
 	letter_page.init_letter_page(letter_id)
-#	Game.alphabet.queue_free()
-#	Game.alphabet = null
 
 func _on_Button_pressed():
-	if Game.is_frozen or Game.current_dialog or Game.active_test:
+	if Game.current_dialog or Game.active_letter_test:
 		return
 	if is_known:
 		show_letter_page()
 	else:
-		starts_disappearing()
-#		is_hovered = false
-#		$SameButWithBlueContour.hide()
-#		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-#		Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true, null)
-#		Game.current_scene.add_child(Game.current_dialog)
-#		if pre_dialog_event:
-#			Events.execute(pre_dialog_event[0], pre_dialog_event[1])
+#		starts_disappearing()
+		start_letter_test()
 
-func _input(event):
+func start_letter_test():
+	is_hovered = false
+	$SameButWithBlueContour.hide()
+	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+	Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true, null)
+	Game.current_scene.add_child(Game.current_dialog)
+	if pre_dialog_event:
+		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
+
+func _input(_event):
 	if is_hovered and Input.is_action_just_pressed("interact"):
 		get_tree().set_input_as_handled()
 		_on_Button_pressed()

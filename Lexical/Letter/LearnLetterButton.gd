@@ -5,15 +5,29 @@ var time = 0
 var mouse_in = false
 var letter_ids = []
 
-signal leaves_test_to_go_to_MP
+#signal leaves_test_to_go_to_MP
 
-func init(_letter_ids, test):
-	letter_ids = _letter_ids
-	var text = tr("_go_to_the_letter_world_to_learn") + "\n\n"
+func make_label_text():
+	var text = tr("_open_your_akson_and_learn") + "\n\n"
 	for letter_id in letter_ids:
 		text += Game.letters[str(letter_id)]["th"] + ", "
 	text = text.trim_suffix(", ")
-	$Label.text = text
+	return text
+
+func update_known_letters():
+	print('update letters in learn letter button')
+	var new_letter_ids = []
+	for letter_id in letter_ids:
+		if not letter_id in Game.known_letters:
+			new_letter_ids.append(letter_id)
+	if not new_letter_ids:
+		queue_free()
+	letter_ids = new_letter_ids
+	$Label.text = make_label_text()
+
+func init_learn_letter_button(_letter_ids, test):
+	letter_ids = _letter_ids
+	$Label.text = make_label_text()
 	var _e = self.connect("leaves_test_to_go_to_MP", test, "leaves_test_to_go_to_MP")
 
 func _process(delta):
@@ -24,14 +38,25 @@ func _process(delta):
 		teal_tint = 0.5 + 0.5 * cos(time * 15)
 		$Sprite.modulate = Color(teal_tint, 1, 1, 1)
 
+func open_akson():
+	var akson = load("res://Lexical/Akson/Akson.tscn").instance()
+	Game.akson = akson
+	akson.init_akson()
+#	Game.current_scene.add_child(akson)
+#	Game.add_child(akson)
+	get_tree().get_root().add_child(akson)
+
 func _on_Button_pressed():
 	Game.this_letter_world_has_letters = []
 	for letter_id in letter_ids:
 		Game.letters_we_look_for.append(Game.letters[str(letter_id)])
-	Events.enters_lexical_world(null)
-	emit_signal("leaves_test_to_go_to_MP")
-	Game.active_test.queue_free()
-	Game.active_test = null
+#	Events.enters_lexical_world(null)
+	open_akson()
+	# Issue here: we want Akson to appear over the test, but it appears below
+#	Game.active_test.hide()
+#	emit_signal("leaves_test_to_go_to_MP")  # Saves data in the Game.should_start_test_when_back_from_MP
+#	Game.active_test.queue_free()  # Do we need that?
+#	Game.active_letter_test = null
 
 func _on_Button_mouse_exited():
 	mouse_in = false

@@ -26,8 +26,9 @@ var known_sentences = [196, 197, 198, 199, 313, 233]  # we know the translation.
 var seen_sentences = [311, 312, 315]  # we don't know the translation
 #var known_letters = [0, 11, 13, 21]  # list of IDs
 #var known_letters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]  # list of IDs
-var known_letters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16]  # list of IDs
-#var known_letters = [0, 11, 13, 21, 28]  # five letters
+#var known_letters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16]  # list of IDs
+#var known_letters = []  # list of IDs
+var known_letters = [0, 11, 13, 21, 28]  # five letters
 var following_spells = []
 #var following_spells = [
 #	{
@@ -68,6 +69,7 @@ var current_focus = []
 var space_bar_to_interact = null
 var current_scene = null
 var active_test = null
+var active_letter_test = null
 var player = null
 var player_name = "Alexis"
 var player_gender = "m"  # can also be "f" or "n"
@@ -116,6 +118,7 @@ func blackens():
 func is_overworld_frozen():
 	return (
 		active_test or
+		active_letter_test or
 		current_dialog or
 		is_frozen or
 		select_follower_to_implant_screen or
@@ -230,8 +233,19 @@ func learn_word(word_id):
 		Game.known_words.append(word_id)
 		Game.main_ui.update_main_ui_words_display()
 
+func maybe_update_go_learn_letter_bubble():
+	print('maybe? active_test:')
+	print(active_test)
+	if active_test:
+		print('maybe active test?')
+		var learn_letter_button = active_test.get_node("LearnLetterButton")
+		print('maybe active test? ---->', learn_letter_button)
+		if learn_letter_button:
+			learn_letter_button.update_known_letters()
+
 func learn_letter(letter):
 	Game.known_letters.append(letter["id"])
+	maybe_update_go_learn_letter_bubble()
 	Game.main_ui.update_main_ui_letters_display()
 	if looking_for_letter__node:
 		looking_for_letter__node.update_label_text()
@@ -413,13 +427,15 @@ func _on_changelight_entered(color) -> void:
 	last_goal_color = color
 
 func start_test(test_scene, entity_id, over_entity) -> void:
-	"""
-	entity either refers to a letter or to a word
-	(maybe to a phrase too, later on?)
-	"""
 	var test = load(test_scene).instance()
-	self.add_child(test)
-	active_test = test
+#	self.add_child(test)
+	get_tree().get_root().add_child(test)
+	if "Test/Letter" in test_scene:
+		active_letter_test = test
+		print('active letter test is ', test_scene)
+	else:
+		active_test = test
+		print('active test is ', test_scene)
 	test.init(entity_id, over_entity)
 	if looking_for_letter__node:
 		looking_for_letter__node.get_node("Node2D").hide()
@@ -487,3 +503,18 @@ func changename(location_name):
 
 func show_location_name():
 	self.add_child(load("res://UI/ShowLocationName.tscn").instance())
+
+func print_entire_tree():
+#	print_tree()
+	print(self.get_node("LearnLetterButton"))
+	for child in self.get_children():
+		print(child.name)
+#		for cc in child.get_children():
+#			print('--- ', cc.name)
+	print('')
+	print('')
+	print('get_tree().get_root():')
+	for child in get_tree().get_root().get_children():
+		print(child.name)
+#		for cc in child.get_children():
+#			print('--- ', cc.name)

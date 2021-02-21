@@ -97,9 +97,9 @@ func open_quest_display():
 	$QuestsDisplay.open_quest_display()
 
 func on_button_pressed(type):
-	if type == "_go_to_letter_world":
-		go_to_letter_world()
-	elif type == "_see_letters":
+#	if type == "_go_to_letter_world":
+#		go_to_letter_world()
+	if type == "_see_letters":
 #		display_alphabet()
 		display_akson()
 	elif type == "_see_words":
@@ -157,15 +157,15 @@ func display_notebook():
 	Game.current_scene.add_child(notebook)
 	notebook.init_notebook(0)
 
-func go_to_letter_world():
-	if Game.is_in_letter_world():
-		Game.letters_we_look_for = []
-		ChangeMap.call_deferred(
-			"_deferred_goto_scene",
-			Game.player_last_overworld_map_visited,
-			Game.player_position_on_overworld.x,
-			Game.player_position_on_overworld.y,
-			0
-		)
-	else:
-		ChangeMap.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75, 0)
+#func go_to_letter_world():
+#	if Game.is_in_letter_world():
+#		Game.letters_we_look_for = []
+#		ChangeMap.call_deferred(
+#			"_deferred_goto_scene",
+#			Game.player_last_overworld_map_visited,
+#			Game.player_position_on_overworld.x,
+#			Game.player_position_on_overworld.y,
+#			0
+#		)
+#	else:
+#		ChangeMap.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75, 0)

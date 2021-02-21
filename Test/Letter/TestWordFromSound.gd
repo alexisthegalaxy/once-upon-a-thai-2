@@ -85,7 +85,7 @@ func _process(delta):
 
 func answered_correctly():
 	# This is the fourth and currently last test
-	Game.active_test = null
+	Game.active_letter_test = null
 	Game.is_frozen = false
 #	Game.player.can_interact = true
 	Game.learn_letter(letter)

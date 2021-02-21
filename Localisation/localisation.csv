@@ -51,9 +51,9 @@ _a_wild_spell_attacks,A wild Spell attacks!,Un mot sauvage attaque !
 _you_dont_know_letters_go_to_letter_world,You don't know all the letters in that word. Go to the Letter World to learn them.,Tu ne connais pas toutes les lettres de ce mot. Va dans le monde des lettres pour les apprendre.
 _you_dont_know_any_sentence_containing_that_word,You don't know any sentence containing that word,Tu ne connais aucune phrase contenant ce mot.
 _ok,OK,OK
-_you_know_the_letter_now,You know the letter %s now!,Tu connais la letter %s maintenant !
+_you_know_the_letter_now,You know the letter %s now!,Tu connais la lettre %s maintenant !
 _hint,Hint,Indice
-_go_to_the_letter_world_to_learn,Go to the letter world to learn:,Va dans le monde des lettres pour apprendre :
+_open_your_akson_and_learn,Open your Akson and learn:,Ouvre ton Akson et apprend :
 _this_is_a_shrine,This is a shrine to Buddha. It is very clean!,C'est un autel à Buddha. Il est très propre !
 _this_road_leads_to_chaiyaphum,This road leads to Chaiyaphum City. [sound:ชัยภูมิ],Cette route mène à la ville de Chaiyaphum. [sound:ชัยภูมิ]
 _select_spell_to_implant,Select the Spell to implant inside the source,Choisis le mot que tu veux implanter dans la source.
@@ -127,7 +127,7 @@ _names_takes_door_to,[Name] takes the door to the ,[Name] prend la porte menant 
 _vowels,Vowels,Voyelles
 _name_exclamation_mark,[Name]!,[Name] !
 _name_do_you_hear_me,"[Name], do you hear me?","[Name], tu m'entends ?"
-_you_have_found_all_the_needed_letters_for_now,You have found all the letters you needed for now - you can come back amongst us now.,"Tu as trouvé toutes les letters qu'il te fallais, tu peux rentrer maintenant."
+_you_have_found_all_the_needed_letters_for_now,You have found all the letters you needed for now - you can come back amongst us now.,"Tu as trouvé toutes les lettres qu'il te fallais, tu peux rentrer maintenant."
 _to_leave_this_world_press_f_key,"To leave the Lexical World, press the button on the right side of your screen.","Pour quitter le Monde Lexical, appuie sur le bouton qui s'affiche sur la droite de ton écran."
 _tones,Tones,Tons
 _numbers,Numbers,Chiffres

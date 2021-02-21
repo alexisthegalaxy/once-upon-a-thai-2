@@ -135,19 +135,19 @@ func starts_job_menu_screen(_no_arguments_needed):
 func set_yaai_has_given_last_warning_before_forest_as_true(_parameters):
 	events.yaai_has_given_last_warning_before_forest = true
 
-func immediately_enters_lexical_world():
-	ChangeMap.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75, 0)
+#func immediately_enters_lexical_world():
+#	ChangeMap.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75, 0)
 
-func enters_lexical_world(_parameters):
-	Game.blackens()
-	var timer = Timer.new()
-	Game.is_frozen = true
-	timer.connect("timeout", self, "immediately_enters_lexical_world")
-	timer.set_wait_time(1)
-	timer.set_one_shot(true)
-	timer.autostart = true
-	add_child(timer)
-	timer.start()
+#func enters_lexical_world(_parameters):
+#	Game.blackens()
+#	var timer = Timer.new()
+#	Game.is_frozen = true
+#	timer.connect("timeout", self, "immediately_enters_lexical_world")
+#	timer.set_wait_time(1)
+#	timer.set_one_shot(true)
+#	timer.autostart = true
+#	add_child(timer)
+#	timer.start()
 
 #	var target_positions = [
 #		Vector2(266.69, 528.84),

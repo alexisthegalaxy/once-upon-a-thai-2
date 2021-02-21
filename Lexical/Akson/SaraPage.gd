@@ -1,27 +1,25 @@
-extends Node2D
+extends CanvasLayer
 
 const CENTER = Vector2(320, 180) / 2
 var direction = Vector2.ZERO
 var speed = 100
-const LIMIT_RIGHT = 400
-const LIMIT_LEFT = -100
-const LIMIT_UP = -180
-const LIMIT_DOWN = 370
+const LIMIT_RIGHT = 260
+const LIMIT_LEFT = -240
+const LIMIT_UP = -280
+const LIMIT_DOWN = 270
 
 func _ready():
-	$Camera.current = true
 	get_viewport().warp_mouse(CENTER)
-	for letter in $YSort/Letters.get_children():
+	for letter in $Objects/YSort/Letters.get_children():
 		letter.connect("akson_letter_learnt", self, "akson_letter_learnt")
 
 func akson_letter_learnt(letter):
-	print("letter is learnt ", letter)
-	for cloud in $YSort/Clouds.get_children():
+	for cloud in $Objects/YSort/Clouds.get_children():
 		if letter in cloud.lift_on_letters:
 			cloud.lift()
 
 func _input(event):
-	if Game.is_frozen or Game.current_dialog:
+	if Game.active_letter_test or Game.current_dialog:
 		return
 	if event is InputEventMouseMotion:
 		var distance_to_center = event.position.distance_squared_to(CENTER)
@@ -33,39 +31,42 @@ func _input(event):
 			direction = Vector2.ZERO
 
 func _process(delta):
+	# Moving using the mouse
+	if Game.active_letter_test or Game.current_dialog:
+		return
 	if direction:
-		$Camera.position += direction * delta * speed
+		$Objects.position -= direction * delta * speed
 		limit_movement()
 
 func limit_movement():
-	if $Camera.position.x > LIMIT_RIGHT:
-		$Camera.position.x = LIMIT_RIGHT
-	if $Camera.position.x < LIMIT_LEFT:
-		$Camera.position.x = LIMIT_LEFT
-	if $Camera.position.y > LIMIT_DOWN:
-		$Camera.position.y = LIMIT_DOWN
-	if $Camera.position.y < LIMIT_UP:
-		$Camera.position.y = LIMIT_UP
+	if $Objects.position.x > LIMIT_RIGHT:
+		$Objects.position.x = LIMIT_RIGHT
+	if $Objects.position.x < LIMIT_LEFT:
+		$Objects.position.x = LIMIT_LEFT
+	if $Objects.position.y > LIMIT_DOWN:
+		$Objects.position.y = LIMIT_DOWN
+	if $Objects.position.y < LIMIT_UP:
+		$Objects.position.y = LIMIT_UP
 
 func exit():
-	Game.player.get_node("Camera2D").current = true
 	queue_free()
 
 func _physics_process(delta):
-	if Game.is_frozen or Game.current_dialog:
+	# Moving using the keyboard
+	if Game.active_letter_test or Game.current_dialog:
 		return
 	var input_vector_x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	var input_vector_y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	var input_vector = Vector2(input_vector_x, input_vector_y).normalized()
 	if input_vector != Vector2.ZERO:
-		$Camera.position += input_vector * delta * 200
+		$Objects.position -= input_vector * delta * 200
 		limit_movement()
 		update_letters_focus()
 		get_viewport().warp_mouse(CENTER)
 
 func update_letters_focus():
-	for letter in $YSort/Letters.get_children():
-		if letter.position.distance_squared_to($Camera.position) < 200:
+	for letter in $Objects/YSort/Letters.get_children():
+		if letter.position.distance_squared_to(CENTER) < 200:
 			letter._on_Button_mouse_entered()
 		else:
 			letter._on_Button_mouse_exited()

@@ -28,7 +28,7 @@ func init_learn_letter_button():
 			if not letter_id in Game.known_letters:
 				unknown_letter_ids.append(letter_id)
 	if unknown_letter_ids:
-		$LearnLetterButton.init(unknown_letter_ids, self)
+		$LearnLetterButton.init_learn_letter_button(unknown_letter_ids, self)
 	else:
 		$LearnLetterButton.queue_free()
 

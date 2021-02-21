@@ -80,7 +80,12 @@ func update_letters_to_look_for_if_necesssary(_to_map_name):
 	Game.looking_for_letter__node.init_letters_we_look_for(letters_we_look_for_here)
 	Game.current_scene.add_child(Game.looking_for_letter__node)
 
-func start_test_when_back_from_MP():
+func start_test_back_from_akson():
+	# Before, we had to recreate the word because we left the world -
+	# Now, we don't need to, because the overworld is still instanced
+	# However, we need to now what word is the overword of the test
+	# Is it in the should_start_test_when_back_from_MP? Maybe.
+	return # Maybe there's nothing to do, the test still exists?
 	if Game.should_start_test_when_back_from_MP[0]:
 		var word_id = Game.should_start_test_when_back_from_MP[1]
 		var new_word = load("res://Lexical/Word/Spell.tscn").instance()
@@ -131,6 +136,6 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	if "LexicalWorld" in previous_map_name and not "LexicalWorld" in Game.current_map_name:
 		# Coming back to Material world
 		Game.current_scene.get_node("Lights").get_node("CanvasModulate").color = Game.last_goal_color
-		start_test_when_back_from_MP()
+#		start_test_when_back_from_MP()
 		for following_spell in Game.following_spells:
 			following_spell.over_word.show()

@@ -5948,6 +5948,10 @@ max_number_of_words = 5
 position = Vector2( 370.358, 41.8582 )
 id = 23
 
+[node name="pom7" parent="YSort/Words" instance=ExtResource( 16 )]
+position = Vector2( 1171.72, 260.701 )
+id = 23
+
 [node name="pom2" parent="YSort/Words" instance=ExtResource( 16 )]
 position = Vector2( 498.109, 752.58 )
 id = 123
