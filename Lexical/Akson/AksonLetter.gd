@@ -72,16 +72,31 @@ func starts_disappearing():
 	$SameButWithBlueContour.modulate = Color(1, 1, 1, 1)
 	emit_signal("akson_letter_learnt", id)
 
+func show_letter_page():
+	var letter_page = load("res://Lexical/Letter/LetterPage.tscn").instance()
+	Game.letter_page = letter_page
+	Game.current_scene.add_child(letter_page)
+	letter_page.init_letter_page(letter_id)
+#	Game.alphabet.queue_free()
+#	Game.alphabet = null
+
 func _on_Button_pressed():
 	if Game.is_frozen or Game.current_dialog or Game.active_test:
 		return
-	starts_disappearing()
-#	is_hovered = false
-#	$SameButWithBlueContour.hide()
-#	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-#	Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true, null)
-##	Game.player.stop_walking()
-#	Game.current_scene.add_child(Game.current_dialog)
-##	Game.lose_focus(null)
-#	if pre_dialog_event:
-#		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
+	if is_known:
+		show_letter_page()
+	else:
+		starts_disappearing()
+#		is_hovered = false
+#		$SameButWithBlueContour.hide()
+#		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+#		Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true, null)
+#		Game.current_scene.add_child(Game.current_dialog)
+#		if pre_dialog_event:
+#			Events.execute(pre_dialog_event[0], pre_dialog_event[1])
+
+func _input(event):
+	if is_hovered and Input.is_action_just_pressed("interact"):
+		get_tree().set_input_as_handled()
+		_on_Button_pressed()
+

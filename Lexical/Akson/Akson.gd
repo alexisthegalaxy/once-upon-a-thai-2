@@ -14,7 +14,6 @@ func _on_Vowels_pressed():
 	queue_free()
 	var sara_page = load("res://Lexical/Akson/SaraPage.tscn").instance()
 	Game.akson = sara_page
-	sara_page.init_sara_page()
 	Game.current_scene.add_child(sara_page)
 
 func _on_Consonants_pressed():

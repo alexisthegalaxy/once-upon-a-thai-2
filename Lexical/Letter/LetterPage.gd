@@ -22,9 +22,9 @@ func init_letter_page(_letter_id):
 		$ClassLabel.hide()
 
 func _on_OkButton_pressed():
-	var alphabet = load("res://Lexical/Alphabet/Alphabet.tscn").instance()
-	Game.alphabet = alphabet
-	alphabet.init_alphabet()
-	Game.current_scene.add_child(alphabet)
+#	var alphabet = load("res://Lexical/Alphabet/Alphabet.tscn").instance()
+#	Game.alphabet = alphabet
+#	alphabet.init_alphabet()
+#	Game.current_scene.add_child(alphabet)
 	Game.letter_page = null
 	self.queue_free()
