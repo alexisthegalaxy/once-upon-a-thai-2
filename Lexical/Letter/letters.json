@@ -1261,6 +1261,149 @@
     "class": "VOWEL",
     "frequency_index": "",
     "audio": "เออะ"
+  },
+  "62": {
+    "th": "ฆ",
+    "pron": "",
+    "en": "k'h",
+    "fr": "k'h",
+    "alphabet_index": "None",
+    "final": "k",
+    "class": "LOW",
+    "frequency_index": "",
+    "audio": "ฆอ"
+  },
+  "63": {
+    "th": "ถ",
+    "pron": "",
+    "en": "t'h",
+    "fr": "t'h",
+    "alphabet_index": "None",
+    "final": "t",
+    "class": "HIGH",
+    "frequency_index": "",
+    "audio": "ถอ"
+  },
+  "64": {
+    "th": "ฒ",
+    "pron": "",
+    "en": "t'h",
+    "fr": "t'h",
+    "alphabet_index": "None",
+    "final": "t",
+    "class": "LOW",
+    "frequency_index": "",
+    "audio": "ฒอ"
+  },
+  "65": {
+    "th": "ฒ",
+    "pron": "",
+    "en": "t'h",
+    "fr": "t'h",
+    "alphabet_index": "None",
+    "final": "t",
+    "class": "LOW",
+    "frequency_index": "",
+    "audio": "ฒอ"
+  },
+  "66": {
+    "th": "ฑ",
+    "pron": "",
+    "en": "t'h",
+    "fr": "t'h",
+    "alphabet_index": "None",
+    "final": "t",
+    "class": "LOW",
+    "frequency_index": "",
+    "audio": "ฑอ"
+  },
+  "67": {
+    "th": "ฌ",
+    "pron": "",
+    "en": "ch",
+    "fr": "ch",
+    "alphabet_index": "None",
+    "final": "t",
+    "class": "LOW",
+    "frequency_index": "",
+    "audio": "ฌอ"
+  },
+  "68": {
+    "th": "ศ",
+    "pron": "",
+    "en": "s",
+    "fr": "s",
+    "alphabet_index": "None",
+    "final": "t",
+    "class": "HIGH",
+    "frequency_index": "",
+    "audio": "ศอ"
+  },
+  "69": {
+    "th": "ษ",
+    "pron": "",
+    "en": "s",
+    "fr": "s",
+    "alphabet_index": "None",
+    "final": "t",
+    "class": "HIGH",
+    "frequency_index": "",
+    "audio": "ษอ"
+  },
+  "70": {
+    "th": "ฮ",
+    "pron": "",
+    "en": "h",
+    "fr": "h",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "LOW",
+    "frequency_index": "",
+    "audio": "ฮอ"
+  },
+  "71": {
+    "th": "ฎ",
+    "pron": "",
+    "en": "d",
+    "fr": "d",
+    "alphabet_index": "None",
+    "final": "t",
+    "class": "MID",
+    "frequency_index": "",
+    "audio": "ฎอ"
+  },
+  "72": {
+    "th": "ฏ",
+    "pron": "",
+    "en": "dt",
+    "fr": "dt",
+    "alphabet_index": "None",
+    "final": "t",
+    "class": "MID",
+    "frequency_index": "",
+    "audio": "ฏอ"
+  },
+  "73": {
+    "th": "ฝ",
+    "pron": "",
+    "en": "f",
+    "fr": "f",
+    "alphabet_index": "None",
+    "final": "p",
+    "class": "HIGH",
+    "frequency_index": "",
+    "audio": "ฝอ"
+  },
+  "74": {
+    "th": "ฬ",
+    "pron": "",
+    "en": "l",
+    "fr": "l",
+    "alphabet_index": "None",
+    "final": "n",
+    "class": "LOW",
+    "frequency_index": "",
+    "audio": "ฬอ"
   }
 }
 

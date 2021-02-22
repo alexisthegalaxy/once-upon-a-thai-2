@@ -12,34 +12,29 @@ func init_akson(_letters_ids):
 #			event_is_processed = true
 #	return event_is_processed
 
-func get_vowels():
+func get_letters_by_letter_class(letter_classes):
 	var vowels = []
 	for letter_id in letters_ids:
 		var letter = Game.letters[str(letter_id)]
-		if letter["class"] == "VOWEL":
+		if letter["class"] in letter_classes:
 			vowels.append(letter)
 	return vowels
 
 func _on_Vowels_pressed():
 	queue_free()
 	var sara_page = load("res://Lexical/Akson/SaraPage.tscn").instance()
-	Game.letters_we_look_for = get_vowels()
+	Game.letters_we_look_for = get_letters_by_letter_class(["VOWELS"])
 	sara_page.init_sara_page()
 	Game.akson = sara_page
-#	Game.main_ui.add_child(sara_page)
-#	Game.main_ui.add_child(sara_page)
-#	Game.akson.add_child(sara_page)
 	get_tree().get_root().add_child(sara_page)
-#	Game.move_child(sara_page, 0)
-#	Game.print_entire_tree()
-#	Game.current_scene.add_child(sara_page)
 
 func _on_Consonants_pressed():
 	queue_free()
 	var payanchana_page = load("res://Lexical/Akson/PayanchanaPage.tscn").instance()
-	Game.akson = payanchana_page
+	Game.letters_we_look_for = get_letters_by_letter_class(["LOW", "MID", "HIGH"])
 	payanchana_page.init_payanchana_page()
-	Game.current_scene.add_child(payanchana_page)
+	Game.akson = payanchana_page
+	get_tree().get_root().add_child(payanchana_page)
 
 func exit():
 	queue_free()

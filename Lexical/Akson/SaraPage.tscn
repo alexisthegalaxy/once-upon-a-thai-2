@@ -41,288 +41,186 @@ position = Vector2( 201.473, 50.6814 )
 rotation = 0.911818
 scale = Vector2( 0.256219, 0.217288 )
 texture = ExtResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_1_3" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 11.736, 100.968 )
 rotation = 1.57126
 scale = Vector2( 0.0834709, 0.119984 )
 texture = ExtResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_1_2" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 17.5989, 60.1455 )
 rotation = 2.43263
 scale = Vector2( 0.180133, 0.173415 )
 texture = ExtResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_1_4" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 339.546, 214.701 )
 rotation = 2.45477
 scale = Vector2( 0.135692, 0.138184 )
 texture = ExtResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_1_5" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 151.285, 304.67 )
 rotation = 3.14122
 scale = Vector2( 0.0771361, 0.10473 )
 texture = ExtResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_1_8" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 151.258, 248.567 )
 rotation = 3.14122
 scale = Vector2( 0.0771361, 0.10473 )
 texture = ExtResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_1_6" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 207.603, 252.149 )
 rotation = -0.00628781
 scale = Vector2( 0.062995, 0.0970925 )
 texture = ExtResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_1_7" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 209.759, 301.858 )
 rotation = -0.00628781
 scale = Vector2( 0.062995, 0.0970925 )
 texture = ExtResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_2_1" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 214.804, 81.6836 )
 rotation = 1.4202
 scale = Vector2( 0.256219, 0.217288 )
 texture = ExtResource( 10 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_2_4" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 341.725, 60.6822 )
 rotation = 1.4202
 scale = Vector2( 0.256219, 0.217288 )
 texture = ExtResource( 10 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_2_2" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 143.877, 25.6784 )
 rotation = 3.12099
 scale = Vector2( 0.256219, 0.201347 )
 texture = ExtResource( 10 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_2_5" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 297.682, -2.77981 )
 rotation = 4.37789
 scale = Vector2( 0.141538, 0.142846 )
 texture = ExtResource( 10 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_2_3" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 54.9043, 122.413 )
 rotation = 3.12099
 scale = Vector2( 0.0966829, 0.0859511 )
 texture = ExtResource( 10 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_3_1" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 96.5316, 93.6493 )
 rotation = 1.5497
 scale = Vector2( 0.197562, 0.164242 )
 texture = ExtResource( 7 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_3_4" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 276.846, 143.028 )
 rotation = 1.33576
 scale = Vector2( 0.220705, 0.191967 )
 texture = ExtResource( 7 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_3_2" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 109.642, -15.795 )
 rotation = 1.26157
 scale = Vector2( 0.130878, 0.130761 )
 texture = ExtResource( 7 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_3_5" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 258.147, -113.853 )
 rotation = 3.12026
 scale = Vector2( 0.133287, 0.134012 )
 texture = ExtResource( 7 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_3_3" type="Sprite" parent="Objects/Lines"]
 position = Vector2( -71.3277, 65.8576 )
 rotation = 2.27116
 scale = Vector2( 0.18028, 0.161046 )
 texture = ExtResource( 7 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_4_1" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 180.074, 125.667 )
 rotation = 2.2627
 scale = Vector2( 0.169996, 0.136574 )
 texture = ExtResource( 6 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_4_8" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 172.148, 227.33 )
 rotation = 1.5708
 scale = Vector2( 0.316552, 0.41418 )
 texture = ExtResource( 6 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_4_7" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 299.535, -48.2147 )
 rotation = 2.14917
 scale = Vector2( 0.169996, 0.136574 )
 texture = ExtResource( 6 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_4_5" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 266.124, 170.373 )
 rotation = 1.8689
 scale = Vector2( 0.196427, 0.152627 )
 texture = ExtResource( 6 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_4_2" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 26.9779, 9.38428 )
 rotation = 1.23969
 scale = Vector2( 0.172718, 0.14738 )
 texture = ExtResource( 9 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_4_4" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 245.231, 139.138 )
 rotation = 1.00211
 scale = Vector2( 0.105452, 0.0962678 )
 texture = ExtResource( 9 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_4_6" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 364.224, 129.958 )
 rotation = 1.56496
 scale = Vector2( 0.105452, 0.0962678 )
 texture = ExtResource( 9 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_4_3" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 11.304, 97.1958 )
 rotation = 1.5763
 scale = Vector2( 0.0745391, 0.117425 )
 texture = ExtResource( 6 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_5_1" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 147.642, 167.957 )
 rotation = -0.0165299
 scale = Vector2( 0.310555, 0.258742 )
 texture = ExtResource( 9 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="sakyant_line_5_6" type="Sprite" parent="Objects/Lines"]
-position = Vector2( 147.642, 167.957 )
-rotation = -0.0165299
-scale = Vector2( 0.310555, 0.258742 )
-texture = ExtResource( 9 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_5_4" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 346.078, 185.407 )
 rotation = 1.59592
 scale = Vector2( 0.140681, 0.110503 )
 texture = ExtResource( 9 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_5_2" type="Sprite" parent="Objects/Lines"]
 position = Vector2( -24.3094, -29.0877 )
 rotation = -0.157004
 scale = Vector2( 0.172718, 0.14738 )
 texture = ExtResource( 9 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_5_5" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 257.655, -28.8232 )
 rotation = 0.00903106
 scale = Vector2( 0.13393, 0.126646 )
 texture = ExtResource( 9 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="sakyant_line_5_3" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 27.8438, 167.297 )
 rotation = 0.949644
 scale = Vector2( 0.0995488, 0.10309 )
 texture = ExtResource( 9 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="YSort" type="YSort" parent="Objects"]
 
