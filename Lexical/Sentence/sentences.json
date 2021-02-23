@@ -2586,5 +2586,41 @@
     "en": "{Her/His} muscles are harder than {iron/steel}.",
     "fr": "Ses muscles sont plus durs que {le fer/l'acier}.",
     "word_ids": [591, 40, 26, 592, 182, 434]
+  },
+  "445": {
+    "th": "ฉัน_จูบ_เขา_เมื่อ-คืน-นี้",
+    "en": "I kissed {him/her} last night.",
+    "fr": "Je l'ai embrassé{/e} hier {soir/dans la nuit/nuit}.",
+    "word_ids": [24, 543, 26, 69]
+  },
+  "446": {
+    "th": "ฉัน_ฝัน_ว่า_ฉัน_บอก_เธอ_ว่า_ฉัน_รัก_เธอ",
+    "en": "I dreamt that I told her I love her.",
+    "fr": "J'ai rêvé que je lui ai dit que je l'aime.",
+    "word_ids": [24, 214, 184, 24, 200, 25, 184, 24, 239, 25]
+  },
+  "447": {
+    "th": "กุญ=แจ_นี้_อยู่_ใน_ครอบ-ครัว_ของ_ฉัน_มา_สาม_ร้อย_ปี_แล้ว",
+    "en": "This key has been in my family for three hundred years.",
+    "fr": "Cette clé est dans ma famille depuis trois cent ans.",
+    "word_ids": [552, 31, 237, 44, 363, 40, 24, 202, 226, 595, 168, 172]
+  },
+  "448": {
+    "th": "เธอ_ไม่_ดื่ม_ชา",
+    "en": "She doesn't drink tea.",
+    "fr": "Elle ne boit pas de thé.",
+    "word_ids": [25, 39, 195, 535]
+  },
+  "449": {
+    "th": "ให้_ฉัน_ร้อย_บาท_นะ",
+    "en": "Give me a hundred bahts.",
+    "fr": "Donne-moi cent bahts.",
+    "word_ids": [51, 24, 595, 160, 13]
+  },
+  "450": {
+    "th": "เพื่อน_ของ_ฉัน_กำ=ลัง_กิน_กล้วย",
+    "en": "My friend is eating a banana.",
+    "fr": "Mon ami mange une banane.",
+    "word_ids": [170, 40, 24, 306, 193, 153]
   }
 }

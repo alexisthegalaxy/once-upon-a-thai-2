@@ -120,6 +120,7 @@
   "13": {
     "split": "นะ",
     "en": "(particle to make sentence softer or more persuasive)",
+    "fr": "(particule pour adoucir une phrase ou être persuasif)",
     "tones": "F",
     "pos": "PART",
     "th": "นะ",
@@ -1378,6 +1379,7 @@
   "153": {
     "split": "กล้วย",
     "en": "banana",
+    "fr": "banane",
     "tones": "F",
     "pos": "NOUN",
     "th": "กล้วย",
@@ -1440,6 +1442,7 @@
   "160": {
     "split": "บาท",
     "en": "Baht",
+    "fr": "Baht",
     "tones": "L",
     "pos": "NOUN",
     "th": "บาท",
@@ -5313,6 +5316,15 @@
     "tones": "H",
     "pos": "",
     "th": "ช้า",
+    "teaching_order": -1
+  },
+  "595": {
+    "split": "ร้อย",
+    "en": "hundred",
+    "fr": "cent, centaine",
+    "tones": "H",
+    "pos": "",
+    "th": "ร้อย",
     "teaching_order": -1
   }
 }
