@@ -180,8 +180,8 @@
   },
   "20": {
     "split": "รูป",
-    "en": "photos, classifier for pictures and monks",
-    "fr": "photos, classificateur des images et moines",
+    "en": "photos, classifier for pictures and monks / form",
+    "fr": "photos, classificateur des images et moines / forme",
     "tones": "F",
     "pos": "CLAS",
     "th": "รูป",
@@ -2221,7 +2221,7 @@
     "teaching_order": -1
   },
   "247": {
-    "split": "หิ-มะ",
+    "split": "หิ=มะ",
     "en": "snow",
     "fr": "neige",
     "tones": "LH",
@@ -2397,7 +2397,7 @@
     "teaching_order": -1
   },
   "267": {
-    "split": "ดอก_ไม้",
+    "split": "ดอก-ไม้",
     "en": "flower",
     "fr": "fleur",
     "tones": "LH",
@@ -5325,6 +5325,24 @@
     "tones": "H",
     "pos": "",
     "th": "ร้อย",
+    "teaching_order": -1
+  },
+  "596": {
+    "split": "คอม=พิว=เตอร์",
+    "en": "computer",
+    "fr": "ordinateur",
+    "tones": "MMF",
+    "pos": "",
+    "th": "คอมพิวเตอร์",
+    "teaching_order": -1
+  },
+  "597": {
+    "split": "พุทธ",
+    "en": "Buddha",
+    "fr": "Bouddha",
+    "tones": "H",
+    "pos": "",
+    "th": "พุทธ",
     "teaching_order": -1
   }
 }

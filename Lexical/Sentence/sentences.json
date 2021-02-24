@@ -319,7 +319,7 @@
     "speaker_gender": "M"
   },
   "53": {
-    "th": "ฉัน_ไม่_เคย_เห็น_หิ-มะ",
+    "th": "ฉัน_ไม่_เคย_เห็น_หิ=มะ",
     "en": "I have never seen snow.",
     "word_ids": [24, 39, 177, 194, 247],
     "speaker_gender": "F"
@@ -938,7 +938,7 @@
     "word_ids": [338, 45, 301, 28, 199, 369]
   },
   "168": {
-    "th": "ฉัน_เห็น_หิ-มะ_เป็น_ครั้ง-แรก_ใน_แค=นา=ดา",
+    "th": "ฉัน_เห็น_หิ=มะ_เป็น_ครั้ง-แรก_ใน_แค=นา=ดา",
     "en": "I saw snow for the first time in Canada.",
     "fr": "J'ai vu de la neige pour la première fois au Canada.",
     "word_ids": [24, 194, 247, 207, 377, 44, 319],
@@ -1597,7 +1597,7 @@
     "speaker_gender": "F"
   },
   "278": {
-    "th": "ฉัน_รู้_ว่า_หิ-มะ_คือ_น้ำ_เย็น_ค่ะ",
+    "th": "ฉัน_รู้_ว่า_หิ=มะ_คือ_น้ำ_เย็น_ค่ะ",
     "en": "I know that snow is cold water.",
     "fr": "Je sais que la neige c'est de l'eau froide.",
     "word_ids": [24, 370, 184, 247, 206, 156, 452, 11],
@@ -1667,7 +1667,7 @@
     "speaker_gender": "F"
   },
   "289": {
-    "th": "ประ=เทศ_ไทย_ไม่_มี_หิ-มะ_ตก_แต่_บาง-ครั้ง_มี_ลูก-เห็บ_ตก",
+    "th": "ประ=เทศ_ไทย_ไม่_มี_หิ=มะ_ตก_แต่_บาง-ครั้ง_มี_ลูก-เห็บ_ตก",
     "en": "In Thailand there's no snowfall, but sometimes there's hail.",
     "fr": "En Thaïlande il n'y a pas de neige qui tombe, mais parfois il y a de la grêle.",
     "word_ids": [264, 345, 39, 236, 247, 470, 41, 74, 236, 471, 470]
@@ -2622,5 +2622,35 @@
     "en": "My friend is eating a banana.",
     "fr": "Mon ami mange une banane.",
     "word_ids": [170, 40, 24, 306, 193, 153]
+  },
+  "451": {
+    "th": "ฉัน_อยาก_เห็น_ลิง",
+    "en": "I want to see a monkey.",
+    "fr": "Je veux voir un singe.",
+    "word_ids": [24, 241, 194, 137]
+  },
+  "452": {
+    "th": "คุณ_เห็น_ปลา_สี_ขาว_กี่_ตัว",
+    "en": "How many white fish do you see?",
+    "fr": "Combien de poissons blancs vois-tu ?",
+    "word_ids": [28, 194, 138, 122, 131, 564, 186]
+  },
+  "453": {
+    "th": "คอม=พิว=เตอร์_ของ_ฉัน_ช้า_เมื่อ_ร้อน_เกิน-ไป",
+    "en": "My computer is slow when it is too hot.",
+    "fr": "Mon computer est lent quand il est trop chaud.",
+    "word_ids": [596, 40, 24, 594, 380, 537, 381]
+  },
+  "454": {
+    "th": "ดอก-ไม้_นี้_มี_สี_ของ_หิ=มะ",
+    "en": "This flower has the color of snow.",
+    "fr": "Cette fleur a la couleur de la neige.",
+    "word_ids": [267, 31, 236, 122, 40, 247]
+  },
+  "455": {
+    "th": "นี่_คือ_พระ_พุทธ_รูป",
+    "en": "This is a statue of Buddha.",
+    "fr": "C'est une statue de Bouddha.",
+    "word_ids": [509, 206, 185, 597, 20]
   }
 }
