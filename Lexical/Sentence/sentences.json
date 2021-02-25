@@ -551,7 +551,7 @@
     "word_ids": [59, 28, 180, 237, 37]
   },
   "97": {
-    "th": "เรา_มี_สอบ_อา-ทิตย์ห-น้า",
+    "th": "เรา_มี_สอบ_อา=ทิตย์ห-น้า",
     "en": "We have an exam next week.",
     "word_ids": [29, 236, 142, 70]
   },
@@ -635,12 +635,12 @@
     "speaker_gender": "F"
   },
   "112": {
-    "th": "ผม_ต้อง_กลับ_ประ=เทศ_อังก-ฤษ_อา-ทิตย์_หน้า",
+    "th": "ผม_ต้อง_กลับ_ประ=เทศ_อังก-ฤษ_อา=ทิตย์_หน้า",
     "en": "I have to return to the United Kingdom next week.",
     "word_ids": [23, 199, 220, 264, 255, 81, 53]
   },
   "113": {
-    "th": "เธอ_ต้อง_ไป_รับ_แฟน_ของ_เธอ_ที่_ส-นาม-บิน",
+    "th": "เธอ_ต้อง_ไป_รับ_แฟน_ของ_เธอ_ที่_ส=นาม-บิน",
     "en": "She has to pick up her boyfriend at the airport.",
     "word_ids": [25, 199, 201, 221, 187, 40, 25, 45, 324]
   },
@@ -846,17 +846,20 @@
   "150": {
     "th": "เขา_อยาก_คุย_กับ_ฉัน",
     "en": "He wants to speak with me.",
+    "fr": "Il veut {parler avec moi/me parler}.",
     "word_ids": [26, 241, 196, 46, 24],
     "speaker_gender": "F"
   },
   "151": {
     "th": "เขา_ไม่_ชอบ_อยู่_บ้าน",
     "en": "He doesnt like to be at home.",
+    "fr": "Il n'aime pas être à la maison.",
     "word_ids": [26, 39, 238, 237, 147]
   },
   "152": {
     "th": "เขา_ไม่_ชอบ_โรง-เรียน_ไทย",
     "en": "He doesnt like Thai school.",
+    "fr": "Il n'aime pas l'école thaïe.",
     "word_ids": [26, 39, 238, 275, 345]
   },
   "153": {
@@ -1563,7 +1566,7 @@
     "speaker_gender": "F"
   },
   "273": {
-    "th": "ดวง_อา-ทิตย์_เป็น_ดาว",
+    "th": "ดวง_อา=ทิตย์_เป็น_ดาว",
     "en": "The sun is a star",
     "fr": "Le soleil est une étoile.",
     "word_ids": [457, 81, 207, 460]
@@ -1604,7 +1607,7 @@
     "speaker_gender": "F"
   },
   "279": {
-    "th": "ดวง_อา-ทิตย์_เป็น_ไฟ_หรือ_ไม่",
+    "th": "ดวง_อา=ทิตย์_เป็น_ไฟ_หรือ_ไม่",
     "en": "The sun is fire or not?",
     "fr": "Le soleil c'est du feu ou pas ?",
     "word_ids": [457, 81, 207, 145, 436, 39]
@@ -2534,7 +2537,7 @@
     "word_ids": [55, 241, 205, 46, 24, 183]
   },
   "432": {
-    "th": "ดวง_อา-ทิตย์_เป็น_สี-แดง_ใน_ตอน-เย็น_จริง_หรือ",
+    "th": "ดวง_อา=ทิตย์_เป็น_สี-แดง_ใน_ตอน-เย็น_จริง_หรือ",
     "en": "Is the sun really red in the evening?",
     "fr": "{Est-ce que le soleil est/Le soleil est-il} vraiment rouge le soir ?",
     "word_ids": [457, 81, 207, 104, 44, 78, 439, 436]
@@ -2652,5 +2655,35 @@
     "en": "This is a statue of Buddha.",
     "fr": "C'est une statue de Bouddha.",
     "word_ids": [509, 206, 185, 597, 20]
+  },
+  "456": {
+    "th": "ฉัน_กิน_เนื้อ_ใน_วัน-อา=ทิตย์_เท่า-นั้น",
+    "en": "I eat meat on Sundays only.",
+    "fr": "Je mange de la viande le dimanche seulement.",
+    "word_ids": [24, 193, 540, 44, 327, 504]
+  },
+  "457": {
+    "th": "ฉัน_ไม่_ชอบ_ใส่_ชุด_ของ_พี่-ชาย",
+    "en": "I don't like to wear my older brother's clothes.",
+    "fr": "Je n'aime pas porter les vêtements de mon grand frère.",
+    "word_ids": [24, 39, 238, 570, 574, 40, 533]
+  },
+  "458": {
+    "th": "ฉัน_จัด-การ_เอง",
+    "en": "I('ll) manage it myself.",
+    "fr": "Je m'en occupe(rai) moi-même.",
+    "word_ids": [24, 505, 176]
+  },
+  "459": {
+    "th": "ทำ-บุญ_แบบ-ไหน_ดี",
+    "en": "What is the best way to make merit?",
+    "fr": "Quelle est la meilleure façon de faire une bonne action ?",
+    "word_ids": [479, 402, 82]
+  },
+  "460": {
+    "th": "ทำ-ไม_ฉัน_ต้อง_ทำ-งาน_ใน_ห้อง-ครัว_ใน-ข=ณะ-ที่_น้อง_ชาย_เล่น_ใน_ส=นาม_เด็ก_เล่น",
+    "en": "Why do I have to work in the kitchen while (my )(younger )brother {plays/has fun} {in/at} the playground?",
+    "fr": "Pourquoi {dois-je travailler/faut-il que je travaille} {dans la/en} cuisine {pendant/alors} que mon (petit )frère joue {au/dans le} terrain de jeu(x)?",
+    "word_ids": [59, 24, 199, 288, 44, 364, 598, 463, 534, 205, 44, 277, 149, 205]
   }
 }

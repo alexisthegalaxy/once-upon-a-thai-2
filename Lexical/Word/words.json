@@ -627,7 +627,7 @@
     "teaching_order": -1
   },
   "70": {
-    "split": "อา-ทิตย์ห-น้า",
+    "split": "อา=ทิตย์ห-น้า",
     "en": "next week",
     "fr": "la semaine prochaine",
     "tones": "MHF",
@@ -726,7 +726,7 @@
     "teaching_order": -1
   },
   "81": {
-    "split": "อา-ทิตย์",
+    "split": "อา=ทิตย์",
     "en": "week",
     "fr": "la semaine",
     "tones": "MH",
@@ -2486,7 +2486,7 @@
     "teaching_order": -1
   },
   "277": {
-    "split": "ส-นาม",
+    "split": "ส=นาม",
     "en": "field",
     "fr": "champ",
     "tones": "LR",
@@ -2885,7 +2885,7 @@
     "teaching_order": -1
   },
   "323": {
-    "split": "พระ-อา-ทิตย์",
+    "split": "พระ-อา=ทิตย์",
     "en": "sun",
     "fr": "soleil",
     "tones": "HMH",
@@ -2894,7 +2894,7 @@
     "teaching_order": -1
   },
   "324": {
-    "split": "ส-นาม-บิน",
+    "split": "ส=นาม-บิน",
     "en": "airport",
     "fr": "aéroport",
     "tones": "LRM",
@@ -2921,7 +2921,7 @@
     "teaching_order": -1
   },
   "327": {
-    "split": "วัน-อา-ทิตย์",
+    "split": "วัน-อา=ทิตย์",
     "en": "Sunday",
     "fr": "dimanche",
     "tones": "MMH",
@@ -2966,7 +2966,7 @@
     "teaching_order": -1
   },
   "332": {
-    "split": "ส-นาม-เด็ก-เล่น",
+    "split": "ส=นาม-เด็ก-เล่น",
     "en": "playground",
     "fr": "terrain de jeux",
     "tones": "LRLF",
@@ -5343,6 +5343,15 @@
     "tones": "H",
     "pos": "",
     "th": "พุทธ",
+    "teaching_order": -1
+  },
+  "598": {
+    "split": "ใน-ข=ณะ-ที่",
+    "en": "while",
+    "fr": "pendant que",
+    "tones": "MLLF",
+    "pos": "",
+    "th": "ในขณะที่",
     "teaching_order": -1
   }
 }
