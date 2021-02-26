@@ -325,7 +325,7 @@
     "speaker_gender": "F"
   },
   "54": {
-    "th": "เขา_ไม่_เคย_ไป_กรุง=เทพ",
+    "th": "เขา_ไม่_เคย_ไป_กรุง-เทพ",
     "en": "He has never been to Bangkok.",
     "word_ids": [26, 39, 177, 201, 308]
   },
@@ -350,12 +350,12 @@
     "word_ids": [28, 234, 335, 209, 10]
   },
   "59": {
-    "th": "พรุ่ง-นี้_ฉัน_จะ_ไป_กรุง=เทพ",
+    "th": "พรุ่ง-นี้_ฉัน_จะ_ไป_กรุง-เทพ",
     "en": "I will go to Bangkok tomorrow.",
     "word_ids": [65, 24, 42, 201, 308]
   },
   "60": {
-    "th": "ฉัน_เคย_ไป_กรุง=เทพ",
+    "th": "ฉัน_เคย_ไป_กรุง-เทพ",
     "en": "I have been to Bangkok.",
     "word_ids": [24, 177, 201, 308]
   },
@@ -1034,7 +1034,7 @@
     "word_ids": [379, 39, 238, 193, 346]
   },
   "185": {
-    "th": "ผม_จะ_ขึ้น_รถ-ไฟ-ใต้-ดิน_ทุก-วัน_เมื่อ_ผม_อา=ศัย_อยู่_ใน_กรุง=เทพ",
+    "th": "ผม_จะ_ขึ้น_รถ-ไฟ-ใต้-ดิน_ทุก-วัน_เมื่อ_ผม_อา=ศัย_อยู่_ใน_กรุง-เทพ",
     "en": "I will take the subway everyday when I live in Bangkok.",
     "word_ids": [23, 42, 374, 333, 71, 380, 23, 282, 237, 44, 308]
   },
@@ -2038,7 +2038,7 @@
     "word_ids": [481, 45, 82, 528, 206, 0]
   },
   "349": {
-    "th": "คน_จาก_กรุง=เทพ_พูด_เร็ว_ที่-สุด",
+    "th": "คน_จาก_กรุง-เทพ_พูด_เร็ว_ที่-สุด",
     "en": "People from Bangkok speak the fastest.",
     "fr": "Les gens de Bangkok parlent le plus vite.",
     "word_ids": [343, 43, 308, 234, 90, 528]
@@ -2158,7 +2158,7 @@
     "word_ids": [24, 39, 417]
   },
   "369": {
-    "th": "ฉัน_จะ_ไป_กรุง=เทพ_พรุ่ง-นี้",
+    "th": "ฉัน_จะ_ไป_กรุง-เทพ_พรุ่ง-นี้",
     "en": "I will go to Bangkok tomorrow.",
     "fr": "{Je vais aller/J'irai} à Bangkok demain.",
     "word_ids": [24, 42, 201, 308, 65]
@@ -2440,7 +2440,7 @@
     "word_ids": [570, 574, 575, 44, 275, 209, 10]
   },
   "416": {
-    "th": "ถ=นน_สาย_นี้_กลาย-เป็น_ถ=นน_ที่_ใหญ่_ที่-สุด_ใน_กรุง=เทพ",
+    "th": "ถ=นน_สาย_นี้_กลาย-เป็น_ถ=นน_ที่_ใหญ่_ที่-สุด_ใน_กรุง-เทพ",
     "en": "This road {has become/becomes} the biggest{/ road} in Bangkok.",
     "fr": "Cette route {est devenue/devient} la plus grande{/ route} {à/dans/de} Bangkok.",
     "word_ids": [573, 22, 31, 378, 573, 45, 83, 528, 44, 308]
@@ -2685,5 +2685,35 @@
     "en": "Why do I have to work in the kitchen while (my )(younger )brother {plays/has fun} {in/at} the playground?",
     "fr": "Pourquoi {dois-je travailler/faut-il que je travaille} {dans la/en} cuisine {pendant/alors} que mon (petit )frère joue {au/dans le} terrain de jeu(x)?",
     "word_ids": [59, 24, 199, 288, 44, 364, 598, 463, 534, 205, 44, 277, 149, 205]
+  },
+  "461": {
+    "th": "แต่_พวก-เขา_เป็น_คน-ไทย_ด้วย",
+    "en": "But they are Thai too.",
+    "fr": "Mais ils sont Thaïs aussi.",
+    "word_ids": [41, 36, 207, 244, 52]
+  },
+  "462": {
+    "th": "ฉัน_ไม่_ชอบ_สิ่ง_ที่_ฉัน_ไม่_รู้_ได้",
+    "en": "I can't like something I don't know.",
+    "fr": "Je ne peux pas aimer quelque chose que je ne connais pas.",
+    "word_ids": [24, 39, 238, 519, 45, 24, 39, 370, 209]
+  },
+  "463": {
+    "th": "หนัง_โปรด_ของ_คุณ_คือ_อะ=ไร",
+    "en": "What is your favorite movie?",
+    "fr": "Quel est ton film préféré ?",
+    "word_ids": [161, 94, 40, 28, 206, 56]
+  },
+  "464": {
+    "th": "ตู้-เย็น_ไม่_ทำ-งาน_ถ้า_เรา_ไม่_มี_ไฟ-ฟ้า",
+    "en": "The fridge doesn't work if we have no electricity.",
+    "fr": "Le frigo ne fonctionne pas si nous n'avons pas d'électricité.",
+    "word_ids": [559, 39, 288, 454, 29, 39, 236, 259]
+  },
+  "465": {
+    "th": "บ้าน_ใน_กรุง-เทพ_เหนือ_คง-จะ_ถูก_กว่า",
+    "en": "A house {in/from/of} the north{/ern part} of Bangkok {might/may} be {cheaper}.",
+    "fr": "{Une maison/Les maisons/Des maisons} {au/dans le/du} nord de Bangkok {pourrait être/pourraient être/est peut-être/sont peut-être/peut être/peuvent être} moins chère.",
+    "word_ids": [147, 44, 308, 48, 302, 599, 182]
   }
 }

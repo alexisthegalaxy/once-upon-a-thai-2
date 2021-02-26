@@ -369,6 +369,7 @@
   "41": {
     "split": "แต่",
     "en": "but",
+    "fr": "mais",
     "tones": "L",
     "pos": "CONJ",
     "th": "แต่",
@@ -1450,7 +1451,8 @@
   },
   "161": {
     "split": "หนัง",
-    "en": "???",
+    "en": "movie / skin",
+    "fr": "un film / la peau",
     "tones": "R",
     "pos": "None",
     "th": "หนัง",
@@ -2325,7 +2327,7 @@
     "teaching_order": -1
   },
   "259": {
-    "split": "ไฟ_ฟ้า",
+    "split": "ไฟ-ฟ้า",
     "en": "electricity",
     "fr": "électricité",
     "tones": "MH",
@@ -2756,7 +2758,7 @@
     "teaching_order": -1
   },
   "308": {
-    "split": "กรุง=เทพ",
+    "split": "กรุง-เทพ",
     "en": "Bangkok",
     "tones": "MF",
     "pos": "PLAC",
@@ -2822,7 +2824,7 @@
     "teaching_order": -1
   },
   "316": {
-    "split": "รถ_ไฟ_ฟ้า",
+    "split": "รถ_ไฟ-ฟ้า",
     "en": "skytrain",
     "fr": "métro aérien",
     "tones": "HMH",
@@ -3181,6 +3183,7 @@
   "356": {
     "split": "รา",
     "en": "mold, fungus / to cease",
+    "fr": "moisissure, champignons / cesser de",
     "tones": "M",
     "pos": "NOUN",
     "th": "รา",
@@ -5352,6 +5355,15 @@
     "tones": "MLLF",
     "pos": "",
     "th": "ในขณะที่",
+    "teaching_order": -1
+  },
+  "599": {
+    "split": "ถูก",
+    "en": "cheap / correct / compatible",
+    "fr": "pas cher / correct / compatible",
+    "tones": "L",
+    "pos": "",
+    "th": "ถูก",
     "teaching_order": -1
   }
 }
