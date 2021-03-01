@@ -5846,7 +5846,7 @@ position = Vector2( 1103.7, 182.172 )
 position = Vector2( 374.642, 262.439 )
 
 [node name="Som House" parent="YSort" instance=ExtResource( 31 )]
-position = Vector2( 1234.04, 70.6977 )
+position = Vector2( 1232.62, 70.4954 )
 
 [node name="Sources" type="YSort" parent="YSort"]
 position = Vector2( 1071.88, -169.316 )
@@ -6000,7 +6000,7 @@ position = Vector2( 2218.55, -159.948 )
 position = Vector2( 1235.62, 221.922 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1193.88, 260.118 )
+position = Vector2( 595.107, 491.172 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -6031,11 +6031,18 @@ direction = "right"
 display_name = "Pet"
 
 [node name="Yaai" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 687.874, 519.645 )
+position = Vector2( 687.874, 519.909 )
 dialog = [ "_alright_name_lets_go" ]
 direction = "up"
 display_name = "Yaai"
 post_dialog_event = [ "yaai_walks_to", [ [ Vector2( 460, 500 ), Vector2( 480, 500 ) ] ] ]
+
+[node name="Yaai2" parent="YSort/NPCs" instance=ExtResource( 11 )]
+position = Vector2( 631.056, 442.214 )
+dialog = [ "_alright_name_lets_go" ]
+direction = "up"
+display_name = "Yaai"
+post_dialog_event = [ "starts_ceremony_effect", [  ] ]
 
 [node name="PluralGirl" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 1309.77, 232.653 )
@@ -6099,7 +6106,7 @@ sprite_path = "res://Npcs/sprites/monk.png"
 display_name = "Ajahn Jagaro"
 
 [node name="Sentence - Thai people are good people" parent="YSort" instance=ExtResource( 38 )]
-position = Vector2( 198.555, 621.507 )
+position = Vector2( 198.555, 621.243 )
 is_translated = true
 style = "stone"
 
@@ -6244,7 +6251,7 @@ to_map_name = "res://Maps/ChaiyaphumFarmersHouse.tscn"
 sound_name = "door"
 
 [node name="ToSomsHouse" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1234.85, 53.7557 )
+position = Vector2( 1233.43, 53.5534 )
 to_position = Vector2( 24, 90 )
 to_map_name = "res://Maps/SomHouse.tscn"
 name_for_location = "_soms_house"

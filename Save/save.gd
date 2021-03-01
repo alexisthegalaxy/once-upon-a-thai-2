@@ -25,7 +25,7 @@ func apply_change_from_save_data(save_data):
 	Game.player.load_game(save_data.player_data)
 	# 3 - game, vocabulary, sources
 	Game.load_game(save_data.game_data)
-	Game.generate_following_spells_after_map_change()
+	ChangeMap.generate_following_spells_after_map_change()
 	# 4 - quests
 	Quests.load_game(save_data.quests_data)
 	# 5 - Events

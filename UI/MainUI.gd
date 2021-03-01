@@ -25,7 +25,7 @@ func update_main_ui():
 	update_main_ui_quests_display()
 
 func update_main_ui_letters_display():
-	if Game.known_letters:
+	if Game.known_letters or Game.should_show_letters_button:
 		$Letters.show()
 	else:
 		$Letters.hide()

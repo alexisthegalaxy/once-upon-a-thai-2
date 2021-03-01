@@ -1463,7 +1463,7 @@
     "word_ids": [59, 26, 220, 202, 45, 147, 9]
   },
   "256": {
-    "th": "ผม_อยาก_เข้า-ใจ_ความ_รู้_สึก_ของ_คน_ที่_ผม_ได้_พบ_ครับ",
+    "th": "ผม_อยาก_เข้า-ใจ_ความ_รู้-สึก_ของ_คน_ที่_ผม_ได้_พบ_ครับ",
     "en": "I want to understand the feelings of the people I meet.",
     "fr": "Je veux comprendre les sensations des gens que je rencontre.",
     "word_ids": [23, 241, 417, 441, 442, 40, 343, 45, 23, 209, 373, 9]
@@ -2715,5 +2715,41 @@
     "en": "A house {in/from/of} the north{/ern part} of Bangkok {might/may} be {cheaper}.",
     "fr": "{Une maison/Les maisons/Des maisons} {au/dans le/du} nord de Bangkok {pourrait être/pourraient être/est peut-être/sont peut-être/peut être/peuvent être} moins chère.",
     "word_ids": [147, 44, 308, 48, 302, 599, 182]
+  },
+  "466": {
+    "th": "แมว_นั่ง_ลง_และ_รอ_อา=หาร",
+    "en": "The cat sits down and waits for food.",
+    "fr": "Le chat s'asseoit et attend la nourriture.",
+    "word_ids": [1, 235, 506, 384, 369, 251]
+  },
+  "467": {
+    "th": "เขา_รู้-สึก_เจ็บ-ปวด_อีก_ครั้ง",
+    "en": "He {felt/feels} pain one more time.",
+    "fr": "Il {ressent/a ressenti/ressentit/ressentait} la douleur une fois de plus.",
+    "word_ids": [26, 442, 601, 489, 602]
+  },
+  "468": {
+    "th": "มัน_เจ็บ-ปวด_มาก_เลย",
+    "en": "It is so painful!",
+    "fr": "Ça fait tellement mal !",
+    "word_ids": [27, 601, 366, 603]
+  },
+  "469": {
+    "th": "ม=นุษย์_มี_สิบ_นิ้ว",
+    "en": "{A human has/Humans have/Men have/People have} ten fingers.",
+    "fr": "{Les humains ont/Un humain a/Les gens ont} dix doigts.",
+    "word_ids": [604, 236, 233, 605]
+  },
+  "470": {
+    "th": "ฉัน_เขียน_จด-หมาย_ถึง_พ่อ-แม่_เมื่อ-เช้า-นี้",
+    "en": "I wrote a letter to {my/the} parents this morning.",
+    "fr": "J'ai écrit une lettre {à mes/aux} parents ce matin.",
+    "word_ids": [24, 330, 450, 606, 541, 607]
+  },
+  "471": {
+    "th": "เรา_คุย_กัน_เมื่อ-เช้า-นี้",
+    "en": "We {talked/did talk/chatted/did chat}{/ together} this morning.",
+    "fr": "On {a parlé/a discuté/parlait/discutait}{/ ensemble} ce matin.",
+    "word_ids": [29, 196, 608, 607]
   }
 }

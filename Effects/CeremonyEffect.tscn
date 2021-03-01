@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Effects/CeremonyEffect.gd" type="Script" id=1]
+[ext_resource path="res://Lexical/Word/Spell.tscn" type="PackedScene" id=2]
+
+[node name="CeremonyEffect" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="แรง" parent="." instance=ExtResource( 2 )]
+position = Vector2( -0.139038, -53.1704 )
+id = 582
+
+[node name="ลืม" parent="." instance=ExtResource( 2 )]
+position = Vector2( 49.7051, 75.4814 )
+id = 600
+
+[node name="คำ" parent="." instance=ExtResource( 2 )]
+position = Vector2( 77.7333, 2.30795 )
+id = 529
+
+[node name="ผี" parent="." instance=ExtResource( 2 )]
+position = Vector2( -50.4478, 74.5835 )
+id = 167
+
+[node name="เห็น" parent="." instance=ExtResource( 2 )]
+position = Vector2( -70.2155, -2.32511 )
+id = 194
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -89427.7
+margin_top = -65639.8
+margin_right = 192730.0
+margin_bottom = 118750.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}

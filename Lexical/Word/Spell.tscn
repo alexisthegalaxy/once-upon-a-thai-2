@@ -28,14 +28,11 @@ texture = ExtResource( 4 )
 
 [node name="Light2D" type="Light2D" parent="Visible"]
 visible = false
-position = Vector2( -9.9476e-13, -9.53673e-07 )
-scale = Vector2( 0.559936, 0.582469 )
+position = Vector2( -0.0475087, -0.0582399 )
+scale = Vector2( 0.83828, 0.74588 )
 texture = ExtResource( 1 )
 texture_scale = 0.07
 energy = 1.2
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="thai" type="Label" parent="Visible"]
 margin_left = -48.2695

@@ -9,6 +9,80 @@
     "fr_description": "Va parler au moine derrière le temple.",
     "counter_max": 1
   },
+  "find_first_letters": {
+    "blockers": [],
+    "en_name": "Learn your first letters",
+    "fr_name": "Apprend tes premières lettres",
+    "type": "learn_letters",
+    "parameters": [["น", "ท", "ย", "ค", "ไ-"], []],
+    "en_description": "Use the purple \"Letters\" tab on the right side to learn the consonants น, ท, ย, ค and the vowel ไ-.",
+    "fr_description": "Utilise l'onglet violet \"Lettres\" sur la droite pour apprendre les consonnes น, ท, ย, ค et la voyelle ไ-.",
+    "en_start_dialog": [
+      "Well done [Name]!",
+      "So, you know nothing anymore of the Thai language, huh?",
+      "Don’t worry, I went through that as well.",
+      "Let’s relearn the alphabet first.",
+      "Take this magical scroll.",
+      "[ShowNoName][Name] takes the Magical Scroll.",
+      "You can use it to learn all the letters, but let’s start easy.",
+      "For your first task, find the following letters: น, ท, ย, ค, ไ-.,"
+    ],
+    "fr_start_dialog": [
+      "C'est bien, [Name]!",
+      "So, you know nothing anymore of the Thai language, huh?",
+      "Don’t worry, I went through that as well.",
+      "Let’s relearn the alphabet first.",
+      "Take this magical scroll.",
+      "[ShowNoName][Name] takes the Magical Scroll.",
+      "You can use it to learn all the letters, but let’s start easy.",
+      "For your first task, find the following letters: น, ท, ย, ค, ไ-."
+    ],
+    "en_finish_dialog": [
+      "Well done [Name], that's all the letters."
+    ],
+    "fr_finish_dialog": [
+      "Félicitations, [Name], tu as trouvé toutes les lettres."
+    ],
+    "counter_max": 1
+  },
+  "find_first_words": {
+    "blockers": ["find_first_letters"],
+    "en_name": "Learn all the words in the forest.",
+    "fr_name": "Apprend tous les mots dans la forêt.",
+    "type": "learn_words",
+    "parameters": [[343, 345, 207, 82], []],
+    "en_description": "Interact with all the types of words in the forest to learn them.",
+    "fr_description": "Intéragis avec tous les types de mots que tu trouves dans la forêt pour les apprendre.",
+    "en_start_dialog": [
+      "For your next task, go to the forest. There are numerous Word Spirits there - we call them Spells.",
+      "You should be able to see them, now.",
+      "Find them all - I believe there are four different Spells there.",
+      "Ah, but first, I should teach you your first Thai sentence, it'll make your task easier."
+    ],
+    "fr_start_dialog": [
+      "Pour ta prochaine taâche, va à la forêt.",
+      "Tu y trouveras des Esprits de Mots, tu devrais être capable de les voir.",
+      "Trouve-les tous, et apprend-les - je crois qu'il y a quatre types de Mots.",
+      "Ah, mais d'abord, je devrais t'enseigner ta première phrase en thaï, ça rendra ta tâche plus facile."
+    ],
+    "en_finish_dialog": [
+      "Perfect."
+    ],
+    "fr_finish_dialog": [
+      "Parfait."
+    ],
+    "counter_max": 1
+  },
+  "talk_to_anchalee_in_chaiyaphum": {
+    "blockers": [],
+    "en_name": "Going to Chaiyaphum",
+    "fr_name": "Aller à Chaiyaphum",
+    "counter_max": 1,
+    "en_description": "Follow the path north from your house to get to Chaiyaphum, and find Anchalee, the grandmother of Ploy.",
+    "fr_description": "Suis le chemin au nord de ta maison pour aller à Chaiyaphum, et parle à Anchalee, la grand-mère de Ploy.",
+    "type": "talk_to_npc",
+    "parameters": ["Anchalee"]
+  },
   "find_sentences_in_chaiyaphum": {
     "blockers": [],
     "en_name": "Sentences in Chaiyaphum",
@@ -147,16 +221,6 @@
     ],
     "type": "implant_any_source_with_this_word_i_gave_you",
     "parameters": [401]
-  },
-  "talk_to_anchalee_in_chaiyaphum": {
-    "blockers": [],
-    "en_name": "Going to Chaiyaphum",
-    "fr_name": "Aller à Chaiyaphum",
-    "counter_max": 1,
-    "en_description": "Follow the path north from your house to get to Chaiyaphum, and find Anchalee, the grandmother of Ploy.",
-    "fr_description": "Suis le chemin au nord de ta maison pour aller à Chaiyaphum, et parle à Anchalee, la grand-mère de Ploy.",
-    "type": "talk_to_npc",
-    "parameters": ["Anchalee"]
   },
   "talk_to_ajahn_jagaro_in_chaiyaphum": {
     "blockers": ["implant_any_source_with_dtat"],

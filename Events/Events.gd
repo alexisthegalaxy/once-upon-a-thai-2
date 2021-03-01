@@ -1,6 +1,6 @@
 extends Node
 
-var initial_state = true
+var initial_state = false
 var state_2 = initial_state
 var events = {
 	"has_had_a_quest": state_2,
@@ -134,6 +134,15 @@ func starts_job_menu_screen(_no_arguments_needed):
 
 func set_yaai_has_given_last_warning_before_forest_as_true(_parameters):
 	events.yaai_has_given_last_warning_before_forest = true
+
+func can_see_letters(_no_arguments_needed):
+	Game.should_show_letters_button = true
+	Game.main_ui.update_main_ui_letters_display()
+
+func starts_ceremony_effect(yaai):
+	var ceremony_effect = load("res://Effects/CeremonyEffect.tscn").instance()
+	ceremony_effect.yaai = yaai
+	Game.current_scene.add_child(ceremony_effect)
 
 #func immediately_enters_lexical_world():
 #	ChangeMap.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75, 0)

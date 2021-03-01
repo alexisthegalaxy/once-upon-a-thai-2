@@ -97,13 +97,13 @@ _you_can_always_go_back_to_your_memory_palace,You can always go back to your Mem
 _for_now_follow_me_into_the_forest,"For now, follow me into the forest.","Pour l'instant, suis-moi dans la forêt."
 _i_should_talk_to_my_grandmother_first,I should talk to my grandmother first...,Je devrais d'abord parler à ma grand-mère...
 _i_shouldnt_go_there_now,I shouldn't go there now...,Je ne devrais pas aller ici maintenant...
-_heres_the_place_and_time,"Here's the place, and now is the time.",Nous sommes arrivés.
+_yaai_2_a,"Here's the place for your shamanic initiation, and now is the time.",Nous sommes arrivés - commençons ton initiation shamanique.
 _lets_start_your_shaman_initiation,Let's start your shamanic initiation.,Commençons ton initiation.
 _once_you_drink_this,"Once you drink this potion, you will gain power over spirits and spells,","Tu vois cette potion ? Une fois que tu l'auras bu, tu gagneras la capacité de commander aux sorts et mots."
 _but_theres_a_cost,But there is a cost:,Mais il faudra payer le prix :
-_youll_forget_thai,you will forget everything you know of the Thai language and you’ll have to learn Thai again from scratch.,"Tu oublieras tout ce que tu sais du thaï, et il te faudras réapprendre le thaï depuis le début."
-_you_trade_thai_for_power,You trade your fluency in your mother tongue for power over the spirit world.,Tu échanges ta langue maternelle contre le pouvoir de commander le monde spirituel.
-_if_you_ready_drink_this,"If you're ready, drink this.","Si ton cœur est prêt, alors bois."
+_yaai_2_b,you will forget everything you know of the Thai language and you’ll have to learn Thai again from scratch.,"Tu oublieras tout ce que tu sais du thaï, et il te faudra réapprendre le thaï depuis le début."
+_yaai_2_c,"And in exchange, you will gain power over the spirit world.","En échange, tu obtiendras le pouvoir de commander le monde spirituel."
+_yaai_2_d,Let's start!,C'est parti !
 _name_drink_potion,[ShowNoName][Name] drinks Yaai's potion.,[ShowNoName][Name] boit la potion de Yaai.
 _name_you_see_this_sentence,"[Name], you see the sentence written here?","[Name], tu vois cette phrase écrite ici ?"
 _this_is_your_first_since_forgotten_thai,This will be your first sentence since you've forgotten Thai!,C'est ta première phrase depuis que tu réapprends le thaï !
@@ -197,7 +197,7 @@ _load_saved_game,Load saved game,Continuer depuis la sauvegarde
 _back,Back,Retour
 _how_do_you_write_this_in_thai,How do you write this in Thai:,Comment écris-tu ce mot en Thaï :
 _you_have_befriended_that_spell,You have befriended the Spell %s. It follows you now!,Le mot %s est devenu ton ami. Il te suit maintenant !
-_click_on_the_right_side_to_see_all_your_letters,Click on the button on the right side to see all the letters you know.,Clique sur le bouton sur la droite de l'écran pour voir les lettres que tu connais.
+_my_house,My house,Ma maison
 _chaiyaphum,Chaiyaphum,Chaiyaphum
 _chaiyaphum_city,Chaiyaphum city,Ville de Chaiyaphum
 _players_house,House of [Name],Maison de [Name]

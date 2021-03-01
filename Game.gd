@@ -17,18 +17,18 @@ var letters = []
 #var known_words = [343, 345, 207, 82] 
 #var known_words = [82, 343, 345, 207, 204, 222, 223, 232, 233, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 123, 14, 15]
 var known_words = []
-var known_sentences = [196, 197, 198, 199, 313, 233]  # we know the translation. Does not contain seen_sentences.
+#var known_sentences = [196, 197, 198, 199, 313, 233]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [196, 197, 198]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [200, 201]  # we know the translation. Does not contain seen_sentences.
-#var known_sentences = []  # we know the translation. Does not contain seen_sentences.
+var known_sentences = []  # we know the translation. Does not contain seen_sentences.
 #var seen_sentences = [196, 197, 198, 199]  # we don't know the translation
-#var seen_sentences = []  # we don't know the translation
-var seen_sentences = [311, 312, 315]  # we don't know the translation
+var seen_sentences = []  # we don't know the translation
+#var seen_sentences = [311, 312, 315]  # we don't know the translation
 #var known_letters = [0, 11, 13, 21]  # list of IDs
 #var known_letters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]  # list of IDs
 #var known_letters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16]  # list of IDs
-#var known_letters = []  # list of IDs
-var known_letters = [0, 11, 13, 21, 28]  # five letters
+var known_letters = []  # list of IDs
+#var known_letters = [0, 11, 13, 21, 28]
 var following_spells = []
 #var following_spells = [
 #	{
@@ -76,6 +76,7 @@ var player_gender = "m"  # can also be "f" or "n"
 var money = 0
 var player_sprite_path = "res://Npcs/sprites/main_E.png"
 var can_read_thai = false
+var should_show_letters_button = false
 
 var is_somber = false
 var rain = null
@@ -229,6 +230,7 @@ func knows_the_initial_letters():
 	return true
 
 func learn_word(word_id):
+	Quests.update_learn_word_quests(word_id)
 	if not word_id in Game.known_words:
 		Game.known_words.append(word_id)
 		Game.main_ui.update_main_ui_words_display()
@@ -246,6 +248,7 @@ func maybe_update_go_learn_letter_bubble():
 func learn_letter(letter):
 	Game.known_letters.append(letter["id"])
 	maybe_update_go_learn_letter_bubble()
+	Quests.update_learn_letter_quests(letter["id"])
 	Game.main_ui.update_main_ui_letters_display()
 	if looking_for_letter__node:
 		looking_for_letter__node.update_label_text()
@@ -483,7 +486,7 @@ func starts_somber_mood():
 	change_color = true
 	goal_color = Color(0.3, 0.4, 0.4, 0.5)
 	is_somber = true
-	SoundPlayer.crossfade_to("res://Sounds/FLOATLANDS_ORIGINAL_SOUNDTRACK/heavy.wav")
+	SoundPlayer.crossfade_to("res://Sounds/FLOATLANDS_ORIGINAL_SOUNDTRACK/heavy.wav", 0.0)
 	rain = load("res://Effects/Rain.tscn").instance()
 	self.add_child(rain)
 

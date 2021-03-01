@@ -186,12 +186,6 @@ rotation = 2.2622
 scale = Vector2( 0.102042, 0.102656 )
 texture = ExtResource( 6 )
 
-[node name="sakyant_line_4_7" type="Sprite" parent="Objects/Lines"]
-position = Vector2( 271.665, -164.544 )
-rotation = 2.14917
-scale = Vector2( 0.169996, 0.136574 )
-texture = ExtResource( 6 )
-
 [node name="sakyant_line_4_2" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 49.6, -26.4954 )
 rotation = 2.28877
@@ -296,7 +290,7 @@ position = Vector2( 276.486, 93.0164 )
 id = "ท"
 
 [node name="ธ" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 139.824, 283.188 )
+position = Vector2( 143.876, 272.044 )
 id = "ธ"
 
 [node name="ถ" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
@@ -336,11 +330,11 @@ position = Vector2( 376, 184 )
 id = "จ"
 
 [node name="ศ" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 328, 248 )
+position = Vector2( 321.414, 231.283 )
 id = "ศ"
 
 [node name="ษ" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 280, 248 )
+position = Vector2( 292.158, 238.375 )
 id = "ษ"
 
 [node name="ด" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
@@ -449,8 +443,12 @@ __meta__ = {
 }
 
 [node name="Cloud_8" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
-position = Vector2( 422.667, -119.142 )
+position = Vector2( 491.432, -196.578 )
 scale = Vector2( -1, 1 )
+lift_on_letters = [ "อ", "เ-อ" ]
+
+[node name="Cloud_9" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
+position = Vector2( 400.244, -195.382 )
 lift_on_letters = [ "อ", "เ-อ" ]
 
 [node name="LettersWeLookFor" parent="." instance=ExtResource( 13 )]

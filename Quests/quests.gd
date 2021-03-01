@@ -21,11 +21,11 @@ func _ready():
 	init_with_initial_state()
 
 func init_with_initial_state():
-	quests['talk_to_anchalee_in_chaiyaphum'].status = IN_PROGRESS
+#	quests['talk_to_anchalee_in_chaiyaphum'].status = IN_PROGRESS
 #	quests['implant_source_behind_the_temple'].status = DONE
 #	quests['find_sentences_in_chaiyaphum'].status = DONE
 #	quests['purify_mohinkhao'].status = FINISHED
-	quests['implant_any_source_with_dtat'].status = IN_PROGRESS
+#	quests['implant_any_source_with_dtat'].status = IN_PROGRESS
 	pass
 
 func has_quests_in_progress_or_finished():
@@ -60,6 +60,31 @@ func update_quests_display():
 	if Game.current_scene.get_node("YSort") and Game.current_scene.get_node("YSort").get_node("NPCs"):
 		for npc in Game.current_scene.get_node("YSort").get_node("NPCs").get_children():
 			npc.update_npc_overhead()
+
+func update_learn_word_quests(word_id):
+	for quest_id in quests:
+		var quest = quests[quest_id]
+		if quest.status == IN_PROGRESS and quest.type == "learn_words":
+			if word_id in quest.parameters[0]:
+				if not word_id in quest.parameters[1]:
+					quest.parameters[1].append(word_id)
+					quest.counter += 1
+					if quest.counter >= quest.counter_max:
+						quest.status = FINISHED
+						update_quests_display()
+
+func update_learn_letter_quests(letter_id):
+	for quest_id in quests:
+		var quest = quests[quest_id]
+		if quest.status == IN_PROGRESS and quest.type == "learn_letters":
+			if letter_id in quest.parameters[0]:
+				if not letter_id in quest.parameters[1]:
+					quest.parameters[1].append(letter_id)
+					quest.counter += 1
+					if quest.counter >= quest.counter_max:
+						quest.status = FINISHED
+						update_quests_display()
+	
 
 func update_find_sentences_quests(sentence_id):
 	for quest_id in quests:

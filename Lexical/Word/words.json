@@ -2656,6 +2656,7 @@
   "296": {
     "split": "ออก-มา",
     "en": "to come out",
+    "fr": "sortir",
     "tones": "LM",
     "pos": "VERB",
     "th": "ออกมา",
@@ -3503,6 +3504,7 @@
   "392": {
     "split": "เล่ม",
     "en": "classifier for books, knives, candles",
+    "fr": "classificateur pour les livres, couteaux, bougies",
     "tones": "F",
     "pos": "None",
     "th": "เล่ม",
@@ -3954,7 +3956,7 @@
     "teaching_order": -1
   },
   "442": {
-    "split": "รู้_สึก",
+    "split": "รู้-สึก",
     "en": "to feel",
     "fr": "ressentir",
     "tones": "HL",
@@ -5195,6 +5197,15 @@
     "th": "เหมือนกัน",
     "teaching_order": -1
   },
+  "580": {
+    "split": "ได=โน=เสาร์",
+    "en": "dinosaur",
+    "fr": "dinosaure",
+    "tones": "MMR",
+    "pos": "",
+    "th": "ไดโนเสาร์",
+    "teaching_order": -1
+  },
   "581": {
     "split": "ประ=ตู",
     "en": "door",
@@ -5364,6 +5375,87 @@
     "tones": "L",
     "pos": "",
     "th": "ถูก",
+    "teaching_order": -1
+  },
+  "600": {
+    "split": "ลืม",
+    "en": "forget",
+    "fr": "oublier",
+    "tones": "M",
+    "pos": "",
+    "th": "ลืม",
+    "teaching_order": -1
+  },
+  "601": {
+    "split": "เจ็บ-ปวด",
+    "en": "to be hurt",
+    "fr": "avoir mal",
+    "tones": "LL",
+    "pos": "",
+    "th": "เจ็บปวด",
+    "teaching_order": -1
+  },
+  "602": {
+    "split": "ครั้ง",
+    "en": "time (last time, next time...)",
+    "fr": "fois (une fois, deux fois...)",
+    "tones": "H",
+    "pos": "",
+    "th": "ครั้ง",
+    "teaching_order": -1
+  },
+  "603": {
+    "split": "เลย",
+    "en": "so much / (not) at all",
+    "fr": "à fond / (pas) du tout",
+    "tones": "M",
+    "pos": "",
+    "th": "เลย",
+    "teaching_order": -1
+  },
+  "604": {
+    "split": "ม=นุษย์",
+    "en": "humain",
+    "fr": "humain",
+    "tones": "HH",
+    "pos": "",
+    "th": "มนุษย์",
+    "teaching_order": -1
+  },
+  "605": {
+    "split": "นิ้ว",
+    "en": "finger",
+    "fr": "doigt",
+    "tones": "H",
+    "pos": "",
+    "th": "นิ้ว",
+    "teaching_order": -1
+  },
+  "606": {
+    "split": "ถึง",
+    "en": "to get to / to, about, of / even if",
+    "fr": "atteindre / à, à propos, de / même si",
+    "tones": "R",
+    "pos": "",
+    "th": "ถึง",
+    "teaching_order": -1
+  },
+  "607": {
+    "split": "เมื่อ-เช้า-นี้",
+    "en": "this morning",
+    "fr": "ce matin",
+    "tones": "FHH",
+    "pos": "",
+    "th": "เมื่อเช้านี้",
+    "teaching_order": -1
+  },
+  "608": {
+    "split": "กัน",
+    "en": "each other",
+    "fr": "l'un l'autre [indique la réciprocité]",
+    "tones": "M",
+    "pos": "",
+    "th": "กัน",
     "teaching_order": -1
   }
 }

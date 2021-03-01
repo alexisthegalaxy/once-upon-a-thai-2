@@ -107,16 +107,12 @@ func _on_Area2D4_body_entered(body):
 		if not Events.events["ceremony_started"]:
 			Events.events["ceremony_started"] = true
 			$YSort/NPCs/Yaai.dialog = [
-				tr("_heres_the_place_and_time"),
-				tr("_lets_start_your_shaman_initiation"),
-				tr("_once_you_drink_this"),
-				tr("_but_theres_a_cost"),
-				tr("_youll_forget_thai"),
-				tr("_you_trade_thai_for_power"),
-				tr("_if_you_ready_drink_this"),
-				tr("_name_drink_potion"),
+				tr("_yaai_2_a"),
+				tr("_yaai_2_b"),
+				tr("_yaai_2_c"),
+				tr("_yaai_2_d"),
 			]
-#			$YSort/NPCs/Yaai.post_dialog_event = ["enters_lexical_world", null]
+			$YSort/NPCs/Yaai.post_dialog_event = ["starts_ceremony_effect", $YSort/NPCs/Yaai]
 			$YSort/NPCs/Yaai.is_walking_towards = []  # to make sure NPC can interact
 			$YSort/NPCs/Yaai.interact()
 			Game.letters_we_look_for = []
