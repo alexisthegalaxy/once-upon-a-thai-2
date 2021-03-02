@@ -672,12 +672,12 @@
     "word_ids": [26, 302, 201, 67]
   },
   "119": {
-    "th": "คุณ_มี_เว-ลา_ว่าง_พอ_ไหม",
+    "th": "คุณ_มี_เว=ลา_ว่าง_พอ_ไหม",
     "en": "Do you have enough free time?",
     "word_ids": [28, 236, 272, 97, 95, 10]
   },
   "120": {
-    "th": "ฉัน_มี_เว-ลา_ไม่_พอ",
+    "th": "ฉัน_มี_เว=ลา_ไม่_พอ",
     "en": "I don't have enough time.",
     "word_ids": [24, 236, 272, 39, 95],
     "speaker_gender": "F"
@@ -688,7 +688,7 @@
     "word_ids": [95, 172]
   },
   "122": {
-    "th": "คุณ_ใช้_เว-ลา_ว่าง_ที่-ไหน",
+    "th": "คุณ_ใช้_เว=ลา_ว่าง_ที่-ไหน",
     "en": "Where do you spend your free time?",
     "word_ids": [28, 222, 272, 97, 57]
   },
@@ -1523,7 +1523,7 @@
     "word_ids": [85, 282, 237, 44, 147, 31]
   },
   "266": {
-    "th": "ฉัน_ไม่_มี_เว-ลา_ให้_คุณ",
+    "th": "ฉัน_ไม่_มี_เว=ลา_ให้_คุณ",
     "en": "I don't have time for you.",
     "fr": "Je n'ai le temps pour toi.",
     "word_ids": [24, 39, 236, 272, 51, 28]
@@ -1958,7 +1958,7 @@
     "speaker_gender": "M"
   },
   "336": {
-    "th": "อย่า_ไป_ใน_ป่า_คน-เดียว_ใน_เว-ลา_กลาง-คืน",
+    "th": "อย่า_ไป_ใน_ป่า_คน-เดียว_ใน_เว=ลา_กลาง-คืน",
     "en": "Don't go in the forest alone {at night/by night/during the night/in the night}(time).",
     "fr": "Ne va pas dans la forêt tout seul {/dans /pendant }la nuit.",
     "word_ids": [175, 201, 44, 342, 112, 44, 272, 516]
@@ -2751,5 +2751,29 @@
     "en": "We {talked/did talk/chatted/did chat}{/ together} this morning.",
     "fr": "On {a parlé/a discuté/parlait/discutait}{/ ensemble} ce matin.",
     "word_ids": [29, 196, 608, 607]
+  },
+  "472": {
+    "th": "นี่_ไม่_ใช่_แมว",
+    "en": "This {is not/isn't} a cat.",
+    "fr": "Ce n'est pas un chat.",
+    "word_ids": [509, 39, 179, 1]
+  },
+  "473": {
+    "th": "เธอ_หัว-เราะ_และ_ร้อง-ไห้_ใน_เว=ลา_เดียว-กัน",
+    "en": "She laughs and cries at the same time.",
+    "fr": "Elle rit et pleure en même temps.",
+    "word_ids": [25, 609, 384, 612, 44, 272, 614]
+  },
+  "474": {
+    "th": "ฉัน_จะ_เรียน_และ_เข้า_ใน_ม=หา-วิ=ท=ยา=ลัย_ที่_ดี_ที่-สุด",
+    "en": "I will study and enter in the best university.",
+    "fr": "Je vais étudier et entrer dans la meilleure université.",
+    "word_ids": [24, 42, 198, 384, 418, 44, 610, 45, 82, 528]
+  },
+  "475": {
+    "th": "ฉัน_ได้-รับ_หนึ่ง_พัน_บาท_ทุก-วัน",
+    "en": "I {get/earn/receive} one thousand baht every day.",
+    "fr": "{Je reçois/Je gagne/J'obtiens} mille bahts par jour.",
+    "word_ids": [24, 611, 224, 613, 160, 71]
   }
 }

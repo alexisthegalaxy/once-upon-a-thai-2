@@ -2443,7 +2443,7 @@
     "teaching_order": -1
   },
   "272": {
-    "split": "เว-ลา",
+    "split": "เว=ลา",
     "en": "time",
     "fr": "temps",
     "tones": "MM",
@@ -5456,6 +5456,60 @@
     "tones": "M",
     "pos": "",
     "th": "กัน",
+    "teaching_order": -1
+  },
+  "609": {
+    "split": "หัว-เราะ",
+    "en": "to laugh",
+    "fr": "rire, rigoler",
+    "tones": "RH",
+    "pos": "",
+    "th": "หัวเราะ",
+    "teaching_order": -1
+  },
+  "610": {
+    "split": "ม=หา-วิ=ท=ยา=ลัย",
+    "en": "university",
+    "fr": "université",
+    "tones": "HRHHMM",
+    "pos": "",
+    "th": "มหาวิทยาลัย",
+    "teaching_order": -1
+  },
+  "611": {
+    "split": "ได้-รับ",
+    "en": "receive",
+    "fr": "recevoir",
+    "tones": "FH",
+    "pos": "",
+    "th": "ได้รับ",
+    "teaching_order": -1
+  },
+  "612": {
+    "split": "ร้อง-ไห้",
+    "en": "to cry",
+    "fr": "pleurer",
+    "tones": "HF",
+    "pos": "",
+    "th": "ร้องไห้",
+    "teaching_order": -1
+  },
+  "613": {
+    "split": "พัน",
+    "en": "thousand",
+    "fr": "mille",
+    "tones": "M",
+    "pos": "",
+    "th": "พัน",
+    "teaching_order": -1
+  },
+  "614": {
+    "split": "เดียว-กัน",
+    "en": "same, identical",
+    "fr": "même, pareil",
+    "tones": "MM",
+    "pos": "",
+    "th": "เดียวกัน",
     "teaching_order": -1
   }
 }
