@@ -2775,5 +2775,35 @@
     "en": "I {get/earn/receive} one thousand baht every day.",
     "fr": "{Je reçois/Je gagne/J'obtiens} mille bahts par jour.",
     "word_ids": [24, 611, 224, 613, 160, 71]
+  },
+  "476": {
+    "th": "ฉัน_ฟัง_เพลง_ไทย_เมื่อ_ฉัน_นอน",
+    "en": "I listen to Thai music when I sleep.",
+    "fr": "J'écoute de la musique thaïe quand je dors.",
+    "word_ids": [24, 522, 446, 345, 380, 24, 210]
+  },
+  "477": {
+    "th": "ฉัน_ชอบ_อยู่_บ้าน_เมื่อ_ฝน_ตก",
+    "en": "I {like/love} to be (at )home when it rains.",
+    "fr": "J'aime bien être à la maison quand il pleut.",
+    "word_ids": [24, 238, 237, 147, 380, 477, 470]
+  },
+  "478": {
+    "th": "แฟน_ของ_ฉัน_เป็น_คน_อ-เม-ริ-กัน_ใจ-เย็น",
+    "en": "My boyfriend is a cool-headed American.",
+    "fr": "Mon petit ami est un Américain imperturbable.",
+    "word_ids": [187, 40, 24, 207, 343, 337, 115]
+  },
+  "479": {
+    "th": "ขอ-โทษ_ที่_โทร_มา_ดึก",
+    "en": "Sorry for calling late.",
+    "fr": "Désolé(e) d'appeler tard.",
+    "word_ids": [338, 45, 615, 202, 92]
+  },
+  "480": {
+    "th": "วัน-นี้_จะ_ต่าง_จาก_เมื่อ-วาน-นี้",
+    "en": "Today will be different from yesterday.",
+    "fr": "Aujourd'hui sera différent d'hier.",
+    "word_ids": [64, 42, 409, 43, 66]
   }
 }

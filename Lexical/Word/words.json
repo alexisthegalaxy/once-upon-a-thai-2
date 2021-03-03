@@ -1035,7 +1035,7 @@
     "teaching_order": -1
   },
   "115": {
-    "split": "ใจ_เย็น",
+    "split": "ใจ-เย็น",
     "en": "calm, cool-headed",
     "fr": "calme, imperturbable",
     "tones": "MM",
@@ -3014,7 +3014,7 @@
     "teaching_order": -1
   },
   "337": {
-    "split": "อเ-ม-ริ-กัน",
+    "split": "อ-เม-ริ-กัน",
     "en": "American",
     "fr": "Américain",
     "tones": "LMHM",
@@ -5510,6 +5510,15 @@
     "tones": "MM",
     "pos": "",
     "th": "เดียวกัน",
+    "teaching_order": -1
+  },
+  "615": {
+    "split": "โทร",
+    "en": "to call, to phone",
+    "fr": "appeler (au téléphone)",
+    "tones": "M",
+    "pos": "",
+    "th": "โทร",
     "teaching_order": -1
   }
 }
