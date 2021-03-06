@@ -2805,5 +2805,95 @@
     "en": "Today will be different from yesterday.",
     "fr": "Aujourd'hui sera différent d'hier.",
     "word_ids": [64, 42, 409, 43, 66]
+  },
+  "481": {
+    "th": "เพื่อน-บ้าน_ส่ง_เสียง_ดัง_ตอน-ดึก",
+    "en": "The neighbour{s are making/ makes/ s make/ is making} (loud )noises {late at night/in the night/late/at night}.",
+    "fr": "{Les voisins font/Le voisin fait/La voisine fait} du bruit {tard la nuit/tard/dans la nuit/pendant la nuit/la nuit}.",
+    "word_ids": [618, 449, 476, 578, 619]
+  },
+  "482": {
+    "th": "พระ-สงฆ์_ไม่_มี_ประ=ตู_แต่_มี-ความ-สุข",
+    "en": "Monks have no doors but are happy.",
+    "fr": "Les moines (n')ont pas de porte, mais (ils) {sont heureux/ont le bonheur/ont du bonheur}.",
+    "word_ids": [525, 39, 236, 581, 41, 118]
+  },
+  "483": {
+    "th": "ฉัน_ขอ_ให้_คุณ_มา_ที่-นี่",
+    "en": "I ask you to come here.",
+    "fr": "Je te demande de venir ici.",
+    "word_ids": [24, 483, 51, 28, 202, 37]
+  },
+  "484": {
+    "th": "นี่_ไม่-ใช่_คำ_ใน_ภา=ษา-ไทย",
+    "en": "This is not a word in Thai.",
+    "fr": "Ce n'est pas un mot en thaï.",
+    "word_ids": [509, 305, 529, 44, 325]
+  },
+  "485": {
+    "th": "ชาย_คน_นั้น_ถูก_ฆ่า",
+    "en": "That man was killed.",
+    "fr": "Cet homme a été tué.",
+    "word_ids": [534, 343, 593, 599, 496]
+  },
+  "486": {
+    "th": "เรา_จับ_มือ_กัน",
+    "en": "We hold hands.",
+    "fr": "On se tient la main.",
+    "word_ids": [29, 616, 617, 608]
+  },
+  "487": {
+    "th": "ฉัน_ทำ_เสื้อ_ตัว_นี้_เอง",
+    "en": "I made this shirt myself.",
+    "fr": "J'ai fait ce t-shirt moi-même.",
+    "word_ids": [24, 208, 166, 186, 31, 176]
+  },
+  "488": {
+    "th": "กาง-เกง-ขา-สั้น_รา=คา_เท่า-ไหร่",
+    "en": "How much {do the shorts/does the short} cost?/How much for the short(s)?",
+    "fr": "Combien {coûte/coûtent/pour} {le short/les shorts}?",
+    "word_ids": [334, 620, 61]
+  },
+  "489": {
+    "th": "ฉัน_กลัว_ลิง_นิด-หน่อย",
+    "en": "I'm a bit {afraid/scared} of monkeys.",
+    "fr": "J'ai un {petit }peu peur des singes.",
+    "word_ids": [24, 367, 137, 304]
+  },
+  "490": {
+    "th": "อา=กาศ_หนาว_คุณ_จะ_ป่วย",
+    "en": "The weather{'s/ is} cold, you will get sick./It's cold, you're going to get sick.",
+    "fr": "{Il fait froid/Le temps est froid}, tu vas {tomber malade/être malade/attraper froid}.",
+    "word_ids": [621, 387, 28, 42, 536]
+  },
+  "491": {
+    "th": "ผัก_ช=นิด_นี้_มี_ราก_ลึก",
+    "en": "This vegetable has deep roots.",
+    "fr": "Ce(s) légume(s) {ont/a} de(s) {racine(s) profonde(s)/profonde(s) racine(s)}.",
+    "word_ids": [346, 622, 31, 236, 623, 87]
+  },
+  "492": {
+    "th": "ฉัน_ยัง_เด็ก_เกิน-ไป_ที่_จะ_ตาย",
+    "en": "I'm too young to die.",
+    "fr": "Je suis trop jeune pour mourir.",
+    "word_ids": [24, 180, 149, 381, 45, 42, 371]
+  },
+  "493": {
+    "th": "ฉัน_รัก_เกม_นี้",
+    "en": "I love this game.",
+    "fr": "J'adore ce jeu.",
+    "word_ids": [24, 239, 624, 31]
+  },
+  "494": {
+    "th": "ทำ-ไม_เรา_ต้อง_มี_สอบ",
+    "en": "Why do we need to have exams?",
+    "fr": "Pourquoi {faut-il qu'on aie/faut-il que nous ayons/doit-on avoir/devons-nous avoir} des {examens/contrôles? ?",
+    "word_ids": [59, 29, 199, 236, 142]
+  },
+  "495": {
+    "th": "เธอ_เป็น_แฟน_ของ_คุณ_ไหม",
+    "en": "Is she your {girlfriend/lover}?",
+    "fr": "{C'est/Est-elle/Elle est} {ta petite amie/ta petite copine/ton amie/ta petite amie/ton amoureuse} ?",
+    "word_ids": [25, 207, 187, 40, 28, 10]
   }
 }

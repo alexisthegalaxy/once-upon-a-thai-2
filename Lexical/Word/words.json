@@ -5520,5 +5520,86 @@
     "pos": "",
     "th": "โทร",
     "teaching_order": -1
+  },
+  "616": {
+    "split": "จับ",
+    "en": "to catch, hold, seize",
+    "fr": "attraper, tenir",
+    "tones": "L",
+    "pos": "",
+    "th": "จับ",
+    "teaching_order": -1
+  },
+  "617": {
+    "split": "มือ",
+    "en": "hand",
+    "fr": "main",
+    "tones": "M",
+    "pos": "",
+    "th": "มือ",
+    "teaching_order": -1
+  },
+  "618": {
+    "split": "เพื่อน-บ้าน",
+    "en": "neighbour",
+    "fr": "voisin",
+    "tones": "FF",
+    "pos": "",
+    "th": "เพื่อนบ้าน",
+    "teaching_order": -1
+  },
+  "619": {
+    "split": "ตอน-ดึก",
+    "en": "late at night",
+    "fr": "tard la nuit",
+    "tones": "ML",
+    "pos": "",
+    "th": "ตอนดึก",
+    "teaching_order": -1
+  },
+  "620": {
+    "split": "รา=คา",
+    "en": "price, cost",
+    "fr": "prix, coût",
+    "tones": "MM",
+    "pos": "",
+    "th": "ราคา",
+    "teaching_order": -1
+  },
+  "621": {
+    "split": "อา=กาศ",
+    "en": "weather, climate",
+    "fr": "temps, météo",
+    "tones": "ML",
+    "pos": "",
+    "th": "อากาศ",
+    "teaching_order": -1
+  },
+  "622": {
+    "split": "ช=นิด",
+    "en": "kind, sort, type",
+    "fr": "type, variété, sorte",
+    "tones": "HH",
+    "pos": "",
+    "th": "ชนิด",
+    "teaching_order": -1
+  },
+  "623": {
+    "split": "ราก",
+    "en": "root, source",
+    "fr": "racine, source",
+    "tones": "F",
+    "pos": "",
+    "th": "ราก",
+    "teaching_order": -1
+  },
+  "624": {
+    "split": "เกม",
+    "en": "game",
+    "fr": "jeu",
+    "tones": "M",
+    "pos": "",
+    "th": "เกม",
+    "teaching_order": -1
   }
 }
