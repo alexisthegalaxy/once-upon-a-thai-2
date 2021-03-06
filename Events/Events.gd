@@ -1,21 +1,21 @@
 extends Node
 
-var initial_state = false
-var state_2 = initial_state
+var initial_state = true
+var state_2 = false
 var events = {
 	"has_had_a_quest": state_2,
 	"money_is_visible": state_2,
 	"has_possessed_a_letter": state_2,
 	"ploy_has_stopped_in_front_of_house": state_2,
 	"has_met_ploy": state_2,
-	"has_met_pet": initial_state,
+	"has_met_pet": state_2,
 	"has_learnt_four_first_words": initial_state,
 	"yaai_has_given_last_warning_before_forest": initial_state,
-	"yaai_explains_first_sentence": initial_state,
+	"yaai_taught_first_sentence": initial_state,
 	"has_gone_to_first_sentence": initial_state,
-	"has_finished_the_letter_world_the_first_time": initial_state,
+#	"has_finished_the_letter_world_the_first_time": initial_state,
 	"can_see_the_looking_for_letter_banner": initial_state,
-	"has_been_in_the_letter_world": initial_state,
+#	"has_been_in_the_letter_world": initial_state,
 	"ceremony_started": initial_state,
 	"yaai_went_to_forest_entrance": initial_state,
 	"talked_to_yaai_for_the_first_time": initial_state,

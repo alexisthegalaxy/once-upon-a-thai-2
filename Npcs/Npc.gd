@@ -203,6 +203,10 @@ func npc_turn_towards(target):
 		stop_walking()
 	update_animation()
 
+func set_direction(_direction):
+	direction = _direction
+	update_animation()
+
 func handle_talk_with_this_npc_quest():
 	for quest_id in Quests.quests:
 		if (

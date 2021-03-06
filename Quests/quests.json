@@ -25,17 +25,17 @@
       "Take this magical scroll.",
       "[ShowNoName][Name] takes the Magical Scroll.",
       "You can use it to learn all the letters, but let’s start easy.",
-      "For your first task, find the following letters: น, ท, ย, ค, ไ-.,"
+      "For your first task, find the following letters: น, ท, ย, ค and ไ-.,"
     ],
     "fr_start_dialog": [
       "C'est bien, [Name]!",
-      "So, you know nothing anymore of the Thai language, huh?",
-      "Don’t worry, I went through that as well.",
-      "Let’s relearn the alphabet first.",
-      "Take this magical scroll.",
-      "[ShowNoName][Name] takes the Magical Scroll.",
-      "You can use it to learn all the letters, but let’s start easy.",
-      "For your first task, find the following letters: น, ท, ย, ค, ไ-."
+      "Alors ça y est, tu ne te souviens plus du tout du thaï ?",
+      "Ne t'en fais pas, je suis aussi passée par là.",
+      "Recommençons depuis le début en apprenant l'alphabet.",
+      "Prend ce parchemin magique.",
+      "[ShowNoName][Name] prent le parchemin magique.",
+      "Tu peux l'utiliser pour apprendre toutes les lettres en thaï - mais commençons facile :",
+      "Pour ta première tâche, trouve les lettres suivantes : น, ท, ย, ค et ไ-."
     ],
     "en_finish_dialog": [
       "Well done [Name], that's all the letters."

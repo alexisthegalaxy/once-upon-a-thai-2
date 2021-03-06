@@ -258,7 +258,7 @@ func receive_key_value(key_value):
 
 func reset_key_highlights():
 	for key in all_keys:
-		key.modulate = Color(1, 1, 1, 1)
+		key.update_upon_shift()
 
 func highlight_shift_keys():
 	$Lshift.modulate = HIGHLIGHT_COLOR

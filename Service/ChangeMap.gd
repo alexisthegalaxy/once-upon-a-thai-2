@@ -65,8 +65,6 @@ func set_sources_after_map_change():
 #func update_letters_to_look_for_if_necesssary(_to_map_name):
 #	if not Events.events["can_see_the_looking_for_letter_banner"]:
 #		return
-#	if not Events.events["has_been_in_the_letter_world"]:
-#		return
 #	Game.player.arrow.arrow_letter_update()
 #	Game.looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
 #	var letters_we_look_for_here = []

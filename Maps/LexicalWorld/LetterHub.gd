@@ -13,13 +13,6 @@ func show_first_dialog():
 	$YSort/Yaai.post_dialog_event = ["show_looking_for_letters", null]
 	$YSort/Yaai.interact()
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	if not Events.events["has_been_in_the_letter_world"]:
-		Events.events["has_been_in_the_letter_world"] = true
-		fading_in = true
-		$CanvasLayer/BlackFadeIn.show()
-	
 func _process(delta):
 	if fading_in:
 		alpha += delta / 4

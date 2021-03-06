@@ -97,26 +97,23 @@ _you_can_always_go_back_to_your_memory_palace,You can always go back to your Mem
 _for_now_follow_me_into_the_forest,"For now, follow me into the forest.","Pour l'instant, suis-moi dans la forêt."
 _i_should_talk_to_my_grandmother_first,I should talk to my grandmother first...,Je devrais d'abord parler à ma grand-mère...
 _i_shouldnt_go_there_now,I shouldn't go there now...,Je ne devrais pas aller ici maintenant...
+_you_shouldnt_go_there_before_you_know_letters,"[Name], you shouldn't go there before you learn the letters น, ท, ย, ค and ไ-, it would be too dangerous.","[Name], ce serait trop dangereux d'aller par là avant de connaître les lettres น, ท, ย, ค et ไ-. "
+_click_on_the_letter_tab_to_use_the_letter_scroll,Click on the letter tab on the right to use the Letter scroll.,Clique sur l'onglet Lettres sur la droite pour utiliser le parchemin des lettres.
 _yaai_2_a,"Here's the place for your shamanic initiation, and now is the time.",Nous sommes arrivés - commençons ton initiation shamanique.
-_lets_start_your_shaman_initiation,Let's start your shamanic initiation.,Commençons ton initiation.
-_once_you_drink_this,"Once you drink this potion, you will gain power over spirits and spells,","Tu vois cette potion ? Une fois que tu l'auras bu, tu gagneras la capacité de commander aux sorts et mots."
-_but_theres_a_cost,But there is a cost:,Mais il faudra payer le prix :
 _yaai_2_b,you will forget everything you know of the Thai language and you’ll have to learn Thai again from scratch.,"Tu oublieras tout ce que tu sais du thaï, et il te faudra réapprendre le thaï depuis le début."
 _yaai_2_c,"And in exchange, you will gain power over the spirit world.","En échange, tu obtiendras le pouvoir de commander le monde spirituel."
 _yaai_2_d,Let's start!,C'est parti !
-_name_drink_potion,[ShowNoName][Name] drinks Yaai's potion.,[ShowNoName][Name] boit la potion de Yaai.
-_name_you_see_this_sentence,"[Name], you see the sentence written here?","[Name], tu vois cette phrase écrite ici ?"
-_this_is_your_first_since_forgotten_thai,This will be your first sentence since you've forgotten Thai!,C'est ta première phrase depuis que tu réapprends le thaï !
-_this_means_thai_people_are_good,"This sentence means \""Thai people are good people\"" - don't ask me why.","Cette phrase signifie ""Les Thaïs sont de bonnes personnes"" - ne me demande pas pourquoi."
-_sentences_like_this_help_you_understand_the_meaning_of_words,"Sentences like this will help you understand the meaning of words, you should write it in your notebook.","Ce genre de phrases t'aide à comprendre le sens des mots, alors tu devrais la noter dans ton carnet."
+_name_you_see_this_sentence,"Congratulations [Name], now that you've learned these letters, we can start.","[Name], félicitations ! Maintenant que tu connais ces lettres, entrons dans le vif du sujet."
+_this_is_your_first_since_forgotten_thai,"Deeper in the forest, you'll find Spells, for the first time.","Plus profond dans la forêt tu verras, pour la première fois, des mots."
+_this_means_thai_people_are_good,"Your task will be to learn them, and tame them.",Ta tâche sera des les apprivoiser.
+_sentences_like_this_help_you_understand_the_meaning_of_words,"So that you can understand them, I'll teach you your first sentence in Thai.","Pour que tu puisses les comprendre, je vais t'enseigner ta première phrase en thaï."
+_here_we_go,Here we go!,C'est parti !
 _im_so_happy_for_pet_initiation_went_well,"I’m so happy for Pet, his shamanic initiation went well.","Je suis tellement contente pour Pet, son initiation chamanique s'est bien passée."
-_hes_in_chaiyaphum_tell_him_to_drop_by,"He’s in Chaiyaphum now, tell him to drop by if you meet him!","Il devrait être à Chaiyaphum maintenant, dis-lui de passer à la maison si tu le vois !"
+_hes_in_chaiyaphum_tell_him_to_drop_by,"He’s just left to go to Chaiyaphum, tell him to drop by if you meet him!","Il vient de partir à Chaiyaphum, dis-lui de passer à la maison si tu le vois !"
 _thats_good_name_very_good,"That's good, [Name], very good!","C'est bien, [Name], c'est très bien !"
 _now_go_to_chaiyaphum_see_anchalee,"Now, go to Chaiyaphum, I asked the grandmother of your friend Ploy to train you.","Maintenant, va à Chaiyaphum, j'ai demandé à la grand-mère de ton amie Ploy de t'entraîner."
 _i_have_important_issues_to_solve_in_the_spirit_world,I have very important issues to solve in the spirit world.,J'ai un problème important à régler dans le monde spirituel.
 _if_everything_goes_well_ill_see_you_soon,"If everything goes well, I'll be seeing you soon, [Name].","Si tout se passe bien, on se reverra bientôt, [Name]."
-_are_you_looking_for_pet,"Are you looking for Pet? He's just left, he’s doing his shamanic initiation with his dad.","Tu viens voir Pet ? Désolée, il vient de partir, il est en train de passer son initiation chamanique avec son père."
-_come_again_later_and_train_together,"Come again later, you could be training together!","Reviens tout-à-l'heure, vous pourriez vous entraîner ensemble quand tu auras finis la tienne !"
 _sorry_shop_closed_today,"Sorry, the shop is closed today, come again tomorrow!","Désolé, le magasin est fermé aujourd'hui, repasse demain !"
 _you_made_first_step_in_lexical_world,"[Name], you made your first step into the Lexical World, this shall be your Memory Palace.","[Name], tu viens de faire ton premier pas dans le Monde Lexical, il sera ton palais de la mémoire."
 _this_places_will_make_it_easier_for_you_to_learn_the_letters,This place will make it easier for you to learn the letters.,Cet endroit te facilitera l'apprentissage de l'alphabet thaï.

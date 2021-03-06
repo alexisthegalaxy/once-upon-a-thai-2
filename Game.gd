@@ -252,19 +252,19 @@ func learn_letter(letter):
 	Game.main_ui.update_main_ui_letters_display()
 	if looking_for_letter__node:
 		looking_for_letter__node.update_label_text()
-	if not Events.events["has_finished_the_letter_world_the_first_time"] and knows_the_initial_letters():
-		Events.events["has_finished_the_letter_world_the_first_time"] = true
-		Game.main_ui.update_main_ui_go_letter_world_display()
-		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-		var dialog = [
-			tr("_name_exclamation_mark"),
-			tr("_name_do_you_hear_me"),
-			tr("_you_have_found_all_the_needed_letters_for_now"),
-			tr("_to_leave_this_world_press_f_key"),
-		]
-		Game.current_dialog.init_dialog(dialog, null, null, false, "Yaai")
-		player.stop_walking()
-		Game.current_scene.add_child(Game.current_dialog)
+#	if not Events.events["has_finished_the_letter_world_the_first_time"] and knows_the_initial_letters():
+#		Events.events["has_finished_the_letter_world_the_first_time"] = true
+#		Game.main_ui.update_main_ui_go_letter_world_display()
+#		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+#		var dialog = [
+#			tr("_name_exclamation_mark"),
+#			tr("_name_do_you_hear_me"),
+#			tr("_you_have_found_all_the_needed_letters_for_now"),
+#			tr("_to_leave_this_world_press_f_key"),
+#		]
+#		Game.current_dialog.init_dialog(dialog, null, null, false, "Yaai")
+#		player.stop_walking()
+#		Game.current_scene.add_child(Game.current_dialog)
 
 func add_random_letter_to_letters_to_look_for():
 	var random_letter = Game.letters[str(randi() % Game.letters.size())]

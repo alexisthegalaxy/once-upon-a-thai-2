@@ -5,11 +5,28 @@ var shift_value = ""
 var keyboard = null
 var primary_letter_quantity = 0
 var shift_letter_quantity = 0
+var normal_color = Color(1, 1, 1, 1)
+var disabled_color = Color(1, 1, 1, 0.6)
+var invisible_color = Color(1, 1, 1, 0.3)
+var primary_letter_is_known = false
+var shift_letter_is_known = false
+var restrict_to_known_letters = true
+
+func is_this_letter_known():
+	for letter_id in Game.known_letters:
+		var known_letter_thai = Game.letters[str(letter_id)].th
+		if known_letter_thai in [primary_value, "-" + primary_value]:
+			primary_letter_is_known = true
+		if known_letter_thai in [shift_value, "-" + shift_value]:
+			shift_letter_is_known = true
+	if not primary_letter_is_known:
+		modulate = invisible_color
 
 func init_keyboard_key(_primary_value, _shift_value, _keyboard):
 	primary_value = _primary_value
 	shift_value = _shift_value
 	keyboard = _keyboard
+	is_this_letter_known()
 	if $Label:
 		$Label.text = primary_value
 		if keyboard.restrict_to_collected_letters:
@@ -58,24 +75,30 @@ func update_upon_shift():
 		return
 	if keyboard.shift:
 		$Label.text = shift_value
+		if restrict_to_known_letters:
+			if not shift_letter_is_known:
+				modulate = invisible_color
 		if keyboard.restrict_to_collected_letters:
 			if shift_letter_quantity:
 				$Notification.show()
-				modulate = Color(1, 1, 1, 1)
+				modulate = normal_color
 				$Notification/Quantity.text = str(shift_letter_quantity)
 			else:
 				$Notification.hide()
-				modulate = Color(1, 1, 1, 0.6)
+				modulate = disabled_color
 	else:
+		if restrict_to_known_letters:
+			if not primary_letter_is_known:
+				modulate = invisible_color
 		$Label.text = primary_value
 		if keyboard.restrict_to_collected_letters:
 			if primary_letter_quantity:
 				$Notification.show()
-				modulate = Color(1, 1, 1, 1)
+				modulate = normal_color
 				$Notification/Quantity.text = str(primary_letter_quantity)
 			else:
 				$Notification.hide()
-				modulate = Color(1, 1, 1, 0.6)
+				modulate = disabled_color
 
 func update_after_char_is_backspaced(character):
 	if primary_value in [character, "-" + character]:
@@ -84,12 +107,3 @@ func update_after_char_is_backspaced(character):
 	elif shift_value in [character, "-" + character]:
 		shift_letter_quantity += 1
 		update_upon_shift()
-	
-
-#func _on_Button_button_down():
-#	if primary_value == "shift":
-#		keyboard.shift_down()
-#
-#func _on_Button_button_up():
-#	if primary_value == "shift":
-#		keyboard.shift_up()

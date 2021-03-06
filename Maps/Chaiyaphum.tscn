@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://ImageScreen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/CoolOffice.tscn" type="PackedScene" id=2]
@@ -37,6 +37,12 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 22.738, 15.7798 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 49.2091, 10.0049 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 5.78975, 56.9915 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 13.7964, 40.9263 )
@@ -1810,7 +1816,7 @@ position = Vector2( 979.164, 656.723 )
 position = Vector2( 829.648, 662.918 )
 
 [node name="Tree179" parent="YSort/Trees" instance=ExtResource( 4 )]
-position = Vector2( 343.687, 565.213 )
+position = Vector2( 352.388, 546.36 )
 
 [node name="Tree178" parent="YSort/Trees" instance=ExtResource( 4 )]
 position = Vector2( 668.682, 605.399 )
@@ -4635,7 +4641,7 @@ position = Vector2( 110.612, 875.798 )
 
 [node name="Tree772" parent="YSort/Trees" instance=ExtResource( 13 )]
 modulate = Color( 0.992157, 0.929412, 0.0156863, 1 )
-position = Vector2( 204.956, 540.356 )
+position = Vector2( 208.271, 539.113 )
 
 [node name="Tree798" parent="YSort/Trees" instance=ExtResource( 13 )]
 modulate = Color( 0.992157, 0.929412, 0.0156863, 1 )
@@ -6000,12 +6006,12 @@ position = Vector2( 2218.55, -159.948 )
 position = Vector2( 1235.62, 221.922 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 595.107, 491.172 )
+position = Vector2( 349.562, 124.999 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
 [node name="Mom" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 421.448, 646.099 )
+position = Vector2( 422.139, 645.408 )
 dialog = [ "_you_ll_be_brave_alright", "_granny_is_best_nothing_to_fear", "_dont_forget_i_love_you" ]
 sprite_path = "res://Npcs/sprites/mom.png"
 display_name = "_mom"
@@ -6019,12 +6025,12 @@ display_name = "_dad"
 
 [node name="PetsMom" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 375.882, 264.327 )
-dialog = [ "_are_you_looking_for_pet", "_come_again_later_and_train_together" ]
+dialog = [ "_im_so_happy_for_pet_initiation_went_well", "_hes_in_chaiyaphum_tell_him_to_drop_by" ]
 sprite_path = "res://Npcs/sprites/pets_mom.png"
 display_name = "Pet's mom"
 
 [node name="Pet" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 347.244, 312.807 )
+position = Vector2( 376.731, 310.663 )
 dialog = [ "Hey [Name]!" ]
 sprite_path = "res://Npcs/sprites/pet.png"
 direction = "right"
@@ -6036,13 +6042,6 @@ dialog = [ "_alright_name_lets_go" ]
 direction = "up"
 display_name = "Yaai"
 post_dialog_event = [ "yaai_walks_to", [ [ Vector2( 460, 500 ), Vector2( 480, 500 ) ] ] ]
-
-[node name="Yaai2" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 631.056, 442.214 )
-dialog = [ "_alright_name_lets_go" ]
-direction = "up"
-display_name = "Yaai"
-post_dialog_event = [ "starts_ceremony_effect", [  ] ]
 
 [node name="PluralGirl" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 1309.77, 232.653 )
@@ -6106,7 +6105,7 @@ sprite_path = "res://Npcs/sprites/monk.png"
 display_name = "Ajahn Jagaro"
 
 [node name="Sentence - Thai people are good people" parent="YSort" instance=ExtResource( 38 )]
-position = Vector2( 198.555, 621.243 )
+position = Vector2( -119.9, 346.839 )
 is_translated = true
 style = "stone"
 
@@ -6257,11 +6256,23 @@ to_map_name = "res://Maps/SomHouse.tscn"
 name_for_location = "_soms_house"
 sound_name = "door"
 
-[node name="Area2D5" type="Area2D" parent="."]
+[node name="First blocker" type="Area2D" parent="."]
 
-[node name="First blocker" type="CollisionShape2D" parent="Area2D5"]
+[node name="First blocker" type="CollisionShape2D" parent="First blocker"]
 position = Vector2( 548.626, 421.072 )
 shape = SubResource( 1 )
+
+[node name="Blocker2" type="Area2D" parent="."]
+
+[node name="Blocker2" type="CollisionShape2D" parent="Blocker2"]
+position = Vector2( 235.238, 602.599 )
+shape = SubResource( 7 )
+
+[node name="Blocker3" type="Area2D" parent="."]
+
+[node name="Blocker3" type="CollisionShape2D" parent="Blocker3"]
+position = Vector2( 341.311, 526.151 )
+shape = SubResource( 8 )
 
 [node name="Area2D2" type="Area2D" parent="."]
 
@@ -6269,19 +6280,12 @@ shape = SubResource( 1 )
 position = Vector2( 513.789, 513.377 )
 shape = SubResource( 2 )
 
-[node name="YaaiGivesWarningBeforeForest" type="Area2D" parent="."]
+[node name="YaaiCheckIfWeKnowAllWordsAndThenDisappears" type="Area2D" parent="."]
 position = Vector2( -287.205, 429.387 )
 
-[node name="YaaiGivesWarningBeforeForest" type="CollisionShape2D" parent="YaaiGivesWarningBeforeForest"]
-position = Vector2( 482.477, 269.205 )
+[node name="YaaiCheckIfWeKnowAllWordsAndThenDisappears" type="CollisionShape2D" parent="YaaiCheckIfWeKnowAllWordsAndThenDisappears"]
+position = Vector2( 553.356, 118.794 )
 shape = SubResource( 3 )
-
-[node name="PetWillWalk" type="Area2D" parent="."]
-position = Vector2( -287.205, 429.387 )
-
-[node name="PetWillWalk" type="CollisionShape2D" parent="PetWillWalk"]
-position = Vector2( 133.707, -225.927 )
-shape = SubResource( 4 )
 
 [node name="PloyWillCome" type="Area2D" parent="."]
 position = Vector2( -287.205, 429.387 )
@@ -6307,11 +6311,8 @@ shape = SubResource( 4 )
 [node name="Area2D3" type="Area2D" parent="."]
 
 [node name="Yaai talks about the rock and teaches the first sentence" type="CollisionShape2D" parent="Area2D3"]
-position = Vector2( 200.093, 638.713 )
+position = Vector2( -191.301, 344.119 )
 shape = SubResource( 2 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Area2D4" type="Area2D" parent="."]
 
@@ -6382,10 +6383,11 @@ position = Vector2( 1066.2, 576.422 )
 
 [node name="purify_mohinkhao" parent="Locations" instance=ExtResource( 15 )]
 position = Vector2( 575.456, -633.743 )
-[connection signal="body_entered" from="Area2D5" to="." method="_on_Area2D5_body_entered"]
+[connection signal="body_entered" from="First blocker" to="." method="_on_First_blocker_body_entered"]
+[connection signal="body_entered" from="Blocker2" to="." method="_on_Blocker2_body_entered"]
+[connection signal="body_entered" from="Blocker3" to="." method="_on_Blocker3_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
-[connection signal="body_entered" from="YaaiGivesWarningBeforeForest" to="." method="_on_Area2D6_body_entered"]
-[connection signal="body_entered" from="PetWillWalk" to="." method="_on_PetWillWalk_body_entered"]
+[connection signal="body_entered" from="YaaiCheckIfWeKnowAllWordsAndThenDisappears" to="." method="_on_Area2D6_body_entered"]
 [connection signal="body_entered" from="PloyWillCome" to="." method="_on_PloyWillCome_body_entered"]
 [connection signal="body_entered" from="PloyInFrontOfHouse" to="." method="_on_PloyInFrontOfHouse_body_entered"]
 [connection signal="body_entered" from="TalkToPloy" to="." method="_on_PloyWillCome_body_entered"]
