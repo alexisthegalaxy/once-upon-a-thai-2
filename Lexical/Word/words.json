@@ -2800,7 +2800,8 @@
   },
   "313": {
     "split": "ก-รุ-ณา",
-    "en": "please, kindly...",
+    "en": "please, kindly... / compassion",
+    "fr": "s'il vous plaît, prière de... / compassion",
     "tones": "LHM",
     "pos": "None",
     "th": "กรุณา",
@@ -4037,7 +4038,7 @@
     "teaching_order": -1
   },
   "451": {
-    "split": "อาบ",
+    "split": "อาบ-น้ำ",
     "en": "to bathe, immerse, take (a shower)",
     "fr": "se baigner, prendre (une douche)",
     "tones": "L",
@@ -5600,6 +5601,15 @@
     "tones": "M",
     "pos": "",
     "th": "เกม",
+    "teaching_order": -1
+  },
+  "625": {
+    "split": "ขิง",
+    "en": "ginger",
+    "fr": "gingembre",
+    "tones": "R",
+    "pos": "",
+    "th": "ขิง",
     "teaching_order": -1
   }
 }

@@ -1535,16 +1535,16 @@
     "word_ids": [24, 199, 449, 450]
   },
   "268": {
-    "th": "ฉัน_คิด_ว่า_เขา_ไม่_เคย_อาบ_น้ำ",
+    "th": "ฉัน_คิด_ว่า_เขา_ไม่_เคย_อาบ-น้ำ",
     "en": "I think he's never taken a shower...",
     "fr": "Je pense qu'il n'a jamais pris de douche...",
-    "word_ids": [24, 197, 184, 26, 39, 177, 451, 156]
+    "word_ids": [24, 197, 184, 26, 39, 177, 451]
   },
   "269": {
-    "th": "ฉัน_ชอบ_อาบ_น้ำ_เย็น",
+    "th": "ฉัน_ชอบ_อาบ-น้ำ_เย็น",
     "en": "I like to take cold showers.",
     "fr": "J'aime bien prendre des douches froides.",
-    "word_ids": [24, 238, 451, 156, 452]
+    "word_ids": [24, 238, 451, 452]
   },
   "270": {
     "th": "มัน_เจ๋ง_มาก",
@@ -2895,5 +2895,35 @@
     "en": "Is she your {girlfriend/lover}?",
     "fr": "{C'est/Est-elle/Elle est} {ta petite amie/ta petite copine/ton amie/ta petite amie/ton amoureuse} ?",
     "word_ids": [25, 207, 187, 40, 28, 10]
+  },
+  "496": {
+    "th": "ฉัน_ได้-รับ_ข้อ-เสนอ",
+    "en": "I got a proposal.",
+    "fr": "J'ai reçu une offre.",
+    "word_ids": [24, 611, 499]
+  },
+  "497": {
+    "th": "ฉัน_ทำ_น้ำ_หก_ใส่_ที=วี",
+    "en": "I spilled water on the TV.",
+    "fr": "J'ai renversé de l'eau sur la télé.",
+    "word_ids": [24, 208, 156, 229, 570, 249]
+  },
+  "498": {
+    "th": "ฉัน_ใส่_ดอก-ไม้_ลง_ใน_น้ำ_เมื่อ_ฉัน_อาบ-น้ำ",
+    "en": "I put flower in the water when I take a bath.",
+    "fr": "Je mets des fleurs dans l'eau quand je prends un bain.",
+    "word_ids": [24, 570, 267, 506, 44, 156, 380, 24, 451]
+  },
+  "499": {
+    "th": "ไม่-เป็น-ไร_ฉัน_ไม่_รู้",
+    "en": "Nevermind, I don't know.",
+    "fr": "C'est pas grave, je sais pas.",
+    "word_ids": [8, 24, 39, 370]
+  },
+  "500": {
+    "th": "ราก_ขิง_นี้_เป็น_ยัง=ไง",
+    "en": "How is this ginger root?",
+    "fr": "Comment est cette racine de gingembre ?",
+    "word_ids": [623, 625, 31, 207, 60]
   }
 }
