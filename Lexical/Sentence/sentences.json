@@ -2925,5 +2925,35 @@
     "en": "How is this ginger root?",
     "fr": "Comment est cette racine de gingembre ?",
     "word_ids": [623, 625, 31, 207, 60]
+  },
+  "501": {
+    "th": "มัน_เป็น_อย่าง-ไร-บ้าง",
+    "en": "{How/What} is it?",
+    "fr": "C'est {comment/quoi} ?",
+    "word_ids": [27, 207, 626]
+  },
+  "502": {
+    "th": "รู้-สึก_อย่าง-ไร-บ้าง",
+    "en": "How does it feel?|How do you feel?|What do you feel?",
+    "fr": "Tu (res)sens quoi ?|Qu'est-ce que tu (res)sens ?|Tu te sens comment?",
+    "word_ids": [442, 626]
+  },
+  "503": {
+    "th": "ครู_เขา_ว่า_อย่าง-ไร-บ้าง",
+    "en": "What did the teacher say?",
+    "fr": "Qu'a dit {le professeur/le prof/la prof} ?|{Le prof/La prof/Le professeur} a dit quoi ?",
+    "word_ids": [150, 26, 184, 626]
+  },
+  "504": {
+    "th": "หมอ_บอก_ว่า_อย่าง-ไร-บ้าง",
+    "en": "What did the doctor say?",
+    "fr": "Qu'a dit le {docteur/médecin} ?|Le {docteur/médecin} a dit quoi ?",
+    "word_ids": [151, 200, 184, 626]
+  },
+  "505": {
+    "th": "คุณ_คิด_เห็น_อย่าง-ไร-บ้าง",
+    "en": "What do you think?",
+    "fr": "Tu (en )penses {/à }quoi ?",
+    "word_ids": [28, 197, 194, 626]
   }
 }

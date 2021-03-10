@@ -5611,5 +5611,14 @@
     "pos": "",
     "th": "ขิง",
     "teaching_order": -1
+  },
+  "626": {
+    "split": "อย่าง-ไร-บ้าง",
+    "en": "how / what",
+    "fr": "comment / quoi",
+    "tones": "LMF",
+    "pos": "",
+    "th": "อย่างไรบ้าง",
+    "teaching_order": -1
   }
 }
