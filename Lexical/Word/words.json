@@ -3867,7 +3867,7 @@
     "teaching_order": -1
   },
   "432": {
-    "split": "เกรง_ใจ",
+    "split": "เกรง-ใจ",
     "en": "to be afraid of offending (someone)",
     "fr": "avoir peur d'offenser",
     "tones": "MM",
@@ -5619,6 +5619,15 @@
     "tones": "LMF",
     "pos": "",
     "th": "อย่างไรบ้าง",
+    "teaching_order": -1
+  },
+  "627": {
+    "split": "ข-โมย",
+    "en": "thief / to steal",
+    "fr": "voleur / voler",
+    "tones": "LM",
+    "pos": "",
+    "th": "ขโมย",
     "teaching_order": -1
   }
 }

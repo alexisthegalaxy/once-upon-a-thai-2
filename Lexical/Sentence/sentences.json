@@ -2955,5 +2955,35 @@
     "en": "What do you think?",
     "fr": "Tu (en )penses {/à }quoi ?",
     "word_ids": [28, 197, 194, 626]
+  },
+  "506": {
+    "th": "ฉัน_ไม่_เชื่อ_ว่า_คุณ_จำ_ไม่_ได้",
+    "en": "I can't believe you don't remember.",
+    "fr": "Je {ne peux pas croire/n'y crois pas/n'arrive pas à croire/ne crois pas/n'y crois pas} que tu ne {te/t'en} {rappelles/souviennes/souviens} pas.",
+    "word_ids": [24, 39, 218, 184, 28, 213, 39, 209]
+  },
+  "507": {
+    "th": "พวก-เขา_คง-จะ_อยาก_ดื่ม_ไวน์_หนึ่ง_แก้ว",
+    "en": "They {must have/maybe/would have} wanted (to drink ){a/glass} glass of wine.",
+    "fr": "Ils voulaient peut-être (boire )un verre de vin.",
+    "word_ids": [36, 302, 241, 195, 587, 224, 18]
+  },
+  "508": {
+    "th": "ฉัน_รู้_ว่า_มัน_เป็น_เกม_ไม่_ต้อง_เกรง-ใจ",
+    "en": "I know that it's a game, don't be afraid to offend( me).",
+    "fr": "Je sais que c'est un jeu, n'aie pas peur {de m'offenser/d'offenser}.",
+    "word_ids": [24, 370, 184, 27, 207, 624, 39, 199, 432]
+  },
+  "509": {
+    "th": "นก_สี-ดำ_ข-โมย_อา=หาร_ของ_ฉัน_ใน-ข=ณะ-ที่_ฉัน_กำ=ลัง_กิน_มัน",
+    "en": "A black bird stole my food while I was eating it.",
+    "fr": "Un oiseau noir a volé ma nourriture pendant que je la mangeais.",
+    "word_ids": [139, 109, 627, 251, 40, 24, 598, 24, 306, 193, 27]
+  },
+  "510": {
+    "th": "เมื่อ_ร้อย_ปี_ก่อน_มี_คน_อยู่_ที่_นี่",
+    "en": "There were people here a hundred years ago.",
+    "fr": "Il y avait des gens ici il y a cent ans.",
+    "word_ids": [380, 595, 168, 79, 236, 343, 237, 45, 509]
   }
 }
