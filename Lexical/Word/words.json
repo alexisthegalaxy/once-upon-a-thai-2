@@ -5629,5 +5629,32 @@
     "pos": "",
     "th": "ขโมย",
     "teaching_order": -1
+  },
+  "628": {
+    "split": "สำ=คัญ",
+    "en": "important",
+    "fr": "important",
+    "tones": "RM",
+    "pos": "",
+    "th": "สำคัญ",
+    "teaching_order": -1
+  },
+  "629": {
+    "split": "ห้อง",
+    "en": "room",
+    "fr": "pièce, chambre, salle",
+    "tones": "F",
+    "pos": "",
+    "th": "ห้อง",
+    "teaching_order": -1
+  },
+  "630": {
+    "split": "กลิ่น",
+    "en": "smell, scent, odor",
+    "fr": "odeur",
+    "tones": "L",
+    "pos": "",
+    "th": "กลิ่น",
+    "teaching_order": -1
   }
 }

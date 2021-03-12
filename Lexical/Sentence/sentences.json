@@ -2985,5 +2985,35 @@
     "en": "There were people here a hundred years ago.",
     "fr": "Il y avait des gens ici il y a cent ans.",
     "word_ids": [380, 595, 168, 79, 236, 343, 237, 45, 509]
+  },
+  "511": {
+    "th": "ทุก-คน_ชอบ_ฟัง_เธอ",
+    "en": "Everybody likes to listen to her.",
+    "fr": "{Tout le monde/Tous} {aime/aiment} (bien )l'écouter.",
+    "word_ids": [35, 238, 522, 25]
+  },
+  "512": {
+    "th": "ห้อง_ของ_คุณ_มี_กลิ่น_ของ_ปลา",
+    "en": "Your room smells {like/of} {/a }fish.",
+    "fr": "Ta {chambre/pièce} {sent le/a une odeur de} poisson.",
+    "word_ids": [629, 40, 28, 236, 630, 40, 138]
+  },
+  "513": {
+    "th": "ฉัน_ไม่-ใช่_ความ_คิด_ของ_ฉัน",
+    "en": "I am not my thoughts.",
+    "fr": "Je ne suis pas mes pensées.",
+    "word_ids": [24, 305, 441, 197, 40, 24]
+  },
+  "514": {
+    "th": "สิ่ง_ที่_สำ=คัญ_ที่-สุด_คือ_อา=หาร",
+    "en": "The most important thing is food.",
+    "fr": "Le plus important c'est la nourriture.",
+    "word_ids": [519, 45, 628, 528, 206, 251]
+  },
+  "515": {
+    "th": "ฉัน_อยาก_เข้า_ม=หา-วิ=ท=ยา=ลัย_เหมือน_พี่-ชาย",
+    "en": "I want to {go to/enter/enter into/get into} {/a }university like my {older/big} brother.",
+    "fr": "Je veux {aller/entrer} {à l'/dans une }université comme mon (grand )frère.",
+    "word_ids": [24, 241, 418, 610, 50, 533]
   }
 }
