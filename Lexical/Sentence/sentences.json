@@ -146,9 +146,9 @@
     "speaker_gender": "M"
   },
   "23": {
-    "th": "ผม_อา-ยุ_สิบ_ปี",
+    "th": "ผม_อา=ยุ_สิบ_ขวบ",
     "en": "I am ten years old.",
-    "word_ids": [23, 263, 233, 168],
+    "word_ids": [23, 263, 233, 530],
     "speaker_gender": "M"
   },
   "24": {
@@ -2062,7 +2062,7 @@
     "word_ids": [64, 207, 532, 40, 24]
   },
   "353": {
-    "th": "ฉัน_อา-ยุ_หก_ขวบ_และ_ฉัน_พูด_ภา=ษา-ไทย_ดี_กว่า_คุณ",
+    "th": "ฉัน_อา=ยุ_หก_ขวบ_และ_ฉัน_พูด_ภา=ษา-ไทย_ดี_กว่า_คุณ",
     "en": "I'm six years old and I speak Thai better than you.",
     "fr": "J'ai six ans et je parle Thaï mieux que toi.",
     "word_ids": [24, 263, 229, 530, 384, 24, 234, 325, 82, 182, 28]
@@ -3015,5 +3015,35 @@
     "en": "I want to {go to/enter/enter into/get into} {/a }university like my {older/big} brother.",
     "fr": "Je veux {aller/entrer} {à l'/dans une }université comme mon (grand )frère.",
     "word_ids": [24, 241, 418, 610, 50, 533]
+  },
+  "516": {
+    "th": "ฉัน_อยาก_จะ_ปาร์=ตี้_คืน-นี้_แต่_ฉัน_ต้อง_เรียน",
+    "en": "{I want to party tonight/Tonight I want to party} but I have to study.",
+    "fr": "{Je veux faire la fête ce soir/Ce soir je veux faire la fête} mais je dois étudier.",
+    "word_ids": [24, 241, 42, 631, 68, 41, 24, 199, 198]
+  },
+  "517": {
+    "th": "สัตว์_ที่_ฉัน_ชอบ_คือ_ผี-เสื้อ_เมื่อ_ฉัน_อา=ยุ_สิบ_ขวบ",
+    "en": "{The animal I liked/My favo(u)rite animal} {was the/were} butterfl{y/ies} when I was ten years old.",
+    "fr": "{Mon animal préféré/L'animal que j'aimais} (c')était le{/s} papillon{/s} quand j'avais dix ans.",
+    "word_ids": [481, 45, 24, 238, 206, 141, 380, 24, 263, 233, 530]
+  },
+  "518": {
+    "th": "ทำ_ให้_มัน_หาย_ไป",
+    "en": "Make it go way.",
+    "fr": "Fais {le/la} partir.",
+    "word_ids": [208, 51, 27, 553, 201]
+  },
+  "519": {
+    "th": "อย่า_ลง_มา",
+    "en": "Don't come down.",
+    "fr": "(Ne )descends pas.|(Ne )viens pas en-bas.",
+    "word_ids": [175, 506, 202]
+  },
+  "520": {
+    "th": "วาง_มัน_ลง_ใต้_ต้น-ไม้",
+    "en": "Put it down under the tree.",
+    "fr": "(Dé)pose-le sous {l'/un /les /des }arbre{/s}.",
+    "word_ids": [414, 27, 506, 47, 266]
   }
 }
