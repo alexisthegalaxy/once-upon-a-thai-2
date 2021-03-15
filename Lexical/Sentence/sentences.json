@@ -3045,5 +3045,65 @@
     "en": "Put it down under the tree.",
     "fr": "(Dé)pose-le sous {l'/un /les /des }arbre{/s}.",
     "word_ids": [414, 27, 506, 47, 266]
+  },
+  "521": {
+    "th": "งั้น_ฉัน_ไม่_รบกวน_คุณ_แล้ว",
+    "en": "So that I don't bother you anymore.",
+    "fr": "",
+    "word_ids": []
+  },
+  "522": {
+    "th": "ใจ_ผม_เต้น_แรง_มาก",
+    "en": "My heart {is beating/was beating/beats} very {hard/fast}.",
+    "fr": "",
+    "word_ids": []
+  },
+  "523": {
+    "th": "ผม_พบ_เธอ_ใน_ฤ=ดู-ใบ-ไม้-ผลิ",
+    "en": "I met her in spring.",
+    "fr": "Je l'ai rencontrée {en/au/pendant le/durant le} printemps.",
+    "word_ids": []
+  },
+  "524": {
+    "th": "ฉัน_อยาก_อยู่_หมู่-บ้าน_ติด_ทะ=เล",
+    "en": "I want to live in a village {next to/by/near} the {sea/ocean}.",
+    "fr": "Je veux vivre dans un village {à côté/près} de {la mer/l'océan}.",
+    "word_ids": []
+  },
+  "525": {
+    "th": "ฉัน_จะ_เคา-รพ_การ_ตัด-สิน-ใจ_ของ_คุณ",
+    "en": "I will respect yor decision.",
+    "fr": "Je respecterai ta décision.",
+    "word_ids": [24, 42, 634, 181, 443, 40, 28]
+  },
+  "526": {
+    "th": "เรา_เห็น_ดวง_อา=ทิตย์_จาก_ดวง_จันทร์_ได้_ไหม",
+    "en": "Can we see the sun from the moon?",
+    "fr": "Peut-on voir le soleil de(puis) la lune ?",
+    "word_ids": [29, 194, 457, 81, 43, 457, 281, 209, 10]
+  },
+  "527": {
+    "th": "นี่_คือ_สิ่ง_ที่_ฉัน_ไม่_ชอบ_พูด_ถึง",
+    "en": "This is something I don't like to talk about.",
+    "fr": "C'est quelque chose dont je n'aime pas parler.",
+    "word_ids": [509, 206, 519, 45, 24, 39, 238, 234, 606]
+  },
+  "528": {
+    "th": "ฉัน_หวัง_ว่า_ฉัน_จะ_ได้_พบ_ใคร-สัก-คน_ที่_สวย-งาม_เหมือน_คุณ",
+    "en": "I hope I will meet someone as charming as you.",
+    "fr": "J'espère que je {vais rencontrer/rencontrerai} quelqu'un (d')aussi {charmant/beau/charmante/belle} que toi.",
+    "word_ids": [24, 531, 184, 24, 42, 209, 373, 633, 45, 510, 50, 28]
+  },
+  "529": {
+    "th": "หนัง=สือ_เล่ม_นี้_กำ=ลัง-ดี",
+    "en": "This book is just {right/fine}.",
+    "fr": "Ce livre est juste comme il faut.",
+    "word_ids": [261, 392, 31, 120]
+  },
+  "530": {
+    "th": "ลืม_กระ=เป๋า_ไว้_ที่_บ้าน_ดัง-นั้น_มา_สาย",
+    "en": "I forgot my bag at home so I was late.",
+    "fr": "J'ai oublié mon sac à la maison alors je suis en retard.",
+    "word_ids": [600, 278, 632, 45, 147, 508, 202, 22]
   }
 }

@@ -2497,7 +2497,7 @@
     "teaching_order": -1
   },
   "278": {
-    "split": "กระ-เป๋า",
+    "split": "กระ=เป๋า",
     "en": "bag",
     "fr": "sac",
     "tones": "LR",
@@ -2524,12 +2524,12 @@
     "teaching_order": -1
   },
   "281": {
-    "split": "พระ-จันทร์",
+    "split": "จันทร์",
     "en": "moon",
     "fr": "lune",
-    "tones": "HM",
+    "tones": "M",
     "pos": "NOUN",
-    "th": "พระจันทร์",
+    "th": "จันทร์",
     "teaching_order": -1
   },
   "282": {
@@ -3966,7 +3966,7 @@
     "teaching_order": -1
   },
   "443": {
-    "split": "ตัด_สิน_ใจ",
+    "split": "ตัด-สิน-ใจ",
     "en": "to decide",
     "fr": "décider",
     "tones": "LRM",
@@ -5664,6 +5664,33 @@
     "tones": "MF",
     "pos": "",
     "th": "ปาร์ตี้",
+    "teaching_order": -1
+  },
+  "632": {
+    "split": "ไว้",
+    "en": "to keep, save, store",
+    "fr": "conserver, garder, stocker",
+    "tones": "H",
+    "pos": "",
+    "th": "ไว้",
+    "teaching_order": -1
+  },
+  "633": {
+    "split": "ใคร-สัก-คน",
+    "en": "someone",
+    "fr": "quelqu'un",
+    "tones": "MLM",
+    "pos": "",
+    "th": "ใครสักคน",
+    "teaching_order": -1
+  },
+  "634": {
+    "split": "เคา-รพ",
+    "en": "to respect",
+    "fr": "respecter",
+    "tones": "HM",
+    "pos": "",
+    "th": "เคารพ",
     "teaching_order": -1
   }
 }
