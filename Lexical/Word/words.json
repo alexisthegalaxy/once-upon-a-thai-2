@@ -2309,9 +2309,9 @@
     "teaching_order": -1
   },
   "257": {
-    "split": "พ-ม่า",
+    "split": "พ=ม่า",
     "en": "Myanmar",
-    "fr": "Myanmar",
+    "fr": "Myanmar, Birmanie",
     "tones": "HF",
     "pos": "PLAC",
     "th": "พม่า",
@@ -5691,6 +5691,51 @@
     "tones": "HM",
     "pos": "",
     "th": "เคารพ",
+    "teaching_order": -1
+  },
+  "635": {
+    "split": "เครื่อง-บิน",
+    "en": "plane, aircraft",
+    "fr": "avion",
+    "tones": "FM",
+    "pos": "",
+    "th": "เครื่องบิน",
+    "teaching_order": -1
+  },
+  "636": {
+    "split": "สำ=หรับ",
+    "en": "for",
+    "fr": "pour",
+    "tones": "RL",
+    "pos": "",
+    "th": "สำหรับ",
+    "teaching_order": -1
+  },
+  "637": {
+    "split": "หมู่-บ้าน",
+    "en": "village",
+    "fr": "village",
+    "tones": "LF",
+    "pos": "",
+    "th": "หมู่บ้าน",
+    "teaching_order": -1
+  },
+  "638": {
+    "split": "ติด",
+    "en": "to stick, to be near",
+    "fr": "coller à, attacher, être proche",
+    "tones": "L",
+    "pos": "",
+    "th": "ติด",
+    "teaching_order": -1
+  },
+  "639": {
+    "split": "ทะ=เล",
+    "en": "sea, ocean",
+    "fr": "mer, océan",
+    "tones": "HM",
+    "pos": "",
+    "th": "ทะเล",
     "teaching_order": -1
   }
 }

@@ -3068,7 +3068,7 @@
     "th": "ฉัน_อยาก_อยู่_หมู่-บ้าน_ติด_ทะ=เล",
     "en": "I want to live in a village {next to/by/near} the {sea/ocean}.",
     "fr": "Je veux vivre dans un village {à côté/près} de {la mer/l'océan}.",
-    "word_ids": []
+    "word_ids": [24, 241, 237, 637, 638, 639]
   },
   "525": {
     "th": "ฉัน_จะ_เคา-รพ_การ_ตัด-สิน-ใจ_ของ_คุณ",
@@ -3105,5 +3105,41 @@
     "en": "I forgot my bag at home so I was late.",
     "fr": "J'ai oublié mon sac à la maison alors je suis en retard.",
     "word_ids": [600, 278, 632, 45, 147, 508, 202, 22]
+  },
+  "531": {
+    "th": "บาง-ครั้ง_ฉัน_เห็น_เครื่อง-บิน_ที่_บิน_ไป_พ=ม่า",
+    "en": "{Sometimes I/I sometimes} see planes {flying/going} to Myanmar.",
+    "fr": "{Parfois je vois/Je vois parfois} des avions qui {vont/volent} {en Birmanie/au Myanmar}.",
+    "word_ids": [74, 24, 194, 635, 45, 211, 201, 257]
+  },
+  "532": {
+    "th": "ฉัน_จะ_กิน_เค้ก_ทั้ง-หมด_ถ้า_ไม่_มี_ใคร_หยุด_ฉัน",
+    "en": "I will eat the entire cake if nobody stops me.",
+    "fr": "Je {vais manger/mangerai} le {gâteau/cake} en entier si personne ne m'arrête.",
+    "word_ids": [24, 42, 193, 154, 444, 454, 39, 236, 55, 472, 24]
+  },
+  "533": {
+    "th": "การ_นั่ง-ส=มา=ธิ_เป็น_สิ่ง_ที่_ดี_สำ=หรับ_คุณ",
+    "en": "Meditation is good for you.",
+    "fr": "{La méditation/Méditer} {/c'}est {bonne/bon/bien/une bonne chose/quelque chose de bien} pour toi.",
+    "word_ids": [181, 524, 207, 519, 45, 82, 636, 28]
+  },
+  "534": {
+    "th": "เมื่อ-เช้า_ฉัน_เห็น_แมว_สาม_ตัว",
+    "en": "I saw three cats this morning.",
+    "fr": "J'ai vu trois chats ce matin.",
+    "word_ids": [75, 24, 194, 1, 226, 186]
+  },
+  "535": {
+    "th": "พ่อ_ของ_ฉัน_กำ=ลัง_เตรียม-ตัว_อยู่_หลัง_ประ=ตู_นั้น",
+    "en": "My father is getting ready behind that door.",
+    "fr": "Mon père est en train de se préparer derrière cette porte.",
+    "word_ids": [486, 40, 24, 306, 497, 237, 21, 581, 593]
+  },
+  "536": {
+    "th": "มัน_ดี_สำ=หรับ_ฉัน",
+    "en": "It's good for me.",
+    "fr": "C'est {bon/bien} pour moi.",
+    "word_ids": [27, 82, 636, 24]
   }
 }
