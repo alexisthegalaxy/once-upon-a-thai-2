@@ -467,8 +467,8 @@
   },
   "52": {
     "split": "ด้วย",
-    "en": "as well, with",
-    "fr": "aussi",
+    "en": "as well, with / by",
+    "fr": "aussi / par, en",
     "tones": "F",
     "pos": "PREP",
     "th": "ด้วย",
@@ -3512,11 +3512,12 @@
     "teaching_order": -1
   },
   "393": {
-    "split": "ทํา-งาน",
-    "en": "to work",
-    "tones": "MM",
-    "pos": "None",
-    "th": "ทํางาน",
+    "split": "งาน",
+    "en": "work, job, task",
+    "fr": "travail, tâche",
+    "tones": "M",
+    "pos": "",
+    "th": "งาน",
     "teaching_order": -1
   },
   "394": {
@@ -5736,6 +5737,60 @@
     "tones": "HM",
     "pos": "",
     "th": "ทะเล",
+    "teaching_order": -1
+  },
+  "640": {
+    "split": "บ้าน-เกิด",
+    "en": "hometown",
+    "fr": "ville natale",
+    "tones": "FL",
+    "pos": "",
+    "th": "บ้าน-เกิด",
+    "teaching_order": -1
+  },
+  "641": {
+    "split": "เอา",
+    "en": "take",
+    "fr": "prendre",
+    "tones": "M",
+    "pos": "",
+    "th": "เอา",
+    "teaching_order": -1
+  },
+  "642": {
+    "split": "ฤ=ดู-ใบ-ไม้-ผลิ",
+    "en": "spring season",
+    "fr": "printemps",
+    "tones": "HMMHL",
+    "pos": "",
+    "th": "ฤดูใบไม้ผลิ",
+    "teaching_order": -1
+  },
+  "643": {
+    "split": "ร่ม",
+    "en": "umbrella / to shade",
+    "fr": "parapluie, ombrelle / faire de l'ombre",
+    "tones": "F",
+    "pos": "",
+    "th": "ร่ม",
+    "teaching_order": -1
+  },
+  "644": {
+    "split": "หรือ-เปล่า",
+    "en": "or not",
+    "fr": "ou pas",
+    "tones": "RL",
+    "pos": "",
+    "th": "หรือเปล่า",
+    "teaching_order": -1
+  },
+  "645": {
+    "split": "ช่วย",
+    "en": "to help / please",
+    "fr": "aider / s'il te plaît",
+    "tones": "F",
+    "pos": "",
+    "th": "ช่วย",
     "teaching_order": -1
   }
 }

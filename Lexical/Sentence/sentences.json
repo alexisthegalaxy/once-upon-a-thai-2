@@ -1081,7 +1081,7 @@
   "193": {
     "th": "ทุก-วัน_ผม_ขึ้น_รถ-ไฟ_ไป_ทํา-งาน",
     "en": "Every day, I take the train to work.",
-    "word_ids": [71, 23, 374, 258, 201, 393],
+    "word_ids": [71, 23, 374, 258, 201, 288],
     "speaker_gender": "M"
   },
   "194": {
@@ -3055,14 +3055,14 @@
   "522": {
     "th": "ใจ_ผม_เต้น_แรง_มาก",
     "en": "My heart {is beating/was beating/beats} very {hard/fast}.",
-    "fr": "",
+    "fr": "Mon cœur {bat/est en train de battre/palpite} très {fort/vite}.",
     "word_ids": []
   },
   "523": {
     "th": "ผม_พบ_เธอ_ใน_ฤ=ดู-ใบ-ไม้-ผลิ",
     "en": "I met her in spring.",
     "fr": "Je l'ai rencontrée {en/au/pendant le/durant le} printemps.",
-    "word_ids": []
+    "word_ids": [23, 373, 25, 44, 642]
   },
   "524": {
     "th": "ฉัน_อยาก_อยู่_หมู่-บ้าน_ติด_ทะ=เล",
@@ -3141,5 +3141,35 @@
     "en": "It's good for me.",
     "fr": "C'est {bon/bien} pour moi.",
     "word_ids": [27, 82, 636, 24]
+  },
+  "537": {
+    "th": "เอา_เงิน_ฉัน_ไป_เลย",
+    "en": "Take my money{/ and go}!",
+    "fr": "{Prend/Prenez} mon argent{/ et pars/ et partez}!",
+    "word_ids": [641, 128, 24, 201, 603]
+  },
+  "538": {
+    "th": "เธอ_สวย_จริง_ๆ",
+    "en": "She is really beautiful.",
+    "fr": "Elle est vraiment belle.",
+    "word_ids": [25, 340, 439, 461]
+  },
+  "539": {
+    "th": "เธอ_ทำ-บุญ_ด้วย_การ_ช่วย_งาน_ที่_วัด_ทุก_เช้า",
+    "en": "She makes merit by helping at the temple every morning.",
+    "fr": "Elle fait du mérite en aidant {au temple/aux temples/dans le temple} {tous les matins/chaque matin}.",
+    "word_ids": [25, 479, 52, 181, 645, 393, 45, 478, 174, 567]
+  },
+  "540": {
+    "th": "เพลง_นี้_ทำ-ให้_คิด-ถึง_บ้าน-เกิด",
+    "en": "This song makes me think of my {hometown/homeland/native village}.",
+    "fr": "Cette chanson (me) rappelle {la maison/ma maison/ma ville natale}.",
+    "word_ids": [446, 31, 301, 286, 640]
+  },
+  "541": {
+    "th": "คุณ_เอา_ร่ม_มา_หรือ-เปล่า",
+    "en": "Did you bring an umbrella?",
+    "fr": "{As-tu pris/Tu as pris/Avez-vous pris/Vous avez pris} un parapluie ?",
+    "word_ids": [28, 641, 643, 202, 644]
   }
 }
