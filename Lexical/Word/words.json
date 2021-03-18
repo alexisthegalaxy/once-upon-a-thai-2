@@ -5792,5 +5792,15 @@
     "pos": "",
     "th": "ช่วย",
     "teaching_order": -1
+  },
+  "646": {
+    "split": "สัป=ดาห์",
+    "en": "week (more formal)",
+    "fr": "semaine (plus formel)",
+    "tones": "LM",
+    "pos": "",
+    "th": "สัปดาห์",
+    "teaching_order": -1,
+    "etymology_en": "comes from the Sanskrit sapta (सप्त) seven + aha (अह) day."
   }
 }

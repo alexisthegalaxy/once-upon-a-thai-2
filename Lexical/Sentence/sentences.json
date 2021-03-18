@@ -3171,5 +3171,29 @@
     "en": "Did you bring an umbrella?",
     "fr": "{As-tu pris/Tu as pris/Avez-vous pris/Vous avez pris} un parapluie ?",
     "word_ids": [28, 641, 643, 202, 644]
+  },
+  "542": {
+    "th": "ทำ-ไม_คน-ไทย_ไม่_กิน_ผิว_แอป=เปิ้ล?",
+    "en": "Why don't Thai people eat {the skin of apples/apple skins/skins of apples/the skin of the apple}?",
+    "fr": "Pourquoi les {/gens }{thailandais/thaïs} ne mangent pas la peau {des pommes/de pomme/de la pomme} ?",
+    "word_ids": []
+  },
+  "543": {
+    "th": "ฉัน_ควร_ร้อง-ไห้_หรือ_หัว-เราะ",
+    "en": "Should I {cry or laugh/be crying or laughing}?",
+    "fr": "{Je dois/Dois-je/Je devrais/Devrais-je} {/être en train de }{pleurer ou rire/rire ou pleurer} ?",
+    "word_ids": [24, 242, 612, 436, 609]
+  },
+  "544": {
+    "th": "ฉัน_ไม่_ชอบ_อยู่_คน-เดียว",
+    "en": "I don't like to {be/stay/remain} {alone/lonely/by myself}.",
+    "fr": "Je n'aime pas {/bien }{être/rester} {/toute }seul(e).",
+    "word_ids": [24, 39, 238, 237, 112]
+  },
+  "545": {
+    "th": "เรา_มี_อา=หาร_เป็น_เว=ลา_อย่าง-น้อย_หนึ่ง_สัป=ดาห์",
+    "en": "We have food for at least a week.",
+    "fr": "Nous avons de la nourriture pour au moins une semaine.",
+    "word_ids": [29, 236, 251, 207, 272, 546, 224, 646]
   }
 }
