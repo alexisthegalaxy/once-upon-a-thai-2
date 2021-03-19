@@ -3047,16 +3047,16 @@
     "word_ids": [414, 27, 506, 47, 266]
   },
   "521": {
-    "th": "งั้น_ฉัน_ไม่_รบกวน_คุณ_แล้ว",
-    "en": "So that I don't bother you anymore.",
-    "fr": "",
-    "word_ids": []
+    "th": "งั้น_ฉัน_ไม่_รบ-กวน_คุณ_แล้ว",
+    "en": "{Then/In that case/So that/If so/Otherwise/If not/Else} I don't bother you anymore.",
+    "fr": "{Alors/Dans ce cas/Pour que/Afin que/Donc/Sinon/Au sinon} je ne t'embête plus.",
+    "word_ids": [659, 24, 39, 658, 28, 172]
   },
   "522": {
     "th": "ใจ_ผม_เต้น_แรง_มาก",
     "en": "My heart {is beating/was beating/beats} very {hard/fast}.",
     "fr": "Mon cœur {bat/est en train de battre/palpite} très {fort/vite}.",
-    "word_ids": []
+    "word_ids": [188, 23, 657, 582, 366]
   },
   "523": {
     "th": "ผม_พบ_เธอ_ใน_ฤ=ดู-ใบ-ไม้-ผลิ",
@@ -3173,10 +3173,10 @@
     "word_ids": [28, 641, 643, 202, 644]
   },
   "542": {
-    "th": "ทำ-ไม_คน-ไทย_ไม่_กิน_ผิว_แอป=เปิ้ล?",
+    "th": "ทำ-ไม_คน-ไทย_ไม่_กิน_ผิว_แอป=เปิ้ล",
     "en": "Why don't Thai people eat {the skin of apples/apple skins/skins of apples/the skin of the apple}?",
     "fr": "Pourquoi les {/gens }{thailandais/thaïs} ne mangent pas la peau {des pommes/de pomme/de la pomme} ?",
-    "word_ids": []
+    "word_ids": [59, 244, 39, 193, 652, 656]
   },
   "543": {
     "th": "ฉัน_ควร_ร้อง-ไห้_หรือ_หัว-เราะ",
@@ -3195,5 +3195,65 @@
     "en": "We have food for at least a week.",
     "fr": "Nous avons de la nourriture pour au moins une semaine.",
     "word_ids": [29, 236, 251, 207, 272, 546, 224, 646]
+  },
+  "546": {
+    "th": "ฉัน_อยาก_จะ_วาด_รูป_คุณ",
+    "en": "I want to draw you.",
+    "fr": "Je veux {te/vous} dessiner.",
+    "word_ids": [24, 241, 42, 651, 20, 28]
+  },
+  "547": {
+    "th": "คุณ_อยู่_ที่_นี่_ไม่_ได้",
+    "en": "You can't be here.",
+    "fr": "Tu ne peux pas être ici.",
+    "word_ids": [28, 237, 45, 509, 39, 209]
+  },
+  "548": {
+    "th": "ภาพ-วาด_แรก_ของ_เขา_ไม่_มี_รา=คา",
+    "en": "{Her/His} first drawing {has no price/is priceless}.",
+    "fr": "Son premier dessin {n'a pas de prix/est sans prix}.",
+    "word_ids": [649, 650, 40, 26, 39, 236, 620]
+  },
+  "549": {
+    "th": "ฉัน_ไป_มา=เล=เซีย_ก่อน_สง=คราม",
+    "en": "I went to Malaysia before the war.",
+    "fr": "Je suis allé en Malaisie avant la guerre.",
+    "word_ids": [24, 201, 318, 79, 648]
+  },
+  "550": {
+    "th": "ยิ่ง_ฉัน_เรียน_เศรษ=ฐ=กิจ_มาก_เท่า-ไหร่_ฉัน_ก็_ยิ่ง_งง-งวย_มาก_ขึ้น_เท่า-นั้น",
+    "en": "The more I study economy, the more perplex I get.",
+    "fr": "Plus j'étudie l'économie, plus je suis perplexe.",
+    "word_ids": [647, 24, 198, 429, 366, 61, 24, 448, 647, 397, 366, 374, 504]
+  },
+  "551": {
+    "th": "ผิว_คุณ_ดู_แห้ง",
+    "en": "Your skin {looks/seems} dry.",
+    "fr": "Ta peau {a l'air/semble} sèche.",
+    "word_ids": [652, 28, 368, 653]
+  },
+  "552": {
+    "th": "ขอ_ปลา-หมึก_แห้ง_ครับ",
+    "en": "{/Can I have /May I have /Could I have }{Dried/Dry} {squid/octopus}( please).",
+    "fr": "{/Je peux avoir de /Puis-je avoir de /Peut-on avoir de /Je veux de /Nous voulons de /De }{Octopus/l'octopus/la pieuvre/pieuvre} seché{/e} {s'il vous plaît/s'il te plaît}",
+    "word_ids": [483, 654, 653, 9]
+  },
+  "553": {
+    "th": "ทำ_เสื้อ-ผ้า_คุณ_ให้_แห้ง",
+    "en": "Dry your clothes.",
+    "fr": "{Sèche tes/Séchez vos} vêtements.",
+    "word_ids": [208, 655, 28, 51, 653]
+  },
+  "554": {
+    "th": "เขา_ชอบ_ปลา-หมึก_มาก",
+    "en": "He {really likes/loves} {octopus/squid}.",
+    "fr": "Il aime {/beaucoup /vraiment } l{'octopus/a pieuvre}.",
+    "word_ids": [26, 238, 654, 366]
+  },
+  "555": {
+    "th": "ฉัน_จะ_เขียน_ชื่อ_ของ_คุณ_ด้วย_หมึก_สี-ดำ",
+    "en": "I {will/shall} write your name {in/with} black ink.",
+    "fr": "{J'écrirai/Je vais écrire} {ton/votre} nom {à/avec de} l'encre noire.",
+    "word_ids": [24, 42, 330, 204, 40, 28, 52, 660, 109]
   }
 }

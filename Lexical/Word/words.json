@@ -2844,7 +2844,7 @@
     "teaching_order": -1
   },
   "318": {
-    "split": "มา-เล-เซีย",
+    "split": "มา=เล=เซีย",
     "en": "Malaysia",
     "fr": "Malaysie",
     "tones": "MMM",
@@ -3549,6 +3549,7 @@
   "397": {
     "split": "งง-งวย",
     "en": "to be puzzled",
+    "fr": "être perplexe",
     "tones": "MM",
     "pos": "ADJ",
     "th": "งงงวย",
@@ -3841,7 +3842,7 @@
     "teaching_order": -1
   },
   "429": {
-    "split": "เศรษ-ฐ-กิจ",
+    "split": "เศรษ=ฐ=กิจ",
     "en": "economy, economic affairs",
     "fr": "l'économie",
     "tones": "LLL",
@@ -5801,6 +5802,135 @@
     "pos": "",
     "th": "สัปดาห์",
     "teaching_order": -1,
-    "etymology_en": "comes from the Sanskrit sapta (सप्त) seven + aha (अह) day."
+    "etymology_en": "comes from the Sanskrit सप्त (sapta, meaning \"seven\") + अह (aha, meaning \"day\")."
+  },
+  "647": {
+    "split": "ยิ่ง",
+    "en": "greatly / the more ..., the more ...",
+    "fr": "considérablement / plus ..., plus ...",
+    "tones": "F",
+    "pos": "",
+    "th": "ยิ่ง",
+    "teaching_order": -1
+  },
+  "648": {
+    "split": "สง=คราม",
+    "en": "war",
+    "fr": "guerre",
+    "tones": "RM",
+    "pos": "",
+    "th": "สงคราม",
+    "teaching_order": -1,
+    "etymology_en": "comes from the Sanskrit संग्राम (saṃgrāma, meaning \"war\")."
+  },
+  "649": {
+    "split": "ภาพ-วาด",
+    "en": "a drawing, a painting",
+    "fr": "un dessin, une peinture",
+    "tones": "FF",
+    "pos": "",
+    "th": "ภาพวาด",
+    "teaching_order": -1
+  },
+  "650": {
+    "split": "แรก",
+    "en": "first, initial",
+    "fr": "premier, initial",
+    "tones": "F",
+    "pos": "",
+    "th": "แรก",
+    "teaching_order": -1
+  },
+  "651": {
+    "split": "วาด",
+    "en": "to draw",
+    "fr": "dessiner",
+    "tones": "F",
+    "pos": "",
+    "th": "วาด",
+    "teaching_order": -1
+  },
+  "652": {
+    "split": "ผิว",
+    "en": "skin",
+    "fr": "peau",
+    "tones": "R",
+    "pos": "",
+    "th": "ผิว",
+    "teaching_order": -1
+  },
+  "653": {
+    "split": "แห้ง",
+    "en": "dry",
+    "fr": "sec",
+    "tones": "F",
+    "pos": "",
+    "th": "แห้ง",
+    "teaching_order": -1
+  },
+  "654": {
+    "split": "ปลา-หมึก",
+    "en": "squid, octopus",
+    "fr": "pieuvre, octopus",
+    "tones": "ML",
+    "pos": "",
+    "th": "ปลาหมึก",
+    "teaching_order": -1
+  },
+  "655": {
+    "split": "เสื้อ-ผ้า",
+    "en": "clothes",
+    "fr": "vêtements",
+    "tones": "FF",
+    "pos": "",
+    "th": "เสื้อผ้า",
+    "teaching_order": -1
+  },
+  "656": {
+    "split": "แอป=เปิ้ล",
+    "en": "apple",
+    "fr": "pomme",
+    "tones": "LF",
+    "pos": "",
+    "th": "แอปเปิ้ล",
+    "teaching_order": -1,
+    "etymology_en": "comes from the English apple (saṃgrāma, meaning \"war\").",
+    "etymology_fr": "vient de l'amglais apple (\"pomme\")."
+  },
+  "657": {
+    "split": "เต้น",
+    "en": "dancing, throbbing",
+    "fr": "dancer, pulser",
+    "tones": "F",
+    "pos": "",
+    "th": "เต้น",
+    "teaching_order": -1
+  },
+  "658": {
+    "split": "รบ-กวน",
+    "en": "to annoy, bother",
+    "fr": "embêter",
+    "tones": "HM",
+    "pos": "",
+    "th": "รบกวน",
+    "teaching_order": -1
+  },
+  "659": {
+    "split": "งั้น",
+    "en": "then",
+    "fr": "alors",
+    "tones": "H",
+    "pos": "",
+    "th": "งั้น",
+    "teaching_order": -1
+  },
+  "660": {
+    "split": "หมึก",
+    "en": "ink",
+    "fr": "encre",
+    "tones": "L",
+    "pos": "",
+    "th": "หมึก",
+    "teaching_order": -1
   }
 }
