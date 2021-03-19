@@ -5932,5 +5932,23 @@
     "pos": "",
     "th": "หมึก",
     "teaching_order": -1
+  },
+  "661": {
+    "split": "ตะ-ขาบ",
+    "en": "centipede",
+    "fr": "mille-pattes",
+    "tones": "L",
+    "pos": "",
+    "th": "ตะขาบ",
+    "teaching_order": -1
+  },
+  "662": {
+    "split": "อัน=ต=ราย",
+    "en": "danger",
+    "fr": "danger",
+    "tones": "MLM",
+    "pos": "",
+    "th": "อันตราย",
+    "teaching_order": -1
   }
 }

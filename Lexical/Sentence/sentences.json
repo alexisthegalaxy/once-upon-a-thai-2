@@ -3255,5 +3255,11 @@
     "en": "I {will/shall} write your name {in/with} black ink.",
     "fr": "{J'écrirai/Je vais écrire} {ton/votre} nom {à/avec de} l'encre noire.",
     "word_ids": [24, 42, 330, 204, 40, 28, 52, 660, 109]
+  },
+  "556": {
+    "th": "ตะ-ขาบ_ใน_ประ=เทศ_ไทย_มี_อัน=ต=ราย_มาก",
+    "en": "In Thailand centipedes are very dangerous.|Centipedes are very dangerous in Thailand.|Centipedes in Thailand are very dangerous.",
+    "fr": "En Thaïlande, les mille-pattes sont très dangereux.|Les mille-pattes sont très dangereux en Thailande.|Les mille-pattes en Thaïlande sont très dangereux.",
+    "word_ids": [661, 44, 264, 345, 236, 662, 366]
   }
 }
