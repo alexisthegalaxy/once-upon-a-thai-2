@@ -14,10 +14,12 @@ signal akson_letter_learnt
 func _ready():
 	$Label.text = id
 	$SameButWithBlueContour.text = id
+	$SameButWithOrangeContour.text = id
 	set_letter()
-	is_known = letter_id in Game.known_letters
+	is_known = int(letter_id) in Game.known_letters
+	$SameButWithBlueContour.hide()
 	if not is_known:
-		$SameButWithBlueContour.hide()
+		$SameButWithOrangeContour.hide()
 
 func set_letter():
 	for game_letter_id in Game.letters:
@@ -43,8 +45,6 @@ func dialog_ended():
 	Game.start_test("res://Test/Letter/TestWordFromSound.tscn", letter_id, self)
 
 func _process(delta):
-	if is_known:
-		return
 	if is_hovered:
 		time += delta * blinking_speed
 		var alpha = (1 + sin(time)) / 2 
@@ -68,8 +68,8 @@ func starts_disappearing():
 	# Actually it won't disappear, it will become blue I guess
 	is_hovered = false
 	is_known = true
-	$SameButWithBlueContour.show()
-	$SameButWithBlueContour.modulate = Color(1, 1, 1, 1)
+	$SameButWithOrangeContour.show()
+	$SameButWithOrangeContour.modulate = Color(1, 1, 1, 1)
 	emit_signal("akson_letter_learnt", id)
 
 func show_letter_page():

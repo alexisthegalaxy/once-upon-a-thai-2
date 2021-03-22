@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Lexical/Akson/AksonLetter.gd" type="Script" id=2]
@@ -9,6 +9,12 @@ outline_color = Color( 0.137255, 1, 0.952941, 1 )
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 40
+outline_size = 1
+outline_color = Color( 1, 0.707871, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
 size = 40
 outline_size = 1
 outline_color = Color( 0.137255, 1, 0.952941, 1 )
@@ -31,7 +37,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SameButWithBlueContour" type="Label" parent="."]
+[node name="SameButWithOrangeContour" type="Label" parent="."]
 margin_left = -20.2524
 margin_top = -44.4345
 margin_right = 19.7476
@@ -45,12 +51,26 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="SameButWithBlueContour" type="Label" parent="."]
+margin_left = -20.2524
+margin_top = -44.4345
+margin_right = 19.7476
+margin_bottom = 43.5655
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ไ-"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Button" type="Button" parent="."]
 modulate = Color( 0.560784, 0.380392, 0.380392, 0.00392157 )
-margin_left = -15.0
+margin_left = -12.0
 margin_top = -24.0
 margin_right = 17.0
-margin_bottom = 9.0
+margin_bottom = 16.0
 mouse_default_cursor_shape = 2
 __meta__ = {
 "_edit_use_anchors_": false

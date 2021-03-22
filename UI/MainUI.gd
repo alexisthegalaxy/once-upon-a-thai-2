@@ -102,11 +102,9 @@ func on_button_pressed(type):
 
 func on_button_hovered(type):
 	hovered_buttons.append(type)
-	print('hovered_buttons', hovered_buttons)
 
 func on_button_not_hovered(type):
 	hovered_buttons.erase(type)
-	print('hovered_buttons after not', hovered_buttons)
 
 func display_use_spell():
 	Game.select_follower_to_implant_screen = load("res://Lexical/Source/SelectFollowerToImplant.tscn").instance()

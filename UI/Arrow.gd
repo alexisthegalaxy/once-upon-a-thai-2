@@ -11,20 +11,7 @@ extends Node2D
 #
 #func init(to_):
 #	to = to_
-#
-#func arrow_letter_update():
-#	var all_letters_are_known = true
-#	if Game.this_letter_world_has_letters:
-#		for letter_id in Game.this_letter_world_has_letters:
-#			var letter = Game.letters[str(letter_id)]
-#			if letter in Game.letters_we_look_for:
-#				if not letter["id"] in Game.known_letters:
-#					all_letters_are_known = false
-#	if all_letters_are_known:
-#		if "LexicalWorld" in Game.current_map_name and not "Hub" in Game.current_map_name:
-#			to = Game.current_scene.get_node("YSort").get_node("BackDoor").position
-#			show()
-#
+
 ## Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	time += delta

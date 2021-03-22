@@ -133,27 +133,8 @@ func _input(_event) -> void:
 			player_interact()
 	if Input.is_action_just_pressed("print_position"):
 		Game.print_entire_tree()
-		Game.known_words.append(343)
-		Game.known_words.append(345)
-		Game.known_words.append(207)
-		Game.known_words.append(82)
-		for letter_id in Game.initial_letters:
-			Game.known_letters.append(letter_id)
-		if Game.knows_the_initial_letters():
-#			Events.events.has_learnt_four_first_words = true
-			Game.known_words.append(343)
-			Game.known_words.append(345)
-			Game.known_words.append(207)
-			Game.known_words.append(82)
-		else:
-			for letter_id in Game.initial_letters:
-				Game.known_letters.append(letter_id)
-		
-		
 		print("current position: (" + str(position.x) + ", " + str(position.y) + ")    " + Game.current_map_name)
-#		set_hp(Game.hp - 0.5)
-		Game.letters_we_look_for.append(Game.letters["1"])
-#		Game.add_random_letter_to_letters_to_look_for()
+		Game.add_random_letter_to_letters_to_look_for()
 	if Input.is_action_just_pressed("print_known_sentences"):
 		Game.print_known_sentences()
 	if Input.is_action_just_pressed("load"):

@@ -340,7 +340,7 @@ position = Vector2( 292.158, 238.375 )
 id = "ษ"
 
 [node name="ด" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 387.059, 36.4878 )
+position = Vector2( 387.059, 36.3184 )
 id = "ด"
 
 [node name="ต" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
@@ -1021,7 +1021,7 @@ lift_on_letters = [ "ถ", "ฑ" ]
 [node name="Cloud_251" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 150.174, 294.705 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "ธ" ]
+lift_on_letters = [ "ฑ", "ถ" ]
 
 [node name="Cloud_243" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 144.482, 219.399 )
@@ -1062,7 +1062,7 @@ lift_on_letters = [ "ถ", "ฑ" ]
 
 [node name="Cloud_242" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 196.024, 231.979 )
-lift_on_letters = [ "ถ", "ฑ" ]
+lift_on_letters = [ "ท" ]
 
 [node name="Cloud_241" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 128.161, 251.243 )
@@ -1190,14 +1190,14 @@ scale = Vector2( -1, 1 )
 lift_on_letters = [ "ต", "ฎ" ]
 
 [node name="Cloud_187" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
-position = Vector2( 385.153, 37.0129 )
+position = Vector2( 384.983, 37.0129 )
 scale = Vector2( -1, 1 )
 lift_on_letters = [ "ท" ]
 
 [node name="Cloud_182" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 375.166, 184.402 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "ศ", "ส" ]
+lift_on_letters = [ "ศ", "ส", "ฉ", "ช" ]
 
 [node name="Cloud_177" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 447.828, 137.568 )
@@ -1300,7 +1300,7 @@ lift_on_letters = [ "ด" ]
 
 [node name="Cloud_188" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 454.44, 37.1758 )
-lift_on_letters = [ "ต" ]
+lift_on_letters = [ "ต", "ด" ]
 
 [node name="Cloud_186" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 496.452, 55.0829 )
@@ -1401,7 +1401,7 @@ lift_on_letters = [ "ด" ]
 [node name="Cloud_209" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 420.143, 72.3338 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "ฉ", "ช" ]
+lift_on_letters = [ "ฉ", "ช", "ท" ]
 
 [node name="Cloud_206" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 365.044, 49.9499 )
@@ -1461,7 +1461,7 @@ lift_on_letters = [ "ห" ]
 [node name="Cloud_162" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 432.54, 88.1747 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "ฉ", "ช" ]
+lift_on_letters = [ "ฉ", "ช", "ท" ]
 
 [node name="Cloud_157" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 389.494, 121.923 )
@@ -1491,7 +1491,7 @@ lift_on_letters = [ "ส" ]
 [node name="Cloud_135" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 339.905, 198.028 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "ศ", "ส" ]
+lift_on_letters = [ "ศ", "ส", "จ" ]
 
 [node name="Cloud_132" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 248.992, 169.79 )
@@ -1568,7 +1568,7 @@ lift_on_letters = [ "ห" ]
 [node name="Cloud_227" parent="Objects/YSort/Clouds" instance=ExtResource( 11 )]
 position = Vector2( 521.695, 104.106 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "ห" ]
+lift_on_letters = [ "ช", "ฉ" ]
 
 [node name="Cloud_225" parent="Objects/YSort/Clouds" instance=ExtResource( 11 )]
 position = Vector2( 600.253, -9.90784 )
@@ -1610,7 +1610,7 @@ lift_on_letters = [ "ส" ]
 
 [node name="Cloud_144" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 367.464, 191.034 )
-lift_on_letters = [ "ศ", "ส" ]
+lift_on_letters = [ "ศ", "ส", "ช", "ฉ" ]
 
 [node name="Cloud_122" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 326.46, -99.0628 )
@@ -1629,7 +1629,7 @@ position = Vector2( 448.046, 65.3401 )
 lift_on_letters = [ "ช", "ฉ" ]
 
 [node name="Cloud_208" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 405.345, 48.1218 )
+position = Vector2( 405.345, 48.2912 )
 lift_on_letters = [ "ท" ]
 
 [node name="Cloud_203" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
@@ -1653,7 +1653,7 @@ position = Vector2( 410.166, 160.73 )
 lift_on_letters = [ "จ" ]
 
 [node name="Cloud_179" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 466.986, 122.505 )
+position = Vector2( 472.408, 123.352 )
 lift_on_letters = [ "ฉ", "ช" ]
 
 [node name="Cloud_172" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
@@ -1661,7 +1661,7 @@ position = Vector2( 608.521, 26.0823 )
 lift_on_letters = [ "ห" ]
 
 [node name="Cloud_169" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 554.111, 82.5585 )
+position = Vector2( 561.057, 80.5254 )
 lift_on_letters = [ "ห" ]
 
 [node name="Cloud_167" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
@@ -1678,7 +1678,7 @@ lift_on_letters = [ "ช", "ฉ" ]
 
 [node name="Cloud_156" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 379.861, 144.889 )
-lift_on_letters = [ "จ", "ช" ]
+lift_on_letters = [ "จ", "ช", "ฉ" ]
 
 [node name="Cloud_152" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 316.154, 131.803 )
@@ -1728,10 +1728,8 @@ scale = Vector2( -1, 1 )
 lift_on_letters = [ "ส" ]
 
 [node name="LettersWeLookFor" parent="." instance=ExtResource( 13 )]
-visible = false
 
 [node name="ExitButton" type="Button" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5

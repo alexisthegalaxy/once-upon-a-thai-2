@@ -58,11 +58,6 @@ var player_position_on_overworld = Vector2(1183, 167)  # used when coming back f
 var player_last_overworld_map_visited = "res://Maps/Chaiyaphum.tscn"
 var current_map_name = "res://Maps/Chaiyaphum.tscn"
 
-# This is the letters yaai asks us to fetch the first time we come in the Memory Palace
-#var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]  # outdated
-var initial_letters = [11, 13, 28, 0, 21]  # correct
-#var initial_letters = [0]
-
 # when players comes near a npc/word/letter/sentence,
 # it get appended to current_focus, and gets removed when leaving
 var current_focus = []
@@ -223,12 +218,6 @@ func lose_focus(target):
 			space_bar_to_interact.queue_free()
 			space_bar_to_interact = null
 
-func knows_the_initial_letters():
-	for initial_letter_id in initial_letters:
-		if not initial_letter_id in known_letters:
-			return false
-	return true
-
 func learn_word(word_id):
 	Quests.update_learn_word_quests(word_id)
 	if not word_id in Game.known_words:
@@ -252,19 +241,6 @@ func learn_letter(letter):
 	Game.main_ui.update_main_ui_letters_display()
 	if looking_for_letter__node:
 		looking_for_letter__node.update_label_text()
-#	if not Events.events["has_finished_the_letter_world_the_first_time"] and knows_the_initial_letters():
-#		Events.events["has_finished_the_letter_world_the_first_time"] = true
-#		Game.main_ui.update_main_ui_go_letter_world_display()
-#		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-#		var dialog = [
-#			tr("_name_exclamation_mark"),
-#			tr("_name_do_you_hear_me"),
-#			tr("_you_have_found_all_the_needed_letters_for_now"),
-#			tr("_to_leave_this_world_press_f_key"),
-#		]
-#		Game.current_dialog.init_dialog(dialog, null, null, false, "Yaai")
-#		player.stop_walking()
-#		Game.current_scene.add_child(Game.current_dialog)
 
 func add_random_letter_to_letters_to_look_for():
 	var random_letter = Game.letters[str(randi() % Game.letters.size())]

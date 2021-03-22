@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Lexical/Dict/dict-background.png" type="Texture" id=1]
 [ext_resource path="res://Lexical/Akson/Akson.gd" type="Script" id=2]
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://UI/pressFtoExit.tscn" type="PackedScene" id=4]
 [ext_resource path="res://UI/fonts/THSarabunNew BoldItalic.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Lexical/Akson/AksonButtonLeadsToLetters.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 160
@@ -54,7 +55,7 @@ margin_top = -3.69312
 margin_bottom = 18.3069
 
 [node name="Label" type="Label" parent="."]
-modulate = Color( 1, 1, 1, 0.545098 )
+modulate = Color( 1, 1, 1, 0.129412 )
 anchor_left = 0.000881529
 anchor_top = -0.00313416
 anchor_right = 0.000881577
@@ -92,6 +93,13 @@ text = "_consonants"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="VowelsToFind" parent="." instance=ExtResource( 6 )]
+position = Vector2( 62.3385, 104.368 )
+
+[node name="ConsonantsToFind" parent="." instance=ExtResource( 6 )]
+position = Vector2( 193.221, 108 )
+types = [ "HIGH", "MID", "LOW" ]
 [connection signal="mouse_entered" from="Vowels" to="." method="_on_Vowels_mouse_entered"]
 [connection signal="pressed" from="Vowels" to="." method="_on_Vowels_pressed"]
 [connection signal="pressed" from="Consonants" to="." method="_on_Consonants_pressed"]

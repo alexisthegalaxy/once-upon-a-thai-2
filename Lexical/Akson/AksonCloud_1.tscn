@@ -10,14 +10,3 @@ script = ExtResource( 2 )
 position = Vector2( 0.606476, -3.75361 )
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 1 )
-
-[node name="Button" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0.00392157 )
-margin_left = -24.0
-margin_top = -12.0
-margin_right = 25.0
-margin_bottom = 15.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

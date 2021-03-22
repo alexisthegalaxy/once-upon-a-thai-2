@@ -62,22 +62,6 @@ func set_sources_after_map_change():
 			source_node.word_ids = Game.sources[source]
 			source_node.update_source(true)
 
-#func update_letters_to_look_for_if_necesssary(_to_map_name):
-#	if not Events.events["can_see_the_looking_for_letter_banner"]:
-#		return
-#	Game.player.arrow.arrow_letter_update()
-#	Game.looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
-#	var letters_we_look_for_here = []
-#	if Game.this_letter_world_has_letters:
-#		for letter_id in Game.this_letter_world_has_letters:
-#			var letter = Game.letters[str(letter_id)]
-#			if letter in Game.letters_we_look_for:
-#				letters_we_look_for_here.append(letter)
-#	else:
-#		letters_we_look_for_here = Game.letters_we_look_for
-#	Game.looking_for_letter__node.init_letters_we_look_for(letters_we_look_for_here)
-#	Game.current_scene.add_child(Game.looking_for_letter__node)
-
 func start_test_back_from_akson():
 	# Before, we had to recreate the word because we left the world -
 	# Now, we don't need to, because the overworld is still instanced

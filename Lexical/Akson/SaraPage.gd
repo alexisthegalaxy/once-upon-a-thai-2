@@ -8,8 +8,15 @@ const LIMIT_LEFT = -240
 const LIMIT_UP = -280
 const LIMIT_DOWN = 270
 
+func _lift_clouds_for_known_letters():
+	for cloud in $Objects/YSort/Clouds.get_children():
+		for letter_id in Game.known_letters:
+			if Game.letters[str(letter_id)].th in cloud.lift_on_letters:
+				cloud.lift()
+
 func init_sara_page():
 	$LettersWeLookFor.init_letters_we_look_for(Game.letters_we_look_for)
+	_lift_clouds_for_known_letters()
 
 func _ready():
 	get_viewport().warp_mouse(CENTER)
@@ -26,8 +33,8 @@ func _input(event):
 		return
 	if event is InputEventMouseMotion:
 		var distance_to_center = event.position.distance_squared_to(CENTER)
-		if distance_to_center > 1500:
-			var intensity = (distance_to_center - 1500) / 40
+		if distance_to_center > 4000:
+			var intensity = (distance_to_center - 4000) / 40
 			direction = (event.position - CENTER).normalized()
 			speed = min(intensity, 500)
 		else:

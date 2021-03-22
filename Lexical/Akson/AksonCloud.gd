@@ -23,7 +23,3 @@ func _process(delta):
 		$image.modulate = Color(1, 1, 1, transparency)
 	if transparency <= 0:
 		queue_free()
-
-func _on_Button_pressed():
-#	lift()
-	pass
