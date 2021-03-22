@@ -305,7 +305,7 @@ func _on_Blocker2_body_entered(body):
 		$YSort/NPCs/Yaai.is_walking_towards = []  # to make sure NPC can interact
 		$YSort/NPCs/Yaai.npc_turn_towards(Game.player.position)
 		$YSort/NPCs/Yaai.interact()
-		$YSort/NPCs/Yaai.dialog = ["Wonderful, now go in the forest and learn them words noob"]
+		$YSort/NPCs/Yaai.dialog = [tr("_now_go_in_the_forest_to_learn_the_words")]
 
 
 func _on_Blocker3_body_entered(body):
@@ -313,13 +313,14 @@ func _on_Blocker3_body_entered(body):
 	if Events.events.has_learnt_four_first_words or not Events.events.ceremony_started:
 		return
 	var dialog = ["?"]
-	if not Game.knows_the_initial_letters():
+	if Game.knows_the_initial_letters():
 		dialog = [
-			tr("Yaai: go learn the letters first noob"),
+			tr("_before_you_go_there_learn_the_words"),
 		]
 	else:
 		dialog = [
-			tr("Yaai: go learn the words first noob"),
+			tr("_before_you_go_there_learn_the_letters_1"),
+			tr("_before_you_go_there_learn_the_letters_2"),
 		]
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	Game.current_dialog.init_dialog(dialog, $YSort/NPCs/Yaai, null, false, null)

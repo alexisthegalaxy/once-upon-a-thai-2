@@ -122,10 +122,6 @@ _looking_for_letters,Looking for letters: ,Trouve les lettres :
 _found_required_letters,Found all required letters,Toutes les lettres requises sont trouvées
 _names_takes_door_to,[Name] takes the door to the ,[Name] prend la porte menant au 
 _vowels,Vowels,Voyelles
-_name_exclamation_mark,[Name]!,[Name] !
-_name_do_you_hear_me,"[Name], do you hear me?","[Name], tu m'entends ?"
-_you_have_found_all_the_needed_letters_for_now,You have found all the letters you needed for now - you can come back amongst us now.,"Tu as trouvé toutes les lettres qu'il te fallais, tu peux rentrer maintenant."
-_to_leave_this_world_press_f_key,"To leave the Lexical World, press the button on the right side of your screen.","Pour quitter le Monde Lexical, appuie sur le bouton qui s'affiche sur la droite de ton écran."
 _tones,Tones,Tons
 _numbers,Numbers,Chiffres
 _accents,Accents,Accents
@@ -218,3 +214,9 @@ _inter_2_2,"You'll need to know that ผม is one of the ways to say ""me"" or 
 _i_dont_know,I don't know,J'en sais rien
 _inter_0_1,You're relearning Thai from scratch? Then let me tell you something I truly believe in:,Tu réapprends le Thaï ? Alors laisse-moi te dire quelque chose en quoi je crois vraiment :
 _consonants,Consonants,Consonnes
+_now_go_in_the_forest_to_learn_the_words,"Wonderful! Now, go in the forest, find the words, and learn them all.","Excellent ! À présent, va dans la forêt, trouve les mots, et apprends les tous !"
+_before_you_go_there_learn_the_letters_1,"No [Name], before you go there, you should learn the letters using the scroll I gave you.","Non, [Name], avant que tu n'ailles là-bas, tu devrais apprendre les lettres avec le parchemin que je t'ai donné."
+_before_you_go_there_learn_the_letters_2,"Click on the Letters tab on the right side, and learn the following letters: น, ท, ย, ค, ไ-.","Clique sur l'onglet Lettres sur la droite, et apprends les lettres suivantes : น, ท, ย, ค, ไ-."
+_before_you_go_there_learn_the_words,"[Name], before you go there, you should go find the words in the forest, and learn them all.","[Name], avant de partir, tu devrais aller trouver les mots dans la forêt, et les apprendre tous !"
+_use_the_letter_tab_to_learn_the_letters_1,You see the Letter tab on the right of your screen?,Tu vois l'onglet Lettres sur la droite de l'écran ?
+_use_the_letter_tab_to_learn_the_letters_2,"Click it to open your letter scroll and learn the letters น, ท, ย, ค and ไ-.","Clique dessus pour ouvrir le parchemin et apprendre les lettres น, ท, ย, ค et ไ-."

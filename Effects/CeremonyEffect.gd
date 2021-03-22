@@ -109,6 +109,9 @@ func finish():
 	else:
 		yaai.start_quests = ["find_first_letters", "find_first_words"]
 	yaai.post_dialog_event = ["can_see_letters", null]
-	yaai.dialog = ["use the letters tab to learn the letters noob"]
+	yaai.dialog = [
+		tr("_use_the_letter_tab_to_learn_the_letters_1"),
+		tr("_use_the_letter_tab_to_learn_the_letters_2"),
+	]
 	yaai.interact()
 	

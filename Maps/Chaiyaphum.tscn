@@ -38,25 +38,25 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 22.738, 15.7798 )
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 49.2091, 10.0049 )
 
-[sub_resource type="RectangleShape2D" id=8]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 5.78975, 56.9915 )
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 13.7964, 40.9263 )
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 87.3137, 7.46277 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 36.9876, 29.4021 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 11.6567, 38.2656 )
 
-[sub_resource type="RectangleShape2D" id=6]
+[sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 10.2911, 15.7303 )
 
 [node name="Chaiyaphum" type="Node2D"]
@@ -6266,59 +6266,59 @@ shape = SubResource( 1 )
 
 [node name="Blocker2" type="CollisionShape2D" parent="Blocker2"]
 position = Vector2( 235.238, 602.599 )
-shape = SubResource( 7 )
+shape = SubResource( 2 )
 
 [node name="Blocker3" type="Area2D" parent="."]
 
 [node name="Blocker3" type="CollisionShape2D" parent="Blocker3"]
 position = Vector2( 341.311, 526.151 )
-shape = SubResource( 8 )
+shape = SubResource( 3 )
 
 [node name="Area2D2" type="Area2D" parent="."]
 
 [node name="Set New path for Yaai" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( 513.789, 513.377 )
-shape = SubResource( 2 )
+shape = SubResource( 4 )
 
 [node name="YaaiCheckIfWeKnowAllWordsAndThenDisappears" type="Area2D" parent="."]
 position = Vector2( -287.205, 429.387 )
 
 [node name="YaaiCheckIfWeKnowAllWordsAndThenDisappears" type="CollisionShape2D" parent="YaaiCheckIfWeKnowAllWordsAndThenDisappears"]
 position = Vector2( 553.356, 118.794 )
-shape = SubResource( 3 )
+shape = SubResource( 5 )
 
 [node name="PloyWillCome" type="Area2D" parent="."]
 position = Vector2( -287.205, 429.387 )
 
 [node name="PloyWillCome" type="CollisionShape2D" parent="PloyWillCome"]
 position = Vector2( 996.513, -398.768 )
-shape = SubResource( 4 )
+shape = SubResource( 6 )
 
 [node name="PloyInFrontOfHouse" type="Area2D" parent="."]
 position = Vector2( -287.205, 429.387 )
 
 [node name="PloyInFrontOfHouse" type="CollisionShape2D" parent="PloyInFrontOfHouse"]
 position = Vector2( 1375.79, -316.865 )
-shape = SubResource( 4 )
+shape = SubResource( 6 )
 
 [node name="TalkToPloy" type="Area2D" parent="."]
 position = Vector2( -287.205, 429.387 )
 
 [node name="TalkToPloy" type="CollisionShape2D" parent="TalkToPloy"]
 position = Vector2( 1081.47, -305.183 )
-shape = SubResource( 4 )
+shape = SubResource( 6 )
 
 [node name="Area2D3" type="Area2D" parent="."]
 
 [node name="Yaai talks about the rock and teaches the first sentence" type="CollisionShape2D" parent="Area2D3"]
 position = Vector2( -191.301, 344.119 )
-shape = SubResource( 2 )
+shape = SubResource( 4 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 
 [node name="Ceremony starts" type="CollisionShape2D" parent="Area2D4"]
 position = Vector2( 273.901, 527.871 )
-shape = SubResource( 5 )
+shape = SubResource( 7 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -6347,13 +6347,13 @@ scale = Vector2( 0.6, 0.6 )
 
 [node name="EnterSomber" type="CollisionShape2D" parent="EnterSomber"]
 position = Vector2( 1070.76, -181.46 )
-shape = SubResource( 6 )
+shape = SubResource( 8 )
 
 [node name="ExitSomber" type="Area2D" parent="."]
 
 [node name="ExitSomber" type="CollisionShape2D" parent="ExitSomber"]
 position = Vector2( 1070.69, -150.954 )
-shape = SubResource( 6 )
+shape = SubResource( 8 )
 
 [node name="Locations" type="Node" parent="."]
 
