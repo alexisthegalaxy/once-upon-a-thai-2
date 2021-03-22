@@ -1084,7 +1084,9 @@
     "final": "",
     "class": "HIGH",
     "frequency_index": "51",
-    "audio": "ฐอ"
+    "audio": "ฐอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "46": {
     "th": "ธ",
@@ -1095,7 +1097,9 @@
     "final": "",
     "class": "LOW",
     "frequency_index": "24",
-    "audio": "ธอ"
+    "audio": "ธอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "47": {
     "th": "ญ",
@@ -1106,7 +1110,9 @@
     "final": "n",
     "class": "LOW",
     "frequency_index": "49",
-    "audio": "ญอ"
+    "audio": "ญอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "48": {
     "th": "-ัว",
@@ -1117,7 +1123,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "อัว"
+    "audio": "อัว",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "49": {
     "th": "-ัวะ",
@@ -1128,7 +1136,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "อัวะ"
+    "audio": "อัวะ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "50": {
     "th": "โ-ะ",
@@ -1139,7 +1149,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "โอะ"
+    "audio": "โอะ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "51": {
     "th": "รร",
@@ -1150,7 +1162,9 @@
     "final": "an",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "อา"
+    "audio": "อา",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "52": {
     "th": "เ-ีย",
@@ -1161,7 +1175,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "เอีย"
+    "audio": "เอีย",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "53": {
     "th": "เ-ียะ",
@@ -1172,7 +1188,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "เอียะ"
+    "audio": "เอียะ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "54": {
     "th": "เ-ือ",
@@ -1183,7 +1201,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "เอือ"
+    "audio": "เอือ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "55": {
     "th": "เ-ือะ",
@@ -1194,7 +1214,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "เอือะ"
+    "audio": "เอือะ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "56": {
     "th": "-ึ",
@@ -1205,7 +1227,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "อึ"
+    "audio": "อึ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "57": {
     "th": "เ-า",
@@ -1216,7 +1240,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "เอา"
+    "audio": "เอา",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "58": {
     "th": "เ-าะ",
@@ -1227,7 +1253,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "เอาะ"
+    "audio": "เอาะ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "59": {
     "th": "แ-ะ",
@@ -1238,7 +1266,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "แอะ"
+    "audio": "แอะ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "60": {
     "th": "เ-อ",
@@ -1249,7 +1279,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "เออ"
+    "audio": "เออ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "61": {
     "th": "เ-อะ",
@@ -1260,7 +1292,9 @@
     "final": "",
     "class": "VOWEL",
     "frequency_index": "",
-    "audio": "เออะ"
+    "audio": "เออะ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "62": {
     "th": "ฆ",
@@ -1271,7 +1305,9 @@
     "final": "k",
     "class": "LOW",
     "frequency_index": "",
-    "audio": "ฆอ"
+    "audio": "ฆอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "63": {
     "th": "ถ",
@@ -1282,7 +1318,9 @@
     "final": "t",
     "class": "HIGH",
     "frequency_index": "",
-    "audio": "ถอ"
+    "audio": "ถอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "64": {
     "th": "ฒ",
@@ -1293,7 +1331,9 @@
     "final": "t",
     "class": "LOW",
     "frequency_index": "",
-    "audio": "ฒอ"
+    "audio": "ฒอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "65": {
     "th": "ฒ",
@@ -1304,7 +1344,9 @@
     "final": "t",
     "class": "LOW",
     "frequency_index": "",
-    "audio": "ฒอ"
+    "audio": "ฒอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "66": {
     "th": "ฑ",
@@ -1315,7 +1357,9 @@
     "final": "t",
     "class": "LOW",
     "frequency_index": "",
-    "audio": "ฑอ"
+    "audio": "ฑอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "67": {
     "th": "ฌ",
@@ -1326,7 +1370,9 @@
     "final": "t",
     "class": "LOW",
     "frequency_index": "",
-    "audio": "ฌอ"
+    "audio": "ฌอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "68": {
     "th": "ศ",
@@ -1337,7 +1383,9 @@
     "final": "t",
     "class": "HIGH",
     "frequency_index": "",
-    "audio": "ศอ"
+    "audio": "ศอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "69": {
     "th": "ษ",
@@ -1348,7 +1396,9 @@
     "final": "t",
     "class": "HIGH",
     "frequency_index": "",
-    "audio": "ษอ"
+    "audio": "ษอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "70": {
     "th": "ฮ",
@@ -1359,7 +1409,9 @@
     "final": "",
     "class": "LOW",
     "frequency_index": "",
-    "audio": "ฮอ"
+    "audio": "ฮอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "71": {
     "th": "ฎ",
@@ -1370,7 +1422,9 @@
     "final": "t",
     "class": "MID",
     "frequency_index": "",
-    "audio": "ฎอ"
+    "audio": "ฎอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "72": {
     "th": "ฏ",
@@ -1381,7 +1435,9 @@
     "final": "t",
     "class": "MID",
     "frequency_index": "",
-    "audio": "ฏอ"
+    "audio": "ฏอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "73": {
     "th": "ฝ",
@@ -1392,7 +1448,9 @@
     "final": "p",
     "class": "HIGH",
     "frequency_index": "",
-    "audio": "ฝอ"
+    "audio": "ฝอ",
+    "en_mem": "",
+    "fr_mem": ""
   },
   "74": {
     "th": "ฬ",
@@ -1403,7 +1461,9 @@
     "final": "n",
     "class": "LOW",
     "frequency_index": "",
-    "audio": "ฬอ"
+    "audio": "ฬอ",
+    "en_mem": "",
+    "fr_mem": ""
   }
 }
 

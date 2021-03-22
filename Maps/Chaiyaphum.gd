@@ -31,24 +31,6 @@ func yaai_arc():
 	elif Events.events.has_gone_to_first_sentence:
 		$YSort/NPCs/Yaai.position = Vector2(202.29, 654.29)
 		$YSort/NPCs/Yaai.set_direction("right")
-		# when we'll try to get close to her, she'll explain the sentence
-#	elif Events.events["has_finished_the_letter_world_the_first_time"]:
-#		Events.events["has_gone_to_first_sentence"] = true
-#		Game.player.can_interact = false
-#		Game.is_frozen = true
-#		$YSort/NPCs/Yaai.position = Vector2(207.81, 513.20)
-#		$YSort/NPCs/Yaai.dialog = [
-#			tr("_welcome_back_name"),
-#			tr("_you_can_always_go_back_to_your_memory_palace"),
-#			tr("_for_now_follow_me_into_the_forest"),
-#		]
-#		$YSort/NPCs/Yaai.post_dialog_event = ["yaai_walks_to", [[
-#			Vector2(285.5, 561.6),
-#			Vector2(247, 619.5),
-#			Vector2(199, 652.5),
-#			Vector2(205, 655.57),
-#		]]]
-#		$YSort/NPCs/Yaai.call_deferred("interact")
 	elif Events.events["yaai_went_to_forest_entrance"]:
 		$YSort/NPCs/Yaai.position = Vector2(245.153534, 523.72229)
 		$YSort/NPCs/Yaai.set_direction("right")

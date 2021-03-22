@@ -1,7 +1,7 @@
 extends Node
 
 var initial_state = true
-var state_2 = false
+var state_2 = true
 var events = {
 	"has_had_a_quest": state_2,
 	"money_is_visible": state_2,
