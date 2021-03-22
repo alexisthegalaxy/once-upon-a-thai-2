@@ -2284,7 +2284,7 @@
     "teaching_order": -1
   },
   "254": {
-    "split": "ญี่-ปุ่น",
+    "split": "ญี่=ปุ่น",
     "en": "Japan",
     "tones": "FL",
     "pos": "PLAC",
@@ -5950,5 +5950,78 @@
     "pos": "",
     "th": "อันตราย",
     "teaching_order": -1
+  },
+  "663": {
+    "split": "มี-ชี=วิต",
+    "en": "to live, to be alive",
+    "fr": "vivre, être en vie",
+    "tones": "MMH",
+    "pos": "",
+    "th": "มีชีวิต",
+    "teaching_order": -1
+  },
+  "664": {
+    "split": "หลาย",
+    "en": "many, several",
+    "fr": "beaucoup, plusieurs",
+    "tones": "R",
+    "pos": "",
+    "th": "หลาย",
+    "teaching_order": -1
+  },
+  "665": {
+    "split": "ยัง-คง",
+    "en": "still, remain",
+    "fr": "encore, toujours",
+    "tones": "MM",
+    "pos": "",
+    "th": "ยังคง",
+    "teaching_order": -1
+  },
+  "666": {
+    "split": "นิน=จา",
+    "en": "ninja",
+    "fr": "ninja",
+    "tones": "MM",
+    "pos": "",
+    "th": "นินจา",
+    "teaching_order": -1
+  },
+  "667": {
+    "split": "ตัว-ตน",
+    "en": "body, shape, tangibility",
+    "fr": "corps, forme, tangibilité",
+    "tones": "MM",
+    "pos": "",
+    "th": "ตัวตน",
+    "teaching_order": -1
+  },
+  "668": {
+    "split": "นำ",
+    "en": "to bring, take, convey / to lead",
+    "fr": "prendre, emmener / guider, mener",
+    "tones": "M",
+    "pos": "",
+    "th": "นำ",
+    "teaching_order": -1
+  },
+  "669": {
+    "split": "แนว-หน้า",
+    "en": "frontline, first row",
+    "fr": "première ligne, pointe",
+    "tones": "MF",
+    "pos": "",
+    "th": "แนวหน้า",
+    "teaching_order": -1
+  },
+  "670": {
+    "split": "วิ=จัย",
+    "en": "research",
+    "fr": "recherche",
+    "tones": "HM",
+    "pos": "",
+    "th": "วิจัย",
+    "teaching_order": -1,
+    "etymology_en": "comes from the Sanskrit विचय (vicaya, meaning \"gathering, putting together\")."
   }
 }
