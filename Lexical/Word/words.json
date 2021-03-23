@@ -4103,7 +4103,7 @@
     "teaching_order": -1
   },
   "458": {
-    "split": "ฉ-ลาด",
+    "split": "ฉ=ลาด",
     "en": "clever, intelligent",
     "fr": "intelligent",
     "tones": "LL",
@@ -6023,5 +6023,23 @@
     "th": "วิจัย",
     "teaching_order": -1,
     "etymology_en": "comes from the Sanskrit विचय (vicaya, meaning \"gathering, putting together\")."
+  },
+  "671": {
+    "split": "นัก-เรียน",
+    "en": "student, learner",
+    "fr": "élève, étudiant, apprenant",
+    "tones": "HM",
+    "pos": "",
+    "th": "นักเรียน",
+    "teaching_order": -1
+  },
+  "672": {
+    "split": "ย้าย",
+    "en": "to move (houses...), to transfer",
+    "fr": "déménager, se déplacer",
+    "tones": "H",
+    "pos": "",
+    "th": "ย้าย",
+    "teaching_order": -1
   }
 }

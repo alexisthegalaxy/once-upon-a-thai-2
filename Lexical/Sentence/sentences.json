@@ -1593,7 +1593,7 @@
     "speaker_gender": "M"
   },
   "277": {
-    "th": "ฉัน_เป็น_คน_ฉ-ลาด_มาก_ค่ะ",
+    "th": "ฉัน_เป็น_คน_ฉ=ลาด_มาก_ค่ะ",
     "en": "I am a very intelligent person.",
     "fr": "Je suis une personne très intelligente.",
     "word_ids": [24, 207, 343, 458, 366, 11],
@@ -3315,5 +3315,35 @@
     "en": "What should I bring to the party?",
     "fr": "{Je dois emmener/Je devrai emmener/Je devrais emmener/Il faut emmener/Il faut que j'emmène} quoi {à/pour} la {fête/soirée/party} ?",
     "word_ids": [24, 242, 668, 56, 201, 631]
+  },
+  "566": {
+    "th": "คุณ_ฉ=ลาด_มาก",
+    "en": "You{ are/'re} {very/so} {intelligent/smart/clever}.",
+    "fr": "{Tu es/T'es} {très/tellement} intelligent(e).",
+    "word_ids": [28, 458, 366]
+  },
+  "567": {
+    "th": "เขา_เป็น_นัก-เรียน_ที่_ฉ=ลาด",
+    "en": "He is a smart student.",
+    "fr": "{C'/Il /Elle }est un{/e} élève intelligent{/e}.",
+    "word_ids": [26, 207, 671, 45, 458]
+  },
+  "568": {
+    "th": "กุญ=แจ_ของ_ฉัน_อยู่_ที่-ไหน",
+    "en": "Where are my keys?",
+    "fr": "Où sont mes {clés/clefs} ?|Où est ma {clé/clef} ?",
+    "word_ids": [552, 40, 24, 237, 57]
+  },
+  "569": {
+    "th": "เมื่อ-เช้า-นี้_ฉัน_ทำ_น้ำ_หก_ใส่_คอม=พิว=เตอร์",
+    "en": "I spilled water on {my/the/a} computer this morning.",
+    "fr": "(Ce matin, )j'ai {renversé/fait tomber/mis} de l'eau sur {mon /un /l'/des }ordi(nateur){/s}{/ ce matin}.",
+    "word_ids": [607, 24, 208, 156, 229, 570, 596]
+  },
+  "570": {
+    "th": "ฉัน_ตัด-สิน-ใจ_ว่า_จะ_ย้าย_มา_เมือง-ไทย_ใน_ฤ=ดู-ร้อน_หน้า",
+    "en": "I decided that I will move to Thailand next summer.",
+    "fr": "J'ai décidé que je déménagerai{/s} en Thaïlande {/pendant /durant /dans }l'été {prochain/suivant}.",
+    "word_ids": [24, 443, 184, 42, 672, 202, 253, 44, 550, 53]
   }
 }
