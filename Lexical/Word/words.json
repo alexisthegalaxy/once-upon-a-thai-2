@@ -2701,6 +2701,7 @@
   "301": {
     "split": "ทำ-ให้",
     "en": "to make (someone do something)",
+    "fr": "faire faire (quelque chose à quelqu'un)",
     "tones": "MF",
     "pos": "VERB",
     "th": "ทำให้",
@@ -6040,6 +6041,24 @@
     "tones": "H",
     "pos": "",
     "th": "ย้าย",
+    "teaching_order": -1
+  },
+  "673": {
+    "split": "เมา",
+    "en": "drunk",
+    "fr": "ivre",
+    "tones": "M",
+    "pos": "",
+    "th": "เมา",
+    "teaching_order": -1
+  },
+  "674": {
+    "split": "แห่ง",
+    "en": "of",
+    "fr": "de",
+    "tones": "L",
+    "pos": "",
+    "th": "แห่ง",
     "teaching_order": -1
   }
 }

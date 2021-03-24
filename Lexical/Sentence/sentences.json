@@ -3345,5 +3345,35 @@
     "en": "I decided that I will move to Thailand next summer.",
     "fr": "J'ai décidé que je déménagerai{/s} en Thaïlande {/pendant /durant /dans }l'été {prochain/suivant}.",
     "word_ids": [24, 443, 184, 42, 672, 202, 253, 44, 550, 53]
+  },
+  "571": {
+    "th": "ดอก-ไม้_แห่ง_ความ_รัก_คือ_อะ=ไร",
+    "en": "What is the flower of love?",
+    "fr": "Quelle est la fleur de l'amour ?",
+    "word_ids": [267, 674, 441, 239, 206, 56]
+  },
+  "572": {
+    "th": "อย่า_ฟัง_เขา_เขา_เมา",
+    "en": "Don't listen to {him/her}, {he/she}{'s/ is} drunk.",
+    "fr": "Ne l'écoute{z} pas, {il/elle} {est ivre/a bu/est soul/est saoul}{/e}.",
+    "word_ids": [175, 522, 26, 26, 673]
+  },
+  "573": {
+    "th": "กระ=เป๋า_ของ_ฉัน_อยู่_ที่-ไหน",
+    "en": "Where {is/are} my {bag/bags}?",
+    "fr": "Où {est mon sac/sont mes sacs} ?",
+    "word_ids": [278, 40, 24, 237, 57]
+  },
+  "574": {
+    "th": "ฉัน_ชอบ_ฟัง_เพลง_จีน_เพื่อ_เรียน_ภา=ษา_จีน",
+    "en": "I like to listen to chinese music to learn chinese.",
+    "fr": "J'aime bien écouter de la musique chinoise pour apprendre le chinois.",
+    "word_ids": [24, 238, 522, 446, 152, 491, 198, 273, 152]
+  },
+  "575": {
+    "th": "เธอ_ทำ-ให้_ฉัน_รู้_ว่า_ฉัน_ต้อง-การ_เพื่อน_ที่_ดี",
+    "en": "She {made/let/lets/makes} me {realise/know} that I need{/ed} friends who are nice.",
+    "fr": "Elle {m'a/me} fait {réaliser/savoir/connaître} que {j'ai besoin/j'avais besoin/je veux/je voulais} {d'/des /}{amis/un ami} qui {sont/est/était/étaient} {bon/bien/gentil}(s).",
+    "word_ids": [25, 301, 24, 370, 184, 24, 295, 170, 45, 82]
   }
 }
