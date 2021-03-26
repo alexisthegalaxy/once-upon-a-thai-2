@@ -3375,5 +3375,65 @@
     "en": "She {made/let/lets/makes} me {realise/know} that I need{/ed} friends who are nice.",
     "fr": "Elle {m'a/me} fait {réaliser/savoir/connaître} que {j'ai besoin/j'avais besoin/je veux/je voulais} {d'/des /}{amis/un ami} qui {sont/est/était/étaient} {bon/bien/gentil}(s).",
     "word_ids": [25, 301, 24, 370, 184, 24, 295, 170, 45, 82]
+  },
+  "576": {
+    "th": "คุณ_อยาก_ดู_หนัง_ก่อน_นอน_หรือ-ไม่",
+    "en": "Do you want to watch a movie before sleeping?",
+    "fr": "Tu veux regarder un film avant de dormir ?",
+    "word_ids": [28, 241, 368, 161, 79, 210, 676]
+  },
+  "577": {
+    "th": "ฉัน_เหนื่อย_มาก_จน_นอน_ได้_ทั้ง_เดือน",
+    "en": "I am so tired that I could sleep an entire month!",
+    "fr": "Je suis tellement fatigué{/e} que je pourrais dormir {/pendant }{un mois entier/tout un mois/un mois en entier}.",
+    "word_ids": [24, 100, 366, 677, 210, 209, 681, 165]
+  },
+  "578": {
+    "th": "ทำ-ไม_คุณ_ถึง_ถาม_ฉัน_ว่า_ฉัน_ชอบ_คน_แบบ-ไหน",
+    "en": "Why are you asking me what kind of persons I like?",
+    "fr": "Pourquoi {tu me demandes/vous me demandez} quel{/s} genre{/s} de personne(s) j'{aime/apprécie} ?",
+    "word_ids": [59, 28, 606, 217, 24, 184, 24, 238, 343, 402]
+  },
+  "579": {
+    "th": "ส=มอง_ของ_พวก-เขา_ใหญ่_ขึ้น_เมื่อ_ม=นุษย์_เรียน-รู้_ที่_จะ_ใช้_ไฟ",
+    "en": "Their brain became bigger when humans learned to use fire.",
+    "fr": "Leur cerveau{/x} {a grossi/ont grossis/sont devenu gros} quand {les humains/l'homme/les hommes} {ont/a} appris à utiliser le feu.",
+    "word_ids": [675, 40, 36, 83, 374, 380, 604, 545, 45, 42, 222, 145]
+  },
+  "580": {
+    "th": "ฉัน_อยาก_ไป-ถึง_ก่อน_หนัง_จะ_เริ่ม",
+    "en": "I want to arrive before the movie starts.",
+    "fr": "Je veux arriver avant que le film (ne )commence.",
+    "word_ids": [24, 241, 682, 79, 161, 42, 390]
+  },
+  "581": {
+    "th": "ฉัน_ไม่_ได้_เจอ_เพื่อน_มา_พัก_ใหญ่_แล้ว",
+    "en": "I haven't seen my friends for a while.",
+    "fr": "Je n'ai pas vu {mes/mon} ami(e)(s) depuis {longtemps/un moment}.",
+    "word_ids": [24, 39, 209, 468, 170, 202, 576, 83, 172]
+  },
+  "582": {
+    "th": "คุณ_จำ_ความ_ฝัน_ของ_คุณ_ได้_หรือ-ไม่",
+    "en": "Can you remember your dreams?",
+    "fr": "{Tu peux/Peux-tu/Vous pouvez/Pouvez vous/Tu arrives à/T'arrives à/Arrives-tu à/Arrivez-vous à/Vous arrivez à} te rappeler de {tes/vos/ton/votre} rêve(s) ?",
+    "word_ids": [28, 213, 441, 214, 40, 28, 209, 676]
+  },
+  "583": {
+    "th": "ฉัน_ไม่_ได้_รับ_อี=เมล_ที่_คุณ_ส่ง",
+    "en": "I {didn't/haven't} receive{/d} the e{/-}mail you{/'ve} sent.",
+    "fr": "Je n'ai pas reçu {l'e{/-}mail/le courrier électronique} que {vous avez/tu as} envoyé.",
+    "word_ids": [24, 39, 209, 221, 678, 45, 28, 449]
+  },
+  "584": {
+    "th": "ถ้า_คุณ_คิด_ว่า_คุณ_เข้า-ใจ_เศรษ=ฐ=กิจ_คุณ_คิด_ผิด",
+    "en": "If you {think/believe} you understand (the ){economy/economics}, you're {wrong/mistaken/thinking wrong}.",
+    "fr": "Si tu {crois/penses} que tu comprends l'économie, tu te trompes.",
+    "word_ids": [454, 28, 197, 184, 28, 417, 429, 28, 197, 445]
+  },
+  "585": {
+    "th": "คุณ_ไม่_สา=มารถ_เปิด_กล่อง_นี้_ได้_หาก_ไม่_มี_กุญ=แจ",
+    "en": "You can't open this box {without the/if there is not the/if you don't have the/if there is no} key.",
+    "fr": "Tu ne peux pas ouvrir cette boîte {sans la/sans/si tu n'as pas/s'il n'y a pas de/s'il n'y a pas la/si il n'y a pas la/si il n'y a pas de} {clé/clef}{/s}.",
+    "word_ids": [28, 39, 501, 215, 679, 31, 209, 680, 39, 236, 552]
   }
 }

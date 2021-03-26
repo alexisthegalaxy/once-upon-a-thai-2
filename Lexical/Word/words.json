@@ -301,6 +301,7 @@
   "33": {
     "split": "โน่น",
     "en": "that (far)",
+    "fr": "cela (plus eloigné que ceci)",
     "tones": "F",
     "pos": "PRON",
     "th": "โน่น",
@@ -1883,8 +1884,8 @@
   },
   "209": {
     "split": "ได้",
-    "en": "to get, to be able",
-    "fr": "pouvoir, obtenir",
+    "en": "to get, to be able / indicate past tense",
+    "fr": "pouvoir, obtenir / indique le passé",
     "tones": "F",
     "pos": "VERB",
     "th": "ได้",
@@ -4491,7 +4492,7 @@
     "teaching_order": -1
   },
   "501": {
-    "split": "สา-มารถ",
+    "split": "สา=มารถ",
     "en": "can, to be able to",
     "fr": "pouvoir",
     "tones": "RF",
@@ -6059,6 +6060,78 @@
     "tones": "L",
     "pos": "",
     "th": "แห่ง",
+    "teaching_order": -1
+  },
+  "675": {
+    "split": "ส=มอง",
+    "en": "brain",
+    "fr": "cerveau",
+    "tones": "LR",
+    "pos": "",
+    "th": "สมอง",
+    "teaching_order": -1
+  },
+  "676": {
+    "split": "หรือ-ไม่",
+    "en": "or not?",
+    "fr": "ou pas?",
+    "tones": "RF",
+    "pos": "",
+    "th": "หรือไม่",
+    "teaching_order": -1
+  },
+  "677": {
+    "split": "จน",
+    "en": "until, so that",
+    "fr": "jusqu'à, à tel point que",
+    "tones": "M",
+    "pos": "",
+    "th": "จน",
+    "teaching_order": -1
+  },
+  "678": {
+    "split": "อี=เมล",
+    "en": "email",
+    "fr": "email",
+    "tones": "MM",
+    "pos": "",
+    "th": "อีเมล",
+    "teaching_order": -1
+  },
+  "679": {
+    "split": "กล่อง",
+    "en": "box, case, casket",
+    "fr": "boîte, étuis",
+    "tones": "L",
+    "pos": "",
+    "th": "กล่อง",
+    "teaching_order": -1
+  },
+  "680": {
+    "split": "หาก",
+    "en": "if",
+    "fr": "si, dans le cas où",
+    "tones": "L",
+    "pos": "",
+    "th": "หาก",
+    "teaching_order": -1
+  },
+  "681": {
+    "split": "ทั้ง",
+    "en": "all, entire, whole",
+    "fr": "tout, en entier",
+    "tones": "H",
+    "pos": "",
+    "th": "ทั้ง",
+    "teaching_order": -1
+  },
+  "682": {
+    "split": "ไป-ถึง",
+    "en": "to arrive at, to reach",
+    "fr": "arriver à, atteindre",
+    "tones": "MR",
+    "pos": "",
+    "th": "ไปถึง",
     "teaching_order": -1
   }
 }

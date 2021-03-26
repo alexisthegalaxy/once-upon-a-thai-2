@@ -246,12 +246,12 @@ func add_random_letter_to_letters_to_look_for():
 	var random_letter = Game.letters[str(randi() % Game.letters.size())]
 	if not random_letter in letters_we_look_for:
 		letters_we_look_for.append(random_letter)
-		if looking_for_letter__node:
-			looking_for_letter__node.init_letters_we_look_for(letters_we_look_for)
-		else:
-			looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
-			looking_for_letter__node.init_letters_we_look_for(letters_we_look_for)
-			Game.current_scene.add_child(looking_for_letter__node)
+#		if looking_for_letter__node:
+#			looking_for_letter__node.init_letters_we_look_for(letters_we_look_for)
+#		else:
+#			looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
+#			looking_for_letter__node.init_letters_we_look_for(letters_we_look_for)
+#			Game.current_scene.add_child(looking_for_letter__node)
 
 func is_in_letter_world():
 	return "LexicalWorld" in current_map_name
