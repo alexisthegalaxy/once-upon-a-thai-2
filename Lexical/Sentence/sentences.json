@@ -3435,5 +3435,35 @@
     "en": "You can't open this box {without the/if there is not the/if you don't have the/if there is no} key.",
     "fr": "Tu ne peux pas ouvrir cette boîte {sans la/sans/si tu n'as pas/s'il n'y a pas de/s'il n'y a pas la/si il n'y a pas la/si il n'y a pas de} {clé/clef}{/s}.",
     "word_ids": [28, 39, 501, 215, 679, 31, 209, 680, 39, 236, 552]
+  },
+  "586": {
+    "th": "วัน-นี้_ฉัน_พบ_นัก-เรียน_จาก_บรา=ซิล",
+    "en": "*1Today1*I met {a student/students} {/that came /coming }from Brazil*1*.",
+    "fr": "*1Aujourd'hui1*j'ai rencontré {un/une/des} {étudiant/écolier/collégien/lycéen/élève}{/e/ne}{/s} {du/venant du/venu du/venus du} Brésil*1*.",
+    "word_ids": [64, 24, 373, 671, 43, 685]
+  },
+  "587": {
+    "th": "สี-เทา_เป็น_สี_โปรด_ของ_คุณ_ใช่-มั้ย",
+    "en": "Gr{e/a}y is your favo(u)rite color, {/is that }right?",
+    "fr": "(Le )gris {/c'}est ta couleur préférée, {non/n'est-ce pas} ?",
+    "word_ids": [111, 207, 122, 94, 40, 28, 686]
+  },
+  "588": {
+    "th": "สี-เทา_ไม่-ใช่_สี_โปรด_ของ_ฉัน",
+    "en": "Gr{e/a}y is not my favo(u)rite color.",
+    "fr": "(Le )gris {/ce }n'est pas ma couleur préférée.",
+    "word_ids": [111, 305, 122, 94, 40, 24]
+  },
+  "589": {
+    "th": "ฤ=ดู-ใบ-ไม้-ผลิ_ใน_ประ=เทศ-ไทย_แตก-ต่าง_จาก_ฤ=ดู-ใบ-ไม้-ผลิ_ใน_ยุ=โรป",
+    "en": "Spring in Thailand is different from spring in Europe.",
+    "fr": "Le printemps en Thaïlande est différent du printemps en Europe.",
+    "word_ids": [642, 44, 684, 687, 43, 642, 44, 688]
+  },
+  "590": {
+    "th": "ฉัน_ชื่น-ชม_ครู_สอน_ภา=ษา_ส=เปน",
+    "en": "I {admire/praise/commend} the {Spanish teacher/teacher teaching Spanish/teacher teaching Spanish language}.",
+    "fr": "{J'admire/Je félicite/Je loue} l{e/a} prof{/esseur/esseure} {d'/qui enseigne l'}Espagnol.",
+    "word_ids": [24, 526, 150, 683, 273, 256]
   }
 }

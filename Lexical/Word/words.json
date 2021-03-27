@@ -2302,8 +2302,9 @@
     "teaching_order": -1
   },
   "256": {
-    "split": "สเ-ปน",
+    "split": "ส=เปน",
     "en": "Spain",
+    "fr": "Espagne",
     "tones": "LM",
     "pos": "PLAC",
     "th": "สเปน",
@@ -6132,6 +6133,60 @@
     "tones": "MR",
     "pos": "",
     "th": "ไปถึง",
+    "teaching_order": -1
+  },
+  "683": {
+    "split": "สอน",
+    "en": "to teach, instruct",
+    "fr": "enseigner, apprendre, instruire",
+    "tones": "R",
+    "pos": "",
+    "th": "สอน",
+    "teaching_order": -1
+  },
+  "684": {
+    "split": "ประ=เทศ-ไทย",
+    "en": "Thailand",
+    "fr": "Thaïlande",
+    "tones": "LMM",
+    "pos": "",
+    "th": "ประเทศไทย",
+    "teaching_order": -1
+  },
+  "685": {
+    "split": "บรา=ซิล",
+    "en": "Brazil",
+    "fr": "Brésil",
+    "tones": "MM",
+    "pos": "",
+    "th": "บราซิล",
+    "teaching_order": -1
+  },
+  "686": {
+    "split": "ใช่-มั้ย",
+    "en": "right?",
+    "fr": "non ? n'est-ce pas ?",
+    "tones": "MM",
+    "pos": "",
+    "th": "ใช่มั้ย",
+    "teaching_order": -1
+  },
+  "687": {
+    "split": "แตก-ต่าง",
+    "en": "to be different, unlike",
+    "fr": "être différent",
+    "tones": "LL",
+    "pos": "",
+    "th": "แตกต่าง",
+    "teaching_order": -1
+  },
+  "688": {
+    "split": "ยุ=โรป",
+    "en": "Europe",
+    "fr": "Europe",
+    "tones": "HL",
+    "pos": "",
+    "th": "ยุโรป",
     "teaching_order": -1
   }
 }
