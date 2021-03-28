@@ -32,15 +32,6 @@ func init_learn_letter_button():
 	else:
 		$LearnLetterButton.queue_free()
 
-func leaves_test_to_go_to_MP():
-	# We need to reopen the test when we're back.
-	Game.should_start_test_when_back_from_MP = [
-		"res://Test/Word/TestGuessMeaning.tscn",
-		word["id"],
-		over_word,
-	]
-	over_word.is_frozen = true
-
 func init(word_id, _over_word):
 	Game.is_frozen = true
 	Game.active_test = self

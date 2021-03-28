@@ -75,11 +75,12 @@ func starts_disappearing():
 func show_letter_page():
 	var letter_page = load("res://Lexical/Letter/LetterPage.tscn").instance()
 	Game.letter_page = letter_page
-	Game.current_scene.add_child(letter_page)
+#	get_tree().current_scene.add_child(letter_page)
+	get_tree().get_root().add_child(letter_page)
 	letter_page.init_letter_page(letter_id)
 
 func _on_Button_pressed():
-	if Game.current_dialog or Game.active_letter_test:
+	if Game.current_dialog or Game.active_letter_test or Game.letter_page:
 		return
 	if is_known:
 		show_letter_page()
@@ -97,6 +98,8 @@ func start_letter_test():
 		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
 
 func _input(_event):
+	if Game.letter_page:
+		return
 	if is_hovered and Input.is_action_just_pressed("interact"):
 		get_tree().set_input_as_handled()
 		_on_Button_pressed()

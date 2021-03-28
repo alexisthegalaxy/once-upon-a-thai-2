@@ -35,12 +35,12 @@ func akson_letter_learnt(letter):
 			cloud.lift()
 
 func _input(event):
-	if Game.active_letter_test or Game.current_dialog:
+	if Game.active_letter_test or Game.current_dialog or Game.letter_page:
 		return
 	if event is InputEventMouseMotion:
 		var distance_to_center = event.position.distance_squared_to(CENTER)
-		if distance_to_center > 4000:
-			var intensity = (distance_to_center - 4000) / 40
+		if distance_to_center > 4500:
+			var intensity = (distance_to_center - 4500) / 100
 			direction = (event.position - CENTER).normalized()
 			speed = min(intensity, 500)
 		else:
@@ -48,21 +48,21 @@ func _input(event):
 
 func _process(delta):
 	# Moving using the mouse
-	if Game.active_letter_test or Game.current_dialog:
+	if Game.active_letter_test or Game.current_dialog or Game.letter_page:
 		return
 	if direction:
 		$Objects.position -= direction * delta * speed
-		limit_movement()
+		limit_movement(0)
 
-func limit_movement():
-	if $Objects.position.x > LIMIT_RIGHT:
-		$Objects.position.x = LIMIT_RIGHT
-	if $Objects.position.x < LIMIT_LEFT:
-		$Objects.position.x = LIMIT_LEFT
-	if $Objects.position.y > LIMIT_DOWN:
-		$Objects.position.y = LIMIT_DOWN
-	if $Objects.position.y < LIMIT_UP:
-		$Objects.position.y = LIMIT_UP
+func limit_movement(extender):
+	if $Objects.position.x > LIMIT_RIGHT + extender * CENTER.x / 2:
+		$Objects.position.x = LIMIT_RIGHT + extender * CENTER.x / 2
+	if $Objects.position.x < LIMIT_LEFT - extender * CENTER.x / 2:
+		$Objects.position.x = LIMIT_LEFT - extender * CENTER.x / 2
+	if $Objects.position.y > LIMIT_DOWN + extender * CENTER.y / 2:
+		$Objects.position.y = LIMIT_DOWN + extender * CENTER.y / 2
+	if $Objects.position.y < LIMIT_UP - extender * CENTER.y / 2:
+		$Objects.position.y = LIMIT_UP - extender * CENTER.y / 2
 
 func exit():
 	var akson = load("res://Lexical/Akson/Akson.tscn").instance()
@@ -73,20 +73,20 @@ func exit():
 
 func _physics_process(delta):
 	# Moving using the keyboard
-	if Game.active_letter_test or Game.current_dialog:
+	if Game.active_letter_test or Game.current_dialog or Game.letter_page:
 		return
 	var input_vector_x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	var input_vector_y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	var input_vector = Vector2(input_vector_x, input_vector_y).normalized()
 	if input_vector != Vector2.ZERO:
 		$Objects.position -= input_vector * delta * 200
-		limit_movement()
+		limit_movement(1)
 		update_letters_focus()
 		get_viewport().warp_mouse(CENTER)
 
 func update_letters_focus():
 	for letter in $Objects/YSort/Letters.get_children():
-		if letter.position.distance_squared_to(CENTER) < 200:
+		if (letter.position + $Objects.position).distance_squared_to(CENTER) < 200:
 			letter._on_Button_mouse_entered()
 		else:
 			letter._on_Button_mouse_exited()

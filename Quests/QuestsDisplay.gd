@@ -6,8 +6,6 @@ var is_showing_quests = false
 
 func _ready():
 	$Quests.hide()
-	if not Game.is_in_letter_world():
-		update_quests_display()
 
 func update_quests_display():
 	var number_of_active_quests = 0

@@ -51,7 +51,6 @@ var change_color = false
 var last_goal_color = Color(1, 1, 1, 1)
 var goal_color = null
 
-var this_letter_world_has_letters = []  # a list of letter ids
 var letters_we_look_for = []  # a list of letters
 var looking_for_letter__node = null
 var player_position_on_overworld = Vector2(1183, 167)  # used when coming back from Letter World
@@ -254,9 +253,6 @@ func add_random_letter_to_letters_to_look_for():
 #			looking_for_letter__node.init_letters_we_look_for(letters_we_look_for)
 #			Game.current_scene.add_child(looking_for_letter__node)
 
-func is_in_letter_world():
-	return "LexicalWorld" in current_map_name
-
 func set_hp(_hp) -> void:
 	player.set_hp(_hp)
 
@@ -429,7 +425,6 @@ func save_game():
 	game_data.known_letters = known_letters
 	game_data.following_spells = following_spells
 	print('game_data.following_spells', game_data.following_spells)
-	game_data.this_letter_world_has_letters = this_letter_world_has_letters
 	game_data.letters_we_look_for = letters_we_look_for
 	game_data.player_position_on_overworld = player_position_on_overworld
 	game_data.player_last_overworld_map_visited = player_last_overworld_map_visited
@@ -449,7 +444,6 @@ func load_game(game_data):
 	update_following_spells_time_to_live()
 	following_spells = game_data.following_spells
 	letters_we_look_for = game_data.letters_we_look_for
-	this_letter_world_has_letters = game_data.this_letter_world_has_letters
 	player_position_on_overworld = Vector2(game_data.player_position_on_overworld[0], game_data.player_position_on_overworld[1])
 	print('player_position_on_overworld', player_position_on_overworld)
 	player_last_overworld_map_visited = game_data.player_last_overworld_map_visited

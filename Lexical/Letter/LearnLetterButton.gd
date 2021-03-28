@@ -25,7 +25,6 @@ func update_known_letters():
 func init_learn_letter_button(_letter_ids, test):
 	letter_ids = _letter_ids
 	$Label.text = make_label_text()
-	var _e = self.connect("leaves_test_to_go_to_MP", test, "leaves_test_to_go_to_MP")
 
 func _process(delta):
 	if mouse_in:
@@ -42,7 +41,6 @@ func open_akson():
 	get_tree().get_root().add_child(akson)
 
 func _on_Button_pressed():
-	Game.this_letter_world_has_letters = []
 	Game.letters_we_look_for = []
 	for letter_id in letter_ids:
 		Game.letters_we_look_for.append(Game.letters[str(letter_id)])

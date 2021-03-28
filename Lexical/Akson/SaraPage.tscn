@@ -349,7 +349,6 @@ position = Vector2( -33.1918, -69.5268 )
 id = "เ-อะ"
 
 [node name="Clouds" type="YSort" parent="Objects/YSort"]
-visible = false
 __meta__ = {
 "_edit_lock_": true
 }

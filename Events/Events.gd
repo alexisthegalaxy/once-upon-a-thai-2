@@ -13,9 +13,7 @@ var events = {
 	"yaai_has_given_last_warning_before_forest": initial_state,
 	"yaai_taught_first_sentence": initial_state,
 	"has_gone_to_first_sentence": initial_state,
-#	"has_finished_the_letter_world_the_first_time": initial_state,
 	"can_see_the_looking_for_letter_banner": initial_state,
-#	"has_been_in_the_letter_world": initial_state,
 	"ceremony_started": initial_state,
 	"yaai_went_to_forest_entrance": initial_state,
 	"talked_to_yaai_for_the_first_time": initial_state,
@@ -143,29 +141,6 @@ func starts_ceremony_effect(yaai):
 	var ceremony_effect = load("res://Effects/CeremonyEffect.tscn").instance()
 	ceremony_effect.yaai = yaai
 	Game.current_scene.add_child(ceremony_effect)
-
-#func immediately_enters_lexical_world():
-#	ChangeMap.call_deferred("_deferred_goto_scene", "res://Maps/LexicalWorld/LetterHub.tscn", -139, 75, 0)
-
-#func enters_lexical_world(_parameters):
-#	Game.blackens()
-#	var timer = Timer.new()
-#	Game.is_frozen = true
-#	timer.connect("timeout", self, "immediately_enters_lexical_world")
-#	timer.set_wait_time(1)
-#	timer.set_one_shot(true)
-#	timer.autostart = true
-#	add_child(timer)
-#	timer.start()
-
-#	var target_positions = [
-#		Vector2(266.69, 528.84),
-#		Vector2(273.62, 623.76),
-#		Vector2(226.68, 635.33),
-#	]
-#	Game.current_focus.will_go_to = target_positions
-#	if target_positions:
-#		Game.current_focus.starts_going_toward(target_positions[0])
 
 func ploy_goes_towards_the_temple(ploy):
 	events.ploy_has_stopped_in_front_of_house = true

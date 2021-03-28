@@ -88,10 +88,9 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 		Game.canvas_color_screen = null
 	save_following_spells_data_before_map_change()
 	Game.is_frozen = false
-	if not Game.is_in_letter_world():
-		if Game.player:
-			Game.player_position_on_overworld = Game.player.position
-			Game.player_last_overworld_map_visited = Game.current_map_name
+	if Game.player:
+		Game.player_position_on_overworld = Game.player.position
+		Game.player_last_overworld_map_visited = Game.current_map_name
 	var previous_map_name = Game.current_map_name
 	Game.current_map_name = to_map_name
 	
@@ -110,14 +109,3 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	generate_following_spells_after_map_change()
 	set_sources_after_map_change()
 	update_main_ui_upon_map_change()
-#	if "LexicalWorld" in to_map_name:
-#		update_letters_to_look_for_if_necesssary(to_map_name)
-#		for following_spell in Game.following_spells:
-#			following_spell.over_word.hide()
-#
-#	if "LexicalWorld" in previous_map_name and not "LexicalWorld" in Game.current_map_name:
-#		# Coming back to Material world
-#		Game.current_scene.get_node("Lights").get_node("CanvasModulate").color = Game.last_goal_color
-##		start_test_when_back_from_MP()
-#		for following_spell in Game.following_spells:
-#			following_spell.over_word.show()

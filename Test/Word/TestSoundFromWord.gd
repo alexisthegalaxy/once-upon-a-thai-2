@@ -81,15 +81,6 @@ func _process(delta):
 		alpha = 1
 		set_alpha()
 
-func leaves_test_to_go_to_MP():
-	# We need to reopen the test when we're back.
-	Game.should_start_test_when_back_from_MP = [
-		"res://Test/Word/TestSoundFromWord.tscn",
-		word["id"],
-		over_word,
-	]
-	over_word.is_frozen = true
-
 func answered_correctly():
 	# This is the first test of the encounter
 	# When it ends, we got to the second test: "res://Test/TestGuessMeaning.tscn"

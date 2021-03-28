@@ -3,7 +3,6 @@ extends Node
 var music_from_map = {
 	"res://Maps/Chaiyaphum.tscn": "res://Sounds/FLOATLANDS_ORIGINAL_SOUNDTRACK/16 Wandering.wav",
 	"res://Maps/PlayerHouse.tscn": "res://Sounds/FLOATLANDS_ORIGINAL_SOUNDTRACK/14 Grass.wav",
-	"res://Maps/LexicalWorld/LetterHub.tscn": "res://Sounds/FLOATLANDS_ORIGINAL_SOUNDTRACK/21 Slowly.wav",
 }
 
 var is_crossfading = false
