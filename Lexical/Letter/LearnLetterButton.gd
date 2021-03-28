@@ -43,15 +43,10 @@ func open_akson():
 
 func _on_Button_pressed():
 	Game.this_letter_world_has_letters = []
+	Game.letters_we_look_for = []
 	for letter_id in letter_ids:
 		Game.letters_we_look_for.append(Game.letters[str(letter_id)])
-#	Events.enters_lexical_world(null)
 	open_akson()
-	# Issue here: we want Akson to appear over the test, but it appears below
-#	Game.active_test.hide()
-#	emit_signal("leaves_test_to_go_to_MP")  # Saves data in the Game.should_start_test_when_back_from_MP
-#	Game.active_test.queue_free()  # Do we need that?
-#	Game.active_letter_test = null
 
 func _on_Button_mouse_exited():
 	mouse_in = false

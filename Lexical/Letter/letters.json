@@ -181,35 +181,33 @@
   "7": {
     "th": "อ",
     "pron": "อ่าง",
-    "en": "or (long)",
-    "fr": "o ouvert (long)",
+    "en": "consonant placeholder",
+    "fr": "absence de consonne",
     "alphabet_index": "None",
     "final": "",
     "class": "MID",
     "frequency_index": "4",
     "audio": "ออ",
     "en_introduction": [
-      "Hello!",
-      "I'm อ, the long \"o\" vowel like in \"ore\". [sound]",
-      "But I'm special: I can also be a consonant.",
-      "If a word has no starting consonant (for example: the Thai word for piece is \"an\")",
-      "Then I am the placeholder for the consonant: \"an\" is written อัน.",
+      "You've seen me already: I mark the \"or\" vowel sound. [sound]",
+      "But I have another function!",
+      "I serve as a consonant placeholder, for words that have no starting consonants!",
+      "For example: the Thai word for piece is \"an\" - so we write it อัน.",
       "So, นอ is pronounced \"nor\", ไอ is pronounced \"ai\", and ออ is pronounced \"or\".",
-      "To remember me, think that I look like a 0 (zero sound)",
-      "or like an open mouth saying the \"or\" sound."
+      "To remember me, think that I look like a 0: there is zero sound."
     ],
     "fr_introduction": [
-      "Hello! Je suis อ, et je représente le long son \"o\", un o ouvert comme dans \"homme\".[sound]",
-      "Mais je suis spécial : je peux aussi être une consonne.",
-      "Si un mot n'a pas de consonne principale (par example, \"un morceau\" en Thaï c'est \"an\")",
-      "Alors je remplace la consonne: \"an\" s'écrit อัน.",
-      "Du coup, นอ se dit \"no\", ไอ se dit \"aï\", et ออ se dit \"o\".",
-      "Pour te rappeler que je marque l'absence de consonne, dis-toi que je ressemble à un zéro 0!",
-      "Et je fais le son \"o\" parce que je ressemble à un \"O\"!"
+      "Tu m'as déjà vu: je suis la voyelle \"o\". [sound]",
+      "Mais j'ai une autre fonction !",
+      "Je sers de porte-voyelle pour les mots qui n'ont pas de consonne - sans moi, elles tomberaient !",
+      "Par example, \"un morceau\" en Thaï c'est \"an\", sans consonne initiale,",
+      "alors c'est moi qui porte la voyelle : อัน.",
+      "Ainsi, นอ se dit \"no\", ไอ se dit \"aï\", et ออ se dit \"o\".",
+      "Pour te rappeler que je marque l'absence de consonne, dis-toi que je ressemble à un zéro 0!"
     ],
     "test": {
-      "prompt": "ชอบ",
-      "distractors": ["ชบ", "อชบ", "ออบ"]
+      "prompt": "ไอ",
+      "distractors": ["อไ", "ไ", "าย", "าัย", "อใ", "ใ"]
     },
     "en_mem": "อ makes the \"or\" sound because it looks like an open mouth saying \"o\", and replace syllables with no consonants because it looks like a zero 0.",
     "fr_mem": "อ fait le son \"o\" car il ressemble à un \"O\", et remplace l'absence de consonne car il ressemble au zéro 0."
@@ -1464,6 +1462,38 @@
     "audio": "ฬอ",
     "en_mem": "",
     "fr_mem": ""
+  },
+  "75": {
+    "th": "-อ",
+    "pron": "อ่าง",
+    "en": "or (long)",
+    "fr": "o ouvert (long)",
+    "alphabet_index": "None",
+    "final": "",
+    "class": "VOWEL",
+    "frequency_index": "4",
+    "audio": "ออ",
+    "en_introduction": [
+      "Hello!",
+      "I'm อ! In addition to being the placeholder consonant for words without a main consonant, I am a vowel!",
+      "I produce the long \"o\" vowel like in \"ore\". [sound]",
+      "So, นอ is pronounced \"nor\", and ออ is pronounced \"or\". [sound]",
+      "To remember me, think that I look like a 0 (zero is pronounced oh)",
+      "or like an open mouth saying the \"or\" sound."
+    ],
+    "fr_introduction": [
+      "Hello!",
+      "En plus d'être la consonne de rechange pour les mots sans consonne principale, je suis une voyelle !",
+      "Je représente le long son \"o\", un \"o\" ouvert comme dans \"homme\".[sound]",
+      "Du coup, นอ se dit \"no\", et ออ se dit \"o\".",
+      "Pour te rappeler que je fais le son \"o\" ouvert, dis-toi que je ressemble à un \"O\" qui est ouvert!"
+    ],
+    "test": {
+      "prompt": "ชอบ",
+      "distractors": ["ชบ", "อชบ", "ออบ"]
+    },
+    "en_mem": "อ makes the \"or\" sound and looks like an open mouth saying \"o\".",
+    "fr_mem": "อ fait le son \"o\" et il ressemble à un \"O\"."
   }
 }
 

@@ -84,8 +84,8 @@ func _on_Button_pressed():
 	if is_known:
 		show_letter_page()
 	else:
-		starts_disappearing()  # use this for testing, but comment it when playing
-#		start_letter_test()
+#		starts_disappearing()  # use this for testing, but comment it when playing
+		start_letter_test()
 
 func start_letter_test():
 	is_hovered = false

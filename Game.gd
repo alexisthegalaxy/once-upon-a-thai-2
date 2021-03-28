@@ -235,9 +235,10 @@ func maybe_update_go_learn_letter_bubble():
 			learn_letter_button.update_known_letters()
 
 func learn_letter(letter):
-	Game.known_letters.append(letter["id"])
+	print('learn_letter', letter.th)
+	Game.known_letters.append(letter.id)
 	maybe_update_go_learn_letter_bubble()
-	Quests.update_learn_letter_quests(letter["id"])
+	Quests.update_learn_letter_quests(letter.id)
 	Game.main_ui.update_main_ui_letters_display()
 	if looking_for_letter__node:
 		looking_for_letter__node.update_label_text()
@@ -361,7 +362,6 @@ func _input(_event):
 			is_frozen = false
 		elif akson:
 			akson.exit()  # triggers a queue_free, and recenters the camera on Player
-			akson = null
 			is_frozen = false
 		else:
 			exit_screen = load("res://UI/ExitAreYouSure.tscn").instance()

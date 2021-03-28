@@ -2151,7 +2151,7 @@
     "pos": "VERB",
     "th": "ชอบ",
     "teaching_order": 32,
-    "letters": [30, 7, 18]
+    "letters": [30, 75, 18]
   },
   "239": {
     "split": "รัก",
@@ -3538,7 +3538,7 @@
     "pos": "None",
     "th": "ตอ",
     "teaching_order": -1,
-    "letters": [16, 7]
+    "letters": [16, 75]
   },
   "396": {
     "split": "ยาย",
@@ -3577,7 +3577,7 @@
     "pos": "NOUN",
     "th": "คอ",
     "teaching_order": -1,
-    "letters": [21, 7]
+    "letters": [21, 75]
   },
   "400": {
     "split": "หิน",

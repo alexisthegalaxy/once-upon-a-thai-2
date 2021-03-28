@@ -8,8 +8,13 @@ const LIMIT_LEFT = -280
 const LIMIT_UP = -120
 const LIMIT_DOWN = 190
 
-func init_payanchana_page():
-	$LettersWeLookFor.init_letters_we_look_for(Game.letters_we_look_for)
+func init_akson_subpage():
+	var payanchanas = []
+	for letter in Game.letters_we_look_for:
+		if letter["class"] in ['LOW', 'MID', 'HIGH']:
+			payanchanas.append(letter)
+	$LettersWeLookFor.init_letters_we_look_for(payanchanas)
+	_lift_clouds_for_known_letters()
 
 func _lift_clouds_for_known_letters():
 	for cloud in $Objects/YSort/Clouds.get_children():
@@ -19,11 +24,12 @@ func _lift_clouds_for_known_letters():
 
 func _ready():
 	get_viewport().warp_mouse(CENTER)
-	_lift_clouds_for_known_letters()
 	for letter in $Objects/YSort/Letters.get_children():
 		letter.connect("akson_letter_learnt", self, "akson_letter_learnt")
 
 func akson_letter_learnt(letter):
+	if $LettersWeLookFor:
+		$LettersWeLookFor.update_label_text()
 	for cloud in $Objects/YSort/Clouds.get_children():
 		if letter in cloud.lift_on_letters:
 			cloud.lift()
@@ -59,6 +65,10 @@ func limit_movement():
 		$Objects.position.y = LIMIT_UP
 
 func exit():
+	var akson = load("res://Lexical/Akson/Akson.tscn").instance()
+	Game.akson = akson
+	akson.init_akson([])
+	Game.current_scene.add_child(akson)
 	queue_free()
 
 func _physics_process(delta):
