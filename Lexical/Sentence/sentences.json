@@ -3465,5 +3465,41 @@
     "en": "I {admire/praise/commend} the {Spanish teacher/teacher teaching Spanish/teacher teaching Spanish language}.",
     "fr": "{J'admire/Je félicite/Je loue} l{e/a} prof{/esseur/esseure} {d'/qui enseigne l'}Espagnol.",
     "word_ids": [24, 526, 150, 683, 273, 256]
+  },
+  "591": {
+    "th": "คุณ_รู้_ไหม_ว่า_อะ=ไร_ทำ-ให้_ฉัน_ยิ้ม_ได้",
+    "en": "Do you know what {makes/can make} me smile?",
+    "fr": "{Tu sais/Sais-tu/Savez-vous/vous savez} ce qui {me fais sourire/peut me faire sousrire/m'apporte le sourire/me donne le sourire} ?",
+    "word_ids": [28, 370, 10, 184, 56, 301, 24, 171, 209]
+  },
+  "592": {
+    "th": "ฉัน_อาจ-จะ_ไม่_ได้_เจอ_พ่อ-แม่_อีก_นาน",
+    "en": "I {may/might/could} not {be seeing/see} my parents for {a long time/long/a while/a long while/some time}.",
+    "fr": "Je {ne verrai peut-être pas/ne pourrai peut-être pas voir/pourrais ne pas voir/pourrai ne pas voir} mes parents pendant {longtemps/un moment}.",
+    "word_ids": [24, 689, 39, 209, 468, 541, 489, 80]
+  },
+  "593": {
+    "th": "อย่า_ข=โมย_นม_ฉัน",
+    "en": "{/Please }Don't steal my milk.",
+    "fr": "{Ne vole pas/Prière de ne pas voler} mon lait.",
+    "word_ids": [175, 691, 562, 24]
+  },
+  "594": {
+    "th": "ทำ-ไม_ฉัน_ต้อง_ทำ_อย่าง-นั้น",
+    "en": "Why {should/would/must} I do {that/like that}?",
+    "fr": "Pourquoi {dois-je/je dois/devrais-je/je devrais} faire {ça/comme ça} ?",
+    "word_ids": [59, 24, 199, 208, 690]
+  },
+  "595": {
+    "th": "ฉัน_คิด_ว่า_ช้า_ใน_ตอน-เช้า",
+    "en": "I think slowly {in/during/} the morning{/s}.",
+    "fr": "Je pense lentement {le matin/dans la matinée}.",
+    "word_ids": [24, 197, 184, 594, 44, 76]
+  },
+  "596": {
+    "th": "คุณ_กำ=ลัง_คิด_อะ=ไร_อยู่",
+    "en": "What are you thinking( about)?",
+    "fr": "{À quoi penses-tu/À quoi es-tu en train de penser/Tu penses à quoi/Tu es en train de penser à quoi} ?",
+    "word_ids": [28, 306, 197, 56, 237]
   }
 }

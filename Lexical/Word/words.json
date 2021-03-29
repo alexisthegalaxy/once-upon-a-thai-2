@@ -1577,7 +1577,7 @@
   "175": {
     "split": "อย่า",
     "en": "don't",
-    "fr": "prière de ne pas",
+    "fr": "ne ... pas (impératif) / prière de ne pas",
     "tones": "L",
     "pos": "None",
     "th": "อย่า",
@@ -6188,5 +6188,40 @@
     "pos": "",
     "th": "ยุโรป",
     "teaching_order": -1
+  },
+  "689": {
+    "split": "อาจ-จะ",
+    "en": "might, may, maybe",
+    "fr": "pourrait, peut, peut-être",
+    "tones": "LL",
+    "pos": "",
+    "th": "อาจจะ",
+    "teaching_order": -1
+  },
+  "690": {
+    "split": "อย่าง-นั้น",
+    "en": "like that",
+    "fr": "comme ça",
+    "tones": "MH",
+    "pos": "",
+    "th": "อย่างนั้น",
+    "teaching_order": -1
+  },
+  "691": {
+    "split": "ข=โมย",
+    "en": "thief / to steal",
+    "fr": "voleur / voler",
+    "tones": "LM",
+    "pos": "",
+    "th": "ขโมย",
+    "teaching_order": -1
   }
 }
+
+
+
+
+
+
+
+
