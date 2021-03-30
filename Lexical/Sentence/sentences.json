@@ -1024,7 +1024,7 @@
     "speaker_gender": "F"
   },
   "183": {
-    "th": "เขา_ซื้อ_น้ำ_สับ-ปะ-รด_ให้_เธอ_แต่_เธอ_ป-ฏิ-เสธ_ที่_จะ_รับ_มัน",
+    "th": "เขา_ซื้อ_น้ำ_สับ-ปะ-รด_ให้_เธอ_แต่_เธอ_ป=ฏิ=เสธ_ที่_จะ_รับ_มัน",
     "en": "He bought her a pineapple juice but she refused to take it.",
     "word_ids": [26, 212, 156, 326, 51, 25, 41, 25, 389, 45, 42, 221, 27]
   },
@@ -1821,7 +1821,7 @@
     "word_ids": [24, 194, 343, 371]
   },
   "314": {
-    "th": "ฉัน_จะ_ทำ_ให้_เขา_เป็น_ข้อ-เสนอ_ที่_เขา_ป-ฏิ-เสธ_ไม่_ได้",
+    "th": "ฉัน_จะ_ทำ_ให้_เขา_เป็น_ข้อ-เสนอ_ที่_เขา_ป=ฏิ=เสธ_ไม่_ได้",
     "en": "I'll make an offer he can't refuse.",
     "fr": "Je vais lui faire une offre qu'il ne pourra (pas) refuser.",
     "word_ids": [24, 42, 208, 51, 26, 207, 499, 45, 26, 389, 39, 209]
@@ -3501,5 +3501,29 @@
     "en": "What are you thinking( about)?",
     "fr": "{À quoi penses-tu/À quoi es-tu en train de penser/Tu penses à quoi/Tu es en train de penser à quoi} ?",
     "word_ids": [28, 306, 197, 56, 237]
+  },
+  "597": {
+    "th": "มัน_มาก_กว่า_เก้า_พัน",
+    "en": "it's over {nine thousand/9000}.",
+    "fr": "{C'est plus que/C'est plus grand que/Ça dépasse} {neuf mille/9000/9 000}.",
+    "word_ids": [27, 366, 182, 232, 613]
+  },
+  "598": {
+    "th": "มัน_ฟัง_ดู-เหมือน_ตุ๊ก=แก",
+    "en": "It sounds like a gecko.",
+    "fr": "{On dirait que c'est/Ça sonne comme} un gecko.",
+    "word_ids": [27, 522, 299, 0]
+  },
+  "599": {
+    "th": "ฉัน_ป=ฏิ=เสธ_ที่_จะ_ให้-ยืม_หนัง=สือ_เล่ม_นี้",
+    "en": "I refuse to lend this book.",
+    "fr": "Je refuse de prêter ce livre.",
+    "word_ids": [24, 389, 45, 42, 692, 261, 392, 31]
+  },
+  "600": {
+    "th": "คุณ_จะ_ไม่_เห็น_นก_ช=นิด_นี้_ใน_ประ=เทศ-ไทย",
+    "en": "You won't see this kind of bird in Thailand.",
+    "fr": "{Vous/Tu} ne {verrez/verras} pas {ce genre d'oiseau(x)/d'oiseau(x) de ce type} en Thaïlande.",
+    "word_ids": [28, 42, 39, 194, 139, 622, 31, 44, 684]
   }
 }

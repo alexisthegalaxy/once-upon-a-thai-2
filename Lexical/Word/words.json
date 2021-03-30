@@ -3482,8 +3482,9 @@
     "teaching_order": -1
   },
   "389": {
-    "split": "ป-ฏิ-เสธ",
-    "en": "refuse",
+    "split": "ป=ฏิ=เสธ",
+    "en": "to refuse",
+    "fr": "refuser",
     "tones": "LLL",
     "pos": "None",
     "th": "ปฏิเสธ",
@@ -6214,6 +6215,24 @@
     "tones": "LM",
     "pos": "",
     "th": "ขโมย",
+    "teaching_order": -1
+  },
+  "692": {
+    "split": "ให้-ยืม",
+    "en": "to lend",
+    "fr": "prêter",
+    "tones": "FM",
+    "pos": "",
+    "th": "ให้ยืม",
+    "teaching_order": -1
+  },
+  "693": {
+    "split": "ยืม",
+    "en": "to borrow",
+    "fr": "emprunter",
+    "tones": "M",
+    "pos": "",
+    "th": "ยืม",
     "teaching_order": -1
   }
 }
