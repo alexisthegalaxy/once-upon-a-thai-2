@@ -126,7 +126,7 @@ func display_alphabet():
 func display_akson():
 	var akson = load("res://Lexical/Akson/Akson.tscn").instance()
 	Game.akson = akson
-	akson.init_akson([])
+	akson.init_akson([], true)
 	Game.current_scene.add_child(akson)
 	
 func display_spell_crafting():

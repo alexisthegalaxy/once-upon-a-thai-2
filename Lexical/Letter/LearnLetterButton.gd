@@ -37,8 +37,9 @@ func _process(delta):
 func open_akson():
 	var akson = load("res://Lexical/Akson/Akson.tscn").instance()
 	Game.akson = akson
-	akson.init_akson(letter_ids)
+	akson.init_akson(letter_ids, true)
 	get_tree().get_root().add_child(akson)
+	Game.active_test.deactivate_buttons_to_go_to_akson()
 
 func _on_Button_pressed():
 	Game.letters_we_look_for = []

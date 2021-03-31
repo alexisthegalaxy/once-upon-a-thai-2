@@ -67,7 +67,7 @@ func limit_movement(extender):
 func exit():
 	var akson = load("res://Lexical/Akson/Akson.tscn").instance()
 	Game.akson = akson
-	akson.init_akson([])
+	akson.init_akson([], false)
 	Game.current_scene.add_child(akson)
 	queue_free()
 

@@ -92,6 +92,30 @@ func answered_correctly():
 func answered_wrongly():
 	SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
 
+func reactivate_buttons_after_akson():
+	$AudioAnswer1.get_node("Button").visible = true
+	$AudioAnswer1.get_node("Button").disabled = false
+	$AudioAnswer2.get_node("Button").visible = true
+	$AudioAnswer2.get_node("Button").disabled = false
+	$AudioAnswer3.get_node("Button").visible = true
+	$AudioAnswer3.get_node("Button").disabled = false
+	$AudioAnswer4.get_node("Button").visible = true
+	$AudioAnswer4.get_node("Button").disabled = false
+	$LearnLetterButton.get_node("Button").visible = true
+	$LearnLetterButton.get_node("Button").disabled = false
+
+func deactivate_buttons_to_go_to_akson():
+	$AudioAnswer1.get_node("Button").visible = false
+	$AudioAnswer1.get_node("Button").disabled = true
+	$AudioAnswer2.get_node("Button").visible = false
+	$AudioAnswer2.get_node("Button").disabled = true
+	$AudioAnswer3.get_node("Button").visible = false
+	$AudioAnswer3.get_node("Button").disabled = true
+	$AudioAnswer4.get_node("Button").visible = false
+	$AudioAnswer4.get_node("Button").disabled = true
+	$LearnLetterButton.get_node("Button").visible = false
+	$LearnLetterButton.get_node("Button").disabled = true
+
 func _on_OK_pressed():
 	if selected_answer_thai == word.th:
 		answered_correctly()

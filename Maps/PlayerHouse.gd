@@ -1,8 +1,6 @@
 extends Node
 
 func _ready():
-#	SoundPlayer.play_thai("ตุ๊กแก")
-#	yield(get_tree().create_timer(1.0), "timeout")
 	if Events.events["talked_to_nim_at_the_beginning"]:
 		$YSort/NPCs/Nim.dialog = [
 			"_granny_is_waiting_outside",

@@ -58,13 +58,48 @@ func init(word_id, _over_word):
 	if number_of_choices >= 5:
 		$answer_5.show()
 		$answer_5.init(self, choices[4][TranslationServer.get_locale()], choices[4]["id"] == word["id"])
-	
 	$SentenceCarousel.init_sentence_carousel(word_id)
-	
+
 func _ready():
 	set_alpha()
 	$SentenceCarousel.hide()
 	$Button.show()
+
+func reactivate_buttons_after_akson():
+	$answer_1.get_node("Button").disabled = false
+	$answer_1.get_node("Button").visible = true
+	$answer_2.get_node("Button").disabled = false
+	$answer_2.get_node("Button").visible = true
+	$answer_3.get_node("Button").disabled = false
+	$answer_3.get_node("Button").visible = true
+	$answer_4.get_node("Button").disabled = false
+	$answer_4.get_node("Button").visible = true
+	$answer_5.get_node("Button").disabled = false
+	$answer_5.get_node("Button").visible = true
+	$answer_6.get_node("Button").disabled = false
+	$answer_6.get_node("Button").visible = true
+	$answer_7.get_node("Button").disabled = false
+	$answer_7.get_node("Button").visible = true
+	$LearnLetterButton.get_node("Button").disabled = false
+	$LearnLetterButton.get_node("Button").visible = true
+
+func deactivate_buttons_to_go_to_akson():
+	$answer_1.get_node("Button").disabled = true
+	$answer_1.get_node("Button").visible = false
+	$answer_2.get_node("Button").disabled = true
+	$answer_2.get_node("Button").visible = false
+	$answer_3.get_node("Button").disabled = true
+	$answer_3.get_node("Button").visible = false
+	$answer_4.get_node("Button").disabled = true
+	$answer_4.get_node("Button").visible = false
+	$answer_5.get_node("Button").disabled = true
+	$answer_5.get_node("Button").visible = false
+	$answer_6.get_node("Button").disabled = true
+	$answer_6.get_node("Button").visible = false
+	$answer_7.get_node("Button").disabled = true
+	$answer_7.get_node("Button").visible = false
+	$LearnLetterButton.get_node("Button").disabled = true
+	$LearnLetterButton.get_node("Button").visible = false
 
 func _process(delta):
 	if alpha < 1:

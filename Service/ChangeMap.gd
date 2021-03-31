@@ -62,26 +62,6 @@ func set_sources_after_map_change():
 			source_node.word_ids = Game.sources[source]
 			source_node.update_source(true)
 
-func start_test_back_from_akson():
-	# Before, we had to recreate the word because we left the world -
-	# Now, we don't need to, because the overworld is still instanced
-	# However, we need to now what word is the overword of the test
-	# Is it in the should_start_test_when_back_from_MP? Maybe.
-	return # Maybe there's nothing to do, the test still exists?
-	if Game.should_start_test_when_back_from_MP[0]:
-		var word_id = Game.should_start_test_when_back_from_MP[1]
-		var new_word = load("res://Lexical/Word/Spell.tscn").instance()
-		new_word.id = word_id
-		new_word.word = Game.words[str(word_id)]
-		new_word.can_move = true
-		new_word.position = Game.player.position
-		Game.current_scene.get_node("YSort").add_child(new_word)
-		Game.start_test(
-			Game.should_start_test_when_back_from_MP[0],
-			word_id,
-			new_word
-		)
-
 func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	if Game.canvas_color_screen:
 		Game.canvas_color_screen.queue_free()

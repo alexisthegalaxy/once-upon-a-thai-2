@@ -40,9 +40,9 @@ func get_introduction():
 
 func dialog_ended():
 	# first test
-#	Game.start_test("res://Test/Letter/TestPronFromThaiLet.tscn", letter_id, self)
+	Game.start_test("res://Test/Letter/TestPronFromThaiLet.tscn", letter_id, self)
 	# final test - just for debugging - keep commented out
-	Game.start_test("res://Test/Letter/TestWordFromSound.tscn", letter_id, self)
+#	Game.start_test("res://Test/Letter/TestWordFromSound.tscn", letter_id, self)
 
 func _process(delta):
 	if is_hovered:

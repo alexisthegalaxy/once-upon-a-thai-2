@@ -1149,6 +1149,7 @@ lift_on_letters = [ "อ", "เ-อ" ]
 [node name="LettersWeLookFor" parent="." instance=ExtResource( 13 )]
 
 [node name="ExitButton" type="Button" parent="."]
+visible = false
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
