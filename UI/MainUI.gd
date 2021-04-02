@@ -128,7 +128,7 @@ func display_akson():
 	Game.akson = akson
 	akson.init_akson([], true)
 	Game.current_scene.add_child(akson)
-	
+
 func display_spell_crafting():
 	var spell_crafting_scene = load("res://Lexical/SpellCrafting/SpellCrafting.tscn").instance()
 	Game.spell_crafting_screen = spell_crafting_scene
@@ -139,3 +139,9 @@ func display_notebook():
 	Game.notebook = notebook
 	Game.current_scene.add_child(notebook)
 	notebook.init_notebook(0)
+
+func display_map():
+	var map = load("res://Map/Map.tscn").instance()
+	Game.map = map
+	Game.current_scene.add_child(map)
+	map.init_map()

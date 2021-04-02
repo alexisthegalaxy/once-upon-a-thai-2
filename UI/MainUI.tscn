@@ -40,6 +40,9 @@ position = Vector2( 296, 104 )
 [node name="MakeSpell" parent="." instance=ExtResource( 4 )]
 position = Vector2( 296, 120 )
 
+[node name="Map" parent="." instance=ExtResource( 4 )]
+position = Vector2( 296, 136.481 )
+
 [node name="Save" parent="." instance=ExtResource( 4 )]
 position = Vector2( 296, 24 )
 

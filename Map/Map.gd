@@ -5,6 +5,7 @@ extends Node2D
 # var b = "text"
 const teal = Color(0.137254902, 1, 0.952941176, 1)
 const white = Color(1, 1, 1, 1)
+var map_info_bubble
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -12,16 +13,24 @@ func _ready():
 #func _process(delta):
 #	pass
 
+func init_map():
+	pass
+
 func mouse_in(button):
 	button.modulate = teal
+	if map_info_bubble:
+		map_info_bubble.queue_free()
+	map_info_bubble = load("res://Map/MapInfoBubble.tscn").instance()
+	self.add_child(map_info_bubble)
+	map_info_bubble._init_map_info_bubble(button.name)
 func mouse_out(button):
 	button.modulate = white
+	map_info_bubble.queue_free()
 func on_press(province_name):
 	print(province_name)
 	SoundPlayer.play_thai(Game.provinces[province_name].th)
 	for word_id in Game.provinces[province_name].words:
 		print(Game.words[str(word_id)].th)
-	
 
 func _on_khonkaen_mouse_entered():
 	mouse_in($khonkaen)
