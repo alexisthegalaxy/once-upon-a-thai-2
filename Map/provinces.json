@@ -1,0 +1,32 @@
+{
+  "chaiyaphum": {
+    "en": "Chaiyaphum",
+    "th": "ชัยภูมิ",
+    "fr": "Chaiyaphum",
+    "words": [343, 207, 345, 82, 23, 24, 238, 39, 56, 28, 11, 436, 241, 340, 237, 26, 9, 156, 401, 147, 236]
+  },
+  "udonthani": {
+    "en": "Udon Thani",
+    "th": "อุดรธานี",
+    "fr": "Udon Thani",
+    "words": []
+  },
+  "khonkaen": {
+    "en": "Khon Kaen",
+    "th": "ขอนแก่น",
+    "fr": "Khon Kaen",
+    "words": [44, 201, 193, 27, 194, 57]
+  },
+  "kalasin": {
+    "en": "Kalasin",
+    "th": "กาฬสินธุ์",
+    "fr": "Kalasin",
+    "words": []
+  },
+  "mahasarakham": {
+    "en": "Maha Sarakham",
+    "th": "มหาสารคาม",
+    "fr": "Maha Sarakham",
+    "words": []
+  }
+}

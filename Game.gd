@@ -12,6 +12,7 @@ extends Node
 var words = []
 var sentences = []
 var letters = []
+var provinces = []
 
 # The following are a list of IDs
 #var known_words = [343, 345, 207, 82] 
@@ -298,6 +299,7 @@ func _ready():
 	words = retrieve_from_json_file("res://Lexical/Word/words.json")
 	sentences = retrieve_from_json_file("res://Lexical/Sentence/sentences.json")
 	letters = retrieve_from_json_file("res://Lexical/Letter/letters.json")
+	provinces = retrieve_from_json_file("res://Map/provinces.json")
 	for word_id in words:
 		words[word_id]["id"] = int(word_id)
 		words[word_id]["fluency"] = 0.0
