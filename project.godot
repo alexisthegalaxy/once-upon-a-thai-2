@@ -17,7 +17,7 @@ _global_script_class_icons={
 
 config/name="Once upon a Thai"
 config/description="Save Thailand from evil forces using Thai, a magical language whose words grant you power over reality."
-run/main_scene="res://Maps/Chaiyaphum.tscn"
+run/main_scene="res://Map/Map.tscn"
 
 [autoload]
 
