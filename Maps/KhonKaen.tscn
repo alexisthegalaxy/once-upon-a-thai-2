@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://ImageScreen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/CoolOffice.tscn" type="PackedScene" id=2]
@@ -15,8 +15,6 @@
 [ext_resource path="res://World/Tree2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
 [ext_resource path="res://World/Locations.tscn" type="PackedScene" id=15]
-[ext_resource path="res://World/assets/Tree.png" type="Texture" id=16]
-[ext_resource path="res://Maps/Mirror.gd" type="Script" id=17]
 [ext_resource path="res://World/Teleport.tscn" type="PackedScene" id=18]
 [ext_resource path="res://World/PassingHouse.tscn" type="PackedScene" id=19]
 [ext_resource path="res://World/SmallHouse.tscn" type="PackedScene" id=21]
@@ -32,44 +30,6 @@ extents = Vector2( 36.9876, 29.4021 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 13.7964, 40.9263 )
-
-[sub_resource type="Shader" id=3]
-code = "shader_type canvas_item;
-
-uniform vec2 scale;
-uniform float y_zoom;
-uniform sampler2D noise;
-uniform vec2 distortion_scale;
-uniform float distortion_intensity;
-
-uniform vec4 water_color: hint_color;
-void fragment() {
-	float distortion = texture(noise, UV*scale*distortion_scale).x * 0.0;
-	distortion -= 0.5;
-	float uv_height = (SCREEN_PIXEL_SIZE.y / TEXTURE_PIXEL_SIZE.y);
-	vec2 reflected_screen_uv = vec2(
-		SCREEN_UV.x - distortion * distortion_intensity,
-		(SCREEN_UV.y * 0.6)
-//		 SCREEN_UV.y + uv_height * UV.y * y_zoom * scale.y * 2.0
-	);
-	vec4 reflection = texture(SCREEN_TEXTURE, reflected_screen_uv);
-	COLOR.rgb = mix(reflection.rgb, water_color.rgb, water_color.a);
-}"
-
-[sub_resource type="OpenSimplexNoise" id=5]
-
-[sub_resource type="NoiseTexture" id=6]
-seamless = true
-noise = SubResource( 5 )
-
-[sub_resource type="ShaderMaterial" id=4]
-shader = SubResource( 3 )
-shader_param/scale = null
-shader_param/y_zoom = null
-shader_param/distortion_scale = Vector2( 3, 1 )
-shader_param/distortion_intensity = null
-shader_param/water_color = Color( 0.0392157, 0.235294, 0.658824, 0.556863 )
-shader_param/noise = SubResource( 6 )
 
 [node name="KhonKaen" type="Node2D"]
 script = ExtResource( 3 )
@@ -1369,13 +1329,5 @@ scale = Vector2( 0.6, 0.6 )
 
 [node name="talk_to_ajahn_jagaro_in_chaiyaphum" parent="Locations" instance=ExtResource( 15 )]
 position = Vector2( 1790.72, -336.44 )
-
-[node name="Mirror" type="Sprite" parent="."]
-material = SubResource( 4 )
-position = Vector2( 2001.08, 153.331 )
-scale = Vector2( 3.36843, 1.72034 )
-texture = ExtResource( 16 )
-script = ExtResource( 17 )
 [connection signal="body_entered" from="PloyInFrontOfHouse" to="." method="_on_PloyInFrontOfHouse_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="." method="_on_Area2D3_body_entered"]
-[connection signal="item_rect_changed" from="Mirror" to="." method="_on_Mirror_item_rect_changed"]
