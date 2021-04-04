@@ -26,12 +26,10 @@ Phase 1:
 Phase 2:
 	Initial words turn quickly around the player.
 	Words are emitted in all directions
-	
-	
 """
 
 func _ready():
-	finish()
+	finish()  # uncomment to pass it
 	center = Game.player.position
 	position = center
 	phase = 1
@@ -52,6 +50,7 @@ func _init_phase_4():
 	time = 0
 
 func _process(delta):
+#	return
 	time += delta
 	time_create_word += delta
 	if phase == 1:
@@ -105,13 +104,15 @@ func finish():
 	queue_free()
 	SoundPlayer.start_music_upon_entering_map("res://Maps/Chaiyaphum.tscn")
 	if Game.can_read_thai:
-		yaai.start_quests = ["find_first_words"]
+		yaai.start_quests = ["find_first_words__when_knew_letters"]
+		yaai.dialog = []
+		yaai.post_dialog_event = []
 	else:
-		yaai.start_quests = ["find_first_letters", "find_first_words"]
-	yaai.post_dialog_event = ["can_see_letters", null]
-	yaai.dialog = [
-		tr("_use_the_letter_tab_to_learn_the_letters_1"),
-		tr("_use_the_letter_tab_to_learn_the_letters_2"),
-	]
+		yaai.start_quests = ["find_first_letters", "find_first_words__when_learning_letters"]
+		yaai.post_dialog_event = ["can_see_letters", null]
+		yaai.dialog = [
+			tr("_yaai_3_learn_letters_a"),
+			tr("_yaai_3_learn_letters_b"),
+		]
 	yaai.interact()
 	

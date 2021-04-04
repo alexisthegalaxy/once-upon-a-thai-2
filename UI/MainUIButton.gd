@@ -28,7 +28,7 @@ func _init_main_ui_button(_type):
 	elif type == "_make_spell":
 		modulate = Color(0.8, 0.4, 0.8, 1)
 	elif type == "_map":
-		modulate = Color(0.8, 0.4, 0.8, 1)
+		modulate = Color(0.8, 0.8, 0.2, 1)
 	$Label.text = tr(_type)
 	update_final_x()
 

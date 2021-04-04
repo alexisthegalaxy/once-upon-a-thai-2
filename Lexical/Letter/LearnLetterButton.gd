@@ -23,6 +23,8 @@ func update_known_letters():
 	$Label.text = make_label_text()
 
 func init_learn_letter_button(_letter_ids, test):
+	if Game.can_read_thai:
+		queue_free()
 	letter_ids = _letter_ids
 	$Label.text = make_label_text()
 

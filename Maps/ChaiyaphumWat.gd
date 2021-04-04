@@ -1,5 +1,5 @@
 extends Node
-
+var province = "chaiyaphum"
 
 func _ready():
 	if (len(Game.seen_sentences) + len(Game.known_sentences) > 5):

@@ -2,6 +2,7 @@ extends Node
 
 var is_blackening = false
 var alpha = 0
+var province = "chaiyaphum"
 
 # This is the letters yaai asks us to fetch the first time we come in the Memory Palace
 #var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]  # outdated
@@ -36,7 +37,7 @@ func yaai_arc():
 	elif Events.events.has_gone_to_first_sentence:
 		$YSort/NPCs/Yaai.position = Vector2(202.29, 654.29)
 		$YSort/NPCs/Yaai.set_direction("right")
-	elif Events.events["yaai_went_to_forest_entrance"]:
+	elif Events.events["yaai_went_to_the_tree"]:
 		$YSort/NPCs/Yaai.position = Vector2(245.153534, 523.72229)
 		$YSort/NPCs/Yaai.set_direction("right")
 	elif Events.events["talked_to_yaai_for_the_first_time"]:
@@ -96,8 +97,8 @@ func _on_Area2D2_body_entered(body):
 	# Yaai is waiting for us at the forest entrance
 	# Yaai goes to center of forest when we get in
 	if body == Game.player:
-		if not Events.events["yaai_went_to_forest_entrance"]:
-			Events.events["yaai_went_to_forest_entrance"] = true
+		if not Events.events["yaai_went_to_the_tree"]:
+			Events.events["yaai_went_to_the_tree"] = true
 			$YSort/NPCs/Yaai.will_go_to = [
 				Vector2(235.153534, 523.72229),
 				Vector2(245.153534, 523.72229),
@@ -301,11 +302,13 @@ func knows_the_initial_letters():
 	return true
 
 func _on_Blocker3_body_entered(body):
+	if not body == Game.player:
+		return
 #	If we haven't learned the four words, we can't cross this zone!
 	if Events.events.has_learnt_four_first_words or not Events.events.ceremony_started:
 		return
 	var dialog = ["?"]
-	if knows_the_initial_letters():
+	if Game.can_read_thai or knows_the_initial_letters():
 		dialog = [
 			tr("_before_you_go_there_learn_the_words"),
 		]

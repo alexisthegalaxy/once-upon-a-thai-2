@@ -15,9 +15,9 @@ var letters = []
 var provinces = []
 
 # The following are a list of IDs
-var known_words = [343, 345, 207, 82] 
+#var known_words = [343, 345, 207, 82] 
 #var known_words = [82, 343, 345, 207, 204, 222, 223, 232, 233, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 123, 14, 15]
-#var known_words = []
+var known_words = []
 #var known_sentences = [196, 197, 198, 199, 313, 233]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [196, 197, 198]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [200, 201]  # we know the translation. Does not contain seen_sentences.
@@ -28,8 +28,8 @@ var seen_sentences = []  # we don't know the translation
 #var known_letters = [0, 11, 13, 21]  # list of IDs
 #var known_letters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]  # list of IDs
 #var known_letters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16]  # list of IDs
-#var known_letters = []  # list of IDs
-var known_letters = [0, 11, 13, 21, 28]
+var known_letters = []  # list of IDs
+#var known_letters = [0, 11, 13, 21, 28]
 var following_spells = []
 #var following_spells = [
 #	{
@@ -70,7 +70,7 @@ var player_name = "Alexis"
 var player_gender = "m"  # can also be "f" or "n"
 var money = 0
 var player_sprite_path = "res://Npcs/sprites/main_E.png"
-var can_read_thai = false
+var can_read_thai = true
 var should_show_letters_button = false
 
 var is_somber = false
@@ -95,13 +95,14 @@ var main_ui = null                                               # SCREEN
 var select_follower_to_implant_screen = null                     # SCREEN
 var canvas_color_screen = null                                   # SCREEN
 var dict = null                                                  # SCREEN
-var alphabet = null                                              # SCREEN < DELETE alphabet
+var alphabet = null                                              # SCREEN < DELETE alphabet, we have akson
 var akson = null                                                 # SCREEN
 var notebook = null                                              # SCREEN
 var word_page = null                                             # SCREEN
 var letter_page = null                                           # SCREEN
 var exit_screen = null                                           # SCREEN
 var spell_crafting_screen = null                                 # SCREEN
+var map = null                                                   # SCREEN
 ################################################################## SCREEN
 
 func blackens():
@@ -126,6 +127,7 @@ func is_overworld_frozen():
 		letter_page or
 		vending_screen or 
 		spell_crafting_screen or 
+		map or 
 		select_follower_to_implant_screen
 	)
 
@@ -225,12 +227,9 @@ func learn_word(word_id):
 		Game.main_ui.update_main_ui_words_display()
 
 func maybe_update_go_learn_letter_bubble():
-	print('maybe? active_test:')
 	print(active_test)
 	if active_test:
-		print('maybe active test?')
 		var learn_letter_button = active_test.get_node("LearnLetterButton")
-		print('maybe active test? ---->', learn_letter_button)
 		if learn_letter_button:
 			learn_letter_button.update_known_letters()
 
@@ -357,6 +356,10 @@ func _input(_event):
 		elif vending_screen:
 			vending_screen.queue_free()
 			vending_screen = null
+			is_frozen = false
+		elif map:
+			map.queue_free()
+			map = null
 			is_frozen = false
 		elif akson:
 			akson.exit()  # triggers a queue_free, and recenters the camera on Player

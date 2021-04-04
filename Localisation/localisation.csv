@@ -19,7 +19,6 @@ _granny_is_waiting_outside,Granny is waiting for you outside.,Mamie t'attends de
 _be_brave_okay,"Be brave, okay?","Tu seras brave, hein ?"
 _press_f_to_exit,Press the escape key to exit,Appuie sur échap pour fermer
 _see_my_words,See my words,Voir mes mots
-_go_to_the_letter_world,Go to the Letter World,Entrer dans le monde des letters
 _see_my_sentences,See my sentences,Voir mes phrases
 _oh_name_you_woke_up,"Oh [Name], you woke up?","Ah, [Name], t'as finis par te lever ?"
 _today_is_your_big_day,"Today is your big day, did you manage to sleep at all?","Aujourd'hui c'est le jour de ta cérémonie, ça a pas du être facile de t'endormir."
@@ -103,6 +102,8 @@ _yaai_2_a,"Here's the place for your shamanic initiation, and now is the time.",
 _yaai_2_b,you will forget everything you know of the Thai language and you’ll have to learn Thai again from scratch.,"Tu oublieras tout ce que tu sais du thaï, et il te faudra réapprendre le thaï depuis le début."
 _yaai_2_c,"And in exchange, you will gain power over the spirit world.","En échange, tu obtiendras le pouvoir de commander le monde spirituel."
 _yaai_2_d,Let's start!,C'est parti !
+_yaai_3_learn_letters_a,You see the Letter tab on the right of your screen?,Tu vois l'onglet Lettres sur la droite de l'écran ?
+_yaai_3_learn_letters_b,"Click it to open your letter scroll and learn the letters น, ท, ย, ค and ไ-.","Clique dessus pour ouvrir le parchemin et apprendre les lettres น, ท, ย, ค et ไ-."
 _name_you_see_this_sentence,"Congratulations [Name], now that you've learned these letters, we can start.","[Name], félicitations ! Maintenant que tu connais ces lettres, entrons dans le vif du sujet."
 _this_is_your_first_since_forgotten_thai,"Deeper in the forest, you'll find Spells, for the first time.","Plus profond dans la forêt tu verras, pour la première fois, des mots."
 _this_means_thai_people_are_good,"Your task will be to learn them, and tame them.",Ta tâche sera des les apprivoiser.
@@ -115,9 +116,6 @@ _now_go_to_chaiyaphum_see_anchalee,"Now, go to Chaiyaphum, I asked the grandmoth
 _i_have_important_issues_to_solve_in_the_spirit_world,I have very important issues to solve in the spirit world.,J'ai un problème important à régler dans le monde spirituel.
 _if_everything_goes_well_ill_see_you_soon,"If everything goes well, I'll be seeing you soon, [Name].","Si tout se passe bien, on se reverra bientôt, [Name]."
 _sorry_shop_closed_today,"Sorry, the shop is closed today, come again tomorrow!","Désolé, le magasin est fermé aujourd'hui, repasse demain !"
-_you_made_first_step_in_lexical_world,"[Name], you made your first step into the Lexical World, this shall be your Memory Palace.","[Name], tu viens de faire ton premier pas dans le Monde Lexical, il sera ton palais de la mémoire."
-_this_places_will_make_it_easier_for_you_to_learn_the_letters,This place will make it easier for you to learn the letters.,Cet endroit te facilitera l'apprentissage de l'alphabet thaï.
-_your_first_task_will_be_to_find_these_five_letters,"First, go find the following letters:              น, ท, ย, ค, ไ-.","Pour commencer, va trouver les lettres suivantes : น, ท, ย, ค, ไ-."
 _looking_for_letters,Looking for letters: ,Trouve les lettres : 
 _found_required_letters,Found all required letters,Toutes les lettres requises sont trouvées
 _names_takes_door_to,[Name] takes the door to the ,[Name] prend la porte menant au 
@@ -218,5 +216,4 @@ _now_go_in_the_forest_to_learn_the_words,"Wonderful! Now, go in the forest, find
 _before_you_go_there_learn_the_letters_1,"No [Name], before you go there, you should learn the letters using the scroll I gave you.","Non, [Name], avant que tu n'ailles là-bas, tu devrais apprendre les lettres avec le parchemin que je t'ai donné."
 _before_you_go_there_learn_the_letters_2,"Click on the Letters tab on the right side, and learn the following letters: น, ท, ย, ค, ไ-.","Clique sur l'onglet Lettres sur la droite, et apprends les lettres suivantes : น, ท, ย, ค, ไ-."
 _before_you_go_there_learn_the_words,"[Name], before you go there, you should go find the words in the forest, and learn them all.","[Name], avant de partir, tu devrais aller trouver les mots dans la forêt, et les apprendre tous !"
-_use_the_letter_tab_to_learn_the_letters_1,You see the Letter tab on the right of your screen?,Tu vois l'onglet Lettres sur la droite de l'écran ?
-_use_the_letter_tab_to_learn_the_letters_2,"Click it to open your letter scroll and learn the letters น, ท, ย, ค and ไ-.","Clique dessus pour ouvrir le parchemin et apprendre les lettres น, ท, ย, ค et ไ-."
+_map,Thailand map,Carte de la Thaïlande

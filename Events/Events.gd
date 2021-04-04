@@ -1,7 +1,8 @@
 extends Node
 
-var initial_state = true
-var state_2 = true
+var initial_state = false
+var state_2 = false
+var state_3 = true
 var events = {
 	"has_had_a_quest": state_2,
 	"money_is_visible": state_2,
@@ -15,9 +16,9 @@ var events = {
 	"has_gone_to_first_sentence": initial_state,
 	"can_see_the_looking_for_letter_banner": initial_state,
 	"ceremony_started": initial_state,
-	"yaai_went_to_forest_entrance": initial_state,
-	"talked_to_yaai_for_the_first_time": initial_state,
-	"talked_to_nim_at_the_beginning": initial_state,
+	"yaai_went_to_the_tree": initial_state,
+	"talked_to_yaai_for_the_first_time": state_3,
+	"talked_to_nim_at_the_beginning": state_3,
 }
 
 var var_1 = null  # let's find a cleaner way

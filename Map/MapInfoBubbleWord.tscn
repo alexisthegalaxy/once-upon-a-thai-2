@@ -5,20 +5,30 @@
 [ext_resource path="res://Quests/green_check_mark.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
+size = 10
 font_data = ExtResource( 1 )
 
 [node name="MapInfoBubbleWord" type="Node2D"]
 script = ExtResource( 2 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 40.0
+margin_bottom = 10.0
+color = Color( 1, 1, 1, 0.545098 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Checkmark" type="Sprite" parent="."]
-position = Vector2( 8, 8 )
-scale = Vector2( 0.046034, 0.0555556 )
+position = Vector2( 4.35075, 4.35075 )
+scale = Vector2( 0.023017, 0.0277778 )
 texture = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 16.0
-margin_right = 96.0
-margin_bottom = 22.0
+margin_left = 10.2497
+margin_top = -1.76933
+margin_right = 90.2497
+margin_bottom = 20.2307
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "การให้"

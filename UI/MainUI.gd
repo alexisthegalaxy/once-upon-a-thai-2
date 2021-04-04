@@ -10,7 +10,8 @@ func _ready():
 	$UseSpell._init_main_ui_button("_use_spell")
 	$MakeSpell._init_main_ui_button("_make_spell")
 	$Save._init_main_ui_button("_save_the_game")
-	for button in [$Letters, $Words, $Sentences, $Quests, $UseSpell, $MakeSpell, $Save]:
+	$Map._init_main_ui_button("_map")
+	for button in [$Letters, $Words, $Sentences, $Quests, $UseSpell, $MakeSpell, $Save, $Map]:
 		button.connect("is_pressed", self, "on_button_pressed")
 		button.connect("is_hovered", self, "on_button_hovered")
 		button.connect("is_not_hovered", self, "on_button_not_hovered")
@@ -99,6 +100,8 @@ func on_button_pressed(type):
 		display_spell_crafting()
 	elif type == "_save_the_game":
 		Save.save_game()
+	elif type == "_map":
+		display_map()
 
 func on_button_hovered(type):
 	hovered_buttons.append(type)
@@ -141,7 +144,11 @@ func display_notebook():
 	notebook.init_notebook(0)
 
 func display_map():
-	var map = load("res://Map/Map.tscn").instance()
-	Game.map = map
-	Game.current_scene.add_child(map)
-	map.init_map()
+	if Game.map:
+		Game.map.queue_free()
+		Game.map = null
+	else:
+		var map = load("res://Map/Map.tscn").instance()
+		Game.map = map
+		Game.current_scene.add_child(map)
+		map.init_map()

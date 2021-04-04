@@ -1,5 +1,7 @@
 extends Node
 
+var province = "chaiyaphum"
+
 func _ready():
 	if Events.events["talked_to_nim_at_the_beginning"]:
 		$YSort/NPCs/Nim.dialog = [

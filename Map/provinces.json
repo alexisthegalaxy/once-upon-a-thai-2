@@ -28,5 +28,35 @@
     "th": "มหาสารคาม",
     "fr": "Maha Sarakham",
     "words": []
+  },
+  "nongbualamphu": {
+    "en": "Nong Bua Lamphu",
+    "th": "หนองบัวลำภู",
+    "fr": "Nong Bua Lamphu",
+    "words": []
+  },
+  "phetchabun": {
+    "en": "Phetchabun",
+    "th": "เพชรบูรณ์",
+    "fr": "Phetchabun",
+    "words": []
+  },
+  "lopburi": {
+    "en": "Lopburi",
+    "th": "ลพบุรี",
+    "fr": "Lopburi",
+    "words": []
+  },
+  "roiet": {
+    "en": "Roi Et",
+    "th": "ร้อยเอ็ด",
+    "fr": "Roi Et",
+    "words": []
+  },
+  "nakhonratchasima": {
+    "en": "Nakhon Ratchasima",
+    "th": "นครราชสีมา",
+    "fr": "Nakhon Ratchasima",
+    "words": []
   }
 }

@@ -2,7 +2,7 @@ extends Node
 
 var is_blackening = false
 var alpha = 0
-
+var province = "chaiyaphum"
 func _ready():
 	pass
 

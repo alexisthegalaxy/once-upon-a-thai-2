@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://ImageScreen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/CoolOffice.tscn" type="PackedScene" id=2]
@@ -11,9 +11,12 @@
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Lexical/Letter/CollectibleLetter.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Npcs/Npc.tscn" type="PackedScene" id=11]
+[ext_resource path="res://WaterTileMap.tscn" type="PackedScene" id=12]
 [ext_resource path="res://World/Tree2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
 [ext_resource path="res://World/Locations.tscn" type="PackedScene" id=15]
+[ext_resource path="res://World/assets/Tree.png" type="Texture" id=16]
+[ext_resource path="res://Maps/Mirror.gd" type="Script" id=17]
 [ext_resource path="res://World/Teleport.tscn" type="PackedScene" id=18]
 [ext_resource path="res://World/PassingHouse.tscn" type="PackedScene" id=19]
 [ext_resource path="res://World/SmallHouse.tscn" type="PackedScene" id=21]
@@ -30,6 +33,44 @@ extents = Vector2( 36.9876, 29.4021 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 13.7964, 40.9263 )
 
+[sub_resource type="Shader" id=3]
+code = "shader_type canvas_item;
+
+uniform vec2 scale;
+uniform float y_zoom;
+uniform sampler2D noise;
+uniform vec2 distortion_scale;
+uniform float distortion_intensity;
+
+uniform vec4 water_color: hint_color;
+void fragment() {
+	float distortion = texture(noise, UV*scale*distortion_scale).x * 0.0;
+	distortion -= 0.5;
+	float uv_height = (SCREEN_PIXEL_SIZE.y / TEXTURE_PIXEL_SIZE.y);
+	vec2 reflected_screen_uv = vec2(
+		SCREEN_UV.x - distortion * distortion_intensity,
+		(SCREEN_UV.y * 0.6)
+//		 SCREEN_UV.y + uv_height * UV.y * y_zoom * scale.y * 2.0
+	);
+	vec4 reflection = texture(SCREEN_TEXTURE, reflected_screen_uv);
+	COLOR.rgb = mix(reflection.rgb, water_color.rgb, water_color.a);
+}"
+
+[sub_resource type="OpenSimplexNoise" id=5]
+
+[sub_resource type="NoiseTexture" id=6]
+seamless = true
+noise = SubResource( 5 )
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = SubResource( 3 )
+shader_param/scale = null
+shader_param/y_zoom = null
+shader_param/distortion_scale = Vector2( 3, 1 )
+shader_param/distortion_intensity = null
+shader_param/water_color = Color( 0.0392157, 0.235294, 0.658824, 0.556863 )
+shader_param/noise = SubResource( 6 )
+
 [node name="KhonKaen" type="Node2D"]
 script = ExtResource( 3 )
 __meta__ = {
@@ -44,14 +85,15 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="WaterTileMap" parent="." instance=ExtResource( 12 )]
+tile_data = PoolIntArray( 196670, 0, 0, 196671, 0, 2, 262205, 0, 0, 262206, 0, 131078, 262207, 0, 65538, 327740, 0, 0, 327741, 0, 65545, 327742, 0, 131073, 327743, 0, 131074, 393276, 0, 131072, 393277, 0, 131074 )
+
 [node name="TileMap" parent="." instance=ExtResource( 30 )]
 tile_data = PoolIntArray( -3407720, 1, 3, -3342184, 1, 65539, -3276648, 1, 65539, -3211112, 1, 65539, -3145576, 1, 65539, -3080040, 1, 131075, -3014505, 1, 3, -2948969, 1, 65539, -2883433, 1, 131075, -2817898, 1, 3, -2752369, 1, 196608, -2752368, 1, 196609, -2752367, 1, 196610, -2752362, 1, 131075, -2686834, 1, 196611, -2686830, 1, 196611, -2686827, 1, 3, -2621299, 1, 3, -2621293, 1, 196611, -2621291, 1, 65539, -2555763, 1, 65539, -2555756, 1, 196608, -2555755, 1, 196615, -2490227, 1, 65539, -2424691, 1, 65539, -2359155, 1, 65539, -2293619, 1, 65539, -2228083, 1, 65539, -2162547, 1, 65539, -2097078, 1, 196611, -2097073, 1, 196611, -2097011, 1, 65539, -2031475, 1, 65539, -1965939, 1, 65539, -1900403, 1, 65539, -1834928, 1, 196611, -1834867, 1, 65539, -1769331, 1, 65539, -1703795, 1, 65539, -1638259, 1, 65539, -1572723, 1, 65539, -1507252, 1, 196611, -1507187, 1, 65539, -1441651, 1, 65539, -1376115, 1, 65539, -1310595, 1, 196608, -1310594, 1, 196609, -1310593, 1, 196609, -1310592, 1, 196609, -1310591, 1, 196609, -1310590, 1, 196609, -1310589, 1, 196610, -1310579, 1, 65539, -1245060, 1, 3, -1245052, 1, 3, -1245043, 1, 65539, -1179524, 1, 65539, -1179516, 1, 131075, -1179507, 1, 65539, -1113988, 1, 131075, -1113979, 1, 3, -1113971, 1, 65539, -1048453, 1, 3, -1048443, 1, 65539, -1048435, 1, 131075, -982917, 1, 65539, -982907, 1, 131075, -982900, 1, 3, -917381, 1, 65539, -917370, 1, 3, -917364, 1, 131075, -851845, 1, 65539, -851834, 1, 65539, -851829, 1, 196611, -786309, 1, 65539, -786298, 1, 65539, -786294, 1, 196611, -720773, 1, 65539, -720762, 1, 131075, -720759, 1, 196611, -655237, 1, 65539, -655225, 1, 196608, -655224, 1, 196610, -589701, 1, 65539, -524165, 1, 65539, -458629, 1, 65539, -393093, 1, 65539, -327557, 1, 65539, -262021, 1, 131075, -196486, 1, 3, -130950, 1, 131075, -65415, 1, 196611, 120, 1, 3, 65656, 1, 131075, 131191, 1, 3, 196610, 2, 0, 196727, 1, 131075, 262262, 1, 3, 327798, 1, 65539, 393222, 2, 0, 393223, 2, 0, 393228, 2, 0, 393334, 1, 65539, 524287, 2, 0, 458752, 2, 0, 458759, 2, 0, 458764, 2, 0, 458870, 1, 65539, 524288, 2, 0, 524295, 2, 0, 524296, 2, 0, 524298, 2, 0, 524299, 2, 0, 524300, 2, 0, 524406, 1, 65539, 589836, 2, 0, 589942, 1, 65539, 655478, 1, 65539, 721014, 1, 65539, 786549, 1, 0, 786550, 1, 131079, 852085, 1, 65536, 852086, 1, 65538, 917605, 1, 0, 917606, 1, 1, 917607, 1, 1, 917608, 1, 1, 917609, 1, 1, 917610, 1, 2, 917616, 1, 0, 917617, 1, 1, 917618, 1, 1, 917619, 1, 1, 917620, 1, 1, 917621, 1, 131078, 917622, 1, 65538, 983141, 1, 65536, 983142, 1, 65541, 983143, 1, 131073, 983144, 1, 131073, 983145, 1, 131073, 983146, 1, 196613, 983147, 1, 196609, 983148, 1, 196609, 983149, 1, 196609, 983150, 1, 196609, 983151, 1, 196609, 983152, 1, 196614, 983153, 1, 131073, 983154, 1, 131073, 983155, 1, 131073, 983156, 1, 131073, 983157, 1, 131073, 983158, 1, 131074, 1048660, 1, 0, 1048661, 1, 1, 1048662, 1, 1, 1048663, 1, 1, 1048664, 1, 1, 1048665, 1, 1, 1048666, 1, 1, 1048667, 1, 1, 1048668, 1, 1, 1048669, 1, 1, 1048670, 1, 1, 1048671, 1, 1, 1048672, 1, 1, 1048673, 1, 1, 1048674, 1, 1, 1048675, 1, 1, 1048676, 1, 1, 1048677, 1, 131078, 1048678, 1, 65538, 1114196, 1, 131072, 1114197, 1, 131073, 1114198, 1, 131073, 1114199, 1, 131073, 1114200, 1, 131073, 1114201, 1, 131073, 1114202, 1, 131073, 1114203, 1, 131073, 1114204, 1, 131073, 1114205, 1, 131073, 1114206, 1, 131073, 1114207, 1, 131073, 1114208, 1, 131073, 1114209, 1, 131073, 1114210, 1, 131073, 1114211, 1, 131073, 1114212, 1, 131073, 1114213, 1, 131073, 1114214, 1, 131074, 1507420, 1, 196611 )
 
 [node name="CliffTileMap" parent="." instance=ExtResource( 7 )]
-tile_data = PoolIntArray(  )
 
 [node name="HigherCliffTileMap" parent="." instance=ExtResource( 7 )]
-tile_data = PoolIntArray(  )
 
 [node name="YSort" type="YSort" parent="."]
 
@@ -1194,7 +1236,7 @@ position = Vector2( 1608.16, -704.411 )
 position = Vector2( 1235.62, 221.922 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 1894.84, 97.2149 )
+position = Vector2( 1971.31, 108.929 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -1327,5 +1369,13 @@ scale = Vector2( 0.6, 0.6 )
 
 [node name="talk_to_ajahn_jagaro_in_chaiyaphum" parent="Locations" instance=ExtResource( 15 )]
 position = Vector2( 1790.72, -336.44 )
+
+[node name="Mirror" type="Sprite" parent="."]
+material = SubResource( 4 )
+position = Vector2( 2001.08, 153.331 )
+scale = Vector2( 3.36843, 1.72034 )
+texture = ExtResource( 16 )
+script = ExtResource( 17 )
 [connection signal="body_entered" from="PloyInFrontOfHouse" to="." method="_on_PloyInFrontOfHouse_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="." method="_on_Area2D3_body_entered"]
+[connection signal="item_rect_changed" from="Mirror" to="." method="_on_Mirror_item_rect_changed"]
