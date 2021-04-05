@@ -106,7 +106,7 @@ func finish():
 	if Game.can_read_thai:
 		yaai.start_quests = ["find_first_words__when_knew_letters"]
 		yaai.dialog = []
-		yaai.post_dialog_event = []
+		yaai.post_dialog_event = ["learns_first_sentence", yaai]
 	else:
 		yaai.start_quests = ["find_first_letters", "find_first_words__when_learning_letters"]
 		yaai.post_dialog_event = ["can_see_letters", null]

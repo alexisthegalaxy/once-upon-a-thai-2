@@ -13,6 +13,10 @@ var shift_letter_is_known = false
 var restrict_to_known_letters = true
 
 func is_this_letter_known():
+	if Game.can_read_thai:
+		primary_letter_is_known = true
+		shift_letter_is_known = true
+		return
 	for letter_id in Game.known_letters:
 		var known_letter_thai = Game.letters[str(letter_id)].th
 		if known_letter_thai in [primary_value, "-" + primary_value]:

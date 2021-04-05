@@ -18,10 +18,10 @@ var provinces = []
 #var known_words = [343, 345, 207, 82] 
 #var known_words = [82, 343, 345, 207, 204, 222, 223, 232, 233, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 123, 14, 15]
 var known_words = []
-#var known_sentences = [196, 197, 198, 199, 313, 233]  # we know the translation. Does not contain seen_sentences.
+var known_sentences = [196, 197, 198, 199, 313, 233, 500, 505, 501, 502, 503, 504, 400, 401]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [196, 197, 198]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [200, 201]  # we know the translation. Does not contain seen_sentences.
-var known_sentences = []  # we know the translation. Does not contain seen_sentences.
+#var known_sentences = []  # we know the translation. Does not contain seen_sentences.
 #var seen_sentences = [196, 197, 198, 199]  # we don't know the translation
 var seen_sentences = []  # we don't know the translation
 #var seen_sentences = [311, 312, 315]  # we don't know the translation
@@ -406,8 +406,8 @@ func _on_changelight_entered(color) -> void:
 	last_goal_color = color
 
 func start_test(test_scene, entity_id, over_entity) -> void:
+	main_ui.close_quest_display()
 	var test = load(test_scene).instance()
-#	self.add_child(test)
 	get_tree().get_root().add_child(test)
 	if "Test/Letter" in test_scene:
 		active_letter_test = test

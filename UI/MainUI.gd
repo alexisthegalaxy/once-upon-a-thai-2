@@ -24,6 +24,7 @@ func update_main_ui():
 	update_main_ui_use_spell_display()
 	update_main_ui_make_spell_display()
 	update_main_ui_quests_display()
+	update_main_ui_map_display()
 
 func update_main_ui_letters_display():
 	if Game.known_letters or Game.should_show_letters_button:
@@ -69,6 +70,12 @@ func update_main_ui_quests_display():
 	else:
 		$Quests.hide()
 
+func update_main_ui_map_display():
+	if Events.events.has_the_map:
+		$Map.show()
+	else:
+		$Map.hide()
+
 func main_ui_process_click(_event) -> bool:
 	var event_is_processed = false
 	if Input.is_action_just_pressed("click"):
@@ -83,6 +90,9 @@ func update_quests_display():
 
 func open_quest_display():
 	$QuestsDisplay.open_quest_display()
+
+func close_quest_display():
+	$QuestsDisplay.close_quest_display()
 
 func on_button_pressed(type):
 	if type == "_see_letters":

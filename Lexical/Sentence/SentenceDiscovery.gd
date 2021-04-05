@@ -32,7 +32,7 @@ func _on_Button_pressed():
 			"_names_writes_sentence_in_notebook",
 		]
 		if len(Game.seen_sentences) + len(Game.known_sentences) <= 1:
-			dialog_text.append("_press_f_to_see_all_sentences")
+			dialog_text.append("_you_can_check_your_sentences_using_the_tab_on_the_right")
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 		Game.current_dialog.init_dialog(dialog_text, self, null, false, null)
 		Game.player.stop_walking()

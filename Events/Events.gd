@@ -11,6 +11,7 @@ var events = {
 	"has_met_ploy": state_2,
 	"has_met_pet": state_2,
 	"has_learnt_four_first_words": initial_state,
+	"has_the_map": initial_state,
 	"yaai_has_given_last_warning_before_forest": initial_state,
 	"yaai_taught_first_sentence": initial_state,
 	"has_gone_to_first_sentence": initial_state,
@@ -101,6 +102,7 @@ func npc_disappears_in_white_orb(parameters):
 		npc.disappear_in_white_orb()
 
 func learns_first_sentence(calling_npc):
+	Events.events["yaai_taught_first_sentence"] = true
 	Game.lose_focus(Game.current_focus)
 	Game.discovers_sentence(196, true)
 	calling_npc.dialog = [

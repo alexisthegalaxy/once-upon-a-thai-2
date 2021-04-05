@@ -93,7 +93,6 @@ func _on_Hint_mouse_entered():
 		$Keyboard.highlight_letter(letter_to_highlight)
 
 func _on_Hint_mouse_exited():
-	SoundPlayer.play_thai(word.th)
 	$Hint.text = tr("_hint")
 	$OK.modulate = Color(1, 1, 1, 1)
 	$Keyboard.highlight_letter("None")

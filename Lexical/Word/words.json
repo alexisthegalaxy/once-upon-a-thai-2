@@ -207,8 +207,8 @@
   },
   "23": {
     "split": "ผม",
-    "en": "I (male) / hair",
-    "fr": "je (masculin) / cheveu",
+    "en": "I (male)",
+    "fr": "je (masculin)",
     "tones": "R",
     "pos": "PRON",
     "th": "ผม",
@@ -6234,6 +6234,16 @@
     "pos": "",
     "th": "ยืม",
     "teaching_order": -1
+  },
+  "694": {
+    "split": "ผม",
+    "en": "hair (of the head)",
+    "fr": "cheveux",
+    "tones": "R",
+    "pos": "PRON",
+    "th": "ผม",
+    "teaching_order": 5,
+    "letters": [37, 35, 5]
   }
 }
 

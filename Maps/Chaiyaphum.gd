@@ -269,7 +269,22 @@ func _on_Blocker2_body_entered(body):
 	if Events.events.yaai_taught_first_sentence:  # We've already learned the sentence
 		return
 #	if not Events.events.talked_to_yaai_for_the_first_time:
-	if not knows_the_initial_letters():
+	if Game.can_read_thai or knows_the_initial_letters():
+		$YSort/NPCs/Yaai.dialog = [
+			tr("_name_you_see_this_sentence"),
+			tr("_this_is_your_first_since_forgotten_thai"),
+			tr("_this_means_thai_people_are_good"),
+			tr("_sentences_like_this_help_you_understand_the_meaning_of_words"),
+			tr("_here_we_go"),
+		]
+		print('yaai_teaches_first_sentence')
+		Events.events["yaai_taught_first_sentence"] = true
+		$YSort/NPCs/Yaai.post_dialog_event = ["learns_first_sentence", $YSort/NPCs/Yaai]
+		$YSort/NPCs/Yaai.is_walking_towards = []  # to make sure NPC can interact
+		$YSort/NPCs/Yaai.npc_turn_towards(Game.player.position)
+		$YSort/NPCs/Yaai.interact()
+		$YSort/NPCs/Yaai.dialog = [tr("_now_go_in_the_forest_to_learn_the_words")]
+	else:
 		# Then we are blocked!
 		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 		var dialog = [
@@ -280,21 +295,7 @@ func _on_Blocker2_body_entered(body):
 		Game.player.stop_walking()
 		Game.current_scene.add_child(Game.current_dialog)
 		Game.player.forced_toward(Vector2(236, 576))
-	else:
-		Events.events["yaai_taught_first_sentence"] = true
-		$YSort/NPCs/Yaai.dialog = [
-			tr("_name_you_see_this_sentence"),
-			tr("_this_is_your_first_since_forgotten_thai"),
-			tr("_this_means_thai_people_are_good"),
-			tr("_sentences_like_this_help_you_understand_the_meaning_of_words"),
-			tr("_here_we_go"),
-		]
-		$YSort/NPCs/Yaai.post_dialog_event = ["learns_first_sentence", $YSort/NPCs/Yaai]
-		$YSort/NPCs/Yaai.is_walking_towards = []  # to make sure NPC can interact
-		$YSort/NPCs/Yaai.npc_turn_towards(Game.player.position)
-		$YSort/NPCs/Yaai.interact()
-		$YSort/NPCs/Yaai.dialog = [tr("_now_go_in_the_forest_to_learn_the_words")]
-
+		
 func knows_the_initial_letters():
 	for initial_letter_id in initial_letters:
 		if not initial_letter_id in Game.known_letters:
@@ -307,19 +308,14 @@ func _on_Blocker3_body_entered(body):
 #	If we haven't learned the four words, we can't cross this zone!
 	if Events.events.has_learnt_four_first_words or not Events.events.ceremony_started:
 		return
-	var dialog = ["?"]
-	if Game.can_read_thai or knows_the_initial_letters():
-		dialog = [
-			tr("_before_you_go_there_learn_the_words"),
-		]
-	else:
-		dialog = [
+	if not (Game.can_read_thai or knows_the_initial_letters()):
+		var dialog = [
 			tr("_before_you_go_there_learn_the_letters_1"),
 			tr("_before_you_go_there_learn_the_letters_2"),
 		]
-	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-	Game.current_dialog.init_dialog(dialog, $YSort/NPCs/Yaai, null, false, null)
-	$YSort/NPCs/Yaai.npc_turn_towards(Game.player.position)
-	Game.player.stop_walking()
-	Game.current_scene.add_child(Game.current_dialog)
-	Game.player.forced_toward(Vector2(318, 523))
+		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+		Game.current_dialog.init_dialog(dialog, $YSort/NPCs/Yaai, null, false, null)
+		$YSort/NPCs/Yaai.npc_turn_towards(Game.player.position)
+		Game.player.stop_walking()
+		Game.current_scene.add_child(Game.current_dialog)
+		Game.player.forced_toward(Vector2(318, 523))

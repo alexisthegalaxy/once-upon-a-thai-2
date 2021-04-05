@@ -43,7 +43,7 @@
     "fr_finish_dialog": [
       "Félicitations, [Name], tu as trouvé toutes les lettres."
     ],
-    "counter_max": 1
+    "counter_max": 5
   },
   "find_first_words__when_learning_letters": {
     "blockers": ["find_first_letters"],
@@ -71,7 +71,9 @@
     "fr_finish_dialog": [
       "Parfait."
     ],
-    "counter_max": 1
+    "en_counter_name": "Words learnt",
+    "fr_counter_name": "Mots trouvés",
+    "counter_max": 4
   },
   "find_first_words__when_knew_letters": {
     "blockers": [],
@@ -80,7 +82,9 @@
     "type": "learn_words",
     "parameters": [[343, 345, 207, 82], []],
     "en_description": "Interact with all the types of words in the forest to learn them.",
+    "en_end_description": "Go back to your grandmother Yaai.",
     "fr_description": "Intéragis avec tous les types de mots que tu trouves dans la forêt pour les apprendre.",
+    "fr_end_description": "Retourne voir ta grand-mère Yaai.",
     "en_start_dialog": [
       "Well done [Name]!",
       "So, you know nothing anymore of the Thai language, huh?",
@@ -91,13 +95,15 @@
       "Find all four different types, and learn each one.",
       "Ah, but first, I should teach you your first Thai sentence, it'll make your task easier."
     ],
-    "fr_start_dialog": [
+    "previously": [
       "C'est bien, [Name]!",
       "Alors ça y est, tu ne te souviens plus du tout du thaï ?",
       "Ne t'en fais pas, je suis aussi passée par là.",
       "Pour ta quête initiatique, va plus profondémment dans la forêt.",
       "Là, tu percevras des Esprits de Mots, tu devrais être capable de les voir à présent.",
-      "Trouve-les tous, et apprend-les - il y en a de quatre types.",
+      "Trouve-les tous, et apprend-les - il y en a de quatre types."
+    ],
+    "fr_start_dialog": [
       "Ah, mais d'abord, je devrais t'enseigner ta première phrase en thaï, ça rendra ta tâche plus facile."
     ],
     "en_finish_dialog": [
@@ -106,7 +112,9 @@
     "fr_finish_dialog": [
       "Parfait."
     ],
-    "counter_max": 1
+    "en_counter_name": "Words learnt",
+    "fr_counter_name": "Mots trouvés",
+    "counter_max": 4
   },
   "talk_to_anchalee_in_chaiyaphum": {
     "blockers": [],

@@ -9,15 +9,3 @@ var province = "khonkaen"
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
-
-
-func _process(delta):
-	_zoom_changed()
-
-
-func _on_Mirror_item_rect_changed():
-	material.set_shader_param("scale", scale)
-
-
-func _zoom_changed():
-	$Mirror.material.set_shader_param("y_zoom", get_viewport().global_canvas_transform.y.y)

@@ -65,6 +65,10 @@ func update_learn_word_quests(word_id):
 	for quest_id in quests:
 		var quest = quests[quest_id]
 		if quest.status == IN_PROGRESS and quest.type == "learn_words":
+			print('quest before')
+			print('quest.parameters  ', quest.parameters)
+			print('quest.parameters[0]  ', quest.parameters[0])
+			print('quest.parameters[1]  ', quest.parameters[1])
 			if word_id in quest.parameters[0]:
 				if not word_id in quest.parameters[1]:
 					quest.parameters[1].append(word_id)
@@ -72,6 +76,10 @@ func update_learn_word_quests(word_id):
 					if quest.counter >= quest.counter_max:
 						quest.status = FINISHED
 						update_quests_display()
+			print('quest after')
+			print('quest.parameters  ', quest.parameters)
+			print('quest.parameters[0]  ', quest.parameters[0])
+			print('quest.parameters[1]  ', quest.parameters[1])
 
 func update_learn_letter_quests(letter_id):
 	for quest_id in quests:

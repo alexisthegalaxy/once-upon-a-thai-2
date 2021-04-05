@@ -51,6 +51,11 @@ func open_quest_display():
 	update_quests_display()
 	$Quests.show()
 
+func close_quest_display():
+	is_showing_quests = false
+	update_quests_display()
+	$Quests.hide()
+
 func is_hovering_over_buttons():
 	return (
 		$Quests/QuestDisplay1.hovered_buttons or
