@@ -12,5 +12,5 @@ func _on_Area2D_body_entered(body):
 		return
 	ChangeMap.call_deferred("_deferred_goto_scene", to_map_name, to_position.x, to_position.y, level_y_height_change)
 	if sound_name:
-		SoundPlayer.play_sound("res://Sounds/" + sound_name + ".wav", 0)
+		SoundPlayer.play_sound("res://Sounds/Effects/" + sound_name + ".wav", 0)
 	Game.changename(name_for_location)

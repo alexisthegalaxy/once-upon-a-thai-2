@@ -18,10 +18,10 @@ var provinces = []
 #var known_words = [343, 345, 207, 82] 
 #var known_words = [82, 343, 345, 207, 204, 222, 223, 232, 233, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 123, 14, 15]
 var known_words = []
-var known_sentences = [196, 197, 198, 199, 313, 233, 500, 505, 501, 502, 503, 504, 400, 401]  # we know the translation. Does not contain seen_sentences.
+#var known_sentences = [196, 197, 198, 199, 313, 233, 500, 505, 501, 502, 503, 504, 400, 401]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [196, 197, 198]  # we know the translation. Does not contain seen_sentences.
 #var known_sentences = [200, 201]  # we know the translation. Does not contain seen_sentences.
-#var known_sentences = []  # we know the translation. Does not contain seen_sentences.
+var known_sentences = []  # we know the translation. Does not contain seen_sentences.
 #var seen_sentences = [196, 197, 198, 199]  # we don't know the translation
 var seen_sentences = []  # we don't know the translation
 #var seen_sentences = [311, 312, 315]  # we don't know the translation
@@ -53,7 +53,7 @@ var last_goal_color = Color(1, 1, 1, 1)
 var goal_color = null
 
 var letters_we_look_for = []  # a list of letters
-var looking_for_letter__node = null
+#var looking_for_letter__node = null
 var player_position_on_overworld = Vector2(1183, 167)  # used when coming back from Letter World
 var player_last_overworld_map_visited = "res://Maps/Chaiyaphum.tscn"
 var current_map_name = "res://Maps/Chaiyaphum.tscn"
@@ -70,7 +70,7 @@ var player_name = "Alexis"
 var player_gender = "m"  # can also be "f" or "n"
 var money = 0
 var player_sprite_path = "res://Npcs/sprites/main_E.png"
-var can_read_thai = true
+var can_read_thai = false
 var should_show_letters_button = false
 
 var is_somber = false
@@ -81,11 +81,6 @@ var max_hp = 5.0
 var spawn_point = ["res://Maps/Chaiyaphum.tscn", 0, 0]
 
 var is_frozen = false
-
-var should_start_test_when_back_from_MP = [
-	null,  # "res://Test/Word/TestGuessMeaning.tscn"
-	null,  # word_id
-]
 
 # SCREENS ######################################################## SCREEN
 var deducing_coop_select_sentence_screen = null                  # SCREEN
@@ -147,8 +142,6 @@ func update_following_spells_time_to_live():
 func a_word_is_learnt():
 	pass
 	# Whenever a word is learnt, we run this function
-#	if len(Game.known_words) == 10:
-#		Game.pop_victory_screen()
 #	if not Events.events.has_learnt_four_first_words:
 #		if 343 in Game.known_words and 345 in Game.known_words and 207 in Game.known_words and 82 in Game.known_words:
 #			Events.events.has_learnt_four_first_words = true
@@ -221,26 +214,27 @@ func lose_focus(target):
 			space_bar_to_interact = null
 
 func learn_word(word_id):
+	SoundPlayer.play_sound("res://Sounds/Effects/success_short.wav", 0)
 	Quests.update_learn_word_quests(word_id)
 	if not word_id in Game.known_words:
 		Game.known_words.append(word_id)
 		Game.main_ui.update_main_ui_words_display()
 
 func maybe_update_go_learn_letter_bubble():
-	print(active_test)
 	if active_test:
 		var learn_letter_button = active_test.get_node("LearnLetterButton")
 		if learn_letter_button:
 			learn_letter_button.update_known_letters()
 
 func learn_letter(letter):
+	SoundPlayer.play_sound("res://Sounds/Effects/success_short.wav", 0)
 	print('learn_letter', letter.th)
 	Game.known_letters.append(letter.id)
 	maybe_update_go_learn_letter_bubble()
 	Quests.update_learn_letter_quests(letter.id)
 	Game.main_ui.update_main_ui_letters_display()
-	if looking_for_letter__node:
-		looking_for_letter__node.update_label_text()
+#	if looking_for_letter__node:
+#		looking_for_letter__node.update_label_text()
 
 func add_random_letter_to_letters_to_look_for():
 	var random_letter = Game.letters[str(randi() % Game.letters.size())]
@@ -416,8 +410,8 @@ func start_test(test_scene, entity_id, over_entity) -> void:
 		active_test = test
 		print('active test is ', test_scene)
 	test.init(entity_id, over_entity)
-	if looking_for_letter__node:
-		looking_for_letter__node.get_node("Node2D").hide()
+#	if looking_for_letter__node:
+#		looking_for_letter__node.get_node("Node2D").hide()
 
 func save_game():
 	var game_data = {}
@@ -434,7 +428,6 @@ func save_game():
 	game_data.player_position_on_overworld = player_position_on_overworld
 	game_data.player_last_overworld_map_visited = player_last_overworld_map_visited
 	game_data.can_read_thai = can_read_thai
-	game_data.should_start_test_when_back_from_MP = should_start_test_when_back_from_MP
 	game_data.sources = sources
 	return game_data
 
@@ -453,7 +446,6 @@ func load_game(game_data):
 	print('player_position_on_overworld', player_position_on_overworld)
 	player_last_overworld_map_visited = game_data.player_last_overworld_map_visited
 	can_read_thai = game_data.can_read_thai
-	should_start_test_when_back_from_MP = game_data.should_start_test_when_back_from_MP
 	sources = game_data.sources
 
 func starts_somber_mood():
@@ -488,10 +480,6 @@ func print_entire_tree():
 		print(child.name)
 #		for cc in child.get_children():
 #			print('--- ', cc.name)
-	print('')
-	print('')
 	print('get_tree().get_root():')
 	for child in get_tree().get_root().get_children():
 		print(child.name)
-#		for cc in child.get_children():
-#			print('--- ', cc.name)

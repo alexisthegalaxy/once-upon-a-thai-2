@@ -47,10 +47,12 @@ func _process(_delta):
 
 func _on_Button_mouse_entered():
 	emit_signal("is_hovered", type)
+	SoundPlayer.play_sound("res://Sounds/Effects/tab_in.wav", -20)
 	moves_left = true
 	moves_right = false
 
 func _on_Button_mouse_exited():
+	SoundPlayer.play_sound("res://Sounds/Effects/tab_out.wav", -20)
 	emit_signal("is_not_hovered", type)
 	moves_right = true
 	moves_left = false

@@ -58,7 +58,7 @@ func _on_Cross_pressed():
 	reset_text()
 
 func on_correct():
-	SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
+	SoundPlayer.play_sound("res://Sounds/Effects/correct.wav", 0)
 	Game.known_sentences.append(int(sentence_id))
 	Game.seen_sentences.erase(int(sentence_id))
 	Game.active_test = null
@@ -85,7 +85,7 @@ func reset_text():
 	$Button14.show()
 
 func on_incorrect():
-	SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
+	SoundPlayer.play_sound("res://Sounds/Effects/wrong.wav", 0)
 	reset_text()
 
 func _on_Submit_pressed():
@@ -105,7 +105,7 @@ func _on_Submit_pressed():
 
 
 func _on_GiveUp_pressed():
-	SoundPlayer.play_sound("res://Sounds/incrorrect.wav", 0)
+	SoundPlayer.play_sound("res://Sounds/Effects/wrong.wav", 0)
 #	Game.known_sentences.append(int(sentence_id))
 #	Game.seen_sentences.erase(int(sentence_id))
 	Game.active_test = null

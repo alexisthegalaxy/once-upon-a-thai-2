@@ -49,54 +49,99 @@ position = Vector2( 201.473, 50.6814 )
 rotation = 0.911818
 scale = Vector2( 0.256219, 0.217288 )
 texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_1_3" type="Sprite" parent="Objects/Lines"]
-position = Vector2( 11.736, 100.968 )
-rotation = 1.57126
+position = Vector2( 24.4821, 121.982 )
+rotation = 0.857205
 scale = Vector2( 0.0834709, 0.119984 )
 texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="sakyant_line_1_5" type="Sprite" parent="Objects/Lines"]
+position = Vector2( 19.487, 118.881 )
+rotation = 0.857205
+scale = Vector2( 0.0834709, 0.119984 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_1_2" type="Sprite" parent="Objects/Lines"]
-position = Vector2( 10.1924, 62.9204 )
+position = Vector2( 15.8765, 67.3126 )
 rotation = 2.23319
-scale = Vector2( 0.180133, 0.173415 )
+scale = Vector2( 0.115295, 0.138826 )
 texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="sakyant_line_1_4" type="Sprite" parent="Objects/Lines"]
+position = Vector2( -37.9499, 60.2506 )
+rotation = 3.97394
+scale = Vector2( 0.058503, 0.106281 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_2_1" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 216.287, 91.995 )
 rotation = 1.57079
 scale = Vector2( 0.256219, 0.217288 )
 texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_2_6" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 341.277, 93.0164 )
 rotation = 1.57079
 scale = Vector2( 0.256219, 0.217288 )
 texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_2_8" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 466.274, 90.4023 )
 rotation = 1.57079
 scale = Vector2( 0.256219, 0.217288 )
 texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_2_4" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 328.608, 59.1061 )
 rotation = 1.0472
 scale = Vector2( 0.256219, 0.217288 )
 texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_2_2" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 143.877, 25.6784 )
 rotation = 3.12099
 scale = Vector2( 0.256219, 0.201347 )
 texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_2_7" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 284.886, 153.428 )
 rotation = 2.87979
 scale = Vector2( 0.256219, 0.201347 )
 texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_2_9" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 158.055, 223.3 )
@@ -121,42 +166,63 @@ position = Vector2( 308.86, -18.0117 )
 rotation = 4.18878
 scale = Vector2( 0.141538, 0.166448 )
 texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_2_3" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 36.5482, 221.269 )
 rotation = 3.3142
 scale = Vector2( 0.0966829, 0.0859511 )
 texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_3_1" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 96.5316, 93.6493 )
 rotation = 1.5497
 scale = Vector2( 0.197562, 0.164242 )
 texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_3_6" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 427.875, 36.4878 )
 rotation = 1.57079
 scale = Vector2( 0.16307, 0.121542 )
 texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_3_8" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 424.53, 119.079 )
 rotation = 2.35619
 scale = Vector2( 0.158035, 0.10044 )
 texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_3_7" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 462.755, -34.0117 )
 rotation = 1.57079
 scale = Vector2( 0.16307, 0.121542 )
 texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_3_2" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 136, -80 )
 rotation = 3.00063
 scale = Vector2( 0.130878, 0.130761 )
 texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_3_5" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 221.611, -67.8332 )
@@ -172,108 +238,144 @@ position = Vector2( 344, 192 )
 rotation = 1.29016
 scale = Vector2( 0.107481, 0.130566 )
 texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_4_4" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 17.1448, 211.209 )
 rotation = 0.887377
 scale = Vector2( 0.0932497, 0.102128 )
 texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_4_8" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 43.938, -22.7045 )
 rotation = 2.2622
 scale = Vector2( 0.102042, 0.102656 )
 texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_4_9" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 51.5658, -31.1352 )
 rotation = 2.2622
 scale = Vector2( 0.102042, 0.102656 )
 texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_4_2" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 49.6, -26.4954 )
 rotation = 2.28877
 scale = Vector2( 0.0980228, 0.127269 )
 texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_4_10" type="Sprite" parent="Objects/Lines"]
 position = Vector2( -0.590248, -62.3047 )
 rotation = 2.2622
 scale = Vector2( 0.102042, 0.102656 )
 texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_4_11" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 7.03758, -70.7354 )
 rotation = 2.2622
 scale = Vector2( 0.102042, 0.102656 )
 texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_4_5" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 5.07182, -66.0956 )
 rotation = 2.28877
 scale = Vector2( 0.0980228, 0.127269 )
 texture = ExtResource( 9 )
-
-[node name="sakyant_line_4_3" type="Sprite" parent="Objects/Lines"]
-position = Vector2( 11.304, 97.1958 )
-rotation = 1.5763
-scale = Vector2( 0.0745391, 0.117425 )
-texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_5_1" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 94.0368, 144.99 )
 rotation = 0.775198
 scale = Vector2( 0.310555, 0.258742 )
 texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_5_4" type="Sprite" parent="Objects/Lines"]
-position = Vector2( 7.42852, 172.685 )
-rotation = 1.9174
-scale = Vector2( 0.113786, 0.14458 )
+position = Vector2( 19.3995, 166.14 )
+rotation = 2.35821
+scale = Vector2( 0.0826512, 0.106111 )
 texture = ExtResource( 9 )
-
-[node name="sakyant_line_5_9" type="Sprite" parent="Objects/Lines"]
-position = Vector2( -27.8221, 127.464 )
-rotation = 3.30272
-scale = Vector2( 0.0840093, 0.0998935 )
-texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_5_6" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 224, 144 )
 rotation = 0.741882
 scale = Vector2( 0.310555, 0.258742 )
 texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_5_2" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 106.436, 36.5724 )
 rotation = -0.628205
 scale = Vector2( 0.247971, 0.220103 )
 texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_5_5" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 406.6, -4.96419 )
 rotation = 0.523598
 scale = Vector2( 0.13393, 0.126646 )
 texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_5_7" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 482.133, -2.67977 )
 rotation = 0.523598
 scale = Vector2( 0.13393, 0.126646 )
 texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_5_8" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 551.244, 52.4878 )
 rotation = 0.523598
 scale = Vector2( 0.13393, 0.126646 )
 texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sakyant_line_5_3" type="Sprite" parent="Objects/Lines"]
 position = Vector2( 381.937, 151.037 )
 rotation = 0.261799
 scale = Vector2( 0.0995488, 0.10309 )
 texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="YSort" type="YSort" parent="Objects"]
 
@@ -368,11 +470,11 @@ position = Vector2( 85.3211, 196.623 )
 id = "ม"
 
 [node name="อ" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 48.7976, 95.2781 )
+position = Vector2( -15.4809, 40.8624 )
 id = "อ"
 
 [node name="น" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 42.89, 188.65 )
+position = Vector2( 43.2301, 188.65 )
 id = "น"
 
 [node name="ณ" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
@@ -384,7 +486,7 @@ position = Vector2( 31.7976, 250.577 )
 id = "ง"
 
 [node name="ว" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( -29.4242, 33.7667 )
+position = Vector2( -66.4949, 80.7002 )
 id = "ว"
 
 [node name="ข" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
@@ -432,11 +534,11 @@ position = Vector2( 97.1433, -150.582 )
 id = "ฬ"
 
 [node name="ย" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( -26.6762, 97.5585 )
+position = Vector2( 52.2266, 93.8174 )
 id = "ย"
 
 [node name="ญ" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( -35.9315, 160.067 )
+position = Vector2( -8.72364, 142.382 )
 id = "ญ"
 
 [node name="Clouds" type="YSort" parent="Objects/YSort"]
@@ -821,7 +923,7 @@ scale = Vector2( -1, 1 )
 lift_on_letters = [ "ง" ]
 
 [node name="Cloud_282" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
-position = Vector2( -57.6451, 122.131 )
+position = Vector2( -59.1073, 124.893 )
 scale = Vector2( -1, 1 )
 lift_on_letters = [ "ย", "ญ" ]
 
@@ -836,14 +938,14 @@ scale = Vector2( -1, 1 )
 lift_on_letters = [ "ณ" ]
 
 [node name="Cloud_258" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
-position = Vector2( -28.7489, 98.0505 )
+position = Vector2( -25.337, 103.574 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "อ", "ญ" ]
+lift_on_letters = [ "ว", "ญ" ]
 
 [node name="Cloud_255" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
-position = Vector2( -38.381, 161.097 )
+position = Vector2( -28.3079, 162.559 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "น", "ย" ]
+lift_on_letters = [ "น" ]
 
 [node name="Cloud_41" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( -71.3388, 180.681 )
@@ -875,7 +977,7 @@ lift_on_letters = [ "ณ" ]
 
 [node name="Cloud_256" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( -35.9315, 136.433 )
-lift_on_letters = [ "ย", "ญ" ]
+lift_on_letters = [ "ย", "น" ]
 
 [node name="Cloud_43" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( -16.3038, 251.676 )
@@ -885,7 +987,7 @@ lift_on_letters = [ "ง", "ณ" ]
 [node name="Cloud_259" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 14.3437, 97.5635 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "อ" ]
+lift_on_letters = [ "ย" ]
 
 [node name="Cloud_44" parent="Objects/YSort/Clouds" instance=ExtResource( 11 )]
 position = Vector2( -51.2676, 251.059 )
@@ -899,15 +1001,15 @@ lift_on_letters = [ "ง" ]
 [node name="Cloud_95" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( -72.9143, 76.0506 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "ย" ]
+lift_on_letters = [ "อ" ]
 
 [node name="Cloud_277" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
-position = Vector2( 27.7846, 139.972 )
+position = Vector2( -10.2334, 142.896 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "ญ" ]
+lift_on_letters = [ "ย", "น" ]
 
 [node name="Cloud_272" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
-position = Vector2( -31.3212, 58.1 )
+position = Vector2( -48.8679, 59.0748 )
 scale = Vector2( -1, 1 )
 lift_on_letters = [ "อ" ]
 
@@ -919,16 +1021,16 @@ lift_on_letters = [ "บ" ]
 [node name="Cloud_267" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 27.3468, 55.9109 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "อ" ]
+lift_on_letters = [ "ย" ]
 
 [node name="Cloud_261" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 24.2563, 26.0823 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "ว" ]
+lift_on_letters = [ "อ" ]
 
 [node name="Cloud_96" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( -80.0406, 98.6999 )
-lift_on_letters = [ "ย" ]
+lift_on_letters = [ "อ" ]
 
 [node name="Cloud_278" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 17.7048, 118.284 )
@@ -936,18 +1038,22 @@ lift_on_letters = [ "ญ", "ย" ]
 
 [node name="Cloud_276" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 66.6294, 119.277 )
-lift_on_letters = [ "อ" ]
+lift_on_letters = [ "ย" ]
+
+[node name="Cloud_286" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
+position = Vector2( -25.0036, 42.1038 )
+lift_on_letters = [ "ย" ]
 
 [node name="Cloud_273" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
-position = Vector2( -23.1239, 78.1223 )
+position = Vector2( -36.7714, 77.9598 )
 lift_on_letters = [ "อ" ]
 
 [node name="Cloud_268" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
-position = Vector2( -25.9971, 16.6763 )
+position = Vector2( -26.1596, 16.6763 )
 lift_on_letters = [ "อ" ]
 
 [node name="Cloud_260" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
-position = Vector2( -41.5124, 35.2158 )
+position = Vector2( -41.6749, 35.2158 )
 lift_on_letters = [ "อ" ]
 
 [node name="Cloud_97" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
@@ -955,30 +1061,30 @@ position = Vector2( -72.4863, 49.5947 )
 lift_on_letters = [ "ว" ]
 
 [node name="Cloud_279" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( 26.4613, 148.98 )
+position = Vector2( 22.562, 157.916 )
 lift_on_letters = [ "น" ]
 
 [node name="Cloud_271" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( -1.99712, 39.087 )
-lift_on_letters = [ "อ" ]
+lift_on_letters = [ "ย" ]
 
 [node name="Cloud_266" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 17.7048, 71.9235 )
-lift_on_letters = [ "อ" ]
+lift_on_letters = [ "ย" ]
 
 [node name="Cloud_263" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 71.119, 67.5453 )
-lift_on_letters = [ "อ" ]
+lift_on_letters = [ "ย" ]
 
 [node name="Cloud_98" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
-position = Vector2( -98.1217, 114.092 )
+position = Vector2( -98.2842, 114.092 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "ย" ]
+lift_on_letters = [ "ว" ]
 
 [node name="Cloud_274" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 49.8618, 37.0354 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "อ" ]
+lift_on_letters = [ "ย" ]
 
 [node name="Cloud_270" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( -21.503, -28.6377 )
@@ -988,30 +1094,30 @@ lift_on_letters = [ "บ" ]
 [node name="Cloud_264" parent="Objects/YSort/Clouds" instance=ExtResource( 1 )]
 position = Vector2( 88.8279, 53.6726 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "อ" ]
+lift_on_letters = [ "ย" ]
 
 [node name="Cloud_99" parent="Objects/YSort/Clouds" instance=ExtResource( 11 )]
-position = Vector2( -13.8684, 141.701 )
+position = Vector2( 20.2503, 131.79 )
 lift_on_letters = [ "ญ", "ย" ]
 
 [node name="Cloud_265" parent="Objects/YSort/Clouds" instance=ExtResource( 11 )]
 position = Vector2( 49.9236, 65.447 )
-lift_on_letters = [ "อ" ]
+lift_on_letters = [ "ย" ]
 
 [node name="Cloud_100" parent="Objects/YSort/Clouds" instance=ExtResource( 11 )]
 position = Vector2( -5.3222, 128.434 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "ญ" ]
+lift_on_letters = [ "ญ", "ย" ]
 
 [node name="Cloud_275" parent="Objects/YSort/Clouds" instance=ExtResource( 11 )]
 position = Vector2( 77.426, 33.8649 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "อ" ]
+lift_on_letters = [ "บ" ]
 
 [node name="Cloud_262" parent="Objects/YSort/Clouds" instance=ExtResource( 11 )]
 position = Vector2( 106.76, 74.5822 )
 scale = Vector2( -1, 1 )
-lift_on_letters = [ "อ" ]
+lift_on_letters = [ "ย" ]
 
 [node name="Cloud_101" parent="Objects/YSort/Clouds" instance=ExtResource( 12 )]
 position = Vector2( 160.244, 238.226 )

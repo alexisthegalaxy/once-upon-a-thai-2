@@ -79,7 +79,9 @@ func previous_page():
 			$Control/PreviousPage.hide()
 
 func _on_NextPage_pressed():
+	SoundPlayer.play_sound("res://Sounds/Effects/page_turn.wav", 0)
 	next_page()
 
 func _on_PreviousPage_pressed():
+	SoundPlayer.play_sound("res://Sounds/Effects/page_turn.wav", 0)
 	previous_page()

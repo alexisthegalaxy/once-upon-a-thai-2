@@ -9,6 +9,7 @@ var is_crossfading = false
 var main_music_playing = null
 var secondary_music_playing = null
 var main_music = "A"
+onready var available_sound_stream = $SoundEffectAudioStreamPlayer1
 
 var min_db = -50
 var max_db = -20
@@ -67,6 +68,10 @@ func play_thai(thai):
 	$ThaiAudioStreamPlayer.play()
 
 func play_sound(audio_file_name, db_level):
-	$GeneralAudioStreamPlayer.stream = load(audio_file_name)
-	$GeneralAudioStreamPlayer.set_volume_db(db_level)
-	$GeneralAudioStreamPlayer.play()
+	available_sound_stream.stream = load(audio_file_name)
+	available_sound_stream.set_volume_db(db_level)
+	available_sound_stream.play()
+	if available_sound_stream.name == "SoundEffectAudioStreamPlayer1":
+		available_sound_stream = $SoundEffectAudioStreamPlayer2
+	elif available_sound_stream.name == "SoundEffectAudioStreamPlayer2":
+		available_sound_stream = $SoundEffectAudioStreamPlayer1

@@ -35,6 +35,7 @@ func has_quests_in_progress_or_finished():
 	return false
 
 func start_quest(quest_id):
+	SoundPlayer.play_sound("res://Sounds/Effects/new_quest.wav", 0)
 	Events.events.has_had_a_quest = true
 	quests[quest_id].status = IN_PROGRESS
 	if quests[quest_id].type == "find_sentences":
@@ -55,7 +56,7 @@ func start_quest(quest_id):
 	update_quests_display()
 
 func update_quests_display():
-	Game.main_ui.update_main_ui_quests_display()
+	Game.main_ui.update_main_ui_quests_display()  # Updates the number in parenthesis
 	Game.main_ui.open_quest_display()
 	if Game.current_scene.get_node("YSort") and Game.current_scene.get_node("YSort").get_node("NPCs"):
 		for npc in Game.current_scene.get_node("YSort").get_node("NPCs").get_children():
@@ -65,34 +66,34 @@ func update_learn_word_quests(word_id):
 	for quest_id in quests:
 		var quest = quests[quest_id]
 		if quest.status == IN_PROGRESS and quest.type == "learn_words":
-			print('quest before')
-			print('quest.parameters  ', quest.parameters)
-			print('quest.parameters[0]  ', quest.parameters[0])
-			print('quest.parameters[1]  ', quest.parameters[1])
 			if word_id in quest.parameters[0]:
 				if not word_id in quest.parameters[1]:
 					quest.parameters[1].append(word_id)
 					quest.counter += 1
 					if quest.counter >= quest.counter_max:
 						quest.status = FINISHED
-						update_quests_display()
-			print('quest after')
-			print('quest.parameters  ', quest.parameters)
-			print('quest.parameters[0]  ', quest.parameters[0])
-			print('quest.parameters[1]  ', quest.parameters[1])
+						SoundPlayer.play_sound("res://Sounds/Effects/quest_finished.wav", 0)
+#						update_quests_display()
+					else:
+						SoundPlayer.play_sound("res://Sounds/Effects/quest_progress.wav", 0)
+					Game.main_ui.update_quests_display()
+					
 
 func update_learn_letter_quests(letter_id):
+	var letter_th = Game.letters[str(letter_id)].th
 	for quest_id in quests:
 		var quest = quests[quest_id]
 		if quest.status == IN_PROGRESS and quest.type == "learn_letters":
-			if letter_id in quest.parameters[0]:
-				if not letter_id in quest.parameters[1]:
-					quest.parameters[1].append(letter_id)
+			if letter_th in quest.parameters[0]:
+				if not letter_th in quest.parameters[1]:
+					quest.parameters[1].append(letter_th)
 					quest.counter += 1
 					if quest.counter >= quest.counter_max:
 						quest.status = FINISHED
-						update_quests_display()
-	
+						SoundPlayer.play_sound("res://Sounds/Effects/quest_finished.wav", 0)
+					else:
+						SoundPlayer.play_sound("res://Sounds/Effects/quest_progress.wav", 0)
+					Game.main_ui.update_quests_display()
 
 func update_find_sentences_quests(sentence_id):
 	for quest_id in quests:
@@ -104,8 +105,12 @@ func update_find_sentences_quests(sentence_id):
 					quest.counter += 1
 					if quest.counter >= quest.counter_max:
 						quest.status = FINISHED
-						update_quests_display()
-
+						SoundPlayer.play_sound("res://Sounds/Effects/quest_finished.wav", 0)
+#						update_quests_display()
+					else:
+						SoundPlayer.play_sound("res://Sounds/Effects/quest_progress.wav", 0)
+					Game.main_ui.update_quests_display()
+	
 func update_implant_source_with_this_word_quests(source_name: String, word_id: int):
 	for quest_id in quests:
 		var quest = quests[quest_id]

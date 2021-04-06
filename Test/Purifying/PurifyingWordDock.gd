@@ -54,7 +54,7 @@ func add_letter(letter_id):
 func lock_dock():
 	$BackButton.hide()
 	is_locked = true
-	SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
+	SoundPlayer.play_sound("res://Sounds/Effects/correct.wav", 0)
 	SoundPlayer.play_thai(word.th)
 	update_color()
 	emit_signal("lock_dock")

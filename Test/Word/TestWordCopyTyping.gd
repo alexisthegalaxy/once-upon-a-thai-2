@@ -47,19 +47,17 @@ func answered_correctly():
 	Game.is_frozen = false
 	Game.learn_word(word.id)
 	Game.add_following_spell(word.id, over_word)
-	SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
+	SoundPlayer.play_sound("res://Sounds/Effects/correct.wav", 0)
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var lines = [tr("_you_have_befriended_that_spell") % word.th]
 	if len(Game.known_words) == 1:
 		lines.append(tr("_press_f_to_open_your_dictionary_and_see_that_word"))
 	Game.current_dialog.init_dialog(lines, null, null, null, null)
 	Game.current_scene.add_child(Game.current_dialog)
-	
 	queue_free()
-	Game.should_start_test_when_back_from_MP = [null, null]
 
 func answered_wrongly():
-	SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
+	SoundPlayer.play_sound("res://Sounds/Effects/wrong.wav", 0)
 
 func _on_OK_pressed():
 	validate()

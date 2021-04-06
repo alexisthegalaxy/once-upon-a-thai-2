@@ -135,6 +135,11 @@ func _input(_event) -> void:
 		Game.print_entire_tree()
 		print("current position: (" + str(position.x) + ", " + str(position.y) + ")    " + Game.current_map_name)
 		Game.add_random_letter_to_letters_to_look_for()
+		
+		Quests.quests["find_first_letters"].status = Quests.FINISHED
+		SoundPlayer.play_sound("res://Sounds/Effects/quest_finished.wav", 0)
+		Game.main_ui.update_quests_display()
+		
 	if Input.is_action_just_pressed("print_known_sentences"):
 		Game.print_known_sentences()
 	if Input.is_action_just_pressed("load"):

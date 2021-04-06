@@ -6,8 +6,8 @@ var province = "chaiyaphum"
 
 # This is the letters yaai asks us to fetch the first time we come in the Memory Palace
 #var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]  # outdated
-var initial_letters = [11, 13, 28, 0, 21]  # correct
-#var initial_letters = [0]
+#var initial_letters = [11, 13, 28, 0, 21]  # correct
+var initial_letters = [0]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -34,15 +34,17 @@ func yaai_arc():
 			tr("_good_luck_ill_watch_you_from_here"),
 		]
 		$YSort/NPCs/Yaai.post_dialog_event = []
-	elif Events.events.has_gone_to_first_sentence:
-		$YSort/NPCs/Yaai.position = Vector2(202.29, 654.29)
-		$YSort/NPCs/Yaai.set_direction("right")
+#	elif Events.events.has_gone_to_first_sentence:
+#		$YSort/NPCs/Yaai.position = Vector2(202.29, 654.29)
+#		$YSort/NPCs/Yaai.set_direction("right")
 	elif Events.events["yaai_went_to_the_tree"]:
 		$YSort/NPCs/Yaai.position = Vector2(245.153534, 523.72229)
 		$YSort/NPCs/Yaai.set_direction("right")
+		$YSort/NPCs/Yaai.post_dialog_event = []
 	elif Events.events["talked_to_yaai_for_the_first_time"]:
 		$YSort/NPCs/Yaai.position = Vector2(478.02533, 502.912994)
 		$YSort/NPCs/Yaai.set_direction("right")
+		$YSort/NPCs/Yaai.post_dialog_event = []
 
 func _process(delta):
 	if is_blackening:
@@ -194,11 +196,9 @@ func _on_PloyInFrontOfHouse_body_entered(body):
 		return
 	if Events.events.ploy_has_stopped_in_front_of_house:
 		return
-	
 	Events.events.ploy_has_stopped_in_front_of_house = true
 	$YSort/NPCs/Ploy.is_walking_towards = []
 	$YSort/NPCs/Ploy.interact()
-
 
 func _on_EnterSomber_body_entered(body):
 	if not body == Game.player:
@@ -230,12 +230,12 @@ func handle_dialog_option(dialog_node, answer_index, npc):
 				npc.dialog = [tr("_hmph_yeah_anyway_i_to_to_chaiyaphum_loser")]
 				dialog_node.dialog = npc.dialog
 				dialog_node.page = -1
-				SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
+				SoundPlayer.play_sound("res://Sounds/Effects/correct.wav", 0)
 			else:
 				npc.dialog = [tr("_see_bpai_is_written_i_go_to_chaiyaphum_loser")]
 				dialog_node.dialog = npc.dialog
 				dialog_node.page = -1
-				SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
+				SoundPlayer.play_sound("res://Sounds/Effects/wrong.wav", 0)
 			npc.post_dialog_event = ["npc_walks_to_and_get_new_dialog", [[
 				Vector2(543.984375, 244.238388),
 				Vector2(543.984375, 100.238388),

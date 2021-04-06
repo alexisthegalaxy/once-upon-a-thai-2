@@ -6,6 +6,7 @@ func save_game():
 	# to be reused on next log-in.
 	# This is to be used when starting or ending a session,
 	# and whenever we click the save button to save progress.
+	SoundPlayer.play_sound("res://Sounds/Effects/save.wav", -10)
 	var save_data = {
 		"current_map": Game.current_map_name,
 		"player_data": Game.player.save_game(),
@@ -32,6 +33,7 @@ func apply_change_from_save_data(save_data):
 	Events.load_game(save_data.events_data)
 
 func load_game(player_name):
+	SoundPlayer.play_sound("res://Sounds/Effects/save.wav", -10)
 	var save_file = File.new()
 	var save_file_path = "user://%s.save" % player_name
 	if not save_file.file_exists(save_file_path):

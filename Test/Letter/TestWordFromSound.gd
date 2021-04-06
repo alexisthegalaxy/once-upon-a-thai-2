@@ -96,6 +96,6 @@ func answered_correctly():
 	Game.current_dialog.init_dialog(lines, null, null, null, null)
 	Game.current_scene.add_child(Game.current_dialog)
 	
-	if Game.looking_for_letter__node:
-		Game.looking_for_letter__node.get_node("Node2D").show()
+#	if Game.looking_for_letter__node:
+#		Game.looking_for_letter__node.get_node("Node2D").show()
 	queue_free()

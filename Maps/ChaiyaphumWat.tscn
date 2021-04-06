@@ -26,6 +26,7 @@ rect_rotation = 360.0
 texture = ExtResource( 9 )
 stretch_mode = 2
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -42,7 +43,7 @@ position = Vector2( -96.271, 30.7804 )
 position = Vector2( -63.6649, 30.9144 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( -49.2056, 74.1237 )
+position = Vector2( 24.3872, 11.9628 )
 direction = "up"
 
 [node name="House" parent="YSort" instance=ExtResource( 6 )]
@@ -61,9 +62,14 @@ is_on = true
 
 [node name="Monk" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( 127.286, 32.0547 )
-dialog = [ "ผมเป็นพระครับ" ]
+dialog = [ "..." ]
 sprite_path = "res://Npcs/sprites/meditating_monk.png"
-post_dialog_event = [ "say_sentence", 210 ]
+
+[node name="Monk2" parent="YSort/NPCs" instance=ExtResource( 3 )]
+position = Vector2( 57.2657, 69.6847 )
+dialog = [ "..." ]
+sprite_path = "res://Npcs/sprites/meditating_monk.png"
+post_dialog_event = [ "teach_sentence", 200 ]
 
 [node name="QuestGiverMonk" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( 68.7152, 12.0266 )

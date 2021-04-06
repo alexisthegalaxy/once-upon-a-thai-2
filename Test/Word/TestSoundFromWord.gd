@@ -84,13 +84,12 @@ func _process(delta):
 func answered_correctly():
 	# This is the first test of the encounter
 	# When it ends, we got to the second test: "res://Test/TestGuessMeaning.tscn"
-	SoundPlayer.play_sound("res://Sounds/ding.wav", 0)
+	SoundPlayer.play_sound("res://Sounds/Effects/correct.wav", 0)
 	Game.start_test("res://Test/Word/TestGuessMeaning.tscn", word_id, over_word)
 	queue_free()
-	Game.should_start_test_when_back_from_MP = [null, null]
 
 func answered_wrongly():
-	SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
+	SoundPlayer.play_sound("res://Sounds/Effects/wrong.wav", 0)
 
 func reactivate_buttons_after_akson():
 	$AudioAnswer1.get_node("Button").visible = true

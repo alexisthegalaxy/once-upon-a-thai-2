@@ -14,9 +14,12 @@
     "en_name": "Learn your first letters",
     "fr_name": "Apprend tes premières lettres",
     "type": "learn_letters",
-    "parameters": [["น", "ท", "ย", "ค", "ไ-"], []],
+    "parameters": [["น"], []],
+    "true_parameters": [["น", "ท", "ย", "ค", "ไ-"], []],
     "en_description": "Use the purple \"Letters\" tab on the right side to learn the consonants น, ท, ย, ค and the vowel ไ-.",
     "fr_description": "Utilise l'onglet violet \"Lettres\" sur la droite pour apprendre les consonnes น, ท, ย, ค et la voyelle ไ-.",
+    "en_end_description": "Talk to your grandmother Yaai.",
+    "fr_end_description": "Intéragis avec ta grand-mère Yaai.",
     "en_start_dialog": [
       "Well done [Name]!",
       "So, you know nothing anymore of the Thai language, huh?",
@@ -43,7 +46,10 @@
     "fr_finish_dialog": [
       "Félicitations, [Name], tu as trouvé toutes les lettres."
     ],
-    "counter_max": 5
+    "en_counter_name": "Letters learnt",
+    "fr_counter_name": "Lettres apprises ",
+    "counter_max": 1,
+    "counter_max_true": 5
   },
   "find_first_words__when_learning_letters": {
     "blockers": ["find_first_letters"],
@@ -72,7 +78,7 @@
       "Parfait."
     ],
     "en_counter_name": "Words learnt",
-    "fr_counter_name": "Mots trouvés",
+    "fr_counter_name": "Mots trouvés ",
     "counter_max": 4
   },
   "find_first_words__when_knew_letters": {
@@ -113,7 +119,7 @@
       "Parfait."
     ],
     "en_counter_name": "Words learnt",
-    "fr_counter_name": "Mots trouvés",
+    "fr_counter_name": "Mots trouvés ",
     "counter_max": 4
   },
   "talk_to_anchalee_in_chaiyaphum": {
@@ -132,8 +138,6 @@
     "fr_name": "Les phrases de Chaiyaphum",
     "en_description": "Talk to everybody in Chaiyaphum and collect their sentences.",
     "fr_description": "Parle à tous les habitants de Chaiyaphum et collecte leurs phrases.",
-    "en_counter_name": "Sentences found",
-    "fr_counter_name": "Phrases trouvées ",
     "en_end_description": "Go back to Anchalee in Chaiyaphum's temple.",
     "fr_end_description": "Retourne voir Anchalee au temple de Chaiyaphum.",
     "en_finish_dialog": [
@@ -155,7 +159,10 @@
       "Reviens me voir quand tu auras trouvé au moins onze phrases."
     ],
     "type": "find_sentences",
-    "parameters": [[200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210], []]
+    "parameters": [[200, 201, 202, 203, 204, 205, 206, 207, 208, 209], []],
+    "en_counter_name": "Sentences found",
+    "fr_counter_name": "Phrases trouvées ",
+    "counter_max": 1
   },
   "implant_source_behind_the_temple": {
     "blockers": ["find_sentences_in_chaiyaphum"],

@@ -91,6 +91,7 @@ func init_dialog(_dialog, _caller, _post_dialog_event, _post_dialog_signal, spea
 	$Control/Options/Option4.init_option(self, caller, 4)
 
 func dialog_ends():
+	SoundPlayer.play_sound("res://Sounds/Effects/next.wav", -10)
 	queue_free()
 	Game.player.end_dialog()
 	if caller and "is_talking" in caller:
@@ -109,6 +110,7 @@ func dialog_ends():
 #	Game.loses_focus(Game.current_focus)
 
 func next_line():
+	SoundPlayer.play_sound("res://Sounds/Effects/next.wav", -10)
 	page += 1
 	if page >= dialog.size():
 		dialog_ends()

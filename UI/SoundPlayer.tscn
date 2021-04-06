@@ -7,7 +7,9 @@ script = ExtResource( 1 )
 
 [node name="ThaiAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
-[node name="GeneralAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="SoundEffectAudioStreamPlayer1" type="AudioStreamPlayer" parent="."]
+
+[node name="SoundEffectAudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 
 [node name="Music_A" type="AudioStreamPlayer" parent="."]
 

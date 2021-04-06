@@ -7,6 +7,7 @@ var elements_that_progressively_appear
 var elements_that_open_up
 var show_animation = false
 func _ready():
+	SoundPlayer.play_sound("res://Sounds/Effects/open_paper_roll.wav", 0)
 	elements_that_progressively_appear = [
 		$ColorRect,
 		$PressFToExit,

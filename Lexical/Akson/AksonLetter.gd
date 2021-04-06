@@ -51,6 +51,7 @@ func _process(delta):
 		$SameButWithBlueContour.modulate = Color(1, 1, 1, alpha)
 
 func _on_Button_mouse_entered():
+	SoundPlayer.play_sound("res://Sounds/Effects/select.wav", 0)
 	if Game.current_dialog or Game.active_letter_test:
 		return
 	is_hovered = true
@@ -92,7 +93,7 @@ func start_letter_test():
 	is_hovered = false
 	$SameButWithBlueContour.hide()
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-	Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true, null)
+	Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true, id)
 	Game.current_scene.add_child(Game.current_dialog)
 	if pre_dialog_event:
 		Events.execute(pre_dialog_event[0], pre_dialog_event[1])

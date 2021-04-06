@@ -117,7 +117,7 @@ func correct_answer():
 	money_made_since_beginning_of_game += MONEY_AMOUNT_WIN
 	update_money_label()
 	add_floaty("up", "+" + str(MONEY_AMOUNT_WIN), Color(0, 1, 0, 1))
-	SoundPlayer.play_sound("res://Sounds/money.wav", -20)
+	SoundPlayer.play_sound("res://Sounds/Effects/money.wav", -20)
 
 func incorrect_answer():
 	Game.words[str(pressed_tl_word_id)].fluency -= 0.9
@@ -125,7 +125,7 @@ func incorrect_answer():
 	money_made_since_beginning_of_game += MONEY_AMOUNT_LOSS
 	update_money_label()
 	add_floaty("down", str(MONEY_AMOUNT_LOSS), Color(1, 0, 0, 1))
-	SoundPlayer.play_sound("res://Sounds/incorrect.wav", 0)
+	SoundPlayer.play_sound("res://Sounds/Effects/wrong.wav", 0)
 	unpress_all_buttons()
 
 func update_money_label():
