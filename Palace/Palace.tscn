@@ -1,9 +1,27 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Palace/EditorObject.gd" type="Script" id=1]
+[ext_resource path="res://Palace/ItemSelector.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://World/House.tscn" type="PackedScene" id=4]
 
 [node name="Palace" type="Node2D"]
 
+[node name="Control" parent="." instance=ExtResource( 2 )]
+
 [node name="Level" type="Node2D" parent="."]
 
-[node name="EditorObject" type="Node2D" parent="."]
+[node name="TileMap" type="TileMap" parent="Level"]
+format = 1
 
-[node name="Sprite" type="Sprite" parent="EditorObject"]
+[node name="YSort" type="YSort" parent="Level"]
+
+[node name="Player" parent="Level/YSort" instance=ExtResource( 3 )]
+
+[node name="House" parent="Level/YSort" instance=ExtResource( 4 )]
+position = Vector2( 102.564, 104.865 )
+
+[node name="EditorObjectOnCursor" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="EditorObjectOnCursor"]

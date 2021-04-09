@@ -96,6 +96,7 @@ func _process(delta) -> void:
 			$Camera2D.position.x = 0
 
 func handle_click(_event):
+	return
 	if Game.main_ui:
 		if Game.main_ui.main_ui_process_click(_event):
 			return
