@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Palace/EditorObject.gd" type="Script" id=1]
 [ext_resource path="res://Palace/ItemSelector.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/House.tscn" type="PackedScene" id=4]
+[ext_resource path="res://CliffTileMap.tscn" type="PackedScene" id=5]
 
 [node name="Palace" type="Node2D"]
 
@@ -11,8 +12,8 @@
 
 [node name="Level" type="Node2D" parent="."]
 
-[node name="TileMap" type="TileMap" parent="Level"]
-format = 1
+[node name="CliffTileMap" parent="Level" instance=ExtResource( 5 )]
+tile_data = PoolIntArray( 196616, 1, 0, 196617, 1, 1, 196618, 1, 2, 262151, 1, 196608, 262152, 1, 196614, 262153, 1, 262145, 262154, 1, 131074 )
 
 [node name="YSort" type="YSort" parent="Level"]
 
