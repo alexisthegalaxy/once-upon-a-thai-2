@@ -96,7 +96,6 @@ func close_quest_display():
 
 func on_button_pressed(type):
 	if type == "_see_letters":
-#		display_alphabet()
 		display_akson()
 	elif type == "_see_words":
 		display_words()
@@ -125,22 +124,24 @@ func display_use_spell():
 	Game.current_scene.add_child(Game.select_follower_to_implant_screen)
 	
 func display_words():
-	var dict = load("res://Lexical/Dict/Dict.tscn").instance()
-	Game.dict = dict
-	dict.init_dict()
-	Game.current_scene.add_child(dict)
-
-func display_alphabet():
-	var alphabet = load("res://Lexical/Alphabet/Alphabet.tscn").instance()
-	Game.alphabet = alphabet
-	alphabet.init_alphabet()
-	Game.current_scene.add_child(alphabet)
+	if Game.dict:
+		Game.dict.queue_free()
+		Game.dict = null
+	else:
+		var dict = load("res://Lexical/Dict/Dict.tscn").instance()
+		Game.dict = dict
+		dict.init_dict()
+		Game.current_scene.add_child(dict)
 
 func display_akson():
-	var akson = load("res://Lexical/Akson/Akson.tscn").instance()
-	Game.akson = akson
-	akson.init_akson([], true)
-	Game.current_scene.add_child(akson)
+	if Game.akson:
+		Game.akson.queue_free()
+		Game.akson = null
+	else:
+		var akson = load("res://Lexical/Akson/Akson.tscn").instance()
+		Game.akson = akson
+		akson.init_akson([], true)
+		Game.current_scene.add_child(akson)
 
 func display_spell_crafting():
 	var spell_crafting_scene = load("res://Lexical/SpellCrafting/SpellCrafting.tscn").instance()
@@ -148,10 +149,14 @@ func display_spell_crafting():
 	Game.current_scene.add_child(spell_crafting_scene)
 
 func display_notebook():
-	var notebook = load("res://Lexical/Notebook/Notebook.tscn").instance()
-	Game.notebook = notebook
-	Game.current_scene.add_child(notebook)
-	notebook.init_notebook(0)
+	if Game.notebook:
+		Game.notebook.queue_free()
+		Game.notebook = null
+	else:
+		var notebook = load("res://Lexical/Notebook/Notebook.tscn").instance()
+		Game.notebook = notebook
+		Game.current_scene.add_child(notebook)
+		notebook.init_notebook(0)
 
 func display_map():
 	if Game.map:

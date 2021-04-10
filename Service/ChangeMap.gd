@@ -5,7 +5,8 @@ func move_player(to_x, to_y, level_y_height_change):
 	if Game.player:
 		player_velocity = Game.player.velocity
 		
-	Game.player = Game.current_scene.get_node("YSort").get_node("Player")
+#	Game.player = Game.current_scene.get_node("YSort").get_node("Player")
+	Game.player = Game.current_scene.get_node("YSort/Player")
 	Game.player.position = Vector2(to_x, to_y)
 	Game.player.velocity = player_velocity
 	
@@ -58,7 +59,8 @@ func set_sources_after_map_change():
 		var source_map_name = split_name[0]
 		var source_name = split_name[1]
 		if source_map_name == Game.current_map_name:
-			var source_node = Game.current_scene.get_node("YSort").get_node("Sources").get_node(source_name)
+#			var source_node = Game.current_scene.get_node("YSort").get_node("Sources").get_node(source_name)
+			var source_node = Game.current_scene.get_node("YSort/Sources").get_node(source_name)
 			source_node.word_ids = Game.sources[source]
 			source_node.update_source(true)
 

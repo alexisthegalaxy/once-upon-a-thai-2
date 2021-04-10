@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Palace/Placable/Placable.tscn" type="PackedScene" id=1]
+[ext_resource path="res://World/tilesets/DirtTileset.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 48, 48, 16, 16 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ SubResource( 2 ) ],
+"loop": true,
+"name": "SandPath",
+"speed": 5.0
+} ]
+
+[node name="PlacableSandPathTileset" instance=ExtResource( 1 )]
+tileset_path = "/root/Palace/Level/SandPathTilemap"
+tileset_name = "DirtTileset.png 1"
+
+[node name="AnimatedSprite" parent="." index="0"]
+position = Vector2( 0.179771, 0.179775 )
+frames = SubResource( 1 )
+animation = "SandPath"
+
+[node name="Button" parent="." index="1"]
+modulate = Color( 1, 1, 1, 0.00392157 )
+margin_left = -8.0
+margin_top = -9.84265
+margin_right = 9.0
+margin_bottom = 10.1573

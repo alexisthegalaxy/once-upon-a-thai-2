@@ -62,14 +62,16 @@
     "en_start_dialog": [
       "For your next task, go to the forest. There are numerous Word Spirits there - we call them Spells.",
       "You should be able to see them, now.",
-      "Find them all - I believe there are four different Spells there.",
-      "Ah, but first, I should teach you your first Thai sentence, it'll make your task easier."
+      "Find them all - I believe there are four different Spells there."
     ],
     "fr_start_dialog": [
       "Pour ta seconde quête, va à la forêt.",
       "Tu y trouveras des Esprits de Mots, tu devrais être capable de les voir.",
-      "Trouve-les tous, et apprend-les - je crois qu'il y a quatre types de Mots.",
-      "Ah, mais d'abord, je devrais t'enseigner ta première phrase en thaï, ça rendra ta tâche plus facile."
+      "Trouve-les tous, et apprend-les - je crois qu'il y a quatre types de Mots."
+    ],
+    "remnants": [
+      "Ah, mais d'abord, je devrais t'enseigner ta première phrase en thaï, ça rendra ta tâche plus facile.",
+      "Ah, but first, I should teach you your first Thai sentence, it'll make your task easier."
     ],
     "en_finish_dialog": [
       "Perfect."
@@ -101,15 +103,13 @@
       "Find all four different types, and learn each one.",
       "Ah, but first, I should teach you your first Thai sentence, it'll make your task easier."
     ],
-    "previously": [
+    "fr_start_dialog": [
       "C'est bien, [Name]!",
       "Alors ça y est, tu ne te souviens plus du tout du thaï ?",
       "Ne t'en fais pas, je suis aussi passée par là.",
       "Pour ta quête initiatique, va plus profondémment dans la forêt.",
       "Là, tu percevras des Esprits de Mots, tu devrais être capable de les voir à présent.",
-      "Trouve-les tous, et apprend-les - il y en a de quatre types."
-    ],
-    "fr_start_dialog": [
+      "Trouve-les tous, et apprend-les - il y en a de quatre types.",
       "Ah, mais d'abord, je devrais t'enseigner ta première phrase en thaï, ça rendra ta tâche plus facile."
     ],
     "en_finish_dialog": [

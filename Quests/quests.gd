@@ -58,8 +58,8 @@ func start_quest(quest_id):
 func update_quests_display():
 	Game.main_ui.update_main_ui_quests_display()  # Updates the number in parenthesis
 	Game.main_ui.open_quest_display()
-	if Game.current_scene.get_node("YSort") and Game.current_scene.get_node("YSort").get_node("NPCs"):
-		for npc in Game.current_scene.get_node("YSort").get_node("NPCs").get_children():
+	if Game.current_scene.get_node("YSort/NPCs"):
+		for npc in Game.current_scene.get_node("YSort/NPCs").get_children():
 			npc.update_npc_overhead()
 
 func update_learn_word_quests(word_id):
@@ -73,7 +73,7 @@ func update_learn_word_quests(word_id):
 					if quest.counter >= quest.counter_max:
 						quest.status = FINISHED
 						SoundPlayer.play_sound("res://Sounds/Effects/quest_finished.wav", 0)
-#						update_quests_display()
+						update_quests_display()
 					else:
 						SoundPlayer.play_sound("res://Sounds/Effects/quest_progress.wav", 0)
 					Game.main_ui.update_quests_display()
@@ -91,6 +91,7 @@ func update_learn_letter_quests(letter_id):
 					if quest.counter >= quest.counter_max:
 						quest.status = FINISHED
 						SoundPlayer.play_sound("res://Sounds/Effects/quest_finished.wav", 0)
+						update_quests_display()
 					else:
 						SoundPlayer.play_sound("res://Sounds/Effects/quest_progress.wav", 0)
 					Game.main_ui.update_quests_display()

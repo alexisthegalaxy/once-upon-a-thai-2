@@ -96,7 +96,7 @@ func _process(delta) -> void:
 			$Camera2D.position.x = 0
 
 func handle_click(_event):
-	return
+#	return  # uncomment to test Memory Palace
 	if Game.main_ui:
 		if Game.main_ui.main_ui_process_click(_event):
 			return
@@ -125,6 +125,15 @@ func player_interact():
 			Game.space_bar_to_interact.queue_free()
 			Game.space_bar_to_interact = null
 
+func _on_print():
+#	Game.print_entire_tree()
+#	print("current position: (" + str(position.x) + ", " + str(position.y) + ")    " + Game.current_map_name)
+#	Game.add_random_letter_to_letters_to_look_for()
+#	Quests.quests["find_first_letters"].status = Quests.FINISHED
+#	SoundPlayer.play_sound("res://Sounds/Effects/quest_finished.wav", 0)
+#	Game.main_ui.update_quests_display()
+	Game.learn_letter(Game.letters["0"])
+
 func _input(_event) -> void:
 	if not Game.is_overworld_frozen():
 		if Input.is_action_just_pressed("click"):
@@ -133,14 +142,7 @@ func _input(_event) -> void:
 			get_tree().set_input_as_handled()
 			player_interact()
 	if Input.is_action_just_pressed("print_position"):
-		Game.print_entire_tree()
-		print("current position: (" + str(position.x) + ", " + str(position.y) + ")    " + Game.current_map_name)
-		Game.add_random_letter_to_letters_to_look_for()
-		
-		Quests.quests["find_first_letters"].status = Quests.FINISHED
-		SoundPlayer.play_sound("res://Sounds/Effects/quest_finished.wav", 0)
-		Game.main_ui.update_quests_display()
-		
+		_on_print()
 	if Input.is_action_just_pressed("print_known_sentences"):
 		Game.print_known_sentences()
 	if Input.is_action_just_pressed("load"):

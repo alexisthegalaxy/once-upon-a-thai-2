@@ -44,6 +44,7 @@ func update_npc_overhead():
 				$OverheadNode2D.visible = true
 				$OverheadNode2D/blue_smile.visible = false
 				$OverheadNode2D/OverheadLabel.text = "!"
+				$OverheadNode2D/OverheadLabel.show()
 				return
 	if start_quests:
 		for start_quest_id in start_quests:
@@ -51,6 +52,7 @@ func update_npc_overhead():
 				$OverheadNode2D.visible = true
 				$OverheadNode2D/blue_smile.visible = false
 				$OverheadNode2D/OverheadLabel.text = "?"
+				$OverheadNode2D/OverheadLabel.show()
 				return
 	if interaction_sentence_id:
 		var has_done_this_interaction = true

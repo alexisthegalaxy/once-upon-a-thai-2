@@ -90,8 +90,6 @@ func _process(delta):
 		self.scale.y = ratio
 		if ratio <= 0:
 			queue_free()
-			
-			Game.a_word_is_learnt()
 	if can_move:
 		if is_following_player:
 			var player_position = Game.player.position + random_following_offset

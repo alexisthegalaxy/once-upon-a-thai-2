@@ -98,14 +98,8 @@ var letter_page = null                                           # SCREEN
 var exit_screen = null                                           # SCREEN
 var spell_crafting_screen = null                                 # SCREEN
 var map = null                                                   # SCREEN
+var palace = null                                                # SCREEN
 ################################################################## SCREEN
-
-func blackens():
-	canvas_color_screen = ColorRect.new()
-	canvas_color_screen.set_position(Vector2(-10000, -10000))
-	canvas_color_screen.set_size(Vector2(100000, 100000))
-	canvas_color_screen.color = Color(0, 0, 0, 0)
-	get_tree().get_root().add_child(canvas_color_screen)
 
 func is_overworld_frozen():
 	return (
@@ -138,16 +132,6 @@ func add_following_spell(word_id, over_word):
 func update_following_spells_time_to_live():
 	for following_spell in following_spells:
 		following_spell.time_to_live = following_spell.over_word.time_to_live
-
-func a_word_is_learnt():
-	pass
-	# Whenever a word is learnt, we run this function
-#	if not Events.events.has_learnt_four_first_words:
-#		if 343 in Game.known_words and 345 in Game.known_words and 207 in Game.known_words and 82 in Game.known_words:
-#			Events.events.has_learnt_four_first_words = true
-#			if not Game.current_focus:
-#				Game.current_focus.append(Game.current_scene.get_node("YSort").get_node("NPCs").get_node("Yaai"))
-#			Events.npc_walks_to([[player.position]])
 
 func discovers_sentence(sentence_id, is_translated):
 	Game.is_frozen = true
@@ -228,24 +212,16 @@ func maybe_update_go_learn_letter_bubble():
 
 func learn_letter(letter):
 	SoundPlayer.play_sound("res://Sounds/Effects/success_short.wav", 0)
-	print('learn_letter', letter.th)
+	print('learn_letter: ', letter.th)
 	Game.known_letters.append(letter.id)
 	maybe_update_go_learn_letter_bubble()
 	Quests.update_learn_letter_quests(letter.id)
 	Game.main_ui.update_main_ui_letters_display()
-#	if looking_for_letter__node:
-#		looking_for_letter__node.update_label_text()
 
 func add_random_letter_to_letters_to_look_for():
 	var random_letter = Game.letters[str(randi() % Game.letters.size())]
 	if not random_letter in letters_we_look_for:
 		letters_we_look_for.append(random_letter)
-#		if looking_for_letter__node:
-#			looking_for_letter__node.init_letters_we_look_for(letters_we_look_for)
-#		else:
-#			looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
-#			looking_for_letter__node.init_letters_we_look_for(letters_we_look_for)
-#			Game.current_scene.add_child(looking_for_letter__node)
 
 func set_hp(_hp) -> void:
 	player.set_hp(_hp)
@@ -358,15 +334,21 @@ func _input(_event):
 		elif akson:
 			akson.exit()  # triggers a queue_free, and recenters the camera on Player
 			is_frozen = false
+		elif palace:
+			palace.ui_cancel()
 		else:
-			exit_screen = load("res://UI/ExitAreYouSure.tscn").instance()
-			is_frozen = true
-			current_scene.add_child(exit_screen)
+			show_exit_screen()
+
+func show_exit_screen():
+	exit_screen = load("res://UI/ExitAreYouSure.tscn").instance()
+	is_frozen = true
+	current_scene.add_child(exit_screen)
 
 func _process(delta):
 	OS.set_window_title("Once upon a Thai | fps: " + str(Engine.get_frames_per_second()))
 	if change_color:
-		var canvas_modulate = current_scene.get_node("Lights").get_node("CanvasModulate")
+#		var canvas_modulate = current_scene.get_node("Lights").get_node("CanvasModulate")
+		var canvas_modulate = current_scene.get_node("Lights/CanvasModulate")
 		var direction = Vector3(goal_color.r, goal_color.g, goal_color.b) - Vector3(canvas_modulate.color.r, canvas_modulate.color.g, canvas_modulate.color.b)
 		if direction.length() < 0.0001:
 			change_color = false

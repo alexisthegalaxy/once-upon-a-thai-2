@@ -96,7 +96,6 @@ __meta__ = {
 }
 
 [node name="OverheadLabel" type="Label" parent="OverheadNode2D"]
-visible = false
 margin_left = -9.0
 margin_top = -43.0166
 margin_right = 10.0

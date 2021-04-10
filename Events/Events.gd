@@ -2,7 +2,7 @@ extends Node
 
 var initial_state = false
 var state_2 = false
-var state_3 = false
+var state_3 = true
 var events = {
 	"has_had_a_quest": state_2,
 	"money_is_visible": state_2,
@@ -16,7 +16,7 @@ var events = {
 	"yaai_taught_first_sentence": initial_state,  # should use known_sentences instead
 #	"has_gone_to_first_sentence": initial_state,
 #	"can_see_the_looking_for_letter_banner": initial_state,
-	"ceremony_started": state_3,
+	"ceremony_started": state_2,
 	"yaai_went_to_the_tree": state_3,
 	"talked_to_yaai_for_the_first_time": state_3,
 	"talked_to_nim_at_the_beginning": state_3,
@@ -35,20 +35,11 @@ func load_game(events_data):
 		if event_name in events_data:
 			events[event_name] = events_data[event_name]
 
+# Commented since April 6 2021
 #func lose_focus(_parameters):
 #	for focus in Game.current_focus:
 #		Game.loses_focus(focus)
 
-# Commented since April 6 2021
-#func show_looking_for_letters(_parameters):
-##	events["can_see_the_looking_for_letter_banner"] = true
-##	Game.looking_for_letter__node = load("res://Lexical/Alphabet/LookingForLetters.tscn").instance()
-#	print('Game.letters_we_look_for')
-#	for l in Game.letters_we_look_for:
-#		print('    ', l)
-##	Game.looking_for_letter__node.init_letters_we_look_for(Game.letters_we_look_for)
-#	Game.current_scene.add_child(Game.looking_for_letter__node)
-	
 func nim_walks_to(parameters):
 	events["talked_to_nim_at_the_beginning"] = true
 	Game.current_focus[0].dialog = [
@@ -60,7 +51,8 @@ func nim_walks_to(parameters):
 func yaai_walks_to(parameters):
 	events["talked_to_yaai_for_the_first_time"] = true
 	if not Game.current_focus:
-		Game.current_focus.append(Game.current_scene.get_node("YSort").get_node("NPCs").get_node("Yaai"))
+#		Game.current_focus.append(Game.current_scene.get_node("YSort").get_node("NPCs").get_node("Yaai"))
+		Game.current_focus.append(Game.current_scene.get_node("YSort/NPCs/Yaai"))
 	npc_walks_to(parameters)
 #	var target_positions = parameters[0]
 #	Game.current_focus.will_go_to = target_positions

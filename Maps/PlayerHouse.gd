@@ -13,7 +13,8 @@ func _ready():
 func _on_Area2D_body_entered(body):
 	if body == Game.player:
 		Game.space_bar_to_interact = load("res://UI/SpaceBarToInteract.tscn").instance()
-		Game.space_bar_to_interact.get_node("Node2D").get_node("Label").text = tr("_move_with_arrow_keys")
+		Game.space_bar_to_interact.get_node("Node2D/Label").text = tr("_move_with_arrow_keys")
+#		Game.space_bar_to_interact.get_node("Node2D/Label").get_node("Label").text = tr("_move_with_arrow_keys")
 #		get_tree().current_scene.add_child(Game.space_bar_to_interact)
 		self.add_child(Game.space_bar_to_interact)
 

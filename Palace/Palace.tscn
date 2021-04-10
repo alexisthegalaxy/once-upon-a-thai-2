@@ -1,19 +1,25 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Palace/EditorObject.gd" type="Script" id=1]
 [ext_resource path="res://Palace/ItemSelector.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/House.tscn" type="PackedScene" id=4]
 [ext_resource path="res://CliffTileMap.tscn" type="PackedScene" id=5]
+[ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Palace/Palace.gd" type="Script" id=7]
 
 [node name="Palace" type="Node2D"]
+script = ExtResource( 7 )
 
 [node name="Control" parent="." instance=ExtResource( 2 )]
 
 [node name="Level" type="Node2D" parent="."]
 
+[node name="SandPathTilemap" parent="Level" instance=ExtResource( 6 )]
+tile_data = PoolIntArray( 196612, 2, 0, 393222, 2, 0, 524287, 2, 0, 458752, 2, 0, 524288, 2, 0, 524297, 1, 3, 524298, 2, 0, 524299, 2, 0, 524300, 2, 0, 589830, 2, 0, 589832, 1, 196608, 589833, 1, 131081, 589834, 1, 2, 589836, 2, 0, 655369, 1, 131072, 655370, 1, 131074, 655372, 2, 0 )
+
 [node name="CliffTileMap" parent="Level" instance=ExtResource( 5 )]
-tile_data = PoolIntArray( 196616, 1, 0, 196617, 1, 1, 196618, 1, 2, 262151, 1, 196608, 262152, 1, 196614, 262153, 1, 262145, 262154, 1, 131074 )
+tile_data = PoolIntArray( -65525, 1, 3, 11, 1, 65539, 65547, 1, 65539, 131083, 1, 131076, 131084, 1, 1, 131085, 1, 1, 131086, 1, 2, 196616, 1, 0, 196617, 1, 5, 196618, 1, 196609, 196619, 1, 196614, 196620, 1, 131073, 196621, 1, 262145, 196622, 1, 131074, 262151, 1, 196608, 262152, 1, 196614, 262153, 1, 131074, 327680, 1, 0, 327681, 1, 2, 458751, 1, 4, 393216, 1, 196614, 393217, 1, 65543, 524287, 1, 131075, 458753, 1, 65539, 458758, 1, 3, 458761, 1, 3, 524289, 1, 65539, 524292, 1, 3, 524294, 1, 131076, 524295, 1, 5, 524296, 1, 196609, 524297, 1, 196616, 524298, 1, 7, 589825, 1, 262148, 589826, 1, 196609, 589827, 1, 196609, 589828, 1, 262152, 589829, 1, 196609, 589830, 1, 196614, 589831, 1, 65543, 589834, 1, 131076, 589835, 1, 1, 589836, 1, 1, 589837, 1, 2, 655361, 1, 65539, 655364, 1, 65539, 655367, 1, 65539, 655370, 1, 131072, 655371, 1, 65544, 655372, 1, 131073, 655373, 1, 9, 655374, 1, 2, 720897, 1, 196612, 720898, 1, 196609, 720899, 1, 196609, 720900, 1, 196616, 720901, 1, 196609, 720902, 1, 196609, 720903, 1, 196615, 720907, 1, 131075, 720909, 1, 131072, 720910, 1, 9, 720911, 1, 2, 786446, 1, 65536, 786447, 1, 65538, 851982, 1, 65540, 851983, 1, 131074, 917518, 1, 131075 )
 
 [node name="YSort" type="YSort" parent="Level"]
 

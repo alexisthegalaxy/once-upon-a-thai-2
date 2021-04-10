@@ -9,6 +9,8 @@ var province = "chaiyaphum"
 #var initial_letters = [11, 13, 28, 0, 21]  # correct
 var initial_letters = [0]
 
+var lo = TranslationServer.get_locale()
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if Events.events.ploy_has_stopped_in_front_of_house:
@@ -269,32 +271,26 @@ func _on_Blocker2_body_entered(body):
 	if Events.events.yaai_taught_first_sentence:  # We've already learned the sentence
 		return
 #	if not Events.events.talked_to_yaai_for_the_first_time:
-	if Game.can_read_thai or knows_the_initial_letters():
-		$YSort/NPCs/Yaai.dialog = [
-			tr("_name_you_see_this_sentence"),
-			tr("_this_is_your_first_since_forgotten_thai"),
-			tr("_this_means_thai_people_are_good"),
-			tr("_sentences_like_this_help_you_understand_the_meaning_of_words"),
-			tr("_here_we_go"),
-		]
-		print('yaai_teaches_first_sentence')
+	if knows_the_initial_letters():
+		Quests.quests["find_first_words__when_learning_letters"][lo+"_start_dialog"].append(tr("_yaai_i_should_teach_sentence"))
 		Events.events["yaai_taught_first_sentence"] = true
 		$YSort/NPCs/Yaai.post_dialog_event = ["learns_first_sentence", $YSort/NPCs/Yaai]
 		$YSort/NPCs/Yaai.is_walking_towards = []  # to make sure NPC can interact
 		$YSort/NPCs/Yaai.npc_turn_towards(Game.player.position)
+		$YSort/NPCs/Yaai.dialog = [tr("_yaai_i_should_teach_sentence")]
 		$YSort/NPCs/Yaai.interact()
-		$YSort/NPCs/Yaai.dialog = [tr("_now_go_in_the_forest_to_learn_the_words")]
-	else:
-		# Then we are blocked!
-		Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
-		var dialog = [
-			tr("_you_shouldnt_go_there_before_you_know_letters"),
-			tr("_click_on_the_letter_tab_to_use_the_letter_scroll")
-		]
-		Game.current_dialog.init_dialog(dialog, $YSort/NPCs/Yaai, null, false, null)
-		Game.player.stop_walking()
-		Game.current_scene.add_child(Game.current_dialog)
-		Game.player.forced_toward(Vector2(236, 576))
+		return
+	# Then we are blocked!
+	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+	var dialog = [
+		tr("_you_shouldnt_go_there_before_you_know_letters"),
+		tr("_click_on_the_letter_tab_to_use_the_letter_scroll")
+	]
+	$YSort/NPCs/Yaai.npc_turn_towards(Game.player.position)
+	Game.current_dialog.init_dialog(dialog, $YSort/NPCs/Yaai, null, false, null)
+	Game.player.stop_walking()
+	Game.current_scene.add_child(Game.current_dialog)
+	Game.player.forced_toward(Vector2(236, 550))
 		
 func knows_the_initial_letters():
 	for initial_letter_id in initial_letters:
