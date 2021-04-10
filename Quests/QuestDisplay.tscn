@@ -25,6 +25,7 @@ size = 10
 font_data = ExtResource( 4 )
 
 [node name="QuestDisplay" type="Node2D"]
+modulate = Color( 1, 1, 1, 0.866667 )
 position = Vector2( 97.7415, -0.655308 )
 script = ExtResource( 5 )
 

@@ -71,7 +71,6 @@ func get_focus():
 	self.is_visible = true
 
 func loses_focus():
-	
 	has_focus = false
 	self.is_visible = false
 

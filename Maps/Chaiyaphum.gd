@@ -9,17 +9,21 @@ var province = "chaiyaphum"
 #var initial_letters = [11, 13, 28, 0, 21]  # correct
 var initial_letters = [0]
 
+onready var ploy = $YSort/NPCs/Ploy
+onready var pet = $YSort/NPCs/Pet
+onready var yaai = $YSort/NPCs/Yaai
+
 var lo = TranslationServer.get_locale()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if Events.events.ploy_has_stopped_in_front_of_house:
-		$YSort/NPCs/Ploy.queue_free()
+		ploy.queue_free()
 		$YSort/Bushes/BushThatWillGetCut.queue_free()
 	yaai_arc()
 	if Events.events.has_met_pet:
-		$YSort/NPCs/Pet.position = Vector2(1074.783936, 94.056053)
-		$YSort/NPCs/Pet.dialog = pet_begging_dialog()
+		pet.position = Vector2(1074.783936, 94.056053)
+		pet.dialog = pet_begging_dialog()
 	# we remove the shard
 	if Quests.quests["purify_mohinkhao"].status in [Quests.FINISHED, Quests.DONE]:
 		$YSort/Shards/MoHinKhao.queue_free()
@@ -28,25 +32,25 @@ func yaai_arc():
 	if Events.events.has_learnt_four_first_words:
 		set_events_when_has_learnt_four_first_words()
 	elif Events.events.yaai_has_given_last_warning_before_forest:
-		$YSort/NPCs/Yaai.position = Vector2(196, 652)
-		$YSort/NPCs/Yaai.set_direction("down")
-		$YSort/NPCs/Yaai.dialog = [
+		yaai.position = Vector2(196, 652)
+		yaai.set_direction("down")
+		yaai.dialog = [
 			tr("_now_your_test_will_be_to"),
 			tr("_i_believe_four_types_of_spells_live_there"),
 			tr("_good_luck_ill_watch_you_from_here"),
 		]
-		$YSort/NPCs/Yaai.post_dialog_event = []
+		yaai.post_dialog_event = []
 #	elif Events.events.has_gone_to_first_sentence:
 #		$YSort/NPCs/Yaai.position = Vector2(202.29, 654.29)
 #		$YSort/NPCs/Yaai.set_direction("right")
 	elif Events.events["yaai_went_to_the_tree"]:
-		$YSort/NPCs/Yaai.position = Vector2(245.153534, 523.72229)
-		$YSort/NPCs/Yaai.set_direction("right")
-		$YSort/NPCs/Yaai.post_dialog_event = []
+		yaai.position = Vector2(245.153534, 523.72229)
+		yaai.set_direction("right")
+		yaai.post_dialog_event = []
 	elif Events.events["talked_to_yaai_for_the_first_time"]:
-		$YSort/NPCs/Yaai.position = Vector2(478.02533, 502.912994)
-		$YSort/NPCs/Yaai.set_direction("right")
-		$YSort/NPCs/Yaai.post_dialog_event = []
+		yaai.position = Vector2(478.02533, 502.912994)
+		yaai.set_direction("right")
+		yaai.post_dialog_event = []
 
 func _process(delta):
 	if is_blackening:
@@ -69,20 +73,20 @@ func _on_First_blocker_body_entered(body):
 		return
 	if Events.events.has_met_pet:
 		return
-	$YSort/NPCs/Pet.interact_when_near = true
-	$YSort/NPCs/Pet.dialog = [
+	pet.interact_when_near = true
+	pet.dialog = [
 		tr("_oh_hey_name"),
 		tr("_what_you_finished_your_initiation"),
 		tr("_tch_took_you_long_mine_finished_thirty_minutes_ago"),
 		tr("_id_like_to_have_you_as_training_but_cant_match_intellect"),
 		tr("_you_cant_even_write_bpai"),
 	]
-	$YSort/NPCs/Pet.will_go_to = [
+	pet.will_go_to = [
 		Vector2 (528, 298),
 		Vector2(534.0, 254.6),
 		Vector2(504.0, 254.6),
 	]
-	$YSort/NPCs/Pet.starts_going_toward($YSort/NPCs/Pet.will_go_to[0])
+	pet.starts_going_toward(pet.will_go_to[0])
 
 func _on_Area2D_body_entered(body):
 	# Blocker 2
@@ -103,44 +107,29 @@ func _on_Area2D2_body_entered(body):
 	if body == Game.player:
 		if not Events.events["yaai_went_to_the_tree"]:
 			Events.events["yaai_went_to_the_tree"] = true
-			$YSort/NPCs/Yaai.will_go_to = [
+			yaai.will_go_to = [
 				Vector2(235.153534, 523.72229),
 				Vector2(245.153534, 523.72229),
 			]
-			$YSort/NPCs/Yaai.starts_going_toward($YSort/NPCs/Yaai.will_go_to[0])
+			yaai.starts_going_toward(yaai.will_go_to[0])
 
 func _on_Area2D4_body_entered(body):
 	# When we enter by the tree, Yaai starts the ceremony
 	if body == Game.player:
 		if not Events.events["ceremony_started"]:
 			Events.events["ceremony_started"] = true
-			$YSort/NPCs/Yaai.dialog = [
+			yaai.dialog = [
 				tr("_yaai_2_a"),
 				tr("_yaai_2_b"),
 				tr("_yaai_2_c"),
 				tr("_yaai_2_d"),
 			]
-			$YSort/NPCs/Yaai.post_dialog_event = ["starts_ceremony_effect", $YSort/NPCs/Yaai]
-			$YSort/NPCs/Yaai.is_walking_towards = []  # to make sure NPC can interact
-			$YSort/NPCs/Yaai.interact()
+			yaai.post_dialog_event = ["starts_ceremony_effect", $YSort/NPCs/Yaai]
+			yaai.is_walking_towards = []  # to make sure NPC can interact
+			yaai.interact()
 			Game.letters_we_look_for = []
 			for letter_id in initial_letters:
 				Game.letters_we_look_for.append(Game.letters[str(letter_id)])
-
-#func _on_Area2D3_body_entered(body):
-#	# Player enters near the first sentence
-#	if body == Game.player:
-#		if Events.events["has_gone_to_first_sentence"] and not Events.events["yaai_taught_first_sentence"]:
-#			Events.events["yaai_taught_first_sentence"] = true
-#			$YSort/NPCs/Yaai.dialog = [
-#				tr("_name_you_see_this_sentence"),
-#				tr("_this_is_your_first_since_forgotten_thai"),
-#				tr("_this_means_thai_people_are_good"),
-#				tr("_sentences_like_this_help_you_understand_the_meaning_of_words"),
-#			]
-#			$YSort/NPCs/Yaai.post_dialog_event = ["learns_first_sentence", $YSort/NPCs/Yaai]
-#			$YSort/NPCs/Yaai.is_walking_towards = []  # to make sure NPC can interact
-#			$YSort/NPCs/Yaai.interact()
 
 func _on_Area2D6_body_entered(body):
 	if not body == Game.player:
@@ -148,17 +137,6 @@ func _on_Area2D6_body_entered(body):
 	# This is the area that leads into the first forest.
 	# It can be used the first time for Yaai warning,
 	# and the second time for Yaai's instruction to go to Chaiyaphum
-#	if not Events.events.yaai_has_given_last_warning_before_forest and Events.events.yaai_taught_first_sentence:
-#		Events.events.yaai_has_given_last_warning_before_forest = true
-#		$YSort/NPCs/Yaai.dialog = [
-#			tr("_well_done_name"),
-#			tr("_now_your_test_will_be_to"),
-#			tr("_i_believe_four_types_of_spells_live_there"),
-#			tr("_good_luck_ill_watch_you_from_here"),
-#			]
-#		$YSort/NPCs/Yaai.post_dialog_event = []
-#		$YSort/NPCs/Yaai.interact()
-		
 	if not Events.events.has_learnt_four_first_words:
 		if 343 in Game.known_words and 345 in Game.known_words and 207 in Game.known_words and 82 in Game.known_words:
 			Events.events.has_learnt_four_first_words = true
@@ -166,12 +144,6 @@ func _on_Area2D6_body_entered(body):
 			$YSort/NPCs/Yaai.interact()
 
 func set_events_when_has_learnt_four_first_words():
-	$YSort/NPCs/Yaai.dialog = [
-		tr("_thats_good_name_very_good"),
-		tr("_now_go_to_chaiyaphum_see_anchalee"),
-		tr("_i_have_important_issues_to_solve_in_the_spirit_world"),
-		tr("_if_everything_goes_well_ill_see_you_soon"),
-	]
 	$YSort/NPCs/Yaai.start_quests = ["talk_to_anchalee_in_chaiyaphum"]
 	$YSort/NPCs/Yaai.post_dialog_event = ["npc_disappears_in_white_orb", [$YSort/NPCs/Yaai]]
 
@@ -180,18 +152,18 @@ func _on_PloyWillCome_body_entered(body):
 		return
 	if not Events.events.has_met_ploy:
 		Events.events.has_met_ploy = true
-		$YSort/NPCs/Ploy.interact_when_near = true
-		$YSort/NPCs/Ploy.dialog = [
+		ploy.interact_when_near = true
+		ploy.dialog = [
 			tr("_name_how_was_your_shamanic_initiation"),
 			tr("_mine_went_well_too_my_grandma_taught_me_cool_stuff"),
 			tr("_look_exclamation_mark")
 		]
-		$YSort/NPCs/Ploy.will_go_to = [
+		ploy.will_go_to = [
 			Vector2(992, 117.146461),
 			Vector2(790, 117.146461),
 		]
-		$YSort/NPCs/Ploy.post_dialog_event = ["ploy_cuts_bush", [$YSort/NPCs/Ploy, $YSort/Bushes/BushThatWillGetCut]]
-		$YSort/NPCs/Ploy.starts_going_toward($YSort/NPCs/Ploy.will_go_to[0])
+		ploy.post_dialog_event = ["ploy_cuts_bush", [ploy, $YSort/Bushes/BushThatWillGetCut]]
+		ploy.starts_going_toward(ploy.will_go_to[0])
 
 func _on_PloyInFrontOfHouse_body_entered(body):
 	if not body == Game.player:

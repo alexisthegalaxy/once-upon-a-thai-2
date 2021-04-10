@@ -126,13 +126,17 @@ func player_interact():
 			Game.space_bar_to_interact = null
 
 func _on_print():
-#	Game.print_entire_tree()
+	Game.print_entire_tree()
 #	print("current position: (" + str(position.x) + ", " + str(position.y) + ")    " + Game.current_map_name)
 #	Game.add_random_letter_to_letters_to_look_for()
 #	Quests.quests["find_first_letters"].status = Quests.FINISHED
 #	SoundPlayer.play_sound("res://Sounds/Effects/quest_finished.wav", 0)
 #	Game.main_ui.update_quests_display()
-	Game.learn_letter(Game.letters["0"])
+	
+#	if 0 in Game.known_letters:
+#		for word_id in [343, 345, 207, 82]:
+#			Game.learn_word(word_id)
+#	Game.learn_letter(Game.letters["0"])
 
 func _input(_event) -> void:
 	if not Game.is_overworld_frozen():

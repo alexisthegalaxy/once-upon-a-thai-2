@@ -63,7 +63,7 @@ func get_audio_file_path_from_thai(thai):
 	return "res://Sounds/Thai/" + thai + ".wav"
 
 func play_thai(thai):
-	var audio_file_name = get_audio_file_path_from_thai(thai)
+	var audio_file_name = get_audio_file_path_from_thai(thai.replace("_", "").replace("-", "").replace("=", ""))
 	$ThaiAudioStreamPlayer.stream = load(audio_file_name)
 	$ThaiAudioStreamPlayer.play()
 

@@ -29,7 +29,7 @@ Phase 2:
 """
 
 func _ready():
-	finish()  # uncomment to pass it
+#	finish()  # uncomment to pass it
 	center = Game.player.position
 	position = center
 	phase = 1

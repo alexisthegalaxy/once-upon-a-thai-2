@@ -18,6 +18,7 @@ var display_name = ""
 var can_skip = false
 
 func _ready():
+	layer = 3
 	reset_line()
 	hide_answers()
 
@@ -101,11 +102,11 @@ func dialog_ends():
 			caller.post_dialog()
 		else:
 			Events.execute(post_dialog_event[0], post_dialog_event[1])
-	if post_dialog_signal:
+	if post_dialog_signal and caller:
 		caller.dialog_ended()
-	if caller and caller.has_method("start_quest"):
+	if caller and caller and caller.has_method("start_quest"):
 		caller.start_quest()
-		
+
 	Game.reset_focus()
 #	Game.loses_focus(Game.current_focus)
 

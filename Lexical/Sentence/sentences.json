@@ -1112,8 +1112,8 @@
   },
   "198": {
     "th": "คน_ดี_ชอบ_ฉัน",
-    "en": "Good people like me.",
-    "fr": "Les gens biens m'aiment bien.",
+    "en": "Good {people/persons} {like/love} me.",
+    "fr": "Les {gens biens/personnes biens/bonnes personnes} m'aiment( bien).",
     "word_ids": [343, 82, 238, 24],
     "speaker_gender": "F"
   },
@@ -1358,7 +1358,7 @@
     "th": "ผม_ชอบ_ไม่_อยู่_บ้าน_ครับ",
     "en": "I like to not stay at home.",
     "fr": "J'aime bien ne pas rester à la maison.",
-    "word_ids": [23, 238, 39, 237, 291, 9]
+    "word_ids": [23, 238, 39, 237, 147, 9]
   },
   "239": {
     "th": "ผม_ไม่_ชอบ_อยู่_บ้าน_ครับ",

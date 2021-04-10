@@ -58,7 +58,9 @@
     "type": "learn_words",
     "parameters": [[343, 345, 207, 82], []],
     "en_description": "Interact with all the types of words in the forest to learn them.",
+    "en_end_description": "Go back to your grandmother Yaai.",
     "fr_description": "Intéragis avec tous les types de mots que tu trouves dans la forêt pour les apprendre.",
+    "fr_end_description": "Retourne voir ta grand-mère Yaai.",
     "en_start_dialog": [
       "For your next task, go to the forest. There are numerous Word Spirits there - we call them Spells.",
       "You should be able to see them, now.",
@@ -74,10 +76,16 @@
       "Ah, but first, I should teach you your first Thai sentence, it'll make your task easier."
     ],
     "en_finish_dialog": [
-      "Perfect."
+      "That's good, [Name], very good!",
+      "Now, go to Chaiyaphum, I asked the grandmother of your friend Ploy to train you.",
+      "I have very important issues to solve in the spirit world.",
+      "If everything goes well, I'll be seeing you soon, [Name]."
     ],
     "fr_finish_dialog": [
-      "Parfait."
+      "C'est bien, [Name], c'est très bien !",
+      "Maintenant, va à Chaiyaphum, j'ai demandé à la grand-mère de ton amie Ploy de t'entraîner.",
+      "J'ai un problème important à régler dans le monde spirituel.",
+      "Si tout se passe bien, on se reverra bientôt, [Name]."
     ],
     "en_counter_name": "Words learnt",
     "fr_counter_name": "Mots trouvés ",
@@ -113,10 +121,16 @@
       "Ah, mais d'abord, je devrais t'enseigner ta première phrase en thaï, ça rendra ta tâche plus facile."
     ],
     "en_finish_dialog": [
-      "Perfect."
+      "That's good, [Name], very good!",
+      "Now, go to Chaiyaphum, I asked the grandmother of your friend Ploy to train you.",
+      "I have very important issues to solve in the spirit world.",
+      "If everything goes well, I'll be seeing you soon, [Name]."
     ],
     "fr_finish_dialog": [
-      "Parfait."
+      "C'est bien, [Name], c'est très bien !",
+      "Maintenant, va à Chaiyaphum, j'ai demandé à la grand-mère de ton amie Ploy de t'entraîner.",
+      "J'ai un problème important à régler dans le monde spirituel.",
+      "Si tout se passe bien, on se reverra bientôt, [Name]."
     ],
     "en_counter_name": "Words learnt",
     "fr_counter_name": "Mots trouvés ",
@@ -159,10 +173,10 @@
       "Reviens me voir quand tu auras trouvé au moins onze phrases."
     ],
     "type": "find_sentences",
-    "parameters": [[200, 201, 202, 203, 204, 205, 206, 207, 208, 209], []],
+    "parameters": [[200, 201, 202, 203, 204, 206, 207, 208, 209], []],
     "en_counter_name": "Sentences found",
     "fr_counter_name": "Phrases trouvées ",
-    "counter_max": 1
+    "counter_max": 10
   },
   "implant_source_behind_the_temple": {
     "blockers": ["find_sentences_in_chaiyaphum"],

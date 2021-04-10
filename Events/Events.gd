@@ -2,21 +2,20 @@ extends Node
 
 var initial_state = false
 var state_2 = false
-var state_3 = true
+var state_3 = false
 var events = {
-	"has_had_a_quest": state_2,
 	"money_is_visible": state_2,
 	"has_possessed_a_letter": state_2,
-	"ploy_has_stopped_in_front_of_house": state_2,
-	"has_met_ploy": state_2,
-	"has_met_pet": state_2,
-	"has_learnt_four_first_words": initial_state,
 	"has_the_map": initial_state,
-	"yaai_has_given_last_warning_before_forest": initial_state,
-	"yaai_taught_first_sentence": initial_state,  # should use known_sentences instead
+	"ploy_has_stopped_in_front_of_house": state_3,
+	"has_met_ploy": state_3,
+	"has_met_pet": state_3,
+	"has_learnt_four_first_words": state_3,
+	"yaai_has_given_last_warning_before_forest": state_3,
+	"yaai_taught_first_sentence": state_3,  # should use known_sentences instead
+	"has_had_a_quest": state_3,
 #	"has_gone_to_first_sentence": initial_state,
-#	"can_see_the_looking_for_letter_banner": initial_state,
-	"ceremony_started": state_2,
+	"ceremony_started": state_3,
 	"yaai_went_to_the_tree": state_3,
 	"talked_to_yaai_for_the_first_time": state_3,
 	"talked_to_nim_at_the_beginning": state_3,
@@ -135,12 +134,10 @@ func starts_ceremony_effect(yaai):
 func ploy_goes_towards_the_temple(ploy):
 	events.ploy_has_stopped_in_front_of_house = true
 	ploy.will_go_to = [
-		Vector2(1201.905029, 112.158806),
-		Vector2(1232.525391, 177.277954),
-		Vector2(1330.525391, 177.277954),
-		Vector2(1330.525391, 116.944611),
-		Vector2(1420.169678, 91.944672),
-		Vector2(1422.503052, 47.944672),
+		Vector2(1169.884033, 116.591766),
+		Vector2(1169.884033, 278.591766),
+		Vector2(1239.884033, 278.591766),
+		Vector2(1236.884033, 236.591766),
 		"disappears"
 	]
 	ploy.starts_going_toward(ploy.will_go_to[0])
@@ -148,12 +145,12 @@ func ploy_goes_towards_the_temple(ploy):
 	ploy.dialog = [
 		"Come in!",
 	]
-	
 
 func ploy_goes_towards_her_house(ploy):
+	# As soon as Ploy will enter in the area in front of her house, she will talk to Player
 	ploy.will_go_to = [
-		Vector2(990, 125),
-		Vector2(990, 90)
+		Vector2(1100, 125),
+		Vector2(1100, 100)
 	]
 	ploy.starts_going_toward(ploy.will_go_to[0])
 	ploy.dialog = [
@@ -202,9 +199,10 @@ func destroy_bush():
 func ploy_talks_again():
 	var_2.interact()
 
-func ceremony_special_effect(_parameters):
-#	Game.current_scene.
-	pass
+# Is this used? Commented 10 April 2021
+#func ceremony_special_effect(_parameters):
+##	Game.current_scene.
+#	pass
 
 func execute(event_id, parameters):
 	call(event_id, parameters)

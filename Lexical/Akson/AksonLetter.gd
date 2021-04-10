@@ -94,7 +94,10 @@ func start_letter_test():
 	$SameButWithBlueContour.hide()
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	Game.current_dialog.init_dialog(get_introduction(), self, post_dialog_event, true, id)
-	Game.current_scene.add_child(Game.current_dialog)
+	print('Game.current_scene ', Game.current_scene.name)
+#	Game.current_scene.add_child(Game.current_dialog)
+#	self.add_child(Game.current_dialog)
+	Game.akson.add_child(Game.current_dialog)
 	if pre_dialog_event:
 		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
 

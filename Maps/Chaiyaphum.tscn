@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://ImageScreen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/CoolOffice.tscn" type="PackedScene" id=2]
@@ -51,6 +51,12 @@ extents = Vector2( 13.7964, 40.9263 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 87.3137, 7.46277 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 36.9876, 29.4021 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 12.9746, 43.9732 )
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 36.9876, 29.4021 )
@@ -215,7 +221,7 @@ position = Vector2( 263.188, 493.227 )
 [node name="Bushes" type="YSort" parent="YSort"]
 
 [node name="Bush19" parent="YSort/Bushes" instance=ExtResource( 9 )]
-position = Vector2( 531.957, 20.9372 )
+position = Vector2( 498.613, 37.8099 )
 
 [node name="Bush38" parent="YSort/Bushes" instance=ExtResource( 9 )]
 position = Vector2( 675.738, -93.1106 )
@@ -5802,7 +5808,7 @@ max_number_of_words = 5
 [node name="Words" type="YSort" parent="YSort"]
 
 [node name="pom" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 370.358, 41.8582 )
+position = Vector2( 362.272, -6.3801 )
 id = 23
 
 [node name="pom8" parent="YSort/Words" instance=ExtResource( 16 )]
@@ -5834,7 +5840,7 @@ position = Vector2( 1011.99, -568.132 )
 id = 11
 
 [node name="chan" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 424.184, -28.2114 )
+position = Vector2( 470.749, -33.5092 )
 id = 24
 
 [node name="chan2" parent="YSort/Words" instance=ExtResource( 16 )]
@@ -5842,7 +5848,7 @@ position = Vector2( -359.576, 501.336 )
 id = 24
 
 [node name="chawp" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 569.124, -37.5155 )
+position = Vector2( 611.228, -52.5725 )
 id = 238
 
 [node name="PlayerHouse" parent="YSort" instance=ExtResource( 17 )]
@@ -5861,7 +5867,7 @@ position = Vector2( 2218.55, -159.948 )
 position = Vector2( 1235.62, 221.922 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 317.905, 506.724 )
+position = Vector2( 203.412, 687.905 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -5906,14 +5912,14 @@ sprite_path = "res://Npcs/sprites/girl.png"
 wanders = 100
 
 [node name="ILikeThaiPeople" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 461.383, 55.4346 )
+position = Vector2( 578.493, 121.518 )
 dialog = [ "_inter_2_1", "_inter_2_2" ]
 sprite_path = "res://Npcs/sprites/man.png"
 interaction_sentence_id = "S197"
 pre_dialog_event = [ "npc_teaches_discreetly_words", [ 23, 238 ] ]
 
 [node name="GoodPeopleLikeMe" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 497.721, 125.044 )
+position = Vector2( 576.862, 147.541 )
 dialog = [ "_inter_1_1", "_inter_1_2", "_inter_1_3", "_inter_1_4" ]
 sprite_path = "res://Npcs/sprites/girl.png"
 direction = "right"
@@ -6147,15 +6153,15 @@ shape = SubResource( 5 )
 position = Vector2( -379.699, 432.03 )
 
 [node name="PloyWillCome" type="CollisionShape2D" parent="PloyWillCome"]
-position = Vector2( 996.513, -398.768 )
-shape = SubResource( 6 )
+position = Vector2( 1019.41, -434.12 )
+shape = SubResource( 9 )
 
 [node name="PloyInFrontOfHouse" type="Area2D" parent="."]
 position = Vector2( -379.699, 432.03 )
 
 [node name="PloyInFrontOfHouse" type="CollisionShape2D" parent="PloyInFrontOfHouse"]
-position = Vector2( 1375.79, -316.865 )
-shape = SubResource( 6 )
+position = Vector2( 1468.19, -322.087 )
+shape = SubResource( 10 )
 
 [node name="TalkToPloy" type="Area2D" parent="."]
 position = Vector2( -379.699, 432.03 )
@@ -6215,6 +6221,9 @@ shape = SubResource( 8 )
 
 [node name="purify_mohinkhao_finished" parent="Locations" instance=ExtResource( 15 )]
 position = Vector2( 1235.35, 205.832 )
+
+[node name="where_ploy_shows_her_house" parent="Locations" instance=ExtResource( 15 )]
+position = Vector2( 1087.51, 109.417 )
 
 [node name="find_sentences_in_chaiyaphum_finished" parent="Locations" instance=ExtResource( 15 )]
 position = Vector2( 1235.35, 205.832 )

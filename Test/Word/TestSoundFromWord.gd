@@ -100,8 +100,9 @@ func reactivate_buttons_after_akson():
 	$AudioAnswer3.get_node("Button").disabled = false
 	$AudioAnswer4.get_node("Button").visible = true
 	$AudioAnswer4.get_node("Button").disabled = false
-	$LearnLetterButton.get_node("Button").visible = true
-	$LearnLetterButton.get_node("Button").disabled = false
+	if $LearnLetterButton:
+		$LearnLetterButton.get_node("Button").visible = true
+		$LearnLetterButton.get_node("Button").disabled = false
 
 func deactivate_buttons_to_go_to_akson():
 	$AudioAnswer1.get_node("Button").visible = false
@@ -112,8 +113,9 @@ func deactivate_buttons_to_go_to_akson():
 	$AudioAnswer3.get_node("Button").disabled = true
 	$AudioAnswer4.get_node("Button").visible = false
 	$AudioAnswer4.get_node("Button").disabled = true
-	$LearnLetterButton.get_node("Button").visible = false
-	$LearnLetterButton.get_node("Button").disabled = true
+	if $LearnLetterButton:
+		$LearnLetterButton.get_node("Button").visible = false
+		$LearnLetterButton.get_node("Button").disabled = true
 
 func _on_OK_pressed():
 	if selected_answer_thai == word.th:

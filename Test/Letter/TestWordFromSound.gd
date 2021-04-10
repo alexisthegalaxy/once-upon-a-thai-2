@@ -89,7 +89,10 @@ func answered_correctly():
 	Game.is_frozen = false
 #	Game.player.can_interact = true
 	Game.learn_letter(letter)
-	over_letter.starts_disappearing()
+	if over_letter:
+		over_letter.starts_disappearing()
+	else:
+		return
 	
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var lines = [tr("_you_know_the_letter_now") % letter.th]

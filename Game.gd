@@ -27,7 +27,6 @@ var seen_sentences = []  # we don't know the translation
 #var seen_sentences = [311, 312, 315]  # we don't know the translation
 #var known_letters = [0, 11, 13, 21]  # list of IDs
 #var known_letters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]  # list of IDs
-#var known_letters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16]  # list of IDs
 var known_letters = []  # list of IDs
 #var known_letters = [0, 11, 13, 21, 28]
 var following_spells = []
@@ -301,9 +300,9 @@ func _input(_event):
 		elif dict:
 			dict.queue_free()
 			dict = null
-		elif alphabet:
-			alphabet.queue_free()
-			alphabet = null
+#		elif alphabet:
+#			alphabet.queue_free()
+#			alphabet = null
 		elif notebook:
 			notebook.queue_free()
 			notebook = null
@@ -333,7 +332,8 @@ func _input(_event):
 			is_frozen = false
 		elif akson:
 			akson.exit()  # triggers a queue_free, and recenters the camera on Player
-			is_frozen = false
+			if not active_test or not active_letter_test:
+				is_frozen = false
 		elif palace:
 			palace.ui_cancel()
 		else:
@@ -457,11 +457,13 @@ func show_location_name():
 
 func print_entire_tree():
 #	print_tree()
-	print(self.get_node("LearnLetterButton"))
+	print('Game children:')
 	for child in self.get_children():
 		print(child.name)
-#		for cc in child.get_children():
-#			print('--- ', cc.name)
-	print('get_tree().get_root():')
+		for cc in child.get_children():
+			print('--- ', cc.name)
+	print('Root children:')
 	for child in get_tree().get_root().get_children():
 		print(child.name)
+		for cc in child.get_children():
+			print('--- ', cc.name)
