@@ -6,8 +6,8 @@ var province = "chaiyaphum"
 
 # This is the letters yaai asks us to fetch the first time we come in the Memory Palace
 #var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]  # outdated
-#var initial_letters = [11, 13, 28, 0, 21]  # correct
-var initial_letters = [0]
+var initial_letters = [11, 13, 28, 0, 21]  # correct
+#var initial_letters = [0]
 
 onready var ploy = $YSort/NPCs/Ploy
 onready var pet = $YSort/NPCs/Pet

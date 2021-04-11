@@ -1206,25 +1206,25 @@
   },
   "213": {
     "th": "ผม_ไม่_มี_บ้าน_ครับ",
-    "en": "I don't have a house.",
-    "fr": "Je n'ai pas de maison",
+    "en": "I {don't/do not} have {a house/a home/houses/any home/any house}.",
+    "fr": "Je n'ai pas de maison{/s}",
     "word_ids": [23, 39, 236, 147, 9]
   },
   "214": {
     "th": "ผม_ชอบ_ไม่_มี_บ้าน_ครับ",
-    "en": "I like not having a house.",
+    "en": "I like {not having/to not have} a {house/home}.",
     "fr": "J'aime bien ne pas avoir de maison.",
     "word_ids": [23, 238, 39, 236, 147, 9]
   },
   "215": {
     "th": "น้ำ_สวย_ค่ะ",
-    "en": "Water is beautiful.",
+    "en": "{/The }Water is beautiful.",
     "fr": "L'eau est belle.",
     "word_ids": [156, 340, 11]
   },
   "216": {
     "th": "คน_ดี_มี_น้ำ_ค่ะ",
-    "en": "Good people have water.",
+    "en": "Good {people/persons} have water.",
     "fr": "Les gens biens ont de l'eau.",
     "word_ids": [343, 82, 236, 156, 11]
   },
@@ -1236,43 +1236,43 @@
   },
   "218": {
     "th": "คุณ_อยาก_ดื่ม_น้ำ_หรือ_ไม่_ค่ะ",
-    "en": "Do you want to drink water?",
+    "en": "(Do )you want to drink {/some }water?",
     "fr": "Tu veux boire de l'eau?",
     "word_ids": [28, 241, 195, 156, 436, 39, 11]
   },
   "219": {
     "th": "คุณ_มี_น้ำ_หรือ_ไม่_ครับ",
-    "en": "You have water( or not)?",
+    "en": "{/Do }You have water( or not)?",
     "fr": "Tu as de l'eau( ou pas) ?",
     "word_ids": [28, 236, 156, 436, 39, 9]
   },
   "220": {
     "th": "ผม_ไม่_มี_น้ำ_ครับ",
-    "en": "I don't have (any) water.",
+    "en": "I don't have {/any }water.",
     "fr": "Je n'ai pas d'eau.",
     "word_ids": [23, 39, 236, 156, 9]
   },
   "221": {
     "th": "คน_อะ=ไร_เป็น_สวย_คน_ครับ",
-    "en": "What people are beautiful people?",
+    "en": "What people are beautiful{/ people}?",
     "fr": "{Quelles personnes/Les personnes de quel pays} sont {de belles personnes/belles}",
     "word_ids": [343, 56, 207, 340, 343, 9]
   },
   "222": {
     "th": "คน_ไทย_เป็น_คน_สวย_ครับ",
-    "en": "Thai people are beautiful people.",
+    "en": "Thai people are beautiful{/ people/ persons}.",
     "fr": "Les Thaïlandais sont beaux|Les Thaïlandais sont {de/des} {personnes belles/belles personnes}.",
     "word_ids": [343, 345, 207, 343, 340, 9]
   },
   "223": {
     "th": "ผม_อยู่_ที่-ไหน_ครับ",
     "en": "Where am I?",
-    "fr": "Où suis-je ?",
+    "fr": "Où suis-je ?|Je suis où ?",
     "word_ids": [23, 237, 57, 9]
   },
   "224": {
     "th": "ผม_อยาก_อยู่_บ้าน",
-    "en": "I want to be {home/at home/at my place}.",
+    "en": "I want to {be/stay} {home/at home/at my place}.",
     "fr": "Je veux être {à/dans} {la/ma} maison.",
     "word_ids": [23, 241, 237, 147]
   },
@@ -1284,26 +1284,26 @@
   },
   "226": {
     "th": "คุณ_เป็น_คน_ไทย_หรือ_ไม่_ครับ",
-    "en": "Are you Thai or not?",
-    "fr": "Tu es [m:thaï; f:thaïe; n:thaï·e] ou pas ?",
+    "en": "{Are you/You are} Thai( or not)?",
+    "fr": "{Tu es/Es-tu/Vous êtes/Êtes-vous} [m:thaï; f:thaïe; n:thaï·e]( ou pas) ?",
     "word_ids": [28, 207, 343, 345, 436, 39, 9]
   },
   "227": {
     "th": "ฉัน_คิด_ว่า_เขา_เป็น_คน_ดี_ค่ะ",
-    "en": "I think he is a good person.",
-    "fr": "Je penses qu'il est une bonne personne.",
+    "en": "I think {he/she} is a good person.",
+    "fr": "Je penses qu'{il/elle} est une bonne personne.",
     "word_ids": [24, 197, 184, 26, 207, 343, 82, 11]
   },
   "228": {
     "th": "เขา_เป็น_คน_ดี",
-    "en": "She is a good person.",
-    "fr": "C'est une personne bien.",
+    "en": "{She/He} is a good person.",
+    "fr": "C'est une personne bien.|{Il/Elle} est quelqu'un de bien.",
     "word_ids": [26, 207, 343, 82]
   },
   "229": {
     "th": "เขา_สวย",
-    "en": "He is beautiful.",
-    "fr": "Il est beau.",
+    "en": "{He/She} is beautiful.",
+    "fr": "Il est beau.|Elle est belle.",
     "word_ids": [26, 340]
   },
   "230": {

@@ -14,8 +14,7 @@
     "en_name": "Learn your first letters",
     "fr_name": "Apprend tes premières lettres",
     "type": "learn_letters",
-    "parameters": [["น"], []],
-    "true_parameters": [["น", "ท", "ย", "ค", "ไ-"], []],
+    "parameters": [["น", "ท", "ย", "ค", "ไ-"], []],
     "en_description": "Use the purple \"Letters\" tab on the right side to learn the consonants น, ท, ย, ค and the vowel ไ-.",
     "fr_description": "Utilise l'onglet violet \"Lettres\" sur la droite pour apprendre les consonnes น, ท, ย, ค et la voyelle ไ-.",
     "en_end_description": "Talk to your grandmother Yaai.",
@@ -48,8 +47,7 @@
     ],
     "en_counter_name": "Letters learnt",
     "fr_counter_name": "Lettres apprises ",
-    "counter_max": 1,
-    "counter_max_true": 5
+    "counter_max": 5
   },
   "find_first_words__when_learning_letters": {
     "blockers": ["find_first_letters"],
@@ -164,13 +162,13 @@
       "Welcome back to Chaiyaphum, [Name].",
       "Your grandmother asked me to overlook your shamanic training for a bit.",
       "Your first task will be to talk to everybody in Chaiyaphum to gather sentences in Thai.",
-      "Come back to me when you’ve found at least eleven sentences!"
+      "Come back to me when you’ve found at least nine sentences!"
     ],
     "fr_start_dialog": [
       "Il est bon de te revoir à Chaiyaphum, [Name].",
       "Ta grand-mère m'a demandé de m'occuper de ton éducation linguistique pendant quelques temps.",
       "Ta première tâche sera de parler à tout les gens qui habitent ici à Chaiyaphum, et collecter leurs phrases.",
-      "Reviens me voir quand tu auras trouvé au moins onze phrases."
+      "Reviens me voir quand tu auras trouvé au moins neuf phrases."
     ],
     "type": "find_sentences",
     "parameters": [[200, 201, 202, 203, 204, 206, 207, 208, 209], []],

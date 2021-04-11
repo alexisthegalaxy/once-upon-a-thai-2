@@ -3851,27 +3851,27 @@ __meta__ = {
 
 [node name="Source_อยาก" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( 1086.24, -220.313 )
-word_ids = [ 147 ]
+word_ids = [ 241 ]
 
 [node name="Source_หรือ" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( 884.797, -12.3086 )
-word_ids = [ 147 ]
+word_ids = [ 147, 436 ]
 
 [node name="Source_อยู่" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( 1185.08, -420.001 )
-word_ids = [ 147 ]
+word_ids = [ 237 ]
 
 [node name="Source_มี" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( 1033.63, 118.051 )
-word_ids = [ 147 ]
+word_ids = [ 236 ]
 
 [node name="Source_สวย" parent="YSort/Sources" instance=ExtResource( 23 )]
-position = Vector2( 1394.34, -606.32 )
-word_ids = [ 147 ]
+position = Vector2( 1476.89, -566.839 )
+word_ids = [ 340 ]
 
 [node name="Source_เขา" parent="YSort/Sources" instance=ExtResource( 23 )]
 position = Vector2( 1354.98, -1250.17 )
-word_ids = [ 39 ]
+word_ids = [ 26 ]
 
 [node name="Buildings" type="YSort" parent="YSort"]
 
@@ -3951,14 +3951,10 @@ sprite_path = "res://Npcs/sprites/man.png"
 direction = "left"
 interaction_sentence_id = "S222"
 
-[node name="thai_people_beautiful2" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 2677.52, -730.035 )
-sprite_path = "res://Npcs/sprites/man.png"
-interaction_sentence_id = "S165"
-
 [node name="I_dont_like_to_be_home" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 2037.73, -340.297 )
 sprite_path = "res://Npcs/sprites/man.png"
+direction = "right"
 interaction_sentence_id = "S239"
 
 [node name="I_like_not_to_be_at_home" parent="YSort/NPCs" instance=ExtResource( 11 )]
@@ -3978,23 +3974,32 @@ sprite_path = "res://Npcs/sprites/man.png"
 direction = "right"
 interaction_sentence_id = "S242"
 
+[node name="I_like_to_be_here2" parent="YSort/NPCs" instance=ExtResource( 11 )]
+position = Vector2( 2543.62, -1089.6 )
+dialog = [ "..." ]
+sprite_path = "res://Npcs/sprites/meditating_monk.png"
+interaction_sentence_id = "S242"
+
 [node name="monk_no_house" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 2317.58, -357.648 )
-dialog = [ "_congrats_reached_end_game" ]
 sprite_path = "res://Npcs/sprites/monk.png"
 direction = "right"
 interaction_sentence_id = "S213"
 
 [node name="good_people_have_water" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 1984.34, 100.871 )
-dialog = [ "_congrats_reached_end_game" ]
 sprite_path = "res://Npcs/sprites/girl.png"
 direction = "left"
 interaction_sentence_id = "S216"
 
+[node name="you_ve_reached_the_end" parent="YSort/NPCs" instance=ExtResource( 11 )]
+position = Vector2( 2447.29, -1491.46 )
+dialog = [ "_congrats_reached_end_game" ]
+sprite_path = "res://Npcs/sprites/girl.png"
+direction = "up"
+
 [node name="do_you_want_water" parent="YSort/NPCs" instance=ExtResource( 11 )]
 position = Vector2( 2094.36, -398.58 )
-dialog = [ "_congrats_reached_end_game" ]
 sprite_path = "res://Npcs/sprites/girl.png"
 direction = "up"
 interaction_sentence_id = "S217"

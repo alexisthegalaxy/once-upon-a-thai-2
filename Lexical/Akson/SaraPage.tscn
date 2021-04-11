@@ -274,7 +274,7 @@ position = Vector2( 330.769, 132.649 )
 id = "-ัว"
 
 [node name="-ี" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
-position = Vector2( 147.393, 226.267 )
+position = Vector2( 139.154, 218.777 )
 id = "-ี"
 
 [node name="เ-ีย" parent="Objects/YSort/Letters" instance=ExtResource( 4 )]
