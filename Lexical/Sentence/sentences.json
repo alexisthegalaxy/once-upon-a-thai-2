@@ -3525,5 +3525,65 @@
     "en": "You won't see this kind of bird in Thailand.",
     "fr": "{Vous/Tu} ne {verrez/verras} pas {ce genre d'oiseau(x)/d'oiseau(x) de ce type} en Thaïlande.",
     "word_ids": [28, 42, 39, 194, 139, 622, 31, 44, 684]
+  },
+  "601": {
+    "th": "อย่า_ลืม_ชื่อ_ของ_ฉัน",
+    "en": "{Don't/Do not} forget my name{/s}.",
+    "fr": "N'oublie{/z} pas {mon nom/mes noms}.",
+    "word_ids": [175, 600, 204, 40, 24]
+  },
+  "602": {
+    "th": "ฉัน_มัก-จะ_ลืม_ว่า_ฉัน_อา=ยุ_เท่า-ไหร่",
+    "en": "I {always forget/often forget/frequently forget/forget all the time} {how old I am/my age}.",
+    "fr": "J'oublie {toujours/fréquemment/tout le temps/souvent} {quel âge j'ai/mon âge}.",
+    "word_ids": [24, 695, 600, 184, 24, 263, 61]
+  },
+  "603": {
+    "th": "ฉัน_อา=ยุ_น้อย_ที่-สุด_ใน_ครอบ-ครัว",
+    "en": "I'm the youngest {in/of} {my/the} family.",
+    "fr": "Je suis {le/la} plus jeune {dans/de} {ma/la} famille.",
+    "word_ids": [24, 263, 500, 528, 44, 363]
+  },
+  "604": {
+    "th": "สุ=นัข_ของ_ฉัน_แก่_เกิน-ไป_ที่_จะ_วิ่ง",
+    "en": "My dog is too old to run.",
+    "fr": "{Mon chien est trop vieux/Ma chienne est trop vieille} pour courir.",
+    "word_ids": []
+  },
+  "605": {
+    "th": "ทุก-คน_จะ_ต้อง_ตาย",
+    "en": "Everyone {will/must/shall} die.",
+    "fr": "Tout le monde {va/doit} mourir.",
+    "word_ids": [35, 42, 199, 371]
+  },
+  "606": {
+    "th": "อยาก_เห็น_กรุง-เทพ_ก่อน_ตาย",
+    "en": "{I/You/He/She/They/It/We/} want{/s} to see Bangkok before {dying/I die/you die/he dies/she dies/they die/it dies/we die}.",
+    "fr": "{Je veux/Tu veux/Il veut/Elle veut/Nous voulons/Vous voulez/Elles veulent/Ils veulent} voir Bangkok avant de mourir.",
+    "word_ids": [241, 194, 308, 79, 371]
+  },
+  "607": {
+    "th": "เขา_มา_โรง-เรียน_โดย_เครื่อง-บิน_ของ_พ่อ",
+    "en": "He comes to school in {his /the /)father's plane.",
+    "fr": "Il vient à l'école {avec/dans/par/grâce à} l'avion {de son/du} père",
+    "word_ids": []
+  },
+  "608": {
+    "th": "ฉัน_อยาก_ขาย_รถ_มอ=เตอร์=ไซด์_ของ_ฉัน",
+    "en": "I want to sell my motorbike.",
+    "fr": "Je veux vendre ma moto",
+    "word_ids": []
+  },
+  "609": {
+    "th": "ไม่_มี_อะ=ไร_สำ=คัญ_ไป_กว่า_ตอน-นี้",
+    "en": "{Nothing is more important/Nothing matters more/There is nothing that is more important/There's nothing that is more important/There is nothing that matters more/There's nothing that matters more} than {now/the now/the present}.",
+    "fr": "{Rien n'est/Il n'y a rien qui est} plus important que {le présent/maintenant}.",
+    "word_ids": [39, 236, 56, 628, 201, 182, 67]
+  },
+  "610": {
+    "th": "ฉัน_เลิก_กิน_ปลา_เมื่อ_ฉัน_รู้_ว่า_มัน_ไม่-ดี_ต่อ_สุ=ข=ภาพ",
+    "en": "I stopped eating fish when I learned it's not {good for the health/healthy}.",
+    "fr": "J'ai {arrêté/cessé} de manger du poisson quand j'ai appris que ce n'est pas bon {à/pour} la santé.",
+    "word_ids": []
   }
 }

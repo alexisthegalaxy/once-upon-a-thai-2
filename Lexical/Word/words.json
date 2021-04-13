@@ -6240,10 +6240,37 @@
     "en": "hair (of the head)",
     "fr": "cheveux",
     "tones": "R",
-    "pos": "PRON",
+    "pos": "",
     "th": "ผม",
-    "teaching_order": 5,
-    "letters": [37, 35, 5]
+    "letters": [37, 35, 5],
+    "teaching_order": -1
+  },
+  "695": {
+    "split": "มัก-จะ",
+    "en": "often, frequently, always",
+    "fr": "souvent, fréquemment, tout le temps",
+    "tones": "HL",
+    "pos": "",
+    "th": "มักจะ",
+    "teaching_order": -1
+  },
+  "696": {
+    "split": "ขาย",
+    "en": "to sell",
+    "fr": "vendre",
+    "tones": "R",
+    "pos": "",
+    "th": "ขาย",
+    "teaching_order": -1
+  },
+  "697": {
+    "split": "เลิก",
+    "en": "to stop, cease, separate, break up",
+    "fr": "arrêter, cesser, séparer",
+    "tones": "F",
+    "pos": "",
+    "th": "เลิก",
+    "teaching_order": -1
   }
 }
 
