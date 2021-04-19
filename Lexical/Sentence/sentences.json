@@ -165,7 +165,7 @@
   },
   "26": {
     "th": "ส-วัส-ดี_ครับ",
-    "en": "(Hello/Hi)!",
+    "en": "{Hello/Hi/Hey}(!)",
     "word_ids": [3, 9],
     "speaker_gender": "M"
   },
@@ -195,7 +195,7 @@
   },
   "31": {
     "th": "คุณ_ชื่อ_อะ=ไร",
-    "en": "Whats your name?",
+    "en": "{What's/What is} your name?",
     "word_ids": [28, 204, 56]
   },
   "32": {
@@ -258,7 +258,8 @@
   },
   "42": {
     "th": "อย่า_นอน_ดึก",
-    "en": "Don't sleep (go to bed) late.",
+    "en": "Don't {sleep/go to bed} late.",
+    "fr": "Ne {va pas au lit/dors pas/te couche pas/t'endors pas} (trop )tard.",
     "word_ids": [175, 210, 92]
   },
   "43": {
@@ -274,7 +275,7 @@
   },
   "45": {
     "th": "ผม_ทำ-อา=หาร_เอง",
-    "en": "I cook myself.",
+    "en": "I cook (by myself/myself/alone).",
     "word_ids": [23, 322, 176],
     "speaker_gender": "M"
   },
@@ -371,7 +372,8 @@
   },
   "63": {
     "th": "พวก-เรา_ยัง_เด็ก",
-    "en": "We (long form) are (still) young.",
+    "en": "We{'re/ are} (still) young.",
+    "fr": "On est (encore )jeune(s).",
     "word_ids": [30, 180, 149]
   },
   "64": {
@@ -852,19 +854,19 @@
   },
   "151": {
     "th": "เขา_ไม่_ชอบ_อยู่_บ้าน",
-    "en": "He doesnt like to be at home.",
+    "en": "He {doesn't/does not} like to be at home.",
     "fr": "Il n'aime pas être à la maison.",
     "word_ids": [26, 39, 238, 237, 147]
   },
   "152": {
     "th": "เขา_ไม่_ชอบ_โรง-เรียน_ไทย",
-    "en": "He doesnt like Thai school.",
+    "en": "He {doesn't/does not} like Thai school.",
     "fr": "Il n'aime pas l'école thaïe.",
     "word_ids": [26, 39, 238, 275, 345]
   },
   "153": {
     "th": "เขา_ไม่_อยาก_อยู่_โรง-เรียน",
-    "en": "He doesnt want to be at school.",
+    "en": "He {doesn't/does not} want to be at school.",
     "word_ids": [26, 39, 241, 237, 275]
   },
   "154": {
@@ -875,12 +877,12 @@
   },
   "155": {
     "th": "เขา_ไม่_ชอบ_พูด",
-    "en": "He doesnt like to speak.",
+    "en": "He {doesn't/does not} like to speak.",
     "word_ids": [26, 39, 238, 234]
   },
   "156": {
     "th": "เธอ_ไม่_อยาก_พูด",
-    "en": "She doesnt want to speak.",
+    "en": "She {doesn't/does not} want to speak.",
     "word_ids": [25, 39, 241, 234]
   },
   "157": {
@@ -1059,12 +1061,12 @@
   },
   "189": {
     "th": "ประ=เทศ_ฝ-รั่ง-เศส_อยู่_ใกล้_ประ=เทศ_อัง-กฤษ",
-    "en": "France is close to Britain.",
+    "en": "France is close to( the) {United  Kingdom/Britain/UK}.",
     "word_ids": [264, 321, 237, 93, 264, 255]
   },
   "190": {
     "th": "ประ=เทศ_ไทย_ไกล_จาก_ประ=เทศ_อัง-กฤษ",
-    "en": "Thailand is far from Britain.",
+    "en": "Thailand is far from (the ){UK/United Kingdom/Britain}.",
     "word_ids": [264, 345, 96, 43, 264, 255]
   },
   "191": {
@@ -1099,7 +1101,7 @@
   },
   "196": {
     "th": "คน_ไทย_เป็น_คน_ดี",
-    "en": "{Thai people/The Thais/Thais} are good( people/ persons).",
+    "en": "{Thai people/The Thais/Thais} are good{/ people/ persons}.",
     "fr": "Les {Thaïlandais/Thaïs/personnes Thaïlandaises/gens Thaïlandais} sont {des gens biens/biens/des bonnes personnes/des personnes bien}.",
     "word_ids": [343, 345, 207, 343, 82]
   },
@@ -1613,7 +1615,7 @@
     "word_ids": [457, 81, 207, 145, 436, 39]
   },
   "280": {
-    "th": "คุณ_คิด_ว่า_ชี-วิต_คือ_อะ=ไร",
+    "th": "คุณ_คิด_ว่า_ชี=วิต_คือ_อะ=ไร",
     "en": "What do you think life is?",
     "fr": "Tu penses que la vie c'est quoi ?",
     "word_ids": [28, 197, 184, 456, 206, 56]
@@ -1785,7 +1787,7 @@
     "word_ids": [24, 293, 184, 343, 254, 193, 155, 71]
   },
   "308": {
-    "th": "ชี-วิต_ก็_เหมือน_กระ-จก",
+    "th": "ชี=วิต_ก็_เหมือน_กระ-จก",
     "en": "Life is like a mirror.",
     "fr": "La vie, c'est comme un miroir.",
     "word_ids": [456, 448, 50, 502]
@@ -1809,7 +1811,7 @@
     "word_ids": [28, 306, 234, 46, 24, 436, 39]
   },
   "312": {
-    "th": "มัน_มี_ชี-วิต_อยู่",
+    "th": "มัน_มี_ชี=วิต_อยู่",
     "en": "It's alive",
     "fr": "{Il /C'}est {vivant/en vie}!|{Il/Ça} vit!",
     "word_ids": [27, 236, 456, 237]
@@ -1893,19 +1895,19 @@
     "word_ids": [59, 29, 237, 45, 509]
   },
   "326": {
-    "th": "ธรร-ม-ชาติ_ของ_ชี-วิต_คือ_อะ=ไร",
+    "th": "ธรร-ม-ชาติ_ของ_ชี=วิต_คือ_อะ=ไร",
     "en": "What is the nature of life?",
     "fr": "Quelle est la nature de la vie ?",
     "word_ids": [512, 40, 456, 206, 56]
   },
   "327": {
-    "th": "ชี-วิต_ไม่_มี_ความ-หมาย",
+    "th": "ชี=วิต_ไม่_มี_ความ-หมาย",
     "en": "Life has no meaning.",
     "fr": "La vie n'a pas de {signification/sens}.",
     "word_ids": [456, 39, 236, 513]
   },
   "328": {
-    "th": "ความ-หมาย_ของ_ชี-วิต_คือ_อะ=ไร",
+    "th": "ความ-หมาย_ของ_ชี=วิต_คือ_อะ=ไร",
     "en": "What is the meaning of life?",
     "fr": "Quel est {le sens/la signification} de la vie?",
     "word_ids": [513, 40, 456, 206, 56]
@@ -3384,13 +3386,13 @@
   },
   "577": {
     "th": "ฉัน_เหนื่อย_มาก_จน_นอน_ได้_ทั้ง_เดือน",
-    "en": "I am so tired that I could sleep an entire month!",
+    "en": "I am so tired that I could sleep (for )an entire month!",
     "fr": "Je suis tellement fatigué{/e} que je pourrais dormir {/pendant }{un mois entier/tout un mois/un mois en entier}.",
     "word_ids": [24, 100, 366, 677, 210, 209, 681, 165]
   },
   "578": {
     "th": "ทำ-ไม_คุณ_ถึง_ถาม_ฉัน_ว่า_ฉัน_ชอบ_คน_แบบ-ไหน",
-    "en": "Why are you asking me what kind of persons I like?",
+    "en": "Why are you asking me what kind of person{/s} I like?",
     "fr": "Pourquoi {tu me demandes/vous me demandez} quel{/s} genre{/s} de personne(s) j'{aime/apprécie} ?",
     "word_ids": [59, 28, 606, 217, 24, 184, 24, 238, 343, 402]
   },
@@ -3548,7 +3550,7 @@
     "th": "สุ=นัข_ของ_ฉัน_แก่_เกิน-ไป_ที่_จะ_วิ่ง",
     "en": "My dog is too old to run.",
     "fr": "{Mon chien est trop vieux/Ma chienne est trop vieille} pour courir.",
-    "word_ids": []
+    "word_ids": [700, 40, 24, 586, 381, 45, 42, 240]
   },
   "605": {
     "th": "ทุก-คน_จะ_ต้อง_ตาย",
@@ -3566,13 +3568,13 @@
     "th": "เขา_มา_โรง-เรียน_โดย_เครื่อง-บิน_ของ_พ่อ",
     "en": "He comes to school in {his /the /)father's plane.",
     "fr": "Il vient à l'école {avec/dans/par/grâce à} l'avion {de son/du} père",
-    "word_ids": []
+    "word_ids": [26, 202, 275, 701, 635, 40, 486]
   },
   "608": {
     "th": "ฉัน_อยาก_ขาย_รถ_มอ=เตอร์=ไซด์_ของ_ฉัน",
     "en": "I want to sell my motorbike.",
     "fr": "Je veux vendre ma moto",
-    "word_ids": []
+    "word_ids": [24, 241, 696, 144, 702, 40, 24]
   },
   "609": {
     "th": "ไม่_มี_อะ=ไร_สำ=คัญ_ไป_กว่า_ตอน-นี้",
@@ -3584,6 +3586,246 @@
     "th": "ฉัน_เลิก_กิน_ปลา_เมื่อ_ฉัน_รู้_ว่า_มัน_ไม่-ดี_ต่อ_สุ=ข=ภาพ",
     "en": "I stopped eating fish when I learned it's not {good for the health/healthy}.",
     "fr": "J'ai {arrêté/cessé} de manger du poisson quand j'ai appris que ce n'est pas bon {à/pour} la santé.",
+    "word_ids": [24, 697, 193, 138, 380, 24, 370, 184, 27, 339, 703, 706]
+  },
+  "611": {
+    "th": "เมื่อ-ก่อน_ครอบ-ครัว_นี้_รัก_กัน_มาก",
+    "en": "{Before/In the past/Previously}, {this family/the people in this family} {loved/were loving} each other {a lot/very much}.",
+    "fr": "{Avant/Dans le passé}, {cette famille/les gens de cette famille/les membres de cette famille} s'aimai{/en}t beaucoup.",
+    "word_ids": [480, 363, 31, 239, 608, 366]
+  },
+  "612": {
+    "th": "ฉัน_ได้-ยิน_เสียง-ดัง",
+    "en": "I heard a noise.",
+    "fr": "J'ai entendu {un bruit/quelque chose}.",
+    "word_ids": [24, 293, 704]
+  },
+  "613": {
+    "th": "เกิด_อะ=ไร_ขึ้น_ข=ณะ_นวด_ไทย",
+    "en": "What happens during Thai massage?",
+    "fr": "Qu'est-ce qui se passe {pendant/durant} un massage thaï ?",
+    "word_ids": [404, 56, 374, 705, 707, 345]
+  },
+  "614": {
+    "th": "โชค_ไม่-ดี_ที่_ไป_ตัด_ผม_ใน_วัน-พุธ",
+    "en": "It's bad luck to get a haircut on a Wednesday.",
+    "fr": "Ça porte malheur {d'aller chez le coiffeur/de se faire couper les cheuveux} {le/les/un} mercredi{/s}.",
+    "word_ids": [731, 339, 45, 201, 401, 23, 44, 733]
+  },
+  "615": {
+    "th": "ฉัน_ให้_อา=หาร_กระ=ต่าย_ทุก-วัน",
+    "en": "I fe{/e}d {my /the /a /}rabbit{/s} every{/ }day.",
+    "fr": "Je nourris {mon/le/des/un/mes/les} lapin{/s} {tous les jours/chaque jour}.",
+    "word_ids": [24, 51, 251, 732, 71]
+  },
+  "616": {
+    "th": "",
+    "en": "There is one glass for each student.",
+    "fr": "",
     "word_ids": []
+  },
+  "617": {
+    "th": "ผม_เห็น_รถ_สี-ดำ_อยู่_หน้า_บ้าน",
+    "en": "I {saw/see} {a black car/black cars} in front of {the house/a house/my house/my home/home}.",
+    "fr": "{J'ai vu/Je vois/Je voyais} {une voiture noire/des voitures noires} devant la maison.",
+    "word_ids": [23, 194, 144, 109, 237, 53, 147]
+  },
+  "618": {
+    "th": "คุณ_บัน-ทึก_เกม_หรือ-ไม่",
+    "en": "Did you save the game?",
+    "fr": "{Tu as/Vous avez} {enregistré/sauvegardé} {le jeu/la partie} ?",
+    "word_ids": [28, 298, 624, 676]
+  },
+  "619": {
+    "th": "ร้าน_ปิด_กี่-โมง",
+    "en": "At what time does the shop close?",
+    "fr": "Le magasin ferme {à quelle heure/quand} ?|{À quelle heure/Quand} {ferme le magasin/est-ce que le magasin ferme} ?",
+    "word_ids": [715, 216, 539]
+  },
+  "620": {
+    "th": "เชียง=ใหม่_อยู่_ใกล้_กับ_เชียง=ราย",
+    "en": "Chiangmai is {close/near} {to/from/with/} Chiangrai.",
+    "fr": "",
+    "word_ids": []
+  },
+  "621": {
+    "th": "ทำ-ไม_คุณ_ทำ-ให้_ฉัน_กิน_ผัก",
+    "en": "Why do you make me eat vegetables?",
+    "fr": "Pourquoi tu me fais manger des légumes ?",
+    "word_ids": [59, 28, 301, 24, 193, 346]
+  },
+  "622": {
+    "th": "คุณ_อยู่_กรุง-เทพ_เมื่อ-ไหร่",
+    "en": "When are you in Bangkok?",
+    "fr": "Quand {es-tu/êtes-vous} à Bangkok ?",
+    "word_ids": [28, 237, 308, 58]
+  },
+  "623": {
+    "th": "รา=คา_ต่ำ_มาก_ตอน-นี้",
+    "en": "The price is very low now.|Now the price is very low.",
+    "fr": "Le prix est très bas maintenant.|Maintenant le prix est très bas.",
+    "word_ids": []
+  },
+  "624": {
+    "th": "ทำ-ไม_ครู_ยัง_ไม่_อยู่_ที่=นี่",
+    "en": "Why isn't the teacher here yet?",
+    "fr": "Pourquoi {/est-ce que }{le professeur/le prof/la prof/la professeure} (n')est pas encore {là/ici/arrivé/arrivée} ?",
+    "word_ids": []
+  },
+  "625": {
+    "th": "มัน_สำ=คัญ_ใน_บาง_ส=ถา=น-การณ์",
+    "en": "{It/That/This}{'s/ is} important in {some/certain} {situations/occasions}.",
+    "fr": "C'est important dans {certaines/quelques} {circonstances/situations/occasions}.",
+    "word_ids": []
+  },
+  "626": {
+    "th": "มัน_อาจ-จะ_น่า-เบื่อ",
+    "en": "It might be boring.",
+    "fr": "Ça {peut/pourrait} être {ennuyant/ennuyeux/chiant}.",
+    "word_ids": []
+  },
+  "627": {
+    "th": "แล้ว_พบ-กัน_ค่ะ",
+    "en": "See you{/ later}!",
+    "fr": "{À plus/À bientôt/Au revoir} !",
+    "word_ids": []
+  },
+  "628": {
+    "th": "ยาย_ของ_ฉัน_เต้น_เก่ง_กว่า_คุณ",
+    "en": "My grandmother dances better than you.",
+    "fr": "Ma grand-mère dance mieux que toi.",
+    "word_ids": [396, 40, 24, 657, 719, 182, 28]
+  },
+  "629": {
+    "th": "น้ำ-ซุป_นี้_เค็ม_ไป",
+    "en": "This soup is too salty.",
+    "fr": "Cette soupe est trop salée.",
+    "word_ids": [717, 31, 720, 201]
+  },
+  "630": {
+    "th": "คุณ_ชอบ_ตุ๊ก=แก_ใช่_ไหม",
+    "en": "You {like/love} geckos, right?",
+    "fr": "{Tu aimes/Vous aimez} (bien ){les geckos/le gecko}, {non/pas vrai/c'est vrai} ?",
+    "word_ids": [28, 238, 0, 179, 10]
+  },
+  "631": {
+    "th": "อะ=ไร-จะ_บัง_เอิญ_ข=นาด-นี้",
+    "en": "{What/Such} a surprise!",
+    "fr": "Quelle surprise !",
+    "word_ids": []
+  },
+  "632": {
+    "th": "พิซ=ซ่า_อะ=ไร-จะ_อ-ร่อย_ข=นาด_นี้",
+    "en": "What a delicious pizza!",
+    "fr": "Quelle délicieuse pizza !",
+    "word_ids": [730, 721, 347, 726, 31]
+  },
+  "633": {
+    "th": "รถ_อะ=ไร-จะ_แพง_ข=นาด_นี้",
+    "en": "What an expensive car!",
+    "fr": "Quelle voiture chère !|Une voiture {si/tellement} chère !",
+    "word_ids": [144, 721, 549, 726, 31]
+  },
+  "634": {
+    "th": "คอม=พิว=เตอร์_เร็ว_อะ=ไร_อย่าง-นี้",
+    "en": "What a fast computer!",
+    "fr": "Quel ordinateur rapide !|Un ordinateur {si/tellement} rapide !",
+    "word_ids": []
+  },
+  "635": {
+    "th": "เพลง_อะ=ไร-จะ_ดี_ข=นาด_นี้",
+    "en": "What a good song",
+    "fr": "Quel bonne chanson !|Une chanson {si/tellement} bonne !",
+    "word_ids": [446, 721, 82, 726, 31]
+  },
+  "636": {
+    "th": "เสียง_ของ_คุณ_เพราะ_มาก",
+    "en": "Your voice is very {melodious/pleasant/nice/beautiful}.",
+    "fr": "Ta voix est très {mélodieuse/agréable/belle}.",
+    "word_ids": [476, 40, 28, 699, 366]
+  },
+  "637": {
+    "th": "คุณ_พูด_อะ=ไร-จะ_สุ=ภาพ_ข=นาด_นี้",
+    "en": "You speak so politely !|What a polite way to speak",
+    "fr": "Tu parles {tellement/si} poliment !",
+    "word_ids": [28, 234, 721, 729, 726, 31]
+  },
+  "638": {
+    "th": "แป๊บ_นะ",
+    "en": "{Wait/Hold on/Just a second/Wait a second/One moment/Just a moment/Just one moment}!",
+    "fr": "{Attends/Attendez/Un instant/Un moment/Attends une seconde/Juste une seconde}",
+    "word_ids": [723, 13]
+  },
+  "639": {
+    "th": "ฉัน_ได้_งาน_ใหม่_ทำ_ที่_เชียง-ใหม่",
+    "en": "I{/'ve} got a new {job/work}{/ to do} in Chiangmai.",
+    "fr": "J'ai {/obtenu} un nouveau {travail/boulot} {à/dans} Chiangmai.",
+    "word_ids": [24, 209, 393, 708, 208, 45, 716]
+  },
+  "640": {
+    "th": "เธอ_คิด_ว่า_กระ=โปรง_ตัว_นี้_เป็น_ไง",
+    "en": "What {do you/does she} think of this skirt?|How {do you/does she} think this skirt is?",
+    "fr": "{Tu penses/Elle pense} {quoi de cette jupe/que cette jupe est comment} ?",
+    "word_ids": []
+  },
+  "641": {
+    "th": "โลก_มัน_กลม_มาก",
+    "en": "It's a {/very }small world.|The world is (very )round.",
+    "fr": "Le monde est {très/ }petit.|{Le monde/La terre} est (très )ronde.",
+    "word_ids": [350, 27, 710, 366]
+  },
+  "642": {
+    "th": "เรา_น่า-จะ_ติด-ต่อ_กัน_บ่อย_ๆ_นะ",
+    "en": "We should contact each other often.|We should keep in touch.",
+    "fr": "{Nous devrions/On devrait} {nous contacter/se contacter/rester en contact} souvent.",
+    "word_ids": []
+  },
+  "643": {
+    "th": "เธอ_ยัง_มี_เบอร์_โทร_ฉัน_อยู่_ใช่-ไหม",
+    "en": "You still have my number, right?",
+    "fr": "{Tu as/Vous avez} toujours mon numéro, {non/n'est-ce pas} ?",
+    "word_ids": [25, 180, 236, 712, 615, 24, 237, 722]
+  },
+  "644": {
+    "th": "มรึง_กล้า_เปล่า",
+    "en": "Are you daring?|Are you {brave/bold/audacious/fearless}?",
+    "fr": "Oserez-vous?|Oseras-tu?|{Es-tu/Êtes-vous} {brave/audacieux/audacieuse/hardi/hardie/intrépide} ?",
+    "word_ids": [713, 724, 725]
+  },
+  "645": {
+    "th": "ดู-แล_ตัว-เอง",
+    "en": "Take care of yourself!",
+    "fr": "Prends soin de toi !|Prenez soin de vous !",
+    "word_ids": [714, 34]
+  },
+  "646": {
+    "th": "พ่อ_ของ_คุณ_เป็น_เพื่อน_ของ_ฉัน",
+    "en": "Your father is my friend.",
+    "fr": "Ton père est mon ami.",
+    "word_ids": [486, 40, 28, 207, 170, 40, 24]
+  },
+  "647": {
+    "th": "ผ=ล-ไม้_ช=นิด_นี้_คือ_อะ=ไร",
+    "en": "What kind of fruit is this?",
+    "fr": "Quelle est {cette sorte/ce type/ce genre/cette variété} de fruit ?|C'est quel {genre/type/espèce/variété} de fruit?",
+    "word_ids": [268, 622, 31, 206, 56]
+  },
+  "648": {
+    "th": "ฤ=ดู-หนาว_กำ=ลัง_จะ_มา",
+    "en": "Winter {is coming|will be coming|comes|will come}.",
+    "fr": "L'hiver {vient/arrive/va venir/va arriver/viendra}.",
+    "word_ids": [386, 306, 42, 202]
+  },
+  "649": {
+    "th": "ชี=วิต_ใน_เมือง_ลำ=บาก",
+    "en": "Life in the city is hard.",
+    "fr": "La vie en ville est dure.",
+    "word_ids": [456, 44, 475, 728]
+  },
+  "650": {
+    "th": "ฉัน_ใช้_แอพ_นี้_เพื่อ_เรียน_ภา=ษา_ส=เปน",
+    "en": "I use this app to learn Spanish.",
+    "fr": "J'utilise cette application pour apprendre l'espagnol.",
+    "word_ids": [24, 222, 727, 31, 491, 198, 273, 256]
   }
 }

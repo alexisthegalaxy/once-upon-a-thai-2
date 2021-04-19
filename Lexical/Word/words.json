@@ -56,6 +56,7 @@
   "6": {
     "split": "เอา-เถอะ",
     "en": "okay, alright",
+    "fr": "d'accord, ok",
     "tones": "ML",
     "pos": "INTE",
     "th": "เอาเถอะ",
@@ -2156,6 +2157,7 @@
   "239": {
     "split": "รัก",
     "en": "to love",
+    "fr": "aimer",
     "tones": "H",
     "pos": "VERB",
     "th": "รัก",
@@ -2164,6 +2166,7 @@
   "240": {
     "split": "วิ่ง",
     "en": "to run",
+    "fr": "courir",
     "tones": "F",
     "pos": "VERB",
     "th": "วิ่ง",
@@ -2271,6 +2274,7 @@
   "252": {
     "split": "พิซ-ซ่า",
     "en": "pizza",
+    "fr": "pizza",
     "tones": "HF",
     "pos": "NOUN",
     "th": "พิซซ่า",
@@ -2279,6 +2283,7 @@
   "253": {
     "split": "เมือง-ไทย",
     "en": "Thailand",
+    "fr": "Thaïlande",
     "tones": "MM",
     "pos": "PLAC",
     "th": "เมืองไทย",
@@ -2287,6 +2292,7 @@
   "254": {
     "split": "ญี่=ปุ่น",
     "en": "Japan",
+    "fr": "Japon",
     "tones": "FL",
     "pos": "PLAC",
     "th": "ญี่ปุ่น",
@@ -2410,7 +2416,7 @@
     "teaching_order": -1
   },
   "268": {
-    "split": "ผล_ไม้",
+    "split": "ผ=ล-ไม้",
     "en": "fruit",
     "fr": "fruit",
     "tones": "RHH",
@@ -3456,7 +3462,7 @@
     "teaching_order": -1
   },
   "386": {
-    "split": "ฤ-ดู-หนาว",
+    "split": "ฤ=ดู-หนาว",
     "en": "winter",
     "fr": "hiver",
     "tones": "HMR",
@@ -4089,7 +4095,7 @@
     "teaching_order": -1
   },
   "456": {
-    "split": "ชี-วิต",
+    "split": "ชี=วิต",
     "en": "life",
     "fr": "la vie",
     "tones": "MH",
@@ -6270,6 +6276,331 @@
     "tones": "F",
     "pos": "",
     "th": "เลิก",
+    "teaching_order": -1
+  },
+  "698": {
+    "split": "บัง=เอิญ",
+    "en": "by chance, accidentally",
+    "fr": "par chance, inattendu",
+    "tones": "MM",
+    "pos": "",
+    "th": "บังเอิญ",
+    "teaching_order": -1
+  },
+  "699": {
+    "split": "เพราะ",
+    "en": "melodious",
+    "fr": "mélodieux",
+    "tones": "H",
+    "pos": "",
+    "th": "เพราะ",
+    "teaching_order": -1
+  },
+  "700": {
+    "split": "สุ=นัข",
+    "en": "dog",
+    "fr": "chien",
+    "tones": "LH",
+    "pos": "",
+    "th": "สุนัข",
+    "teaching_order": -1
+  },
+  "701": {
+    "split": "โดย",
+    "en": "by",
+    "fr": "par",
+    "tones": "M",
+    "pos": "",
+    "th": "โดย",
+    "teaching_order": -1
+  },
+  "702": {
+    "split": "มอ=เตอร์=ไซด์",
+    "en": "motorcycle, motorbike",
+    "fr": "moto",
+    "tones": "MFM",
+    "pos": "",
+    "th": "มอเตอร์ไซด์",
+    "teaching_order": -1
+  },
+  "703": {
+    "split": "ต่อ",
+    "en": "connect, add on / next",
+    "fr": "connecter, ajouter / suivant",
+    "tones": "L",
+    "pos": "",
+    "th": "ต่อ",
+    "teaching_order": -1
+  },
+  "704": {
+    "split": "เสียง-ดัง",
+    "en": "noise",
+    "fr": "bruit",
+    "tones": "RM",
+    "pos": "",
+    "th": "เสียงดัง",
+    "teaching_order": -1
+  },
+  "705": {
+    "split": "ข=ณะ",
+    "en": "while, meanwhile",
+    "fr": "pendant",
+    "tones": "LL",
+    "pos": "",
+    "th": "ขณะ",
+    "teaching_order": -1
+  },
+  "706": {
+    "split": "สุ=ข=ภาพ",
+    "en": "health",
+    "fr": "santé",
+    "tones": "LLF",
+    "pos": "",
+    "th": "สุขภาพ",
+    "teaching_order": -1
+  },
+  "707": {
+    "split": "นวด",
+    "en": "massage",
+    "fr": "massage",
+    "tones": "F",
+    "pos": "",
+    "th": "นวด",
+    "teaching_order": -1
+  },
+  "708": {
+    "split": "ใหม่",
+    "en": "new",
+    "fr": "nouveau",
+    "tones": "L",
+    "pos": "",
+    "th": "ใหม่",
+    "teaching_order": -1
+  },
+  "709": {
+    "split": "กระ=โปรง",
+    "en": "skirt",
+    "fr": "jupe",
+    "tones": "LM",
+    "pos": "",
+    "th": "กระโปรง",
+    "teaching_order": -1
+  },
+  "710": {
+    "split": "กลม",
+    "en": "round, circular",
+    "fr": "rond",
+    "tones": "M",
+    "pos": "",
+    "th": "กลม",
+    "teaching_order": -1
+  },
+  "711": {
+    "split": "น่า-จะ",
+    "en": "should",
+    "fr": "devrait",
+    "tones": "FL",
+    "pos": "",
+    "th": "น่าจะ",
+    "teaching_order": -1
+  },
+  "712": {
+    "split": "เบอร์",
+    "en": "number",
+    "fr": "numéro, number",
+    "tones": "M",
+    "pos": "",
+    "th": "เบอร์",
+    "teaching_order": -1
+  },
+  "713": {
+    "split": "มรึง",
+    "en": "you",
+    "fr": "tu",
+    "tones": "M",
+    "pos": "",
+    "th": "มรึง",
+    "register": "familiar",
+    "teaching_order": -1
+  },
+  "714": {
+    "split": "ดู-แล",
+    "en": "look after, care for",
+    "fr": "s'occuper de, faire attention à",
+    "tones": "MM",
+    "pos": "",
+    "th": "ดูแล",
+    "teaching_order": -1
+  },
+  "715": {
+    "split": "ร้าน",
+    "en": "shop, store",
+    "fr": "magasin",
+    "tones": "H",
+    "pos": "",
+    "th": "ร้าน",
+    "teaching_order": -1
+  },
+  "716": {
+    "split": "เชียง-ใหม่",
+    "en": "Chiang Mai",
+    "fr": "Chiang Mai",
+    "tones": "ML",
+    "pos": "",
+    "th": "เชียงใหม่",
+    "teaching_order": -1
+  },
+  "717": {
+    "split": "น้ำ-ซุป",
+    "en": "soup",
+    "fr": "soupe",
+    "tones": "HH",
+    "pos": "",
+    "th": "น้ำซุป",
+    "teaching_order": -1
+  },
+  "718": {
+    "split": "บาง",
+    "en": "som, a few",
+    "fr": "quelques",
+    "tones": "M",
+    "pos": "",
+    "th": "บาง",
+    "teaching_order": -1
+  },
+  "719": {
+    "split": "เก่ง",
+    "en": "skilled / skilfully",
+    "fr": "doué / excellement",
+    "tones": "L",
+    "pos": "",
+    "th": "เก่ง",
+    "teaching_order": -1
+  },
+  "720": {
+    "split": "เค็ม",
+    "en": "salty",
+    "fr": "salé",
+    "tones": "M",
+    "pos": "",
+    "th": "เค็ม",
+    "teaching_order": -1
+  },
+  "721": {
+    "split": "อะ=ไร-จะ",
+    "en": "what a ...!",
+    "fr": "quel ... !",
+    "tones": "LML",
+    "pos": "",
+    "th": "อะไรจะ",
+    "teaching_order": -1
+  },
+  "722": {
+    "split": "ใช่-ไหม",
+    "en": "right?",
+    "fr": "n'est-ce pas ?",
+    "tones": "FR",
+    "pos": "",
+    "th": "ใช่ไหม",
+    "teaching_order": -1
+  },
+  "723": {
+    "split": "แป๊บ",
+    "en": "just a moment / wait!",
+    "fr": "attends! / juste une seconde",
+    "tones": "H",
+    "pos": "",
+    "th": "แป๊บ",
+    "teaching_order": -1
+  },
+  "724": {
+    "split": "กล้า",
+    "en": "to be brave, bold, to dare",
+    "fr": "être brave, oser",
+    "tones": "F",
+    "pos": "",
+    "th": "กล้า",
+    "teaching_order": -1
+  },
+  "725": {
+    "split": "เปล่า",
+    "en": "no / empty / or not?",
+    "fr": "ne pas / vide / ou pas ?",
+    "tones": "L",
+    "pos": "",
+    "th": "เปล่า",
+    "teaching_order": -1
+  },
+  "726": {
+    "split": "ข=นาด",
+    "en": "magnitude, size, extent",
+    "fr": "magnitude, niveau",
+    "tones": "LL",
+    "pos": "",
+    "th": "ขนาด",
+    "teaching_order": -1
+  },
+  "727": {
+    "split": "แอพ",
+    "en": "app, application",
+    "fr": "application, app",
+    "tones": "L",
+    "pos": "",
+    "th": "แอพ",
+    "teaching_order": -1
+  },
+  "728": {
+    "split": "ลำ=บาก",
+    "en": "difficult, inconvenient",
+    "fr": "difficile, ardu",
+    "tones": "ML",
+    "pos": "",
+    "th": "ลำบาก",
+    "teaching_order": -1
+  },
+  "729": {
+    "split": "สุ=ภาพ",
+    "en": "polite",
+    "fr": "poli, bien élevé",
+    "tones": "LF",
+    "pos": "",
+    "th": "สุภาพ",
+    "teaching_order": -1
+  },
+  "730": {
+    "split": "พิซ=ซ่า",
+    "en": "pizza",
+    "fr": "pizza",
+    "tones": "HF",
+    "pos": "",
+    "th": "พิซซ่า",
+    "teaching_order": -1
+  },
+  "731": {
+    "split": "โชค",
+    "en": "luck, fortune",
+    "fr": "chance, porte-bonheur",
+    "tones": "F",
+    "pos": "",
+    "th": "โชค",
+    "teaching_order": -1
+  },
+  "732": {
+    "split": "กระ=ต่าย",
+    "en": "rabbit",
+    "fr": "lapin",
+    "tones": "LL",
+    "pos": "",
+    "th": "กระต่าย",
+    "teaching_order": -1
+  },
+  "733": {
+    "split": "วัน-พุธ",
+    "en": "Wednesday",
+    "fr": "mercredi",
+    "tones": "MH",
+    "pos": "",
+    "th": "วันพุธ",
     "teaching_order": -1
   }
 }
