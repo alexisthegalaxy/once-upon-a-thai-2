@@ -1073,7 +1073,7 @@
     "teaching_order": -1
   },
   "119": {
-    "split": "สี-ชม-พู",
+    "split": "สี-ชม=พู",
     "en": "pink",
     "fr": "rose",
     "tones": "RMM",
@@ -2344,7 +2344,7 @@
     "teaching_order": -1
   },
   "260": {
-    "split": "ใจ_ดี",
+    "split": "ใจ-ดี",
     "en": "to be kind, have a good heart",
     "fr": "être gentil, avoir bon cœur",
     "tones": "MM",
@@ -2925,7 +2925,7 @@
     "teaching_order": 27
   },
   "326": {
-    "split": "สับ-ปะ-รด",
+    "split": "สับ=ปะ=รด",
     "en": "pineapple",
     "fr": "ananas",
     "tones": "LLH",
@@ -6601,6 +6601,150 @@
     "tones": "MH",
     "pos": "",
     "th": "วันพุธ",
+    "teaching_order": -1
+  },
+  "734": {
+    "split": "จน-กว่า",
+    "en": "until",
+    "fr": "jusque",
+    "tones": "ML",
+    "pos": "",
+    "th": "จนกว่า",
+    "teaching_order": -1
+  },
+  "735": {
+    "split": "หาย-ดี",
+    "en": "to recover, to heal",
+    "fr": "guérir",
+    "tones": "RM",
+    "pos": "",
+    "th": "หายดี",
+    "teaching_order": -1
+  },
+  "736": {
+    "split": "เจ็บ",
+    "en": "to be hurt, injured, in pain",
+    "fr": "avoir mal, faire mal",
+    "tones": "L",
+    "pos": "",
+    "th": "เจ็บ",
+    "teaching_order": -1
+  },
+  "737": {
+    "split": "นำ-โชค",
+    "en": "to give good luck, good fortune",
+    "fr": "porter chance, porter bonheur",
+    "tones": "MF",
+    "pos": "",
+    "th": "นำโชค",
+    "teaching_order": -1
+  },
+  "738": {
+    "split": "ปรุง",
+    "en": "to cook",
+    "fr": "cuisiner, faire cuire",
+    "tones": "M",
+    "pos": "",
+    "th": "ปรุง",
+    "teaching_order": -1
+  },
+  "739": {
+    "split": "นาน-แค่-ไหน",
+    "en": "for how long",
+    "fr": "combien de temps",
+    "tones": "MFR",
+    "pos": "",
+    "th": "นานแค่ไหน",
+    "teaching_order": -1
+  },
+  "740": {
+    "split": "วัน-เสาร์",
+    "en": "Saturday",
+    "fr": "samedi",
+    "tones": "MR",
+    "pos": "",
+    "th": "วันเสาร์",
+    "teaching_order": -1
+  },
+  "741": {
+    "split": "เติบ-โต",
+    "en": "to grow, grow up",
+    "fr": "pousser, grandir",
+    "tones": "LM",
+    "pos": "",
+    "th": "เติบโต",
+    "teaching_order": -1
+  },
+  "742": {
+    "split": "สิบ-สอง",
+    "en": "twelve, 12",
+    "fr": "douze, 12",
+    "tones": "LR",
+    "pos": "",
+    "th": "สิบสอง",
+    "teaching_order": -1
+  },
+  "743": {
+    "split": "เผา",
+    "en": "to burn, burnt",
+    "fr": "brûler, brûlé",
+    "tones": "R",
+    "pos": "",
+    "th": "เผา",
+    "teaching_order": -1
+  },
+  "744": {
+    "split": "ใบ",
+    "en": "sheet / leaf / [classifier for documents, bags]",
+    "fr": "feuille / [classificateur pour les documents, sacs]",
+    "tones": "M",
+    "pos": "",
+    "th": "ใบ",
+    "teaching_order": -1
+  },
+  "745": {
+    "split": "ติด-ต่อ",
+    "en": "to contact, communicate with",
+    "fr": "contacter, entrer en contact avec",
+    "tones": "LL",
+    "pos": "",
+    "th": "ติดต่อ",
+    "teaching_order": -1
+  },
+  "746": {
+    "split": "ส=ถา=น-การณ์",
+    "en": "situation",
+    "fr": "situation",
+    "tones": "LRHM",
+    "pos": "",
+    "th": "สถานการณ์",
+    "teaching_order": -1
+  },
+  "747": {
+    "split": "ต่ำ",
+    "en": "low",
+    "fr": "bas",
+    "tones": "L",
+    "pos": "",
+    "th": "ต่ำ",
+    "teaching_order": -1
+  },
+  "748": {
+    "split": "เชียง-ราย",
+    "en": "Chiangrai",
+    "fr": "Chiangraï",
+    "tones": "MM",
+    "pos": "",
+    "th": "เชียงราย",
+    "teaching_order": -1
+  },
+  "749": {
+    "split": "น่า-เบื่อ",
+    "en": "to be boring, dull",
+    "fr": "ennuyeux",
+    "tones": "FL",
+    "pos": "",
+    "th": "น่าเบื่อ",
     "teaching_order": -1
   }
 }

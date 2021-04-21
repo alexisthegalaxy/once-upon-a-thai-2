@@ -955,7 +955,7 @@
     "word_ids": [251, 345, 347, 366]
   },
   "170": {
-    "th": "ฉัน_คิด_ว่า_มะ=ม่วง_มี_ความ-หวาน_มาก_กว่า_สับ-ปะ-รด",
+    "th": "ฉัน_คิด_ว่า_มะ=ม่วง_มี_ความ-หวาน_มาก_กว่า_สับ=ปะ=รด",
     "en": "I think mangoes are sweeter than pineapples.",
     "word_ids": [24, 197, 184, 262, 236, 376, 366, 182, 326]
   },
@@ -1026,7 +1026,7 @@
     "speaker_gender": "F"
   },
   "183": {
-    "th": "เขา_ซื้อ_น้ำ_สับ-ปะ-รด_ให้_เธอ_แต่_เธอ_ป=ฏิ=เสธ_ที่_จะ_รับ_มัน",
+    "th": "เขา_ซื้อ_น้ำ_สับ=ปะ=รด_ให้_เธอ_แต่_เธอ_ป=ฏิ=เสธ_ที่_จะ_รับ_มัน",
     "en": "He bought her a pineapple juice but she refused to take it.",
     "word_ids": [26, 212, 156, 326, 51, 25, 41, 25, 389, 45, 42, 221, 27]
   },
@@ -1732,7 +1732,7 @@
     "word_ids": [170, 40, 23, 306, 212, 156]
   },
   "299": {
-    "th": "สับ-ปะ-รด_มี_น้ำ_เยอะ_มาก",
+    "th": "สับ=ปะ=รด_มี_น้ำ_เยอะ_มาก",
     "en": "There{'s/ is} a lot of water in {pineapples/a pineapple}.",
     "fr": "Il y a beaucoup d'eau dans {les ananas/un ananas}.",
     "word_ids": [326, 236, 156, 173, 366]
@@ -3643,10 +3643,10 @@
     "word_ids": [715, 216, 539]
   },
   "620": {
-    "th": "เชียง=ใหม่_อยู่_ใกล้_กับ_เชียง=ราย",
-    "en": "Chiangmai is {close/near} {to/from/with/} Chiangrai.",
-    "fr": "",
-    "word_ids": []
+    "th": "เชียง-ใหม่_อยู่_ใกล้_กับ_เชียง-ราย",
+    "en": "Chiang{/ }mai is {close/near} {to/from/with/} Chiang{/ }rai.",
+    "fr": "Chiang{/ }maï est {proche/à côté} de Chiang{/ }raï.",
+    "word_ids": [716, 237, 93, 46, 748]
   },
   "621": {
     "th": "ทำ-ไม_คุณ_ทำ-ให้_ฉัน_กิน_ผัก",
@@ -3664,31 +3664,31 @@
     "th": "รา=คา_ต่ำ_มาก_ตอน-นี้",
     "en": "The price is very low now.|Now the price is very low.",
     "fr": "Le prix est très bas maintenant.|Maintenant le prix est très bas.",
-    "word_ids": []
+    "word_ids": [620, 747, 366, 67]
   },
   "624": {
-    "th": "ทำ-ไม_ครู_ยัง_ไม่_อยู่_ที่=นี่",
+    "th": "ทำ-ไม_ครู_ยัง_ไม่_อยู่_ที่-นี่",
     "en": "Why isn't the teacher here yet?",
     "fr": "Pourquoi {/est-ce que }{le professeur/le prof/la prof/la professeure} (n')est pas encore {là/ici/arrivé/arrivée} ?",
-    "word_ids": []
+    "word_ids": [59, 150, 180, 39, 237, 37]
   },
   "625": {
     "th": "มัน_สำ=คัญ_ใน_บาง_ส=ถา=น-การณ์",
     "en": "{It/That/This}{'s/ is} important in {some/certain} {situations/occasions}.",
     "fr": "C'est important dans {certaines/quelques} {circonstances/situations/occasions}.",
-    "word_ids": []
+    "word_ids": [27, 628, 44, 718, 746]
   },
   "626": {
     "th": "มัน_อาจ-จะ_น่า-เบื่อ",
     "en": "It might be boring.",
     "fr": "Ça {peut/pourrait} être {ennuyant/ennuyeux/chiant}.",
-    "word_ids": []
+    "word_ids": [27, 689, 749]
   },
   "627": {
-    "th": "แล้ว_พบ-กัน_ค่ะ",
+    "th": "แล้ว_พบ_กัน_ค่ะ",
     "en": "See you{/ later}!",
     "fr": "{À plus/À bientôt/Au revoir} !",
-    "word_ids": []
+    "word_ids": [172, 373, 608, 11]
   },
   "628": {
     "th": "ยาย_ของ_ฉัน_เต้น_เก่ง_กว่า_คุณ",
@@ -3778,7 +3778,7 @@
     "th": "เรา_น่า-จะ_ติด-ต่อ_กัน_บ่อย_ๆ_นะ",
     "en": "We should contact each other often.|We should keep in touch.",
     "fr": "{Nous devrions/On devrait} {nous contacter/se contacter/rester en contact} souvent.",
-    "word_ids": []
+    "word_ids": [29, 307, 745, 608, 523, 461, 13]
   },
   "643": {
     "th": "เธอ_ยัง_มี_เบอร์_โทร_ฉัน_อยู่_ใช่-ไหม",
@@ -3827,5 +3827,65 @@
     "en": "I use this app to learn Spanish.",
     "fr": "J'utilise cette application pour apprendre l'espagnol.",
     "word_ids": [24, 222, 727, 31, 491, 198, 273, 256]
+  },
+  "651": {
+    "th": "ฉัน_ซื้อ_กระ=เป๋า_สี-ชม=พู_ใบ_นี้_ที่_เชียง-ใหม่",
+    "en": "I bought this pink bag{/s} in Chiang( )Mai.",
+    "fr": "J'ai acheté {ce sac rose/ces sacs roses} à Chiang( )Mai.",
+    "word_ids": [24, 212, 278, 119, 744, 31, 45, 716]
+  },
+  "652": {
+    "th": "ทำ-ไม_เขา_ถึง_กลัว_แบบ-นี้",
+    "en": "Why is {/s}he scared like this?",
+    "fr": "Pourquoi {il a/elle a/a-t-elle/a-t-il} peur comme ça ?",
+    "word_ids": [59, 26, 606, 367, 575]
+  },
+  "653": {
+    "th": "ฉัน_ไม่_ชอบ_เล่น_น้ำ_ทะ=เล",
+    "en": "I don't like {to swim/swimming} in the {sea/ocean}.",
+    "fr": "J(e n)'aime pas nager {dans/à} {la mer/l'océan/l'eau de mer}",
+    "word_ids": [24, 39, 238, 205, 156, 639]
+  },
+  "654": {
+    "th": "ฉัน_ใจ-ดี_ก่อน_ที่_พวก-เขา_จะ_เผา_บ้าน_ของ_ฉัน",
+    "en": "I was {kind/nice} before they burned my house.",
+    "fr": "J'étais gentil avant qu'ils {/ne }brûlent ma maison.",
+    "word_ids": [24, 260, 79, 45, 36, 42, 743, 147, 40, 24]
+  },
+  "655": {
+    "th": "คุณ_ต้อง_อยู่_ที่-นี่_จน-กว่า_เท้า_ของ_คุณ_จะ_หาย-ดี",
+    "en": "You need to stay here until your foot is healed.",
+    "fr": "{Tu dois rester/Il faut que tu restes} {ici/là} jusqu'à ce que {ta jambe/tes jambes/tes pieds/ton pied} {soit/est/sont/soient} {guéri/soigné}{e/s/es/}",
+    "word_ids": [28, 199, 237, 37, 734, 192, 40, 28, 42, 735]
+  },
+  "656": {
+    "th": "ฉัน_อ่าน_หนัง=สือ_สิบ-สอง_เล่ม_ใน_ช่วง_ฤ=ดู-ร้อน",
+    "en": "I read {twelve/12} books {during/in} {/the }summer.",
+    "fr": "J'ai lu {douze/12} livres {pendant/durant/dans/en} (l')été.",
+    "word_ids": [24, 203, 261, 742, 392, 44, 385, 550]
+  },
+  "657": {
+    "th": "สับ=ปะ=รด_เติบ-โต_ใน_ยุ=โรป_หรือ-ไม่",
+    "en": "{Do/Can} pineapples grow in Europe{/ or not}?",
+    "fr": "Est-ce que les ananas {poussent/peuvent pousser} en Europe ?|Les ananas {poussent-ils/peuvent-ils pousser} en Europe {/ou pas }?",
+    "word_ids": [326, 741, 44, 688, 676]
+  },
+  "658": {
+    "th": "ขา_ของ_ฉัน_เจ็บ_เพราะ_ฉัน_วิ่ง_เมื่อ-วาน-นี้",
+    "en": "My {leg/legs/feet/foot} {hurt/hurts/are hurting/is hurting} because I ran yesterday.",
+    "fr": "{Mes jambes/Ma jambe/Mes pieds/Mon pied} {/me }{font/fait} mal {parce que/car} j'ai couru hier.",
+    "word_ids": [191, 40, 24, 736, 178, 24, 240, 66]
+  },
+  "659": {
+    "th": "สี-ม่วง_เป็น_สี_นำ-โชค_ใน_วัน-เสาร์",
+    "en": "{/The }Purple is the {lucky color/color that gives good luck/color that gives good fortune} on Saturday{/s}",
+    "fr": "Le violet {est la couleur porte-bonheur/est la couleur chanceuse/porte bonheur/porte chance} {le samedi/les samedis}.",
+    "word_ids": [105, 207, 122, 737, 44, 740]
+  },
+  "660": {
+    "th": "เรา_ต้อง_ปรุง_ปลา_นาน-แค่-ไหน",
+    "en": "How long do we need to cook the fish for?|We need to cook the fish for how long?",
+    "fr": "{/Pendant }Combien de temps {doit-on/devons-nous/faut-il} (faire ){cuire/cuisiner} {le poisson/les poissons} ?|{Nous devons/On doit/Il faut qu'on} (faire /fasse ){cuire/cuisiner} {le poisson/les poissons} {/pendant }combien de temps?",
+    "word_ids": [29, 199, 738, 138, 739]
   }
 }
