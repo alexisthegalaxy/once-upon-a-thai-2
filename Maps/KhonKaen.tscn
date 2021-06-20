@@ -6,12 +6,12 @@
 [ext_resource path="res://World/Tree.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/InternetCafe.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=6]
-[ext_resource path="res://CliffTileMap.tscn" type="PackedScene" id=7]
+[ext_resource path="res://World/tilesets/CliffTileMap.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Lexical/Letter/CollectibleLetter.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Npcs/Npc.tscn" type="PackedScene" id=11]
-[ext_resource path="res://WaterTileMap.tscn" type="PackedScene" id=12]
+[ext_resource path="res://World/tilesets/WaterTileMap.tscn" type="PackedScene" id=12]
 [ext_resource path="res://World/Tree2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
 [ext_resource path="res://World/Locations.tscn" type="PackedScene" id=15]
@@ -24,6 +24,8 @@
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=30]
 [ext_resource path="res://World/PetHouse.tscn" type="PackedScene" id=31]
 [ext_resource path="res://World/Konbini.tscn" type="PackedScene" id=37]
+
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 36.9876, 29.4021 )

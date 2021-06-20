@@ -20,9 +20,12 @@ tileset_path = "/root/Palace/Level/CliffTileMap"
 tileset_name = "CliffTileset.png 1"
 
 [node name="AnimatedSprite" parent="." index="0"]
-position = Vector2( 19.7757, 19.9555 )
+position = Vector2( 16.9891, 16.9891 )
+scale = Vector2( 0.815, 0.815 )
 frames = SubResource( 2 )
 animation = "Cliff"
 
 [node name="Button" parent="." index="1"]
 modulate = Color( 1, 1, 1, 0.00392157 )
+margin_right = 34.0
+margin_bottom = 34.0

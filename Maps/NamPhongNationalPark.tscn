@@ -4,9 +4,9 @@
 [ext_resource path="res://World/SomHouse.tscn" type="PackedScene" id=2]
 [ext_resource path="res://World/House.tscn" type="PackedScene" id=3]
 [ext_resource path="res://World/Tree.tscn" type="PackedScene" id=4]
-[ext_resource path="res://WaterTileMap.tscn" type="PackedScene" id=5]
+[ext_resource path="res://World/tilesets/WaterTileMap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=6]
-[ext_resource path="res://CliffTileMap.tscn" type="PackedScene" id=7]
+[ext_resource path="res://World/tilesets/CliffTileMap.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/WaterfallAnimation.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Lexical/Letter/CollectibleLetter.tscn" type="PackedScene" id=10]
@@ -21,6 +21,8 @@
 [ext_resource path="res://World/SmallWat.tscn" type="PackedScene" id=27]
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=30]
 [ext_resource path="res://World/Konbini.tscn" type="PackedScene" id=37]
+
+
 
 [node name="NamPhongNationalPark" type="Node2D"]
 position = Vector2( 1, 0 )

@@ -6,7 +6,7 @@
 [ext_resource path="res://World/Tree.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/InternetCafe.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=6]
-[ext_resource path="res://CliffTileMap.tscn" type="PackedScene" id=7]
+[ext_resource path="res://World/tilesets/CliffTileMap.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Lexical/Letter/CollectibleLetter.tscn" type="PackedScene" id=10]
@@ -27,7 +27,7 @@
 [ext_resource path="res://World/Doodad.tscn" type="PackedScene" id=25]
 [ext_resource path="res://World/DirectionSign.tscn" type="PackedScene" id=26]
 [ext_resource path="res://World/SmallWat.tscn" type="PackedScene" id=27]
-[ext_resource path="res://WaterTileMap.tscn" type="PackedScene" id=28]
+[ext_resource path="res://World/tilesets/WaterTileMap.tscn" type="PackedScene" id=28]
 [ext_resource path="res://Lexical/Word/WordStopper.tscn" type="PackedScene" id=29]
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=30]
 [ext_resource path="res://World/PetHouse.tscn" type="PackedScene" id=31]
@@ -5867,7 +5867,7 @@ position = Vector2( 2218.55, -159.948 )
 position = Vector2( 1235.62, 221.922 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 784.628, 889.702 )
+position = Vector2( 193.773, 111.212 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
