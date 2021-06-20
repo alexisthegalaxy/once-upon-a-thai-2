@@ -12,9 +12,11 @@ onready var cursor_sprite = object_cursor.get_node("AnimatedSprite")
 func item_clicked(event):
 	if event is InputEvent and event.is_action_pressed("click"):
 		_on_click()
+		print('item_clicked')
 
 func _on_Button_pressed():
 	_on_click()
+	print('_on_Button_pressed')
 
 func _on_click():
 	object_cursor.current_item = this_scene

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Light/light.png" type="Texture" id=2]
@@ -11,7 +11,6 @@
 [ext_resource path="res://World/TempleFloor.png" type="Texture" id=9]
 [ext_resource path="res://World/Computer.tscn" type="PackedScene" id=10]
 [ext_resource path="res://World/Locations.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Lexical/Word/Spell.tscn" type="PackedScene" id=12]
 [ext_resource path="res://World/CanvasModulate.gd" type="Script" id=14]
 [ext_resource path="res://World/Teleport.tscn" type="PackedScene" id=18]
 
@@ -66,6 +65,12 @@ position = Vector2( 127.286, 32.0547 )
 dialog = [ "..." ]
 sprite_path = "res://Npcs/sprites/meditating_monk.png"
 
+[node name="Monk2" parent="YSort/NPCs" instance=ExtResource( 3 )]
+position = Vector2( 303.021, -253.848 )
+dialog = [ "..." ]
+sprite_path = "res://Npcs/sprites/meditating_monk.png"
+post_dialog_event = [ "teach_sentence", 200 ]
+
 [node name="QuestGiverMonk" parent="YSort/NPCs" instance=ExtResource( 3 )]
 position = Vector2( 68.7152, 12.0266 )
 dialog = [ "_how_are_you_doing_name" ]
@@ -105,10 +110,6 @@ sprite_path = "res://Npcs/sprites/ploysgrandmother.png"
 display_name = "Anchalee"
 start_quests = [ "find_sentences_in_chaiyaphum", "implant_source_behind_the_temple", "implant_any_source_with_dtat", "talk_to_ajahn_jagaro_in_chaiyaphum" ]
 finish_quests = [ "find_sentences_in_chaiyaphum", "implant_source_behind_the_temple", "implant_any_source_with_dtat" ]
-
-[node name="Spell" parent="YSort" instance=ExtResource( 12 )]
-position = Vector2( 50.729, 67.8769 )
-id = 401
 
 [node name="Lights" type="Node" parent="."]
 

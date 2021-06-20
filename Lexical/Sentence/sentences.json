@@ -3887,5 +3887,65 @@
     "en": "How long do we need to cook the fish for?|We need to cook the fish for how long?",
     "fr": "{/Pendant }Combien de temps {doit-on/devons-nous/faut-il} (faire ){cuire/cuisiner} {le poisson/les poissons} ?|{Nous devons/On doit/Il faut qu'on} (faire /fasse ){cuire/cuisiner} {le poisson/les poissons} {/pendant }combien de temps?",
     "word_ids": [29, 199, 738, 138, 739]
+  },
+  "661": {
+    "th": "เรา_อา=ศัย_อยู่_ภาย_ใต้_ท้อง-ฟ้า_เดียว-กัน",
+    "en": "We live under the same sky.",
+    "fr": "",
+    "word_ids": []
+  },
+  "662": {
+    "th": "ฉัน_กำ=ลัง_สวม_ชุด_โปรด_ของ_ฉัน",
+    "en": "I'm wearing my favorite dress.",
+    "fr": "",
+    "word_ids": []
+  },
+  "663": {
+    "th": "ฉัน_ชอบ_ฟัง_นก_ตอน_ตื่น_นอน",
+    "en": "I like to listen to birds when I wake up.",
+    "fr": "",
+    "word_ids": []
+  },
+  "664": {
+    "th": "ก=รุ=ณา_ให้_โท=ร=ศัพท์_ของ_คุณ",
+    "en": "Please give me your phone.",
+    "fr": "",
+    "word_ids": []
+  },
+  "665": {
+    "th": "อยาก_กิน_อะ-ไร_หวาน_ๆ",
+    "en": "{I/We/You}{'d like/ want} to {eat/drink} something sweet.",
+    "fr": "",
+    "word_ids": []
+  },
+  "666": {
+    "th": "น้ำ_ร้อน_เกิน-ไป",
+    "en": "The water is too hot.",
+    "fr": "L'eau est trop chaude.",
+    "word_ids": []
+  },
+  "667": {
+    "th": "ฉันไม่ได้ยินคุณพูดซ้ำได้ไหม",
+    "en": "I didn't hear you, can you repeat?",
+    "fr": "",
+    "word_ids": []
+  },
+  "668": {
+    "th": "อินเทอร์เน็ตของฉันช้าเกินไปที่จะดูภาพยนตร์",
+    "en": "My internet is too slow to watch a movie.",
+    "fr": "",
+    "word_ids": []
+  },
+  "669": {
+    "th": "คุณสามารถเรียนรู้คำศัพท์ได้กี่คำในหนึ่งชั่วโมง?",
+    "en": "How many words can you learn in one hour?",
+    "fr": "",
+    "word_ids": []
+  },
+  "670": {
+    "th": "เบียร์ที่ได้รับความนิยมมากที่สุดในประเทศไทยคืออะไร?",
+    "en": "What is the most popular beer in Thailand?",
+    "fr": "",
+    "word_ids": []
   }
 }

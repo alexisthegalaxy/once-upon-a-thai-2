@@ -17,7 +17,7 @@ _global_script_class_icons={
 
 config/name="Once upon a Thai"
 config/description="Save Thailand from evil forces using Thai, a magical language whose words grant you power over reality."
-run/main_scene="res://Maps/NamPhongNationalPark.tscn"
+run/main_scene="res://Palace/Palace.tscn"
 
 [autoload]
 
@@ -310,12 +310,12 @@ kb_p={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":80,"unicode":0,"echo":false,"script":null)
  ]
 }
-kb_[={
+kb_braceleft={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":123,"unicode":0,"echo":false,"script":null)
  ]
 }
-kb_]={
+kb_braceright={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":125,"unicode":0,"echo":false,"script":null)
  ]

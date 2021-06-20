@@ -6,15 +6,15 @@ var state_3 = false
 var events = {
 	"money_is_visible": state_2,
 	"has_possessed_a_letter": state_2,
-	"has_the_map": initial_state,
-	"ploy_has_stopped_in_front_of_house": state_3,
-	"has_met_ploy": state_3,
-	"has_met_pet": state_3,
+	"has_the_map": state_2,
+	"ploy_has_stopped_in_front_of_house": state_2,
+	"has_met_ploy": state_2,
+	"has_met_pet": state_2,
+	"yaai_has_disappeared": state_2,
 	"has_learnt_four_first_words": state_3,
 	"yaai_has_given_last_warning_before_forest": state_3,
 	"yaai_taught_first_sentence": state_3,  # should use known_sentences instead
 	"has_had_a_quest": state_3,
-#	"has_gone_to_first_sentence": initial_state,
 	"ceremony_started": state_3,
 	"yaai_went_to_the_tree": state_3,
 	"talked_to_yaai_for_the_first_time": state_3,
@@ -84,6 +84,8 @@ func npc_teaches_discreetly_words(word_ids):
 
 func npc_disappears_in_white_orb(parameters):
 	var npc = parameters[0]
+	if npc.name == "Yaai":
+		Events.events.yaai_has_disappeared = true
 	if npc:
 		npc.disappear_in_white_orb()
 
@@ -194,6 +196,7 @@ func ploy_cuts_bush(parameters):
 	add_child(timer_2)
 
 func destroy_bush():
+	SoundPlayer.play_sound("res://Sounds/Effects/cut.wav", 0)
 	var_1.queue_free()
 
 func ploy_talks_again():

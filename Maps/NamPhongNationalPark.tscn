@@ -4031,7 +4031,8 @@ id = 10
 
 [node name="DirectionSign" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 2537.76, -692.601 )
-content = "Huai Khe fountain"
+content = "น้ำตกห้วยเข"
+dialog = [ "_huai_khe_waterfall" ]
 
 [node name="Changelights" type="Node" parent="."]
 

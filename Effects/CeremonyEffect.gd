@@ -34,7 +34,7 @@ func _ready():
 	position = center
 	phase = 1
 	word_index = 0
-	SoundPlayer.crossfade_to("res://Sounds/DevarieuxMusic/Foret 2em cristal.wav", 2.95)
+#	SoundPlayer.crossfade_to("res://Sounds/DevarieuxMusic/Foret 2em cristal.wav", 2.95)
 	Game.is_frozen = true
 	Game.lose_focus(0)
 	for word in initial_words:

@@ -52,19 +52,19 @@ extents = Vector2( 13.7964, 40.9263 )
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 87.3137, 7.46277 )
 
-[sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 36.9876, 29.4021 )
-
-[sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 12.9746, 43.9732 )
-
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 36.9876, 29.4021 )
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 11.6567, 38.2656 )
+extents = Vector2( 12.9746, 43.9732 )
 
 [sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 36.9876, 29.4021 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 11.6567, 38.2656 )
+
+[sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 10.2911, 15.7303 )
 
 [node name="Chaiyaphum" type="Node2D"]
@@ -221,7 +221,7 @@ position = Vector2( 263.188, 493.227 )
 [node name="Bushes" type="YSort" parent="YSort"]
 
 [node name="Bush19" parent="YSort/Bushes" instance=ExtResource( 9 )]
-position = Vector2( 498.613, 37.8099 )
+position = Vector2( 535.171, 6.87665 )
 
 [node name="Bush38" parent="YSort/Bushes" instance=ExtResource( 9 )]
 position = Vector2( 675.738, -93.1106 )
@@ -5808,7 +5808,7 @@ max_number_of_words = 5
 [node name="Words" type="YSort" parent="YSort"]
 
 [node name="pom" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 362.272, -6.3801 )
+position = Vector2( 364.682, 51.469 )
 id = 23
 
 [node name="pom8" parent="YSort/Words" instance=ExtResource( 16 )]
@@ -5840,7 +5840,7 @@ position = Vector2( 1011.99, -568.132 )
 id = 11
 
 [node name="chan" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 470.749, -33.5092 )
+position = Vector2( 421.336, -18.2435 )
 id = 24
 
 [node name="chan2" parent="YSort/Words" instance=ExtResource( 16 )]
@@ -5848,7 +5848,7 @@ position = Vector2( -359.576, 501.336 )
 id = 24
 
 [node name="chawp" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 611.228, -52.5725 )
+position = Vector2( 560.208, -42.1276 )
 id = 238
 
 [node name="PlayerHouse" parent="YSort" instance=ExtResource( 17 )]
@@ -5867,7 +5867,7 @@ position = Vector2( 2218.55, -159.948 )
 position = Vector2( 1235.62, 221.922 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 203.412, 687.905 )
+position = Vector2( 784.628, 889.702 )
 
 [node name="NPCs" type="YSort" parent="YSort"]
 
@@ -5912,14 +5912,14 @@ sprite_path = "res://Npcs/sprites/girl.png"
 wanders = 100
 
 [node name="ILikeThaiPeople" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 578.493, 121.518 )
+position = Vector2( 484.489, 34.7446 )
 dialog = [ "_inter_2_1", "_inter_2_2" ]
 sprite_path = "res://Npcs/sprites/man.png"
 interaction_sentence_id = "S197"
 pre_dialog_event = [ "npc_teaches_discreetly_words", [ 23, 238 ] ]
 
 [node name="GoodPeopleLikeMe" parent="YSort/NPCs" instance=ExtResource( 11 )]
-position = Vector2( 576.862, 147.541 )
+position = Vector2( 501.738, 126.651 )
 dialog = [ "_inter_1_1", "_inter_1_2", "_inter_1_3", "_inter_1_4" ]
 sprite_path = "res://Npcs/sprites/girl.png"
 direction = "right"
@@ -6154,21 +6154,21 @@ position = Vector2( -379.699, 432.03 )
 
 [node name="PloyWillCome" type="CollisionShape2D" parent="PloyWillCome"]
 position = Vector2( 1019.41, -434.12 )
-shape = SubResource( 9 )
+shape = SubResource( 6 )
 
 [node name="PloyInFrontOfHouse" type="Area2D" parent="."]
 position = Vector2( -379.699, 432.03 )
 
 [node name="PloyInFrontOfHouse" type="CollisionShape2D" parent="PloyInFrontOfHouse"]
 position = Vector2( 1468.19, -322.087 )
-shape = SubResource( 10 )
+shape = SubResource( 7 )
 
 [node name="TalkToPloy" type="Area2D" parent="."]
 position = Vector2( -379.699, 432.03 )
 
 [node name="TalkToPloy" type="CollisionShape2D" parent="TalkToPloy"]
 position = Vector2( 1081.47, -305.183 )
-shape = SubResource( 6 )
+shape = SubResource( 8 )
 
 [node name="Area2D3" type="Area2D" parent="."]
 
@@ -6180,7 +6180,7 @@ shape = SubResource( 4 )
 
 [node name="Ceremony starts" type="CollisionShape2D" parent="Area2D4"]
 position = Vector2( 273.901, 527.871 )
-shape = SubResource( 7 )
+shape = SubResource( 9 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -6209,13 +6209,13 @@ scale = Vector2( 0.6, 0.6 )
 
 [node name="EnterSomber" type="CollisionShape2D" parent="EnterSomber"]
 position = Vector2( 1070.76, -181.46 )
-shape = SubResource( 8 )
+shape = SubResource( 10 )
 
 [node name="ExitSomber" type="Area2D" parent="."]
 
 [node name="ExitSomber" type="CollisionShape2D" parent="ExitSomber"]
 position = Vector2( 1070.69, -150.954 )
-shape = SubResource( 8 )
+shape = SubResource( 10 )
 
 [node name="Locations" type="Node" parent="."]
 

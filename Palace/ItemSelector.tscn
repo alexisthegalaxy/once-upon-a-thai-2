@@ -28,12 +28,11 @@ __meta__ = {
 }
 
 [node name="Nature" type="Tabs" parent="TabContainer"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 4.00003
+margin_left = 4.0
 margin_top = 38.0
-margin_right = -3.99997
+margin_right = -4.0
 margin_bottom = -4.0
 custom_fonts/font = SubResource( 1 )
 
@@ -54,6 +53,7 @@ __meta__ = {
 position = Vector2( 12.2208, 16.8785 )
 
 [node name="Terrain" type="Tabs" parent="TabContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0

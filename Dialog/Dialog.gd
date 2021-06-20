@@ -91,27 +91,45 @@ func init_dialog(_dialog, _caller, _post_dialog_event, _post_dialog_signal, spea
 	$Control/Options/Option3.init_option(self, caller, 3)
 	$Control/Options/Option4.init_option(self, caller, 4)
 
+func play_sound_effect():
+	SoundPlayer.play_sound("res://Sounds/Effects/next.wav", 0)
+
 func dialog_ends():
-	SoundPlayer.play_sound("res://Sounds/Effects/next.wav", -10)
+	play_sound_effect()
+	print('a')
 	queue_free()
+	print('b')
 	Game.player.end_dialog()
+	print('c')
 	if caller and "is_talking" in caller:
+		print('d')
 		caller.is_talking = false
+		print('e')
 	if post_dialog_event:
+		print('f')
 		if typeof(post_dialog_event) == TYPE_STRING and post_dialog_event == "post_dialog":
+			print('g')
 			caller.post_dialog()
+			print('h')
 		else:
+			print('i')
 			Events.execute(post_dialog_event[0], post_dialog_event[1])
+			print('j')
 	if post_dialog_signal and caller:
+		print('k')
 		caller.dialog_ended()
+		print('l')
+	print('m')
 	if caller and caller and caller.has_method("start_quest"):
 		caller.start_quest()
-
+		
+	print('n')
 	Game.reset_focus()
+	print('o')
 #	Game.loses_focus(Game.current_focus)
 
 func next_line():
-	SoundPlayer.play_sound("res://Sounds/Effects/next.wav", -10)
+	play_sound_effect()
 	page += 1
 	if page >= dialog.size():
 		dialog_ends()

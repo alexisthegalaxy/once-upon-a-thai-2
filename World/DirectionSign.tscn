@@ -8,7 +8,7 @@
 extents = Vector2( 3.72099, 2.6785 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 8
+size = 6
 font_data = ExtResource( 1 )
 
 [sub_resource type="CircleShape2D" id=3]
@@ -18,8 +18,11 @@ radius = 13.0947
 script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0.30233, -10.9595 )
+position = Vector2( 0.30233, -10.8839 )
 texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Area2D" type="StaticBody2D" parent="."]
 position = Vector2( 0.30233, -10.9595 )
@@ -29,10 +32,10 @@ position = Vector2( -0.453499, 10.0525 )
 shape = SubResource( 1 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = -11.0
-margin_top = -17.0
-margin_right = 10.0
-margin_bottom = -4.0
+margin_left = -10.8488
+margin_top = -16.093
+margin_right = 10.1512
+margin_bottom = -3.093
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "ชัยภูมิ"
@@ -46,5 +49,8 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( -0.0755844, -2.79657 )
 shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
 [connection signal="body_exited" from="Area2D2" to="." method="_on_Area2D2_body_exited"]

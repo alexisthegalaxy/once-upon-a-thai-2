@@ -117,9 +117,9 @@ func _input(_event):
 		$"น"._on_Button_pressed()
 	elif _event.is_action_pressed("kb_p"):
 		$"ย"._on_Button_pressed()
-	elif _event.is_action_pressed("kb_["):
+	elif _event.is_action_pressed("kb_braceleft"):
 		$"บ"._on_Button_pressed()
-	elif _event.is_action_pressed("kb_]"):
+	elif _event.is_action_pressed("kb_braceright"):
 		$"ล"._on_Button_pressed()
 
 	# Third row

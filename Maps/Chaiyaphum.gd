@@ -4,10 +4,7 @@ var is_blackening = false
 var alpha = 0
 var province = "chaiyaphum"
 
-# This is the letters yaai asks us to fetch the first time we come in the Memory Palace
-#var initial_letters = [0, 6, 9, 11, 13, 17, 19, 21, 28, 36]  # outdated
-var initial_letters = [11, 13, 28, 0, 21]  # correct
-#var initial_letters = [0]
+var initial_letters = [11, 13, 28, 0, 21]
 
 onready var ploy = $YSort/NPCs/Ploy
 onready var pet = $YSort/NPCs/Pet
@@ -29,7 +26,9 @@ func _ready():
 		$YSort/Shards/MoHinKhao.queue_free()
 
 func yaai_arc():
-	if Events.events.has_learnt_four_first_words:
+	if Events.events.yaai_has_disappeared:
+		yaai.queue_free()
+	elif Events.events.has_learnt_four_first_words:
 		set_events_when_has_learnt_four_first_words()
 	elif Events.events.yaai_has_given_last_warning_before_forest:
 		yaai.position = Vector2(196, 652)
@@ -40,9 +39,6 @@ func yaai_arc():
 			tr("_good_luck_ill_watch_you_from_here"),
 		]
 		yaai.post_dialog_event = []
-#	elif Events.events.has_gone_to_first_sentence:
-#		$YSort/NPCs/Yaai.position = Vector2(202.29, 654.29)
-#		$YSort/NPCs/Yaai.set_direction("right")
 	elif Events.events["yaai_went_to_the_tree"]:
 		yaai.position = Vector2(245.153534, 523.72229)
 		yaai.set_direction("right")
