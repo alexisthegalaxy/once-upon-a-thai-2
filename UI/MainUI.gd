@@ -18,6 +18,7 @@ func _ready():
 
 func update_main_ui():
 	update_main_ui_money_display()
+	update_main_ui_known_words_display(null)
 	update_main_ui_letters_display()
 	update_main_ui_words_display()
 	update_main_ui_sentences_display()
@@ -43,6 +44,18 @@ func update_main_ui_sentences_display():
 		$Sentences.show()
 	else:
 		$Sentences.hide()
+
+func update_main_ui_known_words_display(value):
+	if Events.events.known_words_are_visible:
+		$KnownWords.show()
+		var number_of_words
+		if value:
+			number_of_words = str(value)
+		else:
+			number_of_words = str(len(Game.known_words))
+		$KnownWords/Label.text = tr("_known_words") + number_of_words
+	else:
+		$KnownWords.hide()
 
 func update_main_ui_money_display():
 	if Events.events.money_is_visible:

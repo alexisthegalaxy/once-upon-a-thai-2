@@ -430,7 +430,7 @@
   },
   "73": {
     "th": "คุณ_เป็น_ช้าง",
-    "en": "You are an elephant.",
+    "en": "{You are/You're} an elephant.",
     "word_ids": [28, 207, 136]
   },
   "74": {
@@ -1280,13 +1280,13 @@
   },
   "225": {
     "th": "คุณ_สวย_ค่ะ",
-    "en": "You are {beautiful/pretty}.",
+    "en": "{You are/You're} {beautiful/pretty}.",
     "fr": "Tu es [m:beau; f:belle; n:belleau].",
     "word_ids": [28, 340, 11]
   },
   "226": {
     "th": "คุณ_เป็น_คน_ไทย_หรือ_ไม่_ครับ",
-    "en": "{Are you/You are} Thai( or not)?",
+    "en": "{Are you/You are/You're} Thai( or not)?",
     "fr": "{Tu es/Es-tu/Vous êtes/Êtes-vous} [m:thaï; f:thaïe; n:thaï·e]( ou pas) ?",
     "word_ids": [28, 207, 343, 345, 436, 39, 9]
   },
@@ -1382,13 +1382,13 @@
   },
   "242": {
     "th": "ผม_ชอบ_อยู่_ที่-นี่_ครับ",
-    "en": "I like being here.",
+    "en": "I like {being/to be} here.",
     "fr": "J'aime bien être ici.",
     "word_ids": [23, 238, 237, 37, 9]
   },
   "243": {
     "th": "ผม_คือ_คุณ_และ_คุณ_คือ_ผม_ครับ",
-    "en": "I am you and you are me.",
+    "en": "{I am/I'm} you and {you are/you're} me.",
     "fr": "Je suis toi et tu es moi.",
     "word_ids": [23, 206, 28, 384, 28, 206, 23, 9]
   },
@@ -1454,19 +1454,19 @@
   },
   "254": {
     "th": "คุณ_มา_สาย_สอง_ชั่ว-โมง_ค่ะ",
-    "en": "You are two hours late.",
+    "en": "{You are/You're} {two hours late/late by two hours}.",
     "fr": "Tu es en retard de deux heures.",
     "word_ids": [28, 202, 22, 225, 440, 11]
   },
   "255": {
     "th": "ทำ-ไม_เขา_กลับ_มา_ที่_บ้าน_ครับ",
-    "en": "Why does he come back home?",
-    "fr": "Pourquoi rentre-t-il à la maison ?",
+    "en": "Why does he come back {/to }home?",
+    "fr": "Pourquoi {rentre-t-il/est-ce qu'il rentre/il rentre} à la maison ?",
     "word_ids": [59, 26, 220, 202, 45, 147, 9]
   },
   "256": {
     "th": "ผม_อยาก_เข้า-ใจ_ความ_รู้-สึก_ของ_คน_ที่_ผม_ได้_พบ_ครับ",
-    "en": "I want to understand the feelings of the people I meet.",
+    "en": "I want to understand {the feelings of the people I meet/what people I meet feel}.",
     "fr": "Je veux comprendre les sensations des gens que je rencontre.",
     "word_ids": [23, 241, 417, 441, 442, 40, 343, 45, 23, 209, 373, 9]
   },
@@ -1496,8 +1496,8 @@
   },
   "261": {
     "th": "ผม_ต้อง_กิน_ทั้ง-หมด_เหรอ_ครับ",
-    "en": "I have to eat everything?",
-    "fr": "Je dois tout manger ?",
+    "en": "{I have to/I must/Do I have to/Must I} eat everything?",
+    "fr": "{Je dois/Dois-je} tout manger ?",
     "word_ids": [23, 199, 193, 444, 16, 9]
   },
   "262": {

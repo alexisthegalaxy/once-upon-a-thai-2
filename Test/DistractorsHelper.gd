@@ -164,6 +164,7 @@ func clean_sentence(_sentence):
 	sentence = sentence.replace("?", "").replace("ʼ", "'")
 	sentence = sentence.replace("ï", "i").replace("ç", "c")
 	sentence = sentence.replace("è", "e").replace("é", "e").replace("ê", "e")
+	sentence = sentence.to_upper()
 #	var result = ""
 #	for letter in sentence:
 #		if letter == "(":

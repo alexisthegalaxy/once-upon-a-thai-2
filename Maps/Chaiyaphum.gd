@@ -114,6 +114,8 @@ func _on_Area2D4_body_entered(body):
 	if body == Game.player:
 		if not Events.events["ceremony_started"]:
 			Events.events["ceremony_started"] = true
+			Events.events["known_words_are_visible"] = true
+			Game.main_ui.update_main_ui_known_words_display(len(Game.words))
 			yaai.dialog = [
 				tr("_yaai_2_a"),
 				tr("_yaai_2_b"),

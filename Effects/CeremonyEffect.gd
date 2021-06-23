@@ -16,6 +16,7 @@ var y_delta
 const y_initial_delta = 20
 var time_to_next_word_creation = 0.5
 var released_words = 0
+var displayed_released_words = 0
 var yaai = null
 
 """
@@ -82,6 +83,12 @@ func _process(delta):
 			ceremony_leaving_word_orb.init_ceremony_leaving_word_orb(time + 10)
 			ceremony_leaving_word_orb.position = center
 			released_words += 1
+			displayed_released_words += 1
+			if displayed_released_words > 100:
+				displayed_released_words += 1
+			if displayed_released_words > 400:
+				displayed_released_words += 1
+			Game.main_ui.update_main_ui_known_words_display(max(len(Game.words) - displayed_released_words, 0))
 			if released_words > 400:
 				phase = 3
 	if phase == 3:

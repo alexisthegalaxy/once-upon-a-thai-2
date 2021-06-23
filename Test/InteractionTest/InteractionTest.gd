@@ -4,6 +4,7 @@ var interaction_sentence_id
 var sentence_id
 var sentence
 var npc
+var sentences_fragments
 var lo = TranslationServer.get_locale()
 
 func get_sentence_id():
@@ -17,7 +18,7 @@ func init_interaction_test(_interaction_sentence_id, _npc):
 	sentence_id = get_sentence_id()
 	sentence = Game.sentences[sentence_id]
 	$InteractiveSentence.init_interactive_sentence(sentence, null, true, true, false)
-	var sentences_fragments = DistractorsHelper.get_distractors_for_words_in_sentence(sentence, 15)
+	sentences_fragments = DistractorsHelper.get_distractors_for_words_in_sentence(sentence, 15)
 	
 	$Button0.text = sentences_fragments[0]
 	$Button1.text = sentences_fragments[1]
@@ -56,6 +57,9 @@ func on_button_pressed(button):
 
 func _on_Cross_pressed():
 	reset_text()
+
+func _ready():
+	$Input.grab_focus()
 
 func on_correct():
 	SoundPlayer.play_sound("res://Sounds/Effects/correct.wav", 0)
@@ -112,3 +116,18 @@ func _on_GiveUp_pressed():
 	Game.is_frozen = false
 	queue_free()
 #	npc.update_npc_overhead()
+
+
+func _on_Input_text_changed(new_text):
+	for i in range(sentences_fragments.size()):
+		if sentences_fragments[i] in DistractorsHelper.clean_sentence(new_text):
+			get_node("Button" + str(i)).hide()
+		else:
+			get_node("Button" + str(i)).show()
+	# new_text is the full content of the lineEdit
+	pass
+
+
+func _on_Input_text_entered(new_text):
+	# When we press enter
+	_on_Submit_pressed()

@@ -22,8 +22,6 @@
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=30]
 [ext_resource path="res://World/Konbini.tscn" type="PackedScene" id=37]
 
-
-
 [node name="NamPhongNationalPark" type="Node2D"]
 position = Vector2( 1, 0 )
 script = ExtResource( 20 )

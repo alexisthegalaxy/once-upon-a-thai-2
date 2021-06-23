@@ -73,4 +73,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="KnownWords" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="KnownWords"]
+position = Vector2( 276.431, 8.00899 )
+scale = Vector2( 0.0555388, 0.0382404 )
+texture = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="KnownWords"]
+margin_left = 232.0
+margin_right = 318.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Known Words: 1230"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="QuestsDisplay" parent="." instance=ExtResource( 5 )]

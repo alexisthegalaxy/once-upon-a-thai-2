@@ -199,6 +199,7 @@ func lose_focus(target):
 func learn_word(word_id):
 	SoundPlayer.play_sound("res://Sounds/Effects/success_short.wav", 0)
 	Quests.update_learn_word_quests(word_id)
+	main_ui.update_main_ui_known_words_display(null)
 	if not word_id in Game.known_words:
 		Game.known_words.append(word_id)
 		Game.main_ui.update_main_ui_words_display()

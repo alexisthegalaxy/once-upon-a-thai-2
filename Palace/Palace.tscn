@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Palace/EditorObject.gd" type="Script" id=1]
 [ext_resource path="res://Palace/ItemSelector.tscn" type="PackedScene" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Palace/Background/planet1.png" type="Texture" id=10]
 [ext_resource path="res://Palace/Background/planet2.png" type="Texture" id=11]
 [ext_resource path="res://Palace/Background/planet3.png" type="Texture" id=12]
+[ext_resource path="res://Light/light.png" type="Texture" id=13]
 
 [node name="Palace" type="Node2D"]
 script = ExtResource( 7 )
@@ -33,6 +34,10 @@ tile_data = PoolIntArray( -524285, 0, 0, -524284, 0, 1, -524283, 0, 1, -524282, 
 
 [node name="Player" parent="Level/YSort" instance=ExtResource( 3 )]
 position = Vector2( 184.474, 112.722 )
+
+[node name="Light2D" type="Light2D" parent="Level/YSort/Player"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 13 )
 
 [node name="House" parent="Level/YSort" instance=ExtResource( 4 )]
 position = Vector2( 102.564, 104.865 )
@@ -86,3 +91,6 @@ motion_scale = Vector2( 0.3, 0.3 )
 position = Vector2( 117.127, -49.3529 )
 scale = Vector2( 0.085, 0.085 )
 texture = ExtResource( 11 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.439216, 0.439216, 0.439216, 1 )

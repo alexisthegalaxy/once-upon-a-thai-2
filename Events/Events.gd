@@ -16,6 +16,7 @@ var events = {
 	"yaai_taught_first_sentence": state_3,  # should use known_sentences instead
 	"has_had_a_quest": state_3,
 	"ceremony_started": state_3,
+	"known_words_are_visible": state_3,
 	"yaai_went_to_the_tree": state_3,
 	"talked_to_yaai_for_the_first_time": state_3,
 	"talked_to_nim_at_the_beginning": state_3,
