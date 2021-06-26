@@ -95,7 +95,6 @@ var notebook = null                                              # SCREEN
 var word_page = null                                             # SCREEN
 var letter_page = null                                           # SCREEN
 var exit_screen = null                                           # SCREEN
-var spell_crafting_screen = null                                 # SCREEN
 var map = null                                                   # SCREEN
 var palace = null                                                # SCREEN
 ################################################################## SCREEN
@@ -114,7 +113,7 @@ func is_overworld_frozen():
 		word_page or
 		letter_page or
 		vending_screen or 
-		spell_crafting_screen or 
+		palace or 
 		map or 
 		select_follower_to_implant_screen
 	)
@@ -313,9 +312,6 @@ func _input(_event):
 		elif letter_page:
 			letter_page.queue_free()
 			letter_page = null
-		elif spell_crafting_screen:
-			spell_crafting_screen.queue_free()
-			spell_crafting_screen = null
 		elif select_follower_to_implant_screen:
 			select_follower_to_implant_screen.queue_free()
 			select_follower_to_implant_screen = null
@@ -348,14 +344,14 @@ func show_exit_screen():
 func _process(delta):
 	OS.set_window_title("Once upon a Thai | fps: " + str(Engine.get_frames_per_second()))
 	if change_color:
-#		var canvas_modulate = current_scene.get_node("Lights").get_node("CanvasModulate")
 		var canvas_modulate = current_scene.get_node("Lights/CanvasModulate")
-		var direction = Vector3(goal_color.r, goal_color.g, goal_color.b) - Vector3(canvas_modulate.color.r, canvas_modulate.color.g, canvas_modulate.color.b)
-		if direction.length() < 0.0001:
-			change_color = false
-		canvas_modulate.color.r += delta * direction.x
-		canvas_modulate.color.g += delta * direction.y
-		canvas_modulate.color.b += delta * direction.z
+		if canvas_modulate:
+			var direction = Vector3(goal_color.r, goal_color.g, goal_color.b) - Vector3(canvas_modulate.color.r, canvas_modulate.color.g, canvas_modulate.color.b)
+			if direction.length() < 0.0001:
+				change_color = false
+			canvas_modulate.color.r += delta * direction.x
+			canvas_modulate.color.g += delta * direction.y
+			canvas_modulate.color.b += delta * direction.z
 	if canvas_color_screen:
 		canvas_color_screen.color.a = min(1, canvas_color_screen.color.a + delta)
 

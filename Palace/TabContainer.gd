@@ -1,6 +1,6 @@
 extends TabContainer
 
-onready var object_cursor = get_node("/root/Palace/EditorObjectOnCursor")
+onready var object_cursor = Game.palace.get_node("EditorObjectOnCursor")
 
 func _on_TabContainer_mouse_entered():
 	object_cursor.can_place = false

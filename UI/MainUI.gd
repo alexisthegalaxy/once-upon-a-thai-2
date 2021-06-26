@@ -8,10 +8,13 @@ func _ready():
 	$Sentences._init_main_ui_button("_see_sentences")
 	$Quests._init_main_ui_button("_quests")
 	$UseSpell._init_main_ui_button("_use_spell")
-	$MakeSpell._init_main_ui_button("_make_spell")
+	if Game.palace:
+		$Palace._init_main_ui_button("_leave_palace")
+	else:
+		$Palace._init_main_ui_button("_palace")
 	$Save._init_main_ui_button("_save_the_game")
 	$Map._init_main_ui_button("_map")
-	for button in [$Letters, $Words, $Sentences, $Quests, $UseSpell, $MakeSpell, $Save, $Map]:
+	for button in [$Letters, $Words, $Sentences, $Quests, $UseSpell, $Palace, $Save, $Map]:
 		button.connect("is_pressed", self, "on_button_pressed")
 		button.connect("is_hovered", self, "on_button_hovered")
 		button.connect("is_not_hovered", self, "on_button_not_hovered")
@@ -23,7 +26,7 @@ func update_main_ui():
 	update_main_ui_words_display()
 	update_main_ui_sentences_display()
 	update_main_ui_use_spell_display()
-	update_main_ui_make_spell_display()
+	update_main_ui_palace_display()
 	update_main_ui_quests_display()
 	update_main_ui_map_display()
 
@@ -70,11 +73,15 @@ func update_main_ui_use_spell_display():
 	else:
 		$UseSpell.hide()
 
-func update_main_ui_make_spell_display():
-	if Events.events.has_possessed_a_letter and "find_sentences_in_chaiyaphum" in Quests.quests and Quests.quests.find_sentences_in_chaiyaphum.status == Quests.DONE:
-		$MakeSpell.show()
+func update_main_ui_palace_display():
+	if Events.events.can_see_palace:
+		$Palace.show()
+		if Game.palace:
+			$Palace._init_main_ui_button("_leave_palace")
+		else:
+			$Palace._init_main_ui_button("_palace")
 	else:
-		$MakeSpell.hide()
+		$Palace.hide()
 
 func update_main_ui_quests_display():
 	if Events.events.has_had_a_quest or Quests.has_quests_in_progress_or_finished():
@@ -118,8 +125,10 @@ func on_button_pressed(type):
 		$QuestsDisplay._press_quests_button()
 	elif type == "_use_spell":
 		display_use_spell()
-	elif type == "_make_spell":
-		display_spell_crafting()
+	elif type == "_palace":
+		open_memory_palace()
+	elif type == "_leave_palace":
+		Game.palace.close()
 	elif type == "_save_the_game":
 		Save.save_game()
 	elif type == "_map":
@@ -156,10 +165,8 @@ func display_akson():
 		akson.init_akson([], true)
 		Game.current_scene.add_child(akson)
 
-func display_spell_crafting():
-	var spell_crafting_scene = load("res://Lexical/SpellCrafting/SpellCrafting.tscn").instance()
-	Game.spell_crafting_screen = spell_crafting_scene
-	Game.current_scene.add_child(spell_crafting_scene)
+func open_memory_palace():
+	ChangeMap.call_deferred("_deferred_goto_scene", "res://Palace/Palace.tscn", 184, 112, 0)
 
 func display_notebook():
 	if Game.notebook:

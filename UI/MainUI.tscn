@@ -37,7 +37,7 @@ position = Vector2( 296, 88 )
 [node name="UseSpell" parent="." instance=ExtResource( 4 )]
 position = Vector2( 296, 104 )
 
-[node name="MakeSpell" parent="." instance=ExtResource( 4 )]
+[node name="Palace" parent="." instance=ExtResource( 4 )]
 position = Vector2( 296, 120 )
 
 [node name="Map" parent="." instance=ExtResource( 4 )]

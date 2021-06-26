@@ -1,8 +1,7 @@
 extends Node2D
 
 var can_place = true
-onready var level = get_node("/root/Palace/Level/YSort")
-onready var palace = get_node("/root/Palace")
+onready var level = Game.palace.get_node("Level/YSort")
 var current_item
 var current_tileset
 var current_tileset_name
@@ -18,7 +17,7 @@ func _ready():
 
 func ui_cancel():
 	if not is_visible():
-		palace.exit()
+		Game.show_exit_screen()
 	current_item = null
 	current_tileset = null
 	current_tileset_name = null

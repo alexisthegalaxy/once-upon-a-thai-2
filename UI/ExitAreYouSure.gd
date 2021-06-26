@@ -1,6 +1,13 @@
 extends CanvasLayer
 
+func _ready():
+	if Game.palace:
+		$ColorRect/Leave.text = tr("_go_back_to_the_material_world")
+
 func _on_Leave_pressed():
+	if Game.palace:
+		Game.palace.close()
+		return
 	get_tree().quit()
 
 func _on_Continue_playing_pressed():

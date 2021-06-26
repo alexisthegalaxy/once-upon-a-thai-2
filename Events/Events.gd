@@ -4,8 +4,8 @@ var initial_state = false
 var state_2 = false
 var state_3 = false
 var events = {
+	"can_see_palace": true,
 	"money_is_visible": state_2,
-	"has_possessed_a_letter": state_2,
 	"has_the_map": state_2,
 	"ploy_has_stopped_in_front_of_house": state_2,
 	"has_met_ploy": state_2,

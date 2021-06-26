@@ -1,6 +1,6 @@
 extends ScrollContainer
 
-onready var object_cursor = get_node("/root/Palace/EditorObjectOnCursor")
+onready var object_cursor = Game.palace.get_node("EditorObjectOnCursor")
 
 func _ready():
 	connect("mouse_entered", self, "mouse_enter")

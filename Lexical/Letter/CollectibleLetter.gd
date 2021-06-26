@@ -36,8 +36,6 @@ func interact():
 	is_disappearing = true
 #	Game.collected_letters.append(letter["id"])
 	Game.letters[str(id)]["in_bag"] += 1
-	Events.events.has_possessed_a_letter = true
-	Game.main_ui.update_main_ui_make_spell_display()
 #	if pre_dialog_event:
 #		Events.execute(pre_dialog_event[0], pre_dialog_event[1])
 

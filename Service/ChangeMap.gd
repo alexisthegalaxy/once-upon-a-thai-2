@@ -5,7 +5,6 @@ func move_player(to_x, to_y, level_y_height_change):
 	if Game.player:
 		player_velocity = Game.player.velocity
 		
-#	Game.player = Game.current_scene.get_node("YSort").get_node("Player")
 	Game.player = Game.current_scene.get_node("YSort/Player")
 	Game.player.position = Vector2(to_x, to_y)
 	Game.player.velocity = player_velocity
@@ -75,6 +74,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 		Game.player_last_overworld_map_visited = Game.current_map_name
 	var previous_map_name = Game.current_map_name
 	Game.current_map_name = to_map_name
+	
 	
 	if Game.current_scene:
 		Game.current_scene.queue_free()

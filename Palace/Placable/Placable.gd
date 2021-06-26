@@ -5,9 +5,14 @@ extends Node2D
 export(PackedScene) var this_scene
 export(String) var tileset_path
 export(String) var tileset_name
+var object_cursor
+var cursor_sprite
 
-onready var object_cursor = get_node("/root/Palace/EditorObjectOnCursor")
-onready var cursor_sprite = object_cursor.get_node("AnimatedSprite")
+func _ready():
+	if not Game.palace:
+		Game.palace =  get_tree().get_root().get_node("Palace")
+	object_cursor = Game.palace.get_node("EditorObjectOnCursor")
+	cursor_sprite = object_cursor.get_node("AnimatedSprite")
 
 func item_clicked(event):
 	if event is InputEvent and event.is_action_pressed("click"):
