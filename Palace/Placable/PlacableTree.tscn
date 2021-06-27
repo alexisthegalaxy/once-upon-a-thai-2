@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Palace/Placable/Placable.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/assets/Tree.png" type="Texture" id=2]
+[ext_resource path="res://Palace/Placable/PlacedTree.tscn" type="PackedScene" id=3]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -16,6 +17,7 @@ animations = [ {
 } ]
 
 [node name="PlacableTree" instance=ExtResource( 1 )]
+this_scene = ExtResource( 3 )
 
 [node name="AnimatedSprite" parent="." index="0"]
 frames = SubResource( 2 )

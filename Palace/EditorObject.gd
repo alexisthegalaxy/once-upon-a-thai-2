@@ -21,6 +21,10 @@ func ui_cancel():
 	current_tileset_name = null
 	hide()
 
+#func remove_placed_item_on_position(position):
+#	for item in level.get_children():
+#		if position in item.
+
 func _process(delta):
 	global_position = get_global_mouse_position()
 	if can_place:
@@ -29,8 +33,9 @@ func _process(delta):
 				var new_item = current_item.instance()
 				level.add_child(new_item)
 				new_item.global_position = global_position
+#			elif Input.is_action_just_pressed("right_click"):
+#				remove_placed_item_on_position(global_position)
 		elif current_tileset:
-			print('current_tileset', current_tileset)
 			tilemap = Game.palace.get_node(current_tileset)
 			tile_set = tilemap.tile_set
 			if Input.is_action_just_pressed("click"):

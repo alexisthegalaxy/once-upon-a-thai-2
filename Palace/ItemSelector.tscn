@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Palace/Placable/PlacableWaterfall.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Palace/TabContainer.gd" type="Script" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Palace/Placable/PlacableWaterTileset.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Palace/ItemSelector.gd" type="Script" id=10]
 [ext_resource path="res://Palace/Placable/PlacableForestLeavesTileset.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Palace/Placable/PlacableMushroom.tscn" type="PackedScene" id=12]
 
 [sub_resource type="DynamicFont" id=1]
 size = 10
@@ -31,7 +32,40 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Nature" type="Tabs" parent="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 38.0
+margin_right = -4.0
+margin_bottom = -4.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Nature"]
+anchor_left = -0.00115967
+anchor_right = 0.99884
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Nature/ScrollContainer"]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Nature/ScrollContainer"]
+
+[node name="PlacableTree" parent="TabContainer/Nature/ScrollContainer/HBoxContainer" instance=ExtResource( 3 )]
+position = Vector2( 79.2526, 16.4952 )
+scale = Vector2( 0.7, 0.7 )
+
+[node name="PlacableMushroom" parent="TabContainer/Nature/ScrollContainer/HBoxContainer" instance=ExtResource( 12 )]
+position = Vector2( 50.2439, 16.8744 )
+
+[node name="PlacableWaterfall" parent="TabContainer/Nature/ScrollContainer/HBoxContainer" instance=ExtResource( 1 )]
+position = Vector2( 19.4256, 17.8265 )
+
 [node name="Terrain" type="Tabs" parent="TabContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
@@ -67,32 +101,6 @@ position = Vector2( 28.9611, -2.40237 )
 
 [node name="PlacableSandPathTileset" parent="TabContainer/Terrain/ScrollContainer/HBoxContainer" instance=ExtResource( 8 )]
 position = Vector2( 74.9533, 14.4746 )
-
-[node name="Nature" type="Tabs" parent="TabContainer"]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 4.0
-margin_top = 38.0
-margin_right = -4.0
-margin_bottom = -4.0
-custom_fonts/font = SubResource( 1 )
-
-[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Nature"]
-anchor_left = -0.00115967
-anchor_right = 0.99884
-anchor_bottom = 1.0
-script = ExtResource( 6 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Nature/ScrollContainer"]
-
-[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Nature/ScrollContainer"]
-
-[node name="PlacableWaterfall" parent="TabContainer/Nature/ScrollContainer/HBoxContainer" instance=ExtResource( 1 )]
-position = Vector2( 12.2208, 16.8785 )
 
 [node name="Furnitures" type="Tabs" parent="TabContainer"]
 visible = false

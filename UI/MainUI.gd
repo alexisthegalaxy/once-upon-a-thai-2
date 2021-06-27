@@ -112,11 +112,8 @@ func update_main_ui_map_display():
 func main_ui_process_click(_event) -> bool:
 	var event_is_processed = false
 	if Input.is_action_just_pressed("click"):
-		print('hovered_buttons')
-		print(hovered_buttons)
 		if hovered_buttons or $QuestsDisplay.is_hovering_over_buttons():
 			event_is_processed = true
-	print('Was the event processed by the main UI? ', event_is_processed)
 	return event_is_processed
 
 func update_quests_display():
@@ -182,7 +179,7 @@ func display_akson():
 		Game.current_scene.add_child(akson)
 
 func open_memory_palace():
-	ChangeMap.call_deferred("_deferred_goto_scene", "res://Palace/Palace.tscn", 184, 112, 0)
+	ChangeMap.call_deferred("_deferred_goto_scene", "res://Palace/Palace.tscn", 119, 12, 0)
 
 func display_notebook():
 	if Game.notebook:
