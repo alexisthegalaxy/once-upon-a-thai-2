@@ -3,20 +3,20 @@
 [ext_resource path="res://Palace/Placable/Placable.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/tilesets/WaterTilesetB.png" type="Texture" id=2]
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
 region = Rect2( 96, 96, 32, 32 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ SubResource( 3 ) ],
+"frames": [ SubResource( 1 ) ],
 "loop": true,
 "name": "Water",
 "speed": 5.0
 } ]
 
 [node name="PlacableWaterTileset" instance=ExtResource( 1 )]
-tileset_path = "/root/Palace/Level/WaterTileMap"
+tileset_path = "WaterTileMap"
 tileset_name = "WaterTilesetB.png 0"
 
 [node name="AnimatedSprite" parent="." index="0"]

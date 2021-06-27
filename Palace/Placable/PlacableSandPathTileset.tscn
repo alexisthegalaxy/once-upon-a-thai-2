@@ -16,7 +16,7 @@ animations = [ {
 } ]
 
 [node name="PlacableSandPathTileset" instance=ExtResource( 1 )]
-tileset_path = "/root/Palace/Level/SandPathTilemap"
+tileset_path = "SandPathTilemap"
 tileset_name = "DirtTileset.png 1"
 
 [node name="AnimatedSprite" parent="." index="0"]

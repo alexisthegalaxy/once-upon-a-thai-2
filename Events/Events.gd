@@ -1,8 +1,8 @@
 extends Node
 
-var initial_state = false
-var state_2 = false
-var state_3 = false
+var initial_state = true
+var state_2 = true
+var state_3 = true
 var events = {
 	"can_see_palace": true,
 	"money_is_visible": state_2,

@@ -55,13 +55,6 @@ func init_akson(_letters_ids, _show_animation):
 		for element in elements_that_open_up:
 			element.rect_scale = Vector2(0, 1)
 
-#func main_ui_process_click(_event) -> bool:
-#	var event_is_processed = false
-#	if Input.is_action_just_pressed("click"):
-#		if hovered_buttons or $QuestsDisplay.is_hovering_over_buttons():
-#			event_is_processed = true
-#	return event_is_processed
-
 func get_focus():
 	has_focus = true
 	Game.akson = self

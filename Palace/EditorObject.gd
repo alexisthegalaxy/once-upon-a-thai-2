@@ -1,7 +1,7 @@
 extends Node2D
 
 var can_place = true
-onready var level = Game.palace.get_node("Level/YSort")
+onready var level = Game.palace.get_node("YSort")
 var current_item
 var current_tileset
 var current_tileset_name
@@ -16,8 +16,6 @@ func _ready():
 	hide()
 
 func ui_cancel():
-	if not is_visible():
-		Game.show_exit_screen()
 	current_item = null
 	current_tileset = null
 	current_tileset_name = null
@@ -32,7 +30,8 @@ func _process(delta):
 				level.add_child(new_item)
 				new_item.global_position = global_position
 		elif current_tileset:
-			tilemap = get_node(current_tileset)
+			print('current_tileset', current_tileset)
+			tilemap = Game.palace.get_node(current_tileset)
 			tile_set = tilemap.tile_set
 			if Input.is_action_just_pressed("click"):
 				tile_id = tile_set.find_tile_by_name(current_tileset_name)

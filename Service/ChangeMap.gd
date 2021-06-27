@@ -81,6 +81,7 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	
 	assert(to_map_name != "")
 	Game.current_scene = ResourceLoader.load(to_map_name).instance()
+	Game.main_ui.hovered_buttons = []
 
 	move_player(to_x, to_y, level_y_height_change)
 	

@@ -19,6 +19,19 @@ func _ready():
 		button.connect("is_hovered", self, "on_button_hovered")
 		button.connect("is_not_hovered", self, "on_button_not_hovered")
 
+func hide():
+	$Letters.hide()
+	$Words.hide()
+	$Sentences.hide()
+	$Quests.hide()
+	$UseSpell.hide()
+	$Palace.hide()
+	$Map.hide()
+	$Save.hide()
+	$Money.hide()
+	$KnownWords.hide()
+	$QuestsDisplay.hide()
+
 func update_main_ui():
 	update_main_ui_money_display()
 	update_main_ui_known_words_display(null)
@@ -99,8 +112,11 @@ func update_main_ui_map_display():
 func main_ui_process_click(_event) -> bool:
 	var event_is_processed = false
 	if Input.is_action_just_pressed("click"):
+		print('hovered_buttons')
+		print(hovered_buttons)
 		if hovered_buttons or $QuestsDisplay.is_hovering_over_buttons():
 			event_is_processed = true
+	print('Was the event processed by the main UI? ', event_is_processed)
 	return event_is_processed
 
 func update_quests_display():

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Palace/Placable/PlacableWaterfall.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Palace/TabContainer.gd" type="Script" id=2]
@@ -9,11 +9,14 @@
 [ext_resource path="res://Palace/Placable/PlacableCliffTileset.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Palace/Placable/PlacableSandPathTileset.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Palace/Placable/PlacableWaterTileset.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Palace/ItemSelector.gd" type="Script" id=10]
+[ext_resource path="res://Palace/Placable/PlacableForestLeavesTileset.tscn" type="PackedScene" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 size = 10
 
 [node name="Control" type="CanvasLayer"]
+script = ExtResource( 10 )
 
 [node name="TabContainer" type="TabContainer" parent="."]
 margin_left = 189.0
@@ -56,11 +59,14 @@ __meta__ = {
 
 [node name="PlacableWaterTileset" parent="TabContainer/Terrain/ScrollContainer/HBoxContainer" instance=ExtResource( 9 )]
 
+[node name="PlacableForestLeavesTileset" parent="TabContainer/Terrain/ScrollContainer/HBoxContainer" instance=ExtResource( 11 )]
+position = Vector2( 96.8853, 15.5472 )
+
 [node name="PlacableCliffTileset" parent="TabContainer/Terrain/ScrollContainer/HBoxContainer" instance=ExtResource( 7 )]
-position = Vector2( 27.0651, -6.00476 )
+position = Vector2( 28.9611, -2.40237 )
 
 [node name="PlacableSandPathTileset" parent="TabContainer/Terrain/ScrollContainer/HBoxContainer" instance=ExtResource( 8 )]
-position = Vector2( 81.2101, 14.8538 )
+position = Vector2( 74.9533, 14.4746 )
 
 [node name="Nature" type="Tabs" parent="TabContainer"]
 visible = false

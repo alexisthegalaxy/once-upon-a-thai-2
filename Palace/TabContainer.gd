@@ -8,4 +8,5 @@ func _on_TabContainer_mouse_entered():
 
 func _on_TabContainer_mouse_exited():
 	object_cursor.can_place = true
-	object_cursor.show()
+	if object_cursor.current_item or object_cursor.current_tileset:
+		object_cursor.show()

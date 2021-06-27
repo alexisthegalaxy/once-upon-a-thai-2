@@ -16,7 +16,7 @@ animations = [ {
 } ]
 
 [node name="PlacableCliffTileset" instance=ExtResource( 1 )]
-tileset_path = "/root/Palace/Level/CliffTileMap"
+tileset_path = "CliffTileMap"
 tileset_name = "CliffTileset.png 1"
 
 [node name="AnimatedSprite" parent="." index="0"]

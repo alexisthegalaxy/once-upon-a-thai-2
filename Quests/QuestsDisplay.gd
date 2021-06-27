@@ -7,6 +7,9 @@ var is_showing_quests = false
 func _ready():
 	$Quests.hide()
 
+func hide():
+	$Quests.hide()
+
 func update_quests_display():
 	var number_of_active_quests = 0
 	$Quests/QuestDisplay1.hide()
