@@ -32,6 +32,7 @@ func place_down_word():
 	new_word.can_move = false
 	new_word.position = Game.player.position
 	Game.following_words = []
+	Game.lose_focus(self)
 	following_word.over_word.queue_free()
 	following_word = null
 	call_deferred("add_word", new_word)
@@ -48,7 +49,6 @@ func interact():
 		return
 	following_word = Game.following_words[0]
 	var word = Game.words[str(following_word.id)]
-	
 	var dialog = tr("_do_you_to_place_word_here").replace("[Word]", word.th + " (" + word[lo] + ")")
 	get_tree().set_input_as_handled()
 	Game.is_frozen = true
@@ -93,6 +93,7 @@ func _on_ModeSwitch_pressed():
 
 func switch_to_enhance():
 	mode_is_explore = false
+	Game.player.stop_walking()
 	$Control/ModeSwitch.text = tr('_explore_palace')
 	$Control.show()
 	$YSort/Player/Light2D.hide()

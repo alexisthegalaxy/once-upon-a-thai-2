@@ -36,7 +36,7 @@ func _ready():
 	$Visible/thai.text = word["th"]
 	if is_following_player:
 		set_as_following()
-	
+
 func set_as_following():
 	is_following_player = true
 	can_move = true
@@ -124,7 +124,25 @@ func starts_disappearing():
 # interact functions such as this one are lauched by the space_bar_to_interact in player.gd
 func interact():
 	Game.player.stop_walking()
-	start_test()
+	# start_test()
+	# return
+	var dialog = tr("_what_to_do_with_word").replace("[Word]", word.th)
+	get_tree().set_input_as_handled()
+	Game.is_frozen = true
+	Game.player.stop_walking()
+	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+	Game.current_dialog.init_dialog([dialog], self, null, false, null)
+	Game.current_scene.add_child(Game.current_dialog)
+
+func dialog_option(_dialog, option):
+	var MOVE_IT = 1
+	var USE_ITS_POWER = 2
+	var SEE_WORD = 3
+	var TELEPORT = 4
+	if option == MOVE_IT:
+		Game.add_following_word(id, self)
+		Game.lose_focus(self)
+		Game.gains_focus(Game.palace)
 
 func start_test():
 	Game.is_frozen = true
@@ -144,9 +162,8 @@ func _on_Area2D_body_entered(body):
 	if not body == Game.player:
 		return
 	if Game.palace:
+		Game.gains_focus(self)
 		return
-#	if the Player starts the interaction - keep commented out
-#	Game.gains_focus(self)
 #	if the Spell starts the interaction
 	if not Game.is_overworld_frozen() and not is_frozen:
 		interact()
