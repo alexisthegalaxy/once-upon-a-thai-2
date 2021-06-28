@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Palace/Placable/Placable.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Palace/Placable/PlacedMushroom.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World/assets/Mushroom.png" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "mushroom",
+"speed": 5.0
+} ]
+
+[node name="PlacableMushroom" instance=ExtResource( 1 )]
+this_scene = ExtResource( 2 )
+
+[node name="AnimatedSprite" parent="." index="0"]
+position = Vector2( -0.0904541, -0.335527 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
+animation = "mushroom"
+
+[node name="Button" parent="." index="1"]
+modulate = Color( 1, 1, 1, 0.00392157 )
+margin_left = -5.50635
+margin_top = -10.5613
+margin_right = 6.49365
+margin_bottom = 9.43872
