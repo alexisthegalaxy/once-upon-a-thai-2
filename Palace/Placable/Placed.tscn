@@ -49,6 +49,8 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=7]
+radius = 8.2742
+height = 2.66621
 
 [node name="Placed" type="StaticBody2D"]
 collision_layer = 16385

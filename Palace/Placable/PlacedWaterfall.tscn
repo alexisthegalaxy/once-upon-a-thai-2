@@ -12,4 +12,6 @@ shape = SubResource( 1 )
 
 [node name="AnimatedSprite" parent="." index="1"]
 animation = "waterfall"
-frame = 1
+
+[node name="CollisionShape2D" parent="ClickInArea" index="0"]
+position = Vector2( -0.898895, 0 )
