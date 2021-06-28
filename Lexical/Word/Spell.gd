@@ -124,8 +124,9 @@ func starts_disappearing():
 # interact functions such as this one are lauched by the space_bar_to_interact in player.gd
 func interact():
 	Game.player.stop_walking()
-	# start_test()
-	# return
+	if not Game.palace:
+		start_test()
+		return
 	var dialog = tr("_what_to_do_with_word").replace("[Word]", word.th)
 	get_tree().set_input_as_handled()
 	Game.is_frozen = true

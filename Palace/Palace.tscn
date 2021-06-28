@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Palace/EditorObject.gd" type="Script" id=1]
 [ext_resource path="res://Palace/ItemSelector.tscn" type="PackedScene" id=2]
@@ -18,12 +18,25 @@
 [ext_resource path="res://Palace/Placable/PlacedTree.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Lexical/Word/Spell.tscn" type="PackedScene" id=17]
 [ext_resource path="res://World/assets/fish2.png" type="Texture" id=18]
+[ext_resource path="res://Palace/WordNet/WordNet.tscn" type="PackedScene" id=19]
 
 [sub_resource type="DynamicFont" id=1]
 size = 10
 extra_spacing_top = -3
 extra_spacing_bottom = -5
 font_data = ExtResource( 14 )
+
+[sub_resource type="Environment" id=2]
+background_mode = 4
+background_energy = 0.52
+background_canvas_max_layer = 8
+auto_exposure_scale = 0.44
+auto_exposure_min_luma = 0.17
+auto_exposure_max_luma = 16.0
+glow_enabled = true
+glow_intensity = 1.37
+glow_blend_mode = 0
+glow_bicubic_upscale = true
 
 [node name="Palace" type="Node2D"]
 script = ExtResource( 7 )
@@ -77,8 +90,11 @@ texture = ExtResource( 18 )
 position = Vector2( 119.848, 12.2741 )
 
 [node name="Light2D" type="Light2D" parent="YSort/Player"]
+visible = false
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 13 )
+texture_scale = 0.62
+energy = 0.66
 
 [node name="House" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 51.6426, 23.0512 )
@@ -142,6 +158,11 @@ texture = ExtResource( 11 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0.439216, 0.439216, 0.439216, 1 )
+
+[node name="WordNet" parent="." instance=ExtResource( 19 )]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
 [connection signal="mouse_entered" from="Control/ModeSwitch" to="." method="_on_ModeSwitch_mouse_entered"]
 [connection signal="mouse_exited" from="Control/ModeSwitch" to="." method="_on_ModeSwitch_mouse_exited"]
 [connection signal="pressed" from="Control/ModeSwitch" to="." method="_on_ModeSwitch_pressed"]
