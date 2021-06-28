@@ -81,7 +81,26 @@ func _process(delta):
 		alpha = 1
 		set_alpha()
 
+func answered_correctly_when_only_one_test():
+	"""Use this function when you're debugging and
+	want a single test to learn the word"""
+	SoundPlayer.play_thai(word.th)
+	Game.player.can_interact = true
+	Game.is_frozen = false
+	Game.learn_word(word.id)
+	Game.add_following_word(word.id, over_word)
+	SoundPlayer.play_sound("res://Sounds/Effects/correct.wav", 0)
+	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+	var lines = [tr("_you_have_befriended_that_spell") % word.th]
+	if len(Game.known_words) == 1:
+		lines.append(tr("_press_f_to_open_your_dictionary_and_see_that_word"))
+	Game.current_dialog.init_dialog(lines, null, null, null, null)
+	Game.current_scene.add_child(Game.current_dialog)
+	queue_free()
+
 func answered_correctly():
+	answered_correctly_when_only_one_test()
+	return
 	# This is the first test of the encounter
 	# When it ends, we got to the second test: "res://Test/TestGuessMeaning.tscn"
 	SoundPlayer.play_sound("res://Sounds/Effects/correct.wav", 0)

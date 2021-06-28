@@ -81,7 +81,7 @@ func update_main_ui_money_display():
 		$Money.hide()
 
 func update_main_ui_use_spell_display():
-	if Game.following_spells:
+	if Game.following_words:
 		$UseSpell.show()
 	else:
 		$UseSpell.hide()

@@ -1,15 +1,61 @@
 extends Node2D
 
 var mode_is_explore = true
-var on_mode_switch = false
+var on_mode_switch = false  # indicates that the cursor is on the button on_mode_switch
 var has_desired_zoom = true
 var desired_zoom = Vector2(1, 1)
-
+var lo = TranslationServer.get_locale()
+var following_word = null # {
+#		"id": 400,
+#		"over_word": null,  # this is the sphere itself, following the player
+#	}
 func _ready():
 	Game.palace = self
 	Game.current_scene = self
 	SoundPlayer.crossfade_to("res://Sounds/FLOATLANDS_ORIGINAL_SOUNDTRACK/Wandering.wav", 0.0)
 	switch_to_explore()
+	if Game.following_words:
+		Game.gains_focus(self)
+
+
+func dialog_option(_dialog, response):
+	var YES = 1  # NO = 2
+	if response == YES:
+		place_down_word()
+	else:
+		Game.gains_focus(self)
+
+func place_down_word():
+	var new_word = load("res://Lexical/Word/Spell.tscn").instance()
+	new_word.id = following_word.id
+	new_word.word = Game.words[str(following_word.id)]
+	new_word.can_move = false
+	new_word.position = Game.player.position
+	Game.following_words = []
+	following_word.over_word.queue_free()
+	following_word = null
+	call_deferred("add_word", new_word)
+
+func add_word(new_word):
+	Game.current_scene.get_node("YSort").add_child(new_word)
+
+func interact():
+	"""
+	The player can interact anywhere in the Palace if there is a following Word.
+	Upon interaction, a dialog box asks whether to place down the Word here.
+	"""
+	if not Game.following_words:
+		return
+	following_word = Game.following_words[0]
+	var word = Game.words[str(following_word.id)]
+	
+	var dialog = tr("_do_you_to_place_word_here").replace("[Word]", word.th + " (" + word[lo] + ")")
+	get_tree().set_input_as_handled()
+	Game.is_frozen = true
+	Game.player.stop_walking()
+	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+	Game.current_dialog.init_dialog([dialog], self, null, false, null)
+	Game.current_scene.add_child(Game.current_dialog)
 
 func _process(delta):
 	if not has_desired_zoom:

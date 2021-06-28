@@ -16,8 +16,8 @@ var goal_position  # when we use the mouse to control the player
 var time = 0
 
 var arrow = null  # the arrow that is sometimes shown to indicate direction to follow
-
 var is_forced_towards = null
+
 func make_animation(animation_name, key_1, key_2, key_3, key_4):
 	var animation = Animation.new()
 	animation.add_track(Animation.TYPE_VALUE)
@@ -96,7 +96,9 @@ func _process(delta) -> void:
 			$Camera2D.position.x = 0
 
 func handle_click(_event):
-	if Game.palace and Game.palace.on_mode_switch:
+	if Game.palace and (Game.palace.on_mode_switch or not Game.palace.mode_is_explore):
+		return
+	if Game.is_overworld_frozen():
 		return
 	if Game.exit_screen:
 		return
@@ -164,7 +166,10 @@ func update_state(_state):
 	update_animation()
 
 func move_state(delta) -> void:
-	if Game.is_overworld_frozen() and not (Game.palace and Game.palace.mode_is_explore):
+	""" Used to move the player using the arrow keys """
+	if Game.is_overworld_frozen():
+		return
+	if Game.palace and not Game.palace.mode_is_explore:
 		return
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")

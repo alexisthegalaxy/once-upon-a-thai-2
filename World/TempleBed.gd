@@ -25,7 +25,6 @@ func _on_InterractZone_body_exited(body):
 		return
 	Game.lose_focus(self)
 
-func dialog_option(dialog, answer_index):
+func dialog_option(_dialog, answer_index):
 	if answer_index == 1:  # yes, sleep here
 		Game.player.sleep()
-

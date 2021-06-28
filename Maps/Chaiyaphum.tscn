@@ -5821,8 +5821,8 @@ position = Vector2( 1107.91, 318.881 )
 id = 23
 
 [node name="pom2" parent="YSort/Words" instance=ExtResource( 16 )]
-position = Vector2( 498.109, 752.58 )
-id = 123
+position = Vector2( 569.74, 734.578 )
+id = 115
 
 [node name="pom3" parent="YSort/Words" instance=ExtResource( 16 )]
 position = Vector2( 816.016, -600.848 )

@@ -15,28 +15,28 @@ func _ready():
 #func _process(delta):
 #	pass
 
-func remove_following_spell():
+func remove_following_word():
 	# todo: it could be good to remove the oldest one that corresponds to the word_id
 	# But it doesn't matter too much since there's an infinite source of this word now.
-	var new_following_spells = []
+	var new_following_words = []
 	var word_is_removed = false
-	for following_spell in Game.following_spells:
-		if not word_is_removed and following_spell.id == DTAT_WORD_ID:
+	for following_word in Game.following_words:
+		if not word_is_removed and following_word.id == DTAT_WORD_ID:
 			word_is_removed = true
-			following_spell.over_word.starts_disappearing()
+			following_word.over_word.starts_disappearing()
 		else:
-			new_following_spells.append(following_spell)
-	Game.following_spells = new_following_spells
+			new_following_words.append(following_word)
+	Game.following_words = new_following_words
 
 func dialog_option(_dialog, answer_index):
 	if answer_index == 2:
 		return
-	remove_following_spell()
+	remove_following_word()
 	queue_free()
 
 func there_is_a_cut_spell():
-	for following_spell in Game.following_spells:
-		if following_spell.id == DTAT_WORD_ID:
+	for following_word in Game.following_words:
+		if following_word.id == DTAT_WORD_ID:
 			return true
 	return false
 

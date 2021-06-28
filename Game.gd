@@ -29,12 +29,11 @@ var seen_sentences = [311, 312, 315]  # we don't know the translation
 var known_letters = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]  # list of IDs
 #var known_letters = []  # list of IDs
 #var known_letters = [0, 11, 13, 21, 28]
-var following_spells = []
-#var following_spells = [
+var following_words = []
+#var following_words = [
 #	{
 #		"id": 400,
-#		"over_word": null,
-#		"time_to_live": 2.3  # the time_to_live is saved before the map change
+#		"over_word": null,  # this is the sphere itself, following the player
 #	}
 #]
 
@@ -113,23 +112,18 @@ func is_overworld_frozen():
 		word_page or
 		letter_page or
 		vending_screen or 
-		palace or 
+#		palace or 
 		map or 
 		select_follower_to_implant_screen
 	)
 
-func add_following_spell(word_id, over_word):
+func add_following_word(word_id, over_word):
 	over_word.set_as_following()
-	following_spells.append({
+	following_words.append({
 		"id": word_id,
 		"over_word": over_word,
-		"time_to_live": over_word.time_to_live,
 	})
 	main_ui.update_main_ui_use_spell_display()
-
-func update_following_spells_time_to_live():
-	for following_spell in following_spells:
-		following_spell.time_to_live = following_spell.over_word.time_to_live
 
 func discovers_sentence(sentence_id, is_translated):
 	Game.is_frozen = true
@@ -401,8 +395,8 @@ func save_game():
 	game_data.known_sentences = known_sentences
 	game_data.seen_sentences = seen_sentences
 	game_data.known_letters = known_letters
-	game_data.following_spells = following_spells
-	print('game_data.following_spells', game_data.following_spells)
+	game_data.following_words = following_words
+	print('game_data.following_words', game_data.following_words)
 	game_data.letters_we_look_for = letters_we_look_for
 	game_data.player_position_on_overworld = player_position_on_overworld
 	game_data.player_last_overworld_map_visited = player_last_overworld_map_visited
@@ -418,8 +412,7 @@ func load_game(game_data):
 	known_sentences = game_data.known_sentences
 	seen_sentences = game_data.seen_sentences
 	known_letters = game_data.known_letters
-	update_following_spells_time_to_live()
-	following_spells = game_data.following_spells
+	following_words = game_data.following_words
 	letters_we_look_for = game_data.letters_we_look_for
 	player_position_on_overworld = Vector2(game_data.player_position_on_overworld[0], game_data.player_position_on_overworld[1])
 	print('player_position_on_overworld', player_position_on_overworld)

@@ -10,8 +10,9 @@ var g = 1
 var b = 1
 var alpha = 1
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
+	# A Floaty is a piece of text we can show somewhere.
+	# It goes slowly up and then disappears (like a crit in WcIII)
 	$Label.text = text
 
 func set_direction(_direction):

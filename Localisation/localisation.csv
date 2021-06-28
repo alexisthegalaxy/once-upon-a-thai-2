@@ -196,7 +196,7 @@ _chaiyaphum_temple,Chaiyaphum's temple,Temple de Chaiyaphum
 _phu_lan_kha_national_park,Phu Lan Kha National Park,Parc National de Phu Lan Kha
 _do_you_want_to_sleep_free,"Do you want to sleep? It will heal you, and reset your spawn point. @QYes/No","Veux-tu dormir dedans ? Tu restaureras tes points de vie, et réapparaitras ici si tu perds tous tes points de vie. @QOK/Non"
 _there_is_a_mat_on_the_floor,There is a mat on the floor.,Il y a un tapis par terre.
-_the_pronoun_you_use,The pronoun you use,Le pronom que vous utilisez
+_the_pronoun_you_use,The pronoun you use,Le pronom que tu utilises
 _masculine,Masculine,Masculin
 _feminine,Feminine,Féminin
 _inter_1_1,"Oh, you're learning Thai? Amazing!","Oh, t'apprends le Thaï ? Trop cool !"
@@ -221,3 +221,4 @@ _palace,Mind Palace,Palais de la mémoire
 _leave_palace,Leave Mind Palace,Sortir du Palais
 _enhance_palace,Enhance the Palace,Améliore le Palais
 _explore_palace,Explore,Explore
+_do_you_to_place_word_here,"Is this where you want to place down the word [Word]? @QYes/No, I'll pick somewhere else","Veux-tu placer le mot [Word] ici ? @QOui/Non, je vais le placer ailleurs"

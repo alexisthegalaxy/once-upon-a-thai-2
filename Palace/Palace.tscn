@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Palace/EditorObject.gd" type="Script" id=1]
 [ext_resource path="res://Palace/ItemSelector.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://World/ForestLeavesTilemap.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Palace/Placable/PlacedTree.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Lexical/Word/Spell.tscn" type="PackedScene" id=17]
 [ext_resource path="res://World/assets/fish2.png" type="Texture" id=18]
 
 [sub_resource type="DynamicFont" id=1]
@@ -81,6 +82,9 @@ texture = ExtResource( 13 )
 
 [node name="House" parent="YSort" instance=ExtResource( 4 )]
 position = Vector2( 51.6426, 23.0512 )
+
+[node name="Spell" parent="YSort" instance=ExtResource( 17 )]
+position = Vector2( 62.7086, 69.3338 )
 
 [node name="EditorObjectOnCursor" type="Node2D" parent="."]
 script = ExtResource( 1 )

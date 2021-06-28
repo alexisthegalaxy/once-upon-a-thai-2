@@ -22,7 +22,6 @@ var is_frozen = false
 export var is_following_player = false
 var following_speed = 1000
 var MAX_FOLLOWING_SPEED = 100
-var time_to_live
 var closeness_to_player = 15
 
 var random_following_offset = Vector2.ZERO
@@ -48,14 +47,13 @@ func set_as_following():
 	MAX_FOLLOWING_SPEED += randi() % 30 - 15
 	random_following_offset = Vector2(randi() % 30 - 15, randi() % 30 - 15)
 	closeness_to_player += randi() % 20 - 10
-	time_to_live = 60  # in seconds
 
-func remove_following_spell():
-	var new_following_spells = []
-	for following_spell in Game.following_spells:
-		if not following_spell.over_word == self:
-			new_following_spells.append(following_spell)
-	Game.following_spells = new_following_spells
+func remove_following_word():
+	var new_following_words = []
+	for following_word in Game.following_words:
+		if not following_word.over_word == self:
+			new_following_words.append(following_word)
+	Game.following_words = new_following_words
 	starts_disappearing()
 
 func _process(delta):
@@ -68,12 +66,6 @@ func _process(delta):
 	if wobbles:
 		wobbling_time += delta
 		$Visible.position.y = cos(wobbling_time) * 5
-	if is_following_player:
-		if can_move:
-			time_to_live -= delta
-			if time_to_live < 0:
-				if not ((id == 401 and Quests.quests.implant_any_source_with_dtat.status == Quests.IN_PROGRESS) or (id == 56 and Quests.quests.implant_source_behind_the_temple.status == Quests.IN_PROGRESS)):
-					remove_following_spell()
 	if is_birthing:
 		if ratio < 1:
 			ratio += delta
@@ -150,6 +142,8 @@ func _on_Area2D_body_entered(body):
 	if is_following_player:
 		return
 	if not body == Game.player:
+		return
+	if Game.palace:
 		return
 #	if the Player starts the interaction - keep commented out
 #	Game.gains_focus(self)

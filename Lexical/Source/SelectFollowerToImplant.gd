@@ -19,7 +19,7 @@ func init_select_follower_to_implant_screen(over_source):
 	var x = 0
 	var y = 0
 	var varying_y = 3
-	for follower in Game.following_spells:
+	for follower in Game.following_words:
 		var unit = Unit.instance()
 		$Control.add_child(unit)
 #		displayed_words.append(dict_word)

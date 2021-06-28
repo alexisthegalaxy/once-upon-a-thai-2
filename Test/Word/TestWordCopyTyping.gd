@@ -46,7 +46,7 @@ func answered_correctly():
 	Game.player.can_interact = true
 	Game.is_frozen = false
 	Game.learn_word(word.id)
-	Game.add_following_spell(word.id, over_word)
+	Game.add_following_word(word.id, over_word)
 	SoundPlayer.play_sound("res://Sounds/Effects/correct.wav", 0)
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	var lines = [tr("_you_have_befriended_that_spell") % word.th]

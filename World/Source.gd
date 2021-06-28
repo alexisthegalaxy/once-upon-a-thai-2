@@ -49,8 +49,8 @@ func interact():
 		else:
 			dialog = [tr("_it_looks_like") + str(len(word_ids)) + tr("_different_words_live_inside_that_source")]
 	else:
-		if len(Game.following_spells) == 1:
-			var thai = Game.words[str(Game.following_spells[0].id)].th
+		if len(Game.following_words) == 1:
+			var thai = Game.words[str(Game.following_words[0].id)].th
 			dialog = [tr("_this_is_a_source_it_is_currently_empty_do_you_want_to_house_the_spell") + thai + tr("_inside_q_yes_no")]
 		else:
 			dialog = [tr("_this_is_a_source_empty+house_spell_inside")]
@@ -80,18 +80,18 @@ func dialog_option(_dialog, answer_index):
 	if len(word_ids) == 0:
 		if answer_index == 1:
 			Game.lose_focus(null)
-			if len(Game.following_spells) > 1:
+			if len(Game.following_words) > 1:
 				Game.select_follower_to_implant_screen = load("res://Lexical/Source/SelectFollowerToImplant.tscn").instance()
 				Game.select_follower_to_implant_screen.init_select_follower_to_implant_screen(self)
 				Game.current_scene.add_child(Game.select_follower_to_implant_screen)
-			elif len(Game.following_spells) == 1:
-				var word_id = Game.following_spells[0].id
+			elif len(Game.following_words) == 1:
+				var word_id = Game.following_words[0].id
 				word_ids.append(word_id)
 				update_game_sources()
 				update_source(false)
 				Quests.update_implant_source_with_this_word_quests(name, word_id)
-				Game.following_spells[0].over_word.starts_disappearing()
-				Game.following_spells = []
+				Game.following_words[0].over_word.starts_disappearing()
+				Game.following_words = []
 			else:
 				Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 				var dialog = [tr("_you_dont_have_any_spell_come_back_with_spells")]
@@ -105,7 +105,7 @@ func dialog_option(_dialog, answer_index):
 			new_word.can_move = true
 			new_word.position = get_global_position()
 			Game.current_scene.get_node("YSort").add_child(new_word)
-#			Game.following_spells.append({
+#			Game.following_words.append({
 #				"id": word_ids[0],
 #				"over_word": new_word,
 #			})
