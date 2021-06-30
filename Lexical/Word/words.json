@@ -33,6 +33,7 @@
     "tones": "LLM",
     "pos": "INTE",
     "th": "สวัสดี",
+    "etymologyen": "comes from the Sanskrit स्वस्ति (svasti, meaning \"well-being, good fortune\") from सु (su meaning \"good\") + अस्ति (asti, meaning \"to be\"). Cognate with स्वस्तिक (Swatika, which originally meant \"lucky-charm, little thing associated with well-being\").",
     "teaching_order": 15
   },
   "4": {
@@ -88,7 +89,12 @@
     "pos": "PART",
     "th": "ครับ",
     "teaching_order": 19,
-    "letters": [21, 2, 3, 18]
+    "letters": [
+      21,
+      2,
+      3,
+      18
+    ]
   },
   "10": {
     "split": "ไหม",
@@ -107,7 +113,11 @@
     "pos": "PART",
     "th": "ค่ะ",
     "teaching_order": 18,
-    "letters": [21, 40, 20]
+    "letters": [
+      21,
+      40,
+      20
+    ]
   },
   "12": {
     "split": "คะ",
@@ -214,7 +224,11 @@
     "pos": "PRON",
     "th": "ผม",
     "teaching_order": 5,
-    "letters": [37, 35, 5]
+    "letters": [
+      37,
+      35,
+      5
+    ]
   },
   "24": {
     "split": "ฉัน",
@@ -224,7 +238,11 @@
     "pos": "PRON",
     "th": "ฉัน",
     "teaching_order": 6,
-    "letters": [38, 3, 0]
+    "letters": [
+      38,
+      3,
+      0
+    ]
   },
   "25": {
     "split": "เธอ",
@@ -261,7 +279,11 @@
     "pos": "PRON",
     "th": "คุณ",
     "teaching_order": -1,
-    "letters": [21, 33, 39]
+    "letters": [
+      21,
+      33,
+      39
+    ]
   },
   "29": {
     "split": "เรา",
@@ -357,7 +379,11 @@
     "pos": "NEG",
     "th": "ไม่",
     "teaching_order": 13,
-    "letters": [28, 5, 40]
+    "letters": [
+      28,
+      5,
+      40
+    ]
   },
   "40": {
     "split": "ของ",
@@ -510,7 +536,12 @@
     "tones": "LM",
     "pos": "None",
     "th": "อะไร",
-    "letters": [7, 20, 28, 2],
+    "letters": [
+      7,
+      20,
+      28,
+      2
+    ],
     "teaching_order": 34
   },
   "57": {
@@ -745,8 +776,16 @@
     "pos": "ADJ",
     "th": "ดี",
     "teaching_order": 4,
-    "distractors": [345, 207, 343, 26],
-    "letters": [17, 9]
+    "distractors": [
+      345,
+      207,
+      343,
+      26
+    ],
+    "letters": [
+      17,
+      9
+    ]
   },
   "83": {
     "split": "ใหญ่",
@@ -921,8 +960,8 @@
   },
   "102": {
     "split": "สี-ส้ม",
-    "en": "orange",
-    "fr": "orange",
+    "en": "to be orange, orange color",
+    "fr": "être orange, la couleur orange",
     "tones": "RF",
     "pos": "ADJ",
     "th": "สีส้ม",
@@ -965,7 +1004,7 @@
     "teaching_order": -1
   },
   "107": {
-    "split": "สี_ฟ้า",
+    "split": "สี-ฟ้า",
     "en": "blue",
     "fr": "bleu",
     "tones": "RH",
@@ -1046,7 +1085,7 @@
     "teaching_order": -1
   },
   "116": {
-    "split": "ใจ_ร้อน",
+    "split": "ใจ-ร้อน",
     "en": "hot-tempered",
     "fr": "colérique",
     "tones": "MH",
@@ -1215,7 +1254,11 @@
     "pos": "NOUN",
     "th": "หมา",
     "teaching_order": -1,
-    "letters": [26, 5, 1]
+    "letters": [
+      26,
+      5,
+      1
+    ]
   },
   "135": {
     "split": "หนู",
@@ -1333,7 +1376,12 @@
     "pos": "NOUN",
     "th": "บ้าน",
     "teaching_order": 8,
-    "letters": [18, 41, 1, 0]
+    "letters": [
+      18,
+      41,
+      1,
+      0
+    ]
   },
   "148": {
     "split": "ขวด",
@@ -1343,7 +1391,11 @@
     "pos": "NOUN",
     "th": "ขวด",
     "teaching_order": -1,
-    "letters": [31, 12, 17]
+    "letters": [
+      31,
+      12,
+      17
+    ]
   },
   "149": {
     "split": "เด็ก",
@@ -1352,7 +1404,12 @@
     "pos": "NOUN",
     "th": "เด็ก",
     "teaching_order": -1,
-    "letters": [6, 17, 36, 4]
+    "letters": [
+      6,
+      17,
+      36,
+      4
+    ]
   },
   "150": {
     "split": "ครู",
@@ -1414,7 +1471,11 @@
     "pos": "NOUN",
     "th": "น้ำ",
     "teaching_order": 22,
-    "letters": [0, 41, 44]
+    "letters": [
+      0,
+      41,
+      44
+    ]
   },
   "157": {
     "split": "เหล้า",
@@ -1711,7 +1772,7 @@
     "teaching_order": -1
   },
   "190": {
-    "split": "ปลา_โล-มา",
+    "split": "ปลา-โล-มา",
     "en": "dolphin",
     "fr": "dauphin",
     "tones": "MMM",
@@ -1871,8 +1932,18 @@
     "pos": "VERB",
     "th": "เป็น",
     "teaching_order": 3,
-    "distractors": [236, 241, 293, 378],
-    "letters": [0, 19, 6, 36]
+    "distractors": [
+      236,
+      241,
+      293,
+      378
+    ],
+    "letters": [
+      0,
+      19,
+      6,
+      36
+    ]
   },
   "208": {
     "split": "ทำ",
@@ -2152,7 +2223,11 @@
     "pos": "VERB",
     "th": "ชอบ",
     "teaching_order": 32,
-    "letters": [30, 75, 18]
+    "letters": [
+      30,
+      75,
+      18
+    ]
   },
   "239": {
     "split": "รัก",
@@ -2236,7 +2311,7 @@
     "teaching_order": -1
   },
   "248": {
-    "split": "ใต้_ดิน",
+    "split": "ใต้-ดิน",
     "en": "underground",
     "fr": "souterrain",
     "tones": "FM",
@@ -2436,6 +2511,7 @@
   "270": {
     "split": "คน-ขับ",
     "en": "driver",
+    "fr": "chauffeur, conducteur",
     "tones": "ML",
     "pos": "NOUN",
     "th": "คนขับ",
@@ -2586,8 +2662,9 @@
     "teaching_order": -1
   },
   "287": {
-    "split": "คิด_มาก",
+    "split": "คิด-มาก",
     "en": "to think too much, worry",
+    "fr": "beaucoup penser, s'inquiéter",
     "tones": "HF",
     "pos": "VERB",
     "th": "คิดมาก",
@@ -2800,7 +2877,7 @@
     "teaching_order": -1
   },
   "312": {
-    "split": "โท-ร-ทัศน์",
+    "split": "โท=ร=ทัศน์",
     "en": "TV",
     "tones": "MHH",
     "pos": "None",
@@ -2808,7 +2885,7 @@
     "teaching_order": -1
   },
   "313": {
-    "split": "ก-รุ-ณา",
+    "split": "ก=รุ=ณา",
     "en": "please, kindly... / compassion",
     "fr": "s'il vous plaît, prière de... / compassion",
     "tones": "LHM",
@@ -2826,7 +2903,7 @@
     "teaching_order": -1
   },
   "315": {
-    "split": "ลง-น-รก",
+    "split": "ลง-น=รก",
     "en": "to go to hell",
     "fr": "va en enfer!",
     "tones": "MHH",
@@ -2835,7 +2912,7 @@
     "teaching_order": -1
   },
   "316": {
-    "split": "รถ_ไฟ-ฟ้า",
+    "split": "รถ-ไฟ-ฟ้า",
     "en": "skytrain",
     "fr": "métro aérien",
     "tones": "HMH",
@@ -2988,7 +3065,7 @@
     "teaching_order": -1
   },
   "333": {
-    "split": "รถ_ไฟ_ใต้_ดิน",
+    "split": "รถ-ไฟ-ใต้-ดิน",
     "en": "subway, underground train",
     "fr": "métro, train souterrain",
     "tones": "HMFM",
@@ -3085,8 +3162,17 @@
     "pos": "NOUN",
     "th": "คน",
     "teaching_order": 1,
-    "distractors": [345, 207, 82, 26],
-    "letters": [21, 35, 0]
+    "distractors": [
+      345,
+      207,
+      82,
+      26
+    ],
+    "letters": [
+      21,
+      35,
+      0
+    ]
   },
   "344": {
     "split": "กด",
@@ -3104,8 +3190,17 @@
     "pos": "ADJ",
     "th": "ไทย",
     "teaching_order": 2,
-    "distractors": [83, 82, 343, 72],
-    "letters": [11, 13, 28]
+    "distractors": [
+      83,
+      82,
+      343,
+      72
+    ],
+    "letters": [
+      11,
+      13,
+      28
+    ]
   },
   "346": {
     "split": "ผัก",
@@ -3133,7 +3228,7 @@
     "teaching_order": 66
   },
   "349": {
-    "split": "ดี_ใจ",
+    "split": "ดี-ใจ",
     "en": "glad",
     "tones": "MM",
     "pos": "ADJ",
@@ -3545,7 +3640,10 @@
     "pos": "None",
     "th": "ตอ",
     "teaching_order": -1,
-    "letters": [16, 75]
+    "letters": [
+      16,
+      75
+    ]
   },
   "396": {
     "split": "ยาย",
@@ -3554,7 +3652,10 @@
     "pos": "NOUN",
     "th": "ยาย",
     "teaching_order": -1,
-    "letters": [13, 1]
+    "letters": [
+      13,
+      1
+    ]
   },
   "397": {
     "split": "งง-งวย",
@@ -3564,7 +3665,11 @@
     "pos": "ADJ",
     "th": "งงงวย",
     "teaching_order": -1,
-    "letters": [10, 12, 13]
+    "letters": [
+      10,
+      12,
+      13
+    ]
   },
   "398": {
     "split": "งง",
@@ -3574,7 +3679,9 @@
     "pos": "ADJ",
     "th": "งง",
     "teaching_order": -1,
-    "letters": [10]
+    "letters": [
+      10
+    ]
   },
   "399": {
     "split": "คอ",
@@ -3584,7 +3691,10 @@
     "pos": "NOUN",
     "th": "คอ",
     "teaching_order": -1,
-    "letters": [21, 75]
+    "letters": [
+      21,
+      75
+    ]
   },
   "400": {
     "split": "หิน",
@@ -3594,7 +3704,11 @@
     "pos": "NOUN",
     "th": "หิน",
     "teaching_order": -1,
-    "letters": [26, 14, 0]
+    "letters": [
+      26,
+      14,
+      0
+    ]
   },
   "401": {
     "split": "ตัด",
@@ -3604,7 +3718,11 @@
     "pos": "VERB",
     "th": "ตัด",
     "teaching_order": -1,
-    "letters": [16, 3, 17]
+    "letters": [
+      16,
+      3,
+      17
+    ]
   },
   "402": {
     "split": "แบบ-ไหน",
@@ -3614,7 +3732,13 @@
     "pos": "",
     "th": "แบบไหน",
     "teaching_order": -1,
-    "letters": [25, 18, 28, 26, 0]
+    "letters": [
+      25,
+      18,
+      28,
+      26,
+      0
+    ]
   },
   "403": {
     "split": "รัฐ-ธรรม-นูญ",
@@ -3624,7 +3748,16 @@
     "pos": "",
     "th": "รัฐธรรมนูญ",
     "teaching_order": -1,
-    "letters": [2, 3, 45, 46, 5, 0, 32, 47]
+    "letters": [
+      2,
+      3,
+      45,
+      46,
+      5,
+      0,
+      32,
+      47
+    ]
   },
   "404": {
     "split": "เกิด",
@@ -3735,7 +3868,7 @@
     "teaching_order": -1
   },
   "416": {
-    "split": "ข้อ_มือ",
+    "split": "ข้อ-มือ",
     "en": "wrist",
     "fr": "poignet",
     "tones": "FM",
@@ -3762,7 +3895,7 @@
     "teaching_order": -1
   },
   "419": {
-    "split": "เข้า_ใจ_คิด",
+    "split": "เข้า-ใจ-คิด",
     "en": "to be inventive",
     "fr": "être inventif",
     "tones": "FMH",
@@ -3771,7 +3904,7 @@
     "teaching_order": -1
   },
   "420": {
-    "split": "แนว_คิด",
+    "split": "แนว-คิด",
     "en": "idea, concept, thought",
     "fr": "idée, concept, pensée",
     "tones": "MH",
@@ -3798,7 +3931,7 @@
     "teaching_order": -1
   },
   "423": {
-    "split": "ขอบ_ฟ้า",
+    "split": "ขอบ-ฟ้า",
     "en": "horizon, skyline",
     "fr": "horizon",
     "tones": "LH",
@@ -3816,7 +3949,7 @@
     "teaching_order": -1
   },
   "425": {
-    "split": "หน้า_ต่าง",
+    "split": "หน้า-ต่าง",
     "en": "window",
     "fr": "fenêtre",
     "tones": "FL",
@@ -3843,7 +3976,7 @@
     "teaching_order": -1
   },
   "428": {
-    "split": "คอก_ม้า",
+    "split": "คอก-ม้า",
     "en": "stable for horses",
     "fr": "étable",
     "tones": "FH",
@@ -3861,7 +3994,7 @@
     "teaching_order": -1
   },
   "430": {
-    "split": "วง_การ",
+    "split": "วง-การ",
     "en": "circle, field, quarter",
     "fr": "domaine, cercle",
     "tones": "MM",
@@ -3906,7 +4039,7 @@
     "teaching_order": -1
   },
   "435": {
-    "split": "แม่_เหล็ก",
+    "split": "แม่-เหล็ก",
     "en": "magnet",
     "fr": "aimant",
     "tones": "FL",
@@ -3924,7 +4057,7 @@
     "teaching_order": -1
   },
   "437": {
-    "split": "นิ_ยาย",
+    "split": "นิ-ยาย",
     "en": "novel",
     "fr": "roman",
     "tones": "HM",
@@ -3951,7 +4084,7 @@
     "teaching_order": -1
   },
   "440": {
-    "split": "ชั่ว_โมง",
+    "split": "ชั่ว-โมง",
     "en": "hour",
     "fr": "heure",
     "tones": "FM",
@@ -4987,8 +5120,8 @@
   },
   "555": {
     "split": "เดิน-ทาง",
-    "en": "to travel",
-    "fr": "voyager",
+    "en": "to travel / travel, journey",
+    "fr": "voyager / voyage",
     "tones": "MM",
     "pos": "",
     "th": "เดินทาง",
@@ -5812,7 +5945,7 @@
     "pos": "",
     "th": "สัปดาห์",
     "teaching_order": -1,
-    "etymology_en": "comes from the Sanskrit सप्त (sapta, meaning \"seven\") + अह (aha, meaning \"day\")."
+    "etymologyen": "comes from the Sanskrit सप्त (sapta, meaning \"seven\") + अह (aha, meaning \"day\")."
   },
   "647": {
     "split": "ยิ่ง",
@@ -5831,7 +5964,7 @@
     "pos": "",
     "th": "สงคราม",
     "teaching_order": -1,
-    "etymology_en": "comes from the Sanskrit संग्राम (saṃgrāma, meaning \"war\")."
+    "etymologyen": "comes from the Sanskrit संग्राम (saṃgrāma, meaning \"war\")."
   },
   "649": {
     "split": "ภาพ-วาด",
@@ -5904,8 +6037,8 @@
     "pos": "",
     "th": "แอปเปิ้ล",
     "teaching_order": -1,
-    "etymology_en": "comes from the English apple (saṃgrāma, meaning \"war\").",
-    "etymology_fr": "vient de l'amglais apple (\"pomme\")."
+    "etymologyen": "comes from the English apple.",
+    "etymologyfr": "vient de l'anglais apple (\"pomme\")."
   },
   "657": {
     "split": "เต้น",
@@ -6032,7 +6165,7 @@
     "pos": "",
     "th": "วิจัย",
     "teaching_order": -1,
-    "etymology_en": "comes from the Sanskrit विचय (vicaya, meaning \"gathering, putting together\")."
+    "etymologyen": "comes from the Sanskrit विचय (vicaya, meaning \"gathering, putting together\")."
   },
   "671": {
     "split": "นัก-เรียน",
@@ -6248,7 +6381,11 @@
     "tones": "R",
     "pos": "",
     "th": "ผม",
-    "letters": [37, 35, 5],
+    "letters": [
+      37,
+      35,
+      5
+    ],
     "teaching_order": -1
   },
   "695": {
@@ -6746,13 +6883,5405 @@
     "pos": "",
     "th": "น่าเบื่อ",
     "teaching_order": -1
+  },
+  "750": {
+    "split": "ด้วย-ดี",
+    "en": "without trouble",
+    "fr": "facilement, sans souci",
+    "tones": "",
+    "pos": "",
+    "th": "ด้วยดี",
+    "teaching_order": -1
+  },
+  "751":{
+    "split":"องค์-ประ=กอบ",
+    "en":"component, constituent, ingredient",
+    "fr":"composant, constituent, ingrédient",
+    "tones":"",
+    "pos":"",
+    "th":"องค์ประกอบ",
+    "teaching_order":-1
+  },
+  "752":{
+    "split":"ประ=กอบ-ด้วย",
+    "en":"to consist of, be composed of",
+    "fr":"consister de, être composé de",
+    "tones":"",
+    "pos":"",
+    "th":"ประกอบด้วย",
+    "teaching_order":-1
+  },
+  "753":{
+    "split":"กลาย-พันธุ์",
+    "en":"to mutate",
+    "fr":"muter",
+    "tones":"",
+    "pos":"",
+    "th":"กลายพันธุ์",
+    "teaching_order":-1
+  },
+  "754":{
+    "split":"กลับ-กลาย",
+    "en":"to become, change to, turn to",
+    "fr":"devenir",
+    "tones":"",
+    "pos":"",
+    "th":"กลับกลาย",
+    "teaching_order":-1
+  },
+  "755":{
+    "split":"การ-กลาย",
+    "en":"mutation, change",
+    "fr":"mutation, changement",
+    "tones":"",
+    "pos":"",
+    "th":"การกลาย",
+    "teaching_order":-1
+  },
+  "756":{
+    "split":"กลาย-สี",
+    "en":"to change color",
+    "fr":"changer de couleur",
+    "tones":"",
+    "pos":"",
+    "th":"กลายสี",
+    "teaching_order":-1
+  },
+  "758":{
+    "split":"ที่-สอง",
+    "en":"second, 2nd",
+    "fr":"deuxième, second",
+    "tones":"",
+    "pos":"",
+    "th":"ที่สอง",
+    "teaching_order":-1
+  },
+  "761":{
+    "split":"ไป-ที่",
+    "en":"to go to",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ไปที่",
+    "teaching_order":-1
+  },
+  "762":{
+    "split":"ที่-ว่า",
+    "en":"that",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ที่ว่า",
+    "teaching_order":-1
+  },
+  "763":{
+    "split":"ที่-มา",
+    "en":"source",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ที่มา",
+    "teaching_order":-1
+  },
+  "765":{
+    "split":"ที่-ดี",
+    "en":"good, best",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ที่ดี",
+    "teaching_order":-1
+  },
+  "766":{
+    "split":"อยู่-ที่",
+    "en":"to be at, stay at, live at",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"อยู่ที่",
+    "teaching_order":-1
+  },
+  "767":{
+    "split":"ที่-จะ",
+    "en":"that will",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ที่จะ",
+    "teaching_order":-1
+  },
+  "769":{
+    "split":"เป็น-ที่",
+    "en":"to be something that",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เป็นที่",
+    "teaching_order":-1
+  },
+  "770":{
+    "split":"วัน-ที่",
+    "en":"date (calendar...)",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"วันที่",
+    "teaching_order":-1
+  },
+  "771":{
+    "split":"เว=ลา-เช้า",
+    "en":"morning",
+    "fr":"le matin",
+    "tones":"",
+    "pos":"",
+    "th":"เวลาเช้า",
+    "teaching_order":-1
+  },
+  "772":{
+    "split":"เว=ลา-มืด",
+    "en":"nighttime",
+    "fr":"la nuit",
+    "tones":"",
+    "pos":"",
+    "th":"เวลามืด",
+    "teaching_order":-1
+  },
+  "773":{
+    "split":"เขต-เว=ลา",
+    "en":"timezone",
+    "fr":"fuseau horaire",
+    "tones":"",
+    "pos":"",
+    "th":"เขตเวลา",
+    "teaching_order":-1
+  },
+  "774":{
+    "split":"เว=ลา-หยุด",
+    "en":"stopping time",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เวลาหยุด",
+    "teaching_order":-1
+  },
+  "775":{
+    "split":"เว=ลา-รอ",
+    "en":"waiting time",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เวลารอ",
+    "teaching_order":-1
+  },
+  "776":{
+    "split":"เว=ลา-ค่ำ",
+    "en":"nightfall, dusk",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เวลาค่ำ",
+    "teaching_order":-1
+  },
+  "777":{
+    "split":"เว=ลา-เกิด",
+    "en":"birth time",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เวลาเกิด",
+    "teaching_order":-1
+  },
+  "778":{
+    "split":"เว=ลา-ใด",
+    "en":"when, whenever",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เวลาใด",
+    "teaching_order":-1
+  },
+  "779":{
+    "split":"เว=ลา-นี้",
+    "en":"at the moment, now",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เวลานี้",
+    "teaching_order":-1
+  },
+  "780":{
+    "split":"ตา-กล้อง",
+    "en":"cameraman, photographer",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตากล้อง",
+    "teaching_order":-1
+  },
+  "781":{
+    "split":"กล้อง-ข=ยาย",
+    "en":"microscope",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กล้องขยาย",
+    "teaching_order":-1
+  },
+  "782":{
+    "split":"ข=ยาย-เข้า",
+    "en":"to zoom in",
+    "fr":"zoomer sur",
+    "tones":"",
+    "pos":"",
+    "th":"ขยายเข้า",
+    "teaching_order":-1
+  },
+  "783":{
+    "split":"ข=ยาย-ใหญ่",
+    "en":"magnify",
+    "fr":"agrandir, zoomer",
+    "tones":"",
+    "pos":"",
+    "th":"ขยายใหญ่",
+    "teaching_order":-1
+  },
+  "784":{
+    "split":"การ-ข=ยาย",
+    "en":"expanding",
+    "fr":"s'étendre",
+    "tones":"",
+    "pos":"",
+    "th":"การขยาย",
+    "teaching_order":-1
+  },
+  "785":{
+    "split":"แว่น-ข=ยาย",
+    "en":"magnifying glass",
+    "fr":"loupe",
+    "tones":"",
+    "pos":"",
+    "th":"แว่นขยาย",
+    "teaching_order":-1
+  },
+  "786":{
+    "split":"แว่น-ดำ",
+    "en":"black glasses",
+    "fr":"lunettes noires, lunettes de soleil",
+    "tones":"",
+    "pos":"",
+    "th":"แว่นดำ",
+    "teaching_order":-1
+  },
+  "787":{
+    "split":"ลูก-ตา",
+    "en":"eyeball, eye",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกตา",
+    "teaching_order":-1
+  },
+  "788":{
+    "split":"แว่น-ตา",
+    "en":"glasses",
+    "fr":"lunettes",
+    "tones":"",
+    "pos":"",
+    "th":"แว่นตา",
+    "teaching_order":-1
+  },
+  "789":{
+    "split":"น้ำ-ตา",
+    "en":"tears",
+    "fr":"larme",
+    "tones":"",
+    "pos":"",
+    "th":"น้ำตา",
+    "teaching_order":-1
+  },
+  "790":{
+    "split":"คิด-ร้าย",
+    "en":"to have malice, wicked intentions",
+    "fr":"être mal intentionné",
+    "tones":"",
+    "pos":"",
+    "th":"คิดร้าย",
+    "teaching_order":-1
+  },
+  "791":{
+    "split":"พิษ-ร้าย",
+    "en":"toxic",
+    "fr":"toxique",
+    "tones":"",
+    "pos":"",
+    "th":"พิษร้าย",
+    "teaching_order":-1
+  },
+  "792":{
+    "split":"วาย-ร้าย",
+    "en":"devilish, evil, villain",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"วายร้าย",
+    "teaching_order":-1
+  },
+  "793":{
+    "split":"สัตว์-ร้าย",
+    "en":"fierce animal, wild animal",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สัตว์ร้าย",
+    "teaching_order":-1
+  },
+  "794":{
+    "split":"ดุ-ร้าย",
+    "en":"to be savage, ferocious, wild",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดุร้าย",
+    "teaching_order":-1
+  },
+  "795":{
+    "split":"ข่าว-ร้าย",
+    "en":"bad news",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ข่าวร้าย",
+    "teaching_order":-1
+  },
+  "796":{
+    "split":"ใจ-ร้าย",
+    "en":"to be cruel, wicked, heartless",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ใจร้าย",
+    "teaching_order":-1
+  },
+  "797":{
+    "split":"ฝัน-ร้าย",
+    "en":"to have a nightmare",
+    "fr":"faire un cauchemard",
+    "tones":"",
+    "pos":"",
+    "th":"ฝันร้าย",
+    "teaching_order":-1
+  },
+  "798":{
+    "split":"ผล-ร้าย",
+    "en":"harmful effect",
+    "fr":"effet nocif",
+    "tones":"",
+    "pos":"",
+    "th":"ผลร้าย",
+    "teaching_order":-1
+  },
+  "799":{
+    "split":"ตัว-ร้าย",
+    "en":"enemy, bad guy",
+    "fr":"ennemi, méchant",
+    "tones":"",
+    "pos":"",
+    "th":"ตัวร้าย",
+    "teaching_order":-1
+  },
+  "800":{
+    "split":"เที่ยว-เล่น",
+    "en":"to loaf, stroll, saunter",
+    "fr":"se balader, se promener",
+    "tones":"",
+    "pos":"",
+    "th":"เที่ยวเล่น",
+    "teaching_order":-1
+  },
+  "801":{
+    "split":"ขี้-เล่น",
+    "en":"to be playful, mischievous, frisky",
+    "fr":"être joueur, enjoué, espiègle",
+    "tones":"",
+    "pos":"",
+    "th":"ขี้เล่น",
+    "teaching_order":-1
+  },
+  "802":{
+    "split":"พูด-เล่น",
+    "en":"to joke, to kid",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พูดเล่น",
+    "teaching_order":-1
+  },
+  "804":{
+    "split":"นั่ง-เล่น",
+    "en":"to sit leisurely",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"นั่งเล่น",
+    "teaching_order":-1
+  },
+  "805":{
+    "split":"เครื่อง-เล่น",
+    "en":"plaything",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เครื่องเล่น",
+    "teaching_order":-1
+  },
+  "806":{
+    "split":"เดิน-เล่น",
+    "en":"to stroll, take a walk",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เดินเล่น",
+    "teaching_order":-1
+  },
+  "807":{
+    "split":"ผู้-เล่น",
+    "en":"player",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ผู้เล่น",
+    "teaching_order":-1
+  },
+  "808":{
+    "split":"ของ-เล่น",
+    "en":"toy, plaything",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ของเล่น",
+    "teaching_order":-1
+  },
+  "809":{
+    "split":"เล่น-น้ำ",
+    "en":"to play in the water",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เล่นน้ำ",
+    "teaching_order":-1
+  },
+  "810":{
+    "split":"คน-ตาย",
+    "en":"the dead",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คนตาย",
+    "teaching_order":-1
+  },
+  "812":{
+    "split":"สัก-คน",
+    "en":"just one person",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สักคน",
+    "teaching_order":-1
+  },
+  "813":{
+    "split":"คน-งาน",
+    "en":"employee, worker",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คนงาน",
+    "teaching_order":-1
+  },
+  "814":{
+    "split":"คน-ใหม่",
+    "en":"new one, new person",
+    "fr":"le nouveau, la nouvelle personne",
+    "tones":"",
+    "pos":"",
+    "th":"คนใหม่",
+    "teaching_order":-1
+  },
+  "815":{
+    "split":"คน-จน",
+    "en":"poor people",
+    "fr":"les pauvres, une personne pauvre",
+    "tones":"",
+    "pos":"",
+    "th":"คนจน",
+    "teaching_order":-1
+  },
+  "816":{
+    "split":"คน-ร้าย",
+    "en":"criminal, culprit, offender",
+    "fr":"criminel, délinquent",
+    "tones":"",
+    "pos":"",
+    "th":"คนร้าย",
+    "teaching_order":-1
+  },
+  "817":{
+    "split":"คน-เดียว",
+    "en":"alone, by oneself / one person",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คนเดียว",
+    "teaching_order":-1
+  },
+  "818":{
+    "split":"บาง-คน",
+    "en":"somebody",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"บางคน",
+    "teaching_order":-1
+  },
+  "819":{
+    "split":"คน-อื่น",
+    "en":"someone else, others",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คนอื่น",
+    "teaching_order":-1
+  },
+  "822":{
+    "split":"รส-จืด",
+    "en":"flavorless, insipid, tasteless",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รสจืด",
+    "teaching_order":-1
+  },
+  "823":{
+    "split":"ขยิบ-ตา",
+    "en":"to blink, wink, twinkle",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ขยิบตา",
+    "teaching_order":-1
+  },
+  "824":{
+    "split":"เล่น-ตา",
+    "en":"to glance, glimpse",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เล่นตา",
+    "teaching_order":-1
+  },
+  "825":{
+    "split":"ตา-เสีย",
+    "en":"blind",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตาเสีย",
+    "teaching_order":-1
+  },
+  "826":{
+    "split":"ชู-กลิ่น",
+    "en":"to emit, give out an odor",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชูกลิ่น",
+    "teaching_order":-1
+  },
+  "827":{
+    "split":"ชู-มือ",
+    "en":"to raise one's hand",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชูมือ",
+    "teaching_order":-1
+  },
+  "828":{
+    "split":"ชู-ใจ",
+    "en":"to encourage, inspire, hearten",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชูใจ",
+    "teaching_order":-1
+  },
+  "829":{
+    "split":"ชู-รส",
+    "en":"flavor, seasoning powder",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชูรส",
+    "teaching_order":-1
+  },
+  "830":{
+    "split":"สม-รส",
+    "en":"to marry, get married",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สมรส",
+    "teaching_order":-1
+  },
+  "831":{
+    "split":"รส-ชาติ",
+    "en":"flavor, taste, savor",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รสชาติ",
+    "teaching_order":-1
+  },
+  "832":{
+    "split":"ปลา-เค็ม",
+    "en":"salted fish",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปลาเค็ม",
+    "teaching_order":-1
+  },
+  "833":{
+    "split":"ไข่-เค็ม",
+    "en":"salted egg",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ไข่เค็ม",
+    "teaching_order":-1
+  },
+  "834":{
+    "split":"รส-เค็ม",
+    "en":"salty",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รสเค็ม",
+    "teaching_order":-1
+  },
+  "835":{
+    "split":"ความ-เค็ม",
+    "en":"saltiness / stinginess",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ความเค็ม",
+    "teaching_order":-1
+  },
+  "836":{
+    "split":"น้ำ-เค็ม",
+    "en":"saltwater, sea water",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"น้ำเค็ม",
+    "teaching_order":-1
+  },
+  "837":{
+    "split":"ตุ๊=ก=ตา-หิ=มะ",
+    "en":"snowman",
+    "fr":"bonhomme de neige",
+    "tones":"",
+    "pos":"",
+    "th":"ตุ๊กตาหิมะ",
+    "teaching_order":-1
+  },
+  "838":{
+    "split":"กรวด-กลาง",
+    "en":"pebble",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กรวดกลาง",
+    "teaching_order":-1
+  },
+  "839":{
+    "split":"กรวด-น้ำ",
+    "en":"to pour water, pour ceremonial water",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กรวดน้ำ",
+    "teaching_order":-1
+  },
+  "840":{
+    "split":"นา=ฬิ=กา-ปลุก",
+    "en":"alarm clock",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"นาฬิกาปลุก",
+    "teaching_order":-1
+  },
+  "841":{
+    "split":"หอ-นา=ฬิ=กา",
+    "en":"clock tower",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หอนาฬิกา",
+    "teaching_order":-1
+  },
+  "842":{
+    "split":"เนิน-ดิน",
+    "en":"mound, pile, heap",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เนินดิน",
+    "teaching_order":-1
+  },
+  "843":{
+    "split":"เปิด-ตา",
+    "en":"to open one's eyes wide",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เปิดตา",
+    "teaching_order":-1
+  },
+  "844":{
+    "split":"ดิน-เค็ม",
+    "en":"alcaline soil, basic soil",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดินเค็ม",
+    "teaching_order":-1
+  },
+  "845":{
+    "split":"นา=ฬิ=กา-ทราย",
+    "en":"sandglass, hourglass, egg timer",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"นาฬิกาทราย",
+    "teaching_order":-1
+  },
+  "846":{
+    "split":"กรวด-ทราย",
+    "en":"pebble, grit, gravel",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กรวดทราย",
+    "teaching_order":-1
+  },
+  "847":{
+    "split":"พา=ยุ-หิ=มะ",
+    "en":"snow storm",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พายุหิมะ",
+    "teaching_order":-1
+  },
+  "848":{
+    "split":"พา=ยุ-หมุน",
+    "en":"cyclone",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พายุหมุน",
+    "teaching_order":-1
+  },
+  "849":{
+    "split":"ลม-พา=ยุ",
+    "en":"storm, tempest, hurricane",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลมพายุ",
+    "teaching_order":-1
+  },
+  "850":{
+    "split":"พา=ยุ-ฝน",
+    "en":"rainstorm",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พายุฝน",
+    "teaching_order":-1
+  },
+  "851":{
+    "split":"พา=ยุ-ทราย",
+    "en":"sandstorm",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พายุทราย",
+    "teaching_order":-1
+  },
+  "852":{
+    "split":"ทราย-ดำ",
+    "en":"black sand",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทรายดำ",
+    "teaching_order":-1
+  },
+  "853":{
+    "split":"พื้น-ทราย",
+    "en":"sand, sand floor",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พื้นทราย",
+    "teaching_order":-1
+  },
+  "854":{
+    "split":"คน-ละ=เอียด",
+    "en":"fastidious person, punctilious person",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คนละเอียด",
+    "teaching_order":-1
+  },
+  "855":{
+    "split":"รู้-ละ=เอียด",
+    "en":"to know the secret of",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รู้ละเอียด",
+    "teaching_order":-1
+  },
+  "856":{
+    "split":"ละ=เอียด-อ่อน",
+    "en":"sensitive, touchy, delicate",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ละเอียดอ่อน",
+    "teaching_order":-1
+  },
+  "857":{
+    "split":"ทราย-ละ=เอียด",
+    "en":"fine sand",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทรายละเอียด",
+    "teaching_order":-1
+  },
+  "858":{
+    "split":"กระ=บะ-ทราย",
+    "en":"sandbox",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กระบะทราย",
+    "teaching_order":-1
+  },
+  "859":{
+    "split":"ปรา=สาท-ทราย",
+    "en":"sand castle",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปราสาททราย",
+    "teaching_order":-1
+  },
+  "860":{
+    "split":"เนิน-ทราย",
+    "en":"sand dune",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เนินทราย",
+    "teaching_order":-1
+  },
+  "861":{
+    "split":"เม็ด-ทราย",
+    "en":"grain of sand",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เม็ดทราย",
+    "teaching_order":-1
+  },
+  "862":{
+    "split":"กระ=ดาษ-ทราย",
+    "en":"sand paper, abrasive paper",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กระดาษทราย",
+    "teaching_order":-1
+  },
+  "863":{
+    "split":"ดิน-ทราย",
+    "en":"sandy soil",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดินทราย",
+    "teaching_order":-1
+  },
+  "864":{
+    "split":"หิน-ทราย",
+    "en":"sandstone",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หินทราย",
+    "teaching_order":-1
+  },
+  "865":{
+    "split":"ทราย-ขาว",
+    "en":"white sand",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทรายขาว",
+    "teaching_order":-1
+  },
+  "866":{
+    "split":"ทะ=เล-ทราย",
+    "en":"desert",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทะเลทราย",
+    "teaching_order":-1
+  },
+  "867":{
+    "split":"หาด-ทราย",
+    "en":"sandy beach",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หาดทราย",
+    "teaching_order":-1
+  },
+  "868":{
+    "split":"ชาย-หาด",
+    "en":"beach",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชายหาด",
+    "teaching_order":-1
+  },
+  "869":{
+    "split":"ชาย-ทะ=เล",
+    "en":"seaside, seashore",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชายทะเล",
+    "teaching_order":-1
+  },
+  "870":{
+    "split":"ชาย-น้ำ",
+    "en":"riverside, waterside",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชายน้ำ",
+    "teaching_order":-1
+  },
+  "871":{
+    "split":"ทาน-เลี้ยง",
+    "en":"feast, banquet",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทานเลี้ยง",
+    "teaching_order":-1
+  },
+  "872":{
+    "split":"ตัว-แบบ",
+    "en":"model",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตัวแบบ",
+    "teaching_order":-1
+  },
+  "873":{
+    "split":"แบบ-ง่าย",
+    "en":"easily, simply",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แบบง่าย",
+    "teaching_order":-1
+  },
+  "874":{
+    "split":"แบบ-ใด",
+    "en":"any way, whichever way",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แบบใด",
+    "teaching_order":-1
+  },
+  "875":{
+    "split":"เครื่อง-แบบ",
+    "en":"uniform",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เครื่องแบบ",
+    "teaching_order":-1
+  },
+  "876":{
+    "split":"แบบ-เดิม",
+    "en":"old-style, retro",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แบบเดิม",
+    "teaching_order":-1
+  },
+  "877":{
+    "split":"นาง-แบบ",
+    "en":"model, mannequin",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"นางแบบ",
+    "teaching_order":-1
+  },
+  "878":{
+    "split":"แบบ-ไทย",
+    "en":"Thai style",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แบบไทย",
+    "teaching_order":-1
+  },
+  "879":{
+    "split":"แบบ-ใหม่",
+    "en":"new, latest style",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แบบใหม่",
+    "teaching_order":-1
+  },
+  "880":{
+    "split":"แบบ-นั้น",
+    "en":"like that, that way",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แบบนั้น",
+    "teaching_order":-1
+  },
+  "881":{
+    "split":"ออก-แบบ",
+    "en":"design",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ออกแบบ",
+    "teaching_order":-1
+  },
+  "882":{
+    "split":"รูป-แบบ",
+    "en":"format",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รูปแบบ",
+    "teaching_order":-1
+  },
+  "884":{
+    "split":"ชาย-ตา",
+    "en":"to glance, glimpse",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชายตา",
+    "teaching_order":-1
+  },
+  "885":{
+    "split":"ชาย-รุ่น",
+    "en":"young man",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชายรุ่น",
+    "teaching_order":-1
+  },
+  "886":{
+    "split":"มี-ชู้",
+    "en":"to have a lover, commit adultery",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มีชู้",
+    "teaching_order":-1
+  },
+  "887":{
+    "split":"เป็น-ชู้",
+    "en":"to have an affair, commit adultery",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เป็นชู้",
+    "teaching_order":-1
+  },
+  "888":{
+    "split":"เจ้า-ชู้",
+    "en":"to be unfaithful, flirtatious",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เจ้าชู้",
+    "teaching_order":-1
+  },
+  "889":{
+    "split":"ชาย-ชู้",
+    "en":"adulterer",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชายชู้",
+    "teaching_order":-1
+  },
+  "890":{
+    "split":"หญิง-โสด",
+    "en":"unmarried woman",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หญิงโสด",
+    "teaching_order":-1
+  },
+  "891":{
+    "split":"ความ-โสด",
+    "en":"being single",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ความโสด",
+    "teaching_order":-1
+  },
+  "892":{
+    "split":"สาว-โสด",
+    "en":"unmarried woman, single woman",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สาวโสด",
+    "teaching_order":-1
+  },
+  "893":{
+    "split":"คน-โสด",
+    "en":"single person, bachelor, unmarried person",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คนโสด",
+    "teaching_order":-1
+  },
+  "894":{
+    "split":"ชาย-โสด",
+    "en":"bachelor, single man",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชายโสด",
+    "teaching_order":-1
+  },
+  "895":{
+    "split":"ชาย-ฉ=กรรจ์",
+    "en":"able-bodied man, fully grown man",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชายฉกรรจ์",
+    "teaching_order":-1
+  },
+  "896":{
+    "split":"รุ่น-หลาน",
+    "en":"next generation, young generation",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รุ่นหลาน",
+    "teaching_order":-1
+  },
+  "897":{
+    "split":"ลูก-หลาน",
+    "en":"lineage, descendant, pedigree",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกหลาน",
+    "teaching_order":-1
+  },
+  "898":{
+    "split":"หลาน-ชาย",
+    "en":"nephew, grandson",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หลานชาย",
+    "teaching_order":-1
+  },
+  "899":{
+    "split":"คุณ-ชาย",
+    "en":"Mr",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คุณชาย",
+    "teaching_order":-1
+  },
+  "900":{
+    "split":"เปลี่ยน-แบบ",
+    "en":"to modify, adapt, alter",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เปลี่ยนแบบ",
+    "teaching_order":-1
+  },
+  "901":{
+    "split":"เปลี่ยน-งาน",
+    "en":"to change jobs",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เปลี่ยนงาน",
+    "teaching_order":-1
+  },
+  "902":{
+    "split":"เปลี่ยน-มือ",
+    "en":"to change hands, make over",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เปลี่ยนมือ",
+    "teaching_order":-1
+  },
+  "903":{
+    "split":"สับ-เปลี่ยน",
+    "en":"to switch, alter",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สับเปลี่ยน",
+    "teaching_order":-1
+  },
+  "904":{
+    "split":"เปลี่ยน-เสื้อ",
+    "en":"to change clothes",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เปลี่ยนเสื้อ",
+    "teaching_order":-1
+  },
+  "905":{
+    "split":"เปลี่ยน-ที่",
+    "en":"to move, transfer",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เปลี่ยนที่",
+    "teaching_order":-1
+  },
+  "906":{
+    "split":"เปลี่ยน-รูป",
+    "en":"to have a changed apparence, become different",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เปลี่ยนรูป",
+    "teaching_order":-1
+  },
+  "907":{
+    "split":"เปลี่ยน-กัน",
+    "en":"to alternate, take turns",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เปลี่ยนกัน",
+    "teaching_order":-1
+  },
+  "908":{
+    "split":"เปลี่ยน-สี",
+    "en":"to change, change color",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เปลี่ยนสี",
+    "teaching_order":-1
+  },
+  "909":{
+    "split":"เปลี่ยน-ไป",
+    "en":"to change into, turn into",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เปลี่ยนไป",
+    "teaching_order":-1
+  },
+  "910":{
+    "split":"การ-เปลี่ยน",
+    "en":"change, modification",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"การเปลี่ยน",
+    "teaching_order":-1
+  },
+  "911":{
+    "split":"เปลี่ยน-แปลง",
+    "en":"to change, alter, modify",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เปลี่ยนแปลง",
+    "teaching_order":-1
+  },
+  "913":{
+    "split":"ความ-อุ=ดม",
+    "en":"fertility, abundance, plentiful",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ความอุดม",
+    "teaching_order":-1
+  },
+  "914":{
+    "split":"อุ=ดม-การณ์",
+    "en":"ideology",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"อุดมการณ์",
+    "teaching_order":-1
+  },
+  "915":{
+    "split":"เตรียม-ประ=ถม",
+    "en":"pre-elementary school, kindergarten",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เตรียมประถม",
+    "teaching_order":-1
+  },
+  "916":{
+    "split":"เด็ก-ประ=ถม",
+    "en":"primary school pupil",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เด็กประถม",
+    "teaching_order":-1
+  },
+  "917":{
+    "split":"ส=ถาน-ภาพ",
+    "en":"status",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สถานภาพ",
+    "teaching_order":-1
+  },
+  "918":{
+    "split":"อุ=ดม-ศึก=ษา",
+    "en":"higher education",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"อุดมศึกษา",
+    "teaching_order":-1
+  },
+  "919":{
+    "split":"ก=ร=ณี-ศึก=ษา",
+    "en":"case study",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กรณีศึกษา",
+    "teaching_order":-1
+  },
+  "920":{
+    "split":"ประ=ถม-ศึก=ษา",
+    "en":"elementary education, primary education",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ประถมศึกษา",
+    "teaching_order":-1
+  },
+  "921":{
+    "split":"ศึก=ษา-ต่อ",
+    "en":"to further study, continue to study",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ศึกษาต่อ",
+    "teaching_order":-1
+  },
+  "922":{
+    "split":"ส=ถาน-ศึก=ษา",
+    "en":"school, academy, college",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สถานศึกษา",
+    "teaching_order":-1
+  },
+  "923":{
+    "split":"นัก-ศึก=ษา",
+    "en":"student, learner",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"นักศึกษา",
+    "teaching_order":-1
+  },
+  "924":{
+    "split":"การ-ศึก=ษา",
+    "en":"education",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"การศึกษา",
+    "teaching_order":-1
+  },
+  "925":{
+    "split":"บุตร-ชาย",
+    "en":"son",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"บุตรชาย",
+    "teaching_order":-1
+  },
+  "926":{
+    "split":"เพศ-ศึก=ษา",
+    "en":"sex education",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เพศศึกษา",
+    "teaching_order":-1
+  },
+  "927":{
+    "split":"ร่วม-เพศ",
+    "en":"to be of the same sex / to have sex",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ร่วมเพศ",
+    "teaching_order":-1
+  },
+  "928":{
+    "split":"ต่าง-เพศ",
+    "en":"of the opposite sex",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ต่างเพศ",
+    "teaching_order":-1
+  },
+  "929":{
+    "split":"เปลี่ยน-เพศ",
+    "en":"to change sex",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เปลี่ยนเพศ",
+    "teaching_order":-1
+  },
+  "930":{
+    "split":"ลา-เพศ",
+    "en":"to leave the monkhood",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลาเพศ",
+    "teaching_order":-1
+  },
+  "931":{
+    "split":"เพศ-หญิง",
+    "en":"feminine, female gender",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เพศหญิง",
+    "teaching_order":-1
+  },
+  "932":{
+    "split":"เพศ-ชาย",
+    "en":"masculine, male gender",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เพศชาย",
+    "teaching_order":-1
+  },
+  "933":{
+    "split":"เป็น-ชาย",
+    "en":"to be a man, be masculine, be male",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เป็นชาย",
+    "teaching_order":-1
+  },
+  "934":{
+    "split":"เด็ก-ชาย",
+    "en":"boy",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เด็กชาย",
+    "teaching_order":-1
+  },
+  "935":{
+    "split":"คน-เลี้ยง",
+    "en":"baby-sitter",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คนเลี้ยง",
+    "teaching_order":-1
+  },
+  "936":{
+    "split":"น้า-ชาย",
+    "en":"uncle",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"น้าชาย",
+    "teaching_order":-1
+  },
+  "937":{
+    "split":"มุ้ง-ครอบ",
+    "en":"mosquito net",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มุ้งครอบ",
+    "teaching_order":-1
+  },
+  "938":{
+    "split":"การ-ครอบ",
+    "en":"covering",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"การครอบ",
+    "teaching_order":-1
+  },
+  "939":{
+    "split":"ครอบ-งำ",
+    "en":"dominate, overpower, reign",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ครอบงำ",
+    "teaching_order":-1
+  },
+  "940":{
+    "split":"น้า-สะ=ใภ้",
+    "en":"aunt",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"น้าสะใภ้",
+    "teaching_order":-1
+  },
+  "941":{
+    "split":"ลูก-สะ=ใภ้",
+    "en":"daughter-in-law",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกสะใภ้",
+    "teaching_order":-1
+  },
+  "942":{
+    "split":"พี่-สะ=ใภ้",
+    "en":"sister-in-law",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พี่สะใภ้",
+    "teaching_order":-1
+  },
+  "943":{
+    "split":"พี่-ใหญ่",
+    "en":"eldest sister / eldest brother",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พี่ใหญ่",
+    "teaching_order":-1
+  },
+  "944":{
+    "split":"รุ่น-พี่",
+    "en":"senior",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รุ่นพี่",
+    "teaching_order":-1
+  },
+  "945":{
+    "split":"พี่-สาว",
+    "en":"sister (when older)",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พี่สาว",
+    "teaching_order":-1
+  },
+  "947":{
+    "split":"พี่-น้อง",
+    "en":"brother / sister",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พี่น้อง",
+    "teaching_order":-1
+  },
+  "948":{
+    "split":"พี่-เลี้ยง",
+    "en":"nanny",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พี่เลี้ยง",
+    "teaching_order":-1
+  },
+  "949":{
+    "split":"สัตว์-เลี้ยง",
+    "en":"pet, domestic animal",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สัตว์เลี้ยง",
+    "teaching_order":-1
+  },
+  "950":{
+    "split":"เลี้ยง-แขก",
+    "en":"to entertain guests, to have a party",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เลี้ยงแขก",
+    "teaching_order":-1
+  },
+  "951":{
+    "split":"เลี้ยง-ดู",
+    "en":"to give someone a treat / to support, raise",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เลี้ยงดู",
+    "teaching_order":-1
+  },
+  "952":{
+    "split":"พ่อ-เลี้ยง",
+    "en":"wealthy man",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พ่อเลี้ยง",
+    "teaching_order":-1
+  },
+  "953":{
+    "split":"พ่อ-มด",
+    "en":"wizard",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พ่อมด",
+    "teaching_order":-1
+  },
+  "954":{
+    "split":"สวน-ครัว",
+    "en":"kitchen garden",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สวนครัว",
+    "teaching_order":-1
+  },
+  "955":{
+    "split":"พ่อ-ครัว",
+    "en":"cook, chef",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พ่อครัว",
+    "teaching_order":-1
+  },
+  "956":{
+    "split":"ข=ณะ-เมื่อ",
+    "en":"when, as, while",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ขณะเมื่อ",
+    "teaching_order":-1
+  },
+  "957":{
+    "split":"ภา=ษา-ส=เปน",
+    "en":"Spanish language",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาสเปน",
+    "teaching_order":-1
+  },
+  "958":{
+    "split":"ภา=ษา-เกาห=ลี",
+    "en":"Korean language",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาเกาหลี",
+    "teaching_order":-1
+  },
+  "960":{
+    "split":"ห้อง-สมุด",
+    "en":"library",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ห้องสมุด",
+    "teaching_order":-1
+  },
+  "961":{
+    "split":"ห้อง-นอน",
+    "en":"bedroom",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ห้องนอน",
+    "teaching_order":-1
+  },
+  "962":{
+    "split":"ห้อง-เรียน",
+    "en":"classroom",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ห้องเรียน",
+    "teaching_order":-1
+  },
+  "963":{
+    "split":"ถิ่น-เกิด",
+    "en":"native land, habitat, homeland",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ถิ่นเกิด",
+    "teaching_order":-1
+  },
+  "964":{
+    "split":"ถิ่น-ที่",
+    "en":"area, section, locality",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ถิ่นที่",
+    "teaching_order":-1
+  },
+  "965":{
+    "split":"ใน-ข=ณะ",
+    "en":"while, meanwhile",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ในขณะ",
+    "teaching_order":-1
+  },
+  "966":{
+    "split":"ใน-ใจ",
+    "en":"in one's heart, in one's mind",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ในใจ",
+    "teaching_order":-1
+  },
+  "967":{
+    "split":"ภา=ษา-ถิ่น",
+    "en":"dialect, regional speech, localism",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาถิ่น",
+    "teaching_order":-1
+  },
+  "968":{
+    "split":"ภา=ษา-เยอ=ร=มัน",
+    "en":"German language",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาเยอรมัน",
+    "teaching_order":-1
+  },
+  "969":{
+    "split":"ภา=ษา-ฝ=รั่ง=เศส",
+    "en":"French language",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาฝรั่งเศส",
+    "teaching_order":-1
+  },
+  "970":{
+    "split":"ทาง-ใน",
+    "en":"meditation / way in",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทางใน",
+    "teaching_order":-1
+  },
+  "971":{
+    "split":"ที่-ทาง",
+    "en":"area, place, lot",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ที่ทาง",
+    "teaching_order":-1
+  },
+  "972":{
+    "split":"ทาง-เข้า",
+    "en":"entrance",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทางเข้า",
+    "teaching_order":-1
+  },
+  "974":{
+    "split":"เส้น-ทาง",
+    "en":"route, way, course",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เส้นทาง",
+    "teaching_order":-1
+  },
+  "975":{
+    "split":"ด่า-ว่า",
+    "en":"to scold, reprimand, censure",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ด่าว่า",
+    "teaching_order":-1
+  },
+  "976":{
+    "split":"ด่า-ตอบ",
+    "en":"to insult back",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ด่าตอบ",
+    "teaching_order":-1
+  },
+  "977":{
+    "split":"ทาง-ภา=ษา",
+    "en":"linguistically",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทางภาษา",
+    "teaching_order":-1
+  },
+  "978":{
+    "split":"ตอบ-กลับ",
+    "en":"to answer, to reply",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตอบกลับ",
+    "teaching_order":-1
+  },
+  "979":{
+    "split":"คำ-ตอบ",
+    "en":"answer, reply",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คำตอบ",
+    "teaching_order":-1
+  },
+  "980":{
+    "split":"รบ-ตอบ",
+    "en":"to counter-attack",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รบตอบ",
+    "teaching_order":-1
+  },
+  "981":{
+    "split":"ล้าง-จาน",
+    "en":"to wash the dishes",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ล้างจาน",
+    "teaching_order":-1
+  },
+  "982":{
+    "split":"พัก-รบ",
+    "en":"to declare a truce",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พักรบ",
+    "teaching_order":-1
+  },
+  "983":{
+    "split":"การ-รบ",
+    "en":"disturbing, bothering",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"การรบ",
+    "teaching_order":-1
+  },
+  "984":{
+    "split":"นัก-รบ",
+    "en":"combatant, fighter, man-at-arms",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"นักรบ",
+    "teaching_order":-1
+  },
+  "985":{
+    "split":"จาน-บิน",
+    "en":"flying saucer",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จานบิน",
+    "teaching_order":-1
+  },
+  "986":{
+    "split":"บิน-ลง",
+    "en":"to land",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"บินลง",
+    "teaching_order":-1
+  },
+  "987":{
+    "split":"บิน-ขึ้น",
+    "en":"to take off, to fly up",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"บินขึ้น",
+    "teaching_order":-1
+  },
+  "988":{
+    "split":"นัก-บิน",
+    "en":"pilot",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"นักบิน",
+    "teaching_order":-1
+  },
+  "989":{
+    "split":"การ-บิน",
+    "en":"flying",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"การบิน",
+    "teaching_order":-1
+  },
+  "991":{
+    "split":"ชา-ร้อน",
+    "en":"hot tea",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชาร้อน",
+    "teaching_order":-1
+  },
+  "992":{
+    "split":"น้ำ-ชา",
+    "en":"tea",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"น้ำชา",
+    "teaching_order":-1
+  },
+  "993":{
+    "split":"ใบ-ชา",
+    "en":"tea leaf",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ใบชา",
+    "teaching_order":-1
+  },
+  "994":{
+    "split":"ส=นาม-รบ",
+    "en":"battlefield",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สนามรบ",
+    "teaching_order":-1
+  },
+  "996":{
+    "split":"ลม-ทะ=เล",
+    "en":"sea breeze",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลมทะเล",
+    "teaching_order":-1
+  },
+  "997":{
+    "split":"เป็น-ลม",
+    "en":"to faint, to have a stroke",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เป็นลม",
+    "teaching_order":-1
+  },
+  "998":{
+    "split":"มือ-ดี",
+    "en":"master thief",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มือดี",
+    "teaching_order":-1
+  },
+  "999":{
+    "split":"ชา-เย็น",
+    "en":"iced tea",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชาเย็น",
+    "teaching_order":-1
+  },
+  "1000":{
+    "split":"ลม-เย็น",
+    "en":"cold wind, cold air",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลมเย็น",
+    "teaching_order":-1
+  },
+  "1001":{
+    "split":"หนาว-เย็น",
+    "en":"to be cold",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หนาวเย็น",
+    "teaching_order":-1
+  },
+  "1002":{
+    "split":"น้ำ-เย็น",
+    "en":"cold water",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"น้ำเย็น",
+    "teaching_order":-1
+  },
+  "1003":{
+    "split":"เว=ลา-เย็น",
+    "en":"evening, twilight, dusk",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เวลาเย็น",
+    "teaching_order":-1
+  },
+  "1004":{
+    "split":"ชาติ-หน้า",
+    "en":"future life, life to come",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชาติหน้า",
+    "teaching_order":-1
+  },
+  "1005":{
+    "split":"คราว-หน้า",
+    "en":"next time",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คราวหน้า",
+    "teaching_order":-1
+  },
+  "1006":{
+    "split":"รา=คา-คุย",
+    "en":"to brag, boast",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ราคาคุย",
+    "teaching_order":-1
+  },
+  "1007":{
+    "split":"ต่อ-รา=คา",
+    "en":"to bargain",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ต่อราคา",
+    "teaching_order":-1
+  },
+  "1008":{
+    "split":"ผ้า-ถุง",
+    "en":"sarong",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ผ้าถุง",
+    "teaching_order":-1
+  },
+  "1009":{
+    "split":"ร่ม-เย็น",
+    "en":"cool shade",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ร่มเย็น",
+    "teaching_order":-1
+  },
+  "1010":{
+    "split":"หน้า-สุด",
+    "en":"foremost",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หน้าสุด",
+    "teaching_order":-1
+  },
+  "1011":{
+    "split":"สุด-ใจ",
+    "en":"wholeheartedly",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สุดใจ",
+    "teaching_order":-1
+  },
+  "1012":{
+    "split":"หลัง-สุด",
+    "en":"last, final",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หลังสุด",
+    "teaching_order":-1
+  },
+  "1013":{
+    "split":"มาก-สุด",
+    "en":"max",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มากสุด",
+    "teaching_order":-1
+  },
+  "1014":{
+    "split":"สุด-ยอด",
+    "en":"to be great, excellent",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สุดยอด",
+    "teaching_order":-1
+  },
+  "1015":{
+    "split":"ร่ม-เกล้า",
+    "en":"guardian, protector",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ร่มเกล้า",
+    "teaching_order":-1
+  },
+  "1016":{
+    "split":"รัด-เกล้า",
+    "en":"tiara",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รัดเกล้า",
+    "teaching_order":-1
+  },
+  "1017":{
+    "split":"รัด-ตัว",
+    "en":"to be busy / tied up",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รัดตัว",
+    "teaching_order":-1
+  },
+  "1018":{
+    "split":"ปลาย-สุด",
+    "en":"extreme",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปลายสุด",
+    "teaching_order":-1
+  },
+  "1019":{
+    "split":"ปลาย-นิ้ว",
+    "en":"finger tip",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปลายนิ้ว",
+    "teaching_order":-1
+  },
+  "1020":{
+    "split":"ยาง-รัด",
+    "en":"rubber band",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ยางรัด",
+    "teaching_order":-1
+  },
+  "1021":{
+    "split":"น้ำ-ยาง",
+    "en":"latex",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"น้ำยาง",
+    "teaching_order":-1
+  },
+  "1022":{
+    "split":"สวน-ยาง",
+    "en":"rubber plantation",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สวนยาง",
+    "teaching_order":-1
+  },
+  "1023":{
+    "split":"ปลาย-เท้า",
+    "en":"toes",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปลายเท้า",
+    "teaching_order":-1
+  },
+  "1024":{
+    "split":"ข้อ-เท้า",
+    "en":"ankle",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ข้อเท้า",
+    "teaching_order":-1
+  },
+  "1025":{
+    "split":"ฝ่า-เท้า",
+    "en":"sole",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ฝ่าเท้า",
+    "teaching_order":-1
+  },
+  "1026":{
+    "split":"ถุง-ยาง",
+    "en":"condom",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ถุงยาง",
+    "teaching_order":-1
+  },
+  "1027":{
+    "split":"ถุง-พลา=ส=ติก",
+    "en":"plastic bag",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ถุงพลาสติก",
+    "teaching_order":-1
+  },
+  "1029":{
+    "split":"ถุง-สือ",
+    "en":"glove",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ถุงสือ",
+    "teaching_order":-1
+  },
+  "1030":{
+    "split":"ลาย-สือ",
+    "en":"letter, character",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลายสือ",
+    "teaching_order":-1
+  },
+  "1031":{
+    "split":"ลาย-มือ",
+    "en":"handwriting",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลายมือ",
+    "teaching_order":-1
+  },
+  "1032":{
+    "split":"ดีด-ตัว",
+    "en":"to move from side to side, to oscillate",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดีดตัว",
+    "teaching_order":-1
+  },
+  "1033":{
+    "split":"ดีด-นิ้ว",
+    "en":"to snap one's fingers",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดีดนิ้ว",
+    "teaching_order":-1
+  },
+  "1034":{
+    "split":"ซ้าย-มือ",
+    "en":"left-hand, left side",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ซ้ายมือ",
+    "teaching_order":-1
+  },
+  "1035":{
+    "split":"นิ้ว-มือ",
+    "en":"finger",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"นิ้วมือ",
+    "teaching_order":-1
+  },
+  "1036":{
+    "split":"ฝ่า-มือ",
+    "en":"palm, sole",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ฝ่ามือ",
+    "teaching_order":-1
+  },
+  "1037":{
+    "split":"ข้อ-มือ",
+    "en":"wrist",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ข้อมือ",
+    "teaching_order":-1
+  },
+  "1038":{
+    "split":"ขวา-มือ",
+    "en":"right-hand, right side",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ขวามือ",
+    "teaching_order":-1
+  },
+  "1039":{
+    "split":"จับ-มือ",
+    "en":"to hold hands",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จับมือ",
+    "teaching_order":-1
+  },
+  "1040":{
+    "split":"มือ-ใหม่",
+    "en":"novice, beginner",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มือใหม่",
+    "teaching_order":-1
+  },
+  "1041":{
+    "split":"มือ-สอง",
+    "en":"second hand",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มือสอง",
+    "teaching_order":-1
+  },
+  "1042":{
+    "split":"มือ-ถือ",
+    "en":"mobile phone",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มือถือ",
+    "teaching_order":-1
+  },
+  "1043":{
+    "split":"เครื่อง-มือ",
+    "en":"tool, apparatus",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เครื่องมือ",
+    "teaching_order":-1
+  },
+  "1044":{
+    "split":"วิ=ท=ยา-ศาสตร์",
+    "en":"science",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"วิทยาศาสตร์",
+    "teaching_order":-1
+  },
+  "1045":{
+    "split":"ไก-ปืน",
+    "en":"trigger (of a weapon)",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ไกปืน",
+    "teaching_order":-1
+  },
+  "1046":{
+    "split":"ดิน-ปืน",
+    "en":"gunpowder",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดินปืน",
+    "teaching_order":-1
+  },
+  "1047":{
+    "split":"มือ-ปืน",
+    "en":"hitman, hired killer",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มือปืน",
+    "teaching_order":-1
+  },
+  "1048":{
+    "split":"ปืน-กล",
+    "en":"machine gun",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปืนกล",
+    "teaching_order":-1
+  },
+  "1049":{
+    "split":"หมู-ย่าง",
+    "en":"roasted pork",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หมูย่าง",
+    "teaching_order":-1
+  },
+  "1050":{
+    "split":"หมู-แดง",
+    "en":"roasted red pork",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หมูแดง",
+    "teaching_order":-1
+  },
+  "1051":{
+    "split":"ปี-หมู",
+    "en":"year of the pig",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปีหมู",
+    "teaching_order":-1
+  },
+  "1052":{
+    "split":"หมู-แฮม",
+    "en":"ham",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หมูแฮม",
+    "teaching_order":-1
+  },
+  "1053":{
+    "split":"หมู-ป่า",
+    "en":"wild boar",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หมูป่า",
+    "teaching_order":-1
+  },
+  "1054":{
+    "split":"หมู-สับ",
+    "en":"minced pork",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หมูสับ",
+    "teaching_order":-1
+  },
+  "1055":{
+    "split":"สับ-ไก",
+    "en":"to pull the trigger",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สับไก",
+    "teaching_order":-1
+  },
+  "1056":{
+    "split":"กล-ไก",
+    "en":"mechanism, machinery, device",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กลไก",
+    "teaching_order":-1
+  },
+  "1057":{
+    "split":"กล-ศาสตร์",
+    "en":"mechanics, mechanical science",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กลศาสตร์",
+    "teaching_order":-1
+  },
+  "1058":{
+    "split":"ม=นุษย์-ศาสตร์",
+    "en":"humanities",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มนุษย์ศาสตร์",
+    "teaching_order":-1
+  },
+  "1059":{
+    "split":"ภา=ษา-ศาสตร์",
+    "en":"linguistics",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาศาสตร์",
+    "teaching_order":-1
+  },
+  "1060":{
+    "split":"ภา=ษา-พ=ม่า",
+    "en":"Burmese language",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาพม่า",
+    "teaching_order":-1
+  },
+  "1061":{
+    "split":"ภา=ษา-กลาง",
+    "en":"interlingua, common tongue",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษากลาง",
+    "teaching_order":-1
+  },
+  "1062":{
+    "split":"ภา=ษา-แม่",
+    "en":"mother tongue",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาแม่",
+    "teaching_order":-1
+  },
+  "1063":{
+    "split":"ภา=ษา-ม=ลา=ยู",
+    "en":"Malay language",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษามลายู",
+    "teaching_order":-1
+  },
+  "1064":{
+    "split":"ภา=ษา-สัน=ส=กฤต",
+    "en":"Sanskrit",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาสันสกฤต",
+    "teaching_order":-1
+  },
+  "1065":{
+    "split":"ตาม-ภา=ษา",
+    "en":"according to",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตามภาษา",
+    "teaching_order":-1
+  },
+  "1066":{
+    "split":"ภา=ษา-บา=ลี",
+    "en":"Pali",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาบาลี",
+    "teaching_order":-1
+  },
+  "1067":{
+    "split":"ภา=ษา-เขียน",
+    "en":"written language",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาเขียน",
+    "teaching_order":-1
+  },
+  "1068":{
+    "split":"ภา=ษา-พูด",
+    "en":"colloquialism",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาพูด",
+    "teaching_order":-1
+  },
+  "1069":{
+    "split":"ภา=ษา-ญี่=ปุ่น",
+    "en":"Japanese language",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาญี่ปุ่น",
+    "teaching_order":-1
+  },
+  "1070":{
+    "split":"ภา=ษา-จีน",
+    "en":"Chinese language",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษาจีน",
+    "teaching_order":-1
+  },
+  "1073":{
+    "split":"รา=คา-ต=ลาด",
+    "en":"market price",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ราคาตลาด",
+    "teaching_order":-1
+  },
+  "1074":{
+    "split":"ได้-รา=คา",
+    "en":"to be of good price, to fetch a good price",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ได้ราคา",
+    "teaching_order":-1
+  },
+  "1075":{
+    "split":"รา=คา-ขาย",
+    "en":"selling price",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ราคาขาย",
+    "teaching_order":-1
+  },
+  "1076":{
+    "split":"ขึ้น-รา=คา",
+    "en":"to raise the price",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ขึ้นราคา",
+    "teaching_order":-1
+  },
+  "1077":{
+    "split":"ลด-รา=คา",
+    "en":"to discount, to lower the price",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลดราคา",
+    "teaching_order":-1
+  },
+  "1078":{
+    "split":"มี-รา=คา",
+    "en":"to be valuable, expensive",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มีราคา",
+    "teaching_order":-1
+  },
+  "1079":{
+    "split":"รา=คา-ถูก",
+    "en":"to be cheap",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ราคาถูก",
+    "teaching_order":-1
+  },
+  "1080":{
+    "split":"ขี้-คุย",
+    "en":"to be bragful",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ขี้คุย",
+    "teaching_order":-1
+  },
+  "1081":{
+    "split":"การ-คุย",
+    "en":"chatting / bragging",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"การคุย",
+    "teaching_order":-1
+  },
+  "1082":{
+    "split":"ห้อง-คุย",
+    "en":"conversation room, chat room",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ห้องคุย",
+    "teaching_order":-1
+  },
+  "1084":{
+    "split":"เพื่อน-คุย",
+    "en":"interlocutor, conversationalist, talker",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เพื่อนคุย",
+    "teaching_order":-1
+  },
+  "1085":{
+    "split":"เพื่อน-แท้",
+    "en":"true friend",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เพื่อนแท้",
+    "teaching_order":-1
+  },
+  "1086":{
+    "split":"ม=นุษย์-กบ",
+    "en":"frogman (trained scuba diver)",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มนุษย์กบ",
+    "teaching_order":-1
+  },
+  "1087":{
+    "split":"เพื่อน-ม=นุษย์",
+    "en":"fellowman",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เพื่อนมนุษย์",
+    "teaching_order":-1
+  },
+  "1088":{
+    "split":"ภา=ษา-ม=นุษย์",
+    "en":"human language",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภาษามนุษย์",
+    "teaching_order":-1
+  },
+  "1089":{
+    "split":"มวล-ม=นุษย์",
+    "en":"mankind",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มวลมนุษย์",
+    "teaching_order":-1
+  },
+  "1090":{
+    "split":"คำ-พ้อง",
+    "en":"homonym, homophone, homograph",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คำพ้อง",
+    "teaching_order":-1
+  },
+  "1091":{
+    "split":"เห็น-พ้อง",
+    "en":"to agree, to see the same way as",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เห็นพ้อง",
+    "teaching_order":-1
+  },
+  "1092":{
+    "split":"พวก-พ้อง",
+    "en":"friends, relatives, companions",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พวกพ้อง",
+    "teaching_order":-1
+  },
+  "1093":{
+    "split":"เพื่อน-พ้อง",
+    "en":"friends",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เพื่อนพ้อง",
+    "teaching_order":-1
+  },
+  "1094":{
+    "split":"เป็น-เพื่อน",
+    "en":"to be friends / to accompany someone",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เป็นเพื่อน",
+    "teaching_order":-1
+  },
+  "1095":{
+    "split":"ความ-ปวด",
+    "en":"pain, ache",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ความปวด",
+    "teaching_order":-1
+  },
+  "1096":{
+    "split":"ปวด-ใจ",
+    "en":"to heartache",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปวดใจ",
+    "teaching_order":-1
+  },
+  "1097":{
+    "split":"ปวด-หลัง",
+    "en":"to have a backache",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปวดหลัง",
+    "teaching_order":-1
+  },
+  "1098":{
+    "split":"ปวด-ท้อง",
+    "en":"to have a stomachache",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปวดท้อง",
+    "teaching_order":-1
+  },
+  "1099":{
+    "split":"ไก่-ฟ้า",
+    "en":"pheasant",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ไก่ฟ้า",
+    "teaching_order":-1
+  },
+  "1100":{
+    "split":"ขับ-บัส",
+    "en":"bus",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ขับบัส",
+    "teaching_order":-1
+  },
+  "1101":{
+    "split":"ขับ-รถ",
+    "en":"to drive",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ขับรถ",
+    "teaching_order":-1
+  },
+  "1102":{
+    "split":"ปล่อง-ไฟ",
+    "en":"chimney, smoke vent",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปล่องไฟ",
+    "teaching_order":-1
+  },
+  "1103":{
+    "split":"กอง-บุญ",
+    "en":"pile of merit",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กองบุญ",
+    "teaching_order":-1
+  },
+  "1104":{
+    "split":"กอง-ไฟ",
+    "en":"bonfire, campfire",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กองไฟ",
+    "teaching_order":-1
+  },
+  "1105":{
+    "split":"ปวด-หัว",
+    "en":"to have a headache",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปวดหัว",
+    "teaching_order":-1
+  },
+  "1106":{
+    "split":"หัว-หน้า",
+    "en":"boss, chief, leader",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หัวหน้า",
+    "teaching_order":-1
+  },
+  "1107":{
+    "split":"หัว-เราะ",
+    "en":"to laugh",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หัวเราะ",
+    "teaching_order":-1
+  },
+  "1108":{
+    "split":"หัว-ข้อ",
+    "en":"topic, subject",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หัวข้อ",
+    "teaching_order":-1
+  },
+  "1109":{
+    "split":"หัว-ใจ",
+    "en":"heart",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หัวใจ",
+    "teaching_order":-1
+  },
+  "1110":{
+    "split":"ยา-หอม",
+    "en":"powder mixed with water to revive someone",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ยาหอม",
+    "teaching_order":-1
+  },
+  "1111":{
+    "split":"หัว-หอม",
+    "en":"onion",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หัวหอม",
+    "teaching_order":-1
+  },
+  "1112":{
+    "split":"ความ-หอม",
+    "en":"fragrance",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ความหอม",
+    "teaching_order":-1
+  },
+  "1113":{
+    "split":"น้ำ-หอม",
+    "en":"perfume",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"น้ำหอม",
+    "teaching_order":-1
+  },
+  "1114":{
+    "split":"กลิ่น-หอม",
+    "en":"to smell good",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กลิ่นหอม",
+    "teaching_order":-1
+  },
+  "1115":{
+    "split":"ตัด-หัว",
+    "en":"to behead, decapitate",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตัดหัว",
+    "teaching_order":-1
+  },
+  "1116":{
+    "split":"ตัด-ออก",
+    "en":"eliminate",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตัดออก",
+    "teaching_order":-1
+  },
+  "1117":{
+    "split":"ตัด-ใจ",
+    "en":"to part with something, give up something (reluctantly)",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตัดใจ",
+    "teaching_order":-1
+  },
+  "1118":{
+    "split":"เมฆ-ฝน",
+    "en":"rain cloud, nimbus",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เมฆฝน",
+    "teaching_order":-1
+  },
+  "1119":{
+    "split":"กล้วย-หอม",
+    "en":"banana",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กล้วยหอม",
+    "teaching_order":-1
+  },
+  "1120":{
+    "split":"การ-แปล",
+    "en":"translating",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"การแปล",
+    "teaching_order":-1
+  },
+  "1121":{
+    "split":"ผู้-แปล",
+    "en":"translator",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ผู้แปล",
+    "teaching_order":-1
+  },
+  "1122":{
+    "split":"ดอก-เห็ด",
+    "en":"mushroom",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดอกเห็ด",
+    "teaching_order":-1
+  },
+  "1123":{
+    "split":"คำ-แปล",
+    "en":"translation",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คำแปล",
+    "teaching_order":-1
+  },
+  "1124":{
+    "split":"ออก-จะ",
+    "en":"rather, somewhat",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ออกจะ",
+    "teaching_order":-1
+  },
+  "1125":{
+    "split":"ดอก-ทอง",
+    "en":"gold flower / prostitute",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดอกทอง",
+    "teaching_order":-1
+  },
+  "1126":{
+    "split":"กลีบ-ดอก",
+    "en":"petal, corolla",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กลีบดอก",
+    "teaching_order":-1
+  },
+  "1128":{
+    "split":"ออก-ดอก",
+    "en":"to bloom, produce flowers",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ออกดอก",
+    "teaching_order":-1
+  },
+  "1129":{
+    "split":"คัด-ออก",
+    "en":"to sort out",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คัดออก",
+    "teaching_order":-1
+  },
+  "1130":{
+    "split":"ออก-เงิน",
+    "en":"to pay",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ออกเงิน",
+    "teaching_order":-1
+  },
+  "1131":{
+    "split":"คิด-ออก",
+    "en":"to remember, recall / to figure out a solution",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คิดออก",
+    "teaching_order":-1
+  },
+  "1132":{
+    "split":"ลา-ออก",
+    "en":"to resign, quit, leave",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลาออก",
+    "teaching_order":-1
+  },
+  "1133":{
+    "split":"ส่ง-ออก",
+    "en":"to export, send abroad",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ส่งออก",
+    "teaching_order":-1
+  },
+  "1134":{
+    "split":"คำ-ขอ",
+    "en":"request",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คำขอ",
+    "teaching_order":-1
+  },
+  "1135":{
+    "split":"คำ-พูด",
+    "en":"words, speech",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คำพูด",
+    "teaching_order":-1
+  },
+  "1136":{
+    "split":"คำ-ถาม",
+    "en":"question",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คำถาม",
+    "teaching_order":-1
+  },
+  "1137":{
+    "split":"กล้วย-ไม้",
+    "en":"orchid",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กล้วยไม้",
+    "teaching_order":-1
+  },
+  "1138":{
+    "split":"ออก-ปาก",
+    "en":"to say, speak, talk",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ออกปาก",
+    "teaching_order":-1
+  },
+  "1139":{
+    "split":"ปาก-น้ำ",
+    "en":"estuary, mouth of a river",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปากน้ำ",
+    "teaching_order":-1
+  },
+  "1140":{
+    "split":"ราก-คำ",
+    "en":"root word",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รากคำ",
+    "teaching_order":-1
+  },
+  "1141":{
+    "split":"ราก-ฟัน",
+    "en":"tooth root",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รากฟัน",
+    "teaching_order":-1
+  },
+  "1142":{
+    "split":"ทา-ปาก",
+    "en":"to wear lipstick",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทาปาก",
+    "teaching_order":-1
+  },
+  "1143":{
+    "split":"ราก-ผม",
+    "en":"roots of hair",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รากผม",
+    "teaching_order":-1
+  },
+  "1144":{
+    "split":"ทา-สี",
+    "en":"to paint",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทาสี",
+    "teaching_order":-1
+  },
+  "1146":{
+    "split":"สี-ทอง",
+    "en":"to be golden (color)",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สีทอง",
+    "teaching_order":-1
+  },
+  "1149":{
+    "split":"ทรง-กลด",
+    "en":"to have a halo",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทรงกลด",
+    "teaching_order":-1
+  },
+  "1150":{
+    "split":"ผม-จุก",
+    "en":"topknot",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ผมจุก",
+    "teaching_order":-1
+  },
+  "1151":{
+    "split":"สี-ผม",
+    "en":"hair color",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สีผม",
+    "teaching_order":-1
+  },
+  "1152":{
+    "split":"ทรง-ผม",
+    "en":"hairstyle, haircut",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทรงผม",
+    "teaching_order":-1
+  },
+  "1153":{
+    "split":"ตัด-ไม้",
+    "en":"to chop wood",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตัดไม้",
+    "teaching_order":-1
+  },
+  "1154":{
+    "split":"ตัด-ผม",
+    "en":"to get a haircut, to cut hair",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตัดผม",
+    "teaching_order":-1
+  },
+  "1155":{
+    "split":"ผ่า-ตัด",
+    "en":"to have surgery, to have an operation",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ผ่าตัด",
+    "teaching_order":-1
+  },
+  "1156":{
+    "split":"การ-ตัด",
+    "en":"cutting off",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"การตัด",
+    "teaching_order":-1
+  },
+  "1157":{
+    "split":"หอ-ศิลป์",
+    "en":"art gallery",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หอศิลป์",
+    "teaching_order":-1
+  },
+  "1158":{
+    "split":"หอ-พระ",
+    "en":"monks room",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หอพระ",
+    "teaching_order":-1
+  },
+  "1159":{
+    "split":"ตัด-สิน",
+    "en":"to decide",
+    "fr":"décider",
+    "tones":"LR",
+    "pos":"",
+    "th":"ตัดสิน",
+    "teaching_order":-1
+  },
+  "1160":{
+    "split":"หอ-พัก",
+    "en":"dormitory",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หอพัก",
+    "teaching_order":-1
+  },
+  "1161":{
+    "split":"พัก-นี้",
+    "en":"recently",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พักนี้",
+    "teaching_order":-1
+  },
+  "1162":{
+    "split":"กฎ-หมู่",
+    "en":"mob rule, majority power",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กฎหมู่",
+    "teaching_order":-1
+  },
+  "1163":{
+    "split":"ถูก-กฎ",
+    "en":"to comply with the rules",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ถูกกฎ",
+    "teaching_order":-1
+  },
+  "1164":{
+    "split":"ยิน-ร้าย",
+    "en":"to be unhappy, unsatisfied",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ยินร้าย",
+    "teaching_order":-1
+  },
+  "1165":{
+    "split":"ดับ-ไฟ",
+    "en":"to extinguish a fire",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดับไฟ",
+    "teaching_order":-1
+  },
+  "1166":{
+    "split":"ไฟ-ป่า",
+    "en":"forest fire",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ไฟป่า",
+    "teaching_order":-1
+  },
+  "1168":{
+    "split":"ลูก-ไฟ",
+    "en":"spark",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกไฟ",
+    "teaching_order":-1
+  },
+  "1169":{
+    "split":"ปิด-ไฟ",
+    "en":"to turn off the light",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปิดไฟ",
+    "teaching_order":-1
+  },
+  "1170":{
+    "split":"ไฟ-แดง",
+    "en":"red light",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ไฟแดง",
+    "teaching_order":-1
+  },
+  "1172":{
+    "split":"หมาย-รวม",
+    "en":"to encompass",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หมายรวม",
+    "teaching_order":-1
+  },
+  "1173":{
+    "split":"หมาย-ถึง",
+    "en":"to mean",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หมายถึง",
+    "teaching_order":-1
+  },
+  "1174":{
+    "split":"กฎ-หมาย",
+    "en":"law",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กฎหมาย",
+    "teaching_order":-1
+  },
+  "1175":{
+    "split":"จุด-รวม",
+    "en":"center, hub",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จุดรวม",
+    "teaching_order":-1
+  },
+  "1176":{
+    "split":"จุด-ตัด",
+    "en":"intersection point",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จุดตัด",
+    "teaching_order":-1
+  },
+  "1177":{
+    "split":"จุด-ขาย",
+    "en":"selling point",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จุดขาย",
+    "teaching_order":-1
+  },
+  "1178":{
+    "split":"จุด-แข็ง",
+    "en":"strength, good point",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จุดแข็ง",
+    "teaching_order":-1
+  },
+  "1179":{
+    "split":"จุด-จบ",
+    "en":"end, end point",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จุดจบ",
+    "teaching_order":-1
+  },
+  "1180":{
+    "split":"จุด-หมาย",
+    "en":"goal, aim, purpose",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จุดหมาย",
+    "teaching_order":-1
+  },
+  "1181":{
+    "split":"จุด-ไฟ",
+    "en":"ignite",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จุดไฟ",
+    "teaching_order":-1
+  },
+  "1182":{
+    "split":"ตู้-ปลา",
+    "en":"aquarium",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตู้ปลา",
+    "teaching_order":-1
+  },
+  "1183":{
+    "split":"หิน-หนืด",
+    "en":"magma",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หินหนืด",
+    "teaching_order":-1
+  },
+  "1184":{
+    "split":"ปลา-แดง",
+    "en":"goldfish",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปลาแดง",
+    "teaching_order":-1
+  },
+  "1185":{
+    "split":"ทอง-แดง",
+    "en":"copper",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทองแดง",
+    "teaching_order":-1
+  },
+  "1186":{
+    "split":"ทอง-คำ",
+    "en":"gold",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทองคำ",
+    "teaching_order":-1
+  },
+  "1188":{
+    "split":"ดู-ก่อน",
+    "en":"wait and see, see what happens",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดูก่อน",
+    "teaching_order":-1
+  },
+  "1189":{
+    "split":"ปี-ก่อน",
+    "en":"last year",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปีก่อน",
+    "teaching_order":-1
+  },
+  "1190":{
+    "split":"ยุค-ทอง",
+    "en":"golden age",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ยุคทอง",
+    "teaching_order":-1
+  },
+  "1191":{
+    "split":"หิน-ย้อย",
+    "en":"stalactite",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หินย้อย",
+    "teaching_order":-1
+  },
+  "1192":{
+    "split":"รุ่น-ใหม่",
+    "en":"new model",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รุ่นใหม่",
+    "teaching_order":-1
+  },
+  "1193":{
+    "split":"ยุค-หิน",
+    "en":"stone age",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ยุคหิน",
+    "teaching_order":-1
+  },
+  "1194":{
+    "split":"ลูก-อ๊อด",
+    "en":"tadpole",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกอ๊อด",
+    "teaching_order":-1
+  },
+  "1195":{
+    "split":"ลูก-โลก",
+    "en":"globe",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกโลก",
+    "teaching_order":-1
+  },
+  "1196":{
+    "split":"รัก-แท้",
+    "en":"true love",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รักแท้",
+    "teaching_order":-1
+  },
+  "1197":{
+    "split":"รัก-ดี",
+    "en":"to be diligent, persevering",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รักดี",
+    "teaching_order":-1
+  },
+  "1198":{
+    "split":"เพื่อน-รัก",
+    "en":"valued friend, bosom friend, close friend",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เพื่อนรัก",
+    "teaching_order":-1
+  },
+  "1199":{
+    "split":"ใจ-รัก",
+    "en":"to be extremely fond of, to love, to be bent on",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ใจรัก",
+    "teaching_order":-1
+  },
+  "1200":{
+    "split":"รัก-ชาติ",
+    "en":"patriotic",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รักชาติ",
+    "teaching_order":-1
+  },
+  "1201":{
+    "split":"คู่-รัก",
+    "en":"lover, boyfriend, girlfriend",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คู่รัก",
+    "teaching_order":-1
+  },
+  "1202":{
+    "split":"คน-รัก",
+    "en":"lover, darling",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คนรัก",
+    "teaching_order":-1
+  },
+  "1204":{
+    "split":"ความ-รัก",
+    "en":"love",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ความรัก",
+    "teaching_order":-1
+  },
+  "1205":{
+    "split":"เหตุ-ผล",
+    "en":"reason",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เหตุผล",
+    "teaching_order":-1
+  },
+  "1206":{
+    "split":"ลูก-รัก",
+    "en":"sweetheart (talking to one's child)",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกรัก",
+    "teaching_order":-1
+  },
+  "1207":{
+    "split":"ผล-งาน",
+    "en":"works / success, accomplishment, achievement",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ผลงาน",
+    "teaching_order":-1
+  },
+  "1208":{
+    "split":"งาน-ช้าง",
+    "en":"big project",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"งานช้าง",
+    "teaching_order":-1
+  },
+  "1209":{
+    "split":"งา-ช้าง",
+    "en":"elephant ivory tusk",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"งาช้าง",
+    "teaching_order":-1
+  },
+  "1210":{
+    "split":"ช้าง-เผือก",
+    "en":"white (albino) elephant",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ช้างเผือก",
+    "teaching_order":-1
+  },
+  "1211":{
+    "split":"อ่อน-ตัว",
+    "en":"to diminish, lessen, reduce",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"อ่อนตัว",
+    "teaching_order":-1
+  },
+  "1212":{
+    "split":"ความ-อ่อน",
+    "en":"weakness",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ความอ่อน",
+    "teaching_order":-1
+  },
+  "1213":{
+    "split":"จุด-อ่อน",
+    "en":"weak point",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จุดอ่อน",
+    "teaching_order":-1
+  },
+  "1214":{
+    "split":"อ่อน-แอ",
+    "en":"to be weak, feeble, tired",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"อ่อนแอ",
+    "teaching_order":-1
+  },
+  "1215":{
+    "split":"ลูก-ช้าง",
+    "en":"elephant calf",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกช้าง",
+    "teaching_order":-1
+  },
+  "1216":{
+    "split":"ลูก-น้ำ",
+    "en":"mosquito larva",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกน้ำ",
+    "teaching_order":-1
+  },
+  "1217":{
+    "split":"ลูก-อ่อน",
+    "en":"baby, infant",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกอ่อน",
+    "teaching_order":-1
+  },
+  "1218":{
+    "split":"ลูก-ไก่",
+    "en":"chick, baby chicken",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกไก่",
+    "teaching_order":-1
+  },
+  "1219":{
+    "split":"ฟอง-น้ำ",
+    "en":"sponge",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ฟองน้ำ",
+    "teaching_order":-1
+  },
+  "1220":{
+    "split":"เป็น-ฟอง",
+    "en":"to bubble, to foam",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เป็นฟอง",
+    "teaching_order":-1
+  },
+  "1221":{
+    "split":"ภาย-หน้า",
+    "en":"future",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ภายหน้า",
+    "teaching_order":-1
+  },
+  "1222":{
+    "split":"นำ-หน้า",
+    "en":"to precede, to lead",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"นำหน้า",
+    "teaching_order":-1
+  },
+  "1223":{
+    "split":"ปี-หน้า",
+    "en":"next year, coming year",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปีหน้า",
+    "teaching_order":-1
+  },
+  "1224":{
+    "split":"ข้าง-หน้า",
+    "en":"in front",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ข้างหน้า",
+    "teaching_order":-1
+  },
+  "1225":{
+    "split":"เสือ-ดำ",
+    "en":"panther",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เสือดำ",
+    "teaching_order":-1
+  },
+  "1226":{
+    "split":"เสือ-ดาว",
+    "en":"leopard",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เสือดาว",
+    "teaching_order":-1
+  },
+  "1227":{
+    "split":"ปี-เสือ",
+    "en":"year of the tiger",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ปีเสือ",
+    "teaching_order":-1
+  },
+  "1228":{
+    "split":"ลูก-เสือ",
+    "en":"boy scout",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกเสือ",
+    "teaching_order":-1
+  },
+  "1229":{
+    "split":"มี-เสียง",
+    "en":"to have a voice, to be entitled to vote",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มีเสียง",
+    "teaching_order":-1
+  },
+  "1230":{
+    "split":"มี-หน้า",
+    "en":"to dare to, to be shameless",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มีหน้า",
+    "teaching_order":-1
+  },
+  "1231":{
+    "split":"มี-มาก",
+    "en":"to abound, to be found everywhere",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มีมาก",
+    "teaching_order":-1
+  },
+  "1232":{
+    "split":"มี-อา=ยุ",
+    "en":"to be aged",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มีอายุ",
+    "teaching_order":-1
+  },
+  "1233":{
+    "split":"มี-เรื่อง",
+    "en":"to get into trouble, to quarrel",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มีเรื่อง",
+    "teaching_order":-1
+  },
+  "1234":{
+    "split":"มี-ชื่อ",
+    "en":"well-known",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มีชื่อ",
+    "teaching_order":-1
+  },
+  "1235":{
+    "split":"มี-ค่า",
+    "en":"valuable, precious",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มีค่า",
+    "teaching_order":-1
+  },
+  "1236":{
+    "split":"เลี้ยง-ลูก",
+    "en":"to raise children, to bring up a child",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เลี้ยงลูก",
+    "teaching_order":-1
+  },
+  "1237":{
+    "split":"มด-ลูก",
+    "en":"uterus, womb",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มดลูก",
+    "teaching_order":-1
+  },
+  "1238":{
+    "split":"มี-ลูก",
+    "en":"to have children",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มีลูก",
+    "teaching_order":-1
+  },
+  "1240":{
+    "split":"ลูก-สาว",
+    "en":"daughter",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกสาว",
+    "teaching_order":-1
+  },
+  "1241":{
+    "split":"ลูก-ศิษย์",
+    "en":"student, disciple, pupil",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลูกศิษย์",
+    "teaching_order":-1
+  },
+  "1242":{
+    "split":"เก่า-ก่อน",
+    "en":"ancient, old, legendary",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เก่าก่อน",
+    "teaching_order":-1
+  },
+  "1243":{
+    "split":"ยุค-เก่า",
+    "en":"older times, former times",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ยุคเก่า",
+    "teaching_order":-1
+  },
+  "1244":{
+    "split":"เพื่อน-เก่า",
+    "en":"old friend",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เพื่อนเก่า",
+    "teaching_order":-1
+  },
+  "1245":{
+    "split":"กรุง-เก่า",
+    "en":"old capital",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กรุงเก่า",
+    "teaching_order":-1
+  },
+  "1246":{
+    "split":"รุ่น-เก่า",
+    "en":"old generation",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รุ่นเก่า",
+    "teaching_order":-1
+  },
+  "1247":{
+    "split":"ศิษย์-เก่า",
+    "en":"alumni, alumnus",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ศิษย์เก่า",
+    "teaching_order":-1
+  },
+  "1248":{
+    "split":"ของ-เก่า",
+    "en":"antique",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ของเก่า",
+    "teaching_order":-1
+  },
+  "1249":{
+    "split":"เก่า-แก่",
+    "en":"ancient, old, former",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เก่าแก่",
+    "teaching_order":-1
+  },
+  "1250":{
+    "split":"ของ-ชาติ",
+    "en":"national",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ของชาติ",
+    "teaching_order":-1
+  },
+  "1251":{
+    "split":"เจ้า-ของ",
+    "en":"owner",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เจ้าของ",
+    "teaching_order":-1
+  },
+  "1252":{
+    "split":"เจ้า-เก่า",
+    "en":"original",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เจ้าเก่า",
+    "teaching_order":-1
+  },
+  "1253":{
+    "split":"เจ้า-บ้าน",
+    "en":"homeowner",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เจ้าบ้าน",
+    "teaching_order":-1
+  },
+  "1254":{
+    "split":"สร้าง-บ้าน",
+    "en":"to build a house",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สร้างบ้าน",
+    "teaching_order":-1
+  },
+  "1255":{
+    "split":"บ้าน-เกิด",
+    "en":"homeland, hometown, native village",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"บ้านเกิด",
+    "teaching_order":-1
+  },
+  "1256":{
+    "split":"อยู่-บ้าน",
+    "en":"to be at home, stay at home",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"อยู่บ้าน",
+    "teaching_order":-1
+  },
+  "1257":{
+    "split":"บ้าน-เมือง",
+    "en":"country, state, nation",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"บ้านเมือง",
+    "teaching_order":-1
+  },
+  "1258":{
+    "split":"ชาว-บ้าน",
+    "en":"villager, folk, ordinary people",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชาวบ้าน",
+    "teaching_order":-1
+  },
+  "1259":{
+    "split":"ความ-แก่",
+    "en":"aging",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ความแก่",
+    "teaching_order":-1
+  },
+  "1260":{
+    "split":"คน-แก่",
+    "en":"old people",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คนแก่",
+    "teaching_order":-1
+  },
+  "1261":{
+    "split":"เห็น-แก่",
+    "en":"to think of",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เห็นแก่",
+    "teaching_order":-1
+  },
+  "1262":{
+    "split":"ความ-กล้า",
+    "en":"courage",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ความกล้า",
+    "teaching_order":-1
+  },
+  "1263":{
+    "split":"แก่-กล้า",
+    "en":"to be highly skillful in",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แก่กล้า",
+    "teaching_order":-1
+  },
+  "1264":{
+    "split":"เหล็ก-กล้า",
+    "en":"steel",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เหล็กกล้า",
+    "teaching_order":-1
+  },
+  "1265":{
+    "split":"ธา=ตุ-เหล็ก",
+    "en":"iron",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ธาตุเหล็ก",
+    "teaching_order":-1
+  },
+  "1266":{
+    "split":"ตี-เหล็ก",
+    "en":"to forge iron",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตีเหล็ก",
+    "teaching_order":-1
+  },
+  "1267":{
+    "split":"เสื้อ-น้ำ",
+    "en":"water demon",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เสื้อน้ำ",
+    "teaching_order":-1
+  },
+  "1269":{
+    "split":"พระ-พุทธ",
+    "en":"Buddha",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พระพุทธ",
+    "teaching_order":-1
+  },
+  "1271":{
+    "split":"เลี้ยง-ผี",
+    "en":"to offer sacrifices to a spirit",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เลี้ยงผี",
+    "teaching_order":-1
+  },
+  "1272":{
+    "split":"เลี้ยง-พระ",
+    "en":"to offer food (to a monk)",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เลี้ยงพระ",
+    "teaching_order":-1
+  },
+  "1273":{
+    "split":"พระ-ธุดงค์",
+    "en":"monk on pilgrimage",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พระธุดงค์",
+    "teaching_order":-1
+  },
+  "1274":{
+    "split":"แม่-หม้าย",
+    "en":"widow",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แม่หม้าย",
+    "teaching_order":-1
+  },
+  "1275":{
+    "split":"แม่-ไก่",
+    "en":"hen",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แม่ไก่",
+    "teaching_order":-1
+  },
+  "1276":{
+    "split":"รัง-มด",
+    "en":"ant nest",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รังมด",
+    "teaching_order":-1
+  },
+  "1277":{
+    "split":"มด-แดง",
+    "en":"red ant",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"มดแดง",
+    "teaching_order":-1
+  },
+  "1278":{
+    "split":"แม่-มด",
+    "en":"witch",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แม่มด",
+    "teaching_order":-1
+  },
+  "1279":{
+    "split":"แม่-ชี",
+    "en":"nun",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แม่ชี",
+    "teaching_order":-1
+  },
+  "1280":{
+    "split":"แม่-บ้าน",
+    "en":"housewife",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แม่บ้าน",
+    "teaching_order":-1
+  },
+  "1284":{
+    "split":"แม่-พระ",
+    "en":"kind-hearted woman",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"แม่พระ",
+    "teaching_order":-1
+  },
+  "1285":{
+    "split":"วัน-พระ",
+    "en":"Buddhist holiday",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"วันพระ",
+    "teaching_order":-1
+  },
+  "1286":{
+    "split":"วัน-ศุกร์",
+    "en":"Friday",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"วันศุกร์",
+    "teaching_order":-1
+  },
+  "1287":{
+    "split":"วัน-เกิด",
+    "en":"birthday",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"วันเกิด",
+    "teaching_order":-1
+  },
+  "1289":{
+    "split":"หลวง-พ่อ",
+    "en":"venerable monk",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"หลวงพ่อ",
+    "teaching_order":-1
+  },
+  "1290":{
+    "split":"คน-เมือง",
+    "en":"city person",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คนเมือง",
+    "teaching_order":-1
+  },
+  "1291":{
+    "split":"เมือง-หลวง",
+    "en":"capital city",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เมืองหลวง",
+    "teaching_order":-1
+  },
+  "1293":{
+    "split":"เร่า-ร้อน",
+    "en":"to be anxious, be worried",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เร่าร้อน",
+    "teaching_order":-1
+  },
+  "1294":{
+    "split":"เมือง-ร้อน",
+    "en":"tropical country",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เมืองร้อน",
+    "teaching_order":-1
+  },
+  "1295":{
+    "split":"พัก-ไว้",
+    "en":"to stop, pause, stay",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พักไว้",
+    "teaching_order":-1
+  },
+  "1296":{
+    "split":"พัก-อยู่",
+    "en":"to stay overnight",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พักอยู่",
+    "teaching_order":-1
+  },
+  "1297":{
+    "split":"พัก-ร้อน",
+    "en":"to have a holiday",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พักร้อน",
+    "teaching_order":-1
+  },
+  "1299":{
+    "split":"น้ำ-ร้อน",
+    "en":"hot water",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"น้ำร้อน",
+    "teaching_order":-1
+  },
+  "1300":{
+    "split":"ความ-ร้อน",
+    "en":"heat",
+    "fr":"chaleur",
+    "tones":"",
+    "pos":"",
+    "th":"ความร้อน",
+    "teaching_order":-1
+  },
+  "1301":{
+    "split":"ร้อน-ใจ",
+    "en":"to worry, be anxious",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ร้อนใจ",
+    "teaching_order":-1
+  },
+  "1302":{
+    "split":"พื้น-บ้าน",
+    "en":"local, folk, homegrown",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พื้นบ้าน",
+    "teaching_order":-1
+  },
+  "1303":{
+    "split":"พื้น-ที่",
+    "en":"area, district, place",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พื้นที่",
+    "teaching_order":-1
+  },
+  "1304":{
+    "split":"พื้น-น้ำ",
+    "en":"surface of the water",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พื้นน้ำ",
+    "teaching_order":-1
+  },
+  "1305":{
+    "split":"พื้น-โลก",
+    "en":"the Earth's surface",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"พื้นโลก",
+    "teaching_order":-1
+  },
+  "1306":{
+    "split":"ขั้ว-โลก",
+    "en":"pole (north, south)",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ขั้วโลก",
+    "teaching_order":-1
+  },
+  "1307":{
+    "split":"ชาว-โลก",
+    "en":"world population",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ชาวโลก",
+    "teaching_order":-1
+  },
+  "1308":{
+    "split":"สง=คราม-โลก",
+    "en":"world war",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"สงครามโลก",
+    "teaching_order":-1
+  },
+  "1309":{
+    "split":"โลก-ร้อน",
+    "en":"global warming",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"โลกร้อน",
+    "teaching_order":-1
+  },
+  "1310":{
+    "split":"ทั่ว-โลก",
+    "en":"worldwide",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทั่วโลก",
+    "teaching_order":-1
+  },
+  "1311":{
+    "split":"ของ-โลก",
+    "en":"worldly, material, fleshy",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ของโลก",
+    "teaching_order":-1
+  },
+  "1312":{
+    "split":"ใบ-ไม้",
+    "en":"leaf",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ใบไม้",
+    "teaching_order":-1
+  },
+  "1313":{
+    "split":"รอบ-โลก",
+    "en":"around the world",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รอบโลก",
+    "teaching_order":-1
+  },
+  "1314":{
+    "split":"ไม้-ใหญ่",
+    "en":"tree",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ไม้ใหญ่",
+    "teaching_order":-1
+  },
+  "1315":{
+    "split":"ส่วน-ใหญ่",
+    "en":"majority",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ส่วนใหญ่",
+    "teaching_order":-1
+  },
+  "1316":{
+    "split":"ครู-ใหญ่",
+    "en":"headmaster",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ครูใหญ่",
+    "teaching_order":-1
+  },
+  "1317":{
+    "split":"รู้-ใจ",
+    "en":"to be intimate / to know the mind",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รู้ใจ",
+    "teaching_order":-1
+  },
+  "1318":{
+    "split":"ผู้-ใช้",
+    "en":"user",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ผู้ใช้",
+    "teaching_order":-1
+  },
+  "1319":{
+    "split":"ผู้-ใหญ่",
+    "en":"adult, senior, elder",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ผู้ใหญ่",
+    "teaching_order":-1
+  },
+  "1320":{
+    "split":"ผู้-ป่วย",
+    "en":"patient, sufferer, sick person",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ผู้ป่วย",
+    "teaching_order":-1
+  },
+  "1321":{
+    "split":"ผู้-นำ",
+    "en":"leader, chief, captain",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ผู้นำ",
+    "teaching_order":-1
+  },
+  "1322":{
+    "split":"เสี่ยง-ชีวิต",
+    "en":"to risk, jeopardize",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เสี่ยงชีวิต",
+    "teaching_order":-1
+  },
+  "1325":{
+    "split":"ผู้-รู้",
+    "en":"knowledgeable people, well-informed people",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ผู้รู้",
+    "teaching_order":-1
+  },
+  "1326":{
+    "split":"ให้-รู้",
+    "en":"to let someone know",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ให้รู้",
+    "teaching_order":-1
+  },
+  "1328":{
+    "split":"ความ-รู้",
+    "en":"knowledge, information, awareness",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ความรู้",
+    "teaching_order":-1
+  },
+  "1329":{
+    "split":"ลา-สึก",
+    "en":"to leave the monkhood",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลาสึก",
+    "teaching_order":-1
+  },
+  "1331":{
+    "split":"รอบ-ตัว",
+    "en":"all around",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รอบตัว",
+    "teaching_order":-1
+  },
+  "1332":{
+    "split":"รู้-ตัว",
+    "en":"to be aware, conscious of",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"รู้ตัว",
+    "teaching_order":-1
+  },
+  "1333":{
+    "split":"ลอง-เสี่ยง",
+    "en":"to take the risk",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลองเสี่ยง",
+    "teaching_order":-1
+  },
+  "1334":{
+    "split":"ลอง-ดู",
+    "en":"to try out",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลองดู",
+    "teaching_order":-1
+  },
+  "1335":{
+    "split":"จำ-ลอง",
+    "en":"to reproduce, make a copy, imitate",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จำลอง",
+    "teaching_order":-1
+  },
+  "1336":{
+    "split":"ลอง-ทำ",
+    "en":"to test, experiment, try",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ลองทำ",
+    "teaching_order":-1
+  },
+  "1337":{
+    "split":"ทำ-ใจ",
+    "en":"to come to terms with, to accept",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทำใจ",
+    "teaching_order":-1
+  },
+  "1338":{
+    "split":"ทำ-ผิด",
+    "en":"to make a mistake, do something wrong",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทำผิด",
+    "teaching_order":-1
+  },
+  "1341":{
+    "split":"ทำ-ตาม",
+    "en":"to imitate, copy / to obey",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทำตาม",
+    "teaching_order":-1
+  },
+  "1342":{
+    "split":"ทำ-ร้าย",
+    "en":"to hurt, to do harm",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทำร้าย",
+    "teaching_order":-1
+  },
+  "1343":{
+    "split":"ทำ-ความ",
+    "en":"to cause trouble",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทำความ",
+    "teaching_order":-1
+  },
+  "1344":{
+    "split":"ทำ-เป็น",
+    "en":"to pretend, feign",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทำเป็น",
+    "teaching_order":-1
+  },
+  "1345":{
+    "split":"ทำ-บุญ",
+    "en":"to make merit",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทำบุญ",
+    "teaching_order":-1
+  },
+  "1348":{
+    "split":"ทำ-ตัว",
+    "en":"to behave, conduct oneself, act",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ทำตัว",
+    "teaching_order":-1
+  },
+  "1350":{
+    "split":"อยู่-ตัว",
+    "en":"to be stable, steady",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"อยู่ตัว",
+    "teaching_order":-1
+  },
+  "1351":{
+    "split":"อยู่-รอด",
+    "en":"to survive, exist",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"อยู่รอด",
+    "teaching_order":-1
+  },
+  "1352":{
+    "split":"ขึ้น-ใจ",
+    "en":"to learn by heart, memorize",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ขึ้นใจ",
+    "teaching_order":-1
+  },
+  "1353":{
+    "split":"ขึ้น-อยู่",
+    "en":"to depend on, rely on",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ขึ้นอยู่",
+    "teaching_order":-1
+  },
+  "1354":{
+    "split":"อา=ศัย-อยู่",
+    "en":"to live, reside",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"อาศัยอยู่",
+    "teaching_order":-1
+  },
+  "1355":{
+    "split":"ที่-อยู่",
+    "en":"address",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ที่อยู่",
+    "teaching_order":-1
+  },
+  "1356":{
+    "split":"เหมือน-กับ",
+    "en":"like, as, such as, as if",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เหมือนกับ",
+    "teaching_order":-1
+  },
+  "1357":{
+    "split":"เดียว-กับ",
+    "en":"the same as",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เดียวกับ",
+    "teaching_order":-1
+  },
+  "1358":{
+    "split":"อยู่-กับ",
+    "en":"to be with, stay with, be with",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"อยู่กับ",
+    "teaching_order":-1
+  },
+  "1360":{
+    "split":"ไป-ทุ่ง",
+    "en":"to go to the toilet",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ไปทุ่ง",
+    "teaching_order":-1
+  },
+  "1361":{
+    "split":"ไป-นอก",
+    "en":"to go overseas",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ไปนอก",
+    "teaching_order":-1
+  },
+  "1362":{
+    "split":"การ-ไป",
+    "en":"going",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"การไป",
+    "teaching_order":-1
+  },
+  "1363":{
+    "split":"ไป-กับ",
+    "en":"to go with, accompany",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ไปกับ",
+    "teaching_order":-1
+  },
+  "1364":{
+    "split":"ไป-หา",
+    "en":"to go to see, visit, meet",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ไปหา",
+    "teaching_order":-1
+  },
+  "1365":{
+    "split":"ไป-ดู",
+    "en":"to go and see",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ไปดู",
+    "teaching_order":-1
+  },
+  "1367":{
+    "split":"ดาว-เสาร์",
+    "en":"Saturn",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดาวเสาร์",
+    "teaching_order":-1
+  },
+  "1368":{
+    "split":"ตก-ไป",
+    "en":"to be rejected, to be defeated, be settled",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตกไป",
+    "teaching_order":-1
+  },
+  "1369":{
+    "split":"ตก-ปลา",
+    "en":"to angle, to fish",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตกปลา",
+    "teaching_order":-1
+  },
+  "1370":{
+    "split":"ตก-ใจ",
+    "en":"to be startled, shocked",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ตกใจ",
+    "teaching_order":-1
+  },
+  "1371":{
+    "split":"ฝน-ตก",
+    "en":"rain",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ฝนตก",
+    "teaching_order":-1
+  },
+  "1372":{
+    "split":"น้ำ-ตก",
+    "en":"waterfall",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"น้ำตก",
+    "teaching_order":-1
+  },
+  "1373":{
+    "split":"ดาว-ตก",
+    "en":"meteor, shooting star",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดาวตก",
+    "teaching_order":-1
+  },
+  "1374":{
+    "split":"ดาว-เทียม",
+    "en":"satellite",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดาวเทียม",
+    "teaching_order":-1
+  },
+  "1375":{
+    "split":"กลุ่ม-ดาว",
+    "en":"constellation",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กลุ่มดาว",
+    "teaching_order":-1
+  },
+  "1376":{
+    "split":"กลุ่ม-คน",
+    "en":"crowd, group of people",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"กลุ่มคน",
+    "teaching_order":-1
+  },
+  "1377":{
+    "split":"จัด-กลุ่ม",
+    "en":"to form into groups",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จัดกลุ่ม",
+    "teaching_order":-1
+  },
+  "1378":{
+    "split":"จัด-พิมพ์",
+    "en":"to publish",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จัดพิมพ์",
+    "teaching_order":-1
+  },
+  "1380":{
+    "split":"จัด-การ",
+    "en":"to manage, deal, handle",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จัดการ",
+    "teaching_order":-1
+  },
+  "1382":{
+    "split":"เป็น-การ",
+    "en":"to succeed, accomplish, complete",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เป็นการ",
+    "teaching_order":-1
+  },
+  "1383":{
+    "split":"การ-คิด",
+    "en":"thought, thinking",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"การคิด",
+    "teaching_order":-1
+  },
+  "1384":{
+    "split":"ความ-คิด",
+    "en":"thought, idea, notion",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ความคิด",
+    "teaching_order":-1
+  },
+  "1385":{
+    "split":"คิด-ว่า",
+    "en":"to think that",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คิดว่า",
+    "teaching_order":-1
+  },
+  "1386":{
+    "split":"คิด-เห็น",
+    "en":"to comment, discuss, criticize",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คิดเห็น",
+    "teaching_order":-1
+  },
+  "1387":{
+    "split":"คิด-ได้",
+    "en":"to realize, become aware of, comprehend",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คิดได้",
+    "teaching_order":-1
+  },
+  "1388":{
+    "split":"เป็น-ได้",
+    "en":"possibly, likely, maybe",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"เป็นได้",
+    "teaching_order":-1
+  },
+  "1389":{
+    "split":"ความ-จำ",
+    "en":"memory, remembrance",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ความจำ",
+    "teaching_order":-1
+  },
+  "1390":{
+    "split":"จำ-ได้",
+    "en":"to remember",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"จำได้",
+    "teaching_order":-1
+  },
+  "1392":{
+    "split":"คน-ดี",
+    "en":"good person/darling, honey",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คนดี",
+    "teaching_order":-1
+  },
+  "1393":{
+    "split":"ดี-มาก",
+    "en":"very good, excellent",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดีมาก",
+    "teaching_order":-1
+  },
+  "1394":{
+    "split":"โชค-ดี",
+    "en":"lucky/good luck!",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"โชคดี",
+    "teaching_order":-1
+  },
+  "1395":{
+    "split":"ก็-ตาม",
+    "en":"no matter, whatever",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ก็ตาม",
+    "teaching_order":-1
+  },
+  "1396":{
+    "split":"ก็-ดี",
+    "en":"to be quite good, not bad",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ก็ดี",
+    "teaching_order":-1
+  },
+  "1397":{
+    "split":"ก็-ได้",
+    "en":"ok, all right, fine",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ก็ได้",
+    "teaching_order":-1
+  },
+  "1398":{
+    "split":"คน-ดู",
+    "en":"audience, spectator, onlooker",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"คนดู",
+    "teaching_order":-1
+  },
+  "1399":{
+    "split":"ดู-ดี",
+    "en":"to look good",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ดูดี",
+    "teaching_order":-1
+  },
+  "1401":{
+    "split":"ยิน-ดี",
+    "en":"to be glad",
+    "fr":"",
+    "tones":"",
+    "pos":"",
+    "th":"ยินดี",
+    "teaching_order":-1
   }
 }
-
-
-
-
-
-
-
-

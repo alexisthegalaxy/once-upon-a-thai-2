@@ -29,6 +29,7 @@ Quests="*res://Quests/quests.gd"
 Save="*res://Save/save.gd"
 Money="*res://Money/Money.gd"
 ChangeMap="*res://Service/ChangeMap.gd"
+Compound="*res://Lexical/Compound/Compound.gd"
 
 [display]
 
