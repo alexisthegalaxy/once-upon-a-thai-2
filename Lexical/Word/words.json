@@ -33,7 +33,7 @@
     "tones": "LLM",
     "pos": "INTE",
     "th": "สวัสดี",
-    "etymologyen": "comes from the Sanskrit स्वस्ति (svasti, meaning \"well-being, good fortune\") from सु (su meaning \"good\") + अस्ति (asti, meaning \"to be\"). Cognate with स्वस्तिक (Swatika, which originally meant \"lucky-charm, little thing associated with well-being\").",
+    "etymology_en": "comes from the Sanskrit स्वस्ति (svasti, meaning \"well-being, good fortune\") from सु (su meaning \"good\") + अस्ति (asti, meaning \"to be\"). Cognate with स्वस्तिक (Swatika, which originally meant \"lucky-charm, little thing associated with well-being\").",
     "teaching_order": 15
   },
   "4": {
@@ -5945,7 +5945,7 @@
     "pos": "",
     "th": "สัปดาห์",
     "teaching_order": -1,
-    "etymologyen": "comes from the Sanskrit सप्त (sapta, meaning \"seven\") + अह (aha, meaning \"day\")."
+    "etymology_en": "comes from the Sanskrit सप्त (sapta, meaning \"seven\") + अह (aha, meaning \"day\")."
   },
   "647": {
     "split": "ยิ่ง",
@@ -5964,7 +5964,7 @@
     "pos": "",
     "th": "สงคราม",
     "teaching_order": -1,
-    "etymologyen": "comes from the Sanskrit संग्राम (saṃgrāma, meaning \"war\")."
+    "etymology_en": "comes from the Sanskrit संग्राम (saṃgrāma, meaning \"war\")."
   },
   "649": {
     "split": "ภาพ-วาด",
@@ -6037,8 +6037,8 @@
     "pos": "",
     "th": "แอปเปิ้ล",
     "teaching_order": -1,
-    "etymologyen": "comes from the English apple.",
-    "etymologyfr": "vient de l'anglais apple (\"pomme\")."
+    "etymology_en": "comes from the English apple.",
+    "etymology_fr": "vient de l'anglais apple (\"pomme\")."
   },
   "657": {
     "split": "เต้น",
@@ -6165,7 +6165,7 @@
     "pos": "",
     "th": "วิจัย",
     "teaching_order": -1,
-    "etymologyen": "comes from the Sanskrit विचय (vicaya, meaning \"gathering, putting together\")."
+    "etymology_en": "comes from the Sanskrit विचय (vicaya, meaning \"gathering, putting together\")."
   },
   "671": {
     "split": "นัก-เรียน",
@@ -12273,6 +12273,16 @@
     "tones":"",
     "pos":"",
     "th":"ดูดี",
+    "teaching_order":-1
+  },
+  "1400":{
+    "split":"ยี่=ห้อ",
+    "en":"brand, brand-name",
+    "fr":"une marque (de vêtement, etc.)",
+    "tones":"FF",
+    "pos":"",
+    "th":"ดูดี",
+    "etymology_en":"Comes from Teochew 字號 (zìhao, meaning \"shop name, brand\").",
     "teaching_order":-1
   },
   "1401":{

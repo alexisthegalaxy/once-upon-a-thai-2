@@ -16,6 +16,7 @@ func _ready():
 	switch_to_explore()
 	if Game.following_words:
 		Game.gains_focus(self)
+	$WordNet._init_word_net([$YSort/Spell, $YSort/Spell2, $YSort/Spell3, $YSort/Spell7, $YSort/Spell4, $YSort/Spell5, $YSort/Spell6])
 
 
 func dialog_option(_dialog, response):
@@ -31,14 +32,17 @@ func place_down_word():
 	new_word.word = Game.words[str(following_word.id)]
 	new_word.can_move = false
 	new_word.position = Game.player.position
+	$WordNet.add_word(new_word)
 	Game.following_words = []
 	Game.lose_focus(self)
 	following_word.over_word.queue_free()
 	following_word = null
 	call_deferred("add_word", new_word)
 
+
 func add_word(new_word):
 	Game.current_scene.get_node("YSort").add_child(new_word)
+	
 
 func interact():
 	"""

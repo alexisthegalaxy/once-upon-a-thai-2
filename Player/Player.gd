@@ -131,7 +131,11 @@ func player_interact():
 			Game.space_bar_to_interact = null
 
 func _on_print():
-	Game.print_entire_tree()
+	print('\nดี-ใจ:')
+	print(Compound.get_related_words("ดี-ใจ"))
+	print('\nไป')
+	print(Compound.get_related_words("ดี-ใจ"))
+#	Game.print_entire_tree()
 #	print("current position: (" + str(position.x) + ", " + str(position.y) + ")    " + Game.current_map_name)
 #	Game.add_random_letter_to_letters_to_look_for()
 #	Quests.quests["find_first_letters"].status = Quests.FINISHED

@@ -142,6 +142,7 @@ func dialog_option(_dialog, option):
 	var TELEPORT = 4
 	if option == MOVE_IT:
 		Game.add_following_word(id, self)
+		Game.palace.get_node("WordNet").remove_word(self)
 		Game.lose_focus(self)
 		Game.gains_focus(Game.palace)
 
