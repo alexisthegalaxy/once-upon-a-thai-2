@@ -79,11 +79,20 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 		Game.current_scene.queue_free()
 	
 	assert(to_map_name != "")
-	Game.current_scene = ResourceLoader.load(to_map_name).instance()
-	Game.main_ui.hovered_buttons = []
-
-	move_player(to_x, to_y, level_y_height_change)
 	
+	if to_map_name == "res://Palace/Palace.tscn":
+		var packed_scene = load("res://palace_in_memory.tscn")
+		if packed_scene:
+			Game.current_scene = packed_scene.instance()
+#			move_player(to_x, to_y, level_y_height_change)
+#			var my_scene = packed_scene.instance()
+#			add_child(my_scene)
+		else:
+			Game.current_scene = ResourceLoader.load(to_map_name).instance()
+			move_player(to_x, to_y, level_y_height_change)
+	else:
+		Game.current_scene = ResourceLoader.load(to_map_name).instance()
+		move_player(to_x, to_y, level_y_height_change)
 	SoundPlayer.start_music_upon_entering_map(to_map_name)
 	free_all_non_necessary_nodes()
 	get_tree().get_root().add_child(Game.current_scene)

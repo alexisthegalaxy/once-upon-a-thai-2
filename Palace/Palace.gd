@@ -16,8 +16,21 @@ func _ready():
 	switch_to_explore()
 	if Game.following_words:
 		Game.gains_focus(self)
-	$WordNet._init_word_net([$YSort/Spell, $YSort/Spell2, $YSort/Spell3, $YSort/Spell7, $YSort/Spell4, $YSort/Spell5, $YSort/Spell6])
+	var words = []
+	for word in $YSort.get_children():
+		if 'Spell' in word.name:
+			words.append(word)
+	$WordNet._init_word_net(words)
 
+func save_palace_in_memory():
+	print('save_palace_in_memory...')
+	var packed_scene = PackedScene.new()
+	print('packed_scene a ', packed_scene)
+#	packed_scene.pack(get_tree().get_current_scene())
+	packed_scene.pack(Game.current_scene)
+	print('packed_scene b ', packed_scene)
+	ResourceSaver.save("res://palace_in_memory.tscn", packed_scene)
+#	Game.palace_in_memory = self
 
 func dialog_option(_dialog, response):
 	var YES = 1  # NO = 2
@@ -42,7 +55,7 @@ func place_down_word():
 
 func add_word(new_word):
 	Game.current_scene.get_node("YSort").add_child(new_word)
-	
+	new_word.set_owner(Game.current_scene)
 
 func interact():
 	"""
@@ -76,6 +89,7 @@ func ui_cancel():
 	$EditorObjectOnCursor.ui_cancel()
 
 func close():
+	save_palace_in_memory()
 	ChangeMap.call_deferred(
 		"_deferred_goto_scene",
 		Game.player_last_overworld_map_visited,

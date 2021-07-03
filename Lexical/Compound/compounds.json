@@ -1,0 +1,3898 @@
+{
+  "ด้วย_ดี": {
+    "en": "without trouble",
+    "fr": "facilement, sans souci"
+  },
+  "องค์_ประ-กอบ": {
+    "en": "component, constituent, ingredient",
+    "fr": "composant, constituent, ingrédient"
+  },
+  "ประ-กอบ_ด้วย": {
+    "en": "to consist of, be composed of",
+    "fr": "consister de, être composé de"
+  },
+  "กลาย_พันธุ์": {
+    "en": "to mutate",
+    "fr": "muter"
+  },
+  "กลับ_กลาย": {
+    "en": "to become, change to, turn to",
+    "fr": "devenir"
+  },
+  "การ_กลาย": {
+    "en": "mutation, change",
+    "fr": "mutation, changement"
+  },
+  "กลาย_สี": {
+    "en": "to change color",
+    "fr": "changer de couleur"
+  },
+  "กลาย_เป็น": {
+    "en": "to become, turn into",
+    "fr": "devenir, se changer en"
+  },
+  "ที่_สอง": {
+    "en": "second, 2nd",
+    "fr": "deuxième, second"
+  },
+  "ที่_แล้ว": {
+    "en": "last, previous",
+    "fr": "précédent"
+  },
+  "ข-ณะ_ที่": {
+    "en": "when, while, as",
+    "fr": "pendant"
+  },
+  "ไป_ที่": {
+    "word_1": "ไป",
+    "word_2": "ที่",
+    "en": "to go to",
+    "fr": ""
+  },
+  "ที่_ว่า": {
+    "word_1": "ที่",
+    "word_2": "ว่า",
+    "en": "that",
+    "fr": ""
+  },
+  "ที่_มา": {
+    "word_1": "ที่",
+    "word_2": "มา",
+    "en": "source",
+    "fr": ""
+  },
+  "ที่_นี่": {
+    "word_1": "ที่",
+    "word_2": "นี่",
+    "en": "here",
+    "fr": ""
+  },
+  "ที่_ดี": {
+    "word_1": "ที่",
+    "word_2": "ดี",
+    "en": "good, best",
+    "fr": ""
+  },
+  "อยู่_ที่": {
+    "word_1": "อยู่",
+    "word_2": "ที่",
+    "en": "to be at, stay at, live at",
+    "fr": ""
+  },
+  "ที่_จะ": {
+    "word_1": "ที่",
+    "word_2": "จะ",
+    "en": "that will",
+    "fr": ""
+  },
+  "ที่_สุด": {
+    "word_1": "ที่",
+    "word_2": "สุด",
+    "en": "most, maximum, great",
+    "fr": ""
+  },
+  "เป็น_ที่": {
+    "word_1": "เป็น",
+    "word_2": "ที่",
+    "en": "to be something that",
+    "fr": ""
+  },
+  "วัน_ที่": {
+    "word_1": "วัน",
+    "word_2": "ที่",
+    "en": "date (calendar...)",
+    "fr": ""
+  },
+  "เวลา_เช้า": {
+    "word_1": "เวลา",
+    "word_2": "เช้า",
+    "en": "morning",
+    "fr": ""
+  },
+  "เวลา_มืด": {
+    "word_1": "เวลา",
+    "word_2": "มืด",
+    "en": "nighttime",
+    "fr": ""
+  },
+  "เขต_เวลา": {
+    "word_1": "เขต",
+    "word_2": "เวลา",
+    "en": "timezone",
+    "fr": ""
+  },
+  "เวลา_หยุด": {
+    "word_1": "เวลา",
+    "word_2": "หยุด",
+    "en": "stop time",
+    "fr": ""
+  },
+  "เวลา_รอ": {
+    "word_1": "เวลา",
+    "word_2": "รอ",
+    "en": "wait time",
+    "fr": ""
+  },
+  "เวลา_ค่ำ": {
+    "word_1": "เวลา",
+    "word_2": "ค่ำ",
+    "en": "nightfall, dusk",
+    "fr": ""
+  },
+  "เวลา_เกิด": {
+    "word_1": "เวลา",
+    "word_2": "เกิด",
+    "en": "birth time",
+    "fr": ""
+  },
+  "เวลา_ใด": {
+    "word_1": "เวลา",
+    "word_2": "ใด",
+    "en": "when, whenever",
+    "fr": ""
+  },
+  "เวลา_นี้": {
+    "word_1": "เวลา",
+    "word_2": "นี้",
+    "en": "at the moment, now",
+    "fr": ""
+  },
+  "ตา_กล้อง": {
+    "word_1": "ตา",
+    "word_2": "กล้อง",
+    "en": "cameraman, photographer",
+    "fr": ""
+  },
+  "กล้อง_ขยาย": {
+    "word_1": "กล้อง",
+    "word_2": "ขยาย",
+    "en": "microscope",
+    "fr": ""
+  },
+  "ขยาย_เข้า": {
+    "word_1": "ขยาย",
+    "word_2": "เข้า",
+    "en": "to zoom in",
+    "fr": ""
+  },
+  "ขยาย_ใหญ่": {
+    "word_1": "ขยาย",
+    "word_2": "ใหญ่",
+    "en": "magnify",
+    "fr": ""
+  },
+  "การ_ขยาย": {
+    "word_1": "การ",
+    "word_2": "ขยาย",
+    "en": "expanding",
+    "fr": ""
+  },
+  "แว่น_ขยาย": {
+    "word_1": "แว่น",
+    "word_2": "ขยาย",
+    "en": "magnifying glass",
+    "fr": ""
+  },
+  "แว่น_ดำ": {
+    "word_1": "แว่น",
+    "word_2": "ดำ",
+    "en": "dark glasses",
+    "fr": ""
+  },
+  "ลูก_ตา": {
+    "word_1": "ลูก",
+    "word_2": "ตา",
+    "en": "eyeball, eye",
+    "fr": ""
+  },
+  "แว่น_ตา": {
+    "word_1": "แว่น",
+    "word_2": "ตา",
+    "en": "glasses",
+    "fr": ""
+  },
+  "น้ำ_ตา": {
+    "word_1": "น้ำ",
+    "word_2": "ตา",
+    "en": "tears",
+    "fr": ""
+  },
+  "คิด_ร้าย": {
+    "word_1": "คิด",
+    "word_2": "ร้าย",
+    "en": "to have malice, wicked intentions",
+    "fr": ""
+  },
+  "พิษ_ร้าย": {
+    "word_1": "พิษ",
+    "word_2": "ร้าย",
+    "en": "toxic",
+    "fr": ""
+  },
+  "วาย_ร้าย": {
+    "word_1": "วาย",
+    "word_2": "ร้าย",
+    "en": "devilish, evil, villain",
+    "fr": ""
+  },
+  "สัตว์_ร้าย": {
+    "word_1": "สัตว์",
+    "word_2": "ร้าย",
+    "en": "fierce animal, wild animal",
+    "fr": ""
+  },
+  "ดุ_ร้าย": {
+    "word_1": "ดุ",
+    "word_2": "ร้าย",
+    "en": "to be savage, ferocious, wild",
+    "fr": ""
+  },
+  "ข่าว_ร้าย": {
+    "word_1": "ข่าว",
+    "word_2": "ร้าย",
+    "en": "bad news",
+    "fr": ""
+  },
+  "ใจ_ร้าย": {
+    "word_1": "ใจ",
+    "word_2": "ร้าย",
+    "en": "to be cruel, wicked, heartless",
+    "fr": ""
+  },
+  "ฝัน_ร้าย": {
+    "word_1": "ฝัน",
+    "word_2": "ร้าย",
+    "en": "to have a nightmare",
+    "fr": ""
+  },
+  "ผล_ร้าย": {
+    "word_1": "ผล",
+    "word_2": "ร้าย",
+    "en": "harmful effect",
+    "fr": ""
+  },
+  "ตัว_ร้าย": {
+    "word_1": "ตัว",
+    "word_2": "ร้าย",
+    "en": "enemy, bad guy",
+    "fr": ""
+  },
+  "เที่ยว_เล่น": {
+    "word_1": "เที่ยว",
+    "word_2": "เล่น",
+    "en": "to loaf, stroll, saunter",
+    "fr": ""
+  },
+  "ขี้_เล่น": {
+    "word_1": "ขี้",
+    "word_2": "เล่น",
+    "en": "to be playful, mischievous, frisky",
+    "fr": ""
+  },
+  "พูด_เล่น": {
+    "word_1": "พูด",
+    "word_2": "เล่น",
+    "en": "to joke, to kid",
+    "fr": ""
+  },
+  "ชื่อ_เล่น": {
+    "word_1": "ชื่อ",
+    "word_2": "เล่น",
+    "en": "nickname",
+    "fr": ""
+  },
+  "นั่ง_เล่น": {
+    "word_1": "นั่ง",
+    "word_2": "เล่น",
+    "en": "to sit leisurely",
+    "fr": ""
+  },
+  "เครื่อง_เล่น": {
+    "word_1": "เครื่อง",
+    "word_2": "เล่น",
+    "en": "plaything",
+    "fr": ""
+  },
+  "เดิน_เล่น": {
+    "word_1": "เดิน",
+    "word_2": "เล่น",
+    "en": "to stroll, take a walk",
+    "fr": ""
+  },
+  "ผู้_เล่น": {
+    "word_1": "ผู้",
+    "word_2": "เล่น",
+    "en": "player",
+    "fr": ""
+  },
+  "ของ_เล่น": {
+    "word_1": "ของ",
+    "word_2": "เล่น",
+    "en": "toy, plaything",
+    "fr": ""
+  },
+  "เล่น_น้ำ": {
+    "word_1": "เล่น",
+    "word_2": "น้ำ",
+    "en": "to play in the water",
+    "fr": ""
+  },
+  "คน_ตาย": {
+    "word_1": "คน",
+    "word_2": "ตาย",
+    "en": "the dead",
+    "fr": ""
+  },
+  "คน_ขับ": {
+    "word_1": "คน",
+    "word_2": "ขับ",
+    "en": "driver, chauffeur",
+    "fr": ""
+  },
+  "สัก_คน": {
+    "word_1": "สัก",
+    "word_2": "คน",
+    "en": "just one person",
+    "fr": ""
+  },
+  "คน_งาน": {
+    "word_1": "คน",
+    "word_2": "งาน",
+    "en": "employee, worker",
+    "fr": ""
+  },
+  "คน_ใหม่": {
+    "word_1": "คน",
+    "word_2": "ใหม่",
+    "en": "new one, new person",
+    "fr": ""
+  },
+  "คน_จน": {
+    "word_1": "คน",
+    "word_2": "จน",
+    "en": "poor people",
+    "fr": ""
+  },
+  "คน_ร้าย": {
+    "word_1": "คน",
+    "word_2": "ร้าย",
+    "en": "criminal, culprit, offender",
+    "fr": ""
+  },
+  "คน_เดียว": {
+    "word_1": "คน",
+    "word_2": "เดียว",
+    "en": "alone, by oneself / one person",
+    "fr": ""
+  },
+  "บาง_คน": {
+    "word_1": "บาง",
+    "word_2": "คน",
+    "en": "somebody",
+    "fr": ""
+  },
+  "คน_อื่น": {
+    "word_1": "คน",
+    "word_2": "อื่น",
+    "en": "someone else, others",
+    "fr": ""
+  },
+  "คน_ไทย": {
+    "word_1": "คน",
+    "word_2": "ไทย",
+    "en": "Thai, thai people",
+    "fr": ""
+  },
+  "ทุก_คน": {
+    "word_1": "ทุก",
+    "word_2": "คน",
+    "en": "everyone",
+    "fr": ""
+  },
+  "รส_จืด": {
+    "word_1": "รส",
+    "word_2": "จืด",
+    "en": "flavorless, insipid, tasteless",
+    "fr": ""
+  },
+  "ขยิบ_ตา": {
+    "word_1": "ขยิบ",
+    "word_2": "ตา",
+    "en": "to blink, wink, twinkle",
+    "fr": ""
+  },
+  "เล่น_ตา": {
+    "word_1": "เล่น",
+    "word_2": "ตา",
+    "en": "to glance, glimpse",
+    "fr": ""
+  },
+  "ตา_เสีย": {
+    "word_1": "ตา",
+    "word_2": "เสีย",
+    "en": "blind",
+    "fr": ""
+  },
+  "ชู_กลิ่น": {
+    "word_1": "ชู",
+    "word_2": "กลิ่น",
+    "en": "to emit, give out an odor",
+    "fr": ""
+  },
+  "ชู_มือ": {
+    "word_1": "ชู",
+    "word_2": "มือ",
+    "en": "to raise one's hand",
+    "fr": ""
+  },
+  "ชู_ใจ": {
+    "word_1": "ชู",
+    "word_2": "ใจ",
+    "en": "to encourage, inspire, hearten",
+    "fr": ""
+  },
+  "ชู_รส": {
+    "word_1": "ชู",
+    "word_2": "รส",
+    "en": "flavor, seasoning powder",
+    "fr": ""
+  },
+  "สม_รส": {
+    "word_1": "สม",
+    "word_2": "รส",
+    "en": "to marry, get married",
+    "fr": ""
+  },
+  "รส_ชาติ": {
+    "word_1": "รส",
+    "word_2": "ชาติ",
+    "en": "flavor, taste, savor",
+    "fr": ""
+  },
+  "ปลา_เค็ม": {
+    "word_1": "ปลา",
+    "word_2": "เค็ม",
+    "en": "salted fish",
+    "fr": ""
+  },
+  "ไข่_เค็ม": {
+    "word_1": "ไข่",
+    "word_2": "เค็ม",
+    "en": "salted egg",
+    "fr": ""
+  },
+  "รส_เค็ม": {
+    "word_1": "รส",
+    "word_2": "เค็ม",
+    "en": "salty",
+    "fr": ""
+  },
+  "ความ_เค็ม": {
+    "word_1": "ความ",
+    "word_2": "เค็ม",
+    "en": "saltiness / stinginess",
+    "fr": ""
+  },
+  "น้ำ_เค็ม": {
+    "word_1": "น้ำ",
+    "word_2": "เค็ม",
+    "en": "saltwater, sea water",
+    "fr": ""
+  },
+  "ตุ๊กตา_หิมะ": {
+    "word_1": "ตุ๊กตา",
+    "word_2": "หิมะ",
+    "en": "snowman",
+    "fr": ""
+  },
+  "กรวด_กลาง": {
+    "word_1": "กรวด",
+    "word_2": "กลาง",
+    "en": "pebble",
+    "fr": ""
+  },
+  "กรวด_น้ำ": {
+    "word_1": "กรวด",
+    "word_2": "น้ำ",
+    "en": "to pour water, pour ceremonial water",
+    "fr": ""
+  },
+  "นาฬิกา_ปลุก": {
+    "word_1": "นาฬิกา",
+    "word_2": "ปลุก",
+    "en": "alarm clock",
+    "fr": ""
+  },
+  "หอ_นาฬิกา": {
+    "word_1": "หอ",
+    "word_2": "นาฬิกา",
+    "en": "clock tower",
+    "fr": ""
+  },
+  "เนิน_ดิน": {
+    "word_1": "เนิน",
+    "word_2": "ดิน",
+    "en": "mound, pile, heap",
+    "fr": ""
+  },
+  "เปิด_ตา": {
+    "word_1": "เปิด",
+    "word_2": "ตา",
+    "en": "to open one's eyes wide",
+    "fr": ""
+  },
+  "ดิน_เค็ม": {
+    "word_1": "ดิน",
+    "word_2": "เค็ม",
+    "en": "alcaline soil, basic soil",
+    "fr": ""
+  },
+  "นาฬิกา_ทราย": {
+    "word_1": "นาฬิกา",
+    "word_2": "ทราย",
+    "en": "sandglass, hourglass, egg timer",
+    "fr": ""
+  },
+  "กรวด_ทราย": {
+    "word_1": "กรวด",
+    "word_2": "ทราย",
+    "en": "pebble, grit, gravel",
+    "fr": ""
+  },
+  "พายุ_หิมะ": {
+    "word_1": "พายุ",
+    "word_2": "หิมะ",
+    "en": "snow storm",
+    "fr": ""
+  },
+  "พายุ_หมุน": {
+    "word_1": "พายุ",
+    "word_2": "หมุน",
+    "en": "cyclone",
+    "fr": ""
+  },
+  "ลม_พายุ": {
+    "word_1": "ลม",
+    "word_2": "พายุ",
+    "en": "storm, tempest, hurricane",
+    "fr": ""
+  },
+  "พายุ_ฝน": {
+    "word_1": "พายุ",
+    "word_2": "ฝน",
+    "en": "rainstorm",
+    "fr": ""
+  },
+  "พายุ_ทราย": {
+    "word_1": "พายุ",
+    "word_2": "ทราย",
+    "en": "sandstorm",
+    "fr": ""
+  },
+  "ทราย_ดำ": {
+    "word_1": "ทราย",
+    "word_2": "ดำ",
+    "en": "black sand",
+    "fr": ""
+  },
+  "พื้น_ทราย": {
+    "word_1": "พื้น",
+    "word_2": "ทราย",
+    "en": "sand, sand floor",
+    "fr": ""
+  },
+  "คน_ละเอียด": {
+    "word_1": "คน",
+    "word_2": "ละเอียด",
+    "en": "fastidious person, punctilious person",
+    "fr": ""
+  },
+  "รู้_ละเอียด": {
+    "word_1": "รู้",
+    "word_2": "ละเอียด",
+    "en": "to know the secret of",
+    "fr": ""
+  },
+  "ละเอียด_อ่อน": {
+    "word_1": "ละเอียด",
+    "word_2": "อ่อน",
+    "en": "sensitive, touchy, delicate",
+    "fr": ""
+  },
+  "ทราย_ละเอียด": {
+    "word_1": "ทราย",
+    "word_2": "ละเอียด",
+    "en": "fine sand",
+    "fr": ""
+  },
+  "กระบะ_ทราย": {
+    "word_1": "กระบะ",
+    "word_2": "ทราย",
+    "en": "sandbox",
+    "fr": ""
+  },
+  "ปราสาท_ทราย": {
+    "word_1": "ปราสาท",
+    "word_2": "ทราย",
+    "en": "sand castle",
+    "fr": ""
+  },
+  "เนิน_ทราย": {
+    "word_1": "เนิน",
+    "word_2": "ทราย",
+    "en": "sand dune",
+    "fr": ""
+  },
+  "เม็ด_ทราย": {
+    "word_1": "เม็ด",
+    "word_2": "ทราย",
+    "en": "grain of sand",
+    "fr": ""
+  },
+  "กระดาษ_ทราย": {
+    "word_1": "กระดาษ",
+    "word_2": "ทราย",
+    "en": "sand paper, abrasive paper",
+    "fr": ""
+  },
+  "ดิน_ทราย": {
+    "word_1": "ดิน",
+    "word_2": "ทราย",
+    "en": "sandy soil",
+    "fr": ""
+  },
+  "หิน_ทราย": {
+    "word_1": "หิน",
+    "word_2": "ทราย",
+    "en": "sandstone",
+    "fr": ""
+  },
+  "ทราย_ขาว": {
+    "word_1": "ทราย",
+    "word_2": "ขาว",
+    "en": "white sand",
+    "fr": ""
+  },
+  "ทะเล_ทราย": {
+    "word_1": "ทะเล",
+    "word_2": "ทราย",
+    "en": "desert",
+    "fr": ""
+  },
+  "หาด_ทราย": {
+    "word_1": "หาด",
+    "word_2": "ทราย",
+    "en": "sandy beach",
+    "fr": ""
+  },
+  "ชาย_หาด": {
+    "word_1": "ชาย",
+    "word_2": "หาด",
+    "en": "beach",
+    "fr": ""
+  },
+  "ชาย_ทะเล": {
+    "word_1": "ชาย",
+    "word_2": "ทะเล",
+    "en": "seaside, seashore",
+    "fr": ""
+  },
+  "ชาย_น้ำ": {
+    "word_1": "ชาย",
+    "word_2": "น้ำ",
+    "en": "riverside, waterside",
+    "fr": ""
+  },
+  "ทาน_เลี้ยง": {
+    "word_1": "ทาน",
+    "word_2": "เลี้ยง",
+    "en": "feast, banquet",
+    "fr": ""
+  },
+  "ตัว_แบบ": {
+    "word_1": "ตัว",
+    "word_2": "แบบ",
+    "en": "model",
+    "fr": ""
+  },
+  "แบบ_ง่าย": {
+    "word_1": "แบบ",
+    "word_2": "ง่าย",
+    "en": "easily, simply",
+    "fr": ""
+  },
+  "แบบ_ใด": {
+    "word_1": "แบบ",
+    "word_2": "ใด",
+    "en": "any way, whichever way",
+    "fr": ""
+  },
+  "เครื่อง_แบบ": {
+    "word_1": "เครื่อง",
+    "word_2": "แบบ",
+    "en": "uniform",
+    "fr": ""
+  },
+  "แบบ_เดิม": {
+    "word_1": "แบบ",
+    "word_2": "เดิม",
+    "en": "old-style, retro",
+    "fr": ""
+  },
+  "นาง_แบบ": {
+    "word_1": "นาง",
+    "word_2": "แบบ",
+    "en": "model, mannequin",
+    "fr": ""
+  },
+  "แบบ_ไทย": {
+    "word_1": "แบบ",
+    "word_2": "ไทย",
+    "en": "Thai style",
+    "fr": ""
+  },
+  "แบบ_ใหม่": {
+    "word_1": "แบบ",
+    "word_2": "ใหม่",
+    "en": "new, latest style",
+    "fr": ""
+  },
+  "แบบ_นั้น": {
+    "word_1": "แบบ",
+    "word_2": "นั้น",
+    "en": "like that, that way",
+    "fr": ""
+  },
+  "ออก_แบบ": {
+    "word_1": "ออก",
+    "word_2": "แบบ",
+    "en": "design",
+    "fr": ""
+  },
+  "รูป_แบบ": {
+    "word_1": "รูป",
+    "word_2": "แบบ",
+    "en": "format",
+    "fr": ""
+  },
+  "แบบ_นี้": {
+    "word_1": "แบบ",
+    "word_2": "นี้",
+    "en": "like this, this way",
+    "fr": ""
+  },
+  "ชาย_ตา": {
+    "word_1": "ชาย",
+    "word_2": "ตา",
+    "en": "to glance, glimpse",
+    "fr": ""
+  },
+  "ชาย_รุ่น": {
+    "word_1": "ชาย",
+    "word_2": "รุ่น",
+    "en": "young man",
+    "fr": ""
+  },
+  "มี_ชู้": {
+    "word_1": "มี",
+    "word_2": "ชู้",
+    "en": "to have a lover, commit adultery",
+    "fr": ""
+  },
+  "เป็น_ชู้": {
+    "word_1": "เป็น",
+    "word_2": "ชู้",
+    "en": "to have an affair, commit adultery",
+    "fr": ""
+  },
+  "เจ้า_ชู้": {
+    "word_1": "เจ้า",
+    "word_2": "ชู้",
+    "en": "to be unfaithful, flirtatious",
+    "fr": ""
+  },
+  "ชาย_ชู้": {
+    "word_1": "ชาย",
+    "word_2": "ชู้",
+    "en": "adulterer",
+    "fr": ""
+  },
+  "หญิง_โสด": {
+    "word_1": "หญิง",
+    "word_2": "โสด",
+    "en": "unmarried woman",
+    "fr": ""
+  },
+  "ความ_โสด": {
+    "word_1": "ความ",
+    "word_2": "โสด",
+    "en": "being single",
+    "fr": ""
+  },
+  "สาว_โสด": {
+    "word_1": "สาว",
+    "word_2": "โสด",
+    "en": "unmarried woman, single woman",
+    "fr": ""
+  },
+  "คน_โสด": {
+    "word_1": "คน",
+    "word_2": "โสด",
+    "en": "single person, bachelor, unmarried person",
+    "fr": ""
+  },
+  "ชาย_โสด": {
+    "word_1": "ชาย",
+    "word_2": "โสด",
+    "en": "bachelor, single man",
+    "fr": ""
+  },
+  "ชาย_ฉกรรจ์": {
+    "word_1": "ชาย",
+    "word_2": "ฉกรรจ์",
+    "en": "able-bodied man, fully grown man",
+    "fr": ""
+  },
+  "รุ่น_หลาน": {
+    "word_1": "รุ่น",
+    "word_2": "หลาน",
+    "en": "next generation, young generation",
+    "fr": ""
+  },
+  "ลูก_หลาน": {
+    "word_1": "ลูก",
+    "word_2": "หลาน",
+    "en": "lineage, descendant, pedigree",
+    "fr": ""
+  },
+  "หลาน_ชาย": {
+    "word_1": "หลาน",
+    "word_2": "ชาย",
+    "en": "nephew, grandson",
+    "fr": ""
+  },
+  "คุณ_ชาย": {
+    "word_1": "คุณ",
+    "word_2": "ชาย",
+    "en": "Mr",
+    "fr": ""
+  },
+  "เปลี่ยน_แบบ": {
+    "word_1": "เปลี่ยน",
+    "word_2": "แบบ",
+    "en": "to modify, adapt, alter",
+    "fr": ""
+  },
+  "เปลี่ยน_งาน": {
+    "word_1": "เปลี่ยน",
+    "word_2": "งาน",
+    "en": "to change jobs",
+    "fr": ""
+  },
+  "เปลี่ยน_มือ": {
+    "word_1": "เปลี่ยน",
+    "word_2": "มือ",
+    "en": "to change hands, make over",
+    "fr": ""
+  },
+  "สับ_เปลี่ยน": {
+    "word_1": "สับ",
+    "word_2": "เปลี่ยน",
+    "en": "to switch, alter",
+    "fr": ""
+  },
+  "เปลี่ยน_เสื้อ": {
+    "word_1": "เปลี่ยน",
+    "word_2": "เสื้อ",
+    "en": "to change clothes",
+    "fr": ""
+  },
+  "เปลี่ยน_ที่": {
+    "word_1": "เปลี่ยน",
+    "word_2": "ที่",
+    "en": "to move, transfer",
+    "fr": ""
+  },
+  "เปลี่ยน_รูป": {
+    "word_1": "เปลี่ยน",
+    "word_2": "รูป",
+    "en": "to have a changed apparence, become different",
+    "fr": ""
+  },
+  "เปลี่ยน_กัน": {
+    "word_1": "เปลี่ยน",
+    "word_2": "กัน",
+    "en": "to alternate, take turns",
+    "fr": ""
+  },
+  "เปลี่ยน_สี": {
+    "word_1": "เปลี่ยน",
+    "word_2": "สี",
+    "en": "to change, change color",
+    "fr": ""
+  },
+  "เปลี่ยน_ไป": {
+    "word_1": "เปลี่ยน",
+    "word_2": "ไป",
+    "en": "to change into, turn into",
+    "fr": ""
+  },
+  "การ_เปลี่ยน": {
+    "word_1": "การ",
+    "word_2": "เปลี่ยน",
+    "en": "change, modification",
+    "fr": ""
+  },
+  "เปลี่ยน_แปลง": {
+    "word_1": "เปลี่ยน",
+    "word_2": "แปลง",
+    "en": "to change, alter, modify",
+    "fr": ""
+  },
+  "อุดม_การ": {
+    "word_1": "อุดม",
+    "word_2": "การ",
+    "en": "principle, philosophy",
+    "fr": ""
+  },
+  "ความ_อุดม": {
+    "word_1": "ความ",
+    "word_2": "อุดม",
+    "en": "fertility, abundance, plentiful",
+    "fr": ""
+  },
+  "อุดม_การณ์": {
+    "word_1": "อุดม",
+    "word_2": "การณ์",
+    "en": "ideology",
+    "fr": ""
+  },
+  "เตรียม_ประถม": {
+    "word_1": "เตรียม",
+    "word_2": "ประถม",
+    "en": "pre-elementary school, kindergarten",
+    "fr": ""
+  },
+  "เด็ก_ประถม": {
+    "word_1": "เด็ก",
+    "word_2": "ประถม",
+    "en": "primary school pupil",
+    "fr": ""
+  },
+  "สถาน_ภาพ": {
+    "word_1": "สถาน",
+    "word_2": "ภาพ",
+    "en": "status",
+    "fr": ""
+  },
+  "อุดม_ศึกษา": {
+    "word_1": "อุดม",
+    "word_2": "ศึกษา",
+    "en": "higher education",
+    "fr": ""
+  },
+  "กรณี_ศึกษา": {
+    "word_1": "กรณี",
+    "word_2": "ศึกษา",
+    "en": "case study",
+    "fr": ""
+  },
+  "ประถม_ศึกษา": {
+    "word_1": "ประถม",
+    "word_2": "ศึกษา",
+    "en": "elementary education, primary education",
+    "fr": ""
+  },
+  "ศึกษา_ต่อ": {
+    "word_1": "ศึกษา",
+    "word_2": "ต่อ",
+    "en": "to further study, continue to study",
+    "fr": ""
+  },
+  "สถาน_ศึกษา": {
+    "word_1": "สถาน",
+    "word_2": "ศึกษา",
+    "en": "school, academy, college",
+    "fr": ""
+  },
+  "นัก_ศึกษา": {
+    "word_1": "นัก",
+    "word_2": "ศึกษา",
+    "en": "student, learner",
+    "fr": ""
+  },
+  "การ_ศึกษา": {
+    "word_1": "การ",
+    "word_2": "ศึกษา",
+    "en": "education",
+    "fr": ""
+  },
+  "บุตร_ชาย": {
+    "word_1": "บุตร",
+    "word_2": "ชาย",
+    "en": "son",
+    "fr": ""
+  },
+  "เพศ_ศึกษา": {
+    "word_1": "เพศ",
+    "word_2": "ศึกษา",
+    "en": "sex education",
+    "fr": ""
+  },
+  "ร่วม_เพศ": {
+    "word_1": "ร่วม",
+    "word_2": "เพศ",
+    "en": "to be of the same sex / to have sex",
+    "fr": ""
+  },
+  "ต่าง_เพศ": {
+    "word_1": "ต่าง",
+    "word_2": "เพศ",
+    "en": "of the opposite sex",
+    "fr": ""
+  },
+  "เปลี่ยน_เพศ": {
+    "word_1": "เปลี่ยน",
+    "word_2": "เพศ",
+    "en": "to change sex",
+    "fr": ""
+  },
+  "ลา_เพศ": {
+    "word_1": "ลา",
+    "word_2": "เพศ",
+    "en": "to leave the monkhood",
+    "fr": ""
+  },
+  "เพศ_หญิง": {
+    "word_1": "เพศ",
+    "word_2": "หญิง",
+    "en": "feminine, female gender",
+    "fr": ""
+  },
+  "เพศ_ชาย": {
+    "word_1": "เพศ",
+    "word_2": "ชาย",
+    "en": "masculine, male gender",
+    "fr": ""
+  },
+  "เป็น_ชาย": {
+    "word_1": "เป็น",
+    "word_2": "ชาย",
+    "en": "to be a man, be masculine, be male",
+    "fr": ""
+  },
+  "เด็ก_ชาย": {
+    "word_1": "เด็ก",
+    "word_2": "ชาย",
+    "en": "boy",
+    "fr": ""
+  },
+  "คน_เลี้ยง": {
+    "word_1": "คน",
+    "word_2": "เลี้ยง",
+    "en": "baby-sitter",
+    "fr": ""
+  },
+  "น้า_ชาย": {
+    "word_1": "น้า",
+    "word_2": "ชาย",
+    "en": "uncle",
+    "fr": ""
+  },
+  "มุ้ง_ครอบ": {
+    "word_1": "มุ้ง",
+    "word_2": "ครอบ",
+    "en": "mosquito net",
+    "fr": ""
+  },
+  "การ_ครอบ": {
+    "word_1": "การ",
+    "word_2": "ครอบ",
+    "en": "covering",
+    "fr": ""
+  },
+  "ครอบ_งำ": {
+    "word_1": "ครอบ",
+    "word_2": "งำ",
+    "en": "dominate, overpower, reign",
+    "fr": ""
+  },
+  "น้า_สะใภ้": {
+    "word_1": "น้า",
+    "word_2": "สะใภ้",
+    "en": "aunt",
+    "fr": ""
+  },
+  "ลูก_สะใภ้": {
+    "word_1": "ลูก",
+    "word_2": "สะใภ้",
+    "en": "daughter-in-law",
+    "fr": ""
+  },
+  "พี่_สะใภ้": {
+    "word_1": "พี่",
+    "word_2": "สะใภ้",
+    "en": "sister-in-law",
+    "fr": ""
+  },
+  "พี่_ใหญ่": {
+    "word_1": "พี่",
+    "word_2": "ใหญ่",
+    "en": "eldest sister / eldest brother",
+    "fr": ""
+  },
+  "รุ่น_พี่": {
+    "word_1": "รุ่น",
+    "word_2": "พี่",
+    "en": "senior",
+    "fr": ""
+  },
+  "พี่_สาว": {
+    "word_1": "พี่",
+    "word_2": "สาว",
+    "en": "sister (when older)",
+    "fr": ""
+  },
+  "พี่_ชาย": {
+    "word_1": "พี่",
+    "word_2": "ชาย",
+    "en": "brother (when older)",
+    "fr": ""
+  },
+  "พี่_น้อง": {
+    "word_1": "พี่",
+    "word_2": "น้อง",
+    "en": "brother / sister",
+    "fr": ""
+  },
+  "พี่_เลี้ยง": {
+    "word_1": "พี่",
+    "word_2": "เลี้ยง",
+    "en": "nanny",
+    "fr": ""
+  },
+  "สัตว์_เลี้ยง": {
+    "word_1": "สัตว์",
+    "word_2": "เลี้ยง",
+    "en": "pet, domestic animal",
+    "fr": ""
+  },
+  "เลี้ยง_แขก": {
+    "word_1": "เลี้ยง",
+    "word_2": "แขก",
+    "en": "to entertain guests, to have a party",
+    "fr": ""
+  },
+  "เลี้ยง_ดู": {
+    "word_1": "เลี้ยง",
+    "word_2": "ดู",
+    "en": "to give someone a treat / to support, raise",
+    "fr": ""
+  },
+  "พ่อ_เลี้ยง": {
+    "word_1": "พ่อ",
+    "word_2": "เลี้ยง",
+    "en": "wealthy man",
+    "fr": ""
+  },
+  "พ่อ_มด": {
+    "word_1": "พ่อ",
+    "word_2": "มด",
+    "en": "wizard",
+    "fr": ""
+  },
+  "สวน_ครัว": {
+    "word_1": "สวน",
+    "word_2": "ครัว",
+    "en": "kitchen garden",
+    "fr": ""
+  },
+  "พ่อ_ครัว": {
+    "word_1": "พ่อ",
+    "word_2": "ครัว",
+    "en": "cook, chef",
+    "fr": ""
+  },
+  "ขณะ_เมื่อ": {
+    "word_1": "ขณะ",
+    "word_2": "เมื่อ",
+    "en": "when, as, while",
+    "fr": ""
+  },
+  "ภาษา_สเปน": {
+    "word_1": "ภาษา",
+    "word_2": "สเปน",
+    "en": "Spanish language",
+    "fr": ""
+  },
+  "ภาษา_เกาหลี": {
+    "word_1": "ภาษา",
+    "word_2": "เกาหลี",
+    "en": "Korean language",
+    "fr": ""
+  },
+  "ห้อง_ครัว": {
+    "word_1": "ห้อง",
+    "word_2": "ครัว",
+    "en": "kitchen",
+    "fr": ""
+  },
+  "ห้อง_สมุด": {
+    "word_1": "ห้อง",
+    "word_2": "สมุด",
+    "en": "library",
+    "fr": ""
+  },
+  "ห้อง_นอน": {
+    "word_1": "ห้อง",
+    "word_2": "นอน",
+    "en": "bedroom",
+    "fr": ""
+  },
+  "ห้อง_เรียน": {
+    "word_1": "ห้อง",
+    "word_2": "เรียน",
+    "en": "classroom",
+    "fr": ""
+  },
+  "ถิ่น_เกิด": {
+    "word_1": "ถิ่น",
+    "word_2": "เกิด",
+    "en": "native land, habitat, homeland",
+    "fr": ""
+  },
+  "ถิ่น_ที่": {
+    "word_1": "ถิ่น",
+    "word_2": "ที่",
+    "en": "area, section, locality",
+    "fr": ""
+  },
+  "ใน_ขณะ": {
+    "word_1": "ใน",
+    "word_2": "ขณะ",
+    "en": "while, meanwhile",
+    "fr": ""
+  },
+  "ใน_ใจ": {
+    "word_1": "ใน",
+    "word_2": "ใจ",
+    "en": "in one's heart, in one's mind",
+    "fr": ""
+  },
+  "ภาษา_ถิ่น": {
+    "word_1": "ภาษา",
+    "word_2": "ถิ่น",
+    "en": "dialect, regional speech, localism",
+    "fr": ""
+  },
+  "ภาษา_เยอรมัน": {
+    "word_1": "ภาษา",
+    "word_2": "เยอรมัน",
+    "en": "German language",
+    "fr": ""
+  },
+  "ภาษา_ฝรั่งเศส": {
+    "word_1": "ภาษา",
+    "word_2": "ฝรั่งเศส",
+    "en": "French language",
+    "fr": ""
+  },
+  "ทาง_ใน": {
+    "word_1": "ทาง",
+    "word_2": "ใน",
+    "en": "meditation / way in",
+    "fr": ""
+  },
+  "ที่_ทาง": {
+    "word_1": "ที่",
+    "word_2": "ทาง",
+    "en": "area, place, lot",
+    "fr": ""
+  },
+  "ทาง_เข้า": {
+    "word_1": "ทาง",
+    "word_2": "เข้า",
+    "en": "entrance",
+    "fr": ""
+  },
+  "เดิน_ทาง": {
+    "word_1": "เดิน",
+    "word_2": "ทาง",
+    "en": "travel, journey",
+    "fr": ""
+  },
+  "เส้น_ทาง": {
+    "word_1": "เส้น",
+    "word_2": "ทาง",
+    "en": "route, way, course",
+    "fr": ""
+  },
+  "ด่า_ว่า": {
+    "word_1": "ด่า",
+    "word_2": "ว่า",
+    "en": "to scold, reprimand, censure",
+    "fr": ""
+  },
+  "ด่า_ตอบ": {
+    "word_1": "ด่า",
+    "word_2": "ตอบ",
+    "en": "to insult back",
+    "fr": ""
+  },
+  "ทาง_ภาษา": {
+    "word_1": "ทาง",
+    "word_2": "ภาษา",
+    "en": "linguistically",
+    "fr": ""
+  },
+  "ตอบ_กลับ": {
+    "word_1": "ตอบ",
+    "word_2": "กลับ",
+    "en": "to answer, to reply",
+    "fr": ""
+  },
+  "คำ_ตอบ": {
+    "word_1": "คำ",
+    "word_2": "ตอบ",
+    "en": "answer, reply",
+    "fr": ""
+  },
+  "รบ_ตอบ": {
+    "word_1": "รบ",
+    "word_2": "ตอบ",
+    "en": "to counter-attack",
+    "fr": ""
+  },
+  "ล้าง_จาน": {
+    "word_1": "ล้าง",
+    "word_2": "จาน",
+    "en": "to wash the dishes",
+    "fr": ""
+  },
+  "พัก_รบ": {
+    "word_1": "พัก",
+    "word_2": "รบ",
+    "en": "to declare a truce",
+    "fr": ""
+  },
+  "การ_รบ": {
+    "word_1": "การ",
+    "word_2": "รบ",
+    "en": "disturbing, bothering",
+    "fr": ""
+  },
+  "นัก_รบ": {
+    "word_1": "นัก",
+    "word_2": "รบ",
+    "en": "combatant, fighter, man-at-arms",
+    "fr": ""
+  },
+  "จาน_บิน": {
+    "word_1": "จาน",
+    "word_2": "บิน",
+    "en": "flying saucer",
+    "fr": ""
+  },
+  "บิน_ลง": {
+    "word_1": "บิน",
+    "word_2": "ลง",
+    "en": "to land",
+    "fr": ""
+  },
+  "บิน_ขึ้น": {
+    "word_1": "บิน",
+    "word_2": "ขึ้น",
+    "en": "to take off, to fly up",
+    "fr": ""
+  },
+  "นัก_บิน": {
+    "word_1": "นัก",
+    "word_2": "บิน",
+    "en": "pilot",
+    "fr": ""
+  },
+  "การ_บิน": {
+    "word_1": "การ",
+    "word_2": "บิน",
+    "en": "flying",
+    "fr": ""
+  },
+  "เครื่อง_บิน": {
+    "word_1": "เครื่อง",
+    "word_2": "บิน",
+    "en": "aircraft",
+    "fr": ""
+  },
+  "ชา_ร้อน": {
+    "word_1": "ชา",
+    "word_2": "ร้อน",
+    "en": "hot tea",
+    "fr": ""
+  },
+  "น้ำ_ชา": {
+    "word_1": "น้ำ",
+    "word_2": "ชา",
+    "en": "tea",
+    "fr": ""
+  },
+  "ใบ_ชา": {
+    "word_1": "ใบ",
+    "word_2": "ชา",
+    "en": "tea leaf",
+    "fr": ""
+  },
+  "สนาม_รบ": {
+    "word_1": "สนาม",
+    "word_2": "รบ",
+    "en": "battlefield",
+    "fr": ""
+  },
+  "สนาม_บิน": {
+    "word_1": "สนาม",
+    "word_2": "บิน",
+    "en": "airport",
+    "fr": ""
+  },
+  "ลม_ทะเล": {
+    "word_1": "ลม",
+    "word_2": "ทะเล",
+    "en": "sea breeze",
+    "fr": ""
+  },
+  "เป็น_ลม": {
+    "word_1": "เป็น",
+    "word_2": "ลม",
+    "en": "to faint, to have a stroke",
+    "fr": ""
+  },
+  "มือ_ดี": {
+    "word_1": "มือ",
+    "word_2": "ดี",
+    "en": "master thief",
+    "fr": ""
+  },
+  "ชา_เย็น": {
+    "word_1": "ชา",
+    "word_2": "เย็น",
+    "en": "iced tea",
+    "fr": ""
+  },
+  "ลม_เย็น": {
+    "word_1": "ลม",
+    "word_2": "เย็น",
+    "en": "cold wind, cold air",
+    "fr": ""
+  },
+  "หนาว_เย็น": {
+    "word_1": "หนาว",
+    "word_2": "เย็น",
+    "en": "to be cold",
+    "fr": ""
+  },
+  "น้ำ_เย็น": {
+    "word_1": "น้ำ",
+    "word_2": "เย็น",
+    "en": "cold water",
+    "fr": ""
+  },
+  "เวลา_เย็น": {
+    "word_1": "เวลา",
+    "word_2": "เย็น",
+    "en": "evening, twilight, dusk",
+    "fr": ""
+  },
+  "ชาติ_หน้า": {
+    "word_1": "ชาติ",
+    "word_2": "หน้า",
+    "en": "future life, life to come",
+    "fr": ""
+  },
+  "คราว_หน้า": {
+    "word_1": "คราว",
+    "word_2": "หน้า",
+    "en": "next time",
+    "fr": ""
+  },
+  "ราคา_คุย": {
+    "word_1": "ราคา",
+    "word_2": "คุย",
+    "en": "to brag, boast",
+    "fr": ""
+  },
+  "ต่อ_ราคา": {
+    "word_1": "ต่อ",
+    "word_2": "ราคา",
+    "en": "to bargain",
+    "fr": ""
+  },
+  "ผ้า_ถุง": {
+    "word_1": "ผ้า",
+    "word_2": "ถุง",
+    "en": "sarong",
+    "fr": ""
+  },
+  "ร่ม_เย็น": {
+    "word_1": "ร่ม",
+    "word_2": "เย็น",
+    "en": "cool shade",
+    "fr": ""
+  },
+  "หน้า_สุด": {
+    "word_1": "หน้า",
+    "word_2": "สุด",
+    "en": "foremost",
+    "fr": ""
+  },
+  "สุด_ใจ": {
+    "word_1": "สุด",
+    "word_2": "ใจ",
+    "en": "wholeheartedly",
+    "fr": ""
+  },
+  "หลัง_สุด": {
+    "word_1": "หลัง",
+    "word_2": "สุด",
+    "en": "last, final",
+    "fr": ""
+  },
+  "มาก_สุด": {
+    "word_1": "มาก",
+    "word_2": "สุด",
+    "en": "max",
+    "fr": ""
+  },
+  "สุด_ยอด": {
+    "word_1": "สุด",
+    "word_2": "ยอด",
+    "en": "to be great, excellent",
+    "fr": ""
+  },
+  "ร่ม_เกล้า": {
+    "word_1": "ร่ม",
+    "word_2": "เกล้า",
+    "en": "guardian, protector",
+    "fr": ""
+  },
+  "รัด_เกล้า": {
+    "word_1": "รัด",
+    "word_2": "เกล้า",
+    "en": "tiara",
+    "fr": ""
+  },
+  "รัด_ตัว": {
+    "word_1": "รัด",
+    "word_2": "ตัว",
+    "en": "to be busy / tied up",
+    "fr": ""
+  },
+  "ปลาย_สุด": {
+    "word_1": "ปลาย",
+    "word_2": "สุด",
+    "en": "extreme",
+    "fr": ""
+  },
+  "ปลาย_นิ้ว": {
+    "word_1": "ปลาย",
+    "word_2": "นิ้ว",
+    "en": "finger tip",
+    "fr": ""
+  },
+  "ยาง_รัด": {
+    "word_1": "ยาง",
+    "word_2": "รัด",
+    "en": "rubber band",
+    "fr": ""
+  },
+  "น้ำ_ยาง": {
+    "word_1": "น้ำ",
+    "word_2": "ยาง",
+    "en": "latex",
+    "fr": ""
+  },
+  "สวน_ยาง": {
+    "word_1": "สวน",
+    "word_2": "ยาง",
+    "en": "rubber plantation",
+    "fr": ""
+  },
+  "ปลาย_เท้า": {
+    "word_1": "ปลาย",
+    "word_2": "เท้า",
+    "en": "toes",
+    "fr": ""
+  },
+  "ข้อ_เท้า": {
+    "word_1": "ข้อ",
+    "word_2": "เท้า",
+    "en": "ankle",
+    "fr": ""
+  },
+  "ฝ่า_เท้า": {
+    "word_1": "ฝ่า",
+    "word_2": "เท้า",
+    "en": "sole",
+    "fr": ""
+  },
+  "ถุง_ยาง": {
+    "word_1": "ถุง",
+    "word_2": "ยาง",
+    "en": "condom",
+    "fr": ""
+  },
+  "ถุง_พลาสติก": {
+    "word_1": "ถุง",
+    "word_2": "พลาสติก",
+    "en": "plastic bag",
+    "fr": ""
+  },
+  "ถุง_เท้า": {
+    "word_1": "ถุง",
+    "word_2": "เท้า",
+    "en": "sock",
+    "fr": ""
+  },
+  "ถุง_สือ": {
+    "word_1": "ถุง",
+    "word_2": "สือ",
+    "en": "glove",
+    "fr": ""
+  },
+  "ลาย_สือ": {
+    "word_1": "ลาย",
+    "word_2": "สือ",
+    "en": "letter, character",
+    "fr": ""
+  },
+  "ลาย_มือ": {
+    "word_1": "ลาย",
+    "word_2": "มือ",
+    "en": "handwriting",
+    "fr": ""
+  },
+  "ดีด_ตัว": {
+    "word_1": "ดีด",
+    "word_2": "ตัว",
+    "en": "to move from side to side, to oscillate",
+    "fr": ""
+  },
+  "ดีด_นิ้ว": {
+    "word_1": "ดีด",
+    "word_2": "นิ้ว",
+    "en": "to snap one's fingers",
+    "fr": ""
+  },
+  "ซ้าย_มือ": {
+    "word_1": "ซ้าย",
+    "word_2": "มือ",
+    "en": "left-hand, left side",
+    "fr": ""
+  },
+  "นิ้ว_มือ": {
+    "word_1": "นิ้ว",
+    "word_2": "มือ",
+    "en": "finger",
+    "fr": ""
+  },
+  "ฝ่า_มือ": {
+    "word_1": "ฝ่า",
+    "word_2": "มือ",
+    "en": "palm, sole",
+    "fr": ""
+  },
+  "ข้อ_มือ": {
+    "word_1": "ข้อ",
+    "word_2": "มือ",
+    "en": "wrist",
+    "fr": ""
+  },
+  "ขวา_มือ": {
+    "word_1": "ขวา",
+    "word_2": "มือ",
+    "en": "right-hand, right side",
+    "fr": ""
+  },
+  "จับ_มือ": {
+    "word_1": "จับ",
+    "word_2": "มือ",
+    "en": "to hold hands",
+    "fr": ""
+  },
+  "มือ_ใหม่": {
+    "word_1": "มือ",
+    "word_2": "ใหม่",
+    "en": "novice, beginner",
+    "fr": ""
+  },
+  "มือ_สอง": {
+    "word_1": "มือ",
+    "word_2": "สอง",
+    "en": "second hand",
+    "fr": ""
+  },
+  "มือ_ถือ": {
+    "word_1": "มือ",
+    "word_2": "ถือ",
+    "en": "mobile phone",
+    "fr": ""
+  },
+  "เครื่อง_มือ": {
+    "word_1": "เครื่อง",
+    "word_2": "มือ",
+    "en": "tool, apparatus",
+    "fr": ""
+  },
+  "วิทยา_ศาสตร์": {
+    "word_1": "วิทยา",
+    "word_2": "ศาสตร์",
+    "en": "science",
+    "fr": ""
+  },
+  "ไก_ปืน": {
+    "word_1": "ไก",
+    "word_2": "ปืน",
+    "en": "trigger (of a weapon)",
+    "fr": ""
+  },
+  "ดิน_ปืน": {
+    "word_1": "ดิน",
+    "word_2": "ปืน",
+    "en": "gunpowder",
+    "fr": ""
+  },
+  "มือ_ปืน": {
+    "word_1": "มือ",
+    "word_2": "ปืน",
+    "en": "hitman, hired killer",
+    "fr": ""
+  },
+  "ปืน_กล": {
+    "word_1": "ปืน",
+    "word_2": "กล",
+    "en": "machine gun",
+    "fr": ""
+  },
+  "หมู_ย่าง": {
+    "word_1": "หมู",
+    "word_2": "ย่าง",
+    "en": "roasted pork",
+    "fr": ""
+  },
+  "หมู_แดง": {
+    "word_1": "หมู",
+    "word_2": "แดง",
+    "en": "roasted red pork",
+    "fr": ""
+  },
+  "ปี_หมู": {
+    "word_1": "ปี",
+    "word_2": "หมู",
+    "en": "year of the pig",
+    "fr": ""
+  },
+  "หมู_แฮม": {
+    "word_1": "หมู",
+    "word_2": "แฮม",
+    "en": "ham",
+    "fr": ""
+  },
+  "หมู_ป่า": {
+    "word_1": "หมู",
+    "word_2": "ป่า",
+    "en": "wild boar",
+    "fr": ""
+  },
+  "หมู_สับ": {
+    "word_1": "หมู",
+    "word_2": "สับ",
+    "en": "minced pork",
+    "fr": ""
+  },
+  "สับ_ไก": {
+    "word_1": "สับ",
+    "word_2": "ไก",
+    "en": "to pull the trigger",
+    "fr": ""
+  },
+  "กล_ไก": {
+    "word_1": "กล",
+    "word_2": "ไก",
+    "en": "mechanism, machinery, device",
+    "fr": ""
+  },
+  "กล_ศาสตร์": {
+    "word_1": "กล",
+    "word_2": "ศาสตร์",
+    "en": "mechanics, mechanical science",
+    "fr": ""
+  },
+  "มนุษย์_ศาสตร์": {
+    "word_1": "มนุษย์",
+    "word_2": "ศาสตร์",
+    "en": "humanities",
+    "fr": ""
+  },
+  "ภาษา_ศาสตร์": {
+    "word_1": "ภาษา",
+    "word_2": "ศาสตร์",
+    "en": "linguistics",
+    "fr": ""
+  },
+  "ภาษา_พม่า": {
+    "word_1": "ภาษา",
+    "word_2": "พม่า",
+    "en": "Burmese language",
+    "fr": ""
+  },
+  "ภาษา_กลาง": {
+    "word_1": "ภาษา",
+    "word_2": "กลาง",
+    "en": "interlingua, common tongue",
+    "fr": ""
+  },
+  "ภาษา_แม่": {
+    "word_1": "ภาษา",
+    "word_2": "แม่",
+    "en": "mother tongue",
+    "fr": ""
+  },
+  "ภาษา_มลายู": {
+    "word_1": "ภาษา",
+    "word_2": "มลายู",
+    "en": "Malay language",
+    "fr": ""
+  },
+  "ภาษา_สันสกฤต": {
+    "word_1": "ภาษา",
+    "word_2": "สันสกฤต",
+    "en": "Sanskrit",
+    "fr": ""
+  },
+  "ตาม_ภาษา": {
+    "word_1": "ตาม",
+    "word_2": "ภาษา",
+    "en": "according to",
+    "fr": ""
+  },
+  "ภาษา_บาลี": {
+    "word_1": "ภาษา",
+    "word_2": "บาลี",
+    "en": "Pali",
+    "fr": ""
+  },
+  "ภาษา_เขียน": {
+    "word_1": "ภาษา",
+    "word_2": "เขียน",
+    "en": "written language",
+    "fr": ""
+  },
+  "ภาษา_พูด": {
+    "word_1": "ภาษา",
+    "word_2": "พูด",
+    "en": "colloquialism",
+    "fr": ""
+  },
+  "ภาษา_ญี่ปุ่น": {
+    "word_1": "ภาษา",
+    "word_2": "ญี่ปุ่น",
+    "en": "Japanese language",
+    "fr": ""
+  },
+  "ภาษา_จีน": {
+    "word_1": "ภาษา",
+    "word_2": "จีน",
+    "en": "Chinese language",
+    "fr": ""
+  },
+  "ภาษา_ไทย": {
+    "word_1": "ภาษา",
+    "word_2": "ไทย",
+    "en": "Thai language",
+    "fr": ""
+  },
+  "ภาษา_อังกฤษ": {
+    "word_1": "ภาษา",
+    "word_2": "อังกฤษ",
+    "en": "English language",
+    "fr": ""
+  },
+  "ราคา_ตลาด": {
+    "word_1": "ราคา",
+    "word_2": "ตลาด",
+    "en": "market price",
+    "fr": ""
+  },
+  "ได้_ราคา": {
+    "word_1": "ได้",
+    "word_2": "ราคา",
+    "en": "to be of good price, to fetch a good price",
+    "fr": ""
+  },
+  "ราคา_ขาย": {
+    "word_1": "ราคา",
+    "word_2": "ขาย",
+    "en": "selling price",
+    "fr": ""
+  },
+  "ขึ้น_ราคา": {
+    "word_1": "ขึ้น",
+    "word_2": "ราคา",
+    "en": "to raise the price",
+    "fr": ""
+  },
+  "ลด_ราคา": {
+    "word_1": "ลด",
+    "word_2": "ราคา",
+    "en": "to discount, to lower the price",
+    "fr": ""
+  },
+  "มี_ราคา": {
+    "word_1": "มี",
+    "word_2": "ราคา",
+    "en": "to be valuable, expensive",
+    "fr": ""
+  },
+  "ราคา_ถูก": {
+    "word_1": "ราคา",
+    "word_2": "ถูก",
+    "en": "to be cheap",
+    "fr": ""
+  },
+  "ขี้_คุย": {
+    "word_1": "ขี้",
+    "word_2": "คุย",
+    "en": "to be bragful",
+    "fr": ""
+  },
+  "การ_คุย": {
+    "word_1": "การ",
+    "word_2": "คุย",
+    "en": "chatting / bragging",
+    "fr": ""
+  },
+  "ห้อง_คุย": {
+    "word_1": "ห้อง",
+    "word_2": "คุย",
+    "en": "conversation room, chat room",
+    "fr": ""
+  },
+  "พูด_คุย": {
+    "word_1": "พูด",
+    "word_2": "คุย",
+    "en": "to chat, talk, converse",
+    "fr": ""
+  },
+  "เพื่อน_คุย": {
+    "word_1": "เพื่อน",
+    "word_2": "คุย",
+    "en": "interlocutor, conversationalist, talker",
+    "fr": ""
+  },
+  "เพื่อน_แท้": {
+    "word_1": "เพื่อน",
+    "word_2": "แท้",
+    "en": "true friend",
+    "fr": ""
+  },
+  "มนุษย์_กบ": {
+    "word_1": "มนุษย์",
+    "word_2": "กบ",
+    "en": "frogman (trained scuba diver)",
+    "fr": ""
+  },
+  "เพื่อน_มนุษย์": {
+    "word_1": "เพื่อน",
+    "word_2": "มนุษย์",
+    "en": "fellowman",
+    "fr": ""
+  },
+  "ภาษา_มนุษย์": {
+    "word_1": "ภาษา",
+    "word_2": "มนุษย์",
+    "en": "human language",
+    "fr": ""
+  },
+  "มวล_มนุษย์": {
+    "word_1": "มวล",
+    "word_2": "มนุษย์",
+    "en": "mankind",
+    "fr": ""
+  },
+  "คำ_พ้อง": {
+    "word_1": "คำ",
+    "word_2": "พ้อง",
+    "en": "homonym, homophone, homograph",
+    "fr": ""
+  },
+  "เห็น_พ้อง": {
+    "word_1": "เห็น",
+    "word_2": "พ้อง",
+    "en": "to agree, to see the same way as",
+    "fr": ""
+  },
+  "พวก_พ้อง": {
+    "word_1": "พวก",
+    "word_2": "พ้อง",
+    "en": "friends, relatives, companions",
+    "fr": ""
+  },
+  "เพื่อน_พ้อง": {
+    "word_1": "เพื่อน",
+    "word_2": "พ้อง",
+    "en": "friends",
+    "fr": ""
+  },
+  "เป็น_เพื่อน": {
+    "word_1": "เป็น",
+    "word_2": "เพื่อน",
+    "en": "to be friends / to accompany someone",
+    "fr": ""
+  },
+  "ความ_ปวด": {
+    "word_1": "ความ",
+    "word_2": "ปวด",
+    "en": "pain, ache",
+    "fr": ""
+  },
+  "ปวด_ใจ": {
+    "word_1": "ปวด",
+    "word_2": "ใจ",
+    "en": "to heartache",
+    "fr": ""
+  },
+  "ปวด_หลัง": {
+    "word_1": "ปวด",
+    "word_2": "หลัง",
+    "en": "to have a backache",
+    "fr": ""
+  },
+  "ปวด_ท้อง": {
+    "word_1": "ปวด",
+    "word_2": "ท้อง",
+    "en": "to have a stomachache",
+    "fr": ""
+  },
+  "ไก่_ฟ้า": {
+    "word_1": "ไก่",
+    "word_2": "ฟ้า",
+    "en": "pheasant",
+    "fr": ""
+  },
+  "ขับ_บัส": {
+    "word_1": "ขับ",
+    "word_2": "บัส",
+    "en": "bus",
+    "fr": ""
+  },
+  "ขับ_รถ": {
+    "word_1": "ขับ",
+    "word_2": "รถ",
+    "en": "to drive",
+    "fr": ""
+  },
+  "ปล่อง_ไฟ": {
+    "word_1": "ปล่อง",
+    "word_2": "ไฟ",
+    "en": "chimney, smoke vent",
+    "fr": ""
+  },
+  "กอง_บุญ": {
+    "word_1": "กอง",
+    "word_2": "บุญ",
+    "en": "pile of merit",
+    "fr": ""
+  },
+  "กอง_ไฟ": {
+    "word_1": "กอง",
+    "word_2": "ไฟ",
+    "en": "bonfire, campfire",
+    "fr": ""
+  },
+  "ปวด_หัว": {
+    "word_1": "ปวด",
+    "word_2": "หัว",
+    "en": "to have a headache",
+    "fr": ""
+  },
+  "หัว_หน้า": {
+    "word_1": "หัว",
+    "word_2": "หน้า",
+    "en": "boss, chief, leader",
+    "fr": ""
+  },
+  "หัว_เราะ": {
+    "word_1": "หัว",
+    "word_2": "เราะ",
+    "en": "to laugh",
+    "fr": ""
+  },
+  "หัว_ข้อ": {
+    "word_1": "หัว",
+    "word_2": "ข้อ",
+    "en": "topic, subject",
+    "fr": ""
+  },
+  "หัว_ใจ": {
+    "word_1": "หัว",
+    "word_2": "ใจ",
+    "en": "heart",
+    "fr": ""
+  },
+  "ยา_หอม": {
+    "word_1": "ยา",
+    "word_2": "หอม",
+    "en": "powder mixed with water to revive someone",
+    "fr": ""
+  },
+  "หัว_หอม": {
+    "word_1": "หัว",
+    "word_2": "หอม",
+    "en": "onion",
+    "fr": ""
+  },
+  "ความ_หอม": {
+    "word_1": "ความ",
+    "word_2": "หอม",
+    "en": "fragrance",
+    "fr": ""
+  },
+  "น้ำ_หอม": {
+    "word_1": "น้ำ",
+    "word_2": "หอม",
+    "en": "perfume",
+    "fr": ""
+  },
+  "กลิ่น_หอม": {
+    "word_1": "กลิ่น",
+    "word_2": "หอม",
+    "en": "to smell good",
+    "fr": ""
+  },
+  "ตัด_หัว": {
+    "word_1": "ตัด",
+    "word_2": "หัว",
+    "en": "to behead, decapitate",
+    "fr": ""
+  },
+  "ตัด_ออก": {
+    "word_1": "ตัด",
+    "word_2": "ออก",
+    "en": "eliminate",
+    "fr": ""
+  },
+  "ตัด_ใจ": {
+    "word_1": "ตัด",
+    "word_2": "ใจ",
+    "en": "to part with something, give up something (reluctantly)",
+    "fr": ""
+  },
+  "เมฆ_ฝน": {
+    "word_1": "เมฆ",
+    "word_2": "ฝน",
+    "en": "rain cloud, nimbus",
+    "fr": ""
+  },
+  "กล้วย_หอม": {
+    "word_1": "กล้วย",
+    "word_2": "หอม",
+    "en": "banana",
+    "fr": ""
+  },
+  "การ_แปล": {
+    "word_1": "การ",
+    "word_2": "แปล",
+    "en": "translating",
+    "fr": ""
+  },
+  "ผู้_แปล": {
+    "word_1": "ผู้",
+    "word_2": "แปล",
+    "en": "translator",
+    "fr": ""
+  },
+  "ดอก_เห็ด": {
+    "word_1": "ดอก",
+    "word_2": "เห็ด",
+    "en": "mushroom",
+    "fr": ""
+  },
+  "คำ_แปล": {
+    "word_1": "คำ",
+    "word_2": "แปล",
+    "en": "translation",
+    "fr": ""
+  },
+  "ออก_จะ": {
+    "word_1": "ออก",
+    "word_2": "จะ",
+    "en": "rather, somewhat",
+    "fr": ""
+  },
+  "ดอก_ทอง": {
+    "word_1": "ดอก",
+    "word_2": "ทอง",
+    "en": "gold flower / prostitute",
+    "fr": ""
+  },
+  "กลีบ_ดอก": {
+    "word_1": "กลีบ",
+    "word_2": "ดอก",
+    "en": "petal, corolla",
+    "fr": ""
+  },
+  "ดอก_ไม้": {
+    "word_1": "ดอก",
+    "word_2": "ไม้",
+    "en": "flower",
+    "fr": ""
+  },
+  "ออก_ดอก": {
+    "word_1": "ออก",
+    "word_2": "ดอก",
+    "en": "to bloom, produce flowers",
+    "fr": ""
+  },
+  "คัด_ออก": {
+    "word_1": "คัด",
+    "word_2": "ออก",
+    "en": "to sort out",
+    "fr": ""
+  },
+  "ออก_เงิน": {
+    "word_1": "ออก",
+    "word_2": "เงิน",
+    "en": "to pay",
+    "fr": ""
+  },
+  "คิด_ออก": {
+    "word_1": "คิด",
+    "word_2": "ออก",
+    "en": "to remember, recall / to figure out a solution",
+    "fr": ""
+  },
+  "ลา_ออก": {
+    "word_1": "ลา",
+    "word_2": "ออก",
+    "en": "to resign, quit, leave",
+    "fr": ""
+  },
+  "ส่ง_ออก": {
+    "word_1": "ส่ง",
+    "word_2": "ออก",
+    "en": "to export, send abroad",
+    "fr": ""
+  },
+  "คำ_ขอ": {
+    "word_1": "คำ",
+    "word_2": "ขอ",
+    "en": "request",
+    "fr": ""
+  },
+  "คำ_พูด": {
+    "word_1": "คำ",
+    "word_2": "พูด",
+    "en": "words, speech",
+    "fr": ""
+  },
+  "คำ_ถาม": {
+    "word_1": "คำ",
+    "word_2": "ถาม",
+    "en": "question",
+    "fr": ""
+  },
+  "กล้วย_ไม้": {
+    "word_1": "กล้วย",
+    "word_2": "ไม้",
+    "en": "orchid",
+    "fr": ""
+  },
+  "ออก_ปาก": {
+    "word_1": "ออก",
+    "word_2": "ปาก",
+    "en": "to say, speak, talk",
+    "fr": ""
+  },
+  "ปาก_น้ำ": {
+    "word_1": "ปาก",
+    "word_2": "น้ำ",
+    "en": "estuary, mouth of a river",
+    "fr": ""
+  },
+  "ราก_คำ": {
+    "word_1": "ราก",
+    "word_2": "คำ",
+    "en": "root word",
+    "fr": ""
+  },
+  "ราก_ฟัน": {
+    "word_1": "ราก",
+    "word_2": "ฟัน",
+    "en": "tooth root",
+    "fr": ""
+  },
+  "ทา_ปาก": {
+    "word_1": "ทา",
+    "word_2": "ปาก",
+    "en": "to wear lipstick",
+    "fr": ""
+  },
+  "ราก_ผม": {
+    "word_1": "ราก",
+    "word_2": "ผม",
+    "en": "roots of hair",
+    "fr": ""
+  },
+  "ทา_สี": {
+    "word_1": "ทา",
+    "word_2": "สี",
+    "en": "to paint",
+    "fr": ""
+  },
+  "สี_ส้ม": {
+    "word_1": "สี",
+    "word_2": "ส้ม",
+    "en": "to be orange",
+    "fr": ""
+  },
+  "สี_ทอง": {
+    "word_1": "สี",
+    "word_2": "ทอง",
+    "en": "to be golden (color)",
+    "fr": ""
+  },
+  "สี_แดง": {
+    "word_1": "สี",
+    "word_2": "แดง",
+    "en": "to be red",
+    "fr": ""
+  },
+  "สี_ขาว": {
+    "word_1": "สี",
+    "word_2": "ขาว",
+    "en": "to be white",
+    "fr": ""
+  },
+  "ทรง_กลด": {
+    "word_1": "ทรง",
+    "word_2": "กลด",
+    "en": "to have a halo",
+    "fr": ""
+  },
+  "ผม_จุก": {
+    "word_1": "ผม",
+    "word_2": "จุก",
+    "en": "topknot",
+    "fr": ""
+  },
+  "สี_ผม": {
+    "word_1": "สี",
+    "word_2": "ผม",
+    "en": "hair color",
+    "fr": ""
+  },
+  "ทรง_ผม": {
+    "word_1": "ทรง",
+    "word_2": "ผม",
+    "en": "hairstyle, haircut",
+    "fr": ""
+  },
+  "ตัด_ไม้": {
+    "word_1": "ตัด",
+    "word_2": "ไม้",
+    "en": "to chop wood",
+    "fr": ""
+  },
+  "ตัด_ผม": {
+    "word_1": "ตัด",
+    "word_2": "ผม",
+    "en": "to get a haircut, to cut hair",
+    "fr": ""
+  },
+  "ผ่า_ตัด": {
+    "word_1": "ผ่า",
+    "word_2": "ตัด",
+    "en": "to have surgery, to have an operation",
+    "fr": ""
+  },
+  "การ_ตัด": {
+    "word_1": "การ",
+    "word_2": "ตัด",
+    "en": "cutting off",
+    "fr": ""
+  },
+  "หอ_ศิลป์": {
+    "word_1": "หอ",
+    "word_2": "ศิลป์",
+    "en": "art gallery",
+    "fr": ""
+  },
+  "หอ_พระ": {
+    "word_1": "หอ",
+    "word_2": "พระ",
+    "en": "monks room",
+    "fr": ""
+  },
+  "ตัด_สิน": {
+    "word_1": "ตัด",
+    "word_2": "สิน",
+    "en": "to decide",
+    "fr": ""
+  },
+  "หอ_พัก": {
+    "word_1": "หอ",
+    "word_2": "พัก",
+    "en": "dormitory",
+    "fr": ""
+  },
+  "พัก_นี้": {
+    "word_1": "พัก",
+    "word_2": "นี้",
+    "en": "recently",
+    "fr": ""
+  },
+  "กฎ_หมู่": {
+    "word_1": "กฎ",
+    "word_2": "หมู่",
+    "en": "mob rule, majority power",
+    "fr": ""
+  },
+  "ถูก_กฎ": {
+    "word_1": "ถูก",
+    "word_2": "กฎ",
+    "en": "to comply with the rules",
+    "fr": ""
+  },
+  "ยิน_ร้าย": {
+    "word_1": "ยิน",
+    "word_2": "ร้าย",
+    "en": "to be unhappy, unsatisfied",
+    "fr": ""
+  },
+  "ดับ_ไฟ": {
+    "word_1": "ดับ",
+    "word_2": "ไฟ",
+    "en": "to extinguish a fire",
+    "fr": ""
+  },
+  "ไฟ_ป่า": {
+    "word_1": "ไฟ",
+    "word_2": "ป่า",
+    "en": "forest fire",
+    "fr": ""
+  },
+  "รถ_ไฟ": {
+    "word_1": "รถ",
+    "word_2": "ไฟ",
+    "en": "train",
+    "fr": ""
+  },
+  "ลูก_ไฟ": {
+    "word_1": "ลูก",
+    "word_2": "ไฟ",
+    "en": "spark",
+    "fr": ""
+  },
+  "ปิด_ไฟ": {
+    "word_1": "ปิด",
+    "word_2": "ไฟ",
+    "en": "to turn off the light",
+    "fr": ""
+  },
+  "ไฟ_แดง": {
+    "word_1": "ไฟ",
+    "word_2": "แดง",
+    "en": "red light",
+    "fr": ""
+  },
+  "ไฟ_ฟ้า": {
+    "word_1": "ไฟ",
+    "word_2": "ฟ้า",
+    "en": "electricity",
+    "fr": ""
+  },
+  "หมาย_รวม": {
+    "word_1": "หมาย",
+    "word_2": "รวม",
+    "en": "to encompass",
+    "fr": ""
+  },
+  "หมาย_ถึง": {
+    "word_1": "หมาย",
+    "word_2": "ถึง",
+    "en": "to mean",
+    "fr": ""
+  },
+  "กฎ_หมาย": {
+    "word_1": "กฎ",
+    "word_2": "หมาย",
+    "en": "law",
+    "fr": ""
+  },
+  "จุด_รวม": {
+    "word_1": "จุด",
+    "word_2": "รวม",
+    "en": "center, hub",
+    "fr": ""
+  },
+  "จุด_ตัด": {
+    "word_1": "จุด",
+    "word_2": "ตัด",
+    "en": "intersection point",
+    "fr": ""
+  },
+  "จุด_ขาย": {
+    "word_1": "จุด",
+    "word_2": "ขาย",
+    "en": "selling point",
+    "fr": ""
+  },
+  "จุด_แข็ง": {
+    "word_1": "จุด",
+    "word_2": "แข็ง",
+    "en": "strength, good point",
+    "fr": ""
+  },
+  "จุด_จบ": {
+    "word_1": "จุด",
+    "word_2": "จบ",
+    "en": "end, end point",
+    "fr": ""
+  },
+  "จุด_หมาย": {
+    "word_1": "จุด",
+    "word_2": "หมาย",
+    "en": "goal, aim, purpose",
+    "fr": ""
+  },
+  "จุด_ไฟ": {
+    "word_1": "จุด",
+    "word_2": "ไฟ",
+    "en": "ignite",
+    "fr": ""
+  },
+  "ตู้_ปลา": {
+    "word_1": "ตู้",
+    "word_2": "ปลา",
+    "en": "aquarium",
+    "fr": ""
+  },
+  "หิน_หนืด": {
+    "word_1": "หิน",
+    "word_2": "หนืด",
+    "en": "magma",
+    "fr": ""
+  },
+  "ปลา_แดง": {
+    "word_1": "ปลา",
+    "word_2": "แดง",
+    "en": "goldfish",
+    "fr": ""
+  },
+  "ทอง_แดง": {
+    "word_1": "ทอง",
+    "word_2": "แดง",
+    "en": "copper",
+    "fr": ""
+  },
+  "ทอง_คำ": {
+    "word_1": "ทอง",
+    "word_2": "คำ",
+    "en": "gold",
+    "fr": ""
+  },
+  "ลา_ก่อน": {
+    "word_1": "ลา",
+    "word_2": "ก่อน",
+    "en": "say goodbye, leave",
+    "fr": ""
+  },
+  "ดู_ก่อน": {
+    "word_1": "ดู",
+    "word_2": "ก่อน",
+    "en": "wait and see, see what happens",
+    "fr": ""
+  },
+  "ปี_ก่อน": {
+    "word_1": "ปี",
+    "word_2": "ก่อน",
+    "en": "last year",
+    "fr": ""
+  },
+  "ยุค_ทอง": {
+    "word_1": "ยุค",
+    "word_2": "ทอง",
+    "en": "golden age",
+    "fr": ""
+  },
+  "หิน_ย้อย": {
+    "word_1": "หิน",
+    "word_2": "ย้อย",
+    "en": "stalactite",
+    "fr": ""
+  },
+  "รุ่น_ใหม่": {
+    "word_1": "รุ่น",
+    "word_2": "ใหม่",
+    "en": "new model",
+    "fr": ""
+  },
+  "ยุค_หิน": {
+    "word_1": "ยุค",
+    "word_2": "หิน",
+    "en": "stone age",
+    "fr": ""
+  },
+  "ลูก_อ๊อด": {
+    "word_1": "ลูก",
+    "word_2": "อ๊อด",
+    "en": "tadpole",
+    "fr": ""
+  },
+  "ลูก_โลก": {
+    "word_1": "ลูก",
+    "word_2": "โลก",
+    "en": "globe",
+    "fr": ""
+  },
+  "รัก_แท้": {
+    "word_1": "รัก",
+    "word_2": "แท้",
+    "en": "true love",
+    "fr": ""
+  },
+  "รัก_ดี": {
+    "word_1": "รัก",
+    "word_2": "ดี",
+    "en": "to be diligent, persevering",
+    "fr": ""
+  },
+  "เพื่อน_รัก": {
+    "word_1": "เพื่อน",
+    "word_2": "รัก",
+    "en": "valued friend, bosom friend, close friend",
+    "fr": ""
+  },
+  "ใจ_รัก": {
+    "word_1": "ใจ",
+    "word_2": "รัก",
+    "en": "to be extremely fond of, to love, to be bent on",
+    "fr": ""
+  },
+  "รัก_ชาติ": {
+    "word_1": "รัก",
+    "word_2": "ชาติ",
+    "en": "patriotic",
+    "fr": ""
+  },
+  "คู่_รัก": {
+    "word_1": "คู่",
+    "word_2": "รัก",
+    "en": "lover, boyfriend, girlfriend",
+    "fr": ""
+  },
+  "คน_รัก": {
+    "word_1": "คน",
+    "word_2": "รัก",
+    "en": "lover, darling",
+    "fr": ""
+  },
+  "น่า_รัก": {
+    "word_1": "น่า",
+    "word_2": "รัก",
+    "en": "cute, attractive, pretty",
+    "fr": ""
+  },
+  "ความ_รัก": {
+    "word_1": "ความ",
+    "word_2": "รัก",
+    "en": "love",
+    "fr": ""
+  },
+  "เหตุ_ผล": {
+    "word_1": "เหตุ",
+    "word_2": "ผล",
+    "en": "reason",
+    "fr": ""
+  },
+  "ลูก_รัก": {
+    "word_1": "ลูก",
+    "word_2": "รัก",
+    "en": "sweetheart (talking to one's child)",
+    "fr": ""
+  },
+  "ผล_งาน": {
+    "word_1": "ผล",
+    "word_2": "งาน",
+    "en": "works / success, accomplishment, achievement",
+    "fr": ""
+  },
+  "งาน_ช้าง": {
+    "word_1": "งาน",
+    "word_2": "ช้าง",
+    "en": "big project",
+    "fr": ""
+  },
+  "งา_ช้าง": {
+    "word_1": "งา",
+    "word_2": "ช้าง",
+    "en": "elephant ivory tusk",
+    "fr": ""
+  },
+  "ช้าง_เผือก": {
+    "word_1": "ช้าง",
+    "word_2": "เผือก",
+    "en": "white (albino) elephant",
+    "fr": ""
+  },
+  "อ่อน_ตัว": {
+    "word_1": "อ่อน",
+    "word_2": "ตัว",
+    "en": "to diminish, lessen, reduce",
+    "fr": ""
+  },
+  "ความ_อ่อน": {
+    "word_1": "ความ",
+    "word_2": "อ่อน",
+    "en": "weakness",
+    "fr": ""
+  },
+  "จุด_อ่อน": {
+    "word_1": "จุด",
+    "word_2": "อ่อน",
+    "en": "weak point",
+    "fr": ""
+  },
+  "อ่อน_แอ": {
+    "word_1": "อ่อน",
+    "word_2": "แอ",
+    "en": "to be weak, feeble, tired",
+    "fr": ""
+  },
+  "ลูก_ช้าง": {
+    "word_1": "ลูก",
+    "word_2": "ช้าง",
+    "en": "elephant calf",
+    "fr": ""
+  },
+  "ลูก_น้ำ": {
+    "word_1": "ลูก",
+    "word_2": "น้ำ",
+    "en": "mosquito larva",
+    "fr": ""
+  },
+  "ลูก_อ่อน": {
+    "word_1": "ลูก",
+    "word_2": "อ่อน",
+    "en": "baby, infant",
+    "fr": ""
+  },
+  "ลูก_ไก่": {
+    "word_1": "ลูก",
+    "word_2": "ไก่",
+    "en": "chick, baby chicken",
+    "fr": ""
+  },
+  "ฟอง_น้ำ": {
+    "word_1": "ฟอง",
+    "word_2": "น้ำ",
+    "en": "sponge",
+    "fr": ""
+  },
+  "เป็น_ฟอง": {
+    "word_1": "เป็น",
+    "word_2": "ฟอง",
+    "en": "to bubble, to foam",
+    "fr": ""
+  },
+  "ภาย_หน้า": {
+    "word_1": "ภาย",
+    "word_2": "หน้า",
+    "en": "future",
+    "fr": ""
+  },
+  "นำ_หน้า": {
+    "word_1": "นำ",
+    "word_2": "หน้า",
+    "en": "to precede, to lead",
+    "fr": ""
+  },
+  "ปี_หน้า": {
+    "word_1": "ปี",
+    "word_2": "หน้า",
+    "en": "next year, coming year",
+    "fr": ""
+  },
+  "ข้าง_หน้า": {
+    "word_1": "ข้าง",
+    "word_2": "หน้า",
+    "en": "in front",
+    "fr": ""
+  },
+  "เสือ_ดำ": {
+    "word_1": "เสือ",
+    "word_2": "ดำ",
+    "en": "panther",
+    "fr": ""
+  },
+  "เสือ_ดาว": {
+    "word_1": "เสือ",
+    "word_2": "ดาว",
+    "en": "leopard",
+    "fr": ""
+  },
+  "ปี_เสือ": {
+    "word_1": "ปี",
+    "word_2": "เสือ",
+    "en": "year of the tiger",
+    "fr": ""
+  },
+  "ลูก_เสือ": {
+    "word_1": "ลูก",
+    "word_2": "เสือ",
+    "en": "boy scout",
+    "fr": ""
+  },
+  "มี_เสียง": {
+    "word_1": "มี",
+    "word_2": "เสียง",
+    "en": "to have a voice, to be entitled to vote",
+    "fr": ""
+  },
+  "มี_หน้า": {
+    "word_1": "มี",
+    "word_2": "หน้า",
+    "en": "to dare to, to be shameless",
+    "fr": ""
+  },
+  "มี_มาก": {
+    "word_1": "มี",
+    "word_2": "มาก",
+    "en": "to abound, to be found everywhere",
+    "fr": ""
+  },
+  "มี_อายุ": {
+    "word_1": "มี",
+    "word_2": "อายุ",
+    "en": "to be aged",
+    "fr": ""
+  },
+  "มี_เรื่อง": {
+    "word_1": "มี",
+    "word_2": "เรื่อง",
+    "en": "to get into trouble, to quarrel",
+    "fr": ""
+  },
+  "มี_ชื่อ": {
+    "word_1": "มี",
+    "word_2": "ชื่อ",
+    "en": "well-known",
+    "fr": ""
+  },
+  "มี_ค่า": {
+    "word_1": "มี",
+    "word_2": "ค่า",
+    "en": "valuable, precious",
+    "fr": ""
+  },
+  "เลี้ยง_ลูก": {
+    "word_1": "เลี้ยง",
+    "word_2": "ลูก",
+    "en": "to raise children, to bring up a child",
+    "fr": ""
+  },
+  "มด_ลูก": {
+    "word_1": "มด",
+    "word_2": "ลูก",
+    "en": "uterus, womb",
+    "fr": ""
+  },
+  "มี_ลูก": {
+    "word_1": "มี",
+    "word_2": "ลูก",
+    "en": "to have children",
+    "fr": ""
+  },
+  "ลูก_ชาย": {
+    "word_1": "ลูก",
+    "word_2": "ชาย",
+    "en": "son",
+    "fr": ""
+  },
+  "ลูก_สาว": {
+    "word_1": "ลูก",
+    "word_2": "สาว",
+    "en": "daughter",
+    "fr": ""
+  },
+  "ลูก_ศิษย์": {
+    "word_1": "ลูก",
+    "word_2": "ศิษย์",
+    "en": "student, disciple, pupil",
+    "fr": ""
+  },
+  "เก่า_ก่อน": {
+    "word_1": "เก่า",
+    "word_2": "ก่อน",
+    "en": "ancient, old, legendary",
+    "fr": ""
+  },
+  "ยุค_เก่า": {
+    "word_1": "ยุค",
+    "word_2": "เก่า",
+    "en": "older times, former times",
+    "fr": ""
+  },
+  "เพื่อน_เก่า": {
+    "word_1": "เพื่อน",
+    "word_2": "เก่า",
+    "en": "old friend",
+    "fr": ""
+  },
+  "กรุง_เก่า": {
+    "word_1": "กรุง",
+    "word_2": "เก่า",
+    "en": "old capital",
+    "fr": ""
+  },
+  "รุ่น_เก่า": {
+    "word_1": "รุ่น",
+    "word_2": "เก่า",
+    "en": "old generation",
+    "fr": ""
+  },
+  "ศิษย์_เก่า": {
+    "word_1": "ศิษย์",
+    "word_2": "เก่า",
+    "en": "alumni, alumnus",
+    "fr": ""
+  },
+  "ของ_เก่า": {
+    "word_1": "ของ",
+    "word_2": "เก่า",
+    "en": "antique",
+    "fr": ""
+  },
+  "เก่า_แก่": {
+    "word_1": "เก่า",
+    "word_2": "แก่",
+    "en": "ancient, old, former",
+    "fr": ""
+  },
+  "ของ_ชาติ": {
+    "word_1": "ของ",
+    "word_2": "ชาติ",
+    "en": "national",
+    "fr": ""
+  },
+  "เจ้า_ของ": {
+    "word_1": "เจ้า",
+    "word_2": "ของ",
+    "en": "owner",
+    "fr": ""
+  },
+  "เจ้า_เก่า": {
+    "word_1": "เจ้า",
+    "word_2": "เก่า",
+    "en": "original",
+    "fr": ""
+  },
+  "เจ้า_บ้าน": {
+    "word_1": "เจ้า",
+    "word_2": "บ้าน",
+    "en": "homeowner",
+    "fr": ""
+  },
+  "สร้าง_บ้าน": {
+    "word_1": "สร้าง",
+    "word_2": "บ้าน",
+    "en": "to build a house",
+    "fr": ""
+  },
+  "บ้าน_เกิด": {
+    "word_1": "บ้าน",
+    "word_2": "เกิด",
+    "en": "homeland, hometown, native village",
+    "fr": ""
+  },
+  "อยู่_บ้าน": {
+    "word_1": "อยู่",
+    "word_2": "บ้าน",
+    "en": "to be at home, stay at home",
+    "fr": ""
+  },
+  "บ้าน_เมือง": {
+    "word_1": "บ้าน",
+    "word_2": "เมือง",
+    "en": "country, state, nation",
+    "fr": ""
+  },
+  "ชาว_บ้าน": {
+    "word_1": "ชาว",
+    "word_2": "บ้าน",
+    "en": "villager, folk, ordinary people",
+    "fr": ""
+  },
+  "ความ_แก่": {
+    "word_1": "ความ",
+    "word_2": "แก่",
+    "en": "aging",
+    "fr": ""
+  },
+  "คน_แก่": {
+    "word_1": "คน",
+    "word_2": "แก่",
+    "en": "old people",
+    "fr": ""
+  },
+  "เห็น_แก่": {
+    "word_1": "เห็น",
+    "word_2": "แก่",
+    "en": "to think of",
+    "fr": ""
+  },
+  "ความ_กล้า": {
+    "word_1": "ความ",
+    "word_2": "กล้า",
+    "en": "courage",
+    "fr": ""
+  },
+  "แก่_กล้า": {
+    "word_1": "แก่",
+    "word_2": "กล้า",
+    "en": "to be highly skillful in",
+    "fr": ""
+  },
+  "เหล็ก_กล้า": {
+    "word_1": "เหล็ก",
+    "word_2": "กล้า",
+    "en": "steel",
+    "fr": ""
+  },
+  "ธาตุ_เหล็ก": {
+    "word_1": "ธาตุ",
+    "word_2": "เหล็ก",
+    "en": "iron",
+    "fr": ""
+  },
+  "ตี_เหล็ก": {
+    "word_1": "ตี",
+    "word_2": "เหล็ก",
+    "en": "to forge iron",
+    "fr": ""
+  },
+  "เสื้อ_น้ำ": {
+    "word_1": "เสื้อ",
+    "word_2": "น้ำ",
+    "en": "water demon",
+    "fr": ""
+  },
+  "เสื้อ_ผ้า": {
+    "word_1": "เสื้อ",
+    "word_2": "ผ้า",
+    "en": "clothes",
+    "fr": ""
+  },
+  "พระ_พุทธ": {
+    "word_1": "พระ",
+    "word_2": "พุทธ",
+    "en": "Buddha",
+    "fr": ""
+  },
+  "ผี_เสื้อ": {
+    "word_1": "ผี",
+    "word_2": "เสื้อ",
+    "en": "butterfly",
+    "fr": ""
+  },
+  "เลี้ยง_ผี": {
+    "word_1": "เลี้ยง",
+    "word_2": "ผี",
+    "en": "to offer sacrifices to a spirit",
+    "fr": ""
+  },
+  "เลี้ยง_พระ": {
+    "word_1": "เลี้ยง",
+    "word_2": "พระ",
+    "en": "to offer food (to a monk)",
+    "fr": ""
+  },
+  "พระ_ธุดงค์": {
+    "word_1": "พระ",
+    "word_2": "ธุดงค์",
+    "en": "monk on pilgrimage",
+    "fr": ""
+  },
+  "แม่_หม้าย": {
+    "word_1": "แม่",
+    "word_2": "หม้าย",
+    "en": "widow",
+    "fr": ""
+  },
+  "แม่_ไก่": {
+    "word_1": "แม่",
+    "word_2": "ไก่",
+    "en": "hen",
+    "fr": ""
+  },
+  "รัง_มด": {
+    "word_1": "รัง",
+    "word_2": "มด",
+    "en": "ant nest",
+    "fr": ""
+  },
+  "มด_แดง": {
+    "word_1": "มด",
+    "word_2": "แดง",
+    "en": "red ant",
+    "fr": ""
+  },
+  "แม่_มด": {
+    "word_1": "แม่",
+    "word_2": "มด",
+    "en": "witch",
+    "fr": ""
+  },
+  "แม่_ชี": {
+    "word_1": "แม่",
+    "word_2": "ชี",
+    "en": "nun",
+    "fr": ""
+  },
+  "แม่_บ้าน": {
+    "word_1": "แม่",
+    "word_2": "บ้าน",
+    "en": "housewife",
+    "fr": ""
+  },
+  "แม่_เหล็ก": {
+    "word_1": "แม่",
+    "word_2": "เหล็ก",
+    "en": "magnet",
+    "fr": ""
+  },
+  "พ่อ_แม่": {
+    "word_1": "พ่อ",
+    "word_2": "แม่",
+    "en": "parents",
+    "fr": ""
+  },
+  "แม่_น้ำ": {
+    "word_1": "แม่",
+    "word_2": "น้ำ",
+    "en": "river",
+    "fr": ""
+  },
+  "แม่_พระ": {
+    "word_1": "แม่",
+    "word_2": "พระ",
+    "en": "kind-hearted woman",
+    "fr": ""
+  },
+  "วัน_พระ": {
+    "word_1": "วัน",
+    "word_2": "พระ",
+    "en": "Buddhist holiday",
+    "fr": ""
+  },
+  "วัน_ศุกร์": {
+    "word_1": "วัน",
+    "word_2": "ศุกร์",
+    "en": "Friday",
+    "fr": ""
+  },
+  "วัน_เกิด": {
+    "word_1": "วัน",
+    "word_2": "เกิด",
+    "en": "birthday",
+    "fr": ""
+  },
+  "วัน_เสาร์": {
+    "word_1": "วัน",
+    "word_2": "เสาร์",
+    "en": "Saturday",
+    "fr": ""
+  },
+  "หลวง_พ่อ": {
+    "word_1": "หลวง",
+    "word_2": "พ่อ",
+    "en": "venerable monk",
+    "fr": ""
+  },
+  "คน_เมือง": {
+    "word_1": "คน",
+    "word_2": "เมือง",
+    "en": "city person",
+    "fr": ""
+  },
+  "เมือง_หลวง": {
+    "word_1": "เมือง",
+    "word_2": "หลวง",
+    "en": "capital city",
+    "fr": ""
+  },
+  "เมือง_ไทย": {
+    "word_1": "เมือง",
+    "word_2": "ไทย",
+    "en": "Thailand",
+    "fr": ""
+  },
+  "เร่า_ร้อน": {
+    "word_1": "เร่า",
+    "word_2": "ร้อน",
+    "en": "to be anxious, be worried",
+    "fr": ""
+  },
+  "เมือง_ร้อน": {
+    "word_1": "เมือง",
+    "word_2": "ร้อน",
+    "en": "tropical country",
+    "fr": ""
+  },
+  "พัก_ไว้": {
+    "word_1": "พัก",
+    "word_2": "ไว้",
+    "en": "to stop, pause, stay",
+    "fr": ""
+  },
+  "พัก_อยู่": {
+    "word_1": "พัก",
+    "word_2": "อยู่",
+    "en": "to stay overnight",
+    "fr": ""
+  },
+  "พัก_ร้อน": {
+    "word_1": "พัก",
+    "word_2": "ร้อน",
+    "en": "to have a holiday",
+    "fr": ""
+  },
+  "ฤดู_ร้อน": {
+    "word_1": "ฤดู",
+    "word_2": "ร้อน",
+    "en": "summer",
+    "fr": ""
+  },
+  "น้ำ_ร้อน": {
+    "word_1": "น้ำ",
+    "word_2": "ร้อน",
+    "en": "hot water",
+    "fr": ""
+  },
+  "ความ_ร้อน": {
+    "word_1": "ความ",
+    "word_2": "ร้อน",
+    "en": "heat",
+    "fr": ""
+  },
+  "ร้อน_ใจ": {
+    "word_1": "ร้อน",
+    "word_2": "ใจ",
+    "en": "to worry, be anxious",
+    "fr": ""
+  },
+  "พื้น_บ้าน": {
+    "word_1": "พื้น",
+    "word_2": "บ้าน",
+    "en": "local, folk, homegrown",
+    "fr": ""
+  },
+  "พื้น_ที่": {
+    "word_1": "พื้น",
+    "word_2": "ที่",
+    "en": "area, district, place",
+    "fr": ""
+  },
+  "พื้น_น้ำ": {
+    "word_1": "พื้น",
+    "word_2": "น้ำ",
+    "en": "surface of the water",
+    "fr": ""
+  },
+  "พื้น_โลก": {
+    "word_1": "พื้น",
+    "word_2": "โลก",
+    "en": "the Earth's surface",
+    "fr": ""
+  },
+  "ขั้ว_โลก": {
+    "word_1": "ขั้ว",
+    "word_2": "โลก",
+    "en": "pole (north, south)",
+    "fr": ""
+  },
+  "ชาว_โลก": {
+    "word_1": "ชาว",
+    "word_2": "โลก",
+    "en": "world population",
+    "fr": ""
+  },
+  "สงคราม_โลก": {
+    "word_1": "สงคราม",
+    "word_2": "โลก",
+    "en": "world war",
+    "fr": ""
+  },
+  "โลก_ร้อน": {
+    "word_1": "โลก",
+    "word_2": "ร้อน",
+    "en": "global warming",
+    "fr": ""
+  },
+  "ทั่ว_โลก": {
+    "word_1": "ทั่ว",
+    "word_2": "โลก",
+    "en": "worldwide",
+    "fr": ""
+  },
+  "ของ_โลก": {
+    "word_1": "ของ",
+    "word_2": "โลก",
+    "en": "worldly, material, fleshy",
+    "fr": ""
+  },
+  "ใบ_ไม้": {
+    "word_1": "ใบ",
+    "word_2": "ไม้",
+    "en": "leaf",
+    "fr": ""
+  },
+  "รอบ_โลก": {
+    "word_1": "รอบ",
+    "word_2": "โลก",
+    "en": "around the world",
+    "fr": ""
+  },
+  "ไม้_ใหญ่": {
+    "word_1": "ไม้",
+    "word_2": "ใหญ่",
+    "en": "tree",
+    "fr": ""
+  },
+  "ส่วน_ใหญ่": {
+    "word_1": "ส่วน",
+    "word_2": "ใหญ่",
+    "en": "majority",
+    "fr": ""
+  },
+  "ครู_ใหญ่": {
+    "word_1": "ครู",
+    "word_2": "ใหญ่",
+    "en": "headmaster",
+    "fr": ""
+  },
+  "รู้_ใจ": {
+    "word_1": "รู้",
+    "word_2": "ใจ",
+    "en": "to be intimate / to know the mind",
+    "fr": ""
+  },
+  "ผู้_ใช้": {
+    "word_1": "ผู้",
+    "word_2": "ใช้",
+    "en": "user",
+    "fr": ""
+  },
+  "ผู้_ใหญ่": {
+    "word_1": "ผู้",
+    "word_2": "ใหญ่",
+    "en": "adult, senior, elder",
+    "fr": ""
+  },
+  "ผู้_ป่วย": {
+    "word_1": "ผู้",
+    "word_2": "ป่วย",
+    "en": "patient, sufferer, sick person",
+    "fr": ""
+  },
+  "ผู้_นำ": {
+    "word_1": "ผู้",
+    "word_2": "นำ",
+    "en": "leader, chief, captain",
+    "fr": ""
+  },
+  "ผู้_ชาย": {
+    "word_1": "ผู้",
+    "word_2": "ชาย",
+    "en": "man",
+    "fr": ""
+  },
+  "ผู้_หญิง": {
+    "word_1": "ผู้",
+    "word_2": "หญิง",
+    "en": "woman",
+    "fr": ""
+  },
+  "เสี่ยง_ชีวิต": {
+    "word_1": "เสี่ยง",
+    "word_2": "ชีวิต",
+    "en": "to risk, jeopardize",
+    "fr": ""
+  },
+  "ผู้_รู้": {
+    "word_1": "ผู้",
+    "word_2": "รู้",
+    "en": "knowledgeable people, well-informed people",
+    "fr": ""
+  },
+  "ให้_รู้": {
+    "word_1": "ให้",
+    "word_2": "รู้",
+    "en": "to let someone know",
+    "fr": ""
+  },
+  "รู้_จัก": {
+    "word_1": "รู้",
+    "word_2": "จัก",
+    "en": "to know (someone)",
+    "fr": ""
+  },
+  "ความ_รู้": {
+    "word_1": "ความ",
+    "word_2": "รู้",
+    "en": "knowledge, information, awareness",
+    "fr": ""
+  },
+  "ลา_สึก": {
+    "word_1": "ลา",
+    "word_2": "สึก",
+    "en": "to leave the monkhood",
+    "fr": ""
+  },
+  "รู้_สึก": {
+    "word_1": "รู้",
+    "word_2": "สึก",
+    "en": "to feel, touch",
+    "fr": ""
+  },
+  "รอบ_ตัว": {
+    "word_1": "รอบ",
+    "word_2": "ตัว",
+    "en": "all around",
+    "fr": ""
+  },
+  "รู้_ตัว": {
+    "word_1": "รู้",
+    "word_2": "ตัว",
+    "en": "to be aware, conscious of",
+    "fr": ""
+  },
+  "ลอง_เสี่ยง": {
+    "word_1": "ลอง",
+    "word_2": "เสี่ยง",
+    "en": "to take the risk",
+    "fr": ""
+  },
+  "ลอง_ดู": {
+    "word_1": "ลอง",
+    "word_2": "ดู",
+    "en": "to try out",
+    "fr": ""
+  },
+  "จำ_ลอง": {
+    "word_1": "จำ",
+    "word_2": "ลอง",
+    "en": "to reproduce, make a copy, imitate",
+    "fr": ""
+  },
+  "ลอง_ทำ": {
+    "word_1": "ลอง",
+    "word_2": "ทำ",
+    "en": "to test, experiment, try",
+    "fr": ""
+  },
+  "ทำ_ใจ": {
+    "word_1": "ทำ",
+    "word_2": "ใจ",
+    "en": "to come to terms with, to accept",
+    "fr": ""
+  },
+  "ทำ_ผิด": {
+    "word_1": "ทำ",
+    "word_2": "ผิด",
+    "en": "to make a mistake, do something wrong",
+    "fr": ""
+  },
+  "ทำ_อาหาร": {
+    "word_1": "ทำ",
+    "word_2": "อาหาร",
+    "en": "to cook",
+    "fr": ""
+  },
+  "ทำ_นา": {
+    "word_1": "ทำ",
+    "word_2": "นา",
+    "en": "to farm",
+    "fr": ""
+  },
+  "ทำ_ตาม": {
+    "word_1": "ทำ",
+    "word_2": "ตาม",
+    "en": "to imitate, copy / to obey",
+    "fr": ""
+  },
+  "ทำ_ร้าย": {
+    "word_1": "ทำ",
+    "word_2": "ร้าย",
+    "en": "to hurt, to do harm",
+    "fr": ""
+  },
+  "ทำ_ความ": {
+    "word_1": "ทำ",
+    "word_2": "ความ",
+    "en": "to cause trouble",
+    "fr": ""
+  },
+  "ทำ_เป็น": {
+    "word_1": "ทำ",
+    "word_2": "เป็น",
+    "en": "to pretend, feign",
+    "fr": ""
+  },
+  "ทำ_บุญ": {
+    "word_1": "ทำ",
+    "word_2": "บุญ",
+    "en": "to make merit",
+    "fr": ""
+  },
+  "ทำ_งาน": {
+    "word_1": "ทำ",
+    "word_2": "งาน",
+    "en": "to work",
+    "fr": ""
+  },
+  "ทำ_ให้": {
+    "word_1": "ทำ",
+    "word_2": "ให้",
+    "en": "to cause, to make somebody do something",
+    "fr": ""
+  },
+  "ทำ_ตัว": {
+    "word_1": "ทำ",
+    "word_2": "ตัว",
+    "en": "to behave, conduct oneself, act",
+    "fr": ""
+  },
+  "ตัว_เอง": {
+    "word_1": "ตัว",
+    "word_2": "เอง",
+    "en": "oneself, ourselves",
+    "fr": ""
+  },
+  "อยู่_ตัว": {
+    "word_1": "อยู่",
+    "word_2": "ตัว",
+    "en": "to be stable, steady",
+    "fr": ""
+  },
+  "อยู่_รอด": {
+    "word_1": "อยู่",
+    "word_2": "รอด",
+    "en": "to survive, exist",
+    "fr": ""
+  },
+  "ขึ้น_ใจ": {
+    "word_1": "ขึ้น",
+    "word_2": "ใจ",
+    "en": "to learn by heart, memorize",
+    "fr": ""
+  },
+  "ขึ้น_อยู่": {
+    "word_1": "ขึ้น",
+    "word_2": "อยู่",
+    "en": "to depend on, rely on",
+    "fr": ""
+  },
+  "อาศัย_อยู่": {
+    "word_1": "อาศัย",
+    "word_2": "อยู่",
+    "en": "to live, reside",
+    "fr": ""
+  },
+  "ที่_อยู่": {
+    "word_1": "ที่",
+    "word_2": "อยู่",
+    "en": "address",
+    "fr": ""
+  },
+  "เหมือน_กับ": {
+    "word_1": "เหมือน",
+    "word_2": "กับ",
+    "en": "like, as, such as, as if",
+    "fr": ""
+  },
+  "เดียว_กับ": {
+    "word_1": "เดียว",
+    "word_2": "กับ",
+    "en": "the same as",
+    "fr": ""
+  },
+  "อยู่_กับ": {
+    "word_1": "อยู่",
+    "word_2": "กับ",
+    "en": "to be with, stay with, be with",
+    "fr": ""
+  },
+  "เกี่ยว_กับ": {
+    "word_1": "เกี่ยว",
+    "word_2": "กับ",
+    "en": "about, regarding",
+    "fr": ""
+  },
+  "ไป_ทุ่ง": {
+    "word_1": "ไป",
+    "word_2": "ทุ่ง",
+    "en": "to go to the toilet",
+    "fr": ""
+  },
+  "ไป_นอก": {
+    "word_1": "ไป",
+    "word_2": "นอก",
+    "en": "to go overseas",
+    "fr": ""
+  },
+  "การ_ไป": {
+    "word_1": "การ",
+    "word_2": "ไป",
+    "en": "going",
+    "fr": ""
+  },
+  "ไป_กับ": {
+    "word_1": "ไป",
+    "word_2": "กับ",
+    "en": "to go with, accompany",
+    "fr": ""
+  },
+  "ไป_หา": {
+    "word_1": "ไป",
+    "word_2": "หา",
+    "en": "to go to see, visit, meet",
+    "fr": ""
+  },
+  "ไป_ดู": {
+    "word_1": "ไป",
+    "word_2": "ดู",
+    "en": "to go and see",
+    "fr": ""
+  },
+  "ไป_ถึง": {
+    "word_1": "ไป",
+    "word_2": "ถึง",
+    "en": "to arrive at, to reach",
+    "fr": ""
+  },
+  "ดาว_เสาร์": {
+    "word_1": "ดาว",
+    "word_2": "เสาร์",
+    "en": "Saturn",
+    "fr": ""
+  },
+  "ตก_ไป": {
+    "word_1": "ตก",
+    "word_2": "ไป",
+    "en": "to be rejected, to be defeated, be settled",
+    "fr": ""
+  },
+  "ตก_ปลา": {
+    "word_1": "ตก",
+    "word_2": "ปลา",
+    "en": "to angle, to fish",
+    "fr": ""
+  },
+  "ตก_ใจ": {
+    "word_1": "ตก",
+    "word_2": "ใจ",
+    "en": "to be startled, shocked",
+    "fr": ""
+  },
+  "ฝน_ตก": {
+    "word_1": "ฝน",
+    "word_2": "ตก",
+    "en": "rain",
+    "fr": ""
+  },
+  "น้ำ_ตก": {
+    "word_1": "น้ำ",
+    "word_2": "ตก",
+    "en": "waterfall",
+    "fr": ""
+  },
+  "ดาว_ตก": {
+    "word_1": "ดาว",
+    "word_2": "ตก",
+    "en": "meteor, shooting star",
+    "fr": ""
+  },
+  "ดาว_เทียม": {
+    "word_1": "ดาว",
+    "word_2": "เทียม",
+    "en": "satellite",
+    "fr": ""
+  },
+  "กลุ่ม_ดาว": {
+    "word_1": "กลุ่ม",
+    "word_2": "ดาว",
+    "en": "constellation",
+    "fr": ""
+  },
+  "กลุ่ม_คน": {
+    "word_1": "กลุ่ม",
+    "word_2": "คน",
+    "en": "crowd, group of people",
+    "fr": ""
+  },
+  "จัด_กลุ่ม": {
+    "word_1": "จัด",
+    "word_2": "กลุ่ม",
+    "en": "to form into groups",
+    "fr": ""
+  },
+  "จัด_พิมพ์": {
+    "word_1": "จัด",
+    "word_2": "พิมพ์",
+    "en": "to publish",
+    "fr": ""
+  },
+  "คิด_มาก": {
+    "word_1": "คิด",
+    "word_2": "มาก",
+    "en": "to worry, think too much",
+    "fr": ""
+  },
+  "จัด_การ": {
+    "word_1": "จัด",
+    "word_2": "การ",
+    "en": "to manage, deal, handle",
+    "fr": ""
+  },
+  "ต้อง_การ": {
+    "word_1": "ต้อง",
+    "word_2": "การ",
+    "en": "to want, need, require",
+    "fr": ""
+  },
+  "เป็น_การ": {
+    "word_1": "เป็น",
+    "word_2": "การ",
+    "en": "to succeed, accomplish, complete",
+    "fr": ""
+  },
+  "การ_คิด": {
+    "word_1": "การ",
+    "word_2": "คิด",
+    "en": "thought, thinking",
+    "fr": ""
+  },
+  "ความ_คิด": {
+    "word_1": "ความ",
+    "word_2": "คิด",
+    "en": "thought, idea, notion",
+    "fr": ""
+  },
+  "คิด_ว่า": {
+    "word_1": "คิด",
+    "word_2": "ว่า",
+    "en": "to think that",
+    "fr": ""
+  },
+  "คิด_เห็น": {
+    "word_1": "คิด",
+    "word_2": "เห็น",
+    "en": "to comment, discuss, criticize",
+    "fr": ""
+  },
+  "คิด_ได้": {
+    "word_1": "คิด",
+    "word_2": "ได้",
+    "en": "to realize, become aware of, comprehend",
+    "fr": ""
+  },
+  "เป็น_ได้": {
+    "word_1": "เป็น",
+    "word_2": "ได้",
+    "en": "possibly, likely, maybe",
+    "fr": ""
+  },
+  "ความ_จำ": {
+    "word_1": "ความ",
+    "word_2": "จำ",
+    "en": "memory, remembrance",
+    "fr": ""
+  },
+  "จำ_ได้": {
+    "word_1": "จำ",
+    "word_2": "ได้",
+    "en": "to remember",
+    "fr": ""
+  },
+  "เข้า_ใจ": {
+    "word_1": "เข้า",
+    "word_2": "ใจ",
+    "en": "to understand",
+    "fr": ""
+  },
+  "คน_ดี": {
+    "word_1": "คน",
+    "word_2": "ดี",
+    "en": "good person/darling, honey",
+    "fr": ""
+  },
+  "ดี_มาก": {
+    "word_1": "ดี",
+    "word_2": "มาก",
+    "en": "very good, excellent",
+    "fr": ""
+  },
+  "โชค_ดี": {
+    "word_1": "โชค",
+    "word_2": "ดี",
+    "en": "lucky/good luck!",
+    "fr": ""
+  },
+  "ก็_ตาม": {
+    "word_1": "ก็",
+    "word_2": "ตาม",
+    "en": "no matter, whatever",
+    "fr": ""
+  },
+  "ก็_ดี": {
+    "word_1": "ก็",
+    "word_2": "ดี",
+    "en": "to be quite good, not bad",
+    "fr": ""
+  },
+  "ก็_ได้": {
+    "word_1": "ก็",
+    "word_2": "ได้",
+    "en": "ok, all right, fine",
+    "fr": ""
+  },
+  "คน_ดู": {
+    "word_1": "คน",
+    "word_2": "ดู",
+    "en": "audience, spectator, onlooker",
+    "fr": ""
+  },
+  "ดู_ดี": {
+    "word_1": "ดู",
+    "word_2": "ดี",
+    "en": "to look good",
+    "fr": ""
+  },
+  "ใจ_ดี": {
+    "word_1": "ใจ",
+    "word_2": "ดี",
+    "en": "to be nice",
+    "fr": ""
+  },
+  "ยิน_ดี": {
+    "word_1": "ยิน",
+    "word_2": "ดี",
+    "en": "to be glad",
+    "fr": ""
+  },
+  "ได้_ยิน": {
+    "word_1": "ได้",
+    "word_2": "ยิน",
+    "en": "to hear",
+    "fr": ""
+  }
+}

@@ -74,6 +74,8 @@ var should_show_letters_button = false
 var is_somber = false
 var rain = null
 
+var palace_in_memory = null  # where we save the palace
+
 var hp = 5.0
 var max_hp = 5.0
 var spawn_point = ["res://Maps/Chaiyaphum.tscn", 0, 0]

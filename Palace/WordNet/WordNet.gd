@@ -4,7 +4,7 @@ var all_words = []  # all Spell instances in the Palace
 var links = []  # instance of a WordNetLink
 
 func _ready():
-	pass # Replace with function body.
+	self.set_owner(Game.current_scene)
 
 func _init_word_net(_all_words):
 	all_words = _all_words
@@ -15,7 +15,9 @@ func add_word(word):
 	update_links()
 
 func remove_word(word):
+	print('all_words before erasing: ', all_words)
 	all_words.erase(word)
+	print('all_words after erasing: ', all_words)
 	update_links()
 
 func remove_all_links():
@@ -39,6 +41,7 @@ func update_links():
 func make_link(word_1, word_2):
 	var new_link = load("res://Palace/WordNet/WordNetLink.tscn").instance()
 	Game.current_scene.get_node("YSort").add_child(new_link)
+#	new_link.set_owner(Game.current_scene)
 	new_link._init_word_net_link(to_local(word_1.position), to_local(word_2.position))
 	new_link.word_1 = word_1
 	new_link.word_2 = word_2

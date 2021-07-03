@@ -32,6 +32,7 @@ func _process(delta):
 			if Input.is_action_just_pressed("click"):
 				var new_item = current_item.instance()
 				level.add_child(new_item)
+				new_item.set_owner(Game.current_scene)
 				new_item.global_position = global_position
 #			elif Input.is_action_just_pressed("right_click"):
 #				remove_placed_item_on_position(global_position)
