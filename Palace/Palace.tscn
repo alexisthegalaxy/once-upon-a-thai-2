@@ -34,8 +34,12 @@ auto_exposure_scale = 0.44
 auto_exposure_min_luma = 0.17
 auto_exposure_max_luma = 16.0
 glow_enabled = true
+glow_levels/1 = true
+glow_levels/7 = true
 glow_intensity = 1.37
+glow_strength = 1.46
 glow_blend_mode = 0
+glow_hdr_threshold = 2.0
 glow_bicubic_upscale = true
 
 [node name="Palace" type="Node2D"]
@@ -89,11 +93,13 @@ position = Vector2( 253.124, 81.9086 )
 texture = ExtResource( 18 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 3 )]
+modulate = Color( 0.741176, 0.741176, 0.741176, 1 )
 position = Vector2( 119.848, 12.2741 )
 
 [node name="Light2D" type="Light2D" parent="YSort/Player"]
 visible = false
 scale = Vector2( 0.1, 0.1 )
+enabled = false
 texture = ExtResource( 13 )
 texture_scale = 0.62
 energy = 0.66
@@ -126,7 +132,7 @@ position = Vector2( 149.051, 132.57 )
 id = 82
 
 [node name="Spell6" parent="YSort" instance=ExtResource( 17 )]
-position = Vector2( 149.051, 68.5231 )
+position = Vector2( 183.102, 86.3591 )
 id = 188
 
 [node name="EditorObjectOnCursor" type="Node2D" parent="."]

@@ -20,16 +20,21 @@ func remove_word(word):
 
 func remove_all_links():
 	for link in links:
-		link.queue_free()
+		link.delete()
 	links = []
 
 func update_links():
 	remove_all_links()
 	for word_1 in all_words:
+		word_1.links = []
+	for word_1 in all_words:
 		var related_words = Compound.get_related_words(Game.words[str(word_1.id)].split)
 		for word_2 in all_words:
 			if word_2.id in related_words:
-				links.append(make_link(word_1, word_2))
+				var new_link = make_link(word_1, word_2)
+				links.append(new_link)
+				word_1.links.append(new_link)
+				word_2.links.append(new_link)
 
 func make_link(word_1, word_2):
 	var new_link = load("res://Palace/WordNet/WordNetLink.tscn").instance()

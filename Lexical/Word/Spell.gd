@@ -17,6 +17,7 @@ var wobbling_time = 0
 var y = 0
 var is_birthing = true
 var is_frozen = false
+var links = []
 
 # variables linked to following
 export var is_following_player = false
@@ -143,6 +144,7 @@ func dialog_option(_dialog, option):
 	if option == MOVE_IT:
 		Game.add_following_word(id, self)
 		Game.palace.get_node("WordNet").remove_word(self)
+		links = []
 		Game.lose_focus(self)
 		Game.gains_focus(Game.palace)
 
@@ -173,3 +175,22 @@ func _on_Area2D_body_entered(body):
 func _on_Area2D_body_exited(body):
 	if body == Game.player:
 		Game.lose_focus(self)
+
+
+func _on_GreaterZone_body_entered(body):
+	# Used in the Palace to make its links visible
+	if not body == Game.player:
+		return
+	if not Game.palace:
+		return
+	for link in links:
+		link.becomes_opaque()
+
+func _on_GreaterZone_body_exited(body):
+	# Used in the Palace to make its links transparent
+	if not body == Game.player:
+		return
+	if not Game.palace:
+		return
+	for link in links:
+		link.becomes_transparent()
