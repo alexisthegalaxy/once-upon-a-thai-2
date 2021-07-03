@@ -112,14 +112,20 @@ texture = ExtResource( 6 )
 position = Vector2( 24, 128 )
 
 [node name="Option1" parent="Control/Options" instance=ExtResource( 7 )]
-position = Vector2( 219.461, -24.2707 )
+position = Vector2( 220, -24.271 )
 
 [node name="Option2" parent="Control/Options" instance=ExtResource( 7 )]
-position = Vector2( 219.461, -45.2796 )
+position = Vector2( 220, -43.114 )
 
 [node name="Option3" parent="Control/Options" instance=ExtResource( 7 )]
-position = Vector2( 219.461, -66.2885 )
+position = Vector2( 220, -62.111 )
 
 [node name="Option4" parent="Control/Options" instance=ExtResource( 7 )]
-position = Vector2( 219.461, -87.2974 )
+position = Vector2( 220, -81.109 )
+
+[node name="Option5" parent="Control/Options" instance=ExtResource( 7 )]
+position = Vector2( 220, -100.138 )
+
+[node name="Option6" parent="Control/Options" instance=ExtResource( 7 )]
+position = Vector2( 220, -118.702 )
 [connection signal="timeout" from="Control/Timer" to="." method="_on_Timer_timeout"]

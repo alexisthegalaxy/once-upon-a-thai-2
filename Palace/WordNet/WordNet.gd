@@ -40,4 +40,6 @@ func make_link(word_1, word_2):
 	var new_link = load("res://Palace/WordNet/WordNetLink.tscn").instance()
 	Game.current_scene.get_node("YSort").add_child(new_link)
 	new_link._init_word_net_link(to_local(word_1.position), to_local(word_2.position))
+	new_link.word_1 = word_1
+	new_link.word_2 = word_2
 	return new_link

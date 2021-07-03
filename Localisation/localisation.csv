@@ -222,4 +222,6 @@ _leave_palace,Leave Mind Palace,Sortir du Palais
 _enhance_palace,Enhance the Palace,Améliore le Palais
 _explore_palace,Explore,Explore
 _do_you_to_place_word_here,"Is this where you want to place down the word [Word]? @QYes/No, I'll pick somewhere else","Veux-tu placer le mot [Word] ici ? @QOui/Non, je vais le placer ailleurs"
-_what_to_do_with_word,What do you want to do with [Word]? @QMove it/Use its power/See it/Teleport,Que veux-tu faire avec [Word] ? @QLe déplacer/Utiliser son pouvoir/Le voir/Se téléporter
+_what_to_do_with_word,What do you want to do with [Word]? @QMove it/Use its power/See it,Que veux-tu faire avec [Word] ? @QLe déplacer/Utiliser son pouvoir/Le voir
+_to_which_word_do_you_want_to_go,To which word do you want to teleport?,Tu veux te téléporter à quel mot ?
+_teleport,Teleport,Se téléporter

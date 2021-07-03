@@ -1,5 +1,6 @@
 extends CanvasLayer
 
+var id
 const NUMBER_OF_CHARACTERS_TO_WRITE_EACH_DELTA = 2
 const MAX_NUMBER_OF_CHARACTERS_PER_LINE = 51  # we cut using this number when we have more than 2 lines being shown
 export var dialog = []
@@ -11,7 +12,7 @@ var current_line_has_question = false
 var options = []
 var current_answer_index = 1
 var line_has_finished_writing = false
-var test = "test test"
+var test = "test test"  # can we delete this?
 var time = 0
 var this_line_doesnt_show_the_name = false
 var display_name = ""
@@ -90,6 +91,8 @@ func init_dialog(_dialog, _caller, _post_dialog_event, _post_dialog_signal, spea
 	$Control/Options/Option2.init_option(self, caller, 2)
 	$Control/Options/Option3.init_option(self, caller, 3)
 	$Control/Options/Option4.init_option(self, caller, 4)
+	$Control/Options/Option5.init_option(self, caller, 5)
+	$Control/Options/Option6.init_option(self, caller, 6)
 
 func play_sound_effect():
 	SoundPlayer.play_sound("res://Sounds/Effects/next.wav", 0)
@@ -184,6 +187,8 @@ func hide_answers():
 	$Control/Options/Option2.hide()
 	$Control/Options/Option3.hide()
 	$Control/Options/Option4.hide()
+	$Control/Options/Option5.hide()
+	$Control/Options/Option6.hide()
 
 func reveal_answers():
 	line_has_finished_writing = true
@@ -193,3 +198,7 @@ func reveal_answers():
 		$Control/Options/Option3.show()
 	if len(options) >= 4:
 		$Control/Options/Option4.show()
+	if len(options) >= 5:
+		$Control/Options/Option5.show()
+	if len(options) >= 6:
+		$Control/Options/Option6.show()

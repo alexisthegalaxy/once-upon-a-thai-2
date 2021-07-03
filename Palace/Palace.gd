@@ -59,6 +59,7 @@ func interact():
 	Game.player.stop_walking()
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	Game.current_dialog.init_dialog([dialog], self, null, false, null)
+	Game.current_dialog.id = "place_word_here"
 	Game.current_scene.add_child(Game.current_dialog)
 
 func _process(delta):

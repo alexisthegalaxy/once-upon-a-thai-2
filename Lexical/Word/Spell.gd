@@ -24,7 +24,7 @@ export var is_following_player = false
 var following_speed = 1000
 var MAX_FOLLOWING_SPEED = 100
 var closeness_to_player = 15
-
+var lo = TranslationServer.get_locale()
 var random_following_offset = Vector2.ZERO
 
 # events are an array that contains first the event name, then the array of parameters
@@ -32,6 +32,8 @@ export(Array) var pre_dialog_event = []
 export(Array) var post_dialog_event = []
 
 func _ready():
+	if Game.palace:
+		$CollisionShape2D.disabled = true
 	y = self.position.y
 	word = Game.words[str(id)]
 	$Visible/thai.text = word["th"]
@@ -129,25 +131,54 @@ func interact():
 		start_test()
 		return
 	var dialog = tr("_what_to_do_with_word").replace("[Word]", word.th)
+	if links:
+		dialog += "/" + tr("_teleport")
 	get_tree().set_input_as_handled()
 	Game.is_frozen = true
 	Game.player.stop_walking()
 	Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
 	Game.current_dialog.init_dialog([dialog], self, null, false, null)
+	Game.current_dialog.id = "what_to_do_with_word"
 	Game.current_scene.add_child(Game.current_dialog)
 
-func dialog_option(_dialog, option):
-	var MOVE_IT = 1
-	var USE_ITS_POWER = 2
-	var SEE_WORD = 3
-	var TELEPORT = 4
-	if option == MOVE_IT:
-		Game.add_following_word(id, self)
-		Game.palace.get_node("WordNet").remove_word(self)
-		links = []
-		Game.lose_focus(self)
-		Game.gains_focus(Game.palace)
-
+func dialog_option(dialog, option):
+	if dialog.id == "what_to_do_with_word":
+		var MOVE_IT = 1
+		var USE_ITS_POWER = 2
+		var SEE_WORD = 3
+		var TELEPORT = 4
+		if option == MOVE_IT:
+			Game.add_following_word(id, self)
+			Game.palace.get_node("WordNet").remove_word(self)
+			links = []
+			Game.lose_focus(self)
+			Game.gains_focus(Game.palace)
+		elif option == TELEPORT:
+			var dialog_text = tr("_to_which_word_do_you_want_to_go") + " @Q"
+			var options = PoolStringArray([])
+			for link in links:
+				if link.word_1 != self and not link.word_1.word.th in options:
+					options.append(link.word_1.word.th)
+				if link.word_2 != self and not link.word_2.word.th in options:
+					options.append(link.word_2.word.th)
+			dialog_text += options.join("/")
+			get_tree().set_input_as_handled()
+			Game.is_frozen = true
+			Game.player.stop_walking()
+			Game.current_dialog = load("res://Dialog/Dialog.tscn").instance()
+			Game.current_dialog.init_dialog([dialog_text], self, null, false, null)
+			Game.current_dialog.id = "teleport_to_which_word"
+			Game.current_scene.add_child(Game.current_dialog)
+	elif dialog.id == "teleport_to_which_word":
+		var options = []
+		for link in links:
+			if link.word_1 != self and not link.word_1 in options:
+				options += [link.word_1]
+			if link.word_2 != self and not link.word_2 in options:
+				options += [link.word_2]
+		var selected_option = options[option - 1]
+		Game.player.position = selected_option.position
+		
 func start_test():
 	Game.is_frozen = true
 	var test_start_animation = load("res://Test/TestStartAnimation.tscn").instance()

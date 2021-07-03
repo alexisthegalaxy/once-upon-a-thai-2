@@ -1,5 +1,8 @@
 extends Node2D
 
+var word_1  # Spell instance
+var word_2  # Spell instance
+
 func _ready():
 	appear()
 	$Line2D.modulate = Color(1, 1, 1, 0)
