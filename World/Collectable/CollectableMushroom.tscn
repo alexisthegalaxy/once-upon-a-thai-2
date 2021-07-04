@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://World/Collectable/Collectable.tscn" type="PackedScene" id=1]
+[ext_resource path="res://World/assets/Mushroom.png" type="Texture" id=2]
+
+[node name="CollectableMushroom" instance=ExtResource( 1 )]
+collectable_name = "Mushroom"
+
+[node name="Shadow" parent="." index="0"]
+position = Vector2( 0.146374, -0.277571 )
+scale = Vector2( 0.0117841, 0.00571191 )
+
+[node name="Sprite" parent="." index="1"]
+position = Vector2( 0.36936, -2.92919 )
+scale = Vector2( 0.353677, 0.384092 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" parent="." index="2"]
+position = Vector2( -1.51937, -16.6529 )
+disabled = true

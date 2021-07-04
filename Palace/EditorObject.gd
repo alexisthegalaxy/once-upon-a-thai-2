@@ -2,7 +2,7 @@ extends Node2D
 
 var can_place = true
 onready var level = Game.palace.get_node("YSort")
-var current_item
+var current_item  # a PackedScene
 var current_tileset
 var current_tileset_name
 
@@ -11,6 +11,8 @@ var removing_tileset = false
 var tile_id
 var tilemap
 var tile_set
+
+const items_whose_direction_is_random = ["Fish"]
 
 func _ready():
 	hide()
@@ -21,10 +23,6 @@ func ui_cancel():
 	current_tileset_name = null
 	hide()
 
-#func remove_placed_item_on_position(position):
-#	for item in level.get_children():
-#		if position in item.
-
 func _process(delta):
 	global_position = get_global_mouse_position()
 	if can_place:
@@ -34,6 +32,11 @@ func _process(delta):
 				level.add_child(new_item)
 				new_item.set_owner(Game.current_scene)
 				new_item.global_position = global_position
+				print('new_item.name = ', new_item.name)
+				for change in items_whose_direction_is_random:
+					if change in new_item.name and randi() % 2 == 0:
+#				if new_item.name.split('@')[1].replace('Placed', '') in items_whose_direction_is_random:
+						new_item.scale.x = -new_item.scale.x
 #			elif Input.is_action_just_pressed("right_click"):
 #				remove_placed_item_on_position(global_position)
 		elif current_tileset:

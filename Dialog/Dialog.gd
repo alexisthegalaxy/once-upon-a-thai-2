@@ -57,13 +57,18 @@ func reset_line():
 	current_line_has_question = "@Q" in dialog[page]
 	if current_line_has_question:
 		options = dialog[page].split("@Q")[1].split("/")
-		if len(options) >= 2:
+		if len(options) >= 1:
 			$Control/Options/Option1.get_node("Label").text = options[0]
+		if len(options) >= 2:
 			$Control/Options/Option2.get_node("Label").text = options[1]
 		if len(options) >= 3:
 			$Control/Options/Option3.get_node("Label").text = options[2]
 		if len(options) >= 4:
 			$Control/Options/Option4.get_node("Label").text = options[3]
+		if len(options) >= 5:
+			$Control/Options/Option4.get_node("Label").text = options[4]
+		if len(options) >= 6:
+			$Control/Options/Option4.get_node("Label").text = options[5]
 	elif line_has_finished_writing:
 		line_has_finished_writing = false
 		hide_answers()
@@ -193,7 +198,8 @@ func hide_answers():
 func reveal_answers():
 	line_has_finished_writing = true
 	$Control/Options/Option1.show()
-	$Control/Options/Option2.show()
+	if len(options) >= 2:
+		$Control/Options/Option2.show()
 	if len(options) >= 3:
 		$Control/Options/Option3.show()
 	if len(options) >= 4:

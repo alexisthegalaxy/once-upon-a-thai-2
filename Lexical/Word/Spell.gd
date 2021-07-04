@@ -157,10 +157,14 @@ func dialog_option(dialog, option):
 			var dialog_text = tr("_to_which_word_do_you_want_to_go") + " @Q"
 			var options = PoolStringArray([])
 			for link in links:
+				print('link---', link.word_1.word.th, ', ', link.word_2.word.th)
+			for link in links:
 				if link.word_1 != self and not link.word_1.word.th in options:
 					options.append(link.word_1.word.th)
 				if link.word_2 != self and not link.word_2.word.th in options:
 					options.append(link.word_2.word.th)
+			print('options')
+			print(options)
 			dialog_text += options.join("/")
 			get_tree().set_input_as_handled()
 			Game.is_frozen = true

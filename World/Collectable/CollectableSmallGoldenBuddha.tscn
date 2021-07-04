@@ -3,3 +3,7 @@
 [ext_resource path="res://World/Collectable/Collectable.tscn" type="PackedScene" id=1]
 
 [node name="CollectableSmallGoldenBuddha" instance=ExtResource( 1 )]
+collectable_name = "SmallGoldenBuddha"
+
+[node name="Shadow" parent="." index="0"]
+position = Vector2( -0.0975533, -0.751232 )

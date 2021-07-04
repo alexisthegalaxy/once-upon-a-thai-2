@@ -334,8 +334,7 @@ position = Vector2( 162.712, 97.7062 )
 collision_layer = 2
 script = ExtResource( 2 )
 __meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
+"_edit_group_": true
 }
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -380,3 +379,4 @@ anims/RunRight = SubResource( 16 )
 anims/RunUp = SubResource( 17 )
 
 [node name="Arrow" parent="." instance=ExtResource( 3 )]
+visible = false

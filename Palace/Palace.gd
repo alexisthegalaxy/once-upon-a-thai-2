@@ -19,18 +19,20 @@ func _ready():
 	var words = []
 	for word in $YSort.get_children():
 		if 'Spell' in word.name:
-			words.append(word)
+			print('Game.known_words before: ', Game.known_words)
+			if not word.word.id in Game.known_words:
+				Game.known_words.append(word.word.id)
+				print('Game.known_words after: ', Game.known_words)
+			if word.is_following_player:
+				word.queue_free()
+			else:
+				words.append(word)
 	$WordNet._init_word_net(words)
 
 func save_palace_in_memory():
-	print('save_palace_in_memory...')
 	var packed_scene = PackedScene.new()
-	print('packed_scene a ', packed_scene)
-#	packed_scene.pack(get_tree().get_current_scene())
 	packed_scene.pack(Game.current_scene)
-	print('packed_scene b ', packed_scene)
-	ResourceSaver.save("res://palace_in_memory.tscn", packed_scene)
-#	Game.palace_in_memory = self
+	ResourceSaver.save("user://%s.palace_in_memory.tscn" % Game.player_name, packed_scene)
 
 func dialog_option(_dialog, response):
 	var YES = 1  # NO = 2
@@ -51,7 +53,6 @@ func place_down_word():
 	following_word.over_word.queue_free()
 	following_word = null
 	call_deferred("add_word", new_word)
-
 
 func add_word(new_word):
 	Game.current_scene.get_node("YSort").add_child(new_word)

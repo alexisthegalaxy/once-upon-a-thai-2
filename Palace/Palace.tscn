@@ -45,10 +45,10 @@ glow_bicubic_upscale = true
 [node name="Palace" type="Node2D"]
 script = ExtResource( 7 )
 
-[node name="Control" parent="." instance=ExtResource( 2 )]
+[node name="ItemSelector" parent="." instance=ExtResource( 2 )]
 layer = 2
 
-[node name="ModeSwitch" type="Button" parent="Control"]
+[node name="ModeSwitch" type="Button" parent="ItemSelector"]
 anchor_left = 0.00099957
 anchor_top = -0.00177697
 anchor_right = 0.00099957
@@ -200,6 +200,6 @@ color = Color( 0.439216, 0.439216, 0.439216, 1 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 2 )
-[connection signal="mouse_entered" from="Control/ModeSwitch" to="." method="_on_ModeSwitch_mouse_entered"]
-[connection signal="mouse_exited" from="Control/ModeSwitch" to="." method="_on_ModeSwitch_mouse_exited"]
-[connection signal="pressed" from="Control/ModeSwitch" to="." method="_on_ModeSwitch_pressed"]
+[connection signal="mouse_entered" from="ItemSelector/ModeSwitch" to="." method="_on_ModeSwitch_mouse_entered"]
+[connection signal="mouse_exited" from="ItemSelector/ModeSwitch" to="." method="_on_ModeSwitch_mouse_exited"]
+[connection signal="pressed" from="ItemSelector/ModeSwitch" to="." method="_on_ModeSwitch_pressed"]

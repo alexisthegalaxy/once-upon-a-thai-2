@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Palace/Placable/PlacableWaterfall.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Palace/TabContainer.gd" type="Script" id=2]
@@ -13,25 +13,69 @@
 [ext_resource path="res://Palace/Placable/PlacableForestLeavesTileset.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Palace/Placable/PlacableMushroom.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Palace/Placable/PlacedSmallGoldenBuddha.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Palace/Placable/PlacableBookshelf.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Palace/Placable/PlacableBush.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Palace/Placable/PlacableRock.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Palace/Placable/PlacableFish.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Palace/Placable/PlacableMajesticTree.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Palace/Placable/PlacableTreeYellow.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Palace/Placable/PlacablePlayerHouse.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Palace/Placable/PlacedFish.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Palace/Placable/PlacedTreeYellow.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Palace/Placable/PlacedMajesticTree.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Palace/Placable/PlacedPlayerHouse.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Palace/Placable/PlacedBookshelf.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Palace/Placable/PlacedBush.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Palace/Placable/PlacedRock.tscn" type="PackedScene" id=27]
 
 [sub_resource type="DynamicFont" id=1]
 size = 10
 
-[node name="Control" type="CanvasLayer"]
+[node name="ItemSelector" type="CanvasLayer"]
 script = ExtResource( 10 )
 
 [node name="TabContainer" type="TabContainer" parent="."]
-margin_left = 189.0
+margin_left = 181.0
 margin_top = 2.0
-margin_right = 375.0
+margin_right = 527.0
 margin_bottom = 81.0
-rect_scale = Vector2( 0.7, 0.7 )
+rect_scale = Vector2( 0.4, 0.4 )
 custom_fonts/font = ExtResource( 4 )
 script = ExtResource( 2 )
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
+
+[node name="Nature" type="Tabs" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 38.0
+margin_right = -4.0
+margin_bottom = -4.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Nature"]
+anchor_left = -0.00115967
+anchor_right = 0.99884
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Nature/ScrollContainer"]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Nature/ScrollContainer"]
+
+[node name="PlacableWaterfall" parent="TabContainer/Nature/ScrollContainer/HBoxContainer" instance=ExtResource( 1 )]
+position = Vector2( 19.4256, 17.8265 )
+
+[node name="PlacableRock" parent="TabContainer/Nature/ScrollContainer/HBoxContainer" instance=ExtResource( 16 )]
+position = Vector2( 62.7275, 18.3049 )
+scale = Vector2( 0.7, 0.7 )
+this_scene = ExtResource( 27 )
 
 [node name="Furnitures" type="Tabs" parent="TabContainer"]
 anchor_right = 1.0
@@ -57,7 +101,15 @@ __meta__ = {
 position = Vector2( 14.0304, 17.4432 )
 this_scene = ExtResource( 13 )
 
-[node name="Nature" type="Tabs" parent="TabContainer"]
+[node name="PlacableBookshelf" parent="TabContainer/Furnitures/ScrollContainer/HBoxContainer" instance=ExtResource( 14 )]
+position = Vector2( 44.8249, 17.9733 )
+this_scene = ExtResource( 25 )
+
+[node name="PlacablePlayerHouse" parent="TabContainer/Furnitures/ScrollContainer/HBoxContainer" instance=ExtResource( 20 )]
+position = Vector2( 75.3578, 19.4891 )
+this_scene = ExtResource( 24 )
+
+[node name="Plants" type="Tabs" parent="TabContainer"]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -67,7 +119,7 @@ margin_right = -4.0
 margin_bottom = -4.0
 custom_fonts/font = SubResource( 1 )
 
-[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Nature"]
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Plants"]
 anchor_left = -0.00115967
 anchor_right = 0.99884
 anchor_bottom = 1.0
@@ -76,19 +128,56 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Nature/ScrollContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Plants/ScrollContainer"]
 
-[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Nature/ScrollContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Plants/ScrollContainer"]
 
-[node name="PlacableTree" parent="TabContainer/Nature/ScrollContainer/HBoxContainer" instance=ExtResource( 3 )]
-position = Vector2( 79.2526, 16.4952 )
+[node name="PlacableTree" parent="TabContainer/Plants/ScrollContainer/HBoxContainer" instance=ExtResource( 3 )]
+position = Vector2( 12.7732, 19.0937 )
 scale = Vector2( 0.7, 0.7 )
 
-[node name="PlacableMushroom" parent="TabContainer/Nature/ScrollContainer/HBoxContainer" instance=ExtResource( 12 )]
-position = Vector2( 50.2439, 16.8744 )
+[node name="PlacableMushroom" parent="TabContainer/Plants/ScrollContainer/HBoxContainer" instance=ExtResource( 12 )]
+position = Vector2( 132.531, 19.906 )
 
-[node name="PlacableWaterfall" parent="TabContainer/Nature/ScrollContainer/HBoxContainer" instance=ExtResource( 1 )]
-position = Vector2( 19.4256, 17.8265 )
+[node name="PlacableBush" parent="TabContainer/Plants/ScrollContainer/HBoxContainer" instance=ExtResource( 15 )]
+position = Vector2( 74.9247, 20.3553 )
+this_scene = ExtResource( 26 )
+
+[node name="PlacableMajesticTree" parent="TabContainer/Plants/ScrollContainer/HBoxContainer" instance=ExtResource( 18 )]
+position = Vector2( 105.891, 21.0049 )
+this_scene = ExtResource( 23 )
+
+[node name="PlacableTreeYellow" parent="TabContainer/Plants/ScrollContainer/HBoxContainer" instance=ExtResource( 19 )]
+position = Vector2( 42.876, 17.9733 )
+scale = Vector2( 0.721648, 0.705459 )
+this_scene = ExtResource( 22 )
+
+[node name="Entities" type="Tabs" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 38.0
+margin_right = -4.0
+margin_bottom = -4.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Entities"]
+anchor_left = -0.00115967
+anchor_right = 0.99884
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Entities/ScrollContainer"]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Entities/ScrollContainer"]
+
+[node name="PlacableFish" parent="TabContainer/Entities/ScrollContainer/HBoxContainer" instance=ExtResource( 17 )]
+position = Vector2( 25.1193, 15.3747 )
+this_scene = ExtResource( 21 )
 
 [node name="Terrain" type="Tabs" parent="TabContainer"]
 visible = false

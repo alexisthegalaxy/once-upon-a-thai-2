@@ -7,18 +7,26 @@ export(String) var tileset_path
 export(String) var tileset_name
 var object_cursor
 var cursor_sprite
+var disabled = true
 
 func _ready():
 	if not Game.palace:
-		Game.palace =  get_tree().get_root().get_node("Palace")
+		Game.palace = get_tree().get_root().get_node("Palace")
 	object_cursor = Game.palace.get_node("EditorObjectOnCursor")
 	cursor_sprite = object_cursor.get_node("AnimatedSprite")
+	disabled = not name.replace('Placable', '') in Game.obtained_collectables
+	if disabled:
+		modulate = Color(1, 1, 1, 0.3)
 
 func item_clicked(event):
+	if disabled:
+		return
 	if event is InputEvent and event.is_action_pressed("click"):
 		_on_click()
 
 func _on_Button_pressed():
+	if disabled:
+		return
 	_on_click()
 
 func _on_click():
@@ -31,9 +39,13 @@ func _on_click():
 	object_cursor.show()
 
 func _on_Button_mouse_exited():
+	if disabled:
+		return
 	object_cursor.can_place = true
 	object_cursor.show()
 
 func _on_Button_mouse_entered():
+	if disabled:
+		return
 	object_cursor.can_place = false
 	object_cursor.hide()
