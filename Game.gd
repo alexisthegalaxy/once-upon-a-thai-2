@@ -37,16 +37,16 @@ var obtained_collectables = [
 	"CliffTileset",
 	"SandPathTileset",
 	"Waterfall",
-	"Mushroom",
-	"TreeYellow",
-	"PlayerHouse",
-	"Bookshelf",
-	"Fish",
-	"Bush",
-	"MajesticTree",
-	"Rock",
-	"Bookshelf",
-	"SmallGoldenBuddha",
+#	"Mushroom",
+#	"TreeYellow",
+#	"PlayerHouse",
+#	"Bookshelf",
+#	"Fish",
+#	"Bush",
+#	"MajesticTree",
+#	"Rock",
+#	"Bookshelf",
+#	"SmallGoldenBuddha",
 ]
 var following_words = []
 #var following_words = [
@@ -388,11 +388,6 @@ func _on_sentence_area_entered(sentence_id, x, y) -> void:
 	if not sentence_id in known_sentences:
 		add_sentence(sentence_id, x, y)
 
-func _on_changelight_entered(color) -> void:
-	change_color = true
-	goal_color = color
-	last_goal_color = color
-
 func start_test(test_scene, entity_id, over_entity) -> void:
 	main_ui.close_quest_display()
 	var test = load(test_scene).instance()
@@ -433,7 +428,7 @@ func load_game(game_data):
 	known_sentences = game_data.known_sentences
 	seen_sentences = game_data.seen_sentences
 	known_letters = game_data.known_letters
-	following_words = game_data.following_words
+#	following_words = game_data.following_words
 	letters_we_look_for = game_data.letters_we_look_for
 	player_position_on_overworld = Vector2(game_data.player_position_on_overworld[0], game_data.player_position_on_overworld[1])
 	print('player_position_on_overworld', player_position_on_overworld)

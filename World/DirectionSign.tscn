@@ -24,10 +24,10 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( 0.30233, -10.9595 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( -0.453499, 10.0525 )
 shape = SubResource( 1 )
 

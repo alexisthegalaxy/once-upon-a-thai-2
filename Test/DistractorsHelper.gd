@@ -159,12 +159,17 @@ func process_player_gender_in_sentence(sentence):
 
 func clean_sentence(_sentence):
 #	var inside_parentheses = false
-	var sentence = _sentence.replace(".", "").replace("-", " ")
+	var sentence = _sentence.to_upper().replace(".", "").replace("-", " ")
 	sentence = sentence.replace("!", "").replace(",", "")
 	sentence = sentence.replace("?", "").replace("ʼ", "'")
-	sentence = sentence.replace("ï", "i").replace("ç", "c")
-	sentence = sentence.replace("è", "e").replace("é", "e").replace("ê", "e")
-	sentence = sentence.to_upper()
+#	sentence = sentence.replace("ï", "i").replace("ç", "c")
+	sentence = sentence.replace("Ï", "I").replace("Î", "I")
+	sentence = sentence.replace("Ò", "O").replace("Ó", "O").replace("Ô", "O").replace("Ö", "O")
+	sentence = sentence.replace("Û", "U").replace("Ü", "U").replace("Ù", "U").replace("Ú", "U")
+	sentence = sentence.replace("È", "E").replace("É", "E").replace("Ê", "E").replace("Ë", "E")
+	sentence = sentence.replace("Ç", "C")
+#	sentence = sentence.replace("è", "e").replace("é", "e").replace("ê", "e")
+	sentence = sentence
 #	var result = ""
 #	for letter in sentence:
 #		if letter == "(":

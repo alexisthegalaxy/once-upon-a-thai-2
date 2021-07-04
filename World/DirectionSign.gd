@@ -2,8 +2,12 @@ extends Node2D
 
 export(String) var content = "ชัยภูมิ"
 export(Array, String) var dialog = ["_this_road_leads_to_chaiyaphum"]
+export var is_invisible = false
 
 func _ready():
+	if is_invisible:
+		$Sprite.visible = false
+		$StaticBody2D.set_collision_layer_bit(0, false)
 	$Label.text = content
 
 func interact():

@@ -1,4 +1,4 @@
-[gd_scene load_steps=256 format=2]
+[gd_scene load_steps=253 format=2]
 
 [ext_resource path="res://World/tilesets/WaterTileMap.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://World/tilesets/CliffTileMap.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/ForestLeavesTilemap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://World/tilesets/CliffTileset.png" type="Texture" id=6]
+[ext_resource path="res://World/SpaceParallaxBackground.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://Light/light.png" type="Texture" id=11]
@@ -14,14 +15,10 @@
 [ext_resource path="res://World/tilesets/RoomTileset.png" type="Texture" id=14]
 [ext_resource path="res://World/tilesets/DirtTileset.png" type="Texture" id=15]
 [ext_resource path="res://World/tilesets/ForestLeaves.png" type="Texture" id=16]
-[ext_resource path="res://Palace/Background/planet2.png" type="Texture" id=18]
-[ext_resource path="res://Palace/Background/planet3.png" type="Texture" id=19]
 [ext_resource path="res://Palace/Placable/PlacedTree.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Lexical/Word/Spell.tscn" type="PackedScene" id=25]
 [ext_resource path="res://Palace/EditorObject.gd" type="Script" id=26]
-[ext_resource path="res://Palace/Background/space.jpeg" type="Texture" id=27]
 [ext_resource path="res://Palace/Palace.gd" type="Script" id=28]
-[ext_resource path="res://Palace/Background/planet1.png" type="Texture" id=29]
 [ext_resource path="res://Palace/Placable/PlacedBush.tscn" type="PackedScene" id=30]
 [ext_resource path="res://Palace/Placable/PlacedMushroom.tscn" type="PackedScene" id=31]
 [ext_resource path="res://Palace/Placable/PlacedSmallGoldenBuddha.tscn" type="PackedScene" id=32]
@@ -3683,65 +3680,7 @@ frames = SubResource( 222 )
 animation = "Cliff"
 playing = true
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-layer = -10
-scroll_offset = Vector2( -59.9534, 1.91854 )
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2( 3634.81, 640.829 )
-scale = Vector2( 6.1035e-05, 6.1035e-05 )
-motion_scale = Vector2( 0.1, 0.1 )
-
-[node name="space" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( 139.869, 79.3904 )
-rotation = 1.5708
-scale = Vector2( 0.7, 0.7 )
-texture = ExtResource( 27 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2( 3274.57, -263.721 )
-scale = Vector2( 6.1035e-05, 6.1035e-05 )
-motion_scale = Vector2( 0.15, 0.15 )
-
-[node name="planet1" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
-position = Vector2( 3.46683, 65.0985 )
-scale = Vector2( 0.104, 0.104 )
-texture = ExtResource( 29 )
-
-[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2( 2914.25, -1168.28 )
-scale = Vector2( 6.1035e-05, 6.1035e-05 )
-motion_scale = Vector2( 0.2, 0.2 )
-
-[node name="planet4" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( -0.0441895, -86.9099 )
-rotation = 1.5708
-scale = Vector2( 0.123, 0.123 )
-texture = ExtResource( 19 )
-
-[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2( 2553.95, -2072.8 )
-scale = Vector2( 6.1035e-05, 6.1035e-05 )
-motion_scale = Vector2( 0.25, 0.25 )
-
-[node name="planet3" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
-position = Vector2( -76.966, 25.8703 )
-rotation = 1.5708
-scale = Vector2( 0.123, 0.123 )
-texture = ExtResource( 19 )
-
-[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2( 2193.65, -2977.36 )
-scale = Vector2( 6.1035e-05, 6.1035e-05 )
-motion_scale = Vector2( 0.3, 0.3 )
-
-[node name="planet2" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
-position = Vector2( 117.127, -49.3529 )
-scale = Vector2( 0.085, 0.085 )
-texture = ExtResource( 18 )
+[node name="ParallaxBackground" parent="." instance=ExtResource( 7 )]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0.439216, 0.439216, 0.439216, 1 )

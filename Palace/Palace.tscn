@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Palace/EditorObject.gd" type="Script" id=1]
 [ext_resource path="res://Palace/ItemSelector.tscn" type="PackedScene" id=2]
@@ -8,10 +8,7 @@
 [ext_resource path="res://World/TileMap.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Palace/Palace.gd" type="Script" id=7]
 [ext_resource path="res://World/tilesets/WaterTileMap.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Palace/Background/space.jpeg" type="Texture" id=9]
-[ext_resource path="res://Palace/Background/planet1.png" type="Texture" id=10]
-[ext_resource path="res://Palace/Background/planet2.png" type="Texture" id=11]
-[ext_resource path="res://Palace/Background/planet3.png" type="Texture" id=12]
+[ext_resource path="res://World/SpaceParallaxBackground.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Light/light.png" type="Texture" id=13]
 [ext_resource path="res://UI/fonts/THSarabunNew.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://World/ForestLeavesTilemap.tscn" type="PackedScene" id=15]
@@ -26,24 +23,9 @@ extra_spacing_top = -3
 extra_spacing_bottom = -5
 font_data = ExtResource( 14 )
 
-[sub_resource type="Environment" id=2]
-background_mode = 4
-background_energy = 0.52
-background_canvas_max_layer = 8
-auto_exposure_scale = 0.44
-auto_exposure_min_luma = 0.17
-auto_exposure_max_luma = 16.0
-glow_enabled = true
-glow_levels/1 = true
-glow_levels/7 = true
-glow_intensity = 1.37
-glow_strength = 1.46
-glow_blend_mode = 0
-glow_hdr_threshold = 2.0
-glow_bicubic_upscale = true
-
 [node name="Palace" type="Node2D"]
 script = ExtResource( 7 )
+color = Color( 0.882353, 0.768627, 0.768627, 1 )
 
 [node name="ItemSelector" parent="." instance=ExtResource( 2 )]
 layer = 2
@@ -97,7 +79,6 @@ modulate = Color( 0.741176, 0.741176, 0.741176, 1 )
 position = Vector2( 119.848, 12.2741 )
 
 [node name="Light2D" type="Light2D" parent="YSort/Player"]
-visible = false
 scale = Vector2( 0.1, 0.1 )
 enabled = false
 texture = ExtResource( 13 )
@@ -115,10 +96,6 @@ id = 45
 position = Vector2( 17.308, 82.7108 )
 id = 46
 
-[node name="Spell3" parent="YSort" instance=ExtResource( 17 )]
-position = Vector2( 63.9247, 83.9268 )
-id = 47
-
 [node name="Spell7" parent="YSort" instance=ExtResource( 17 )]
 position = Vector2( 64.3301, 44.2013 )
 id = 201
@@ -135,71 +112,21 @@ id = 82
 position = Vector2( 183.102, 86.3591 )
 id = 188
 
+[node name="ParallaxBackground" parent="." instance=ExtResource( 9 )]
+
 [node name="EditorObjectOnCursor" type="Node2D" parent="."]
 script = ExtResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="EditorObjectOnCursor"]
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-layer = -10
+[node name="Lights" type="Node2D" parent="."]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.1, 0.1 )
-
-[node name="space" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( 139.869, 79.3904 )
-rotation = 1.5708
-scale = Vector2( 0.7, 0.7 )
-texture = ExtResource( 9 )
-
-[node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.1, 0.1 )
-
-[node name="space" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
-position = Vector2( -908, 79.6203 )
-rotation = 1.5708
-scale = Vector2( 0.7, -0.7 )
-texture = ExtResource( 9 )
-
-[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.15, 0.15 )
-
-[node name="planet1" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
-position = Vector2( 3.46683, 65.0985 )
-scale = Vector2( 0.104, 0.104 )
-texture = ExtResource( 10 )
-
-[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.2, 0.2 )
-
-[node name="planet4" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( -0.0441895, -86.9099 )
-rotation = 1.5708
-scale = Vector2( 0.123, 0.123 )
-texture = ExtResource( 12 )
-
-[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.25, 0.25 )
-
-[node name="planet3" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
-position = Vector2( -76.966, 25.8703 )
-rotation = 1.5708
-scale = Vector2( 0.123, 0.123 )
-texture = ExtResource( 12 )
-
-[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0.3, 0.3 )
-
-[node name="planet2" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
-position = Vector2( 117.127, -49.3529 )
-scale = Vector2( 0.085, 0.085 )
-texture = ExtResource( 11 )
-
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0.439216, 0.439216, 0.439216, 1 )
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( 2 )
+[node name="CanvasModulate" type="CanvasModulate" parent="Lights"]
+modulate = Color( 0.207843, 0.121569, 0.792157, 1 )
+self_modulate = Color( 0.0901961, 0.721569, 0.662745, 1 )
+show_behind_parent = true
+light_mask = 3327
+color = Color( 0.435294, 0.435294, 0.435294, 1 )
 [connection signal="mouse_entered" from="ItemSelector/ModeSwitch" to="." method="_on_ModeSwitch_mouse_entered"]
 [connection signal="mouse_exited" from="ItemSelector/ModeSwitch" to="." method="_on_ModeSwitch_mouse_exited"]
 [connection signal="pressed" from="ItemSelector/ModeSwitch" to="." method="_on_ModeSwitch_pressed"]

@@ -1,6 +1,6 @@
 extends Node2D
 
-export var time_to_live = 4
+export var time_to_live = 6
 export var text = "floaty!"
 export var distance_to_travel = 8
 export var direction = -1

@@ -141,11 +141,19 @@ func on_button_pressed(type):
 	elif type == "_palace":
 		open_memory_palace()
 	elif type == "_leave_palace":
-		Game.palace.close()
+		close_memory_palace()
 	elif type == "_save_the_game":
 		Save.save_game()
 	elif type == "_map":
 		display_map()
+
+func close_memory_palace():
+	if Game.following_words:
+		var floaty = load("res://UI/Floaty.tscn").instance()
+		floaty.text = tr("_you_cant_leave_when_you_carry_a_word")
+		Game.player.add_child(floaty)
+	else:
+		Game.palace.close()
 
 func on_button_hovered(type):
 	hovered_buttons.append(type)

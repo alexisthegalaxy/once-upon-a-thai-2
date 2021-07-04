@@ -8,7 +8,9 @@ func move_player(to_x, to_y, level_y_height_change):
 	Game.player = Game.current_scene.get_node("YSort/Player")
 	Game.player.position = Vector2(to_x, to_y)
 	Game.player.velocity = player_velocity
-	
+	change_height(level_y_height_change)
+
+func change_height(level_y_height_change):
 	Game.player.get_node("Sprite").position.y -= level_y_height_change
 	Game.player.get_node("Camera2D").position.y -= level_y_height_change
 	Game.player.get_node("Shadow").position.y -= level_y_height_change
@@ -37,9 +39,6 @@ func update_main_ui_upon_map_change():
 	Game.main_ui.update_main_ui()
 	Game.add_child(Game.main_ui)
 
-func save_following_words_data_before_map_change():
-	return
-
 func generate_following_words_after_map_change():
 	for following_word in Game.following_words:
 		var new_spell = load("res://Lexical/Word/Spell.tscn").instance()
@@ -51,22 +50,10 @@ func generate_following_words_after_map_change():
 		Game.current_scene.get_node("YSort").add_child(new_spell)
 		following_word.over_word = new_spell
 
-func set_sources_after_map_change():
-	for source in Game.sources:
-		var split_name = source.split("|")
-		var source_map_name = split_name[0]
-		var source_name = split_name[1]
-		if source_map_name == Game.current_map_name:
-#			var source_node = Game.current_scene.get_node("YSort").get_node("Sources").get_node(source_name)
-			var source_node = Game.current_scene.get_node("YSort/Sources").get_node(source_name)
-			source_node.word_ids = Game.sources[source]
-			source_node.update_source(true)
-
 func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	if Game.canvas_color_screen:
 		Game.canvas_color_screen.queue_free()
 		Game.canvas_color_screen = null
-	save_following_words_data_before_map_change()
 	Game.is_frozen = false
 	if Game.player:
 		Game.player_position_on_overworld = Game.player.position
@@ -85,9 +72,6 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 #		var packed_scene = load("res://palace_in_memory.tscn")
 		if packed_scene:
 			Game.current_scene = packed_scene.instance()
-#			move_player(to_x, to_y, level_y_height_change)
-#			var my_scene = packed_scene.instance()
-#			add_child(my_scene)
 		else:
 			Game.current_scene = ResourceLoader.load(to_map_name).instance()
 			move_player(to_x, to_y, level_y_height_change)
@@ -99,5 +83,4 @@ func _deferred_goto_scene(to_map_name, to_x, to_y, level_y_height_change):
 	get_tree().get_root().add_child(Game.current_scene)
 	
 	generate_following_words_after_map_change()
-	set_sources_after_map_change()
 	update_main_ui_upon_map_change()

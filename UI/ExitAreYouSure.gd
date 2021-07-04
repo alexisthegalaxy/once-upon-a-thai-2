@@ -2,7 +2,11 @@ extends CanvasLayer
 
 func _ready():
 	if Game.palace:
-		$ColorRect/Leave.text = tr("_go_back_to_the_material_world")
+		if Game.following_words:
+			$ColorRect/Leave.disabled = true
+			$ColorRect/Leave.text = tr("_you_cant_leave_when_you_carry_a_word")
+		else:
+			$ColorRect/Leave.text = tr("_go_back_to_the_material_world")
 
 func _on_Leave_pressed():
 	if Game.palace:

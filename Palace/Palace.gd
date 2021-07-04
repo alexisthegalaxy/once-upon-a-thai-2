@@ -5,6 +5,7 @@ var on_mode_switch = false  # indicates that the cursor is on the button on_mode
 var has_desired_zoom = true
 var desired_zoom = Vector2(1, 1)
 var lo = TranslationServer.get_locale()
+export var color: Color
 var following_word = null # {
 #		"id": 400,
 #		"over_word": null,  # this is the sphere itself, following the player
@@ -19,15 +20,16 @@ func _ready():
 	var words = []
 	for word in $YSort.get_children():
 		if 'Spell' in word.name:
-			print('Game.known_words before: ', Game.known_words)
 			if not word.word.id in Game.known_words:
 				Game.known_words.append(word.word.id)
-				print('Game.known_words after: ', Game.known_words)
 			if word.is_following_player:
 				word.queue_free()
 			else:
 				words.append(word)
 	$WordNet._init_word_net(words)
+	Game.change_color = true
+	Game.goal_color = color
+	Game.last_goal_color = color
 
 func save_palace_in_memory():
 	var packed_scene = PackedScene.new()
@@ -114,8 +116,8 @@ func _on_ModeSwitch_pressed():
 func switch_to_enhance():
 	mode_is_explore = false
 	Game.player.stop_walking()
-	$Control/ModeSwitch.text = tr('_explore_palace')
-	$Control.show()
+	$ItemSelector/ModeSwitch.text = tr('_explore_palace')
+	$ItemSelector.show()
 	$YSort/Player/Light2D.hide()
 	desired_zoom = Vector2(2, 2)
 	has_desired_zoom = false
@@ -125,8 +127,8 @@ func switch_to_enhance():
 
 func switch_to_explore():
 	mode_is_explore = true
-	$Control/ModeSwitch.text = tr('_enhance_palace')
-	$Control.hide()
+	$ItemSelector/ModeSwitch.text = tr('_enhance_palace')
+	$ItemSelector.hide()
 	$YSort/Player/Light2D.show()
 	desired_zoom = Vector2(1, 1)
 	has_desired_zoom = false
